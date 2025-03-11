@@ -1,0 +1,73 @@
+\section{Optimization of [Model/Method Name]}
+
+Our objective is to minimize [objective function], over the parameters of [parameters involved], where [explain any relevant terms]. Instead of [previous method/approach], we [describe the approach taken], effectively [describe the intended outcome]. The actual [related outcome] achieved by [existing technique] are [brief evaluation], and thus we define the objective functional as follows:
+
+\begin{equation}
+L [ g_{a}, g_{s}, P_{q} ] = [mathematical formulation of the functional]
+\end{equation}
+
+where [briefly explain any important terms used]. Given [assumptions made], we can express [related statement]. That is,
+
+\begin{equation}
+\hat{y}_{i} = q_{i} = [mathematical statement]
+\end{equation}
+
+where [explain indices or variables involved]. The [related distribution] is then given by [equation describing the distribution]:
+
+\begin{equation}
+P_{q_{i}}(n) = [mathematical representation]
+\end{equation}
+
+Note that [important insight about the terms or methods], rendering [method] ineffective. To allow optimization via [optimization technique], we [describe modified approach].
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{[image_placeholder]}
+    \caption{[Description of the figure]}
+\end{figure}
+
+This relaxed formulation has [describe desirable properties]. First, [property description]. This implies that [mathematical insight]. Second, [another important property] and is [justification for property]. We examine [specific analysis or insight] in section [next section number].
+
+We assume [assumption about distribution/marginals] for [variables], and model [describe how marginals are modeled]. Specifically, we [details on methodology]. Since [explain reasoning leading to a conclusion], [further explanation of model errors].
+
+Given this [type of approximation], the loss function for parameters [parameters involved] can be written as:
+
+\begin{equation}
+L ( \theta , \phi ) = [mathematical representation of the loss function]
+\end{equation}
+
+where [explain terms in the equation]. This is [justification for the mathematical form], and thus [reason why it's suitable for optimization].
+
+\subsection{Relationship to [Related Concept/Model]}
+
+We derived our formulation directly from [related problem or context]. However, once the transition to [type of function] is made, the optimization problem resembles [describe similarity to another problem]. In [specific context/ method], we are given [data/parameters] along with a [type of model]. We seek to find [objective], which [explain complication]. The approach followed by [citation] consists of [describe method briefly]:
+
+\begin{equation}
+D_{KL}^{[q \| p]} = [mathematical expression]
+\end{equation}
+
+This objective function is equivalent to [previously mentioned function], if [conditions are satisfied]:
+
+\begin{equation}
+p_{x | \tilde{y}}(x | \tilde{y}; \lambda, \theta) = [mathematical definition]
+\end{equation}
+
+\begin{equation}
+p_{\tilde{y}}(\tilde{y}; [parameters]) = [mathematical representation]
+\end{equation}
+
+and the approximate posterior as follows:
+
+\begin{equation}
+q(\tilde{y} | x; \phi) = [mathematical representation]
+\end{equation}
+
+where [explain meaning of components]. With this, [explanation of resulting implications]. Note that if [mention any additional conditions required], then [explain the outcome and significance].
+
+Despite the similarity between [two frameworks or approaches], there are several [key differences]. First, [describe the first difference]. [Further details on the implications of this difference]. 
+
+Second, [describe the second difference]. [Explain how this difference alters implications]. 
+
+Finally, [describe any last key difference], considering [underscore the significance of this in the context of the discussion]. 
+
+We assess the quality of [related topic] empirically in [where results or comparisons will be discussed].

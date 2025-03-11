@@ -1,0 +1,41 @@
+\section{EXPERIMENTS}
+
+We test our model in a number of experiments: [multiple sentences briefly describing the different experiments conducted, including key objectives and methodologies].
+
+\subsection{DATASETS}
+
+We closely follow the experimental setup in [reference]. Dataset statistics are summarized in Table [number]. In [dataset description], [explain the nature of the data and its structure]. [Describe any relevant statistics or features of the dataset].
+
+\begin{table}[ht]
+\centering
+\caption{Dataset statistics, as reported in [reference].}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+Dataset   & Type             & Nodes   & Edges   &   Classes & Features   & Label rate   \\
+\hline
+[Dataset 1]  & [Type]  & [Nodes count]  & [Edges count]  & [Classes] & [Features count]  & [Label rate]  \\
+\hline
+[Dataset 2]  & [Type]  & [Nodes count]  & [Edges count]  & [Classes] & [Features count]  & [Label rate]  \\
+\hline
+[Dataset 3]  & [Type]  & [Nodes count]  & [Edges count]  & [Classes] & [Features count]  & [Label rate]  \\
+\hline
+[Dataset 4]  & [Type]  & [Nodes count]  & [Edges count]  & [Classes] & [Features count]  & [Label rate]  \\
+\hline
+\end{tabular}
+\end{table}
+
+[Discussion of Dataset 1: Types of nodes, features, and preprocessing steps]. [Similar discussion for Dataset 2]. [Continue for additional datasets].
+
+\subsection{EXPERIMENTAL SET-UP}
+
+Unless otherwise noted, we [describe the model setup, including architecture and evaluation metrics]. We provide additional experiments [mention any additional experimental setups used]. The [mention any dataset splits or preprocessing techniques used].
+
+For the [mention specific experiment type], we [details about hyperparameter optimization and training techniques used]. We [explain training conditions such as epoch limits, optimizers, and early stopping criteria]. [Provide any initialization or normalization techniques used, if applicable].
+
+\subsection{BASELINES}
+
+We compare against the same baseline methods as in [reference]. Specifically, we include [describe the baseline methods being compared]. [Explain the rationale for excluding any methods, if applicable].
+
+We further compare against [describe any additional comparison methods]. [Provide details on how these methods were trained or tested, and discuss their relevance to the current study].
+
+Finally, we compare against [mention any additional models or previous works], ensuring to choose the best-performing variant based on [criteria or setups used].

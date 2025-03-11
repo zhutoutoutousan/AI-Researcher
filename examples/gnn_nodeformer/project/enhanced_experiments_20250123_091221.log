@@ -1,0 +1,17 @@
+2025-01-23 09:12:21,646 - 
+Running enhanced experiments on Cora
+2025-01-23 09:12:21,646 - Run 1/5 on device 0
+2025-01-23 09:12:22,212 - Adjusted number of attention heads to 89 for 1433 features
+2025-01-23 09:12:22,775 - Error on device 0: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2
+2025-01-23 09:12:22,775 - Run 2/5 on device 1
+2025-01-23 09:12:23,668 - Adjusted number of attention heads to 89 for 1433 features
+2025-01-23 09:12:25,483 - Error on device 1: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2
+2025-01-23 09:12:25,484 - Run 3/5 on device 2
+2025-01-23 09:12:25,899 - Adjusted number of attention heads to 89 for 1433 features
+2025-01-23 09:12:26,308 - Error on device 2: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2
+2025-01-23 09:12:26,308 - Run 4/5 on device 3
+2025-01-23 09:12:26,720 - Adjusted number of attention heads to 89 for 1433 features
+2025-01-23 09:12:27,128 - Error on device 3: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2
+2025-01-23 09:12:27,129 - Run 5/5 on device 0
+2025-01-23 09:12:27,143 - Adjusted number of attention heads to 89 for 1433 features
+2025-01-23 09:12:27,230 - Error on device 0: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2

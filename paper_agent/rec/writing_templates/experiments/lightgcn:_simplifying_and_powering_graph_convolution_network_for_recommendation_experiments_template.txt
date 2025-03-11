@@ -1,0 +1,53 @@
+```latex
+\section{Experiments}
+
+\subsection{Experimental Settings}
+
+To ensure a fair comparison and reduce experimental workload, we closely follow the experimental settings of [Reference]. We obtain the experimental datasets (including train/test splits) from [Source/Authors], whose statistics are included in Table [X]. Specifically, [sentences explaining dataset similarities and differences]. The evaluation metrics are [metrics] computed by [explanation].
+
+\subsubsection{Compared Methods}
+
+The primary competing method is [Method Name], which has demonstrated superior performance compared to several techniques such as [Method A], [Method B], and [Method C]. Since the comparison utilizes the same datasets under identical evaluation protocols, further comparison with these techniques is not conducted. Additionally, we compare with the following relevant methods:
+- [Method D]: [Description of Method D].
+- [Method E]: [Description of Method E and relevant adjustments made].
+
+\subsubsection{Hyper-parameter Settings}
+
+Similar to [Reference], the embedding size is set to [Size] for all models, initialized with [Initialization Method]. We optimize [Model Name] using [Optimizer] with a learning rate of [Rate] and a mini-batch size of [Size]. The [Regularization Type] coefficient is searched within the range of {[Range]}. Additionally, we examine [Other Hyper-parameters]. 
+
+\subsection{Performance Comparison with [Method Name]}
+
+We conduct a detailed comparison with [Method Name], documenting performance across [Aspect] in Table [X]. Furthermore, we illustrate the [Training/Testing] curves in Figure [X] to elucidate the advantages of [Current Method] during the training process. The primary observations are:
+- [Observation 1].
+- [Observation 2].
+- [Observation 3].
+- [Observation 4].
+
+\subsection{Performance Comparison with State-of-the-Arts}
+
+Table [X] presents a performance comparison against competing methods. We report the best score obtained for each method. [Observation on general performance trends]. Among the benchmarked methods, [Method F] shows the highest performance, outperforming [Method G] and [Method H].
+
+\subsection{Ablation and Effectiveness Analyses}
+
+We perform ablation studies on [Model Name], exploring how [Component/Parameter] impacts its effectiveness. The following sections detail the analysis: 
+
+\subsubsection{Impact of [Specific Component]} 
+
+Figure [X] provides the results from [Description of Setup]. [Observations regarding performance trends].
+
+\subsubsection{Impact of [Another Component]} 
+
+In this section, we investigate [Description of Normalization Scheme/Specific Technique applied]. We compare different configurations as follows: 
+- [Observation about Configuration 1].
+- [Observation about Configuration 2].
+  
+\subsubsection{Analysis of [Concept]} 
+
+As outlined previously, we define [Concept] in the context of [Justification or Theoretical Basis]. [Equations defining relevant metrics or variables] are presented to analyze [Concept].
+
+\subsection{Hyper-parameter Studies}
+
+In applying [Model Name] to a new dataset, the primary hyper-parameter of concern is [Parameter Name]. We examine the performance alteration of [Model Name] with respect to [Parameter]. 
+
+As shown in Figure [X], [Observation on Hyper-Parameter Sensitivity]. The optimal values for [Datasets/Conditions] are [Values]. Beyond a certain threshold [Value], model performance is adversely affected, preventing [Conjecture about model behavior].
+```

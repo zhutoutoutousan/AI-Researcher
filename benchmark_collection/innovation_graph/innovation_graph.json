@@ -1,0 +1,204 @@
+[
+  {
+    "target": "Heterogeneous Graph Contrastive Learning for Recommendation",
+    "source_papers": [
+      {
+        "reference": "Sequential recommendation with graph neural networks.",
+        "rank": 1,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This foundational paper demonstrates the power of Graph Neural Networks (GNNs) in modeling relationships for recommendation systems and laid the groundwork for subsequent heterogeneous models in this space. It emphasizes the incorporation of GNNs to encode heterogeneous relationships in latent representations, directly influencing the methodological approach taken in HGCL.",
+        "usage": "The concept of using GNNs to reinforce the recommendation task is a crucial methodological backbone for HGCL, establishing the need for heterogeneous relations."
+      },
+      {
+        "reference": "BPR: Bayesian personalized ranking from implicit feedback.",
+        "rank": 2,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This paper introduced Bayesian Personalized Ranking (BPR) as a fundamental loss function for implicit feedback scenarios, influencing the loss formulation in HGCL. BPR's effectiveness in ranking tasks has set a standard in the recommendation community.",
+        "usage": "BPR was integrated into the HGCL model as the primary optimization objective for predicting user-item interactions, reflecting its critical role in enhancing the recommendation performance."
+      },
+      {
+        "reference": "Heterogeneous graph transformer.",
+        "rank": 3,
+        "type": [
+          "component"
+        ],
+        "justification": "The HGT model extends GNNs by introducing a transformer mechanism for heterogeneous graphs, which directly aligns with the HGCL\u2019s strategy of utilizing heterogeneous message passing. The work underpins important aspects of encoding multi-type relationships.",
+        "usage": "The self-attention mechanisms and message passing laid out in HGT inspired the architecture of HGCL for effectively handling heterogeneous graphs."
+      },
+      {
+        "reference": "Knowledge graph attention network for recommendation.",
+        "rank": 4,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This paper effectively uses knowledge graphs and attention mechanisms to enhance the recommendation tasks\u2014providing insights into factorings of relationships important for user engagement and item relevance. It shaped the exploration of leveraging external knowledge for improved recommendations.",
+        "usage": "The integration of contrastive learning principles from this paper formed a conceptual framework for augmenting user and item representations in the HGCL model."
+      },
+      {
+        "reference": "Graph neural networks for social recommendation.",
+        "rank": 5,
+        "type": [
+          "component"
+        ],
+        "justification": "This work contributes significant advancements in utilizing social relationships in GNN-based models for recommendations. It emphasizes mean pooling strategies relevant in community influences, which enrich the HGCL's use of social interactions.",
+        "usage": "Techniques like element-wise mean pooling were adapted in HGCL to better fuse user and item representations from heterogeneous contexts."
+      },
+      {
+        "reference": "Multibehavior recommendation with graph convolutional networks.",
+        "rank": 6,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This study investigates the modeling of multiple behaviors within a GNN framework, providing concrete strategies to effectively integrate diverse user behavior into the recommendation process, thus supporting the methodological developments in HGCL.",
+        "usage": "The concept of behavior-aware message passing informed the design of user-item relationship modeling within HGCL."
+      },
+      {
+        "reference": "Leveraging meta-path based context for top-n recommendation with a neural co-attention model.",
+        "rank": 7,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This paper outlines efficient ways to utilize meta-path representations for context-aware recommendations, which supports the adaptation of contextual embeddings in HGCL, allowing for better user-item relationship modeling.",
+        "usage": "The study's findings were leveraged to enhance the modeling aspects within HGCL, particularly regarding the fusion of heterogeneous information."
+      },
+      {
+        "reference": "Self-supervised social recommender system which incorporates auxiliary graph learning task into the main task to improve the recommendation performance.",
+        "rank": 8,
+        "type": [
+          "component"
+        ],
+        "justification": "This research highlights self-supervised methodologies in the context of social recommendations. Its observations assisted in designing the HGCL's personalized transformation networks.",
+        "usage": "The contribution influenced how HGCL conducts contrastive learning to capture social influences on recommendations."
+      },
+      {
+        "reference": "Magnn: Metapath aggregated graph neural network for heterogeneous graph embedding.",
+        "rank": 9,
+        "type": [
+          "component"
+        ],
+        "justification": "This paper presents techniques for pursuing diverse metapath strategies in heterogeneous graphs, which enriches HGCL\u2019s approach to preserving multi-hop relationships during user-item representation learning.",
+        "usage": "Its focus on message propagation validated the inclusion of multiple pathways in HGCL to enhance user-item interaction context."
+      },
+      {
+        "reference": "An efficient adaptive transfer neural network for social-aware recommendation.",
+        "rank": 10,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "By demonstrating the relevance of adaptive transfer learning in social recommendations, it directly supports the HGCL\u2019s design principle of adapting knowledge transfer based on user-specific interactions.",
+        "usage": "The findings helped to shape the adaptive contrastive augmentation methods used in HGCL."
+      },
+      {
+        "reference": "Heterogeneous information network embedding for recommendation.",
+        "rank": 11,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This work connects the diverse relations within graphs to recommendation frameworks. Its perspectives provided insights for HGCL to emphasize the role of heterogeneous relationships.",
+        "usage": "The relevance of embedding diverse types of information influenced HGCL's consideration of various user and item interactions."
+      },
+      {
+        "reference": "Revisiting graph based collaborative filtering: A linear residual graph convolutional network approach.",
+        "rank": 12,
+        "type": [
+          "methodological"
+        ],
+        "justification": "Provides foundational ideas around graph convolutional methods for collaborative filtering, which explains many techniques adopted in HGCL for collaborative filtering strategies.",
+        "usage": "The modeling strategies inspired the GNN architectures and training methodologies employed in HGCL."
+      },
+      {
+        "reference": "Language modeling with gated convolutional networks.",
+        "rank": 13,
+        "type": [
+          "component"
+        ],
+        "justification": "Presents gated architectures that allow for flexible representations\u2014concepts that have directly influenced the modeling structures within HGCL, particularly in terms of embedding initialization.",
+        "usage": "The gating mechanisms informed how embeddings are structured and transformed in HGCL."
+      },
+      {
+        "reference": "Heterogeneous graph attention network.",
+        "rank": 14,
+        "type": [
+          "component"
+        ],
+        "justification": "This paper outlines attention mechanisms within heterogeneous graphs, facilitating learnings for HGCL's heterogeneous message passing techniques, especially around weighting edges.",
+        "usage": "Principles from this work were incorporated into HGCL's architecture to enhance its focus on relational semantics."
+      },
+      {
+        "reference": "Social attentional memory network: Modeling aspect-and friend-level differences in recommendation.",
+        "rank": 15,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "Provides insight into the differing impacts of factors influencing social recommendations, enriching HGCL's conceptual background for personalizing recommendation strategies.",
+        "usage": "The underlying principles guided the development of personalized knowledge transfer in the HGCL model."
+      },
+      {
+        "reference": "Improving Graph Collaborative Filtering with Neighborhood-enriched Contrastive Learning.",
+        "rank": 16,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This research emphasizes the use of contrastive learning and its successful integration within graph structures, significantly articulating methods applicable to HGCL\u2019s innovation in leveraging contrastive learning for augmenting user-item interactions.",
+        "usage": "Findings played a role in shaping the strategic application of contrastive learning within the HGCL framework."
+      },
+      {
+        "reference": "Dual Graph Neural Network for Multimedia Recommendation.",
+        "rank": 17,
+        "type": [
+          "component"
+        ],
+        "justification": "Demonstrates a dual approach to GNNs in handling multiple modalities\u2014serving as an inspiration for the HGCL\u2019s complex mechanism for dealing with different relational data types.",
+        "usage": "The dual modality processing informed structural designs for representation learning in HGCL."
+      },
+      {
+        "reference": "Sequential recommendation with graph neural networks.",
+        "rank": 18,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This foundational paper was noted for implementing sequential recommendations through GNNs, which elucidated the potential paths for further development within HGCL.",
+        "usage": "Recognized as a precursor to employing GNNs within HGCL, highlighting state-of-the-art methodologies."
+      },
+      {
+        "reference": "Self-supervised multi-channel hypergraph convolutional network for social recommendation.",
+        "rank": 19,
+        "type": [
+          "component"
+        ],
+        "justification": "Integrates self-supervised methodologies into network designs, impacting how HGCL enhanced its recommendation technology through self-supervised approaches.",
+        "usage": "Justified using multi-faceted data in HGCL to enrich its output from diverse contexts."
+      },
+      {
+        "reference": "Improving knowledge-aware recommendation with multilevel interactive contrastive learning.",
+        "rank": 20,
+        "type": [
+          "component"
+        ],
+        "justification": "Alters the apparatus by which knowledge graphs are iterated over, parallel to how HGCL approaches retaining relevant information through contrastive learning.",
+        "usage": "Filled gaps in embedding strategies within HGCL, enabling forthcoming transformations alongside diverse recommendation input types."
+      }
+    ],
+    "authors": [
+      "Mengru Chen",
+      "Chao Huang",
+      "Lianghao Xia",
+      "Wei Wei",
+      "Yong Xu",
+      "Ronghua Luo"
+    ],
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2303.00995v1",
+    "abstract": "Graph Neural Networks (GNNs) have become powerful tools in modeling\ngraph-structured data in recommender systems. However, real-life recommendation\nscenarios usually involve heterogeneous relationships (e.g., social-aware user\ninfluence, knowledge-aware item dependency) which contains fruitful information\nto enhance the user preference learning. In this paper, we study the problem of\nheterogeneous graph-enhanced relational learning for recommendation. Recently,\ncontrastive self-supervised learning has become successful in recommendation.\nIn light of this, we propose a Heterogeneous Graph Contrastive Learning (HGCL),\nwhich is able to incorporate heterogeneous relational semantics into the\nuser-item interaction modeling with contrastive learning-enhanced knowledge\ntransfer across different views. However, the influence of heterogeneous side\ninformation on interactions may vary by users and items. To move this idea\nforward, we enhance our heterogeneous graph contrastive learning with meta\nnetworks to allow the personalized knowledge transformer with adaptive\ncontrastive augmentation. The experimental results on three real-world datasets\ndemonstrate the superiority of HGCL over state-of-the-art recommendation\nmethods. Through ablation study, key components in HGCL method are validated to\nbenefit the recommendation performance improvement. The source code of the\nmodel implementation is available at the link https://github.com/HKUDS/HGCL.",
+    "venue": "Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining",
+    "venue_source": "Crossref",
+    "venue_lookup_time": "2025-03-02T18:57:14.902005",
+    "citations": 0,
+    "task1": "To implement the Heterogeneous Graph Contrastive Learning (HGCL) methodology for recommendation systems, follow these detailed steps:\n\n1. **Task Definition**: The model focuses on enhancing recommendation performance through the exploration of heterogeneous relationships among users and items, utilizing Contrastive Learning to improve representation learning in the context of sparse interaction data.\n\n2. **Core Techniques**:\n   - **Heterogeneous Graph Neural Networks (GNNs)**: Use this as the primary architecture to encode user-item, user-user, and item-item interactions.\n   - **Contrastive Learning**: Implement a framework to learn through the alignment of user-item embeddings across different relational views.\n   - **Meta Networks**: Employ these for personalized knowledge transfer by modeling dependencies between auxiliary views and the main interaction view.\n\n3. **Function of Major Components**:\n   - **Relation-Aware Embedding Initialization**: Initializes user and item embeddings for all three interaction graphs.\n   - **Heterogeneous Message Propagation**: Iteratively refines node representations through neighbor aggregation within each graph.\n   - **Information Aggregation**: Combines embeddings from various relations to create enriched user and item representations.\n   - **Cross-View Meta Network**: Facilitates personalized transformations between auxiliary and interaction view embeddings.\n   - **Contrastive Loss Function**: Regulates the learning of representations across different views by maximizing similarity for positive pairs and minimizing it for negative pairs.\n\n4. **Implementation Details**:\n   - **Input/Output Specifications**: \n     - **Inputs**: Three adjacency matrices for user-item, user-user, and item-item graphs.\n     - **Outputs**: denser, representation embeddings for users and items used for prediction.\n   - **Key Parameters**:\n     - **Embedding Dimension (d)**: Typically tuned from {8, 16, 32, 64, 128}.\n     - **Number of GNN Layers (L)**: Adjusted from {1, 2, 3}.\n     - **Contrastive Learning Coefficient (\u03b2)**: Chosen from a specified range to balance the contribution of contrastive loss.\n     - **Temperature Coefficient (\u03c4)**: Controls the distribution of negative samples in the contrastive loss function.\n\n5. **Step-by-Step Interaction**:\n   - Initialize embeddings for users and items, using Xavier initialization.\n   - Use heterogeneous GNNs to derive relation-specific embeddings for each graph type.\n   - Propagate information through multiple iterations of message passing.\n   - Aggregate the refined embeddings to develop overall representations.\n   - Extract personalized meta knowledge from auxiliary views to parameterize transformation matrices and facilitate customized knowledge transfer.\n   - Apply contrastive learning to align these embeddings across different views, optimizing through the InfoNCE loss.\n\n6. **Critical Implementation Details**:\n   - Ensure batch normalization is applied after each GNN layer to stabilize learning.\n   - Configure the meta network with fully connected layers employing PReLU activation for non-linearity.\n   - Use skip connections in embedding updates to retain initial representation while aggregating higher-order neighbor information.\n   - Monitor for overfitting, especially with high-dimensional embeddings; utilize dropout or weight regularization as necessary.\n   - Experiment with various hyperparameter settings to ascertain optimal performance\u2014key metrics for tuning include Hit Ratio (HR) and Normalized Discounted Cumulative Gain (NDCG).\n\nThese steps should enable a researcher to replicate the core methodology of HGCL for their recommendation tasks effectively.",
+    "task2": "1. The primary task or problem domain the research tackles is the enhancement of recommendation systems through the integration of heterogeneous relational information in user-item interactions. This involves modeling complex user preferences influenced by diverse relationships, such as social connections and knowledge-based item dependencies.\n\n2. Current limitations in existing approaches that motivated this work include the inadequacy of traditional graph neural networks that focus primarily on homogeneous relationships, which leads to suboptimal representation learning when faced with the rich, heterogeneous data typically present in real-world recommenders. Moreover, these existing methods struggle with data sparsity, as they often require extensive labeled data for effective training and may not generate high-quality user and item embeddings when interactions are insufficient.\n\n3. Core challenges the researchers aim to overcome include: i) effectively transferring and utilizing the diverse side knowledge from heterogeneous relational views to improve user preference learning; ii) performing heterogeneous relational contrastive learning that adapts to the personalized characteristics of users and items, acknowledging that interactions may be influenced differently across various user-item contexts.\n\n4. Key objectives and intended contributions include the development of a robust framework that employs heterogeneous graph contrastive learning to integrate heterogeneous relationships into recommendation systems. This framework aims to facilitate personalized knowledge transfer using a tailor-made meta network and to enhance data representation through adaptive contrastive learning methods. By addressing these objectives, the researchers intend to significantly improve the recommendation performance and tackle the issues of data sparsity and heterogeneous information incorporation in recommendation tasks."
+  }
+]

@@ -1,0 +1,42 @@
+\section{Experiments}
+
+We test our model in a number of experiments: [Briefly state the different experiments conducted]. 
+
+\subsection{Datasets}
+
+We closely follow the experimental setup in [Reference previous work]. Dataset statistics are summarized in Table [X]. In [Type of datasets], [Explanation of nodes and edges]. Label rate denotes the [Define what the label rate indicates]. [Description of each dataset, its nature, and relevant statistics].
+
+\begin{table}[h]
+    \centering
+    \caption{Dataset statistics, as reported in [Reference].}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        Dataset & Type & Nodes & Edges & Classes & Features & Label rate \\
+        \hline
+        [Dataset 1] & [Type] & [Number] & [Number] & [Number] & [Number] & [Number] \\
+        [Dataset 2] & [Type] & [Number] & [Number] & [Number] & [Number] & [Number] \\
+        [Dataset 3] & [Type] & [Number] & [Number] & [Number] & [Number] & [Number] \\
+        [Dataset 4] & [Type] & [Number] & [Number] & [Number] & [Number] & [Number] \\
+        \hline
+    \end{tabular}
+\end{table}
+
+[Detailed explanation of the first dataset’s methodology, including feature representation and matrix construction.]
+
+[Detailed explanation of the second dataset’s methodology, including feature representation and any preprocessing steps.]
+
+[Explanation of random graph datasets and their implications for experimental setup, including edge assignment and feature representation.]
+
+\subsection{Experimental Set-Up}
+
+Unless otherwise noted, we train [Model details] as described in [Section/Reference]. We evaluate prediction accuracy on [Describe the evaluation process]. Additional experiments using [Describe any additional configurations] are provided in [Reference/Appendix]. 
+
+For [Describe datasets], we optimize hyperparameters on [Specific dataset] only and use the same set of parameters for [Other datasets]. We train all models for a maximum of [Number] [Type of iterations] using [Optimizer] with a learning rate of [Value] and early stopping with a window size of [Value]. We initialize weights using [Initialization method] and normalize input features according to [Normalization technique].
+
+\subsection{Baselines}
+
+We compare against the same baseline methods as in [Reference], including [List baseline methods]. We omit [Any omitted methods with justification].
+
+Furthermore, we compare against [Any additional methods or techniques you wish to compare]. We first [Describe the comparative methodology], then run [Describe the iterative process] for [Number] iterations on [Describe nodes or sets].
+
+Lastly, we compare against [Name any other models or methods], where we choose [Specify criteria for comparison] as a baseline.

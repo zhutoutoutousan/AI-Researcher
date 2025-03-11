@@ -1,0 +1,27 @@
+\section{Related Work}
+
+In this section, we separately review [Number] tasks related to our work: [Task 1] and [Task 2].
+
+\subsection{[Task 1]}
+
+Previous studies on [Task 1] can be categorized into: [Category 1] and [Category 2], regarding their focus. The [Category 1] methods concentrate on [Description of Category 1 focus]. The research attention has evolved from [Initial Method/Concept] to [Current Method/Concept]. Recently, [Recent Advancement or Technique] has been introduced into [Relevant Methodology/Field], which [How it enhances previous methods].
+
+A surge of attention has also been dedicated to [Category 2], which [Description of Category 2 focus]. This includes [List of Aspects or Techniques].
+
+Despite the tremendous efforts devoted to these methods, all the existing work adopts the paradigm of [Current Paradigm]. This work is in an orthogonal direction, which explores [New Proposed Direction or Methodology], opening up a new research line of [Related Field/Topic].
+
+\subsection{[Task 2]}
+
+Studies on [Task 2] can be roughly categorized into [Branch 1] and [Branch 2]. [Description of [Branch 1]] which [Explain its significance or method]. [Description of [Branch 2]] which [Explain its focus or method]. 
+
+[Additional explanation of [Branch 1]] and [Additional explanation of [Branch 2]]. [Example of a relevant study or technique] that learns [Topic or Concept]. [Another example that extends or relates to the previous concepts].
+
+Furthermore, [Additional Relevant Study or Approach] which focuses on [Description of the approach]. These studies focused on [General Area], while leaving [Mention of any gap or unconsidered aspect].
+
+To the best of our knowledge, [Statements about the limited existing work on the intersection of the two tasks]. A very recent study is [Reference to Recent Work] which [Description of the recent work and its significance]. However, it differs from our work in: 
+\begin{itemize}
+    \item [(1)] [Outline first difference]
+    \item [(2)] [Outline second difference]
+\end{itemize}
+
+Thus, we propose [Module/Approach Name] to address [Challenge/Gap] through [Brief Overview of the Key Components or Methodology].

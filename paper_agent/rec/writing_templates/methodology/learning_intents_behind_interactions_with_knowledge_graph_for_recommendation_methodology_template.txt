@@ -1,0 +1,46 @@
+\section{Methodology}
+
+We now present the proposed [Module Name]. Figure [Figure Number] displays the working flow of [Module Name]. It consists of two key components: (1) [Component 1 Name], which [briefly describes the function and significance of Component 1]; and (2) [Component 2 Name], which [briefly describes the function and significance of Component 2]. [Module Name] ultimately yields [brief outcome or result].
+
+\subsection{[Component 1 Name]}
+
+Inspired by [previous work/technique], we aim to [describe the motivation and insights driving the development of Component 1]. This can be explained as [multiple sentences explaining the motivation and intuition behind the proposed method]. For instance, [provide an example if applicable].
+
+To formally define [key concept], we express it as follows:
+\begin{equation}
+    [Mathematical formulation of the key concept]
+\end{equation}
+
+Next, we detail the workflow of [Component 1 Name]. This includes [A paragraph describing the detailed workflow of the module]. Here, we compare our approach with existing methods; specifically, we highlight [several sentences comparing the proposed method with existing approaches].
+
+- 3.1.1 [Sub-component Title]. [Introduction to the sub-component, motivating example or background]. More formally, the representation is achieved through:
+\begin{equation}
+    [Mathematical formulation of the sub-component or process]
+\end{equation}
+where [provide detailed explanation of each term in the equations].
+
+- 3.1.2 [Sub-component Title]. [Discussion of different aspects or dimensions in modeling]. We achieve this by [explanation of the approach taken, with equations if necessary].
+
+\subsection{[Component 2 Name]}
+
+Building on [describe how this component follows logically from the first], we focus on [introduce the aspects addressed by Component 2]. Previous studies have shown that [describe related works and their findings briefly]. However, we argue that [explanation of limitations in prior works].
+
+To address these limitations, we propose [describe the proposed method], which consists of [three main components: describe component A, B, and C briefly]. Specifically, our approach uses [explanation of the novelty or technical innovation of this component].
+
+We further implement [explain how you implement this component with relevant examples and equations]. 
+In detail, the representation learning process involves:
+\begin{equation}
+    e^{(l)}_u = [Mathematical representation of user aggregation process]
+\end{equation}
+\begin{equation}
+    e^{(l)}_i = [Mathematical representation of item aggregation process]
+\end{equation}
+
+Finally, we optimize the model by [describe the optimization approach and loss functions used]. The objective function is given by:
+\begin{equation}
+    L_{\text{total}} = L_{\text{main}} + \lambda_1 L_{\text{additional}} + \lambda_2 \| \Theta \|_2^2
+\end{equation}
+
+where [explain the terms involved in the objective function].
+
+This methodological framework allows us to [conclude by explaining the significance of the methodology and its expected contributions].

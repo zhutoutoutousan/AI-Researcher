@@ -1,0 +1,79 @@
+{
+    "authors": [
+        "Yiheng Li",
+        "Heyang Jiang",
+        "Akio Kodaira",
+        "Masayoshi Tomizuka",
+        "Kurt Keutzer",
+        "Chenfeng Xu"
+    ],
+    "instance_id": "immiscible_diffusion",
+    "year": 2024,
+    "url": "http://arxiv.org/abs/2406.12303v2",
+    "abstract": "In this paper, we point out that suboptimal noise-data mapping leads to slow\ntraining of diffusion models. During diffusion training, current methods\ndiffuse each image across the entire noise space, resulting in a mixture of all\nimages at every point in the noise layer. We emphasize that this random mixture\nof noise-data mapping complicates the optimization of the denoising function in\ndiffusion models. Drawing inspiration from the immiscibility phenomenon in\nphysics, we propose Immiscible Diffusion, a simple and effective method to\nimprove the random mixture of noise-data mapping. In physics, miscibility can\nvary according to various intermolecular forces. Thus, immiscibility means that\nthe mixing of molecular sources is distinguishable. Inspired by this concept,\nwe propose an assignment-then-diffusion training strategy to achieve Immiscible\nDiffusion. As one example, prior to diffusing the image data into noise, we\nassign diffusion target noise for the image data by minimizing the total\nimage-noise pair distance in a mini-batch. The assignment functions analogously\nto external forces to expel the diffuse-able areas of images, thus mitigating\nthe inherent difficulties in diffusion training. Our approach is remarkably\nsimple, requiring only one line of code to restrict the diffuse-able area for\neach image while preserving the Gaussian distribution of noise. In this way,\neach image is preferably projected to nearby noise. Experiments demonstrate\nthat our method can achieve up to 3x faster training for unconditional\nConsistency Models on the CIFAR dataset, as well as for DDIM and Stable\nDiffusion on CelebA and ImageNet dataset, and in class-conditional training and\nfine-tuning. In addition, we conducted a thorough analysis that sheds light on\nhow it improves diffusion training speed while improving fidelity. The code is\navailable at https://yhli123.github.io/immiscible-diffusion",
+    "venue": "arXiv.org",
+    "venue_source": "Semantic Scholar",
+    "venue_lookup_time": "2025-01-10T19:29:31.614634",
+    "citations": 2,
+    "topic": "selected",
+    "field": "selected",
+    "target": "Immiscible Diffusion: Accelerating Diffusion Training with Noise Assignment",
+    "source_papers": [
+        {
+            "reference": "Denoising diffusion probabilistic models",
+            "rank": 1,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This study provided the foundational understanding of denoising processes, which is crucial for developing strategies to improve diffusion training efficiency. Its methodology shaped the core techniques used in our research.",
+            "usage": "Used as a foundational reference for the denoising processes and model architecture."
+        },
+        {
+            "reference": "Generative adversarial nets",
+            "rank": 2,
+            "type": [
+                "methodological"
+            ],
+            "justification": "As an influential work in generative modeling, this study's concepts inspired the architecture and generative capabilities of the proposed model, particularly in creating a robust enhancement for diffusion models.",
+            "usage": "Referenced for underlying generative capabilities which influenced our proposed model design."
+        },
+        {
+            "reference": "Image-noise Optimal Transport in Generative Models",
+            "rank": 3,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This study introduced the concept of optimal transport in generative modeling, which was integral in positing immiscibility as a core component of the proposed approach for improving training efficiency.",
+            "usage": "Served as a framework for understanding and applying transport concepts to the proposed model."
+        },
+        {
+            "reference": "Improving consistency models with generator-induced coupling",
+            "rank": 4,
+            "type": [
+                "component"
+            ],
+            "justification": "This work provided insights into generator behaviors that were crucial for enhancing the proposed model's efficacy, particularly in the integration of adjustments to generators during training.",
+            "usage": "Detailed analysis of generator behaviors informed our component enhancements."
+        },
+        {
+            "reference": "Conditional wasser- stein distances with applications in bayesian ot flow matching",
+            "rank": 5,
+            "type": [
+                "component"
+            ],
+            "justification": "This study's principles regarding distance evaluations were adapted in our methods for improving how image-noise mapping was assessed, directly impacting our training methodology.",
+            "usage": "Informed the adjustments made in our distance evaluation framework."
+        },
+        {
+            "reference": "Imagenet: A large-scale hierarchical image database",
+            "rank": 6,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "As a leading benchmark in image classification and generation, this study's dataset was utilized to compare our results effectively, cementing our findings within established standards.",
+            "usage": "Utilized CIFAR-10 as a benchmark derived from this foundational work."
+        }
+    ],
+    "task1": "To implement the core methodology of this paper, follow these detailed technical instructions:\n\n1. **Task**: The proposed approach targets accelerating the training of diffusion models by improving the assignment of noise to images to enhance the image quality during both unconditional and conditional generation tasks.\n\n2. **Core Techniques/Algorithms**: The methodology employs a batch-wise linear assignment algorithm, specifically the Hungarian method, to optimize noise-image pairing based on L2 distance. Additionally, it incorporates quantization to reduce the computational overhead associated with high-dimensional data during the assignment step.\n\n3. **Major Technical Components**:\n   - **Batch-wise Linear Assignment**: Matches noise and image batches to minimize the total distance, facilitating efficient training by keeping image-noise mappings distinguishable.\n   - **Quantization**: Reduces the precision of input representations to lower 32-bit floating point formats (to 16-bit), without compromising the overall Gaussian distribution of noise.\n\n4. **Implementation Details**:\n   - **Batch-wise Linear Assignment**:\n     - **Key Parameters**: Use L2 distance as the metric for assignment.\n     - **Input Specifications**: \n       - `x_b`: Batch of images.\n       - `n_rand_b`: Batch of random noise.\n       - `t_b`: Sampled diffusion steps.\n       - `\u03b1`: Diffusion schedule.\n     - **Output Specification**: The output is the batch of diffused images, `x_t,b`.\n     - **Constraints/Requirements**: Requires compatible dimensions between image and noise batches for proper assignment.\n\n   - **Quantization**:\n     - Apply quantization to reduce data size before performing assignments to ensure efficiency in memory usage.\n     - Ensure that the quantization does not interfere with the network's ability to learn from the assigned noise.\n\n5. **Step-by-Step Description**:\n   1. Prepare a batch of images and a corresponding batch of random Gaussian noise.\n   2. Convert the image and noise data to a lower precision (fp16).\n   3. Compute the pairwise L2 distances between the image and noise batches.\n   4. Execute the linear assignment using an optimization function (e.g., from SciPy) to obtain the optimal pairing of images to noise.\n   5. Using the assignment matrix, modify the input noise according to the matches derived in the assignment step.\n   6. Pass the reassigned noise to the diffusion process to generate the output images.\n   7. Optionally, repeat the process for multiple training iterations or modify the input data accordingly.\n\n6. **Critical Implementation Details**: \n   - Ensure that the image and noise assignment can run efficiently with large batch sizes; this study benchmarks a high batch size (e.g., 1024) and notes that the assignment operation takes about 22.8 ms. Utilizing quantization significantly impacts training speed by reducing memory and computational requirements.\n   - Monitor the performance of the proposed model during training to validate that the mapping retains a Gaussian distribution while improving the quality of generated images through the assignment of nearby noise points.\n\nFollowing these steps will allow researchers to implement the core methodology of the proposed approach effectively.",
+    "task2": "1. The primary task or problem domain this research tackles is enhancing the training efficiency of diffusion models for image generation. This paper emphasizes improving the speed and effectiveness of the training process, which currently remains a significant bottleneck in the iterative development of diffusion-based generative AI.\n\n2. Current limitations in existing approaches include the suboptimal noise-data mapping during training, where each image is diffused across the entire noise space. This results in a mixture of images at every point in the noise layer, complicating the optimization of the denoising function and leading to slow convergence rates that require extensive computational resources.\n\n3. The core challenges the researchers aim to overcome are the inefficiencies associated with the training of diffusion models due to the miscibility issue in noisy diffusion steps. This study seeks to address how to make the mixing of image data and noise more distinguishable to facilitate better optimization during the denoising process.\n\n4. Key objectives and intended contributions involve proposing a novel training strategy inspired by the proposed model from physics. This method aims to minimize the image-noise pair distance within mini-batches, thereby enhancing the distinctiveness of data mappings. By doing so, the researchers intend to significantly progress the speed of training for various diffusion models across datasets and tasks while improving overall image quality, all while maintaining a simple implementation that only necessitates minimal adjustments in the training code."
+}

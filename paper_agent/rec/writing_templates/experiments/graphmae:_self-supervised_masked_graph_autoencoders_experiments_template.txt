@@ -1,0 +1,47 @@
+```latex
+\section{Experiments}
+
+In this section, we demonstrate that [Module Name] is a [description of the framework, e.g., "general self-supervised framework"] for various [application domains, e.g., "graph learning tasks"], including:
+
+- · [Task 1 description, e.g., "Unsupervised representation learning for node classification"];
+- · [Task 2 description, e.g., "Unsupervised representation learning for graph classification"];
+- · [Task 3 description, e.g., "Transfer learning on molecular property prediction"].
+
+Extensive experiments on various [datasets/benchmarks] are conducted to evaluate the performance of [Module Name] against state-of-the-art (SOTA) [approaches, e.g., "contrastive and generative methods"] on these three tasks. In each task, we follow exactly the same experimental procedure, e.g., [description of experimental consistency, e.g., "data splits, evaluation protocol"] as the standard settings [reference citations].
+
+\subsection{[Task 1 Title]}
+
+\textbf{Setup.} The [Task 1] is to [description of the goal, e.g., "predict the unknown labels in networks"]. We test the performance of [Module Name] on [number] standard benchmarks: [list of datasets]. Following the inductive setup in [reference], [specifics about testing, e.g., "the testing for [specific datasets] is carried out on unseen nodes and graphs"].
+
+For the evaluation protocol, we follow the experimental setting in [reference citations]. First, we train a [Model Type] by [Module Name] without supervision. Then we freeze the parameters of the encoder and generate all the embeddings. For evaluation, we train a [classifier type] and report the [metric, e.g., "mean accuracy"] through [number] random initializations. We follow the public data splits of [dataset references]. The encoder $f_{\mathcal{E}}$ and decoder $f_{\mathcal{D}}$ are specified as [Model Specifications]. Detailed hyper-parameters can be found in [Appendix Reference].
+
+\textbf{Results.} We compare [Module Name] with SOTA [type of models, e.g., "contrastive self-supervised models"], [list of comparison models], as well as supervised baselines [list of supervised models]. We also report the results of previous [type of models, e.g., "generative self-supervised models"]. We report results from previous works with the same experimental setup if available. If results are not previously reported and codes are provided, we implement them based on the official codes and conduct a hyper-parameter search. [Table/figures] lists the results. [Module Name] achieves [performance statement, e.g., "the best or competitive results"] compared to the SOTA approaches in all benchmarks. Notably, [Module Name] outperforms existing [type of models, e.g., "generative methods"] by [description of margin]. The results in the [specific evaluation condition, e.g., "inductive setting"] suggest that the self-supervised [Module Name] technique provides strong generalization to [condition].
+
+\subsection{[Task 2 Title]}
+
+\textbf{Setup.} For [Task 2], we conduct experiments on [number] benchmarks: [list of datasets]. [General description of dataset characteristics, e.g., "Each dataset is a collection of graphs where each graph is associated with a label"].
+
+For the evaluation protocol, after generating [type of representations, e.g., "graph embeddings"] with [Module Name]'s encoder, we feed [encoded representations] into a [classifier type] to predict the label, and report the [evaluation metric, e.g., "mean cross-validation accuracy"] with [standard deviation, if applicable]. We adopt [backbone model] as the encoder and decoder.
+
+\textbf{Results.} In addition to [previously established methods, e.g., "classical kernel methods"], we also compare [Module Name] with SOTA [types of methods, e.g., "unsupervised and contrastive methods"], [list of comparison methods]. The supervised baselines [list of models] are also included. As per [previous research], we report results from previous papers if available. [Results Description]. The results manifest that [Module Name] [description of performance, e.g., "outperforms all self-supervised baselines"], indicating its effectiveness in [task].
+
+\subsection{[Task 3 Title]}
+
+\textbf{Setup.} To evaluate the transferability of the proposed method, we test the performance on [task description] following the setting of [reference]. The model is first [training strategy, e.g., "pre-trained"] on [source dataset], and then [transfer method] in [target datasets]. The datasets are split by [specific method, e.g., "scaffold-split"] to mimic [real-world use cases]. Input features are described as [features types].
+
+For the evaluation protocol, we run experiments for [number] times and report the mean and standard deviation of [metric]. Following the default setting in [reference], we adopt [model architecture premise, e.g., "a multi-layer model"].
+
+\textbf{Results.} We evaluate [Module Name] against methods including [list of methods], and SOTA [other types of comparison]. [Table/figure indicates] that the performance on [specific tasks] is comparable to SOTA methods, where [Module Name] achieves [performance achievement] demonstrating its robust transferability.
+
+\subsection{Ablation Studies}
+
+To verify the effects of the main components in [Module Name], we conduct several ablation studies. Without loss of generalization, we choose [number] datasets from [task domain] for experiments.
+
+\textbf{Effect of [Component 1].} We study the influence of [description of component], and [Table/figure reference] shows the results of [indicate types of variations]. Generally, [performance statement regarding effect, e.g., "higher values lead to better performance"].
+
+\textbf{Effect of [Component 2].} [Description of the component and its role in the experiment]. [Results overview and performance implications].
+
+\textbf{Effect of [Component 3].} [General overview of the studies and findings related to the effect of the mentioned component]. 
+
+\textbf{Summary.} To summarize, the [description of the Module Name, e.g., "self-supervised approach"] achieves competitive performance across [tasks/benchmarks], indicating that [Module Name] is an effective and universal [framework type] for various applications.
+```

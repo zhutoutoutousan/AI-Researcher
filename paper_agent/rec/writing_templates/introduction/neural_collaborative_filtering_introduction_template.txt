@@ -1,0 +1,19 @@
+```latex
+\section{INTRODUCTION}
+
+In the era of [current context or technological trend], [specific type of systems or methodologies] play a pivotal role in [addressing specific problems], having been widely adopted by [relevant applications or industries]. The key to a personalized [system type] is in [brief explanation of the underlying mechanism], known as [specific technique or terminology]. Among the various [related techniques], [most popular technique] is the most prominent, which [explanation of how it functions and its relevance]. Thereafter, a user's [type of interaction] on an item is modeled as [brief description of the mathematical concept or operation].
+
+Inspired by [previous work/technique], we propose [module name] to address [specific challenge]. Much research effort has been devoted to enhancing [previous technique or approach], such as [examples of enhancements or combinations with other techniques]. Despite the effectiveness of [previous technique], it is well-known that its performance can be hindered by [specific limitation]. For example, [description of a known issue or limitation and its implications]. While it seems to be just a trivial tweak, it points to the positive effect of [specific recommendation or innovation].
+
+This paper explores [new approach or method], rather than a handcraft that has been done by many previous works. [A brief overview of the new approach's capabilities and prior applications]. However, there is relatively little work on [research gap or underexplored area].
+
+This work addresses the aforementioned research problems by [brief statement of how the paper will contribute to the field]. We focus on [specific type of feedback or data] that [explanation of the significance and challenges]. Compared to [alternative or typical approach], [explanation of why the chosen approach is beneficial or easier to collect]. However, it is more challenging to [describe the specific challenges associated with the approach].
+
+The main contributions of this work are as follows:
+
+\begin{itemize}
+    \item 1. [First contribution statement].
+    \item 2. [Second contribution statement].
+    \item 3. [Third contribution statement].
+\end{itemize}
+```

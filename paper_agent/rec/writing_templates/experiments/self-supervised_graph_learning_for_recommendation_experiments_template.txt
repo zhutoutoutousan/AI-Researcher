@@ -1,0 +1,92 @@
+```latex
+\section{Experimental Design}
+
+To justify the effectiveness of [Proposed Method], we conduct extensive experiments to answer the following research questions:
+
+\begin{itemize}
+    \item \textbf{RQ1:} [Research Question 1]
+    \item \textbf{RQ2:} [Research Question 2]
+    \item \textbf{RQ3:} [Research Question 3]
+\end{itemize}
+
+\subsection{Experimental Settings}
+
+We conduct experiments on [Number] benchmark datasets: [Dataset 1], [Dataset 2], and [Dataset 3]. Following [Reference], we use the same [dataset setting] for [Dataset 1] and [Dataset 2]. [Dataset 3] is [description of dataset sparsity]. The statistics of all three datasets are summarized in [Table X].
+
+We follow the same strategy described in [Reference] to split the interactions into training, validation, and testing sets with a ratio of [X:Y:Z]. For users in the testing set, we follow the [evaluation protocol] to evaluate the [metric] performance and report the average [Metric 1] and [Metric 2] where [specific values].
+
+\subsubsection{Compared Methods}
+
+We compare the proposed [Proposed Method] with the following [comparison type] models:
+
+[Table Y: Performance comparison with existing models.]
+
+\begin{itemize}
+    \item [Model 1]: [Brief description of the model and any relevant tuning factors.]
+    \item [Model 2]: [Brief description of the model and any relevant tuning factors.]
+    \item [Model 3]: [Brief description of the model and any relevant tuning factors.]
+    \item [Continue as necessary with additional models.]
+\end{itemize}
+
+We discard potential baselines such as [Baseline 1], [Baseline 2], and [Baseline 3] since previous work [References] has validated their inferiority in this context. 
+
+\subsubsection{Hyper-parameter Settings}
+
+For fair comparison, all models are trained from scratch initialized with [initialization method]. The models are optimized by [optimizer] with a learning rate of [value] and a mini-batch size of [value]. The early stopping strategy is consistent with [Reference]. The proposed [Proposed Method] inherits the optimal values of the shared hyperparameters. For the unique ones of [Proposed Method], we tune [hyperparameter 1], [hyperparameter 2], and [hyperparameter 3] within the ranges of [range 1], [range 2], and [range 3], respectively.
+
+\subsection{Performance Comparison (RQ1)}
+
+\subsubsection{Comparison with [Specific Method]}
+
+[Table Z shows the results comparing the proposed method with the specific method.] We find that:
+\begin{itemize}
+    \item [Observation 1]
+    \item [Observation 2]
+    \item [Observation 3]
+\end{itemize}
+
+[Continue observations as necessary.]
+
+\subsubsection{Comparison with the State-of-the-Arts}
+
+In [Table A], we summarize the performance comparison with various baseline methods. We find that:
+\begin{itemize}
+    \item [Observation 1]
+    \item [Observation 2]
+    \item [Observation 3]
+\end{itemize}
+
+\subsection{Benefits of [Proposed Method] (RQ2)}
+
+In this section, we examine the benefits of [Proposed Method] from three dimensions: [Dimension 1], [Dimension 2], and [Dimension 3]. Due to space constraints, we focus on [specific method].
+
+\subsubsection{[First Dimension]}
+
+[Description of experiments related to the first dimension and key findings.]
+
+\subsubsection{[Second Dimension]}
+
+[Description of experiments related to the second dimension and key findings.]
+
+\subsubsection{[Third Dimension]}
+
+[Description of experiments related to the third dimension and key findings.]
+
+\subsection{Study of [Proposed Method] (RQ3)}
+
+We move on to studying different designs in [Proposed Method]. We first investigate the impact of [factor]. We then explore [another factor]. Lastly, we study the influence of [another factor]. Due to space limitation, we omit the results on [dataset].
+
+\subsubsection{Effect of [Factor]}
+
+[Results and observations regarding the factor.]
+
+\subsubsection{Effect of Pre-training}
+
+We explore whether the recommendation performance benefits from the pre-trained model. Our findings indicate that [key results and observations].
+
+\subsubsection{Effect of [Factors in SSL Objective]}
+
+We also study the effect of the choice of negative samples in the SSL task. We examine [variant 1] and [variant 2] and report the comparison in [Table B].
+
+[Conclusion of the results chapter.]
+```

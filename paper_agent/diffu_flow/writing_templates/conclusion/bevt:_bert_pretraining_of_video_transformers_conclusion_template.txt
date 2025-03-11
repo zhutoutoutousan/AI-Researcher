@@ -1,0 +1,11 @@
+\section{Conclusion and Discussion}
+
+In the [field area], [main topic or technology] has become the de-facto standard architecture and has reshaped [description of the tasks impacted] in the past [time period]. This is largely driven by [a specific technique or method] that demonstrates [capabilities or advantages]. Recent advances in [related field or application] motivate a line of work to explore [specific application or extension].
+
+Unlike [previous works or approaches], we take a step forward and [describe the innovative aspect of the work]. This may look very [nature of the contribution], but is worth being extensively studied. We introduced [module or method name] that [brief description of what the method achieves]. We demonstrate that [key finding or contribution]. Empowered by the simple design of [method name], we achieved [describe performance or results].
+
+We hope our study will inspire more research efforts in this direction.
+
+\subsection{Limitations}
+
+Although our [describe design or approach] has significantly improved [aspect of the research], [method name] still requires [explain any limitations, e.g., computational resources, time, etc.]. This would be the biggest obstacle in [describe the challenge or future implications]. The idea proposed in [related work or study] may help, i.e., [briefly describe the proposed idea], which is left as future work.

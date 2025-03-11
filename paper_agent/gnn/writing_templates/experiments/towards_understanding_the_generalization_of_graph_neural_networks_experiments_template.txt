@@ -1,0 +1,17 @@
+\section{Experiments}
+
+\subsection{Experimental Setup}
+We conduct experiments on widely adopted benchmark datasets, including [Dataset 1], [Dataset 2], and [Dataset 3] \cite{Citation1; Citation2}. The [performance metric 1] and [performance metric 2] (i.e., the absolute value of the difference between [metric description 1] and [metric description 2]) are used to estimate the [specific evaluation measure]. Following the [specific learning setting], in each run, [percentage]% sampled nodes determined by a [random method] are used as the training set and the rest nodes are treated as the test set. The number of iterations is fixed to $T = [number]$. We independently repeat the experiments [number] times and report the mean value and standard deviations of all runs. Please see Appendix [Appendix Letter] for more detailed settings.
+
+\subsection{Experimental Results}
+The [evaluation metric 1] and [evaluation metric 2] comparisons are presented in Table [Table Number] and Table [Table Number], respectively. We have the following observations: 
+
+(1) [Observation 1: general finding and comparison with existing methods, include any relevant propositions or analyses]. 
+
+(2) [Observation 2: detailed performance comparison between similar models and discussion on layer impacts]. 
+
+(3) [Observation 3: discussion on competitive models and their limitations, suggesting future directions]. 
+
+(4) [Observation 4: comparative analysis of models in different learning settings and implications for performance];
+ 
+Furthermore, the [metric description] of [model name] on training and test samples with respect to iterations are presented in Figure [Figure Number]. It can be seen that the [specific observation regarding loss or accuracy] decreases/increases with the increase of iterations, as demonstrated by [Theorem number]. In general, the theoretical results are supported by the experimental results. It is worth pointing out that our analysis is only oriented to [specific focus of analysis]. [Additional details explaining the relationship between metrics.]

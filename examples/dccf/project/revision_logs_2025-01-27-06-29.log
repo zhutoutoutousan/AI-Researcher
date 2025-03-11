@@ -1,0 +1,44 @@
+2025-01-27 06:29:38,093 [INFO] 
+==================================================
+Starting experiment set: refined_base
+==================================================
+2025-01-27 06:29:38,141 [INFO] Starting experiment: refined_base
+2025-01-27 06:29:38,142 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 3, 'n_intents': 128, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.2, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda')}
+2025-01-27 06:29:41,296 [ERROR] Error in experiment refined_base: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-27 06:29:41,296 [ERROR] Traceback (most recent call last):
+  File "/workplace/project/run_model_revision.py", line 245, in main
+    results[name] = train_and_evaluate(config, name)
+  File "/workplace/project/run_model_revision.py", line 94, in train_and_evaluate
+    scheduler = torch.optim.ReduceLROnPlateau(optimizer, mode='max', factor=0.5, patience=5, verbose=True)
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+
+2025-01-27 06:29:41,350 [INFO] 
+==================================================
+Starting experiment set: hierarchical_intent
+==================================================
+2025-01-27 06:29:41,350 [INFO] Starting experiment: hierarchical_intent
+2025-01-27 06:29:41,350 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 3, 'n_intents': 256, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.2, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda')}
+2025-01-27 06:29:43,252 [ERROR] Error in experiment hierarchical_intent: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-27 06:29:43,252 [ERROR] Traceback (most recent call last):
+  File "/workplace/project/run_model_revision.py", line 245, in main
+    results[name] = train_and_evaluate(config, name)
+  File "/workplace/project/run_model_revision.py", line 94, in train_and_evaluate
+    scheduler = torch.optim.ReduceLROnPlateau(optimizer, mode='max', factor=0.5, patience=5, verbose=True)
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+
+2025-01-27 06:29:43,307 [INFO] 
+==================================================
+Starting experiment set: deep_gnn
+==================================================
+2025-01-27 06:29:43,307 [INFO] Starting experiment: deep_gnn
+2025-01-27 06:29:43,307 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 4, 'n_intents': 128, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.3, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda')}
+2025-01-27 06:29:45,277 [ERROR] Error in experiment deep_gnn: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-27 06:29:45,277 [ERROR] Traceback (most recent call last):
+  File "/workplace/project/run_model_revision.py", line 245, in main
+    results[name] = train_and_evaluate(config, name)
+  File "/workplace/project/run_model_revision.py", line 94, in train_and_evaluate
+    scheduler = torch.optim.ReduceLROnPlateau(optimizer, mode='max', factor=0.5, patience=5, verbose=True)
+AttributeError: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+
+2025-01-27 06:29:45,331 [INFO] 
+Revision experiments completed. Results saved.

@@ -1,0 +1,77 @@
+\section{[Section Title]}
+
+In this section, we present the [Module Name]. Its idea is to use [key concept] to address [challenge]. To further incorporate [additional factors], we introduce [new mechanism/technique] into the model.
+
+\subsection{Overall [Module Name] Architecture}
+
+Figure [X] shows the overall architecture of [Module Name]. Given a [description of input data], [Module Name] extracts all [description of the output]. The goal of [Module Name] is to [describe the goal]. This process can be decomposed into three components: [component 1], [component 2], and [component 3].
+
+We denote the output of the $(l)$-th [Module Name] layer as $H^{(l)}$, which is also the input of the $(l + 1)$-th layer. By stacking $L$ layers, we can get the node representations of the whole [data type] $H^{(L)}$, which can be used for [subsequent applications].
+
+\subsection{[Component 1 Title]}
+
+The first step is to calculate [description of the calculation]. We first give a brief introduction to [related techniques] as follows:
+
+\[
+H^{l}[t] \leftarrow \text{Aggregate} \, \forall s \in N(t), \forall e \in E(s, t) \, \text{Attention}(s, t) \cdot \text{Message}(s)
+\]
+
+where there are three basic operators: [Operator 1], [Operator 2], and [Operator 3].
+
+For example, [describe a related technique briefly]. Formally, [related technique notation].
+
+Though [related technique limitation], it assumes that [incorrect assumption]. 
+
+In view of this limitation, we design the [New Component 1] mechanism. Given a target node $t$, and all its neighbors $s \in N(t)$, we want to calculate [description of calculation based on new mechanism]. 
+
+Inspired by [inspiration source], we [describe the process]. We propose to [describe the parameterization]. Specifically, we calculate [output calculation] by:
+
+\[
+\text{Attention}_{[Module Name]}(s, e, t) = \text{Softmax} \, \forall s \in N(t) \parallel i \in [1, h] \text{ATT-head}^{i}(s, e, t)
+\]
+
+\[
+\text{ATT-head}^{i}(s, e, t) = [description of calculation]
+\]
+
+[Provide detailed explanation of each term in the equations]
+
+Finally, [describe what happens next in the process].
+
+\subsection{[Component 2 Title]}
+
+Parallel to the calculation of [description], we pass information from [source nodes] to [target nodes]. Similar to [previous process], we would like to incorporate [description of edge dependencies]. For a pair of nodes $e = (s, t)$, we calculate its multi-head [Message calculation] by:
+
+\[
+\text{Message}_{[Module Name]}(s, e, t) = \parallel i \in [1, h] \text{MSG-head}^{i}(s, e, t)
+\]
+
+To get the $i$-th message head $ \text{MSG-head}^{i}(s, e, t)$, we first [describe projection], followed by [describe incorporation of edge dependency]. 
+
+The final step is to [describe how the messages are combined].
+
+\subsection{[Component 3 Title]}
+
+With the [output from component 1] and [output from component 2] calculated, we need to aggregate them from the source nodes to the target node. Note that [describe how previous calculations interact]. We can thus simply use [weights] to average the corresponding messages from [source nodes]:
+
+\[
+e H^{(l)}[t] = \bigoplus \, \forall s \in N(t) \text{Attention}_{[Module Name]}(s, e, t) \cdot \text{Message}_{[Module Name]}(s, e, t)
+\]
+
+This aggregates information to the target node $t$ from all its neighbors.
+
+The final step is to [describe final transformation to obtain the output]. In this way, we get the $(l)$-th [Module Name] layer's output $H^{(l)}[t]$ for the target node $t$.
+
+\subsection{[New Mechanism Title]}
+
+By far, we present [Module Name]. Next, we introduce the [New Mechanism Title] technique for [describe purpose of the new mechanism].
+
+The traditional way to [describe traditional approach] may lead to [describe downside]. Therefore, a proper way to model [describe the updated model] is to [describe improved approach].
+
+In light of this, we propose [describe new mechanism]. [New Mechanism] is inspired by [inspiration source].
+
+Specifically, given [description of parameters], we denote [description of variables]. Therefore, [description of relationship between variables].
+
+Finally, [describe what happens with this mechanism]. 
+
+This provides a comprehensive overview of [Module Name] for [application area].

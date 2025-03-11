@@ -1,0 +1,13 @@
+\section*{Abstract}
+
+Item recommendation is the task of predicting a personalized ranking on a set of items (e.g. [specific items]). In this paper, we investigate [the specific scenario being addressed, e.g., a particular type of feedback]. There are many methods for item recommendation from [feedback type] like [method 1] or [method 2]. Even though these methods are designed for the item prediction task of personalized ranking, [describe the limitation of existing methods]. 
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3]. Formally, we define [concept] as follows:
+
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+
+We also provide [a generic algorithm or method] for optimizing models with respect to [proposed optimization criterion]. The learning method is based on [specific approach, e.g., a technique like stochastic gradient descent]. 
+
+Specifically, we show how to apply our method to [specific models or techniques]. Our experiments indicate that for the task of [specific task], [our optimization method] outperforms [baseline methods]. The results show the importance of [significance of the proposed method or finding].

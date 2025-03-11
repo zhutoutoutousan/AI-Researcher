@@ -1,0 +1,39 @@
+\section{Preliminaries}
+
+In this section, we first formalize the problem and discuss existing solutions for [specific research area]. We then shortly recapitulate the [relevant model or technique], highlighting its limitations caused by [specific reasons].
+
+\subsection{Learning from [Type of Data]}
+
+Let $M$ and $N$ denote the [relevant entities, e.g., number of users and items]. We define the [data structure] $Y \in \mathbb{R}^{M \times N}$ from [description of the data source] as follows:
+
+$$
+y_{ui} = 
+\begin{cases} 
+1 & \text{if } [condition for interaction] \\ 
+0 & \text{otherwise}
+\end{cases}
+$$
+
+Here, a value of 1 for $y_{ui}$ indicates that [interpretation of a value of 1], while a value of 0 indicates [interpretation of a value of 0]. This presents challenges in learning from [Type of Data], since it provides only [description of the data-related challenges].
+
+The recommendation problem with [Type of Data] is formulated as the problem of estimating the scores of unobserved entries in $Y$, which are used for [purpose of estimation]. Model-based approaches assume that [description of model assumptions]. Formally, they can be expressed as learning $\hat{y}_{ui} = f(u, i | \Theta)$, where $\hat{y}_{ui}$ denotes the predicted score of interaction $y_{ui}$, $\Theta$ denotes [model parameters], and $f$ denotes [function description].
+
+To estimate parameters $\Theta$, existing approaches generally follow [description of the optimization paradigm used]. Two types of objective functions are most commonly used in literature - [objective function type 1] and [objective function type 2]. [Description of common methodologies associated with these objective functions].
+
+Moving one step forward, we propose [method name] that parameterizes [description of what is parameterized] to estimate $\hat{y}_{ui}$. As such, it naturally supports [details about the capabilities of the proposed method].
+
+\subsection{[Relevant Model or Technique]}
+
+[Description of how the model or technique works, including relevant variables and parameters.]
+
+Formally, we express [primary formulation] as:
+
+$$
+\hat{y}_{ui} = f(u, i | [variables]) = [mathematical expression]
+$$
+
+where [explanation of parameters in the expression]. As we can see, [discussion of assumptions made by the model or technique].
+
+[Example, if applicable, illustrating the limitations of the current approaches, including potential issues faced.]
+
+The above example shows [discussion of the limitations]. One way to resolve the issue is to [description of alternative solutions]. However, it may [discuss possible trade-offs related to this solution]. In this work, we address the limitations by [description of how the proposed method overcomes these issues].

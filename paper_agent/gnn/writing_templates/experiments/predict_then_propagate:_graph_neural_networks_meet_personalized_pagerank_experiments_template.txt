@@ -1,0 +1,55 @@
+```latex
+\section{Experimental Setup}
+
+Recently, many experimental evaluations have suffered from [insert problem, e.g., superficial statistical evaluation and experimental bias]. To address this challenge, we propose [module name] which is aimed at ensuring [insert main objective].
+
+Our method consists of the following key components:
+\begin{itemize}
+    \item First, we [describe the first main action taken].
+    \item Second, we [describe the second main action taken].
+    \item Third, we [describe the third main action taken].
+\end{itemize}
+
+Formally, we define [insert key concept to clarify] as follows:
+\begin{equation} 
+    [insert equation]
+\end{equation}
+
+To prevent [insert specific issue like overfitting], we [insert strategy or approach taken, e.g., utilize the same parameters across datasets]. 
+
+Specifically, to ensure the statistical robustness of our experimental setup, we [insert method used for statistical evaluation, e.g., calculate confidence intervals via bootstrapping]. We also report [insert description of statistical tests performed, e.g., p-values of a paired t-test for main claims]. 
+
+Details of our experimental setup can be found in [insert reference to an appendix or supplementary material].
+
+\subsection{Datasets}
+We utilize [insert number] datasets for evaluation, including [dataset names with brief descriptions]. [Insert information about how the data is represented, e.g., features used, any preprocessing].
+
+Table [insert table number]: [Title for the table summarizing dataset statistics].
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        [Insert column headings] \\
+        \hline
+        [Insert row content for the datasets] \\
+        \hline
+    \end{tabular}
+    \caption{[Insert caption explaining the table]}
+    \label{tab:[insert label]}
+\end{table}
+
+\subsection{Baseline Models}
+For our analysis, we compare against [insert number] state-of-the-art models including [insert model names with citations]. We also consider [insert any additional baseline models that are relevant].
+
+To ensure fair comparisons, all models use [insert structural similarity or feature shared among the models].
+
+\subsection{Model Hyperparameters}
+To maintain comparability across models, we adopted a [insert type of model] that closely resembles [insert baseline model] with [insert details about architecture and parameters]. We specify hyperparameters such as [insert relevant hyperparameters] that were optimized specifically for [insert context, e.g., the datasets used].
+
+\section{Results}
+
+The results for [insert performance metric, e.g., accuracy, F1-score] are summarized in Table [insert table number]. 
+Notably, [insert key findings regarding model performance compared to baselines]. This thorough setup further reveals that [insert significant observations about previous claims or assumptions].
+
+Concluding this section, we argue that [insert final explanation or summary of findings in relation to the experimental setup].
+```

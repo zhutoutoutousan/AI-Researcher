@@ -1,0 +1,44 @@
+\section{Preliminaries}
+
+\subsection{Problem Definition}
+Assume that a system has a set of [define set or variables, e.g., users, items] denoted by [notation]. Each entity [entity] has [describe the relevant characteristic or data structure, e.g., sequences of actions] represented as [notation]. We denote [concept] as [notation], where [describe the attributes or dimensions involved]. In practice, [brief explanation of practical considerations, e.g., sequence length management]. The goal of the [task] is to [state the main objective or prediction] among the set [notation], given [relevant input data notation].
+
+\subsection{Method Overview}
+To tackle [challenge], our method consists of [number] main components: [component 1], [component 2], and [component 3]. Specifically, we define [concept] as follows:
+\begin{equation}
+    [mathematical formulation]
+\end{equation}
+
+\noindent where [explanation of terms used in the equation]. [Provide transition phrases to connect with the next subsection or paragraph.]
+
+\subsection{Comparison with Existing Approaches}
+[Several sentences comparing the proposed method with existing approaches, highlighting strengths and weaknesses.]
+
+\subsection{Technical Framework}
+Formally, we incorporate [concept or technique] to achieve [objective]. [A paragraph describing the detailed workflow of the proposed method or module.] The main components can be mathematically formulated as follows:
+\begin{align}
+    [equation for component 1] \\
+    [equation for component 2] \\
+    [equation for component 3]
+\end{align}
+
+\noindent Each term in the equations is explained as follows:
+\begin{itemize}
+    \item [Term 1]: [Explanation]
+    \item [Term 2]: [Explanation]
+    \item [Term 3]: [Explanation]
+\end{itemize}
+
+\subsection{Instance Discrimination Framework}
+Building upon [reference to recent advances], we leverage [specific approach] to [outline the main idea]. Formally, given [a parameter or variable], we define [concept] as follows:
+\begin{equation}
+    [mathematical formulation related to instance discrimination]
+\end{equation}
+
+\noindent [Several sentences explaining the motivation and intuition behind the instance discrimination framework.] The learning objective can be summarized by:
+\begin{equation}
+    [loss function]
+\end{equation}
+
+\subsection{Conclusion}
+In summary, this section establishes [recap of what was covered and its significance]. Future work will focus on [brief mention of possible future directions or improvements].

@@ -1,0 +1,48 @@
+```latex
+\section{Experiments}
+
+\subsection{Experimental Setting}
+
+\subsubsection{Datasets}
+We conduct experiments on [number] public datasets. [Dataset 1], [Dataset 2], and [Dataset 3] are [description of subcategories].
+
+We follow [previous works] to prepare the datasets. In detail, we only keep the '[specific criteria]' datasets, in which all users and items have at least [number] interactions. The statistics of the prepared datasets are summarized in [reference to appendix].
+
+\subsubsection{Evaluation Metrics}
+We follow [previous works] to [describe the evaluation methodology]. Performance is evaluated on a variety of evaluation metrics, including [metric 1] and [metric 2] where $k \in \{value_1, value_2\}$.
+
+\subsubsection{Baseline Methods}
+We include [number] groups of baseline methods for comparison:
+\begin{itemize}
+    \item Non-sequential models: [Model 1] characterizes [description of method] and optimizes through [optimization technique].
+    \item Standard sequential models: We include solutions that [description of models].
+    \item Sequential models with additional [SSL or other category]: [Model 2] [description], while [Model 3] focuses on [description].
+    \item Sequential models considering [latent factors or other category]: We include [Model 4], which [description of method].
+\end{itemize}
+
+\subsubsection{Implementation Details}
+Our method is implemented using [software/library]. [Parameters] are tuned from [parameter ranges]. The model is optimized using [optimization algorithm] with [specific settings]. All experiments are run on [hardware specification].
+
+\subsection{Performance Comparison}
+Table [number] shows the results of different methods on all datasets. We have the following observations. First, [Discussion of results]. As for [specific model group], [Model X] [description of performance]. This demonstrates [effectiveness or conclusions drawn].
+
+Moreover, though [Model Y] and [Model Z] adopt [approaches], [observations about performance]. 
+
+Finally, [Model A] consistently outperforms existing methods on all datasets. The average improvements compared to the best baseline range from [value] to [value] in [metrics].
+
+\subsection{Robustness Analysis}
+Robustness w.r.t. [specific factor]. To check whether [model] improves the robustness, we split [description of methodology]. 
+
+Further, we analyze [add analysis on another aspect].
+
+\subsection{Ablation Study}
+Our proposed [model name] contains [components]. To verify the effectiveness of each component, we conduct an ablation study on [number] datasets and report results in Table [number]. 
+
+From the results, we observe that [discussion of findings].
+
+\subsection{Hyper-parameter Sensitivity}
+[Discussion about hyper-parameters]. The results shown in Figure [number] indicate that: (1) [finding]. (2) [another finding].
+
+\subsection{Case Study}
+In [Dataset description], we utilize [attributes] to study the effectiveness of the proposed [model name] both quantitatively and qualitatively. [Summary of insights or methodology used in this study].
+```

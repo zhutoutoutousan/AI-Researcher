@@ -1,0 +1,78 @@
+\section{METHODOLOGY}
+
+In this section, we describe our proposed [Module Name] framework in detail. [Module Name] is a [brief description of the framework], as illustrated in Fig. [Figure Number]. Complementary to [Previous Work/Technique] (the upper half of the figure), [Additional Methodology or Component] (the lower half of the figure) empowers [the framework/task] with [description of the benefit or analysis] for learning effective [objectives].
+
+\subsection{[Subsection Title 1]}
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method.]
+
+[Paragraph describing the detailed workflow of the module.]
+
+Formally, we define [Concept 1] as follows:
+
+\begin{equation}
+[Mathematical Expression]
+\end{equation}
+
+where [explanations of each term in the equations].
+
+The final [output type] is expressed as:
+
+\begin{equation}
+[Mathematical Expression]
+\end{equation}
+
+\subsection{[Subsection Title 2]}
+
+To empower [task/application] with [specific aspect], we equip our [Module Name] with [Technique or Approach]. Specifically, we first [describe the action taken], leading to [outcome].  
+
+\begin{equation}
+[Mathematical Expression]
+\end{equation}
+
+The [advantage] of [Technique/Approach] is as follows:
+
+1. [First advantage description]
+2. [Second advantage description]  
+
+Given the [output], we perform [process] in each layer:
+
+\begin{equation}
+[Mathematical Expression]
+\end{equation}
+
+However, [discuss the limitations or challenges in the current approach]. Therefore, we adopt [New Technique/Method], whose key idea is [describe key idea or method]. 
+
+\begin{equation}
+[Mathematical Expression]
+\end{equation}
+
+where [explanation of variables or parameters].
+
+Thus, we update the [process] rules as follows:
+
+\begin{equation}
+[Mathematical Expression]
+\end{equation}
+
+where [description of resulting variables]. Note that [discuss any considerations about computing or storage requirements].
+
+\subsection{[Subsection Title 3]}
+
+[Discuss the existing methods and their shortcomings, using several sentences for comparison.]
+
+In our proposed method, we address [specific issue(s) with existing methods]. Therefore, we structure the [process] for [task] as follows:
+
+\begin{equation}
+[Mathematical Expression]
+\end{equation}
+
+where [explanation of variables or parameters]. To prevent [specific issue], we implement [specific technique or method].
+
+The overall loss function is defined as:
+
+\begin{equation}
+L = [loss expression]
+\end{equation}
+
+where [explanations of each term in the loss function].

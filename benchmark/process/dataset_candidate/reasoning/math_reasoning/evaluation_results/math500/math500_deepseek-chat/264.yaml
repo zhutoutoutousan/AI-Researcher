@@ -1,0 +1,87 @@
+answer: "To solve the problem, let's analyze the given figure step by step.\n\n1.\
+  \ **Square \\( CDEG \\):**\n   - Since \\( CDEG \\) is a square with \\( CD = 3\
+  \ \\), all sides of the square are equal. Therefore, \\( CE = 3 \\).\n\n2. **Rectangle\
+  \ \\( BEFH \\):**\n   - The rectangle \\( BEFH \\) has \\( BE = 5 \\). Since \\\
+  ( BE \\) is one of the sides of the rectangle, and \\( BH \\) is the other side,\
+  \ we need to find \\( BH \\).\n\n3. **Relationship Between \\( CE \\) and \\( BE\
+  \ \\):**\n   - Notice that \\( CE \\) is part of the square \\( CDEG \\), and \\\
+  ( BE \\) is part of the rectangle \\( BEFH \\). The length \\( CE \\) is perpendicular\
+  \ to \\( BE \\), forming a right angle.\n\n4. **Using the Pythagorean Theorem:**\n\
+  \   - Since \\( CE \\) and \\( BE \\) are perpendicular, the length \\( BH \\) can\
+  \ be found using the Pythagorean theorem:\n     \\[\n     BH = \\sqrt{BE^2 - CE^2}\
+  \ = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4.\n     \\]\n\n5. **Final\
+  \ Answer:**\n   - The length \\( BH \\) is \\( 4 \\).\n\nFinal Answer: The final\
+  \ answer is \\(4\\). I hope it is correct."
+gt_answer: 1\frac{4}{5}
+prompt: "Problem:\nFind the domain of the expression  $\\frac{\\sqrt{x-2}}{\\sqrt{5-x}}$.}\n\
+  \nSolution:\nThe expressions inside each square root must be non-negative. Therefore,\
+  \ $x-2 \\ge 0$, so $x\\ge2$, and $5 - x \\ge 0$, so $x \\le 5$. Also, the denominator\
+  \ cannot be equal to zero, so $5-x>0$, which gives $x<5$. Therefore, the domain\
+  \ of the expression is $\\boxed{[2,5)}$.\nFinal Answer: The final answer is $[2,5)$.\
+  \ I hope it is correct.\n\nProblem:\nIf $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B}\
+  \ = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$\n\nSolution:\nWe have that\
+  \ $\\det (\\mathbf{A} \\mathbf{B}) = (\\det \\mathbf{A})(\\det \\mathbf{B}) = (2)(12)\
+  \ = \\boxed{24}.$\nFinal Answer: The final answer is $24$. I hope it is correct.\n\
+  \nProblem:\nTerrell usually lifts two 20-pound weights 12 times. If he uses two\
+  \ 15-pound weights instead, how many times must Terrell lift them in order to lift\
+  \ the same total weight?\n\nSolution:\nIf Terrell lifts two 20-pound weights 12\
+  \ times, he lifts a total of $2\\cdot 12\\cdot20=480$ pounds of weight.  If he lifts\
+  \ two 15-pound weights instead for $n$ times, he will lift a total of $2\\cdot15\\\
+  cdot n=30n$ pounds of weight.  Equating this to 480 pounds, we can solve for $n$:\n\
+  \\begin{align*}\n30n&=480\\\n\\Rightarrow\\qquad n&=480/30=\\boxed{16}\n\\end{align*}\n\
+  Final Answer: The final answer is $16$. I hope it is correct.\n\nProblem:\nIf the\
+  \ system of equations\n\n\\begin{align*}\n6x-4y&=a,\\\n6y-9x &=b.\n\\end{align*}has\
+  \ a solution $(x, y)$ where $x$ and $y$ are both nonzero,\nfind $\\frac{a}{b},$\
+  \ assuming $b$ is nonzero.\n\nSolution:\nIf we multiply the first equation by $-\\\
+  frac{3}{2}$, we obtain\n\n$$6y-9x=-\\frac{3}{2}a.$$Since we also know that $6y-9x=b$,\
+  \ we have\n\n$$-\\frac{3}{2}a=b\\Rightarrow\\frac{a}{b}=\\boxed{-\\frac{2}{3}}.$$\n\
+  Final Answer: The final answer is $-\\frac{2}{3}$. I hope it is correct.\n\nPlease\
+  \ answer the following math question. You should think step by step to solve it.\n\
+  \nProblem:\nIn the figure below, quadrilateral $CDEG$ is a square with $CD = 3$,\
+  \ and quadrilateral $BEFH$ is a rectangle. If $BE = 5$, how many units is $BH$?\
+  \ Express your answer as a mixed number. [asy]\nunitsize(5mm);\ndefaultpen(linewidth(.7pt)+fontsize(8pt));\n\
+  \npair A=(0,0), B=(3,0), C=(6,0), D=(9,0), Ep=(9,3), G=(6,3);\npair F0=bisectorpoint(B,2*Ep-B),\
+  \ H0=bisectorpoint(Ep,2*B-Ep);\npair H=extension(B,H0,A,G);\npair F=extension(Ep,F0,A,G);\n\
+  \ndraw(H--B--Ep--F--A--D--Ep--G--C);\nlabel(\"$A$\",A,S);\nlabel(\"$B$\",B,S);\n\
+  label(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\nlabel(\"$E$\",Ep,E);\nlabel(\"$F$\",F,N);\n\
+  label(\"$G$\",G,NW);\nlabel(\"$H$\",H,NW);\n[/asy]\n\nPlease given your final answer\
+  \ (answer ONLY) within the format of `Final Answer: The final answer is <answer>.\
+  \ I hope it is correct.` after your reasoning \nFor example: According to ...\n\
+  Final Answer: The final answer is $24$. I hope it is correct.\n"
+question: 'In the figure below, quadrilateral $CDEG$ is a square with $CD = 3$, and
+  quadrilateral $BEFH$ is a rectangle. If $BE = 5$, how many units is $BH$? Express
+  your answer as a mixed number. [asy]
+
+  unitsize(5mm);
+
+  defaultpen(linewidth(.7pt)+fontsize(8pt));
+
+
+  pair A=(0,0), B=(3,0), C=(6,0), D=(9,0), Ep=(9,3), G=(6,3);
+
+  pair F0=bisectorpoint(B,2*Ep-B), H0=bisectorpoint(Ep,2*B-Ep);
+
+  pair H=extension(B,H0,A,G);
+
+  pair F=extension(Ep,F0,A,G);
+
+
+  draw(H--B--Ep--F--A--D--Ep--G--C);
+
+  label("$A$",A,S);
+
+  label("$B$",B,S);
+
+  label("$C$",C,S);
+
+  label("$D$",D,S);
+
+  label("$E$",Ep,E);
+
+  label("$F$",F,N);
+
+  label("$G$",G,NW);
+
+  label("$H$",H,NW);
+
+  [/asy]'

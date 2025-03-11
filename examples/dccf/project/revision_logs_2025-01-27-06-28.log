@@ -1,0 +1,35 @@
+2025-01-27 06:28:01,395 [INFO] 
+==================================================
+Starting experiment set: refined_base
+==================================================
+2025-01-27 06:28:01,443 [INFO] Starting experiment: refined_base
+2025-01-27 06:28:01,443 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 3, 'n_intents': 128, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.2, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda', index=1)}
+2025-01-27 06:28:03,341 [ERROR] Error in experiment refined_base: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2025-01-27 06:28:03,394 [INFO] 
+==================================================
+Starting experiment set: hierarchical_intent
+==================================================
+2025-01-27 06:28:03,394 [INFO] Starting experiment: hierarchical_intent
+2025-01-27 06:28:03,394 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 3, 'n_intents': 256, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.2, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda', index=1)}
+2025-01-27 06:28:05,196 [ERROR] Error in experiment hierarchical_intent: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2025-01-27 06:28:05,252 [INFO] 
+==================================================
+Starting experiment set: deep_gnn
+==================================================
+2025-01-27 06:28:05,253 [INFO] Starting experiment: deep_gnn
+2025-01-27 06:28:05,253 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 4, 'n_intents': 128, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.3, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda', index=1)}
+2025-01-27 06:28:06,913 [ERROR] Error in experiment deep_gnn: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2025-01-27 06:28:06,968 [INFO] 
+Revision experiments completed. Results saved.

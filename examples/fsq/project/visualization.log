@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workplace/project/visualize_results.py", line 154, in <module>
+    main()
+  File "/workplace/project/visualize_results.py", line 140, in main
+    plot_training_curves('hierarchical_quantization_history.json')
+  File "/workplace/project/visualize_results.py", line 19, in plot_training_curves
+    with open(history_file, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'hierarchical_quantization_history.json'

@@ -1,0 +1,34 @@
+\section{Introduction}
+
+Models such as [model types/techniques], which [describe main function of models], build complicated transformations by composing a sequence of transformations to a hidden state:
+
+\begin{equation}
+h_{t+1} = h_{t} + f(h_{t}, \theta_{t}) \tag{1}
+\end{equation}
+
+where $t \in \{0 \ldots T\}$ and $h_{t} \in \mathbb{R}^{D}$. These iterative updates can be seen as [explanation/conceptual framework].
+
+What happens as we [challenge context]? In the limit, we parameterize [concept] using [framework/novel approach]:
+
+\begin{equation}
+\frac{d h(t)}{dt} = f(h(t), t, \theta) \tag{2}
+\end{equation}
+
+\begin{figure}[ht]
+\centering
+    \includegraphics[width=0.8\textwidth]{filename}
+    \caption{Left: [Description of the first model]. Right: [Description of the second model].}
+    \label{fig:label}
+\end{figure}
+
+Starting from the input layer $h(0)$, we can define the output layer $h(T)$ to be [explanation of the output layer in relation to the proposed method]. This value can be computed by [explain solution approach or methodology used].
+
+Defining and evaluating [subject] using [method/approach] has several benefits:
+
+\begin{itemize}
+    \item \textbf{[Benefit 1]}: [Detailed explanation of benefit 1].
+    \item \textbf{[Benefit 2]}: [Detailed explanation of benefit 2].
+    \item \textbf{[Benefit 3]}: [Detailed explanation of benefit 3].
+\end{itemize}
+
+[Additional context or implications of proposed method]. In Section [number], we [brief overview of topics discussed in following sections].

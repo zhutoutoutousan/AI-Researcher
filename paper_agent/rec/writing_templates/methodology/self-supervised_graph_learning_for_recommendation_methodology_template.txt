@@ -1,0 +1,81 @@
+```latex
+\section{Methodology}
+
+We present the proposed [Method Name], which enhances the main supervised task with [Additional Technique]. Figure [X] illustrates the working flow of [Method Name]. Specifically, the [self-supervised/auxiliary] task is to [describe the task].
+
+To tackle [challenge], our method consists of three main components: 
+\begin{itemize}
+    \item [Component 1]
+    \item [Component 2]
+    \item [Component 3]
+\end{itemize}
+
+\subsection{[Subsection Title]}
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method].
+
+The [graph structure/module] is built upon [describe relevant data or interactions], thus containing the [signal/insight]. Specifically, [describe the context and features involved]. Furthermore, [additional explanation or contextualization]. 
+
+We devise [number] operators on the [structure/context] to create different views of [subject]. The operators can be uniformly expressed as follows:
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+
+We elaborate on the operators as follows:
+
+\begin{itemize}
+    \item \textbf{[Operator 1]}: [Description of Operator 1, including any relevant equations].
+    \item \textbf{[Operator 2]}: [Description of Operator 2, including any relevant equations].
+    \item \textbf{[Operator 3]}: [Description of Operator 3, including any relevant equations].
+\end{itemize}
+
+We apply these augmentations on [context] per [frequency], [additional procedure or considerations].
+
+\subsection{[Next Subsection Title]}
+
+Having established the augmented views of [subject], we treat the views of the same [entity] as the positive pairs (i.e., $\{ ( [view1], [view2] ) | [condition] \}$), and the views of any different [entities] as the negative pairs (i.e., $\{ ( [view1], [view2] ) | [condition] \}$). The auxiliary supervision of positive pairs encourages the consistency between different views for prediction, while the supervision of negative pairs enforces the divergence among [entities]. 
+
+Formally, we follow [prior work] and adopt the [specific loss function] to [maximize/minimize] the agreement of positive pairs and minimize that of negative pairs:
+
+\begin{equation}
+    [Loss Function]
+\end{equation}
+
+We also obtain the loss of the [item/user side] similarly.
+
+\subsection{[Next Subsection Title]}
+
+To improve [task/performance], we leverage a multi-task training strategy to jointly optimize [Primary Task] and the [self-supervised learning task]:
+
+\begin{equation}
+    L = [Main Loss] + \lambda_{1}[Self-Supervised Loss] + \lambda_{2} \| \Theta \|^2
+\end{equation}
+
+Where [description of terms and parameters]. 
+
+\subsection{Theoretical Analyses of [Method Name]}
+
+In this section, we offer in-depth analyses of [Method Name], aiming to answer the question: [Analytical focus/question]. To this end, we probe the [specific loss] and find that [findings/insights]. 
+
+Formally, for [specific entity], the gradient of the loss with respect to the representation is as follows:
+
+\begin{equation}
+    [Mathematical formulation of gradient analysis]
+\end{equation}
+
+Where [description of variables and terms in the equation].
+
+[Further analyses with equations and conclusions].
+
+\subsection{Complexity Analyses of [Method Name]}
+
+In this subsection, we analyze the complexity of [Method Name] based on [specific strategy or model]. The complexity mainly comes from two parts:
+
+\begin{itemize}
+    \item \textbf{[Part 1 Title]}: [Complexity explanation and relevant equations].
+    \item \textbf{[Part 2 Title]}: [Another complexity explanation and relevant equations].
+\end{itemize}
+
+We summarize the time complexity in training between [Prior Model] and [Current Model] in Table [X]. 
+
+```

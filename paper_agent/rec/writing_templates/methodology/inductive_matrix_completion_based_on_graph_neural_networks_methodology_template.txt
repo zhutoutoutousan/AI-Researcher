@@ -1,0 +1,61 @@
+\section{[Main Section Title]}
+
+We now present our [method/module name] framework. We use [symbol/variable] to denote [description of key variable]. In [symbol/variable], a node is either [node type 1] (denoted by [symbol 1]) or [node type 2] (denoted by [symbol 2]). Edges can exist between [description of edge conditions]. Each edge \([symbol 1, symbol 2]\) has a value [value description]. We use [symbol] to denote [set of values] and use [symbol](...) to denote [description of neighbors].
+
+\subsection{[Subsection Title 1]}
+
+The first part of [method/module name] is [description of first component]. For each [description of what is observed], we [explain the extraction/processing]. Algorithm [number] describes [type of procedure]. We will [explain how this feeds into the next step]. Then, for each [testing condition], we again [describe the subsequent steps].
+
+\subsection{[Subsection Title 2]}
+
+The second part of [method/module name] is [description of second component]. Before we [explain the next process], we first [describe the labeling/identification]. The purpose is to [explain the rationale]. Ideally, our [process/technique] should be able to: 1) [condition 1], and 2) [condition 2]. To satisfy these conditions, we propose a [name of proposed technique]: [description of proposed labeling/technique]. Note that [explain any additional insights].
+
+\subsection{[Subsection Title 3]}
+
+The third part of [method/module name] is [description of third component]. In previous approaches such as [comparison to existing approaches], [describe what was traditionally done]. In contrast, [method/module name] [explain new approach]. There are thus [number] components in our approach: 1) [component 1 description], and 2) [component 2 description].
+
+To learn the [description of the key processing], we adopt [name of the technique] as our approach's [functionality description], which has the following form:
+
+\begin{equation}
+[Insert mathematical formulation of key components here]
+\end{equation}
+
+where [description of terms]. We stack [number] layers with [activation function] between two layers. Following [cite references], [description of representation process]:
+
+\begin{equation}
+[Insert explanation of further processing]
+\end{equation}
+
+Next, we pool the [description of outputs] into a [description of the final output structure]. There are many choices such as [other techniques], however, we use a [description of chosen technique] because [reasoning]. 
+
+After obtaining the final [output], we use a [type of model] to output [final result]:
+
+\begin{equation}
+\hat{y} = [description of mapping function]
+\end{equation}
+
+where [description of terms].
+
+\subsection{[Subsection Title 4]}
+
+[Description of loss function]. We minimize [explain objective]:
+
+\begin{equation}
+L = [mathematical formula for loss]
+\end{equation}
+
+where [description of symbols]. 
+
+[Additional regularization description]. [Regularization term explanation]:
+
+\begin{equation}
+L_{reg} = [mathematical formula for regularization]
+\end{equation}
+
+The final loss function is given by:
+
+\begin{equation}
+L_{final} = L + \lambda [L_{reg}],
+\end{equation}
+
+where \(\lambda\) [describe significance]. There are many other approaches to [general challenge], which are left for future work.

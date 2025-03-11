@@ -1,0 +1,21 @@
+```latex
+\section{INTRODUCTION}
+
+\noindent Knowledge graph (KG) has shown great potential in [explain the general significance or application]. The rich [type of information] in KG can [describe the potential benefits or uses]. They not only [first benefit or function], but also [second benefit or function].
+
+Learning high-quality [entities] from such structural knowledge has become [describe the overarching theme]. Earlier works [cite relevant studies] [briefly describe previous approaches]. Some follow-on studies [cite relevant studies] [describe subsequent improvements or methods]. However, these methods struggle to [identify key challenges or limitations]. More recently, a technical trend [cite relevant studies] is to [describe the current approach or trend]. The key idea is to [explain the central concept or methodology]. Benefiting from [explain advantages of this approach], these models achieve [describe the performance outcomes].
+
+Despite their effectiveness, we argue that [introduce key limitations of existing methods]. Specifically, [list and elaborate on limitation one]. An important fact has been ignored: [detail the insight regarding the limitation]. Ignoring [this factor] limits [describe the implication on modeling or performance]. Furthermore, [introduce limitation two]. In these studies, the [describe existing methods' approach], which [explain the limitation of this approach]. Hence, [summarize why existing methods are insufficient].
+
+In this paper, we focus on [state the main focus or objective of the work] by using [describe the method or tool], to [explain the intended outcome or improvement]. We propose a new model, [model name], which consists of [number of components] components to address the limitations: (1) [component name]. [Discuss the component in detail and how it addresses the limitation]. [Further explain any technical aspects, requirements, or constraints]. (2) [second component name]. Unlike [describe contrast with existing methods], we [explain the new approach]. [Detail the strategies used and their impact]. In summary, [highlight the advantages of the new model].
+
+We conduct extensive experiments on [describe datasets or evaluation methods]. Experimental results show that [summarize findings and comparison with state-of-the-art methods]. Furthermore, [mention any additional findings, implications, or interpretability aspects].
+
+We summarize the contributions of this work as:
+
+- \begin{itemize}
+    \item [Contribution one summary];
+    \item [Contribution two summary];
+    \item [Contribution three summary].
+\end{itemize}
+```

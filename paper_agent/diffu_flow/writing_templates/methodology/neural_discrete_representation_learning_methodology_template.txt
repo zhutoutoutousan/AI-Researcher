@@ -1,0 +1,53 @@
+```latex
+\section{[Section Title]}
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. 
+
+To tackle [challenge], our method consists of three main components: 
+\begin{enumerate}
+    \item [Component 1: Brief description]
+    \item [Component 2: Brief description]
+    \item [Component 3: Brief description]
+\end{enumerate}
+
+Formally, we define [concept] as follows: 
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+
+\subsection{[Subsection Title]}
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+[A paragraph describing the detailed workflow of the module]
+
+The representation of [variable] is calculated as follows:
+\begin{equation}
+    [Mathematical expression or procedure]
+\end{equation}
+
+The [term] reflects [brief explanation of what this term represents].
+
+\subsection{[Learning Methodology Title]}
+
+To address [specific aspect], we employ [method]. Although [describe any challenges or limitations], we approximate the gradient [describe approximation method]. 
+
+During [specific pass], [key operation or computation] as shown in equation [number]. 
+
+Specifically, the overall loss function is defined as:
+\begin{equation}
+    L = [Loss function components]
+\end{equation}
+
+where [explanation of each term]. 
+
+The components [list of components] will be optimized by [specify optimization strategy].
+
+\subsection{[Prior Distribution Title]}
+
+We define the prior distribution over [variables] as [categorical or another type]. [Explain any additional modifications or dependencies]. 
+
+[Explain future work or research directions related to this section.]
+
+[Optionally include a figure or diagram reference as needed, e.g., Figure 1: [Brief description of the figure or diagram].]
+```

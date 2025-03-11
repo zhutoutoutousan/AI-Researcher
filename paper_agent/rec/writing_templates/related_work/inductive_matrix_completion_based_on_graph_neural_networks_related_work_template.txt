@@ -1,0 +1,32 @@
+```
+\section{RELATED WORK}
+
+\subsection{Background on [Broad topic]}
+[Multiple sentences explaining the background and importance of the topic]
+
+\subsection{Approaches to [Specific challenge related to the topic]}
+[Describe existing approaches to the specific challenge, citing relevant works with appropriate references.]
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. 
+To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3].
+Formally, we define [concept] as follows:
+\begin{equation}
+[Mathematical formulation of the key components]
+\end{equation}
+Where [Detailed explanation of each term in the equations].
+
+\subsection{Comparison with Existing Models}
+[Several sentences comparing the proposed method with existing approaches]
+Specifically, [highlight key differentiators between the proposed method and existing methods].
+Furthermore, [discuss any limitations of existing methods that your approach addresses].
+
+\subsection{Similar Works}
+Another related previous work is [Citation], which [briefly describe the key points of this work].
+In particular, [explain operation or key insight from this work].
+One limitation of [cited work] is that [describe limitation]. 
+In comparison, our [proposed method] [explanation of how the proposed method overcomes this limitation].
+
+\subsection{Connection to [Further Relevant Area]}
+Learning [specific techniques] [briefly introduce the relevance and significance of the area to your work].
+Our work generalizes this line of research from [A] to [B]. In particular, [discuss any traditional approaches and their relevance].
+Our approach differs in that [describe what makes your approach unique in contrast to existing ones].
+```

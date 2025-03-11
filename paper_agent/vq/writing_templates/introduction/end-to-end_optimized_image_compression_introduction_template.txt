@@ -1,0 +1,12 @@
+```
+\section{Introduction}
+
+Data compression is a fundamental and well-studied problem in [field/discipline], commonly formulated with the goal of [state the primary goal or objective]. The solution relies heavily on [mention key principles, techniques, or theories], and thus the problem is closely related to [mention related concept]. However, [discuss a complication or limitation relevant to the problem]. In this context, known as [specific problem context], one must trade off two competing costs: [first cost] and [second cost]. Different [applications/problems] demand different [trade-off considerations/metrics].
+
+The joint optimization of [first metric] and [second metric] is challenging. Without further constraints, the general problem of [describe the general problem] is [state the level of difficulty or intractability]. For this reason, most existing [relevant methods/techniques] operate by [describe general procedure or methodology], which is referred to as [name the methodology]. For example, [provide examples that illustrate the methodology], where typically the [components of the methodology] are separately optimized [describe optimization process, e.g., through parameter adjustments].
+
+We have developed a [new framework/method] for [briefly describe what the new development accomplishes]. Previously, we demonstrated that [summarize previous findings or models that led to the current work]. Here, we [describe the current optimization strategy] but utilize [mention the key technique or approach used]. Specifically, we [provide detailed description of the innovative component or method], which [explain its significance and how it improves upon previous methods]. This [component or method] is followed by [describe subsequent process or methodology].
+
+For any desired outcome in [related performance metric], the parameters of both [first component] and [second component] are jointly optimized using [mention optimization technique]. To achieve this in the presence of [challenging element], we use [describe alternative strategy or method employed]. The resulting optimization problem bears some resemblance to [related concept or methodology], but differs in [point out key differences]. Finally, rather than [describe common practice], we [explain the proposed approach and how it contributes to the field].
+
+```

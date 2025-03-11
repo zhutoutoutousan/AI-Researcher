@@ -1,0 +1,54 @@
+\section{METHODS}
+
+We propose [Method Name] for addressing [specific challenge]. Specifically, during the [specific stage], we [explain the core idea of the method]. Compared to [comparison baseline], [Method Name] [describe key differences]. We first outline the necessary definitions in Section \ref{sec:preliminaries}, then describe the proposed method in Section \ref{sec:method_description}. Finally, we provide a theoretical analysis in Section \ref{sec:theoretical_analysis}.
+
+\subsection{PRELIMINARIES}
+\label{sec:preliminaries}
+
+Let [define the main concept] represent [specific description], where [list relevant components]. The features can be denoted as [explain the feature representation], where [more details]. It is important to note that there are various types of [relevant tasks], including [list examples]. Our work primarily focuses on the [specific task].
+
+[Introduction to pre-trained models or relevant background knowledge]. With the dataset [Dataset Name] and the loss function [Loss Function], we obtain a pre-trained [Model Type] by minimizing the pre-training loss as follows: 
+
+\begin{equation}
+\text{min } [parameter] \; [Loss Function] (1)
+\end{equation}
+
+\subsection{[METHOD NAME]}
+\label{sec:method_description}
+
+[Name of the method] draws inspiration from [source of inspiration], allowing us to [describe the core mechanism]. Given a [describe what is given], our goal is to obtain [target outcome]. The transformation [specify transformation] operates on [specify what happens], which can be formulated as:
+
+\begin{equation}
+\text{Maximize } [objective function] (2)
+\end{equation}
+
+During the [definition of later stage], [describe what happens with the transformed input]. 
+
+[Detailed explanation of the proposed method's design]. According to [formula or principle], [explain what transformations are possible]. Our [specific component or version of the method] is designed to efficiently [describe functionality], which can be expressed as follows:
+
+\begin{equation}
+[Mathematical formulation of a key component] (3)
+\end{equation}
+
+Then, [explain how input relates to output].
+
+\subsection{[THEORETICAL ANALYSIS]}
+\label{sec:theoretical_analysis}
+
+In this section, we elaborate on the properties of [Method Name] that ensure its practical effectiveness.
+
+Availability. [Discuss the availability and adaptability of the method. Include context on working with different models.]
+
+Transformation Diversity. [Discuss the flexibility of the method concerning various transformation possibilities. Include any necessary comparisons.]
+
+[Propose relevant propositions or claims regarding your method's properties. Use equations and definitions as needed.]
+
+\begin{equation}
+[Mathematical formulation of proposition or claim] (4)
+\end{equation}
+
+[Continue with detailed explanations or proofs of each proposed statement. Clearly denote any assumptions made or specific cases used for demonstration.] 
+
+[Repeat the thorough explanations and reasoning for additional key claims or propositions.]
+
+Ultimately, this discussion demonstrates that [summarize the capabilities of your method and how it addresses the initial problem]. 

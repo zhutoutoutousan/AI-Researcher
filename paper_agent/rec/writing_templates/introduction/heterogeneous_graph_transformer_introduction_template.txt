@@ -1,0 +1,17 @@
+\section{Introduction}
+
+Heterogeneous graphs have been commonly used for [describe application], in which [explain the nature of objects and their interactions]. Some prevalent instances of such systems include [list examples of heterogeneous graphs or systems].
+
+Over the past decade, [summarize previous research efforts and developments in the field]. One of the classical paradigms is to [explain a key approach], such as [example 1] and [example 2]. Recently, in view of [mention recent advancements], there have been several attempts to [discuss recent efforts or methods]. However, these works face several issues: First, [describe first challenge]; Second, [describe second challenge]; Third, [describe third challenge]; Finally, [describe fourth challenge].
+
+Take [specific example] for instance: First, [explain the varied characteristics in the example]; Second, [discuss evolving elements]; Finally, [mention significant scale or complexity].
+
+In light of these limitations and challenges, we propose to [state the overall goal of this work]. In this work, we present [proposed method or architecture name] to address [specific issues].
+
+To handle [specific challenge], we introduce [name the key mechanism or strategy]. Instead of [describe traditional approach], [briefly explain your novel approach]. In specific, [describe how the approach works, including any necessary visuals or figures]. As a result, [summarize the advantages of this new approach]. 
+
+To handle [another specific challenge], we enhance [proposed method name] by proposing [new strategy or technique]. Instead of [describe traditional method], we propose [explain your new approach]. By [describe the method or process], we enable [summarize key benefits of the strategy].
+
+To handle [another challenge related to scale or complexity], we design [name the algorithm or method]. Its main idea is to [describe the core concept or mechanism], since [discuss the limitations of traditional methods]. In addition, it is also designed to [explain how it optimizes performance]. With [algorithm name], all the models, including our proposed method, can [explain how it enhances the train or inference process].
+
+We demonstrate the effectiveness and efficiency of [proposed method name] on [describe dataset or system], making this [position the significance of the work]. Additionally, we also examine it on [mention additional datasets or scenarios]. Experimental results suggest that [summarize findings, mentioning comparisons to existing methods]. We further conduct [describe additional analyses or case studies] to show that [state key insights or contributions of your work].

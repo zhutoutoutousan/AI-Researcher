@@ -1,0 +1,55 @@
+\section{[Section Title]}
+
+In this section, we provide theoretical motivation for a specific [model/type of method] that we will use in the rest of this paper. We consider a [description of the model or method] with the following [defining characteristic or equation]:
+
+\begin{equation}
+H^{(l+1)} = [insert equation or propagation rule here]
+\end{equation}
+
+Here, [describe any relevant components or variables in the equation]. In the following, we show that [explain the theoretical basis or implications of the defined model/method].
+
+\subsection{[Subsection Title]}
+
+We consider [description of the specific aspect of the model/method] defined as follows:
+
+\begin{equation}
+g_{\theta} \star x = [insert relevant equation]
+\end{equation}
+
+where [explain the components of the equation]. The evaluation of [describe computation] is [describe complexity or challenges]. To circumvent this problem, it was suggested that [discuss existing methods/approaches that address the challenge].
+
+Going back to our definition, we now have:
+
+\begin{equation}
+g_{\theta}' \star x \approx [insert corresponding equation]
+\end{equation}
+
+with [explain any new definitions or adjustments made]. Note that this expression is now [describe the properties of the expression]. 
+
+\subsection{[Next Subsection Title]}
+
+A [description of the model/method] can therefore be built by [explain the construction process, using relevant terms]. Now, imagine we limited [describe the limitations or focus for the discussion].
+
+In this way, we can still recover a rich class of [filter functions or models] by [describe what happens when this model/method is applied]. [Provide additional insight into the practical implications or expected results of this model/method].
+
+Furthermore, under these approximations, [restate or simplify previous equations as needed]. The filter parameters can be [discuss parameter sharing or constraints around parameters]. 
+
+Additionally, it can be beneficial to [describe best practices, e.g., constraints, simplification techniques]. This leaves us with the following expression:
+
+\begin{equation}
+g_{\theta} \star x \approx [insert simplified expression here]
+\end{equation}
+
+Note that [discuss any significant observations or properties]. To mitigate any potential issues, we introduce [explain any adjustments or new techniques].
+
+We can generalize this definition to [insert generalization description] as follows:
+
+\begin{equation}
+Z = [insert general expression here]
+\end{equation}
+
+where [describe the components of the generalized expression]. This operation has complexity [discuss computational complexity or efficiency]. 
+
+\section{[Next Major Section Title]}
+
+[Continue with the following sections of your paper accordingly, maintaining structure and clarity.]

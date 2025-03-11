@@ -1,0 +1,17 @@
+```latex
+\section{Introduction}
+
+Unsupervised learning can be described as the general problem of extracting value from unlabelled data which exists in vast quantities. A popular framework for unsupervised learning is that of representation learning \cite{ref1, ref2}, whose goal is to use unlabelled data to learn a representation that exposes important semantic features as easily decodable factors. Inspired by [previous work/technique], we propose [module name] to address [challenge]. 
+
+While unsupervised learning is ill-posed because the relevant downstream tasks are unknown at training time, a disentangled representation, one which explicitly represents the salient attributes of a data instance, should be helpful for the relevant but unknown tasks. [Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+For example, for a dataset of [example data type], a useful disentangled representation may allocate a separate set of dimensions for each of the following attributes: [attribute 1], [attribute 2], [attribute 3], and so forth. Specifically, a disentangled representation can be useful for natural tasks that require knowledge of the salient attributes of the data, which include tasks like [task 1] and [task 2]. However, it is not useful for [unnatural supervised tasks description]. Thus, to be useful, an unsupervised learning algorithm must in effect correctly guess the likely set of downstream classification tasks without being directly exposed to them.
+
+A significant fraction of unsupervised learning research is driven by [research motivation]. It is motivated by the belief that [belief statement], and it is hoped that a good generative model will [expected outcome]. Despite the ease of constructing perfect models, [counterargument about drawbacks]. The most prominent approaches are [approach 1] \cite{ref3} and [approach 2] \cite{ref4}.
+
+In this paper, we present [brief description of the main contribution]. We do so by [briefly describe the method used]. Despite its simplicity, we found our method to be surprisingly effective: [summary of results]. The quality of our [result type] matches previous works that [contrast with existing work].
+
+These results suggest that [conclusion about the method]. 
+
+In the remainder of the paper, we begin with [description of the first section], noting [key points]. Then we [describe the second section focus]. We [explain the method or concept in this section] and derive [specific formulation related to the method]. Finally, in the experiments section, we first [describe the first part of the experiments] and then [describe the second part of the experiments], demonstrating [major finding from the experiments].
+```

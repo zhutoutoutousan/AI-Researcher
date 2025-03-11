@@ -1,0 +1,36 @@
+```latex
+\section{RELATED WORK}
+
+According to [context or classification basis], [area of study/method] can be naturally divided into [category 1] and [category 2].
+
+\subsection{[Subcategory 1]}
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method based on prior work in this subcategory.] 
+
+\subsubsection{[Component/Aspect 1]}
+[Several sentences detailing specific techniques or approaches related to Component 1 that are important in this subcategory, including relevant citations or references.]
+
+\subsubsection{[Component/Aspect 2]}
+[Paragraph describing the detailed workflow or architecture related to Component 2. Include explanations of why these aspects are important.]
+
+\subsubsection{[Component/Aspect 3]}
+[Describe various techniques or findings that relate to Component 3. Highlight significant methods or results and their implications for the subcategory.]
+
+[However, (transition phrase), summarize the gaps or shortcomings in existing methods or approaches within this subcategory, leading to the need for further research or development.]
+
+\subsection{[Subcategory 2]}
+
+[Describe the main focus or objective of this subcategory. Include motivation behind its emergence and relevance to the overall field.]
+
+\subsubsection{[Model/Approach 1]}
+[Description of existing models or approaches and their capabilities regarding the specific goals of this subcategory. Cite relevant literature that highlights past accomplishments.]
+
+\subsubsection{[Model/Approach 2]}
+[Discuss additional models or approaches, comparing their methodologies and performance with those mentioned previously, indicating strengths and weaknesses.]
+
+Regardless of [successful applications in specific tasks], [summarize the general performance challenges or limitations of current models/approaches in this subcategory]. Therefore, our goal in this work is to [state the goal of your research and how it will address existing challenges].
+
+[Summarize any recent work or advancements relevant to your study area, showing how they relate to your proposed approach. Highlight limitations that remain unaddressed.]
+
+In summary, discuss [overall insights or conclusions drawn from the literature]. Present a rough comparison of [specific algorithms, results, or findings] in [Appendix reference or supplementary material].
+```

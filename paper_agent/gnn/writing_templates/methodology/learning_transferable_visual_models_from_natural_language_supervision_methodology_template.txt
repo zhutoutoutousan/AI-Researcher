@@ -1,0 +1,44 @@
+\section{Approach}
+
+\subsection{Overview of the Method}
+
+At the core of our approach is the idea of [explain the foundational concept]. This concept, while not novel, has seen varied terminology and motivations across different works. [Cite relevant works] illustrate methods that [describe various approaches]. 
+
+We emphasize that what is common across these methodologies is [explain the key unifying theme]. Recent advancements in [related field or technique] suggest we now have the opportunity to [explain the potential advances or improvements].
+
+Learning from [context or data source] presents several notable advantages compared to [other methods]. Specifically, [discuss the advantages of the proposed method]. In the following subsections, we detail the specific approach we adopted.
+
+\subsection{Data Collection and Preparation}
+
+Existing work has primarily utilized [list existing datasets]. While these datasets are [discuss quality or relevance], they fall short in [describe limitations]. In contrast, [discuss the advantages of the data you collected].
+
+This motivates the need for [explain the motivation for your dataset]. To this end, we constructed a new dataset consisting of [describe the dataset, including volume, sources, and composition]. Specifically, [explain the methodology for data collection and balance].
+
+Our newly constructed dataset enables [discuss the potential outcomes and advantages of the new dataset].
+
+\subsection{Pre-Training Method Selection}
+
+Current state-of-the-art systems often require [discuss computational demands]. In our investigation, we found [discuss key findings that inform method selection]. 
+
+We initially employed [describe initial approach] but encountered challenges in [discuss challenges faced]. However, through [explain adjustments], we were able to significantly improve [describe outcomes].
+
+In essence, our method [provide method description and core objective]. To optimize the process, we [describe training method and any techniques used]. For clarity, we express [Mathematical formulation of key components, using \begin{equation} ... \end{equation} as needed].
+
+\subsection{Model Architecture Choices}
+
+We considered [list the architectures or models considered]. For the first architecture, we leveraged [describe architecture and its merits]. We also explored [list any alternative architectures], incorporating [discuss modifications made].
+
+The choice of the [text/image] encoder is driven by [provide reasoning for the architecture choice]. We have implemented [detailed description of the model].
+
+To further enhance performance, we explored scaling using [discuss scaling strategies]. Unlike [compare to previous approaches], we aimed to [explain your scaling strategy, if different].
+
+\subsection{Training Configuration}
+
+We trained [number of models] models, including [list the models]. Each model underwent [describe training process, including details about epochs, optimizer, and any scheduling].
+
+Hyper-parameters were initially set using [explain parameter selection methods used]. We specifically managed [discuss any critical hyper-parameters and their significance]. The training environment incorporated [list relevant optimization techniques and any hardware specifics].
+
+The training duration for [model] was approximately [describe time and compute resources]. We also conducted additional experiments to determine [describe any further training efforts].
+
+\normalsize
+In conclusion, we utilized [summarize the final training setup and any key outcomes]. Our findings demonstrate that [reflect on the significance of the results obtained].

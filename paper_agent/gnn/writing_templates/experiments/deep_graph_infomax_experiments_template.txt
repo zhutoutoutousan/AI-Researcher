@@ -1,0 +1,75 @@
+\section{Classification Performance}
+
+We have assessed the benefits of [module name] on a variety of [application area] tasks, obtaining competitive results. In each case, [module name] was used to learn [representation type] in a fully unsupervised manner, followed by evaluating the [task type] utility of these representations. This was performed by directly using these representations to [evaluation method].
+
+\subsection{Datasets}
+
+We follow the experimental setup described in [reference 1] and [reference 2] on the following benchmark tasks: (1) [task 1 description]; (2) [task 2 description]; and (3) [task 3 description], requiring generalization to unseen [context/conditions].
+
+Further information on the datasets may be found in [reference to table/appendix].
+
+\subsection{Experimental Setup}
+
+For each of [number] experimental settings ([setting 1], [setting 2], and [setting 3]), we employed distinct [method/approach] and [function] appropriate to that setting (described below).
+
+\textbf{[Setting 1]}. For the [setting 1] tasks, our encoder is [encoder type], with the following propagation rule:
+
+\begin{equation}
+[Mathematical formulation of the key components]
+\end{equation}
+
+where [explanation of symbols and terms used]. 
+
+The [function used] in this setting is designed to [purpose of function]; for this purpose, [description of the function and its effects]. We demonstrate [other findings or assumptions related to the function] in [appendix/reference].
+
+\textbf{[Setting 2]}. For [setting 2], [description of changes in the approach]. Specifically, we apply [specific method] as used by [reference]:
+
+\begin{equation}
+[Mathematical formulation of the key components]
+\end{equation}
+
+with parameters defined as in [reference]. Note that [explanation of an alternative approach or method]. 
+
+For [specific dataset], our encoder is [encoder type with specific layers or structures]:
+
+\begin{equation}
+[Mathematical formulation]
+\end{equation}
+
+where [description of methodology/configurations used]. Given the [context], [explanation of the sampling approach]. We define our [function used] in this setting as [description of the function].
+
+\textbf{[Setting 3]}. For [setting 3], our encoder is [encoder type with relevant details]:
+
+\begin{equation}
+[Mathematical formulation]
+\end{equation}
+
+In this setting, we opted to use [methodology for negative sampling]. We found this method to be the most stable, considering [explanation of challenges]. Additionally, we apply [other techniques] to enhance the robustness of our approach.
+
+[Readout, discriminator, and additional training details]. Across all [number] experimental settings, we employed identical [functions/methods] and architectures. 
+
+For the [specific function], we use [description of method]:
+
+\begin{equation}
+[Mathematical formulation]
+\end{equation}
+
+The [discriminator/scoring function] provides [description of the scoring method]:
+
+\begin{equation}
+[Mathematical formulation]
+\end{equation}
+
+All models are initialized using [initialization method] and trained to [objective function], using [optimizer type] with an initial learning rate of [value]. On [dataset], we [unique training strategy].
+
+\subsection{Results}
+
+The results of our comparative evaluation experiments are summarized in [reference to table].
+
+For the [specific tasks], we report [evaluation metrics], averaged after [number] runs of training, and reuse the metrics already reported in [reference for comparisons]. Specifically, as our setup is [methodology description], we compare against [other methods].
+
+Our results demonstrate [summary of key findings and comparisons]. We particularly note that [explanation of insights or observations]. 
+
+[Additional discussions regarding performance and limitations], including insights about the [general trends seen in the experiments]. 
+
+While we cannot say that these trends will hold universally, we generally found benefits from employing [specific architectural decisions].

@@ -1,0 +1,34 @@
+2025-01-23 08:14:04,179 - Starting mini ablation experiment: mini_baseline
+2025-01-23 08:14:04,226 - Running experiment: mini_baseline on cuda:2
+2025-01-23 08:14:04,226 - Configuration: {'hidden_dim': 32, 'num_layers': 2, 'tau': 0.1, 'lambda_reg': 1.0, 'dropout': 0.1, 'learning_rate': 0.001, 'weight_decay': 1e-05, 'epochs': 100, 'patience': 20}
+2025-01-23 08:14:05,451 - Epoch 10/100: Train Loss: 1.7480, Train Acc: 0.6857, Val Loss: 1.8748, Val Acc: 0.2700
+2025-01-23 08:14:05,616 - Epoch 20/100: Train Loss: 1.3103, Train Acc: 0.9786, Val Loss: 1.7023, Val Acc: 0.4200
+2025-01-23 08:14:05,792 - Epoch 30/100: Train Loss: 1.0167, Train Acc: 1.0000, Val Loss: 1.6638, Val Acc: 0.3880
+2025-01-23 08:14:05,964 - Early stopping at epoch 39
+2025-01-23 08:14:05,974 - Final Results:
+2025-01-23 08:14:05,974 - Best Validation Accuracy: 0.4260 at epoch 18
+2025-01-23 08:14:05,974 - Test Accuracy: 0.3890
+2025-01-23 08:14:05,989 - Starting mini ablation experiment: mini_high_reg
+2025-01-23 08:14:05,989 - Running experiment: mini_high_reg on cuda:2
+2025-01-23 08:14:05,989 - Configuration: {'hidden_dim': 32, 'num_layers': 2, 'tau': 0.1, 'lambda_reg': 2.0, 'dropout': 0.1, 'learning_rate': 0.001, 'weight_decay': 1e-05, 'epochs': 100, 'patience': 20}
+2025-01-23 08:14:06,206 - Epoch 10/100: Train Loss: 1.8858, Train Acc: 0.5286, Val Loss: 1.8736, Val Acc: 0.2940
+2025-01-23 08:14:06,399 - Epoch 20/100: Train Loss: 1.5866, Train Acc: 0.9071, Val Loss: 1.7350, Val Acc: 0.3880
+2025-01-23 08:14:06,615 - Epoch 30/100: Train Loss: 1.3641, Train Acc: 0.9857, Val Loss: 1.6168, Val Acc: 0.4960
+2025-01-23 08:14:06,814 - Epoch 40/100: Train Loss: 1.2380, Train Acc: 1.0000, Val Loss: 1.5953, Val Acc: 0.4720
+2025-01-23 08:14:07,019 - Epoch 50/100: Train Loss: 1.2011, Train Acc: 1.0000, Val Loss: 1.6023, Val Acc: 0.4620
+2025-01-23 08:14:07,019 - Early stopping at epoch 50
+2025-01-23 08:14:07,030 - Final Results:
+2025-01-23 08:14:07,030 - Best Validation Accuracy: 0.4960 at epoch 29
+2025-01-23 08:14:07,031 - Test Accuracy: 0.4710
+2025-01-23 08:14:07,048 - Starting mini ablation experiment: mini_low_tau
+2025-01-23 08:14:07,048 - Running experiment: mini_low_tau on cuda:2
+2025-01-23 08:14:07,048 - Configuration: {'hidden_dim': 32, 'num_layers': 2, 'tau': 0.05, 'lambda_reg': 1.0, 'dropout': 0.1, 'learning_rate': 0.001, 'weight_decay': 1e-05, 'epochs': 100, 'patience': 20}
+2025-01-23 08:14:07,269 - Epoch 10/100: Train Loss: 1.7663, Train Acc: 0.7429, Val Loss: 1.8450, Val Acc: 0.3900
+2025-01-23 08:14:07,473 - Epoch 20/100: Train Loss: 1.3058, Train Acc: 0.9714, Val Loss: 1.6178, Val Acc: 0.4640
+2025-01-23 08:14:07,678 - Epoch 30/100: Train Loss: 1.0255, Train Acc: 0.9929, Val Loss: 1.5727, Val Acc: 0.4860
+2025-01-23 08:14:07,885 - Epoch 40/100: Train Loss: 0.8640, Train Acc: 1.0000, Val Loss: 1.5518, Val Acc: 0.4840
+2025-01-23 08:14:08,090 - Epoch 50/100: Train Loss: 0.7961, Train Acc: 1.0000, Val Loss: 1.5718, Val Acc: 0.4620
+2025-01-23 08:14:08,236 - Early stopping at epoch 57
+2025-01-23 08:14:08,247 - Final Results:
+2025-01-23 08:14:08,247 - Best Validation Accuracy: 0.4920 at epoch 36
+2025-01-23 08:14:08,247 - Test Accuracy: 0.4590

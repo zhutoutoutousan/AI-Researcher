@@ -1,0 +1,26 @@
+\section{Preliminaries}
+
+We first introduce our notation and explain the problem our model solves. Let $G = (V, E)$ be a graph with nodes $V$ and edges $E$. Let $n$ denote the number of nodes and $m$ the number of edges. The nodes are described by the feature matrix $X \in \mathbb{R}^{n \times f}$, with the number of features $f$ per node, and the class (or label) matrix $Y \in \mathbb{R}^{n \times c}$, with the number of classes $c$. The graph $G$ is described by the adjacency matrix $A \in \mathbb{R}^{n \times n}$. $\tilde{A} = A + I_n$ denotes the adjacency matrix with added self-loops.
+
+\subsection{Background on [Related Concept/Methodology]}
+
+One simple and widely used [method/algorithm] for [specific application] is [Concept/Method Name]. In the case of [specific scenario], its equation is 
+
+\begin{equation}
+Z_{[Method]} = [Mathematical expression],
+\end{equation}
+where $Z \in \mathbb{R}^{n \times c}$ are the predicted [outcomes/hyperparameters], and $[\text{Other Terms}]$ are [description of terms].
+
+It is important to note that with [number of layers], only [describe limitations of existing method]. There are essentially [number] reasons why a [method/algorithm] like [Concept/Method Name] cannot be trivially expanded to [broader context/application]. First, [explain the first limitation]. Second, [explain the second limitation]. However, [discuss the implications of these limitations].
+
+We will start by concentrating on the first issue. [Cite previous work] have shown that for a [specific context], the influence score of [node/element] $x$ on [target] $y$, $I(x, y) = \sum_i \sum_j \frac{\partial Z_{yi}}{\partial X_{xj}}$, is proportional in 
+
+\begin{equation}
+[Mathematical formulation or expression related to influence score],
+\end{equation}
+to [another concept/expression related to the method]. Hence, the information of [node/element] $x$ spreads to [target] $y$ in a [descriptive manner]. If we take the limit as [contextual parameter goes to infinity] and the graph is [criteria], this [concept] converges to the limit (or stationary) distribution [explanation]. This distribution can be obtained by solving the equation 
+
+\begin{equation}
+\pi_{\text{lim}} = [Mathematical expression].
+\end{equation}
+Obviously, the result only depends on the [broader context] and is independent of the [specific variables/constraints], indicating [discuss significance].

@@ -1,0 +1,105 @@
+{
+    "target": "Disentangled Contrastive Collaborative Filtering",
+    "instance_id": "dccf_final",
+    "source_papers": [
+      {
+        "reference": "Lightgcn: Simplifying and powering graph convolution network for recommendation",
+        "rank": 1,
+        "type": [
+          "methodological"
+        ],
+        "justification": "LightGCN serves as a foundational model for collaborative filtering within this paper, demonstrating strong performance in representation learning. It introduces a simplified message-passing framework that enhances the aggregation of user-item relationships through iterative embeddings. The proposed model demonstrates strong performance in this context, further validating the effectiveness of this study's approach.",
+        "usage": "The authors build upon the principles of LightGCN to enhance their proposed model, leveraging its message-passing strategies to improve the robustness and accuracy of their representation learning."
+      },
+      {
+        "reference": "Neural collaborative filtering",
+        "rank": 2,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This study presents a paradigm shift in collaborative filtering by integrating neural networks, which significantly boosts the performance of recommendation systems. Its widespread adoption confirms the proposed model's methodological importance.",
+        "usage": "The proposed model utilizes concepts from neural collaborative filtering to replace traditional matrix factorization techniques, allowing for a more nuanced understanding of user-item interactions."
+      },
+      {
+        "reference": "Disentangled contrastive learning on graphs",
+        "rank": 3,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This work introduces a framework for learning disentangled representations using contrastive learning, which aligns well with the proposed model's goal of intent disentanglement in collaborative filtering tasks.",
+        "usage": "The authors adapt techniques from this framework to enhance the proposed approach, focusing on disentangling user intents from interactions."
+      },
+      {
+        "reference": "Improving Graph Collaborative Filtering with Neighborhood-enriched Contrastive Learning",
+        "rank": 4,
+        "type": [
+          "methodological/component"
+        ],
+        "justification": "This paper proposes methods for enhancing collaborative filtering through contrastive learning, emphasizing local and global relation capture, which resonates with the proposed model's objectives.",
+        "usage": "The proposed model integrates aspects of neighborhood-enriched learning to strengthen its representation of user-item interactions, especially in diverse intent scenarios."
+      },
+      {
+        "reference": "Curriculum Disentangled Recommendation with Noisy Multi-feedback",
+        "rank": 5,
+        "type": [
+          "component"
+        ],
+        "justification": "This study focuses on extracting user intentions from noisy feedback, a critical component when dealing with real-world recommendation challenges. It provides insights into handling sparse and noisy data.",
+        "usage": "The proposed model employs similar strategies to manage noisy self-supervised signals, enhancing its robustness and performance against data sparsity."
+      },
+      {
+        "reference": "Disentangled heterogeneous graph attention network for recommendation",
+        "rank": 6,
+        "type": [
+          "component"
+        ],
+        "justification": "This work contributes to the understanding of how graph attention mechanisms can be utilized to learn disentangled representations, which is crucial for intent-aware recommendation systems.",
+        "usage": "The proposed model incorporates attention mechanisms from this paper to refine its node representation learning, making it more effective in capturing intent diversity."
+      },
+      {
+        "reference": "Learning intents behind interactions with knowledge graph for recommendation",
+        "rank": 7,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This paper emphasizes the importance of understanding user intents derived from interactions, which aligns with the proposed model's focus on intent disentanglement.",
+        "usage": "The insights from this study inform the design of the proposed model's intent-aware mechanisms, aiding in the development of more nuanced user-item interaction models."
+      },
+      {
+        "reference": "LightGCL: Simple Yet Effective Graph Contrastive Learning for Recommendation",
+        "rank": 8,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This study introduces a lightweight approach to graph contrastive learning, addressing the need for efficient representation learning in recommendation tasks.",
+        "usage": "The proposed model leverages the core principles of graph contrastive learning from this study to enhance its adaptive augmentation strategies."
+      },
+      {
+        "reference": "Self-supervised graph learning for recommendation",
+        "rank": 9,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This study discusses various self-supervised learning techniques applicable to graph-based recommendations, which are essential for addressing label sparsity.",
+        "usage": "The proposed model utilizes self-supervised techniques from this reference to improve its learning process, specifically in generating robust self-supervised signals."
+      }
+    ],
+    "authors": [
+      "Xubin Ren",
+      "Lianghao Xia",
+      "Jiashu Zhao",
+      "Dawei Yin",
+      "Chao Huang"
+    ],
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2305.02759v4",
+    "abstract": "Recent studies show that graph neural networks (GNNs) are prevalent to model\nhigh-order relationships for collaborative filtering (CF). Towards this\nresearch line, graph contrastive learning (GCL) has exhibited powerful\nperformance in addressing the supervision label shortage issue by learning\naugmented user and item representations. While many of them show their\neffectiveness, two key questions still remain unexplored: i) Most existing\nGCL-based CF models are still limited by ignoring the fact that user-item\ninteraction behaviors are often driven by diverse latent intent factors (e.g.,\nshopping for family party, preferred color or brand of products); ii) Their\nintroduced non-adaptive augmentation techniques are vulnerable to noisy\ninformation, which raises concerns about the model's robustness and the risk of\nincorporating misleading self-supervised signals. In light of these\nlimitations, we propose a Disentangled Contrastive Collaborative Filtering\nframework (DCCF) to realize intent disentanglement with self-supervised\naugmentation in an adaptive fashion. With the learned disentangled\nrepresentations with global context, our DCCF is able to not only distill\nfiner-grained latent factors from the entangled self-supervision signals but\nalso alleviate the augmentation-induced noise. Finally, the cross-view\ncontrastive learning task is introduced to enable adaptive augmentation with\nour parameterized interaction mask generator. Experiments on various public\ndatasets demonstrate the superiority of our method compared to existing\nsolutions. Our model implementation is released at the link\nhttps://github.com/HKUDS/DCCF.",
+    "venue": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "venue_source": "Semantic Scholar",
+    "venue_lookup_time": "2024-11-19T16:40:59.503240",
+    "citations": 41,
+    "topic": "Disentangled Contrastive Collaborative Filtering",
+    "field": "preselected",
+    "task1": "To implement the core methodology of the proposed approach, follow these detailed instructions:\n\n1. **Task Overview**: The proposed model focuses on collaborative filtering for recommendation systems by leveraging graph neural networks (GNNs) and contrastive learning to address the issue of sparse user-item interactions.\n\n2. **Core Techniques**: \n   - **Graph Neural Networks**: Utilize GNNs for message passing to learn user and item embeddings from the interaction graph.\n   - **Disentangled Representations**: Implement a mechanism to model multiple latent intent factors driving user-item interactions.\n   - **Contrastive Learning**: Use contrastive learning techniques to generate adaptive self-supervised signals from augmented views of user-item interactions.\n\n3. **Purpose of Components**:\n   - **GNN Layers**: Capture high-order interactions among users and items through iterative message passing.\n   - **Intent Encoding**: Differentiate latent intents to improve the representation of user preferences.\n   - **Adaptive Augmentation**: Generate contrastive views that account for both local and global dependencies to enhance robustness against noise.\n\n4. **Implementation Details**:\n   - **Graph Construction**:\n     - Input: User-item interaction matrix \\( A \\) of size \\( I \\times J \\) (where \\( I \\) is the number of users and \\( J \\) is the number of items).\n     - Output: Normalized adjacency matrix \\( \\bar{A} \\).\n   - **GNN Configuration**:\n     - Number of layers \\( L \\): Choose based on your dataset, typically 2 or 3 layers.\n     - Dimensionality \\( d \\) of embeddings: Start with \\( d = 32 \\).\n   - **Intent Prototypes**:\n     - Number of intents \\( K \\): Experiment with values from {32, 64, 128, 256}, starting with \\( K = 128 \\).\n   - **Learning Rate**: Use Adam optimizer with a learning rate around \\( 1e-3 \\).\n   - **Loss Functions**:\n     - Use Bayesian Personalized Ranking (BPR) loss for the recommendation task.\n     - Implement InfoNCE loss for contrastive learning, incorporating both local and global augmented views.\n\n5. **Step-by-Step Interaction**:\n   - Construct the interaction graph from the user-item matrix.\n   - For each GNN layer:\n     - Compute the aggregated embeddings \\( Z(u) \\) and \\( Z(v) \\) using the normalized adjacency matrix.\n     - Update user and item embeddings using residual connections to prevent over-smoothing.\n   - Generate intent-aware representations by aggregating embeddings over the latent intents.\n   - Apply the learned parameterized masks for adaptive augmentation during message passing to create multiple contrastive views.\n   - Calculate contrastive learning signals using the generated augmented representations and optimize using the combined loss function.\n\n6. **Critical Implementation Details**:\n   - Ensure that the augmentation matrices are learned adaptively based on the current user-item embeddings to differentiate the importance of interactions.\n   - Monitor the performance with different numbers of latent intents \\( K \\) to find an optimal balance between expressiveness and noise.\n   - Regularly assess the proposed model for over-smoothing by checking the Mean Average Distance (MAD) metric on the embeddings.\n   - Tune hyperparameters \\( \\lambda_1, \\lambda_2, \\lambda_3 \\) for the multi-task loss to balance the contribution of the self-supervised learning signals.\n\nBy closely following these steps and guidelines, researchers can effectively reproduce the core methodology of the proposed approach without needing to refer back to this paper.",
+    "task2": "1. The primary task or problem domain the research tackles is the enhancement of collaborative filtering in recommender systems through the integration of disentangled contrastive learning, which aims to capture and utilize diverse latent intent factors driving user-item interactions.\n\n2. Current limitations in existing approaches that motivated this work include the inability of many GCL-based collaborative filtering models to effectively disentangle the diverse latent intents behind user-item interactions, as well as their vulnerability to noise and suboptimal self-supervised signals due to non-adaptive augmentation techniques.\n\n3. Core challenges the researchers aim to overcome involve the need to develop a method that can accurately generate disentangled contrastive signals for informative augmentation while being robust against noisy data, thereby improving the proposed model's ability to capture genuine user preferences.\n\n4. Key objectives and intended contributions include the development of a framework that enables intent disentanglement and adaptive self-supervised augmentation, leading to enhanced robustness and generalization in recommendation performance. This study also seeks to provide a comprehensive understanding of user-item interactions by distilling finer-grained latent factors and improving the overall effectiveness of collaborative filtering models."
+  }

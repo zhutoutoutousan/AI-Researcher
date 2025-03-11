@@ -1,0 +1,67 @@
+\section{Introduction}
+
+In this section, we provide background on [topic] and introduce the [methods/tools] that we study in this paper. In particular, we derive the [key derivation] for [specific application]. For simplicity of exposition, we focus on [specific case], noting that the [methods/tools] can be extended to [broader case], as done in [relevant citation].
+
+\subsection{Background on [subtopic]}
+
+Multiple recent works studying [related field/application] (e.g., [citation1, citation2, citation3]) show that when [specific conditions], [key observation]. The model can be approximated by its [mathematical/computational process], expressed as follows:
+
+\begin{equation} 
+f(x; \theta) \approx f(x; \theta_0) + \langle \theta - \theta_0, \nabla_\theta f(x; \theta_0) \rangle. 
+\end{equation}
+
+This regime, where [describe regime], contrasts with [other method/approach], which operates under [explain conditions]. Yet, with sufficient [parameterization/conditions], the [features/methods] become expressive enough to [achieve goal or fit data].
+
+\textbf{Definition of [key concept].} When [conditions/assumptions], we can show that [key results/formulation], leading to [further implications]:
+
+\begin{equation}
+\langle \nabla_\theta f(x; \theta_0), \nabla_\theta f(x', \theta_0) \rangle \to K(x, x').
+\end{equation}
+
+Under [specific assumptions], it can be shown that [details]. In the case of [specific condition], one can demonstrate that [further implications].
+
+\textbf{Key Models/Methods.} Consider [describe model/method] defined by [equation or representation of the model], where [parameters/variables] are [description]. We treat [certain condition] similarly to [previous work], noting [further details].
+
+The [key formulation] can be expressed as follows:
+
+\begin{equation}
+K(x, x') = [mathematical expression for K],
+\end{equation}
+
+where [explain components of the equation]. 
+
+\subsection{Feature Maps Construction}
+
+We now provide a reformulation of the [concept] in terms of [explain reformulation], which provides [benefits or conveniences]. 
+
+\textbf{Lemma [Number]. (Feature Mapping for [specific model]):} The [key concept] can be defined as follows:
+
+\begin{equation}
+K(x, x') = \langle \Phi(x), \Phi(x') \rangle,
+\end{equation}
+
+with [definitions of terms in lemma for various layers/models].
+
+\subsection{Extension to [another model or application]}
+
+In this section, we study [new models or applications], focusing on [particular aspects]. We consider [description of model or system], expressed as:
+
+\begin{equation}
+f(x; \theta) = [key formula for the new model].
+\end{equation}
+
+We are now ready to state our result on [key results for this model].
+
+\textbf{Proposition [Number]. (Main Result for [model]):} The [key result] is given by
+
+\begin{equation}
+K(x, x') = \langle \Phi(x), \Phi(x') \rangle,
+\end{equation}
+
+with [description of recursive definitions or equations].
+
+The proof is given in [specific section], where we also show that [key implication or finding related to the results]. The proof relies on [key methods or techniques used in the proof] and exploits [certain characteristics of the models discussed].
+
+[Discuss comparison with other relevant works, clearly outlining the contributions and novelties of the current research in relation to the existing literature.]
+
+[Final note or transition to next section.]

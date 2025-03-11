@@ -1,0 +1,11 @@
+\section{Preliminaries}
+
+As the foundational framework for [specific field/system], [specific method/technique] aims to [describe main goal or purpose]. Specifically, given the [specific sets, e.g., user set \( U \) and item set \( I \)], the [described data structure/matrix] is denoted as \( R \in [data range] \), where each entry \( R_{u,i} \) = [condition that indicates presence/absence of interaction]. Based on [interaction data], the learned [system type, e.g., recommender systems] can [describe main functionality]. Furthermore, [related technique/method], organizes the [data type] as a [graph structure], where \( V = [description of node set] \) denotes [node types] and \( E = [description of edge set] \) denotes [edge conditions].
+
+In general, [specific related method or approach] [cite references as needed] produces [describe the output, e.g., informative representations] based on [aggregation scheme/method]. This can be formulated into [number of stages] stages:
+
+\begin{equation}
+z^{(l)}_{u} = f_{\text{propagate}}(\{ z^{(l-1)}_{v} | v \in N_{u} \cup \{u\} \}), \quad z_{u} = f_{\text{readout}}([ z^{(0)}_{u}, z^{(1)}_{u}, ..., z^{(L)}_{u} ]),
+\end{equation}
+
+where \( N_{u} \) denotes the [description of neighbor set] and \( L \) denotes [number of layers or iterations]. Here, \( z^{(0)}_{u} \) is initialized by [initialization method or value]. For [specific entity], the propagation function \( f_{\text{propagate}}(\cdot) \) aggregates the [previous layer's representations] to generate the [current layer's representation]. After [number of propagations], the information of [number of hops] is encoded in \( z^{(l)}_{u} \). The readout function \( f_{\text{readout}}(\cdot) \) further summarizes all of the representations \( [ z^{(0)}_{u}, z^{(1)}_{u}, ..., z^{(L)}_{u} ] \) to obtain the final representations of [specific entity] for [main purpose]. The informative representations of [another entity or component] can be similarly obtained.

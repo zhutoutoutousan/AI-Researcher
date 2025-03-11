@@ -1,0 +1,49 @@
+```latex
+\section{Preliminaries}
+
+In this section, we first summarize the common paradigm of [relevant area of study or models]. Let [Variable 1] and [Variable 2] be the set of [description of Variable 1] and [description of Variable 2] respectively. We denote [Variable 3] as [description of Variable 3], where [explanation of Variable 3]. Most existing models [Citations] construct a [type of graph or structure] $G = (V, E)$, where the node set $V = [description of node set]$ involves all [elements], and the edge set $E = [description of edge set]$ represents [observed relationships]. 
+
+Recapping [key technique or method]. At the core is to apply [core technique or method] on $G$, updating the representation of [description of ego node] by aggregating the representations of [description of neighbor nodes]:
+
+\begin{equation}
+Z^{(l)} = H(Z^{(l-1)}, G)
+\end{equation}
+
+where $Z^{(l)}$ denotes the node representations at the $l$-th layer, $Z^{(l-1)}$ is that of previous layer, and $Z^{(0)}$ is the [initial representations or parameters]. $H$ denotes the function for [description of the function], which is further interpretable as:
+
+\begin{equation}
+z^{(l)}_u = f_{combine}(z^{(l-1)}_u, f_{aggregate}(\{ z^{(l-1)}_i | i \in N_u \}))
+\end{equation}
+
+To update the representation of ego node $u$ at the $l$-th layer, it first aggregates the representations of its neighbors $N_u$ at the $(l-1)$-th layer, then combines with its own representation $z^{(l-1)}_u$. There are various designs for $f_{aggregate}(\cdot)$ and $f_{combine}(\cdot)$ [Citations]. 
+
+We can see that the representations of the $l$-th layer encode the $l$-order neighbors in the graph. After obtaining [number of layers] representations, there may be a readout function to generate the final representations for prediction:
+
+\begin{equation}
+z_u = f_{readout}(\{ z^{(l)}_u | l = [0, \ldots, L] \})
+\end{equation}
+
+Common designs include [brief descriptions of various designs].
+
+\subsection{Learning Objectives}
+
+A prediction layer is established upon the final representations to predict [outcome] for [description of involved components]. A classical solution is [description of classical solution], which supports [characteristic of classical solution]:
+
+\begin{equation}
+\hat{y}_{ui} = z_u^\top z_i
+\end{equation}
+
+To optimize model parameters, existing works usually frame the task as one of [type of learning], where the supervision signal comes from [source of supervision]. For instance, [example of learning methodology]. Aside from the point-wise learning, another common choice is [alternative learning method] [Citations], which enforces [principle of the alternative method]:
+
+\begin{equation}
+L_{main} = \sum_{(u,i,j) \in O^-} -\log(\sigma(\hat{y}_{ui} - \hat{y}_{uj}))
+\end{equation}
+
+where $O = \{(u, i, j)|(u, i) \in O^+,\ (u, j) \in O^-\}$ represents the training data, and $O^- = [description of unobserved interactions]$. In this work, we choose [selected learning approach] as the main supervised task.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figure.png}
+    \caption{The overall system framework of [system/method]. The upper layer illustrates the working flow of [task description] while the bottom layer shows the working flows of [alternative task description].}
+\end{figure}
+```

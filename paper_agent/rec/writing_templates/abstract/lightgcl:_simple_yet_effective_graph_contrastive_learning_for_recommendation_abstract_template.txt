@@ -1,0 +1,27 @@
+\section*{Abstract}
+
+[Introduce the main topic and its significance, e.g., "The study of [research area] has gained considerable attention due to [context or motivation]."]
+
+[Present the main challenge, e.g., "Despite recent advancements, the current methods face challenges such as [specific challenges or limitations]."]
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. 
+
+To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3].
+
+[Provide multiple sentences explaining the motivation and intuition behind the proposed method, e.g., "The rationale behind our approach is [motivation], which leads to [expected outcome]. Specifically, [further elaboration on the benefits]."]
+
+[Include a paragraph describing the detailed workflow of the module, e.g., "Our approach operates through the following workflow: [describe the steps involved in the approach succinctly]."]
+
+Formally, we define [concept] as follows:
+
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+
+[Detailed explanation of each term in the equations, e.g., "In the equation above, we define [term 1] as [definition], [term 2] as [definition], and so forth."]
+
+[Provide several sentences comparing the proposed method with existing approaches, e.g., "In comparison, our method [comparison point], which highlights the advantages of our approach over [existing methods]."]
+
+Experiments conducted on [datasets or benchmarks] demonstrate the significant improvement in performance of our model over the state-of-the-art. Furthermore, [include further analyses or insights, e.g., "Our findings illustrate the robustness of [model name] against [specific issues]."]
+
+The source code of our model is available at [link].

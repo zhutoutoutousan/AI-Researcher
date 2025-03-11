@@ -1,0 +1,735 @@
+2025-01-22 17:36:40,683 - INFO - 
+Running basic experiment with default configuration
+2025-01-22 17:36:40,683 - INFO - Starting experiment with config: {'batch_size': 512, 'embed_dim': 64, 'n_layers': 2, 'learning_rate': 0.001, 'num_epochs': 50, 'temperature': 0.1, 'lambda_coef': 0.5, 'eval_frequency': 5, 'early_stop_patience': 10}
+2025-01-22 17:36:40,749 - INFO - Using device: cuda:1
+2025-01-22 17:36:40,762 - INFO - Dataset loaded: 29601 users, 24734 items
+2025-01-22 17:37:49,696 - INFO - Epoch 1/50 - Loss: 4.7755
+2025-01-22 17:38:48,293 - INFO - Epoch 2/50 - Loss: 3.4205
+2025-01-22 17:39:46,966 - INFO - Epoch 3/50 - Loss: 2.1868
+2025-01-22 17:40:45,675 - INFO - Epoch 4/50 - Loss: 1.6578
+2025-01-22 17:41:44,451 - INFO - Epoch 5/50 - Loss: 1.4086
+2025-01-22 17:41:53,291 - INFO - Epoch 5 Eval - Recall@20: 0.0490, NDCG@20: 0.0397
+2025-01-22 17:41:53,291 - INFO - New best performance - Recall@20: 0.0490, NDCG@20: 0.0397
+2025-01-22 17:42:52,667 - INFO - Epoch 6/50 - Loss: 1.3446
+2025-01-22 17:43:51,609 - INFO - Epoch 7/50 - Loss: 1.2748
+2025-01-22 17:44:50,422 - INFO - Epoch 8/50 - Loss: 1.2406
+2025-01-22 17:45:49,249 - INFO - Epoch 9/50 - Loss: 1.2416
+2025-01-22 17:46:48,039 - INFO - Epoch 10/50 - Loss: 1.2134
+2025-01-22 17:46:56,893 - INFO - Epoch 10 Eval - Recall@20: 0.0420, NDCG@20: 0.0333
+2025-01-22 17:47:56,222 - INFO - Epoch 11/50 - Loss: 1.2285
+2025-01-22 17:48:55,100 - INFO - Epoch 12/50 - Loss: 1.1983
+2025-01-22 17:49:53,909 - INFO - Epoch 13/50 - Loss: 1.2010
+2025-01-22 17:50:52,715 - INFO - Epoch 14/50 - Loss: 1.2285
+2025-01-22 17:51:51,518 - INFO - Epoch 15/50 - Loss: 1.2196
+2025-01-22 17:52:00,692 - INFO - Epoch 15 Eval - Recall@20: 0.0459, NDCG@20: 0.0358
+2025-01-22 17:53:00,068 - INFO - Epoch 16/50 - Loss: 1.1763
+2025-01-22 17:53:58,936 - INFO - Epoch 17/50 - Loss: 1.1683
+2025-01-22 17:54:57,767 - INFO - Epoch 18/50 - Loss: 1.1462
+2025-01-22 17:55:56,578 - INFO - Epoch 19/50 - Loss: 1.1791
+2025-01-22 17:56:55,441 - INFO - Epoch 20/50 - Loss: 1.1716
+2025-01-22 17:57:04,595 - INFO - Epoch 20 Eval - Recall@20: 0.0441, NDCG@20: 0.0344
+2025-01-22 17:58:03,979 - INFO - Epoch 21/50 - Loss: 1.1502
+2025-01-22 17:59:02,849 - INFO - Epoch 22/50 - Loss: 1.1359
+2025-01-22 18:00:01,698 - INFO - Epoch 23/50 - Loss: 1.1721
+2025-01-22 18:01:00,560 - INFO - Epoch 24/50 - Loss: 1.1817
+2025-01-22 18:01:59,410 - INFO - Epoch 25/50 - Loss: 1.1354
+2025-01-22 18:02:08,714 - INFO - Epoch 25 Eval - Recall@20: 0.0428, NDCG@20: 0.0335
+2025-01-22 18:03:08,094 - INFO - Epoch 26/50 - Loss: 1.1740
+2025-01-22 18:04:07,058 - INFO - Epoch 27/50 - Loss: 1.1119
+2025-01-22 18:05:06,008 - INFO - Epoch 28/50 - Loss: 1.1890
+2025-01-22 18:06:04,940 - INFO - Epoch 29/50 - Loss: 1.1858
+2025-01-22 18:07:03,856 - INFO - Epoch 30/50 - Loss: 1.1482
+2025-01-22 18:07:13,231 - INFO - Epoch 30 Eval - Recall@20: 0.0431, NDCG@20: 0.0333
+2025-01-22 18:08:12,583 - INFO - Epoch 31/50 - Loss: 1.1660
+2025-01-22 18:09:11,548 - INFO - Epoch 32/50 - Loss: 1.1674
+2025-01-22 18:10:10,512 - INFO - Epoch 33/50 - Loss: 1.1482
+2025-01-22 18:11:09,532 - INFO - Epoch 34/50 - Loss: 1.2219
+2025-01-22 18:12:08,546 - INFO - Epoch 35/50 - Loss: 1.2144
+2025-01-22 18:12:17,419 - INFO - Epoch 35 Eval - Recall@20: 0.0408, NDCG@20: 0.0314
+2025-01-22 18:13:16,883 - INFO - Epoch 36/50 - Loss: 1.2417
+2025-01-22 18:14:15,894 - INFO - Epoch 37/50 - Loss: 1.2143
+2025-01-22 18:15:14,925 - INFO - Epoch 38/50 - Loss: 1.1678
+2025-01-22 18:16:13,890 - INFO - Epoch 39/50 - Loss: 1.1412
+2025-01-22 18:17:12,915 - INFO - Epoch 40/50 - Loss: 1.1577
+2025-01-22 18:17:21,997 - INFO - Epoch 40 Eval - Recall@20: 0.0439, NDCG@20: 0.0339
+2025-01-22 18:18:21,441 - INFO - Epoch 41/50 - Loss: 1.1619
+2025-01-22 18:19:20,532 - INFO - Epoch 42/50 - Loss: 1.1413
+2025-01-22 18:20:19,570 - INFO - Epoch 43/50 - Loss: 1.2058
+2025-01-22 18:21:18,612 - INFO - Epoch 44/50 - Loss: 1.1567
+2025-01-22 18:22:17,671 - INFO - Epoch 45/50 - Loss: 1.1779
+2025-01-22 18:22:26,999 - INFO - Epoch 45 Eval - Recall@20: 0.0438, NDCG@20: 0.0338
+2025-01-22 18:23:26,481 - INFO - Epoch 46/50 - Loss: 1.3708
+2025-01-22 18:24:25,582 - INFO - Epoch 47/50 - Loss: 1.5305
+2025-01-22 18:25:24,644 - INFO - Epoch 48/50 - Loss: 1.2408
+2025-01-22 18:26:23,648 - INFO - Epoch 49/50 - Loss: 1.2321
+2025-01-22 18:27:22,673 - INFO - Epoch 50/50 - Loss: 1.2316
+2025-01-22 18:27:31,976 - INFO - Epoch 50 Eval - Recall@20: 0.0441, NDCG@20: 0.0341
+2025-01-22 18:27:41,735 - INFO - Final Test Results - Recall@20: 0.0441, NDCG@20: 0.0341
+2025-01-22 18:27:41,735 - INFO - Best Results - Recall@20: 0.0490, NDCG@20: 0.0397
+2025-01-22 18:27:41,888 - INFO - 
+Basic Experiment Results:
+2025-01-22 18:27:41,889 - INFO - Best Recall@20: 0.0490
+2025-01-22 18:27:41,889 - INFO - Best NDCG@20: 0.0397
+2025-01-22 18:27:41,889 - INFO - 
+Testing temperature: 0.05
+2025-01-22 18:27:41,889 - INFO - Starting experiment with config: {'batch_size': 512, 'embed_dim': 64, 'n_layers': 2, 'learning_rate': 0.001, 'num_epochs': 50, 'temperature': 0.05, 'lambda_coef': 0.5, 'eval_frequency': 5, 'early_stop_patience': 10}
+2025-01-22 18:27:41,889 - INFO - Using device: cuda:1
+2025-01-22 18:27:41,955 - INFO - Dataset loaded: 29601 users, 24734 items
+2025-01-22 18:28:50,136 - INFO - Epoch 1/50 - Loss: 4.5458
+2025-01-22 18:29:49,143 - INFO - Epoch 2/50 - Loss: 2.6516
+2025-01-22 18:30:48,147 - INFO - Epoch 3/50 - Loss: 0.7458
+2025-01-22 18:31:47,109 - INFO - Epoch 4/50 - Loss: 0.4017
+2025-01-22 18:32:46,081 - INFO - Epoch 5/50 - Loss: 0.3527
+2025-01-22 18:32:55,200 - INFO - Epoch 5 Eval - Recall@20: 0.0451, NDCG@20: 0.0363
+2025-01-22 18:32:55,200 - INFO - New best performance - Recall@20: 0.0451, NDCG@20: 0.0363
+2025-01-22 18:33:54,706 - INFO - Epoch 6/50 - Loss: 0.3547
+2025-01-22 18:34:53,707 - INFO - Epoch 7/50 - Loss: 0.3262
+2025-01-22 18:35:52,659 - INFO - Epoch 8/50 - Loss: 0.3201
+2025-01-22 18:36:51,574 - INFO - Epoch 9/50 - Loss: 0.2984
+2025-01-22 18:37:50,521 - INFO - Epoch 10/50 - Loss: 0.3497
+2025-01-22 18:37:59,900 - INFO - Epoch 10 Eval - Recall@20: 0.0483, NDCG@20: 0.0379
+2025-01-22 18:37:59,900 - INFO - New best performance - Recall@20: 0.0483, NDCG@20: 0.0379
+2025-01-22 18:38:59,180 - INFO - Epoch 11/50 - Loss: 0.3501
+2025-01-22 18:39:58,084 - INFO - Epoch 12/50 - Loss: 0.3643
+2025-01-22 18:40:56,955 - INFO - Epoch 13/50 - Loss: 0.4127
+2025-01-22 18:41:55,851 - INFO - Epoch 14/50 - Loss: 0.3812
+2025-01-22 18:42:54,747 - INFO - Epoch 15/50 - Loss: 0.3983
+2025-01-22 18:43:04,366 - INFO - Epoch 15 Eval - Recall@20: 0.0467, NDCG@20: 0.0368
+2025-01-22 18:44:03,740 - INFO - Epoch 16/50 - Loss: 0.3548
+2025-01-22 18:45:02,633 - INFO - Epoch 17/50 - Loss: 0.3641
+2025-01-22 18:46:01,479 - INFO - Epoch 18/50 - Loss: 0.3644
+2025-01-22 18:47:00,310 - INFO - Epoch 19/50 - Loss: 0.3791
+2025-01-22 18:47:59,167 - INFO - Epoch 20/50 - Loss: 0.3882
+2025-01-22 18:48:08,581 - INFO - Epoch 20 Eval - Recall@20: 0.0506, NDCG@20: 0.0397
+2025-01-22 18:48:08,581 - INFO - New best performance - Recall@20: 0.0506, NDCG@20: 0.0397
+2025-01-22 18:49:07,936 - INFO - Epoch 21/50 - Loss: 0.3979
+2025-01-22 18:50:06,865 - INFO - Epoch 22/50 - Loss: 0.3862
+2025-01-22 18:51:05,829 - INFO - Epoch 23/50 - Loss: 0.3994
+2025-01-22 18:52:04,689 - INFO - Epoch 24/50 - Loss: 0.4355
+2025-01-22 18:53:03,579 - INFO - Epoch 25/50 - Loss: 0.3806
+2025-01-22 18:53:13,007 - INFO - Epoch 25 Eval - Recall@20: 0.0468, NDCG@20: 0.0366
+2025-01-22 18:54:12,342 - INFO - Epoch 26/50 - Loss: 0.3717
+2025-01-22 18:55:11,316 - INFO - Epoch 27/50 - Loss: 0.3639
+2025-01-22 18:56:10,265 - INFO - Epoch 28/50 - Loss: 0.4279
+2025-01-22 18:57:09,257 - INFO - Epoch 29/50 - Loss: 0.4133
+2025-01-22 18:58:08,259 - INFO - Epoch 30/50 - Loss: 0.4318
+2025-01-22 18:58:17,388 - INFO - Epoch 30 Eval - Recall@20: 0.0511, NDCG@20: 0.0397
+2025-01-22 18:58:17,389 - INFO - New best performance - Recall@20: 0.0511, NDCG@20: 0.0397
+2025-01-22 18:59:16,804 - INFO - Epoch 31/50 - Loss: 0.4239
+2025-01-22 19:00:15,810 - INFO - Epoch 32/50 - Loss: 0.4624
+2025-01-22 19:01:14,790 - INFO - Epoch 33/50 - Loss: 0.5000
+2025-01-22 19:02:13,835 - INFO - Epoch 34/50 - Loss: 0.4451
+2025-01-22 19:03:12,859 - INFO - Epoch 35/50 - Loss: 0.4036
+2025-01-22 19:03:22,226 - INFO - Epoch 35 Eval - Recall@20: 0.0506, NDCG@20: 0.0396
+2025-01-22 19:04:21,698 - INFO - Epoch 36/50 - Loss: 0.4164
+2025-01-22 19:05:20,779 - INFO - Epoch 37/50 - Loss: 0.4491
+2025-01-22 19:06:19,726 - INFO - Epoch 38/50 - Loss: 0.4776
+2025-01-22 19:07:18,653 - INFO - Epoch 39/50 - Loss: 0.4046
+2025-01-22 19:08:17,644 - INFO - Epoch 40/50 - Loss: 0.4733
+2025-01-22 19:08:26,892 - INFO - Epoch 40 Eval - Recall@20: 0.0525, NDCG@20: 0.0409
+2025-01-22 19:08:26,892 - INFO - New best performance - Recall@20: 0.0525, NDCG@20: 0.0409
+2025-01-22 19:09:26,248 - INFO - Epoch 41/50 - Loss: 0.4492
+2025-01-22 19:10:25,261 - INFO - Epoch 42/50 - Loss: 0.4928
+2025-01-22 19:11:24,259 - INFO - Epoch 43/50 - Loss: 0.4605
+2025-01-22 19:12:23,236 - INFO - Epoch 44/50 - Loss: 0.5222
+2025-01-22 19:13:22,165 - INFO - Epoch 45/50 - Loss: 0.4287
+2025-01-22 19:13:31,783 - INFO - Epoch 45 Eval - Recall@20: 0.0526, NDCG@20: 0.0413
+2025-01-22 19:13:31,783 - INFO - New best performance - Recall@20: 0.0526, NDCG@20: 0.0413
+2025-01-22 19:14:31,223 - INFO - Epoch 46/50 - Loss: 0.4190
+2025-01-22 19:15:30,231 - INFO - Epoch 47/50 - Loss: 0.4117
+2025-01-22 19:16:29,147 - INFO - Epoch 48/50 - Loss: 0.4670
+2025-01-22 19:17:28,129 - INFO - Epoch 49/50 - Loss: 0.3990
+2025-01-22 19:18:27,051 - INFO - Epoch 50/50 - Loss: 0.4532
+2025-01-22 19:18:36,624 - INFO - Epoch 50 Eval - Recall@20: 0.0522, NDCG@20: 0.0409
+2025-01-22 19:18:46,582 - INFO - Final Test Results - Recall@20: 0.0522, NDCG@20: 0.0409
+2025-01-22 19:18:46,582 - INFO - Best Results - Recall@20: 0.0526, NDCG@20: 0.0413
+2025-01-22 19:18:46,800 - INFO - 
+Testing temperature: 0.1
+2025-01-22 19:18:46,800 - INFO - Starting experiment with config: {'batch_size': 512, 'embed_dim': 64, 'n_layers': 2, 'learning_rate': 0.001, 'num_epochs': 50, 'temperature': 0.1, 'lambda_coef': 0.5, 'eval_frequency': 5, 'early_stop_patience': 10}
+2025-01-22 19:18:46,800 - INFO - Using device: cuda:1
+2025-01-22 19:18:46,809 - INFO - Dataset loaded: 29601 users, 24734 items
+2025-01-22 19:19:54,913 - INFO - Epoch 1/50 - Loss: 4.8802
+2025-01-22 19:20:53,828 - INFO - Epoch 2/50 - Loss: 3.5065
+2025-01-22 19:21:52,729 - INFO - Epoch 3/50 - Loss: 2.1942
+2025-01-22 19:22:51,635 - INFO - Epoch 4/50 - Loss: 1.6560
+2025-01-22 19:23:50,568 - INFO - Epoch 5/50 - Loss: 1.4342
+2025-01-22 19:23:59,409 - INFO - Epoch 5 Eval - Recall@20: 0.0444, NDCG@20: 0.0356
+2025-01-22 19:23:59,409 - INFO - New best performance - Recall@20: 0.0444, NDCG@20: 0.0356
+2025-01-22 19:24:58,831 - INFO - Epoch 6/50 - Loss: 1.3150
+2025-01-22 19:25:57,850 - INFO - Epoch 7/50 - Loss: 1.2740
+2025-01-22 19:26:56,804 - INFO - Epoch 8/50 - Loss: 1.3022
+2025-01-22 19:27:55,731 - INFO - Epoch 9/50 - Loss: 1.2299
+2025-01-22 19:28:54,676 - INFO - Epoch 10/50 - Loss: 1.2184
+2025-01-22 19:29:03,738 - INFO - Epoch 10 Eval - Recall@20: 0.0464, NDCG@20: 0.0369
+2025-01-22 19:29:03,738 - INFO - New best performance - Recall@20: 0.0464, NDCG@20: 0.0369
+2025-01-22 19:30:03,105 - INFO - Epoch 11/50 - Loss: 1.2084
+2025-01-22 19:31:02,054 - INFO - Epoch 12/50 - Loss: 1.1920
+2025-01-22 19:32:00,919 - INFO - Epoch 13/50 - Loss: 1.1833
+2025-01-22 19:32:59,807 - INFO - Epoch 14/50 - Loss: 1.2197
+2025-01-22 19:33:58,645 - INFO - Epoch 15/50 - Loss: 1.1843
+2025-01-22 19:34:07,697 - INFO - Epoch 15 Eval - Recall@20: 0.0438, NDCG@20: 0.0344
+2025-01-22 19:35:07,033 - INFO - Epoch 16/50 - Loss: 1.1648
+2025-01-22 19:36:05,981 - INFO - Epoch 17/50 - Loss: 1.1766
+2025-01-22 19:37:04,887 - INFO - Epoch 18/50 - Loss: 1.1985
+2025-01-22 19:38:03,893 - INFO - Epoch 19/50 - Loss: 1.2216
+2025-01-22 19:39:02,936 - INFO - Epoch 20/50 - Loss: 1.2667
+2025-01-22 19:39:11,957 - INFO - Epoch 20 Eval - Recall@20: 0.0452, NDCG@20: 0.0355
+2025-01-22 19:40:11,400 - INFO - Epoch 21/50 - Loss: 1.2039
+2025-01-22 19:41:10,411 - INFO - Epoch 22/50 - Loss: 1.1957
+2025-01-22 19:42:09,377 - INFO - Epoch 23/50 - Loss: 1.1475
+2025-01-22 19:43:08,420 - INFO - Epoch 24/50 - Loss: 1.6982
+2025-01-22 19:44:07,420 - INFO - Epoch 25/50 - Loss: 1.4358
+2025-01-22 19:44:16,578 - INFO - Epoch 25 Eval - Recall@20: 0.0461, NDCG@20: 0.0364
+2025-01-22 19:45:16,011 - INFO - Epoch 26/50 - Loss: 1.2266
+2025-01-22 19:46:15,103 - INFO - Epoch 27/50 - Loss: 1.1986
+2025-01-22 19:47:14,229 - INFO - Epoch 28/50 - Loss: 1.2300
+2025-01-22 19:48:13,311 - INFO - Epoch 29/50 - Loss: 1.1655
+2025-01-22 19:49:12,463 - INFO - Epoch 30/50 - Loss: 1.1593
+2025-01-22 19:49:21,667 - INFO - Epoch 30 Eval - Recall@20: 0.0444, NDCG@20: 0.0347
+2025-01-22 19:50:21,205 - INFO - Epoch 31/50 - Loss: 1.1581
+2025-01-22 19:51:20,351 - INFO - Epoch 32/50 - Loss: 1.1843
+2025-01-22 19:52:19,444 - INFO - Epoch 33/50 - Loss: 1.1859
+2025-01-22 19:53:18,571 - INFO - Epoch 34/50 - Loss: 1.1682
+2025-01-22 19:54:17,700 - INFO - Epoch 35/50 - Loss: 1.2162
+2025-01-22 19:54:26,810 - INFO - Epoch 35 Eval - Recall@20: 0.0465, NDCG@20: 0.0361
+2025-01-22 19:54:26,810 - INFO - New best performance - Recall@20: 0.0465, NDCG@20: 0.0361
+2025-01-22 19:55:26,286 - INFO - Epoch 36/50 - Loss: 1.1996
+2025-01-22 19:56:25,444 - INFO - Epoch 37/50 - Loss: 1.1928
+2025-01-22 19:57:24,585 - INFO - Epoch 38/50 - Loss: 1.1896
+2025-01-22 19:58:23,616 - INFO - Epoch 39/50 - Loss: 1.2227
+2025-01-22 19:59:22,668 - INFO - Epoch 40/50 - Loss: 1.2049
+2025-01-22 19:59:31,651 - INFO - Epoch 40 Eval - Recall@20: 0.0445, NDCG@20: 0.0343
+2025-01-22 20:00:31,109 - INFO - Epoch 41/50 - Loss: 1.1924
+2025-01-22 20:01:30,230 - INFO - Epoch 42/50 - Loss: 1.2033
+2025-01-22 20:02:29,254 - INFO - Epoch 43/50 - Loss: 1.1891
+2025-01-22 20:03:28,300 - INFO - Epoch 44/50 - Loss: 1.3218
+2025-01-22 20:04:27,305 - INFO - Epoch 45/50 - Loss: 1.2152
+2025-01-22 20:04:36,460 - INFO - Epoch 45 Eval - Recall@20: 0.0454, NDCG@20: 0.0350
+2025-01-22 20:05:35,852 - INFO - Epoch 46/50 - Loss: 1.2181
+2025-01-22 20:06:34,822 - INFO - Epoch 47/50 - Loss: 1.2322
+2025-01-22 20:07:33,785 - INFO - Epoch 48/50 - Loss: 1.2253
+2025-01-22 20:08:32,763 - INFO - Epoch 49/50 - Loss: 1.2404
+2025-01-22 20:09:31,737 - INFO - Epoch 50/50 - Loss: 1.1951
+2025-01-22 20:09:40,896 - INFO - Epoch 50 Eval - Recall@20: 0.0441, NDCG@20: 0.0342
+2025-01-22 20:09:50,624 - INFO - Final Test Results - Recall@20: 0.0441, NDCG@20: 0.0342
+2025-01-22 20:09:50,624 - INFO - Best Results - Recall@20: 0.0465, NDCG@20: 0.0361
+2025-01-22 20:09:50,850 - INFO - 
+Testing temperature: 0.2
+2025-01-22 20:09:50,851 - INFO - Starting experiment with config: {'batch_size': 512, 'embed_dim': 64, 'n_layers': 2, 'learning_rate': 0.001, 'num_epochs': 50, 'temperature': 0.2, 'lambda_coef': 0.5, 'eval_frequency': 5, 'early_stop_patience': 10}
+2025-01-22 20:09:50,851 - INFO - Using device: cuda:1
+2025-01-22 20:09:50,858 - INFO - Dataset loaded: 29601 users, 24734 items
+2025-01-22 20:10:59,085 - INFO - Epoch 1/50 - Loss: 4.9797
+2025-01-22 20:11:58,007 - INFO - Epoch 2/50 - Loss: 3.9882
+2025-01-22 20:12:56,867 - INFO - Epoch 3/50 - Loss: 3.5725
+2025-01-22 20:13:55,721 - INFO - Epoch 4/50 - Loss: 3.3974
+2025-01-22 20:14:54,584 - INFO - Epoch 5/50 - Loss: 3.3406
+2025-01-22 20:15:03,637 - INFO - Epoch 5 Eval - Recall@20: 0.0503, NDCG@20: 0.0405
+2025-01-22 20:15:03,638 - INFO - New best performance - Recall@20: 0.0503, NDCG@20: 0.0405
+2025-01-22 20:16:03,041 - INFO - Epoch 6/50 - Loss: 3.3018
+2025-01-22 20:17:01,980 - INFO - Epoch 7/50 - Loss: 3.2417
+2025-01-22 20:18:00,944 - INFO - Epoch 8/50 - Loss: 3.2579
+2025-01-22 20:18:59,836 - INFO - Epoch 9/50 - Loss: 3.2904
+2025-01-22 20:19:58,784 - INFO - Epoch 10/50 - Loss: 3.3073
+2025-01-22 20:20:08,026 - INFO - Epoch 10 Eval - Recall@20: 0.0488, NDCG@20: 0.0384
+2025-01-22 20:21:07,448 - INFO - Epoch 11/50 - Loss: 3.2502
+2025-01-22 20:22:06,508 - INFO - Epoch 12/50 - Loss: 3.2614
+2025-01-22 20:23:05,482 - INFO - Epoch 13/50 - Loss: 3.2203
+2025-01-22 20:24:04,475 - INFO - Epoch 14/50 - Loss: 3.2826
+2025-01-22 20:25:03,443 - INFO - Epoch 15/50 - Loss: 3.2328
+2025-01-22 20:25:12,588 - INFO - Epoch 15 Eval - Recall@20: 0.0534, NDCG@20: 0.0421
+2025-01-22 20:25:12,588 - INFO - New best performance - Recall@20: 0.0534, NDCG@20: 0.0421
+2025-01-22 20:26:11,932 - INFO - Epoch 16/50 - Loss: 3.2400
+2025-01-22 20:27:10,876 - INFO - Epoch 17/50 - Loss: 3.2380
+2025-01-22 20:28:09,841 - INFO - Epoch 18/50 - Loss: 3.2503
+2025-01-22 20:29:08,752 - INFO - Epoch 19/50 - Loss: 3.2634
+2025-01-22 20:30:07,649 - INFO - Epoch 20/50 - Loss: 3.2606
+2025-01-22 20:30:16,796 - INFO - Epoch 20 Eval - Recall@20: 0.0534, NDCG@20: 0.0421
+2025-01-22 20:30:16,797 - INFO - New best performance - Recall@20: 0.0534, NDCG@20: 0.0421
+2025-01-22 20:31:16,205 - INFO - Epoch 21/50 - Loss: 3.2459
+2025-01-22 20:32:15,124 - INFO - Epoch 22/50 - Loss: 3.2403
+2025-01-22 20:33:13,983 - INFO - Epoch 23/50 - Loss: 3.2553
+2025-01-22 20:34:12,846 - INFO - Epoch 24/50 - Loss: 3.2457
+2025-01-22 20:35:11,743 - INFO - Epoch 25/50 - Loss: 3.2433
+2025-01-22 20:35:21,067 - INFO - Epoch 25 Eval - Recall@20: 0.0518, NDCG@20: 0.0406
+2025-01-22 20:36:20,427 - INFO - Epoch 26/50 - Loss: 3.2967
+2025-01-22 20:37:19,489 - INFO - Epoch 27/50 - Loss: 3.2901
+2025-01-22 20:38:18,484 - INFO - Epoch 28/50 - Loss: 3.2380
+2025-01-22 20:39:17,432 - INFO - Epoch 29/50 - Loss: 3.2662
+2025-01-22 20:40:16,432 - INFO - Epoch 30/50 - Loss: 3.2276
+2025-01-22 20:40:25,680 - INFO - Epoch 30 Eval - Recall@20: 0.0528, NDCG@20: 0.0414
+2025-01-22 20:41:25,077 - INFO - Epoch 31/50 - Loss: 3.2507
+2025-01-22 20:42:24,033 - INFO - Epoch 32/50 - Loss: 3.2731
+2025-01-22 20:43:22,982 - INFO - Epoch 33/50 - Loss: 3.2732
+2025-01-22 20:44:22,026 - INFO - Epoch 34/50 - Loss: 3.2535
+2025-01-22 20:45:21,021 - INFO - Epoch 35/50 - Loss: 3.3006
+2025-01-22 20:45:30,054 - INFO - Epoch 35 Eval - Recall@20: 0.0532, NDCG@20: 0.0418
+2025-01-22 20:46:29,560 - INFO - Epoch 36/50 - Loss: 3.3023
+2025-01-22 20:47:28,657 - INFO - Epoch 37/50 - Loss: 3.2824
+2025-01-22 20:48:27,686 - INFO - Epoch 38/50 - Loss: 3.3026
+2025-01-22 20:49:26,697 - INFO - Epoch 39/50 - Loss: 3.2852
+2025-01-22 20:50:25,689 - INFO - Epoch 40/50 - Loss: 3.3985
+2025-01-22 20:50:34,970 - INFO - Epoch 40 Eval - Recall@20: 0.0516, NDCG@20: 0.0403
+2025-01-22 20:51:34,438 - INFO - Epoch 41/50 - Loss: 3.3198
+2025-01-22 20:52:33,415 - INFO - Epoch 42/50 - Loss: 3.2927
+2025-01-22 20:53:32,394 - INFO - Epoch 43/50 - Loss: 3.3334
+2025-01-22 20:54:31,378 - INFO - Epoch 44/50 - Loss: 3.3216
+2025-01-22 20:55:30,335 - INFO - Epoch 45/50 - Loss: 3.2823
+2025-01-22 20:55:39,543 - INFO - Epoch 45 Eval - Recall@20: 0.0550, NDCG@20: 0.0431
+2025-01-22 20:55:39,543 - INFO - New best performance - Recall@20: 0.0550, NDCG@20: 0.0431
+2025-01-22 20:56:38,894 - INFO - Epoch 46/50 - Loss: 3.2645
+2025-01-22 20:57:37,822 - INFO - Epoch 47/50 - Loss: 3.2992
+2025-01-22 20:58:36,723 - INFO - Epoch 48/50 - Loss: 3.2967
+2025-01-22 20:59:35,642 - INFO - Epoch 49/50 - Loss: 3.3207
+2025-01-22 21:00:34,545 - INFO - Epoch 50/50 - Loss: 3.3103
+2025-01-22 21:00:43,808 - INFO - Epoch 50 Eval - Recall@20: 0.0577, NDCG@20: 0.0453
+2025-01-22 21:00:43,809 - INFO - New best performance - Recall@20: 0.0577, NDCG@20: 0.0453
+2025-01-22 21:00:53,658 - INFO - Final Test Results - Recall@20: 0.0577, NDCG@20: 0.0453
+2025-01-22 21:00:53,658 - INFO - Best Results - Recall@20: 0.0577, NDCG@20: 0.0453
+2025-01-22 21:00:53,886 - INFO - 
+Testing temperature: 0.5
+2025-01-22 21:00:53,886 - INFO - Starting experiment with config: {'batch_size': 512, 'embed_dim': 64, 'n_layers': 2, 'learning_rate': 0.001, 'num_epochs': 50, 'temperature': 0.5, 'lambda_coef': 0.5, 'eval_frequency': 5, 'early_stop_patience': 10}
+2025-01-22 21:00:53,886 - INFO - Using device: cuda:1
+2025-01-22 21:00:53,894 - INFO - Dataset loaded: 29601 users, 24734 items
+2025-01-22 21:02:01,967 - INFO - Epoch 1/50 - Loss: 5.3984
+2025-01-22 21:03:00,901 - INFO - Epoch 2/50 - Loss: 4.8458
+2025-01-22 21:03:59,776 - INFO - Epoch 3/50 - Loss: 4.6412
+2025-01-22 21:04:58,675 - INFO - Epoch 4/50 - Loss: 4.6073
+2025-01-22 21:05:57,645 - INFO - Epoch 5/50 - Loss: 4.5942
+2025-01-22 21:06:06,588 - INFO - Epoch 5 Eval - Recall@20: 0.0517, NDCG@20: 0.0419
+2025-01-22 21:06:06,588 - INFO - New best performance - Recall@20: 0.0517, NDCG@20: 0.0419
+2025-01-22 21:07:05,984 - INFO - Epoch 6/50 - Loss: 4.6044
+2025-01-22 21:08:04,928 - INFO - Epoch 7/50 - Loss: 4.5670
+2025-01-22 21:09:03,889 - INFO - Epoch 8/50 - Loss: 4.5719
+2025-01-22 21:10:02,847 - INFO - Epoch 9/50 - Loss: 4.5883
+2025-01-22 21:11:01,767 - INFO - Epoch 10/50 - Loss: 4.5609
+2025-01-22 21:11:10,464 - INFO - Epoch 10 Eval - Recall@20: 0.0526, NDCG@20: 0.0426
+2025-01-22 21:11:10,465 - INFO - New best performance - Recall@20: 0.0526, NDCG@20: 0.0426
+2025-01-22 21:12:09,870 - INFO - Epoch 11/50 - Loss: 4.6179
+2025-01-22 21:13:08,810 - INFO - Epoch 12/50 - Loss: 4.5707
+2025-01-22 21:14:07,687 - INFO - Epoch 13/50 - Loss: 4.5778
+2025-01-22 21:15:06,621 - INFO - Epoch 14/50 - Loss: 4.5412
+2025-01-22 21:16:05,553 - INFO - Epoch 15/50 - Loss: 4.5766
+2025-01-22 21:16:14,700 - INFO - Epoch 15 Eval - Recall@20: 0.0524, NDCG@20: 0.0424
+2025-01-22 21:17:14,090 - INFO - Epoch 16/50 - Loss: 4.6173
+2025-01-22 21:18:13,041 - INFO - Epoch 17/50 - Loss: 4.6236
+2025-01-22 21:19:11,983 - INFO - Epoch 18/50 - Loss: 4.7637
+2025-01-22 21:20:10,925 - INFO - Epoch 19/50 - Loss: 4.6761
+2025-01-22 21:21:09,823 - INFO - Epoch 20/50 - Loss: 4.6287
+2025-01-22 21:21:19,072 - INFO - Epoch 20 Eval - Recall@20: 0.0549, NDCG@20: 0.0435
+2025-01-22 21:21:19,072 - INFO - New best performance - Recall@20: 0.0549, NDCG@20: 0.0435
+2025-01-22 21:22:18,445 - INFO - Epoch 21/50 - Loss: 4.6228
+2025-01-22 21:23:17,443 - INFO - Epoch 22/50 - Loss: 4.6824
+2025-01-22 21:24:16,462 - INFO - Epoch 23/50 - Loss: 4.6603
+2025-01-22 21:25:15,508 - INFO - Epoch 24/50 - Loss: 4.6543
+2025-01-22 21:26:14,558 - INFO - Epoch 25/50 - Loss: 4.7407
+2025-01-22 21:26:23,443 - INFO - Epoch 25 Eval - Recall@20: 0.0541, NDCG@20: 0.0429
+2025-01-22 21:27:22,838 - INFO - Epoch 26/50 - Loss: 4.6524
+2025-01-22 21:28:21,875 - INFO - Epoch 27/50 - Loss: 4.6613
+2025-01-22 21:29:20,847 - INFO - Epoch 28/50 - Loss: 4.7028
+2025-01-22 21:30:19,829 - INFO - Epoch 29/50 - Loss: 4.7140
+2025-01-22 21:31:18,823 - INFO - Epoch 30/50 - Loss: 4.7232
+2025-01-22 21:31:28,198 - INFO - Epoch 30 Eval - Recall@20: 0.0560, NDCG@20: 0.0445
+2025-01-22 21:31:28,199 - INFO - New best performance - Recall@20: 0.0560, NDCG@20: 0.0445
+2025-01-22 21:32:27,524 - INFO - Epoch 31/50 - Loss: 4.7334
+2025-01-22 21:33:26,508 - INFO - Epoch 32/50 - Loss: 4.7219
+2025-01-22 21:34:25,462 - INFO - Epoch 33/50 - Loss: 4.7183
+2025-01-22 21:35:24,467 - INFO - Epoch 34/50 - Loss: 4.7231
+2025-01-22 21:36:23,448 - INFO - Epoch 35/50 - Loss: 4.6999
+2025-01-22 21:36:34,850 - INFO - Epoch 35 Eval - Recall@20: 0.0568, NDCG@20: 0.0452
+2025-01-22 21:36:34,850 - INFO - New best performance - Recall@20: 0.0568, NDCG@20: 0.0452
+2025-01-22 21:37:34,176 - INFO - Epoch 36/50 - Loss: 4.7207
+2025-01-22 21:38:33,042 - INFO - Epoch 37/50 - Loss: 4.8393
+2025-01-22 21:39:31,957 - INFO - Epoch 38/50 - Loss: 4.7667
+2025-01-22 21:40:30,896 - INFO - Epoch 39/50 - Loss: 4.7641
+2025-01-22 21:41:29,833 - INFO - Epoch 40/50 - Loss: 4.7238
+2025-01-22 21:41:38,910 - INFO - Epoch 40 Eval - Recall@20: 0.0561, NDCG@20: 0.0451
+2025-01-22 21:42:38,225 - INFO - Epoch 41/50 - Loss: 4.8440
+2025-01-22 21:43:37,188 - INFO - Epoch 42/50 - Loss: 4.7993
+2025-01-22 21:44:36,113 - INFO - Epoch 43/50 - Loss: 4.7167
+2025-01-22 21:45:35,152 - INFO - Epoch 44/50 - Loss: 4.8047
+2025-01-22 21:46:34,165 - INFO - Epoch 45/50 - Loss: 4.7212
+2025-01-22 21:46:43,284 - INFO - Epoch 45 Eval - Recall@20: 0.0557, NDCG@20: 0.0445
+2025-01-22 21:47:42,733 - INFO - Epoch 46/50 - Loss: 4.7460
+2025-01-22 21:48:41,816 - INFO - Epoch 47/50 - Loss: 4.7160
+2025-01-22 21:49:40,855 - INFO - Epoch 48/50 - Loss: 4.7535
+2025-01-22 21:50:39,922 - INFO - Epoch 49/50 - Loss: 4.7597
+2025-01-22 21:51:39,004 - INFO - Epoch 50/50 - Loss: 4.6814
+2025-01-22 21:51:48,280 - INFO - Epoch 50 Eval - Recall@20: 0.0546, NDCG@20: 0.0434
+2025-01-22 21:51:58,031 - INFO - Final Test Results - Recall@20: 0.0546, NDCG@20: 0.0434
+2025-01-22 21:51:58,031 - INFO - Best Results - Recall@20: 0.0568, NDCG@20: 0.0452
+2025-01-22 21:51:58,256 - INFO - 
+Testing embedding dimension: 32
+2025-01-22 21:51:58,256 - INFO - Starting experiment with config: {'batch_size': 512, 'embed_dim': 32, 'n_layers': 2, 'learning_rate': 0.001, 'num_epochs': 50, 'temperature': 0.1, 'lambda_coef': 0.5, 'eval_frequency': 5, 'early_stop_patience': 10}
+2025-01-22 21:51:58,257 - INFO - Using device: cuda:1
+2025-01-22 21:51:58,265 - INFO - Dataset loaded: 29601 users, 24734 items
+2025-01-22 21:52:56,914 - INFO - Epoch 1/50 - Loss: 4.4153
+2025-01-22 21:53:46,286 - INFO - Epoch 2/50 - Loss: 3.3093
+2025-01-22 21:54:35,696 - INFO - Epoch 3/50 - Loss: 2.3617
+2025-01-22 21:55:25,068 - INFO - Epoch 4/50 - Loss: 1.8608
+2025-01-22 21:56:14,477 - INFO - Epoch 5/50 - Loss: 1.6418
+2025-01-22 21:56:23,002 - INFO - Epoch 5 Eval - Recall@20: 0.0455, NDCG@20: 0.0373
+2025-01-22 21:56:23,002 - INFO - New best performance - Recall@20: 0.0455, NDCG@20: 0.0373
+2025-01-22 21:57:12,635 - INFO - Epoch 6/50 - Loss: 1.5440
+2025-01-22 21:58:02,034 - INFO - Epoch 7/50 - Loss: 1.4945
+2025-01-22 21:58:51,442 - INFO - Epoch 8/50 - Loss: 1.4489
+2025-01-22 21:59:40,858 - INFO - Epoch 9/50 - Loss: 1.4038
+2025-01-22 22:00:30,250 - INFO - Epoch 10/50 - Loss: 1.3778
+2025-01-22 22:00:39,106 - INFO - Epoch 10 Eval - Recall@20: 0.0440, NDCG@20: 0.0354
+2025-01-22 22:01:28,738 - INFO - Epoch 11/50 - Loss: 1.3572
+2025-01-22 22:02:18,124 - INFO - Epoch 12/50 - Loss: 1.3224
+2025-01-22 22:03:07,489 - INFO - Epoch 13/50 - Loss: 1.3283
+2025-01-22 22:03:56,867 - INFO - Epoch 14/50 - Loss: 1.3229
+2025-01-22 22:04:46,243 - INFO - Epoch 15/50 - Loss: 1.3117
+2025-01-22 22:04:55,148 - INFO - Epoch 15 Eval - Recall@20: 0.0396, NDCG@20: 0.0319
+2025-01-22 22:05:44,748 - INFO - Epoch 16/50 - Loss: 1.3299
+2025-01-22 22:06:34,136 - INFO - Epoch 17/50 - Loss: 1.3140
+2025-01-22 22:07:23,498 - INFO - Epoch 18/50 - Loss: 1.3083
+2025-01-22 22:08:12,878 - INFO - Epoch 19/50 - Loss: 1.2893
+2025-01-22 22:09:02,277 - INFO - Epoch 20/50 - Loss: 1.3136
+2025-01-22 22:09:11,251 - INFO - Epoch 20 Eval - Recall@20: 0.0390, NDCG@20: 0.0311
+2025-01-22 22:10:00,827 - INFO - Epoch 21/50 - Loss: 1.3117
+2025-01-22 22:10:50,257 - INFO - Epoch 22/50 - Loss: 1.3155
+2025-01-22 22:11:39,619 - INFO - Epoch 23/50 - Loss: 1.3340
+2025-01-22 22:12:28,982 - INFO - Epoch 24/50 - Loss: 1.3437
+2025-01-22 22:13:18,356 - INFO - Epoch 25/50 - Loss: 1.3278
+2025-01-22 22:13:27,352 - INFO - Epoch 25 Eval - Recall@20: 0.0390, NDCG@20: 0.0307
+2025-01-22 22:14:16,953 - INFO - Epoch 26/50 - Loss: 1.3104
+2025-01-22 22:15:06,359 - INFO - Epoch 27/50 - Loss: 1.3303
+2025-01-22 22:15:55,728 - INFO - Epoch 28/50 - Loss: 1.3030
+2025-01-22 22:16:45,116 - INFO - Epoch 29/50 - Loss: 1.3252
+2025-01-22 22:17:34,480 - INFO - Epoch 30/50 - Loss: 1.3109
+2025-01-22 22:17:43,667 - INFO - Epoch 30 Eval - Recall@20: 0.0365, NDCG@20: 0.0290
+2025-01-22 22:18:33,257 - INFO - Epoch 31/50 - Loss: 1.3247
+2025-01-22 22:19:22,650 - INFO - Epoch 32/50 - Loss: 1.3081
+2025-01-22 22:20:11,979 - INFO - Epoch 33/50 - Loss: 1.3020
+2025-01-22 22:21:01,361 - INFO - Epoch 34/50 - Loss: 1.3096
+2025-01-22 22:21:50,706 - INFO - Epoch 35/50 - Loss: 1.3283
+2025-01-22 22:21:59,650 - INFO - Epoch 35 Eval - Recall@20: 0.0371, NDCG@20: 0.0296
+2025-01-22 22:22:49,309 - INFO - Epoch 36/50 - Loss: 1.3191
+2025-01-22 22:23:38,702 - INFO - Epoch 37/50 - Loss: 1.3201
+2025-01-22 22:24:28,095 - INFO - Epoch 38/50 - Loss: 1.3256
+2025-01-22 22:25:17,510 - INFO - Epoch 39/50 - Loss: 1.3561
+2025-01-22 22:26:06,892 - INFO - Epoch 40/50 - Loss: 1.3188
+2025-01-22 22:26:16,121 - INFO - Epoch 40 Eval - Recall@20: 0.0346, NDCG@20: 0.0272
+2025-01-22 22:27:05,720 - INFO - Epoch 41/50 - Loss: 1.3165
+2025-01-22 22:27:55,095 - INFO - Epoch 42/50 - Loss: 1.3543
+2025-01-22 22:28:44,428 - INFO - Epoch 43/50 - Loss: 1.3193
+2025-01-22 22:29:33,804 - INFO - Epoch 44/50 - Loss: 1.3061
+2025-01-22 22:30:23,152 - INFO - Epoch 45/50 - Loss: 1.3524
+2025-01-22 22:30:32,312 - INFO - Epoch 45 Eval - Recall@20: 0.0360, NDCG@20: 0.0287
+2025-01-22 22:31:21,946 - INFO - Epoch 46/50 - Loss: 1.3088
+2025-01-22 22:32:11,383 - INFO - Epoch 47/50 - Loss: 1.3545
+2025-01-22 22:33:00,768 - INFO - Epoch 48/50 - Loss: 1.3551
+2025-01-22 22:33:50,172 - INFO - Epoch 49/50 - Loss: 1.3288
+2025-01-22 22:34:39,579 - INFO - Epoch 50/50 - Loss: 1.3332
+2025-01-22 22:34:48,845 - INFO - Epoch 50 Eval - Recall@20: 0.0365, NDCG@20: 0.0291
+2025-01-22 22:34:58,338 - INFO - Final Test Results - Recall@20: 0.0365, NDCG@20: 0.0291
+2025-01-22 22:34:58,338 - INFO - Best Results - Recall@20: 0.0455, NDCG@20: 0.0373
+2025-01-22 22:34:58,528 - INFO - 
+Testing embedding dimension: 64
+2025-01-22 22:34:58,528 - INFO - Starting experiment with config: {'batch_size': 512, 'embed_dim': 64, 'n_layers': 2, 'learning_rate': 0.001, 'num_epochs': 50, 'temperature': 0.1, 'lambda_coef': 0.5, 'eval_frequency': 5, 'early_stop_patience': 10}
+2025-01-22 22:34:58,529 - INFO - Using device: cuda:1
+2025-01-22 22:34:58,537 - INFO - Dataset loaded: 29601 users, 24734 items
+2025-01-22 22:36:06,696 - INFO - Epoch 1/50 - Loss: 4.3987
+2025-01-22 22:37:05,579 - INFO - Epoch 2/50 - Loss: 2.9103
+2025-01-22 22:38:04,501 - INFO - Epoch 3/50 - Loss: 1.9456
+2025-01-22 22:39:03,535 - INFO - Epoch 4/50 - Loss: 1.5314
+2025-01-22 22:40:02,636 - INFO - Epoch 5/50 - Loss: 1.3448
+2025-01-22 22:40:11,471 - INFO - Epoch 5 Eval - Recall@20: 0.0475, NDCG@20: 0.0384
+2025-01-22 22:40:11,471 - INFO - New best performance - Recall@20: 0.0475, NDCG@20: 0.0384
+2025-01-22 22:41:11,046 - INFO - Epoch 6/50 - Loss: 1.3305
+2025-01-22 22:42:10,300 - INFO - Epoch 7/50 - Loss: 1.2537
+2025-01-22 22:43:09,384 - INFO - Epoch 8/50 - Loss: 1.2367
+2025-01-22 22:44:08,484 - INFO - Epoch 9/50 - Loss: 1.2463
+2025-01-22 22:45:07,565 - INFO - Epoch 10/50 - Loss: 1.2528
+2025-01-22 22:45:16,573 - INFO - Epoch 10 Eval - Recall@20: 0.0410, NDCG@20: 0.0324
+2025-01-22 22:46:16,088 - INFO - Epoch 11/50 - Loss: 1.1859
+2025-01-22 22:47:15,265 - INFO - Epoch 12/50 - Loss: 1.1988
+2025-01-22 22:48:14,422 - INFO - Epoch 13/50 - Loss: 1.1606
+2025-01-22 22:49:13,618 - INFO - Epoch 14/50 - Loss: 1.1693
+2025-01-22 22:50:12,804 - INFO - Epoch 15/50 - Loss: 1.2428
+2025-01-22 22:50:21,639 - INFO - Epoch 15 Eval - Recall@20: 0.0413, NDCG@20: 0.0327
+2025-01-22 22:51:21,125 - INFO - Epoch 16/50 - Loss: 1.2118
+2025-01-22 22:52:20,264 - INFO - Epoch 17/50 - Loss: 1.2390
+2025-01-22 22:53:19,498 - INFO - Epoch 18/50 - Loss: 1.1686
+2025-01-22 22:54:18,688 - INFO - Epoch 19/50 - Loss: 1.1848
+2025-01-22 22:55:17,897 - INFO - Epoch 20/50 - Loss: 1.2403
+2025-01-22 22:55:27,113 - INFO - Epoch 20 Eval - Recall@20: 0.0443, NDCG@20: 0.0348
+2025-01-22 22:56:26,600 - INFO - Epoch 21/50 - Loss: 1.2123
+2025-01-22 22:57:25,725 - INFO - Epoch 22/50 - Loss: 1.2260
+2025-01-22 22:58:24,838 - INFO - Epoch 23/50 - Loss: 1.1990
+2025-01-22 22:59:23,917 - INFO - Epoch 24/50 - Loss: 1.2040
+2025-01-22 23:00:23,032 - INFO - Epoch 25/50 - Loss: 1.2004
+2025-01-22 23:00:31,854 - INFO - Epoch 25 Eval - Recall@20: 0.0410, NDCG@20: 0.0325
+2025-01-22 23:01:31,447 - INFO - Epoch 26/50 - Loss: 1.2525
+2025-01-22 23:02:30,725 - INFO - Epoch 27/50 - Loss: 1.2061
+2025-01-22 23:03:29,784 - INFO - Epoch 28/50 - Loss: 1.1995
+2025-01-22 23:04:28,818 - INFO - Epoch 29/50 - Loss: 1.2186
+2025-01-22 23:05:27,792 - INFO - Epoch 30/50 - Loss: 1.2500
+2025-01-22 23:05:37,190 - INFO - Epoch 30 Eval - Recall@20: 0.0449, NDCG@20: 0.0348
+2025-01-22 23:06:36,597 - INFO - Epoch 31/50 - Loss: 1.2036
+2025-01-22 23:07:35,591 - INFO - Epoch 32/50 - Loss: 1.2210
+2025-01-22 23:08:34,647 - INFO - Epoch 33/50 - Loss: 1.3606
+2025-01-22 23:09:33,651 - INFO - Epoch 34/50 - Loss: 1.2275
+2025-01-22 23:10:32,721 - INFO - Epoch 35/50 - Loss: 1.1534
+2025-01-22 23:10:42,092 - INFO - Epoch 35 Eval - Recall@20: 0.0452, NDCG@20: 0.0347
+2025-01-22 23:11:41,503 - INFO - Epoch 36/50 - Loss: 1.1691
+2025-01-22 23:12:40,538 - INFO - Epoch 37/50 - Loss: 1.1854
+2025-01-22 23:13:39,526 - INFO - Epoch 38/50 - Loss: 1.2004
+2025-01-22 23:14:38,523 - INFO - Epoch 39/50 - Loss: 1.2080
+2025-01-22 23:15:37,571 - INFO - Epoch 40/50 - Loss: 1.2123
+2025-01-22 23:15:46,694 - INFO - Epoch 40 Eval - Recall@20: 0.0428, NDCG@20: 0.0327
+2025-01-22 23:16:46,124 - INFO - Epoch 41/50 - Loss: 1.2248
+2025-01-22 23:17:45,161 - INFO - Epoch 42/50 - Loss: 1.2072
+2025-01-22 23:18:44,206 - INFO - Epoch 43/50 - Loss: 1.1779
+2025-01-22 23:19:43,182 - INFO - Epoch 44/50 - Loss: 1.2148
+2025-01-22 23:20:42,149 - INFO - Epoch 45/50 - Loss: 1.2433
+2025-01-22 23:20:51,337 - INFO - Epoch 45 Eval - Recall@20: 0.0454, NDCG@20: 0.0349
+2025-01-22 23:21:50,726 - INFO - Epoch 46/50 - Loss: 1.2117
+2025-01-22 23:22:49,743 - INFO - Epoch 47/50 - Loss: 1.2409
+2025-01-22 23:23:48,743 - INFO - Epoch 48/50 - Loss: 1.2364
+2025-01-22 23:24:47,779 - INFO - Epoch 49/50 - Loss: 1.2223
+2025-01-22 23:25:46,810 - INFO - Epoch 50/50 - Loss: 1.2002
+2025-01-22 23:25:56,143 - INFO - Epoch 50 Eval - Recall@20: 0.0428, NDCG@20: 0.0328
+2025-01-22 23:26:05,846 - INFO - Final Test Results - Recall@20: 0.0428, NDCG@20: 0.0328
+2025-01-22 23:26:05,846 - INFO - Best Results - Recall@20: 0.0475, NDCG@20: 0.0384
+2025-01-22 23:26:06,071 - INFO - 
+Testing embedding dimension: 128
+2025-01-22 23:26:06,072 - INFO - Starting experiment with config: {'batch_size': 512, 'embed_dim': 128, 'n_layers': 2, 'learning_rate': 0.001, 'num_epochs': 50, 'temperature': 0.1, 'lambda_coef': 0.5, 'eval_frequency': 5, 'early_stop_patience': 10}
+2025-01-22 23:26:06,072 - INFO - Using device: cuda:1
+2025-01-22 23:26:06,080 - INFO - Dataset loaded: 29601 users, 24734 items
+2025-01-22 23:26:16,191 - ERROR - Error during experiment: CUDA out of memory. Tried to allocate 3.02 GiB. GPU  has a total capacity of 23.69 GiB of which 1.79 GiB is free. Process 950259 has 21.89 GiB memory in use. Of the allocated memory 21.46 GiB is allocated by PyTorch, and 124.41 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-01-22 23:26:16,803 - INFO - 
+Testing number of layers: 1
+2025-01-22 23:26:16,803 - INFO - Starting experiment with config: {'batch_size': 512, 'embed_dim': 64, 'n_layers': 1, 'learning_rate': 0.001, 'num_epochs': 50, 'temperature': 0.1, 'lambda_coef': 0.5, 'eval_frequency': 5, 'early_stop_patience': 10}
+2025-01-22 23:26:16,804 - INFO - Using device: cuda:1
+2025-01-22 23:26:16,808 - INFO - Dataset loaded: 29601 users, 24734 items
+2025-01-22 23:26:59,654 - INFO - Epoch 1/50 - Loss: 2.7992
+2025-01-22 23:27:33,442 - INFO - Epoch 2/50 - Loss: 1.7117
+2025-01-22 23:28:07,182 - INFO - Epoch 3/50 - Loss: 1.5790
+2025-01-22 23:28:40,884 - INFO - Epoch 4/50 - Loss: 1.4900
+2025-01-22 23:29:14,597 - INFO - Epoch 5/50 - Loss: 1.4141
+2025-01-22 23:29:22,545 - INFO - Epoch 5 Eval - Recall@20: 0.0398, NDCG@20: 0.0335
+2025-01-22 23:29:22,545 - INFO - New best performance - Recall@20: 0.0398, NDCG@20: 0.0335
+2025-01-22 23:29:56,690 - INFO - Epoch 6/50 - Loss: 1.3600
+2025-01-22 23:30:30,555 - INFO - Epoch 7/50 - Loss: 1.3168
+2025-01-22 23:31:04,341 - INFO - Epoch 8/50 - Loss: 1.2764
+2025-01-22 23:31:37,996 - INFO - Epoch 9/50 - Loss: 1.2482
+2025-01-22 23:32:11,675 - INFO - Epoch 10/50 - Loss: 1.2202
+2025-01-22 23:32:19,669 - INFO - Epoch 10 Eval - Recall@20: 0.0449, NDCG@20: 0.0375
+2025-01-22 23:32:19,669 - INFO - New best performance - Recall@20: 0.0449, NDCG@20: 0.0375
+2025-01-22 23:32:53,819 - INFO - Epoch 11/50 - Loss: 1.2063
+2025-01-22 23:33:27,788 - INFO - Epoch 12/50 - Loss: 1.1943
+2025-01-22 23:34:01,608 - INFO - Epoch 13/50 - Loss: 1.1749
+2025-01-22 23:34:35,412 - INFO - Epoch 14/50 - Loss: 1.1610
+2025-01-22 23:35:09,208 - INFO - Epoch 15/50 - Loss: 1.1490
+2025-01-22 23:35:17,293 - INFO - Epoch 15 Eval - Recall@20: 0.0470, NDCG@20: 0.0389
+2025-01-22 23:35:17,293 - INFO - New best performance - Recall@20: 0.0470, NDCG@20: 0.0389
+2025-01-22 23:35:51,396 - INFO - Epoch 16/50 - Loss: 1.1357
+2025-01-22 23:36:25,294 - INFO - Epoch 17/50 - Loss: 1.1158
+2025-01-22 23:36:59,142 - INFO - Epoch 18/50 - Loss: 1.1122
+2025-01-22 23:37:32,871 - INFO - Epoch 19/50 - Loss: 1.1017
+2025-01-22 23:38:06,524 - INFO - Epoch 20/50 - Loss: 1.0846
+2025-01-22 23:38:14,808 - INFO - Epoch 20 Eval - Recall@20: 0.0487, NDCG@20: 0.0400
+2025-01-22 23:38:14,808 - INFO - New best performance - Recall@20: 0.0487, NDCG@20: 0.0400
+2025-01-22 23:38:48,862 - INFO - Epoch 21/50 - Loss: 1.0784
+2025-01-22 23:39:22,723 - INFO - Epoch 22/50 - Loss: 1.0668
+2025-01-22 23:39:56,448 - INFO - Epoch 23/50 - Loss: 1.0523
+2025-01-22 23:40:30,235 - INFO - Epoch 24/50 - Loss: 1.0544
+2025-01-22 23:41:03,927 - INFO - Epoch 25/50 - Loss: 1.0393
+2025-01-22 23:41:12,231 - INFO - Epoch 25 Eval - Recall@20: 0.0493, NDCG@20: 0.0401
+2025-01-22 23:41:12,231 - INFO - New best performance - Recall@20: 0.0493, NDCG@20: 0.0401
+2025-01-22 23:41:46,343 - INFO - Epoch 26/50 - Loss: 1.0280
+2025-01-22 23:42:20,217 - INFO - Epoch 27/50 - Loss: 1.0201
+2025-01-22 23:42:53,948 - INFO - Epoch 28/50 - Loss: 1.0190
+2025-01-22 23:43:27,637 - INFO - Epoch 29/50 - Loss: 1.0050
+2025-01-22 23:44:01,385 - INFO - Epoch 30/50 - Loss: 0.9966
+2025-01-22 23:44:09,794 - INFO - Epoch 30 Eval - Recall@20: 0.0496, NDCG@20: 0.0402
+2025-01-22 23:44:09,795 - INFO - New best performance - Recall@20: 0.0496, NDCG@20: 0.0402
+2025-01-22 23:44:43,879 - INFO - Epoch 31/50 - Loss: 0.9871
+2025-01-22 23:45:17,740 - INFO - Epoch 32/50 - Loss: 0.9793
+2025-01-22 23:45:51,463 - INFO - Epoch 33/50 - Loss: 0.9759
+2025-01-22 23:46:25,095 - INFO - Epoch 34/50 - Loss: 0.9730
+2025-01-22 23:46:58,783 - INFO - Epoch 35/50 - Loss: 0.9685
+2025-01-22 23:47:07,350 - INFO - Epoch 35 Eval - Recall@20: 0.0505, NDCG@20: 0.0405
+2025-01-22 23:47:07,350 - INFO - New best performance - Recall@20: 0.0505, NDCG@20: 0.0405
+2025-01-22 23:47:41,452 - INFO - Epoch 36/50 - Loss: 0.9490
+2025-01-22 23:48:15,295 - INFO - Epoch 37/50 - Loss: 0.9462
+2025-01-22 23:48:48,993 - INFO - Epoch 38/50 - Loss: 0.9375
+2025-01-22 23:49:22,702 - INFO - Epoch 39/50 - Loss: 0.9431
+2025-01-22 23:49:56,392 - INFO - Epoch 40/50 - Loss: 0.9382
+2025-01-22 23:50:05,028 - INFO - Epoch 40 Eval - Recall@20: 0.0505, NDCG@20: 0.0404
+2025-01-22 23:50:39,133 - INFO - Epoch 41/50 - Loss: 0.9287
+2025-01-22 23:51:12,967 - INFO - Epoch 42/50 - Loss: 0.9177
+2025-01-22 23:51:46,672 - INFO - Epoch 43/50 - Loss: 0.9181
+2025-01-22 23:52:20,384 - INFO - Epoch 44/50 - Loss: 0.9103
+2025-01-22 23:52:54,073 - INFO - Epoch 45/50 - Loss: 0.9068
+2025-01-22 23:53:02,779 - INFO - Epoch 45 Eval - Recall@20: 0.0512, NDCG@20: 0.0409
+2025-01-22 23:53:02,779 - INFO - New best performance - Recall@20: 0.0512, NDCG@20: 0.0409
+2025-01-22 23:53:36,876 - INFO - Epoch 46/50 - Loss: 0.8965
+2025-01-22 23:54:10,750 - INFO - Epoch 47/50 - Loss: 0.8961
+2025-01-22 23:54:44,637 - INFO - Epoch 48/50 - Loss: 0.8914
+2025-01-22 23:55:18,389 - INFO - Epoch 49/50 - Loss: 0.8897
+2025-01-22 23:55:52,135 - INFO - Epoch 50/50 - Loss: 0.8855
+2025-01-22 23:56:00,963 - INFO - Epoch 50 Eval - Recall@20: 0.0517, NDCG@20: 0.0412
+2025-01-22 23:56:00,963 - INFO - New best performance - Recall@20: 0.0517, NDCG@20: 0.0412
+2025-01-22 23:56:10,147 - INFO - Final Test Results - Recall@20: 0.0517, NDCG@20: 0.0412
+2025-01-22 23:56:10,147 - INFO - Best Results - Recall@20: 0.0517, NDCG@20: 0.0412
+2025-01-22 23:56:10,365 - INFO - 
+Testing number of layers: 2
+2025-01-22 23:56:10,366 - INFO - Starting experiment with config: {'batch_size': 512, 'embed_dim': 64, 'n_layers': 2, 'learning_rate': 0.001, 'num_epochs': 50, 'temperature': 0.1, 'lambda_coef': 0.5, 'eval_frequency': 5, 'early_stop_patience': 10}
+2025-01-22 23:56:10,366 - INFO - Using device: cuda:1
+2025-01-22 23:56:10,374 - INFO - Dataset loaded: 29601 users, 24734 items
+2025-01-22 23:57:18,572 - INFO - Epoch 1/50 - Loss: 4.5670
+2025-01-22 23:58:17,654 - INFO - Epoch 2/50 - Loss: 3.2513
+2025-01-22 23:59:16,671 - INFO - Epoch 3/50 - Loss: 2.1549
+2025-01-23 00:00:15,777 - INFO - Epoch 4/50 - Loss: 1.6762
+2025-01-23 00:01:14,912 - INFO - Epoch 5/50 - Loss: 1.4665
+2025-01-23 00:01:23,865 - INFO - Epoch 5 Eval - Recall@20: 0.0462, NDCG@20: 0.0371
+2025-01-23 00:01:23,865 - INFO - New best performance - Recall@20: 0.0462, NDCG@20: 0.0371
+2025-01-23 00:02:23,441 - INFO - Epoch 6/50 - Loss: 1.3680
+2025-01-23 00:03:22,705 - INFO - Epoch 7/50 - Loss: 1.2975
+2025-01-23 00:04:21,771 - INFO - Epoch 8/50 - Loss: 1.2632
+2025-01-23 00:05:20,795 - INFO - Epoch 9/50 - Loss: 1.2489
+2025-01-23 00:06:19,930 - INFO - Epoch 10/50 - Loss: 1.2275
+2025-01-23 00:06:28,985 - INFO - Epoch 10 Eval - Recall@20: 0.0432, NDCG@20: 0.0346
+2025-01-23 00:07:28,580 - INFO - Epoch 11/50 - Loss: 1.2108
+2025-01-23 00:08:27,955 - INFO - Epoch 12/50 - Loss: 1.2462
+2025-01-23 00:09:27,191 - INFO - Epoch 13/50 - Loss: 1.1887
+2025-01-23 00:10:26,440 - INFO - Epoch 14/50 - Loss: 1.2243
+2025-01-23 00:11:25,632 - INFO - Epoch 15/50 - Loss: 1.2545
+2025-01-23 00:11:34,735 - INFO - Epoch 15 Eval - Recall@20: 0.0458, NDCG@20: 0.0361
+2025-01-23 00:12:34,338 - INFO - Epoch 16/50 - Loss: 1.2199
+2025-01-23 00:13:33,665 - INFO - Epoch 17/50 - Loss: 1.2338
+2025-01-23 00:14:32,818 - INFO - Epoch 18/50 - Loss: 1.1889
+2025-01-23 00:15:31,912 - INFO - Epoch 19/50 - Loss: 1.1776
+2025-01-23 00:16:31,013 - INFO - Epoch 20/50 - Loss: 1.2128
+2025-01-23 00:16:40,208 - INFO - Epoch 20 Eval - Recall@20: 0.0427, NDCG@20: 0.0340
+2025-01-23 00:17:39,690 - INFO - Epoch 21/50 - Loss: 1.1943
+2025-01-23 00:18:38,825 - INFO - Epoch 22/50 - Loss: 1.1748
+2025-01-23 00:19:37,969 - INFO - Epoch 23/50 - Loss: 1.2124
+2025-01-23 00:20:37,155 - INFO - Epoch 24/50 - Loss: 1.2032
+2025-01-23 00:21:36,377 - INFO - Epoch 25/50 - Loss: 1.1786
+2025-01-23 00:21:45,635 - INFO - Epoch 25 Eval - Recall@20: 0.0440, NDCG@20: 0.0343
+2025-01-23 00:22:45,279 - INFO - Epoch 26/50 - Loss: 1.2037
+2025-01-23 00:23:44,590 - INFO - Epoch 27/50 - Loss: 1.2671
+2025-01-23 00:24:43,744 - INFO - Epoch 28/50 - Loss: 1.2208
+2025-01-23 00:25:42,912 - INFO - Epoch 29/50 - Loss: 1.2072
+2025-01-23 00:26:42,088 - INFO - Epoch 30/50 - Loss: 1.1784
+2025-01-23 00:26:51,486 - INFO - Epoch 30 Eval - Recall@20: 0.0454, NDCG@20: 0.0354
+2025-01-23 00:27:51,036 - INFO - Epoch 31/50 - Loss: 1.2181
+2025-01-23 00:28:50,204 - INFO - Epoch 32/50 - Loss: 1.2205
+2025-01-23 00:29:49,295 - INFO - Epoch 33/50 - Loss: 1.1731
+2025-01-23 00:30:48,397 - INFO - Epoch 34/50 - Loss: 1.1847
+2025-01-23 00:31:47,550 - INFO - Epoch 35/50 - Loss: 1.2132
+2025-01-23 00:31:56,790 - INFO - Epoch 35 Eval - Recall@20: 0.0478, NDCG@20: 0.0368
+2025-01-23 00:31:56,790 - INFO - New best performance - Recall@20: 0.0478, NDCG@20: 0.0368
+2025-01-23 00:32:56,378 - INFO - Epoch 36/50 - Loss: 1.1817
+2025-01-23 00:33:55,715 - INFO - Epoch 37/50 - Loss: 1.1658
+2025-01-23 00:34:54,940 - INFO - Epoch 38/50 - Loss: 1.2063
+2025-01-23 00:35:54,094 - INFO - Epoch 39/50 - Loss: 1.2046
+2025-01-23 00:36:53,236 - INFO - Epoch 40/50 - Loss: 1.1626
+2025-01-23 00:37:02,481 - INFO - Epoch 40 Eval - Recall@20: 0.0445, NDCG@20: 0.0341
+2025-01-23 00:38:02,034 - INFO - Epoch 41/50 - Loss: 1.2342
+2025-01-23 00:39:01,123 - INFO - Epoch 42/50 - Loss: 1.1594
+2025-01-23 00:40:00,296 - INFO - Epoch 43/50 - Loss: 1.2307
+2025-01-23 00:40:59,552 - INFO - Epoch 44/50 - Loss: 1.1974
+2025-01-23 00:41:58,724 - INFO - Epoch 45/50 - Loss: 1.1933
+2025-01-23 00:42:08,070 - INFO - Epoch 45 Eval - Recall@20: 0.0444, NDCG@20: 0.0346
+2025-01-23 00:43:07,557 - INFO - Epoch 46/50 - Loss: 1.1785
+2025-01-23 00:44:06,702 - INFO - Epoch 47/50 - Loss: 1.1974
+2025-01-23 00:45:05,863 - INFO - Epoch 48/50 - Loss: 1.2241
+2025-01-23 00:46:05,014 - INFO - Epoch 49/50 - Loss: 1.1523
+2025-01-23 00:47:04,180 - INFO - Epoch 50/50 - Loss: 1.2265
+2025-01-23 00:47:13,781 - INFO - Epoch 50 Eval - Recall@20: 0.0404, NDCG@20: 0.0310
+2025-01-23 00:47:23,956 - INFO - Final Test Results - Recall@20: 0.0404, NDCG@20: 0.0310
+2025-01-23 00:47:23,956 - INFO - Best Results - Recall@20: 0.0478, NDCG@20: 0.0368
+2025-01-23 00:47:24,175 - INFO - 
+Testing number of layers: 3
+2025-01-23 00:47:24,175 - INFO - Starting experiment with config: {'batch_size': 512, 'embed_dim': 64, 'n_layers': 3, 'learning_rate': 0.001, 'num_epochs': 50, 'temperature': 0.1, 'lambda_coef': 0.5, 'eval_frequency': 5, 'early_stop_patience': 10}
+2025-01-23 00:47:24,175 - INFO - Using device: cuda:1
+2025-01-23 00:47:24,183 - INFO - Dataset loaded: 29601 users, 24734 items
+2025-01-23 00:48:57,544 - INFO - Epoch 1/50 - Loss: 6.7661
+2025-01-23 00:50:22,063 - INFO - Epoch 2/50 - Loss: 6.3791
+2025-01-23 00:51:46,557 - INFO - Epoch 3/50 - Loss: 6.3852
+2025-01-23 00:53:11,128 - INFO - Epoch 4/50 - Loss: 6.1005
+2025-01-23 00:54:35,748 - INFO - Epoch 5/50 - Loss: 6.4000
+2025-01-23 00:54:44,532 - INFO - Epoch 5 Eval - Recall@20: 0.0265, NDCG@20: 0.0220
+2025-01-23 00:54:44,532 - INFO - New best performance - Recall@20: 0.0265, NDCG@20: 0.0220
+2025-01-23 00:56:09,451 - INFO - Epoch 6/50 - Loss: 6.3489
+2025-01-23 00:57:34,060 - INFO - Epoch 7/50 - Loss: 6.4983
+2025-01-23 00:58:58,594 - INFO - Epoch 8/50 - Loss: 6.5085
+2025-01-23 01:00:23,215 - INFO - Epoch 9/50 - Loss: 6.5895
+2025-01-23 01:01:47,955 - INFO - Epoch 10/50 - Loss: 6.0970
+2025-01-23 01:01:56,547 - INFO - Epoch 10 Eval - Recall@20: 0.0278, NDCG@20: 0.0236
+2025-01-23 01:01:56,547 - INFO - New best performance - Recall@20: 0.0278, NDCG@20: 0.0236
+2025-01-23 01:03:21,507 - INFO - Epoch 11/50 - Loss: 6.0936
+2025-01-23 01:04:46,190 - INFO - Epoch 12/50 - Loss: 6.8321
+2025-01-23 01:06:10,824 - INFO - Epoch 13/50 - Loss: 7.4282
+2025-01-23 01:07:35,579 - INFO - Epoch 14/50 - Loss: 7.2944
+2025-01-23 01:09:00,376 - INFO - Epoch 15/50 - Loss: 7.1457
+2025-01-23 01:09:09,050 - INFO - Epoch 15 Eval - Recall@20: 0.0198, NDCG@20: 0.0170
+2025-01-23 01:10:34,004 - INFO - Epoch 16/50 - Loss: 7.1180
+2025-01-23 01:11:58,703 - INFO - Epoch 17/50 - Loss: 7.1141
+2025-01-23 01:13:23,373 - INFO - Epoch 18/50 - Loss: 7.1056
+2025-01-23 01:14:48,062 - INFO - Epoch 19/50 - Loss: 7.0981
+2025-01-23 01:16:12,649 - INFO - Epoch 20/50 - Loss: 7.1738
+2025-01-23 01:16:21,215 - INFO - Epoch 20 Eval - Recall@20: 0.0203, NDCG@20: 0.0173
+2025-01-23 01:17:46,086 - INFO - Epoch 21/50 - Loss: 7.1003
+2025-01-23 01:19:10,668 - INFO - Epoch 22/50 - Loss: 6.9573
+2025-01-23 01:20:35,330 - INFO - Epoch 23/50 - Loss: 6.8372
+2025-01-23 01:21:59,961 - INFO - Epoch 24/50 - Loss: 6.8165
+2025-01-23 01:23:24,554 - INFO - Epoch 25/50 - Loss: 6.6991
+2025-01-23 01:23:33,284 - INFO - Epoch 25 Eval - Recall@20: 0.0212, NDCG@20: 0.0182
+2025-01-23 01:24:58,167 - INFO - Epoch 26/50 - Loss: 6.7462
+2025-01-23 01:26:22,775 - INFO - Epoch 27/50 - Loss: 6.6931
+2025-01-23 01:27:47,391 - INFO - Epoch 28/50 - Loss: 6.8184
+2025-01-23 01:29:11,941 - INFO - Epoch 29/50 - Loss: 7.7623
+2025-01-23 01:30:36,495 - INFO - Epoch 30/50 - Loss: 10.5879
+2025-01-23 01:30:45,049 - INFO - Epoch 30 Eval - Recall@20: 0.0184, NDCG@20: 0.0157
+2025-01-23 01:32:09,879 - INFO - Epoch 31/50 - Loss: 10.5638
+2025-01-23 01:33:34,451 - INFO - Epoch 32/50 - Loss: 7.3649
+2025-01-23 01:34:58,980 - INFO - Epoch 33/50 - Loss: 6.6968
+2025-01-23 01:36:23,505 - INFO - Epoch 34/50 - Loss: 6.6725
+2025-01-23 01:37:48,064 - INFO - Epoch 35/50 - Loss: 6.6087
+2025-01-23 01:37:56,414 - INFO - Epoch 35 Eval - Recall@20: 0.0232, NDCG@20: 0.0198
+2025-01-23 01:39:21,276 - INFO - Epoch 36/50 - Loss: 6.6720
+2025-01-23 01:40:45,796 - INFO - Epoch 37/50 - Loss: 6.3118
+2025-01-23 01:42:10,324 - INFO - Epoch 38/50 - Loss: 6.2525
+2025-01-23 01:43:34,847 - INFO - Epoch 39/50 - Loss: 6.1398
+2025-01-23 01:44:59,453 - INFO - Epoch 40/50 - Loss: 6.0634
+2025-01-23 01:45:07,865 - INFO - Epoch 40 Eval - Recall@20: 0.0285, NDCG@20: 0.0248
+2025-01-23 01:45:07,865 - INFO - New best performance - Recall@20: 0.0285, NDCG@20: 0.0248
+2025-01-23 01:46:32,741 - INFO - Epoch 41/50 - Loss: 6.0366
+2025-01-23 01:47:57,204 - INFO - Epoch 42/50 - Loss: 6.0551
+2025-01-23 01:49:21,729 - INFO - Epoch 43/50 - Loss: 6.0287
+2025-01-23 01:50:46,306 - INFO - Epoch 44/50 - Loss: 5.9877
+2025-01-23 01:52:10,955 - INFO - Epoch 45/50 - Loss: 6.0050
+2025-01-23 01:52:19,257 - INFO - Epoch 45 Eval - Recall@20: 0.0288, NDCG@20: 0.0251
+2025-01-23 01:52:19,257 - INFO - New best performance - Recall@20: 0.0288, NDCG@20: 0.0251
+2025-01-23 01:53:44,197 - INFO - Epoch 46/50 - Loss: 5.9780
+2025-01-23 01:55:08,739 - INFO - Epoch 47/50 - Loss: 6.0417
+2025-01-23 01:56:33,272 - INFO - Epoch 48/50 - Loss: 5.8984
+2025-01-23 01:57:57,792 - INFO - Epoch 49/50 - Loss: 5.9754
+2025-01-23 01:59:22,300 - INFO - Epoch 50/50 - Loss: 5.9619
+2025-01-23 01:59:30,499 - INFO - Epoch 50 Eval - Recall@20: 0.0291, NDCG@20: 0.0253
+2025-01-23 01:59:30,499 - INFO - New best performance - Recall@20: 0.0291, NDCG@20: 0.0253
+2025-01-23 01:59:39,255 - INFO - Final Test Results - Recall@20: 0.0291, NDCG@20: 0.0253
+2025-01-23 01:59:39,255 - INFO - Best Results - Recall@20: 0.0291, NDCG@20: 0.0253
+2025-01-23 01:59:39,479 - INFO - 
+Sensitivity Analysis Results Summary:
+2025-01-23 01:59:39,480 - INFO - 
+Temperature Sensitivity Results:
+2025-01-23 01:59:39,480 - INFO - Temperature 0.05: Recall@20=0.0526, NDCG@20=0.0413
+2025-01-23 01:59:39,480 - INFO - Temperature 0.1: Recall@20=0.0465, NDCG@20=0.0361
+2025-01-23 01:59:39,480 - INFO - Temperature 0.2: Recall@20=0.0577, NDCG@20=0.0453
+2025-01-23 01:59:39,480 - INFO - Temperature 0.5: Recall@20=0.0568, NDCG@20=0.0452
+2025-01-23 01:59:39,480 - INFO - 
+Embedding Dimension Sensitivity Results:
+2025-01-23 01:59:39,480 - INFO - Dimension 32: Recall@20=0.0455, NDCG@20=0.0373
+2025-01-23 01:59:39,480 - INFO - Dimension 64: Recall@20=0.0475, NDCG@20=0.0384
+2025-01-23 01:59:39,480 - INFO - 
+Layer Number Sensitivity Results:
+2025-01-23 01:59:39,480 - INFO - Layers 1: Recall@20=0.0517, NDCG@20=0.0412
+2025-01-23 01:59:39,480 - INFO - Layers 2: Recall@20=0.0478, NDCG@20=0.0368
+2025-01-23 01:59:39,480 - INFO - Layers 3: Recall@20=0.0291, NDCG@20=0.0253

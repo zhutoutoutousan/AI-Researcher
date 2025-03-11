@@ -1,0 +1,11 @@
+{
+    "timestamp": "20250119_124355",
+    "baseline_metrics": {
+        "fid": 2469.495641485857
+    },
+    "improved_metrics": {
+        "fid": 2448.9648497501794
+    },
+    "ablation_results": {},
+    "sensitivity_results": null
+}

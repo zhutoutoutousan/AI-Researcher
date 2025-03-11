@@ -1,0 +1,77 @@
+{
+    "target": "Knowledge Graph Self-Supervised Rationalization for Recommendation",
+    "instance_id": "kgrec_final",
+    "source_papers": [
+      {
+        "reference": "Masked Autoencoders As Spatiotemporal Learners",
+        "rank": 1,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This study provided a foundational method for masked autoencoders, which directly influenced the rationale-aware knowledge masking mechanism in the proposed model. The effectiveness of masked autoencoders in acquiring useful implicit semantics is critical for the proposed approach.",
+        "usage": "The proposed model adapted the masked autoencoder framework to integrate rationale-aware knowledge masking."
+      },
+      {
+        "reference": "Noise-contrastive estimation: A new estimation principle for unnormalized statistical models",
+        "rank": 2,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This work introduced noise-contrastive estimation, which was adapted in the proposed model for ensuring noise-resistant contrasting of knowledge graph edges based on rational scores. It established a principle that is crucial for the proposed model's robustness.",
+        "usage": "The proposed model utilized noise-resistant contrasting principles to mask potential noisy edges in the knowledge graphs."
+      },
+      {
+        "reference": "Learning entity and relation embeddings for knowledge graph completion",
+        "rank": 3,
+        "type": [
+          "component"
+        ],
+        "justification": "This study's discussion on contrastive learning techniques served as a basis for the integration of contrastive learning in the proposed model to enhance knowledge-aware recommendation. It highlights the importance of leveraging contrastive signals.",
+        "usage": "The proposed model applied contrastive learning in the context of knowledge-aware recommendation to improve model performance."
+      },
+      {
+        "reference": "Kgat: Knowledge graph attention network for recommendation",
+        "rank": 4,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "The proposed approach introduced the collaborative KG concept, which inspired the rationale-aware mechanisms and cross-view contrastive learning in the proposed model. This conceptual framework helped shape the direction of this study.",
+        "usage": "The proposed model extended the collaborative KG concept to include rationale-aware mechanisms and cross-view contrastive learning."
+      },
+      {
+        "reference": "Unifying knowledge graph learning and recommendation: Towards a better understanding of user preferences",
+        "rank": 5,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This reference emphasized the integration of knowledge graphs into recommendation systems, influencing the proposed model to enhance user preference learning with a rationale-based approach. It shaped the overall framework of the proposed model.",
+        "usage": "The proposed model enhanced the integration of knowledge graphs with a rationale-based approach for user preference learning."
+      },
+      {
+        "reference": "Graph convolutional matrix completion",
+        "rank": 6,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This paper presented collaborative filtering paradigms that informed the proposed model's approach to user-item interactions enhanced by knowledge graphs. It provided a conceptual framework for the development of the proposed approach.",
+        "usage": "The proposed model refined collaborative filtering paradigms to emphasize user-item interactions enhanced by knowledge graphs."
+      }
+    ],
+    "authors": [
+      "Yuhao Yang",
+      "Chao Huang",
+      "Lianghao Xia",
+      "Chunzhen Huang"
+    ],
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2307.02759v1",
+    "abstract": "In this paper, we introduce a new self-supervised rationalization method,\ncalled KGRec, for knowledge-aware recommender systems. To effectively identify\ninformative knowledge connections, we propose an attentive knowledge\nrationalization mechanism that generates rational scores for knowledge\ntriplets. With these scores, KGRec integrates generative and contrastive\nself-supervised tasks for recommendation through rational masking. To highlight\nrationales in the knowledge graph, we design a novel generative task in the\nform of masking-reconstructing. By masking important knowledge with high\nrational scores, KGRec is trained to rebuild and highlight useful knowledge\nconnections that serve as rationales. To further rationalize the effect of\ncollaborative interactions on knowledge graph learning, we introduce a\ncontrastive learning task that aligns signals from knowledge and user-item\ninteraction views. To ensure noise-resistant contrasting, potential noisy edges\nin both graphs judged by the rational scores are masked. Extensive experiments\non three real-world datasets demonstrate that KGRec outperforms\nstate-of-the-art methods. We also provide the implementation codes for our\napproach at https://github.com/HKUDS/KGRec.",
+    "venue": "Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+    "venue_source": "Crossref",
+    "venue_lookup_time": "2024-11-19T16:36:35.871154",
+    "citations": 57,
+    "topic": "Knowledge Graph Contrastive Learning for Recommendation",
+    "field": "preselected",
+    "task1": "The core methodology of the presented research paper focuses on enhancing recommendation systems through a self-supervised learning approach that utilizes knowledge graphs. The proposed model is designed to identify and leverage informative relationships between users, items, and their associated knowledge triplets.\n\n1. **Task**: The proposed model addresses the task of knowledge-aware recommendation systems, aiming to improve the accuracy and interpretability of recommendations based on user-item interactions and knowledge graph information.\n\n2. **Core Techniques**: \n   - **Rationale Weighting Function**: This learns the importance of knowledge triplets using a graph attention mechanism.\n   - **Knowledge Aggregation Layer**: This aggregates information from the knowledge graph while considering the importance of triplets based on rational scores.\n   - **Masked Autoencoder**: Implements a masking and reconstruction strategy to distill essential knowledge from the graph.\n   - **Contrastive Learning**: Aligns representations from the knowledge graph and user-item interactions to enhance learning.\n\n3. **Purpose of Components**:\n   - **Rationale Weighting Function**: Produces rational scores indicating the significance of each knowledge triplet for user preferences.\n   - **Knowledge Aggregation Layer**: Combines knowledge from relevant triplets to generate user and item embeddings.\n   - **Masked Autoencoder**: Focuses on reconstructing important triplets while ignoring noisy or irrelevant information.\n   - **Contrastive Learning**: Facilitates the alignment of different views (knowledge graph vs. user-item interactions) to improve representation learning.\n\n4. **Implementation Details**:\n   - **Rationale Weighting Function**: Key parameters include trainable weights for attention (dimensions R_d \u00d7 d, where d is hidden dimensionality). Input consists of embeddings for head, relation, and tail entities; output is a rationale score for each triplet.\n   - **Knowledge Aggregation Layer**: Input is the knowledge graph and the output is the aggregated embeddings for users/items. Use normalized rationale scores for weighting neighbors.\n   - **Masked Autoencoder**: The masking mechanism randomly selects important triplets based on calculated rationale scores to create a masked graph. It requires the number of masked triplets to be defined (e.g., top k scores). The output is reconstructed embeddings for the masked connections.\n   - **Contrastive Learning**: Involves creating augmented graphs by removing low-scored connections. The inputs are the augmented user-item and knowledge graphs, producing aligned representations.\n\n5. **Step-by-Step Interaction**:\n   - Begin with user-item interaction and knowledge graphs. \n   - Apply the rationale weighting function to generate scores for each knowledge triplet.\n   - Use these scores to inform the knowledge aggregation layer, producing user and item embeddings reflective of important knowledge.\n   - Implement the masked autoencoder to train on the knowledge graph, masking triplets based on scores and reconstructing them to emphasize relevant information.\n   - Finally, apply contrastive learning between the user-item view and the knowledge graph view, aligning their representations to improve overall recommendation performance.\n\n6. **Critical Implementation Details**:\n   - The selection of the masking size during training is crucial; it should be tuned based on the dataset characteristics. \n   - The temperature used in the contrastive loss affects the proposed model's sensitivity to negative samples \u2014 it should be optimized for best performance.\n   - Ensure that the knowledge graph is clean of noise by filtering out low-scored triplets before training to facilitate better representation learning.\n   - Adequate configurations for the learning rates and the weight of different loss components in the joint loss function can significantly impact the convergence and performance of the proposed approach.",
+    "task2": "The primary task the research tackles is enhancing recommendation systems by leveraging knowledge graphs through a self-supervised learning approach to effectively identify and utilize informative knowledge connections.\n\nCurrent limitations in existing approaches include the inability to adequately address the noise and sparsity issues present in knowledge graphs, as well as a lack of focus on the latent rationales that underlie user preferences, which contributes to sub-optimal performance in recommendation tasks.\n\nThe core challenges the researchers aim to overcome involve developing a method that can explicitly model and highlight the rationales behind user preferences while minimizing the impact of noisy and irrelevant knowledge connections in the recommendation process.\n\nKey objectives and intended contributions include proposing a novel self-supervised learning framework that integrates generative and contrastive tasks to rationalize knowledge graphs, enabling the identification of task-relevant knowledge, and aligning the impacts of collaborative filtering signals with knowledge graph representations to enhance recommendation performance."
+  }

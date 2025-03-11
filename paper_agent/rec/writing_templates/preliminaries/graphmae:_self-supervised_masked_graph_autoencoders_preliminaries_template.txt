@@ -1,0 +1,34 @@
+```latex
+\section{RELATED WORK}
+
+According to [insert general classification criteria], self-supervised methods can be naturally divided into [Domain 1] and [Domain 2].
+
+\subsection{[Subdomain 1]}
+
+[Several sentences explaining the motivation and intuition behind the proposed method]. [Cite relevant works] has been the prevalent paradigm for [topic] in the past [time period]. Its success relies heavily on the elaborate designs of the following components:
+
+\subsubsection{[Component 1]}
+In pursuit of [goal], [component description]. [Cite relevant works] leverage [approach/technique]. Furthermore, [additional insights or methods involved].
+
+\subsubsection{[Component 2]}
+[Discussion of the importance of architecture/constraints]. As [adopted techniques/architectures] are widely implemented, they address [specific challenge].
+
+\subsubsection{[Component 3]}
+High-quality and informative data [type of augmentation] plays a central role in the success of [approach]. Previous approaches include [list of augmentation methods and types]. However, [discussion of challenges or limitations regarding interpretability or effectiveness].
+
+\subsection{[Subdomain 2]}
+
+Generative self-supervised learning aims to [goal]. It can be further classified into [subclass 1] and [subclass 2]. Despite [challenges], there has been considerable research on [specific topic].
+
+\subsubsection{[Subclass 1]}
+[General discussion about the approaches in this subclass]. [Cite relevant research] has proposed [specific methodologies]. Nevertheless, [follow-up statement addressing inherent limitations of the approach].
+
+\subsubsection{[Subclass 2]}
+[Discussion of the design principles behind the methods]. The earliest works trace back to [key early works]. [Current trends or adaptations] have been made, leading to [specific outcomes or objectives]. 
+
+Regardless of [application context], the existing methods often [discuss limitations]. Therefore, our goal in this work is to [goal of the research], specifically addressing the shortcomings of [existing approaches].
+
+\subsection{Comparison with Existing Approaches}
+
+Recently, [mention any relevant comparative studies]. However, their performance lags behind [reference state-of-the-art methods] due to [critical limitations]. We present a rough comparison of algorithms and results between [method 1] and [method 2] in Appendix [letter/number].
+```

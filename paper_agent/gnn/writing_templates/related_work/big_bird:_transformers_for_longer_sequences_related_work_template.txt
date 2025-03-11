@@ -1,0 +1,16 @@
+\section{Related Work}
+
+There have been a number of interesting attempts aimed at addressing [challenge or problem area], which can broadly be categorized into two directions. 
+
+The first line of work [description of the first direction] has explored methods such as [brief description of basic methods used in this direction]. In general, most work fits within the following paradigm: [general approach or methodology], with prominent examples including [work 1], [work 2], [work 3], and [work 4]. However, it is worth noting that these methods often [brief discussion of limitations or challenges associated with the first direction].
+
+Specifically, the second line of work questions [specific aspect or assumption of the challenge] and has attempted to develop approaches that [description of what those approaches do]. Notable contributions in this area include [work 1], [work 2], and [work 3], which [brief summary of what these works achieve and their limitations]. For instance, [a specific method or concept] proposed by [author] has [describe the impact or significance of the idea], but it is challenged by [specific limitation or drawback].
+
+Furthermore, [additional works or methods related to the second direction] have proposed [brief summary of additional approaches], with a focus on [aspect or goal].
+
+Recently, [work or method], introduced [description of new method or framework] aimed at [specific goal or problem addressed]. Our work is closely related to and builds upon [previous work] which aimed to [describe the objectives or contributions of the previous work]. The idea of [key concept or finding from previous work] was utilized by the authors to achieve [specific achievement or goal]. Our theoretical contributions provide [summary of new insights or validations related to the previous work].
+
+It is important to note that most of the aforementioned methods are [general observation about methods such as limitations or characteristics]. For instance, [specific exception or noteworthy cases], which we include in our comparisons (see [Appendix/Section reference] for a more detailed comparison). Moreover, [discussion about the need for theoretical guarantees or observations about robustness]. 
+
+\medskip
+% Add any concluding remarks about the state of the field or the potential impact of the proposed method here.

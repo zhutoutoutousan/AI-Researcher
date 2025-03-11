@@ -1,0 +1,117 @@
+{
+    "authors": [
+      "Patrick Esser",
+      "Sumith Kulal",
+      "Andreas Blattmann",
+      "Rahim Entezari",
+      "Jonas M\u00fcller",
+      "Harry Saini",
+      "Yam Levi",
+      "Dominik Lorenz",
+      "Axel Sauer",
+      "Frederic Boesel",
+      "Dustin Podell",
+      "Tim Dockhorn",
+      "Zion English",
+      "Kyle Lacey",
+      "Alex Goodwin",
+      "Yannik Marek",
+      "Robin Rombach"
+    ],
+    "year": 2024,
+    "url": "http://arxiv.org/abs/2403.03206v1",
+    "instance_id": "mmdit",
+    "abstract": "Diffusion models create data from noise by inverting the forward paths of\ndata towards noise and have emerged as a powerful generative modeling technique\nfor high-dimensional, perceptual data such as images and videos. Rectified flow\nis a recent generative model formulation that connects data and noise in a\nstraight line. Despite its better theoretical properties and conceptual\nsimplicity, it is not yet decisively established as standard practice. In this\nwork, we improve existing noise sampling techniques for training rectified flow\nmodels by biasing them towards perceptually relevant scales. Through a\nlarge-scale study, we demonstrate the superior performance of this approach\ncompared to established diffusion formulations for high-resolution\ntext-to-image synthesis. Additionally, we present a novel transformer-based\narchitecture for text-to-image generation that uses separate weights for the\ntwo modalities and enables a bidirectional flow of information between image\nand text tokens, improving text comprehension, typography, and human preference\nratings. We demonstrate that this architecture follows predictable scaling\ntrends and correlates lower validation loss to improved text-to-image synthesis\nas measured by various metrics and human evaluations. Our largest models\noutperform state-of-the-art models, and we will make our experimental data,\ncode, and model weights publicly available.",
+    "venue": "International Conference on Machine Learning",
+    "venue_source": "Semantic Scholar",
+    "venue_lookup_time": "2025-01-10T19:29:24.231487",
+    "citations": 450,
+    "topic": "selected",
+    "field": "selected",
+    "target": "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis",
+    "source_papers": [
+      {
+        "reference": "Denoising diffusion probabilistic models",
+        "rank": 1,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This foundational paper introduced diffusion models which serve as a core methodological basis for the entire research on the proposed model used in high-resolution image synthesis. Its innovative approach of generating data from noise is fundamentally important for the development of the generative modeling techniques explored in this study.",
+        "usage": "The methods were adapted for generating data in a high-dimensional space, establishing a necessary framework for the proposed improvements in the proposed model."
+      },
+      {
+        "reference": "Improved denoising diffusion probabilistic models",
+        "rank": 2,
+        "type": [
+          "methodological"
+        ],
+        "justification": "By demonstrating the effectiveness of diffusion models in high-dimensional generative tasks, this study heavily influenced the methodology used in the current research. It underscored the importance of effective noise reduction techniques pivotal to the proposed model accuracy.",
+        "usage": "The results and insights from this paper were leveraged to enhance the performance metrics of the proposed model developed in the research."
+      },
+      {
+        "reference": "High-resolution image synthesis with latent diffusion models",
+        "rank": 3,
+        "type": [
+          "component"
+        ],
+        "justification": "This study is crucial as it merges the concepts of latent diffusion and transformer architectures, guiding the design of the proposed approach in the current research. It forms the technical basis for many architectural decisions made.",
+        "usage": "The insights into architecture expansion and latent representation were directly applied to improve the text-to-image synthesis process in this paper."
+      },
+      {
+        "reference": "Align your latents: High-resolution video synthesis with latent diffusion models",
+        "rank": 4,
+        "type": [
+          "component"
+        ],
+        "justification": "The enhanced noise sampling techniques demonstrated in this study significantly contributed to the improvements levied on the proposed model in the current research. The adaptation of these methods directly impacted the quality of image generation.",
+        "usage": "The techniques were adapted to create more effective noise samplers for the proposed model framework."
+      },
+      {
+        "reference": "Improving image generation with better captions",
+        "rank": 5,
+        "type": [
+          "component"
+        ],
+        "justification": "This work introduced methods for utilizing synthetic captions to enhance image generation, which directly informed this study's approach to text conditioning. Its focus on improving the proposed model outputs through better captioning strategies was critical.",
+        "usage": "The innovative techniques for caption improvement were integrated to refine the proposed model's understanding and generation of images from text prompts."
+      },
+      {
+        "reference": "Flow Matching for Generative Modeling",
+        "rank": 6,
+        "type": [
+          "component"
+        ],
+        "justification": "This study's advancement in flow matching objectives provided vital techniques that were integrated into the new proposed approach formulations presented in the current research, allowing for superior performance in generative tasks.",
+        "usage": "The study's methodologies were utilized to refine the objectives in training the proposed model, optimizing the generation process."
+      },
+      {
+        "reference": "Scaling laws for neural language models",
+        "rank": 7,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This influential work introduced scaling laws that relate model size and performance. Its insights shaped the research direction toward understanding and implementing the proposed approach, crucial for developing the new architecture.",
+        "usage": "The scaling insights were applied to enhance the evaluation of the proposed model performance as parameters were increased, informing the design of experiments."
+      },
+      {
+        "reference": "Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow",
+        "rank": 8,
+        "type": [
+          "component"
+        ],
+        "justification": "Rectified Flow introduces a specific trajectory definition and method for straightening flows, which directly informs the components of the proposed model. Its ideas around rewiring trajectories were crucial for enhancing the expressiveness of the new method.",
+        "usage": "The proposed model is introduced as a generative modeling framework that connects data distribution and noise using straight paths."
+      },
+      {
+        "reference": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+        "rank": 9,
+        "type": [
+          "component"
+        ],
+        "justification": "DPO introduced effective techniques for optimizing model outputs based on user preferences, significantly influencing how evaluation and adjustments were made for the proposed model's performance in generating images.",
+        "usage": "The DPO techniques were employed for fine-tuning the outputs of the models based on human feedback, improving user satisfaction with image quality."
+      }
+    ],
+    "task1": "The described system is designed for high-resolution text-to-image synthesis using advanced generative modeling techniques. The core of the approach centers around a hybrid architecture that integrates the proposed model and transformers, which allow for bi-directional information flow between text and image data.\n\n1. **Task:** The proposed model primarily focuses on generating high-resolution images from text prompts.\n\n2. **Core Techniques/Algorithms:** The key algorithms include:\n   - **The proposed model** as a generative modeling framework that connects data distribution and noise using straight paths.\n   - **Transformer Architecture** using separate weights for text and image modalities, utilizing modulated attention mechanisms.\n   - **Noise Samplers** tailored for improved performance on the proposed model, including logit-normal and mode sampling strategies.\n\n3. **Purpose/Function of Major Components:**\n   - **The proposed model:** Facilitates efficient training and inference through direct mapping between data and noise.\n   - **Transformer Module:** Enables the integration of multi-modal data (text and images) and manages the parameterized interdependency between them.\n   - **Noise Samplers:** Enhance the training process by weighting the noise scales to maximize learning efficacy.\n\n4. **Implementation Details:**\n   - **The proposed model:** Train this model using continuous time representations with model parameters optimized via a chosen loss function, specifically designed for the proposed model. Key parameters include batch size and learning rate, which are typically set at 1024 and 0.0001, respectively.\n   - **Transformer Architecture:** Use a hidden size of 64 * depth (d), with multiple attention heads set equal to d. Train using masked attention and feed-forward blocks structured for both image and text modalities.\n   - **Noise Samplers:** For logit-normal sampling, set efficient marker parameters like mean (m) and scale (s) during training to enhance the sampling density, prioritizing intermediate timesteps.\n\n5. **Step-by-step Interaction:**\n   - Begin with **data pre-processing**, including cleaning and encoding images and text using a pretrained autoencoder and text encoders.\n   - Next, implement **noise samplers** to assist in generating intermediate training data dictated by the proposed model for mapping noise during the training process.\n   - Proceed to train the **the proposed model** to learn the mapping efficiently, followed by a joint training procedure with the **transformer model** to refine joint representations of text and image data.\n   - For inference, first sample the noise and then apply the trained transformer model, yielding high-resolution images from given text prompts.\n\n6. **Critical Implementation Details:**\n   - Maintain a strict evaluation procedure using metrics such as FID and CLIP scores alongside validation loss during training to determine model effectiveness and refine the training loop.\n   - Employ **mixed-precision training** for efficiency while applying augmentation strategies supported by clustered sample precomputation, thereby minimizing unnecessary computational overhead.\n   - Adjust **batch sizes** and learning rates dynamically based on the depth of the transformer to maximize training integrity across large-scale settings. \n\nFollowing this condensed methodology should enable researchers to replicate the reported results effectively without reading the entirety of this paper.",
+    "task2": "1. The primary task the research tackles is enhancing the capabilities of generative models, specifically focusing on high-resolution image synthesis from textual descriptions using the proposed model.\n\n2. Existing approaches face limitations such as computational inefficiency during inference, particularly related to slow sampling processes, and they often produce artifacts due to suboptimal choices of forward processes that connect data to noise in generative modeling.\n\n3. Core challenges include determining the most efficient path for data generation that minimizes error accumulation and improves sampling speed, as well as effectively integrating multimodal information from text and images to enhance overall synthesis performance.\n\n4. Key objectives and intended contributions involve introducing improved noise sampling techniques tailored for the proposed model, developing a novel transformer architecture that facilitates a bidirectional flow of information between text and image modalities, and demonstrating predictable scaling trends that correlate lower validation loss with enhanced text-to-image generation quality."
+  }

@@ -1,0 +1,35 @@
+\section{Preliminaries}
+
+Let $G = (V, E) \in \mathcal{G}$ represent a graph, where $V = \{ v_{1}, v_{2}, \ldots, v_{N} \}$ and $E \subseteq V \times V$ denote the node set and edge set respectively. The node features can be denoted as a matrix $X = \{ x_{1}, x_{2}, \ldots, x_{N} \} \in \mathbb{R}^{N \times F}$, where $x_{i} \in \mathbb{R}^{F}$ is the feature of the node $v_{i}$, and $F$ is the dimensionality of node features. The adjacency matrix $A \in \{0, 1\}^{N \times N}$ describes the structural relationship between nodes, where $A_{ij} = 1$ if $(v_{i}, v_{j}) \in E$. 
+
+\textbf{[Multiple sentences explaining the motivation and intuition behind the research focus.]}
+
+It is worth mentioning that there are many kinds of downstream tasks on graphs, including [task 1], [task 2], and [task 3]. Our paper focuses on the [specific task].
+
+\subsection{Pre-trained [Model Type] Models}
+With the pre-training dataset $D_{pt} = \{ G_{pt} \}$ and the specific pre-training task loss $L_{pt}$, we obtain a pre-trained [Model Type] encoder $f$ by minimizing the pre-training loss on the pre-training dataset:
+
+\begin{equation}
+\min_{f} L_{pt} \tag{1}
+\end{equation}
+
+\subsection{Fine-Tuning Pre-trained Models}
+Given a pre-trained [Model Type] encoder $f$ and a downstream task dataset $D = \{ (G_{1}, y_{1}), (G_{2}, y_{2}), \ldots, (G_{m}, y_{m}) \}$, we usually fine-tune the parameters of the pre-trained model and maximize the likelihood of predicting the correct labels $y$:
+
+\begin{equation}
+\max_{f} P_{f}(y | G) \tag{2}
+\end{equation}
+
+\textbf{[A paragraph describing the detailed workflow of the module.]}
+
+\textbf{[Several sentences comparing the proposed method with existing approaches.]}
+
+\textbf{Formal Definitions:} Formally, we define [concept] as follows:
+
+\begin{equation}
+\text{[Mathematical formulation of the key components]} \tag{3}
+\end{equation}
+
+\textbf{[Detailed explanation of each term in the equations.]}
+
+\textbf{To this end, we outline the subsequent sections that will detail our approach further.}

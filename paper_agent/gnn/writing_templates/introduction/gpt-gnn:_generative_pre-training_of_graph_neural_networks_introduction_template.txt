@@ -1,0 +1,28 @@
+```
+\section{INTRODUCTION}
+
+The breakthroughs in [specific field or technique] have revolutionized [specific application or domain] [1, 2, ...]. Recent developments have demonstrated benefits in various applications, such as [application 1] [3], [application 2] [4], and [application 3] [5].
+
+Commonly, [specific approach or method] takes [input type] as input and applies [methodology] to generate [output type] [6]. Often, a [specific model type] is trained with [type of information] in an [training approach] manner for [one/multiple] task[s] on the input [data]. That said, for [discussion of challenges], it is required to have enough and varied [type of data] to train dedicated models corresponding to each task. Usually, it is [expensive/infeasible] to access sufficient labeled data for these tasks, particularly for [specific scenario].
+
+Similar issues have also been experienced in [related field]. Recent advances in [related field] address these challenges by training a model from a large [labeled/unlabeled] corpus and transferring the learned model to downstream tasks with only a few labels-the idea of [concept]. For example, the [specific model] is able to learn [description of learning method], and thus it can significantly improve the performance of various downstream tasks. Additionally, similar observations have also been demonstrated in [another field] [7].
+
+Inspired by these developments, we propose [module name] to address [challenge]. The goal of [module name] is to empower [model type] to capture [description of targeted properties], so that it can easily generalize to any downstream tasks with a few fine-tuning steps on [specific context]. To achieve this goal, we propose to [methodology/concept].
+
+To [achieve specific outcome], one straightforward option could be to directly adopt [existing techniques]. However, they are not suitable due to [discuss limitations of existing techniques]. 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figure_path}
+    \caption{[Description of figure illustrating the workflow of the proposed method]}
+    \label{fig:workflow}
+\end{figure}
+
+\textbf{Contributions.} In this work, we [summary of contributions]. Specifically, our contributions are outlined below.
+
+First, we [describe first contribution in detail]. We decompose [specific task or objective] into two components: [component 1] and [component 2], whose joint optimization is equivalent to [explanation of optimization goal]. In doing this, [explain benefits].
+
+Second, we propose an efficient [framework or method name] to conduct [specified type of training]. [Framework name] can [explain efficiency and processing benefits]. Additionally, [explain how the method addresses scalability or other concerns].
+
+Finally, we [describe experimental setup or results]. Extensive experiments show that [method or framework] can [explain the significant results or findings]. For example, applying [framework] on [dataset], [specific performance metrics] is on average lifted by [percentage increase] compared to [comparison baseline]. Furthermore, we demonstrate that [method/framework] can consistently enhance the performance of [discussion of other relevant models or techniques] under various settings.
+```

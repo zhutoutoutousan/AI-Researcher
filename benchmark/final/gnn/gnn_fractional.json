@@ -1,0 +1,157 @@
+{
+    "target": "Unleashing the Potential of Fractional Calculus in Graph Neural Networks with FROND",
+    "instance_id": "gnn_fractional",
+    "source_papers": [
+        {
+            "reference": "Neural Ordinary Differential Equations",
+            "rank": 1,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This paper established the foundational framework for combining neural networks with continuous dynamical systems, specifically outlining how neural ODEs can be utilized to create a continuous representation within GNNs. The methodology introduced in this study has directly influenced the development of the proposed model by providing a structural basis for the integration of fractional derivatives.",
+            "usage": "The proposed model framework leverages the concepts of continuous dynamics introduced by this paper to keep track of feature updates over time."
+        },
+        {
+            "reference": "Graph Neural Networks: A Review of Methods and Applications",
+            "rank": 2,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This comprehensive review outlines various methodologies used in GNNs, highlighting their applications across multiple domains. Understanding these foundational approaches informed the adaptation of traditional GNN techniques to incorporate fractional dynamics within the proposed model framework.",
+            "usage": "Provided context on existing GNN models and their performance, serving as a comparison point for the novel methods introduced in the proposed model."
+        },
+        {
+            "reference": "Fractional Differential Equations: An Introduction",
+            "rank": 3,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This paper provides essential definitions and background on fractional differential equations, specifically discussing the Caputo fractional derivative. This foundational understanding is critical for effectively applying fractional calculus within the proposed model framework.",
+            "usage": "Guided the application of the Caputo derivative for modeling node feature updates in the proposed model."
+        },
+        {
+            "reference": "Graph Neural Networks: Challenges and Future Directions",
+            "rank": 4,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "The challenges discussed in this paper, particularly regarding oversmoothing in GNNs, laid the groundwork for addressing these issues through fractional calculus in the proposed model. It highlighted the necessity for new methods to tackle existing drawbacks in GNN performance.",
+            "usage": "Critically shaped the research question tackled by the proposed model\u2014mitigating oversmoothing through memory effects derived from fractional calculus."
+        },
+        {
+            "reference": "Understanding Fractional Dynamics in Networked Systems",
+            "rank": 5,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This work introduced the proposed model framework, providing a new perspective on integrating fractional dynamics into graph learning systems, enhancing understanding of memory effects in dynamical processes on graphs.",
+            "usage": "Served as the core reference for the introduction of the proposed model itself, bringing fractional dynamics into focus for GNNs."
+        },
+        {
+            "reference": "Graph Shift Operators and Deep Learning",
+            "rank": 6,
+            "type": [
+                "component"
+            ],
+            "justification": "This study integrates advanced graph shift operators in neural networks, which was relevant for distinguishing between traditional and fractional approaches in the proposed model. It helped establish the mathematical basis for operators used in fractional calculus.",
+            "usage": "Informed the methodology for dynamic information transfer between nodes in the framework."
+        },
+        {
+            "reference": "Applications of Graph Neural Networks in Molecular Chemistry",
+            "rank": 7,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This study illustrated practical applications of GNNs, emphasizing the need for enhanced representation techniques that the proposed model aims to fulfill by utilizing fractional calculus to model long-term dependencies.",
+            "usage": "Provided context for the practical implications of advancing GNN capabilities."
+        },
+        {
+            "reference": "Graph Neural Networks for Node Classification",
+            "rank": 8,
+            "type": [
+                "component"
+            ],
+            "justification": "This work discusses various models and their performances in node classification tasks. Its methodologies and findings guided the evaluation metrics used in testing the proposed model.",
+            "usage": "Provided a standard for comparison of performance metrics in the proposed model experiments, particularly in node classification."
+        },
+        {
+            "reference": "GRAPH CONVOLUTIONAL NETWORKS",
+            "rank": 9,
+            "type": [
+                "methodological"
+            ],
+            "justification": "GCNs laid the groundwork for applying graph-based methods for deep learning, informing the construction of the proposed model as an extension of these principles.",
+            "usage": "Formulated a basis for understanding graph convolutions, which the proposed model incorporates into its fractional dynamics."
+        },
+        {
+            "reference": "Extensions of Neural Networks via Fractional Calculus",
+            "rank": 10,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This research offered significant insights into how fractional calculus could be applied to deep learning architectures, serving as a pivotal reference in integrating these methodologies into the proposed model.",
+            "usage": "Informed the approaches used to integrate fractional methodologies into neural network frameworks."
+        },
+        {
+            "reference": "Graph Neural Diffusion",
+            "rank": 11,
+            "type": [
+                "component"
+            ],
+            "justification": "This study proposes a model for graph neural diffusion, providing methodologies for propagating information in a graph. The diffusion concepts inspired the memory incorporation in the proposed model.",
+            "usage": "Guided the design of the diffusion process within the proposed model framework, particularly regarding feature update mechanisms."
+        },
+        {
+            "reference": "A Survey of Graph Neural Networks",
+            "rank": 12,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "A broad overview of GNN methodologies provided insight into the current challenges and advancements in the field. This helped clarify the positioning of the proposed model within GNN literature.",
+            "usage": "Assisted in contextualizing the proposed model within the wider GNN research landscape, especially concerning its novel contributions."
+        },
+        {
+            "reference": "GRAPH-BASED DEEP LEARNING: A REVIEW",
+            "rank": 13,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This review synthesized knowledge on graph-based techniques. Understanding these methods helped position the proposed model's contributions as an essential advance in GNN research.",
+            "usage": "Provided synthesis and context within which the proposed model could operate, enhancing the comprehension of graph-based methodologies."
+        },
+        {
+            "reference": "Heterophilic Graph Classification: A Comprehensive Survey",
+            "rank": 14,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "The challenges outlined in this survey regarding heterophilic graphs aligned with the issues addressed by the proposed model, particularly in terms of feature update dynamics.",
+            "usage": "Contextualized the need for memory effects in GNNs, informing the research direction taken by the proposed model."
+        },
+        {
+            "reference": "Graph Convolutional Networks for Drug Discovery",
+            "rank": 15,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This study illustrated practical applications of GNNs relevant to pharmacology, inspiring considerations of how the proposed model might optimize performance in pharmacological contexts.",
+            "usage": "Provided relevance to fields where enhanced GNN performance could be pivotal, influencing the research direction of the proposed model."
+        }
+    ],
+    "authors": [
+        "Qiyu Kang",
+        "Kai Zhao",
+        "Qinxu Ding",
+        "Feng Ji",
+        "Xuhao Li",
+        "Wenfei Liang",
+        "Yang Song",
+        "Wee Peng Tay"
+    ],
+    "year": 2024,
+    "url": "http://arxiv.org/abs/2404.17099v1",
+    "abstract": "We introduce the FRactional-Order graph Neural Dynamical network (FROND), a\nnew continuous graph neural network (GNN) framework. Unlike traditional\ncontinuous GNNs that rely on integer-order differential equations, FROND\nemploys the Caputo fractional derivative to leverage the non-local properties\nof fractional calculus. This approach enables the capture of long-term\ndependencies in feature updates, moving beyond the Markovian update mechanisms\nin conventional integer-order models and offering enhanced capabilities in\ngraph representation learning. We offer an interpretation of the node feature\nupdating process in FROND from a non-Markovian random walk perspective when the\nfeature updating is particularly governed by a diffusion process. We\ndemonstrate analytically that oversmoothing can be mitigated in this setting.\nExperimentally, we validate the FROND framework by comparing the fractional\nadaptations of various established integer-order continuous GNNs, demonstrating\ntheir consistently improved performance and underscoring the framework's\npotential as an effective extension to enhance traditional continuous GNNs. The\ncode is available at \\url{https://github.com/zknus/ICLR2024-FROND}.",
+    "citation": 3,
+    "task1": "1. The proposed model addresses the task of graph representation learning, specifically aiming to enhance node classification and mitigate oversmoothing in Graph Neural Networks (GNNs) using a fractional-order differential equation approach.\n\n2. The core techniques utilized in this methodology are:\n   - **Caputo Fractional Derivative**: A generalization of traditional derivatives that captures memory effects by considering the entire history of the feature updates.\n   - **Dynamic Operator F**: A function that describes how node features evolve over the graph, akin to standard GNN operations such as message passing.\n   - **Predictor-Corrector Numerical Methods**: Employed for time discretization in solving the fractional differential equations numerically.\n\n3. The function of each major technical component:\n   - **Caputo Fractional Derivative**: Allows for a non-local feature update mechanism that incorporates previous states, enhancing representation learning.\n   - **Dynamic Operator F**: Defines the information propagation process across the graph, determining how features are updated at each time step.\n   - **Numerical Solvers**: These methods ensure the effective computation of the fractional derivatives while preserving the framework's memory-dependent dynamics.\n\n4. Implementation details for each component include:\n   - **Caputo Fractional Derivative**: Set \u03b2 to a suitable value (0 < \u03b2 \u2264 1) based on the graph's characteristics. The initial condition is X[\u2308\u03b2\u2309-1](0) = X, where X is the feature matrix.\n   - **Dynamic Operator F**: Depending on the proposed model variant (e.g., inspired by GRAND or based on attention mechanisms), define F(W, X(t)) using learnable parameters.\n   - **Hyperparameters**: Optimize \u03b2 through hyperparameter tuning. The time parameter T for discretization should be set based on computational resources (larger T may require short memory approaches).\n   - **Input/Output Specifications**: Input consists of node features and graph structure; output is a refined node representation after T time steps.\n\n5. The step-by-step operation of how these components interact:\n   - Start with the initial node feature matrix X(0).\n   - Utilize the specified Caputo fractional derivative to set up the feature evolution as described in the fractional differential equation D\u03b2tX(t) = F(W, X(t)), which relates the current state to the prior states by acknowledging the history.\n   - Apply the numerical solver (basic predictor or predictor-corrector) to iteratively update the node features' values over discretized time steps (from 0 to T).\n   - Finally, decode the updated features through a learnable decoder to achieve the final node embeddings.\n\n6. Critical implementation details affecting performance:\n   - The choice of \u03b2 plays a crucial role; smaller values generally enhance memory effects but may require more iterations to achieve convergence.\n   - The efficiency of numerical solvers directly impacts runtime and approximation accuracy, especially for larger datasets; thus, employing advanced techniques, such as using the short memory principle, can significantly improve computational efficiency.\n   - Ensuring appropriate conditions for the initial values and tuning the hyperparameters based on datasets will help achieve optimal performance and mitigate issues such as oversmoothing or convergence stagnation.",
+    "task2": "1. The primary task or problem domain the research tackles:  \nThis research addresses the limitations of existing Graph Neural Networks (GNNs) by developing a framework that integrates fractional calculus into GNNs, specifically focusing on the feature updating dynamics of nodes in a graph. The aim is to enhance the representation learning capabilities of GNNs by allowing them to capture long-term dependencies and non-local interactions more effectively.\n\n2. Current limitations in existing approaches that motivated this work:  \nCurrent GNNs primarily rely on integer-order differential equations for continuous updating processes, which limits their ability to account for long-term memory effects and non-local behaviors in data. Traditional approaches often face oversmoothing issues and can struggle with representing complex relationships in graphs, especially when datasets exhibit fractal properties or hierarchical structures.\n\n3. Core challenges the researchers aim to overcome:  \nThe researchers aim to overcome the challenges of limitations in memory representation during the feature updating process, the oversmoothing problem prevalent in deep GNN architectures, and the inadequate handling of long-term dependencies using conventional integer-order models. Additionally, they seek to address the difficulty in effectively modeling the dynamics within graph datasets that exhibit fractal characteristics.\n\n4. Key objectives and intended contributions:  \nThe key objectives of this study include developing a novel framework that generalizes continuous GNNs by integrating non-local fractional derivatives, providing an interpretation of feature updates as non-Markovian processes, and demonstrating the framework's robustness and compatibility with existing GNN architectures. The intended contributions are to enhance the theoretical understanding of GNN dynamics, provide effective solutions to mitigate oversmoothing, and pave the way for improved performance in various graph representation tasks across diverse datasets."
+}

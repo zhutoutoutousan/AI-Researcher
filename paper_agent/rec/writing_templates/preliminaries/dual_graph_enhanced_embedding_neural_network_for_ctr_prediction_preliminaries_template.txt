@@ -1,0 +1,67 @@
+\section{Preliminary}
+
+\subsection{Problem Definition}
+
+In this section, we formulate the [specific task] with necessary notations. There are a set of [number] users $U = \{u_1, u_2, \ldots, u_M\}$, a set of [number] items $V = \{v_1, v_2, \ldots, v_N\}$, a set of [number] fields of user attributes $A = \{A^1, A^2, \ldots, A^J\}$, a set of [number] fields of item attributes $B = \{B^1, B^2, \ldots, B^K\}$, and a set of [number] fields of other features [describe features] denoted as $C = \{C^1, C^2, \ldots, C^R\}$ to describe the context. The user-item interactions are denoted as a matrix $Y \in \mathbb{R}^{M \times N}$, where $y_{uv} = 1$ denotes user $u$ has interacted with item $v$ before, otherwise $y_{uv} = 0$. Further, each user and item is associated with a list of attributes $A_u \subset A$ and $B_v \subset B$. In addition to the attributes, each user also has a [specific behavior sequence description] denoted as $S_u = \{s_1, s_2, \ldots, s_{T_u}\}$, where $s_i \in V$ and $T_u$ is the length of user $u$'s behavior sequence in the past. Besides user and item features, we denote context features as a list of $C \subset C$. Concatenating all these features in a predefined order, one instance can be represented as:
+
+\begin{equation}
+x = [u, v, A_u, B_v, S_u, C]
+\end{equation}
+
+An encoding example of [describe example attributes] is presented as:
+
+\begin{equation}
+[0, 0, \ldots, 1, 0]_{|_{z}} [0, 1, \ldots, 1]_{|_{z}} [1, 1, \ldots, 1, 0]_{|_{z}} \quad u: [Describe user identification features]
+\end{equation}
+
+It is noted that we categorize [describe categorized features]. The goal of [specific task] is to predict [specific outcome].
+
+\subsection{Base Model}
+
+Most existing [specific area] methods follow a similar [describe general paradigm]. We refer to it as the base model in this section.
+
+\subsubsection{Initial Embedding}
+
+The input data in [specific task] are usually in a [describe input form]. It is common to apply an embedding layer upon the input to compress it into [describe output form] by looking up from an embedding table $W$. For one-hot vector [describe one-hot representation] the embedding representation is a single vector. For multi-hot vector [describe multi-hot representation], the embedding representation is a list of vectors. The embedding vectors of these fields are then concatenated together to get the embedding of the whole input features.
+
+\begin{equation}
+E = [e_u, e_v, e_{A_u}, e_{B_v}, e_{S_u}, e_C]
+\end{equation}
+
+\subsubsection{Representation Learning}
+
+Many existing works focus on [specific focus], which can be formulated as:
+
+\begin{equation}
+P = f(E)
+\end{equation}
+
+For simplicity, we use [specific representation module] as the base representation learning module:
+
+\begin{equation}
+P = [E_1, \ldots, E_F, \langle E_1, E_2 \rangle, \ldots, \langle E_{F-1}, E_F \rangle]
+\end{equation}
+
+where $\langle , \rangle$ denotes [describe operation]. We also evaluate [describe evaluation focus] in the experiment section to validate the effectiveness of [specific approach].
+
+\subsubsection{Fully Connected Layer}
+
+The output of the representation learning component is fed into [describe layer type], which serves as a [describe function].
+
+\begin{equation}
+a^{(l)} = \sigma(W^{(l)}a^{(l-1)} + b^{(l)})
+\end{equation}
+
+where $a^{(0)} = P$, $l$ is the current layer depth, and $\sigma$ is the activation function. [Continue to describe remaining terms and their significance].
+
+The output is a [describe output form] as [specific predicted outcome].
+
+\subsubsection{Model Training}
+
+The widely-used [specific loss function] is adopted as the objective function, which is defined as:
+
+\begin{equation}
+L_{logloss} = - \frac{1}{|S|} \sum_{(x,y) \in S} [ \text{describe loss function}]
+\end{equation}
+
+where $|S|$ is the total number of training instances, $y(x)$ is the real value for input vector $x$, and [describe predicted value relation].

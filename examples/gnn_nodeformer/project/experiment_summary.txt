@@ -1,0 +1,25 @@
+Experimental Results Summary
+===========================
+
+Ablation Study Results:
+baseline:
+  Test Accuracy: 0.3170
+no_edge_reg:
+  Test Accuracy: 0.3160
+high_temp:
+  Test Accuracy: 0.3190
+low_temp:
+  Test Accuracy: 0.3130
+deep_model:
+  Test Accuracy: 0.3190
+high_dropout:
+  Test Accuracy: 0.3200
+
+Dataset Comparison Results:
+Cora:
+  Mean Test Accuracy: 0.3172 ± 0.0040
+CiteSeer:
+  Mean Test Accuracy: 0.1810 ± 0.0000
+PubMed:
+  Mean Test Accuracy: 0.4072 ± 0.0004
+

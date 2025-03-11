@@ -1,0 +1,29 @@
+\section{The Role of [General Concept] in [Research Framework/Method]}
+
+In this section, we assess and rationalize the role of [concept/approach] in our [framework/methodology]. Various [types of categories or types] are applied, as illustrated in Fig. [number], to [context or dataset categories] (Table [number], and we leave the discussion on [specific subset/topic] in Appendix [letter]). Experiments are performed in the [type of setting], following the [previous methodology or approach] \cite{reference}. Detailed settings are in Appendix [letter].
+
+\subsection{[Subsection Title Related to Observations]}
+
+We first examine whether and when applying (different) [concept/approach details] helps [main framework/method] in general. We summarize the results in Fig. [number] using the [measure/metric] gain compared to [baseline method]. And we list the following Observations.
+
+Obs. 1. [First observation summary]. [Explanation and intuition behind the observation]. Importantly, when appropriate [concept/approach] are applied, [insight into effect on performance].
+
+Obs. 2. [Second observation summary]. [Comparison of different configurations]. [Further discussion regarding performance improvements or observations related to existing works].
+
+\subsection{The [Types/Extent/Patterns] of Effective [Concept/Approach]}
+
+We note that the (most) beneficial combinations of [concepts] can be [context-specific], which matches our intuition as [general characteristic]. We summarize our observations and derive insights below. And we further analyze the impact of the [extent/strength] and/or the [pattern/formation] of given types of [concepts].
+
+Obs. 3. [Third observation summary]. [Detailed explanation of the observation and its implications in context]. 
+
+Obs. 4. [Fourth observation summary]. [Impact of specific configurations/strengths on observed outcomes]. We further hypothesize that [additional explanatory insights on the impact of other factors].
+
+Obs. 5. [Fifth observation summary]. [General implications across studied domains]. 
+
+\subsection{Assessment of [Extension of Concept or Idea]}
+
+As discussed in Obs. [number], [summarize theme of the subsection]. In this section we further explore [focus of exploration] related to [aspect of performance or evaluation].
+
+Intuitively, [description of expected relationship between variables and performance]. We also design [testing variations or concepts] and reach similar conclusions. More details are in Appendix [letter].
+
+\paragraph{Summary.} In total, we decide the [classification/selection criteria] for [next section] as: [general guidelines or categories]. [Additional notes on strategies or approaches to be considered].

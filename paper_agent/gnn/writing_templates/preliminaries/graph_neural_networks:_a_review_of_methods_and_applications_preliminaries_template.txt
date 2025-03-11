@@ -1,0 +1,53 @@
+\section{General Design Pipeline of [Module/Method Name]}
+
+In this paper, we introduce [Module/Method Name] from a designer's perspective. We first present the general design pipeline for developing a [type of module/method] in this section. Then, we provide details for each step such as [Step 1 details], [Step 2 details], and [Step 3 details] in Section [X], [Y], and [Z], respectively. Finally, we use an example to illustrate the design process for a specific task in Section [N].
+
+In the later sections, we denote [concept or term] as [definition]. Formally, we define [concept] as follows:
+
+\begin{equation}
+[Mathematical formulation]
+\end{equation}
+
+The detailed descriptions of the notations can be found in Table [#].
+
+In this section, we present the general design pipeline for [module/method name] aimed at [specific task] on a [specific type]. Generally, the pipeline consists of four steps: (1) [Step 1], (2) [Step 2], (3) [Step 3], and (4) [Step 4]. We outline general design principles and relevant background knowledge in this section. The design specifics of these steps will be elaborated upon in the later sections.
+
+\subsection{[Step 1 Title]}
+
+At first, we need to [explain the objective of step 1]. There are usually two scenarios: [Scenario 1] and [Scenario 2]. In [Scenario 1], [description]. In [Scenario 2], [description]. After we [action in step 1], the subsequent design process will focus on [next steps].
+
+\subsection{[Step 2 Title]}
+
+Next, we need to [explain the objective of step 2].
+
+[Content explaining the different categories/types relevant to step 2.]
+
+Note that these categories are [explain relationship, e.g., "orthogonal" or "mutually exclusive"]. Once we specify [parameters], the additional information provided should be further considered in the design process.
+
+Regarding [scale or other relevant concept], there is [explain the criteria for classification]. This criterion evolves with advancements in [related technology]. For this paper, when [explain conditions], we regard it as [classification].
+
+\subsection{[Step 3 Title]}
+
+In this step, we should [explain the objective of step 3] based on [task type] and [training setting].
+
+For [task type], we can categorize tasks as follows:
+
+- [Task Type 1]: [Description]
+- [Task Type 2]: [Description]
+- [Task Type 3]: [Description]
+
+From the perspective of [another classification], we can also categorize tasks into [categories] based on [criteria].
+
+With the task type and the training setting, we can formulate a specific [outcome or requirement]. For instance, for [specific example], we may use [specific method or technique].
+
+\subsection{[Step 4 Title]}
+
+Finally, we can commence building [the model/method] using the [required modules or components]. Some commonly used [modules/components] include:
+
+- [Module 1]: [Description]
+- [Module 2]: [Description]
+- [Module 3]: [Description]
+
+With these components, a typical [model/method] architecture is illustrated in [Figure/Table]. We will first introduce [related concept] in Section [3], then survey existing [variants or types] in Section [4]. Finally, we provide a concrete design example in Section [6]. 
+
+An illustration of the general design pipeline is shown in [Figure #].

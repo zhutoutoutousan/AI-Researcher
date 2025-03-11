@@ -1,0 +1,21 @@
+```latex
+\section{Abstract}
+
+Low-dimensional embeddings of nodes in large graphs have proved extremely useful in a variety of prediction tasks, such as [insert examples of tasks]. However, most existing approaches [describe the limitation of previous methods, e.g., "require that all nodes in the graph are present during training" or "are inherently transductive"]. To address this challenge, we propose [insert module name], a [describe the nature of the framework, e.g., "general inductive framework" or "novel approach"] that [briefly explain how the new method overcomes the limitation, e.g., "leverages node feature information"]. 
+
+Our method consists of [number] main components: [component 1], [component 2], and [component 3]. Formally, we define [insert concept] as follows: 
+
+\begin{equation}
+    [Insert mathematical formulation of the key components]
+\end{equation}
+
+[Provide a few sentences explaining the motivation and intuition behind the proposed method, emphasizing its novelty and effectiveness].
+
+Specifically, [a paragraph describing the detailed workflow of the module, including steps and processes involved in generating embeddings]. 
+
+Furthermore, we [insert comparative analysis, e.g., "compare our method with existing approaches"], highlighting [mention key differences or advantages].
+
+We validate our approach by [describe the experimental setup, including benchmarks or datasets used]. Our results show that [insert summary of findings, e.g., "our algorithm outperforms strong baselines on..."].
+
+In summary, [concisely wrap up the contribution and significance of the proposed method].
+```

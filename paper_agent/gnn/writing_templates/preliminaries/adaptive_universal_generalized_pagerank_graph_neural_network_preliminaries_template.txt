@@ -1,0 +1,15 @@
+\section{Preliminaries}
+
+Let $G = (V, E)$ be an undirected graph with nodes $V$ and edges $E$. Let $n$ denote the number of nodes, assumed to belong to one of $C \geq 2$ classes. The nodes are associated with the node feature matrix $X \in \mathbb{R}^{n \times f}$, where $f$ denotes the number of features per node.   Throughout the paper, we use $X_{i,:}$ to indicate the $i^{th}$ row and $X_{:,j}$ to indicate the $j^{th}$ column of the matrix $X$, respectively. The symbol $\delta_{ij}$ is reserved for the Kronecker delta function. 
+
+The graph $G$ is described by the adjacency matrix $A$, while $\tilde{A}$ stands for the adjacency matrix for a graph with added self-loops. We let $\tilde{D}$ be the diagonal degree matrix of $\tilde{A}$ and $\tilde{A}_{sym} = \tilde{D}^{-1/2} \tilde{A} \tilde{D}^{-1/2}$ denote the symmetric normalized adjacency matrix with self-loops.
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+[Specifically, a paragraph describing the detailed workflow of the module]
+
+[Several sentences comparing the proposed method with existing approaches]
+
+[Mathematical formulation of the key components]
+
+[Detailed explanation of each term in the equations]

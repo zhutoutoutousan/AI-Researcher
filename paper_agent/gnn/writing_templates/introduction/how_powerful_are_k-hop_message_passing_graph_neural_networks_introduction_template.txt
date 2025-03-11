@@ -1,0 +1,17 @@
+```latex
+\section{Introduction}
+
+Currently, most existing [relevant technology/method] follow the [specific framework/approach], which [description of current challenges and limitations]. It has shown [performance description] on [specific tasks/contexts] [citations]. However, as the procedure of [specific process] is similar to [comparison framework/method], the expressive power of [specific method] is also bounded by [limiting factor]. Namely, [explanation of the limitation].
+
+In normal [current method/technology], [key operational process] is characterized by [definition of key components]. Recently, some works extend the notion of [current method] into [extended method] [citations]. [Description of the new approach and its implications]. However, there is no work on [define the gap in the literature or the theoretical aspects needed].
+
+In this work, we [main objective or contribution]. Specifically, \begin{enumerate}
+    \item [Description of first sub-contribution or result].
+    \item [Description of second sub-contribution or result].
+    \item [Description of third sub-contribution or result, if applicable].
+\end{enumerate}
+This motivates us to [explain motivation for further research or improvement].
+
+Here, we introduce [name of the proposed method/framework], a [type of method] which [summary of the improvement or new contribution]. In particular, [specific description of how the proposed method works and its advantages]. We further show that [additional claims regarding performance or capabilities of the proposed method]. The proposed [method framework] has several additional advantages. First, [advantage 1]. Second, [advantage 2]. We demonstrate the effectiveness of the [method/framework] through [brief description of experimental validation].
+
+```

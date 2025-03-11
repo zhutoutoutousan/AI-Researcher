@@ -1,0 +1,23 @@
+2025-01-27 06:22:27,280 [INFO] 
+==================================================
+Starting experiment set: refined_base
+==================================================
+2025-01-27 06:22:27,340 [INFO] Starting experiment: refined_base
+2025-01-27 06:22:27,341 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 3, 'n_intents': 128, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.2, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda', index=1)}
+2025-01-27 06:22:30,444 [ERROR] Error in experiment refined_base: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-27 06:22:30,496 [INFO] 
+==================================================
+Starting experiment set: hierarchical_intent
+==================================================
+2025-01-27 06:22:30,496 [INFO] Starting experiment: hierarchical_intent
+2025-01-27 06:22:30,496 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 3, 'n_intents': 256, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.2, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda', index=1)}
+2025-01-27 06:22:32,339 [ERROR] Error in experiment hierarchical_intent: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-27 06:22:32,391 [INFO] 
+==================================================
+Starting experiment set: deep_gnn
+==================================================
+2025-01-27 06:22:32,391 [INFO] Starting experiment: deep_gnn
+2025-01-27 06:22:32,391 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 4, 'n_intents': 128, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.3, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda', index=1)}
+2025-01-27 06:22:34,305 [ERROR] Error in experiment deep_gnn: module 'torch.optim' has no attribute 'ReduceLROnPlateau'
+2025-01-27 06:22:34,359 [INFO] 
+Revision experiments completed. Results saved.

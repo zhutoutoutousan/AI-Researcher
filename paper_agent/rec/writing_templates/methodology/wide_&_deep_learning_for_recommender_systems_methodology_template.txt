@@ -1,0 +1,45 @@
+\section{[Main Topic]}
+
+\subsection{[Component 1 Name]}
+
+Inspired by [previous work/technique], we propose [component 1 name] to address [challenge]. The [component 1 name] is a [description of the model/approach], as illustrated in Figure [X] ([position]). The output, denoted as [output variable], is formulated as follows:
+
+\begin{equation}
+[output variable] = [function or model representation]
+\end{equation}
+
+Here, [explanation of input variables], where [variable set] is a collection of [description]. One of the critical elements of the [component 1 name] involves [important transformation or technique], which is defined as:
+
+\begin{equation}
+[\text{transformation name}] = [transformation formula]
+\end{equation}
+
+where [explanation of transformation]. This allows [reason why transformation is important].
+
+\subsection{[Component 2 Name]}
+
+To tackle [challenge], our method introduces the [component 2 name], which is a [description of component 2]. Specifically, [overview of how component 2 functions]. The original inputs are [description], converted into [type of representation], enabling [reason for conversion].
+
+The computation in the [component 2 name] follows the process:
+
+\begin{equation}
+a^{(l+1)} = f(W^{(l)} a^{(l)} + b^{(l)})
+\end{equation}
+
+where [explanation of variables]. Here, [details about the activation function or model behavior].
+
+\subsection{[Joint Component Name]}
+
+The [component 1 name] and [component 2 name] are combined through [method of combination] to generate the final output. It is crucial to differentiate between [joint training/other method] and [comparison method]. [Explanation of the distinction and its implications].
+
+Specifically, [details of the joint training process]. The optimization employs [description of optimization technique], ensuring simultaneous [description of how components are optimized].
+
+The complete model can be represented as follows:
+
+\begin{equation}
+P(Y = 1 | x) = [function representation]
+\end{equation}
+
+where [explanation of the components in the equation]. In this formulation, [description of important variables and their roles]. 
+
+[Additional remarks about implications, performance, or relevance of the method].

@@ -1,0 +1,23 @@
+\section{Introduction}
+
+\subsection{Motivation}
+Recommending [type of content] is an important task in many information systems. For example, [example system 1] provides personalized [type of recommendation] to [user type] that [outcome]. Other examples include [example system 2] which [outcome]. 
+
+Personalization is attractive both for [stakeholder 1], who can [advantage], and for [stakeholder 2], who can [advantage]. In this paper, we focus on [specific task]. The task of [specific task] is to [explain specific task]. [Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+\subsection{Related Work}
+Recommender systems are an active topic of research. Most recent work is on [research focus, e.g., scenarios where users provide explicit feedback]. Nevertheless, in real-world scenarios, most feedback is [feedback type]. [Multiple sentences discussing the importance of this feedback type in practical systems]. 
+
+\subsection{Proposed Method}
+In this paper, we present [name of the proposed method] for [goal of the method]. The contributions of this work are:
+
+\begin{enumerate}
+    \item We present [key contribution 1], [describe key contribution]. We show the analogies of [variable/expression] to [related concept].
+    \item To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3]. Specifically, [A paragraph describing the detailed workflow of the module].
+    \item We propose [key contribution 2], [describe key contribution]. [Several sentences comparing the proposed method with existing approaches].
+    \item We show how to apply [method] to [specific model or application].
+    \item Our experiments empirically show that [key result compared to other methods, with brief explanation].
+\end{enumerate}
+
+\subsection{Structure of the Paper}
+The rest of the paper is organized as follows: [brief overview of each section].

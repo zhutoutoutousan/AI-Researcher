@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{Abstract}
+
+The fundamental question of [general research question about the field] remains largely open. What [specific questions about the topic]?
+
+In this work, we [state the main contribution of the paper, e.g., prove/show/explore] that [describe the main findings or results related to the research question]. Moreover, [discuss any additional results or implications of the research].
+
+On the technique side, our analysis [describe the approach taken in the work]. Specifically, we [introduce any new concepts or methods established in the research] and connect it to [explain the relationship with existing theories or techniques].
+
+\end{document} 
+
+\begin{align}
+    \text{[Mathematical formulation of the key components]}
+\end{align}
+
+\text{Formally, we define [specific concept] as follows:}
+
+\begin{align}
+    \text{[Definitions or equations that clarify the concepts]}
+\end{align}
+
+\text{Furthermore, [compare the proposed method with existing approaches]. This leads to [explain the implications or importance of the findings].}
+
+\text{In summary, our contributions are [restate key contributions and findings].}
+
+\end{document}

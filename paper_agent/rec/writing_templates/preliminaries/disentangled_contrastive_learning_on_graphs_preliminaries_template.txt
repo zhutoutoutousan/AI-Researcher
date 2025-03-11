@@ -1,0 +1,23 @@
+\section{Problem Formulation and Preliminaries}
+
+\subsection{Problem Formulation}
+
+Let $G = \{ G_{i} \}_{i=1}^{N}$ be a dataset containing $N$ instances of [data type, e.g., graphs, images]. The key challenge in [research area or technique] is to derive a [type of model] $f( \cdot )$, which outputs a [dimension descriptor] representation $z_{i} = f(G_{i}) \in \mathbb{R}^{d}$ for each input instance, such that $Z = \{ z_{i} \}_{i=1}^{N}$ best describes $G$. In this work, we aim to learn a [specific type of model] $f_{\theta}( \cdot )$ with parameters $\theta$, such that the output $z_{i}$ can be a [desired property, e.g., disentangled] representation, i.e. $f_{\theta}( \cdot ) = \{ f(k)_{\theta}( \cdot ) \}_{k=1}^{K}$, where $K$ is the number of [channels/factors]. To be specific, $z_{i}$ is expected to consist of $K$ independent components, i.e., $z_{i} = [ z_{i,1}, z_{i,2}, \ldots, z_{i,K} ]$, where $z_{i,k} = f(k)_{\theta}(G_{i}) \in \mathbb{R}^{\Delta d}$, $k \in [1, K]$, $\Delta d = \frac{d}{K}$, assuming that there are $K$ [latent concepts] associated with the instances to be disentangled. The $k$-th component $z_{i,k}$ serves to characterize the aspect of $G_{i}$ relevant to factor $k$. We further assume that the value of $z_{i,k}$ will be [explanation of behavior if no information is present]. Note that we primarily focus on [specific type of data] in our method, although this can be [description of extension if applicable].
+
+\subsection{Preliminaries on [Relevant Technique]}
+
+Unlike [comparison approach, e.g., generative models], [target approach] is an instance-wise [descriptive term] that seeks to [objective/goal] [relevant citation(s)]. It treats each instance in the dataset as a distinct class of its own and trains a classifier to [function of the classifier] [relevant citation(s)]. Given a dataset $X = \{ x_{i} \}_{i=1}^{N}$, each instance $x_{i}$ is assigned a unique surrogate label $y_{i}$, since no ground-truth labels are available. $y_{i}$ is often regarded as the [explanation of label usage], i.e., $y_{i} = i$. The probability classifier is defined as follows:
+
+\begin{equation}
+p_{\theta}(y_{i} | x_{i}) = \frac{\exp( \phi(v_{i}, v'_{y_{i}}))}{\sum_{j=1}^{N} \exp( \phi(v_{i}, v'_{y_{j}})} \,,
+\end{equation}
+
+where $\theta$ denotes the parameters of the encoder. Both $v_{i}$ and $v'_{y_{i}}$ are the embeddings generated from $x_{i}$ [description of generation method] [relevant citation(s)]. Before being passed into the encoder, the input $x_{i}$ may undergo [description of preprocessing], which plays a critical role in defining effective predictive tasks for learning the encoder. The function $\phi$ serves as the [similarity function], often adopting [specific similarity measure] [relevant citation(s)], i.e., 
+
+\begin{equation}
+\phi(v_{i}, v'_{y_{i}}) = \frac{v'_{y_{i}}^{\top} v_{i}}{\tau} \,,
+\end{equation}
+
+assuming that the embeddings are [condition, e.g., normalized]. The learning objective is to maximize the joint probability $\prod_{i=1}^{N} p(y_{i} | x_{i})$ over the dataset, or equivalently, to minimize the negative log-likelihood function $\sum_{i=1}^{N} \ell_{i}$, where we define $\ell_{i} = -\log p(y_{i} | x_{i})$.
+
+Note that the loss $\ell_{i}$ could be [names of possible loss functions]. The encoder will be encouraged to learn a representation space where samples (e.g., [example data type]) from the same instance (e.g., [example instance type]) are [desired behavior] while samples from distinct instances are [opposite behavior] [relevant citation(s)]. For convenience, we follow the settings outlined here in this work.

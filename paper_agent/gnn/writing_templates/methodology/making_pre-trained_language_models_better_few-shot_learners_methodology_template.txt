@@ -1,0 +1,44 @@
+\section{Methodology}
+
+Given a masked language model $L$, we first convert input $x_{in}$ to a token sequence $\tilde{x}$, and the language model $L$ then maps $\tilde{x}$ to a sequence of hidden vectors $\{ h_{k} \in \mathbb{R}^{d} \}$. 
+
+\subsection{Motivation}
+[Multiple sentences explaining the motivation and intuition behind the proposed method.]
+
+\subsection{Model Components}
+To tackle [challenge], our method consists of three main components: 
+1. [Component 1]
+2. [Component 2]
+3. [Component 3]
+
+\subsection{Workflow}
+[A paragraph describing the detailed workflow of the module.]
+
+\subsection{Comparative Analysis}
+[Several sentences comparing the proposed method with existing approaches.]
+
+\subsection{Mathematical Formulation}
+Formally, we define [concept] as follows:
+\begin{equation}
+p ( y | x_{in} ) = p ( [MASK] = M ( y ) | x_{prompt} ) = \frac{\exp(w_{M_{(y)}} \cdot h_{[MASK]})}{\sum_{y' \in Y} \exp(w_{M_{(y')}} \cdot h_{[MASK]})}, \tag{1}
+\end{equation}
+
+where $h_{[MASK]}$ is the hidden vector of $[MASK]$ and $w_{v}$ denotes the pre-softmax vector corresponding to $v \in V$. 
+
+\subsection{Parameter Optimization}
+[Detailed explanation of each term in the equations.]
+
+\subsection{Prompt Construction}
+The key challenge is to construct the template $T$ and label words $M(Y)$—we refer to these two together as a prompt $P$. [Discussion on the construction of templates and label words.]
+
+\subsection{Automatic Methodology}
+We now explore principled ways of automating the search process for label words (§5.1) and templates (§5.2). Our goals are to reduce the human involvement required to design prompts and to find more optimal settings than those that we manually choose. 
+
+\subsubsection{Automatic Selection of Label Words}
+[Description of the methodology for selecting label words.]
+
+\subsubsection{Automatic Generation of Templates}
+Next, we study how to generate a diverse set of templates $\{T\}$ automatically from a fixed set of label words $M(Y)$. [Details of the automatic template generation process.] 
+
+\subsection{Conclusion}
+[Concluding remarks emphasizing the importance of the proposed methodology and its contributions.]

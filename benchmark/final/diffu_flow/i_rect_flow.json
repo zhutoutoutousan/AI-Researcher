@@ -1,0 +1,103 @@
+{
+    "authors": [
+      "Sangyun Lee",
+      "Zinan Lin",
+      "Giulia Fanti"
+    ],
+    "year": 2024,
+    "instance_id": "i_rect_flow",
+    "url": "http://arxiv.org/abs/2405.20320v2",
+    "abstract": "Diffusion models have shown great promise for image and video generation, but\nsampling from state-of-the-art models requires expensive numerical integration\nof a generative ODE. One approach for tackling this problem is rectified flows,\nwhich iteratively learn smooth ODE paths that are less susceptible to\ntruncation error. However, rectified flows still require a relatively large\nnumber of function evaluations (NFEs). In this work, we propose improved\ntechniques for training rectified flows, allowing them to compete with\n\\emph{knowledge distillation} methods even in the low NFE setting. Our main\ninsight is that under realistic settings, a single iteration of the Reflow\nalgorithm for training rectified flows is sufficient to learn nearly straight\ntrajectories; hence, the current practice of using multiple Reflow iterations\nis unnecessary. We thus propose techniques to improve one-round training of\nrectified flows, including a U-shaped timestep distribution and LPIPS-Huber\npremetric. With these techniques, we improve the FID of the previous\n2-rectified flow by up to 75\\% in the 1 NFE setting on CIFAR-10. On ImageNet\n64$\\times$64, our improved rectified flow outperforms the state-of-the-art\ndistillation methods such as consistency distillation and progressive\ndistillation in both one-step and two-step settings and rivals the performance\nof improved consistency training (iCT) in FID. Code is available at\nhttps://github.com/sangyun884/rfpp.",
+    "venue": "arXiv.org",
+    "venue_source": "Semantic Scholar",
+    "venue_lookup_time": "2025-01-10T19:29:47.497922",
+    "citations": 7,
+    "topic": "selected",
+    "field": "selected",
+    "target": "Improving the Training of Rectified Flows",
+    "source_papers": [
+      {
+        "reference": "Denoising diffusion probabilistic models",
+        "rank": 1,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This study provided foundational insights into the application of diffusion models for generative tasks, asserting their effectiveness and setting benchmarks for low NFE (Number of Function Evaluations). The concepts established therein were crucial for the work on the proposed model as they leverage principles of diffusion for improved sampling.",
+        "usage": "The proposed methods and efficiencies in diffusion sampling directly informed the evolution of techniques in the proposed model, particularly regarding low NFE performance."
+      },
+      {
+        "reference": "Rectified flow: A marginal preserving approach to optimal transport",
+        "rank": 2,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This work forms the methodological foundation for rectified flows, serving as the core reference and underpinning the proposed enhancements in this paper. It directly influenced the algorithmic structure used to attain smooth ODE paths with minimized truncation errors.",
+        "usage": "Utilized as the primary framework in developing improved training methods for the proposed model."
+      },
+      {
+        "reference": "Improved techniques for training consistency models",
+        "rank": 3,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This study presented pivotal critiques on existing methods, specifically regarding the efficiency of training and the necessity of iterations. Its insights shaped the current study\u2019s assertion that fewer training rounds are needed for competitive performance.",
+        "usage": "Informed the argument against multiple Reflow iterations, aligning the current research with streamlining training efforts."
+      },
+      {
+        "reference": "Fast sampling of diffusion models with exponential integrator",
+        "rank": 4,
+        "type": [
+          "component"
+        ],
+        "justification": "This work introduced methods for efficient sampling in diffusion models, which set constraints and standards that the current enhancements for the proposed model aimed to meet or exceed.",
+        "usage": "Served as a comparative study to validate the efficiency of the proposed model against established methods in sampling tasks."
+      },
+      {
+        "reference": "Neural ordinary differential equations",
+        "rank": 5,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This foundational study on neural ODEs provided insights applicable to the smoothing effects and learning capabilities of the proposed model, integrating ODE principles within a neural framework.",
+        "usage": "Guided the understanding of how rectified flows can leverage ODE characteristics to enhance generative capabilities."
+      },
+      {
+        "reference": "Progressive distillation for fast sampling of diffusion models",
+        "rank": 6,
+        "type": [
+          "component"
+        ],
+        "justification": "This study explained distillation approaches that informed the training efficiency discussions, providing context for the competitive analysis of the proposed model in low NFE settings.",
+        "usage": "Informed the juxtaposition of rectified flows against distillation techniques in assessing performance improvements."
+      },
+      {
+        "reference": "Score-based generative modeling through stochastic differential equations",
+        "rank": 7,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "Conceptually advanced the field of generative modeling, highlighting the capabilities of SDEs in this context. Its insights into gradient estimation were crucial for contextualizing improvements made in the proposed model.",
+        "usage": "Helped ground the theoretical and practical advancements introduced in this paper."
+      },
+      {
+        "reference": "Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow",
+        "rank": 8,
+        "type": [
+          "component"
+        ],
+        "justification": "Rectified Flow introduces a specific trajectory definition and method for straightening flows, which directly informs the components of the proposed model. Its ideas around rewiring trajectories were crucial for enhancing the expressiveness of the new method.",
+        "usage": "The proposed model is introduced as a generative modeling framework that connects data distribution and noise using straight paths."
+      },
+      {
+        "reference": "Consistency models",
+        "rank": 9,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "The framework discussed here critically influences knowledge distillation methodologies. Its focus on model consistency provided a necessary backdrop for the competitive performance discussions around the proposed model.",
+        "usage": "Set the stage for comparative effectiveness claims in the realm of generative models."
+      }
+    ],
+    "task1": "1. **Task**: The primary task addressed by the methodology is generating high-quality images using a generative model optimized for low function evaluation settings.\n\n2. **Core Techniques/Algorithms**:\n   - The method employs a generative model based on rectified flows trained using the Reflow algorithm.\n   - Key innovations include a U-shaped timestep distribution to focus training on challenging intervals, and the use of the LPIPS-Huber metric as a loss function to improve image quality.\n\n3. **Purpose and Function of Major Components**:\n   - **Rectified Flows**: These are used to smoothly transition between data distributions through learned ODEs, helping to reduce truncation errors.\n   - **Reflow Algorithm**: This recursive approach improves the quality of generated output by iteratively refining the trajectory of the generative model based on pre-trained flows.\n   - **U-shaped Timestep Distribution**: This distribution emphasizes training on timesteps where the proposed model performance is expected to be lower, thus improving robustness.\n   - **LPIPS-Huber Loss**: This loss function focuses on perceptual similarity, enhancing the perceptual quality of generated images compared to traditional loss metrics.\n\n4. **Implementation Details**:\n   - **Rectified Flow Training**:\n     - **Key Parameters**: Set the learning rate to 0.0002 for CIFAR-10; use a batch size of 512.\n     - **Input/Output Specifications**: The proposed model expects pairs of images (from the target distribution) and their associated noise, outputting new image samples.\n   - **Reflow Procedure**:\n     - **Iterations**: Instead of performing multiple refinement iterations, use a single Reflow application based on the proposed techniques.\n     - Generate synthetic (x, z) data pairs from pre-trained models before training the rectified flow. \n   - **Timestep Distribution**: The U-shaped distribution can be implemented as:\n     - \\( p_t(u) \\propto \\exp(au) + \\exp(-au) \\) for \\( u \\in [0, 1] \\), with \\( a = 4 \\).\n   - **Loss Functions**: Implement new loss metrics, such as the Pseudo-Huber loss and LPIPS loss, according to the given forms in this paper.\n\n5. **Step-by-Step Interaction**:\n   - Begin by initializing the proposed model using a pre-trained diffusion model.\n   - Generate an initial set of (x, z) pairs using the pre-trained model.\n   - Train the rectified flow using these pairs with the U-shaped timestep distribution.\n   - Optimize the proposed model using the LPIPS-Huber loss to enhance perceptual quality.\n   - Use the Reflow procedure to refine the model based on its output quality after the first round of training.\n\n6. **Critical Implementation Details**:\n   - Ensure that the learning rate is appropriately set, and consider adjusting the batch size for optimal convergence rates.\n   - Pay close attention to the initialization step with the pre-trained diffusion models, as this can significantly affect downstream model performance.\n   - Be prepared for potential computational overhead due to the preprocessing steps of generating synthetic pairs, but this cost is often offset by gains in output quality.\n   - Use the state-of-the-art Adam optimizer with an EMA (exponential moving average) strategy with a decay rate of \\(0.9999\\) to stabilize training.",
+    "task2": "1. The primary task or problem domain the research tackles is the efficient sampling from diffusion models, specifically through the enhancement of rectified flow techniques to facilitate high-quality image and video generation while minimizing computational costs.\n\n2. Current limitations in existing approaches, such as knowledge distillation methods and previous rectified flow implementations, include the necessity of multiple iterations to achieve satisfactory performance in generating samples, leading to increased computational expense and potential degradation of sample quality.\n\n3. Core challenges the researchers aim to overcome involve reducing the number of function evaluations (NFEs) required for effective sampling and addressing the inefficiencies that arise from traditional training techniques in rectified flow models, which often necessitate extensive computational resources and time.\n\n4. Key objectives and intended contributions include introducing improved training techniques for rectified flows that allow them to effectively compete with state-of-the-art distillation methods, particularly in scenarios with low NFEs. The researchers aim to demonstrate that the proposed model can achieve significant performance improvements without the need for excessive iterations, thereby streamlining the training and sampling processes. This study also highlights the advantages of the proposed approach in overcoming existing limitations in the field."
+  }
