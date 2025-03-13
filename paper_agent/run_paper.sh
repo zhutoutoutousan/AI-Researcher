@@ -2,7 +2,7 @@
 
 cd path/to/AI-Researcher/paper_agent
 
-export OPENAI_API_KEY=sk-SKlupNntta4WPmvDCRo7uuPbYGwOnUQcb25Twn8c718tPpXN
+export OPENAI_API_KEY=sk-xxx
 
 
 research_field=vq
