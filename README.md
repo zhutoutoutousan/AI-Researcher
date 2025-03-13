@@ -48,7 +48,7 @@ Welcome to **AI-Researcher**🤗 AI-Researcher introduces a revolutionary breakt
  - ✍️ **Manuscript Creation**: Automatically generates polished, full-length academic papers.
 
 <div align="center">
-  <!-- <img src="./assets/AutoAgentnew-intro.pdf" alt="Logo" width="100%"> -->
+  <!-- <img src="./assets/AI-Researchernew-intro.pdf" alt="Logo" width="100%"> -->
   <figure>
     <img src="./assets/AI-Researcher-Framework.png" alt="Logo" style="max-width: 100%; height: auto;">
     <br>
@@ -93,7 +93,7 @@ Welcome to **AI-Researcher**🤗 AI-Researcher introduces a revolutionary breakt
 
 ### Installation
 
-#### AutoAgent Installation
+#### AI Installation
 
 ```bash
 git clone https://github.com/HKUDS/AI-Researcher.git
@@ -964,15 +964,25 @@ We aim to build a vibrant community around AI-Researcher and warmly invite every
 - [Read or post Github Issues](https://github.com/HKUDS/AI-Researcher/issues) - Check out the issues we're working on, or add your own ideas.
 
 
+## Misc
+
+<div align="center">
+
+[![Stargazers repo roster for @HKUDS/AI-Researcher](https://reporoster.com/stars/HKUDS/AI-Researcher)](https://github.com/HKUDS/AI-Researcher/stargazers)
+
+[![Forkers repo roster for @HKUDS/AI-Researcher](https://reporoster.com/forks/HKUDS/AI-Researcher)](https://github.com/HKUDS/AI-Researcher/network/members)
+
+[![Star History Chart](https://api.star-history.com/svg?repos=HKUDS/AI-Researcher&type=Date)](https://star-history.com/#HKUDS/AI-Researcher&Date)
+
+</div>
+
+
 <span id='cite'/>
 
 ## 🌟 Cite
 
+A more detailed technical report will be released soon. 🚀:
+
 ```tex
 
 ```
-
-
-
-
-
