@@ -36,9 +36,7 @@ from research_agent.inno.memory.utils import encode_string_by_tiktoken, decode_t
 import re
 # litellm.set_verbose=True
 # litellm.num_retries = 3
-client = AsyncOpenAI(api_key="sk-d4656d7459264eb8acf55848081cf6bc", base_url="https://api.deepseek.com")
 
-acompletion = client.chat.completions.create
 def should_retry_error(exception):
     print(f"Caught exception: {type(exception).__name__} - {str(exception)}")
     
