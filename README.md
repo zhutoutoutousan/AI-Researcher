@@ -63,7 +63,7 @@ Welcome to **AI-Researcher**🤗 AI-Researcher introduces a revolutionary breakt
 
 <div class="scrollable">
     <ul>
-      <li><strong>[2025, Mar 04]</strong>: &nbsp;🎉🎉We've launched <b>AI-Researcher!</b>, The release includes the complete framework, datasets, benchmark construction pipeline, and much more. Stay tuned—there’s plenty more to come! 🚀</li>
+      <li><strong>[2025, Mar 12]</strong>: &nbsp;🎉🎉We've launched <b>AI-Researcher!</b>, The release includes the complete framework, datasets, benchmark construction pipeline, and much more. Stay tuned—there’s plenty more to come! 🚀</li>
     </ul>
 </div>
 
