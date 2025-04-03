@@ -924,7 +924,7 @@ python run_infer_idea.py --instance_path ../benchmark/final/${category}/${instan
 
 ### 2. Paper Writing Agent
 
-If you want to generate the paper after the research agent has conducted the research, you can use the following command in the [`paper_agent/run_infer.sh`](./paper_agent/run_paper.sh):
+If you want to generate the paper after the research agent has conducted the research, you can use the following command in the [`paper_agent/run_paper.sh`](./paper_agent/run_paper.sh):
 
 ```bash
 #!/bin/bash
