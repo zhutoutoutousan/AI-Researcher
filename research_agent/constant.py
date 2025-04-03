@@ -22,7 +22,7 @@ def str_to_bool(value):
 
 
 DOCKER_WORKPLACE_NAME = os.getenv('DOCKER_WORKPLACE_NAME', 'workplace_meta')
-GITHUB_AI_TOKEN = os.getenv('GITHUB_AI_TOKEN', "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")
+GITHUB_AI_TOKEN = os.getenv('GITHUB_AI_TOKEN', None)
 AI_USER = os.getenv('AI_USER', "ai-sin")
 LOCAL_ROOT = os.getenv('LOCAL_ROOT', os.getcwd())
 
