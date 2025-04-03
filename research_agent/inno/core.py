@@ -126,6 +126,7 @@ class MetaChain:
             "tools": tools or None,
             "tool_choice": agent.tool_choice,
             "stream": stream,
+            "base_url": API_BASE_URL,
         }
 
         if create_params['model'].startswith("mistral"):
@@ -498,7 +499,7 @@ class MetaChain:
                 "model": create_model,
                 "messages": messages,
                 "stream": stream,
-                # "base_url": API_BASE_URL,
+                "base_url": API_BASE_URL,
             }
             completion_response = await acompletion(**create_params)
             last_message = [{"role": "assistant", "content": completion_response.choices[0].message.content}]
