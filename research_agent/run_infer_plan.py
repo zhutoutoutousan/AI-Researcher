@@ -110,7 +110,7 @@ class InnoFlow(FlowModule):
         self.judge_agent = AgentModule(get_judge_agent(model=CHEEP_MODEL, code_env=code_env, web_env=web_env, file_env=file_env), self.client, cache_path)
         self.survey_agent = AgentModule(get_survey_agent(model=CHEEP_MODEL, file_env=file_env, code_env=code_env), self.client, cache_path)
         self.exp_analyser = AgentModule(get_exp_analyser_agent(model=CHEEP_MODEL, file_env=file_env, code_env=code_env), self.client, cache_path)
-    async def forward(self, instance_path: str, task_level: str, local_root: str, workplace_name: str, max_iter_times: int, category: str, *args, **kwargs):
+    async def forward(self, instance_path: str, task_level: str, local_root: str, workplace_name: str, max_iter_times: int, category: str, ideas: str, references: str, *args, **kwargs):
         metadata = self.load_ins({"instance_path": instance_path, "task_level": task_level})
         context_variables = {
             "working_dir": workplace_name, # TODO: change to the codebase path
@@ -123,13 +123,13 @@ class InnoFlow(FlowModule):
         query = f"""\
 You are given a list of papers, searching results of the papers on GitHub, and innovative ideas according to the papers.
 List of papers:
-{warp_source_papers(metadata["source_papers"])}
+{references}
 
 Searching results of the papers on GitHub:
 {github_result}
 
 innovative ideas:
-{metadata["task_instructions"]}
+{ideas}
 
 Your task is to choose at least 5 repositories as the reference codebases.
 """
@@ -141,9 +141,9 @@ Your task is to choose at least 5 repositories as the reference codebases.
         download_res = self.download_papaer({"paper_list": paper_list, "local_root": local_root, "workplace_name": workplace_name})
         survey_query = f"""\
 I have an innovative ideas related to machine learning:
-{metadata["task_instructions"]}
+{ideas}
 And a list of papers for your reference:
-{warp_source_papers(metadata["source_papers"])}
+{references}
 
 I have carefully gone through these papers' github repositories and found download some of them in my local machine, with the following information:
 {prepare_res}
@@ -180,9 +180,9 @@ And the evaluation metrics are:
 
         plan_query = f"""\
 I have an innovative ideas related to machine learning:
-{metadata["task_instructions"]}
+{ideas}
 And a list of papers for your reference:
-{warp_source_papers(metadata["source_papers"])}
+{references}
 
 I have carefully gone through these papers' github repositories and found download some of them in my local machine, with the following information:
 {prepare_res}
@@ -202,7 +202,7 @@ Your task is to carefully review the existing resources and understand the task,
         ml_dev_query = f"""\
 INPUT:
 You are given an innovative idea:
-{metadata["task_instructions"]}. 
+{ideas}. 
 and the reference codebases chosen by the `Prepare Agent`:
 {prepare_res}
 And I have conducted the comprehensive survey on the innovative idea and the papers, and give you the model survey notes:
@@ -322,7 +322,7 @@ Remember:
         query = f"""\
 INPUT:
 You are given an innovative idea:
-{metadata["task_instructions"]}
+{ideas}
 and the reference codebases chosen by the `Prepare Agent`:
 {prepare_res}
 and the detailed coding plan:
@@ -351,7 +351,7 @@ Your task is to evaluate the implementation, and give a suggestion about the imp
         for i in range(MAX_ITER_TIMES):
             query = f"""\
 You are given an innovative idea:
-{metadata["task_instructions"]}
+{ideas}
 and the reference codebases chosen by the `Prepare Agent`:
 {prepare_res}
 and the detailed coding plan:
@@ -386,7 +386,7 @@ Remember:
             ml_dev_res = judge_messages[-1]["content"]
             query = f"""\
 You are given an innovative idea:
-{metadata["task_instructions"]}
+{ideas}
 and the reference codebases chosen by the `Prepare Agent`:
 {prepare_res}
 and the detailed coding plan:
@@ -410,7 +410,7 @@ Please evaluate the implementation, and give a suggestion about the implementati
         
         ml_submit_query = f"""\
 You are given an innovative idea:
-{metadata["task_instructions"]}
+{ideas}
 And your last implementation of the project:
 {ml_dev_res}
 The suggestion about your last implementation:
@@ -431,7 +431,7 @@ After you get the result, you should return the result with your analysis and su
         for i in range(EXP_ITER_TIMES):
             exp_planner_query = f"""\
 You are given an innovative idea:
-{metadata["task_instructions"]}
+{ideas}
 And the reference codebases chosen by the `Prepare Agent`:
 {prepare_res}
 And the detailed coding plan:
@@ -456,7 +456,7 @@ DO NOT use the `case_resolved` function before you have carefully and comprehens
             # print(analysis_report)
             refine_query = f"""\
 You are given an innovative idea:
-{metadata["task_instructions"]}
+{ideas}
 And the reference codebases chosen by the `Prepare Agent`:
 {prepare_res}
 And the detailed coding plan:
@@ -475,7 +475,7 @@ Note that you should fully utilize the existing code in the directory `/{workpla
 
 #         print(refine_res)
         
-def main(args):
+def main(args, ideas, references):
     """
     MAX_ATTEMPTS
 
@@ -521,7 +521,7 @@ def main(args):
     file_env = RequestsMarkdownBrowser(viewport_size=1024 * 4, local_root=env_config.local_root, workplace_name=env_config.workplace_name, downloads_folder=os.path.join(env_config.local_root, env_config.workplace_name, "downloads"))
     flow = InnoFlow(cache_path="cache_" + instance_id + "_" + COMPLETION_MODEL.replace("/", "__"), log_path="log_" + instance_id, code_env=code_env, web_env=web_env, file_env=file_env, model=args.model)
     # ml_result = await flow(instance_path=instance_path)
-    asyncio.run(flow(instance_path=args.instance_path, task_level=args.task_level, local_root=local_root, workplace_name=args.workplace_name, max_iter_times=args.max_iter_times, category=args.category))
+    asyncio.run(flow(instance_path=args.instance_path, task_level=args.task_level, local_root=local_root, workplace_name=args.workplace_name, max_iter_times=args.max_iter_times, category=args.category, ideas = ideas, references = references))
     # print(judge_result)
 
 

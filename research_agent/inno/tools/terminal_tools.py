@@ -115,7 +115,10 @@ def process_terminal_response(func):
             try:
                 res_output = result['result']
                 if res_output == "": res_output = " "
+                tmp_dir = os.path.join(os.getcwd(), "terminal_tmp")
+                os.makedirs(tmp_dir, exist_ok=True)
                 tmp_file = os.path.join(os.getcwd(), "terminal_tmp", "terminal_output_{}___{}.txt".format(datetime.now().strftime("%Y%m%d_%H%M%S"), func.__name__))
+                
                 with open(tmp_file, "w") as f:
                     f.write(res_output)
                 return open_local_terminal_output(tmp_file)

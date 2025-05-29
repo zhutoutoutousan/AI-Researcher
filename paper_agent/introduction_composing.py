@@ -5,8 +5,8 @@ import logging
 from tqdm import tqdm
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.openai_utils import GPTClient
-from section_composer import SectionComposer, setup_logging
+from benchmark_collection.utils.openai_utils import GPTClient
+from paper_agent.section_composer import SectionComposer, setup_logging
 
 class IntroductionComposer(SectionComposer):
     def __init__(self, research_field: str, structure_iterations: int = 3):
@@ -251,7 +251,8 @@ async def introduction_composing(research_field: str, instance_id: str):
     
     # target_paper = 'Heterogeneous Graph Contrastive Learning for Recommendation'
     # benchmark_path = '../benchmark_collection/advance_graph/merged_papers_with_fields.json'
-    benchmark_path = f"/data2/tjb/Inno-agent/benchmark/final/{research_field}/{instance_id}.json"
+    # benchmark_path = f"/data2/tjb/Inno-agent/benchmark/final/{research_field}/{instance_id}.json"
+    benchmark_path = f'./benchmark/final/{research_field}/{instance_id}.json'
     try:
         introduction = await composer.compose_section(benchmark_path, instance_id)
         logging.info("Introduction composition completed")

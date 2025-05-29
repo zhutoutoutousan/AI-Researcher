@@ -5,8 +5,9 @@ import logging
 from tqdm import tqdm
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.openai_utils import GPTClient
-from section_composer import SectionComposer, setup_logging
+from benchmark_collection.utils.openai_utils import GPTClient
+from paper_agent.section_composer import SectionComposer, setup_logging
+import shutil
 
 class AbstractComposer(SectionComposer):
     def __init__(self, research_field: str, structure_iterations: int = 2):
@@ -179,6 +180,17 @@ Output the revised abstract section incorporating all these improvements. Reply 
         output_dir = f"{self.research_field}/target_sections/{self.normalize_title(target_paper)}"
         os.makedirs(output_dir, exist_ok=True)
         output_path = os.path.join(output_dir, "abstract.tex")
+
+
+        dst_dir = output_dir
+        src_dir = "./paper_agent/final_paper"
+        for filename in os.listdir(src_dir):
+            src_path = os.path.join(src_dir, filename)
+            # dst_path = os.path.join(dst_dir, filename)
+
+            # 只复制文件，不复制子文件夹
+            if os.path.isfile(src_path):
+                shutil.copy2(src_path, dst_dir)  # copy2 会保留元数据（时间戳等）
         
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(final_abstract)

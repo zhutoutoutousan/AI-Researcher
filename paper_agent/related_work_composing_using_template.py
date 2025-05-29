@@ -5,8 +5,8 @@ import logging
 from tqdm import tqdm
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.openai_utils import GPTClient
-from section_composer import SectionComposer, setup_logging
+from benchmark_collection.utils.openai_utils import GPTClient
+from paper_agent.section_composer import SectionComposer, setup_logging
 
 class RelatedWorkComposer(SectionComposer):
     def __init__(self, research_field: str, structure_iterations: int = 3):
@@ -277,7 +277,8 @@ async def related_work_composing(research_field: str, instance_id: str):
     
     composer = RelatedWorkComposer(research_field=research_field, structure_iterations=1)
     
-    proj_dir = f'/data2/tjb_share/{research_field}/{instance_id}/'
+    # proj_dir = f'/data2/tjb_share/{research_field}/{instance_id}/'
+    proj_dir = f'./paper_agent/{research_field}/{instance_id}/'
     # target_paper = "Knowledge Graph Self-Supervised Rationalization for Recommendation"
     # target_paper = 'Heterogeneous Graph Contrastive Learning for Recommendation'
     cache_dirs = [d for d in os.listdir(proj_dir) if d.startswith('cache_')]
@@ -285,7 +286,8 @@ async def related_work_composing(research_field: str, instance_id: str):
         raise ValueError("No cache directory found")
     agent_dir = os.path.join(proj_dir, cache_dirs[-1], 'agents')
     
-    benchmark_path = f'/data2/tjb/Inno-agent/benchmark/final/{research_field}/{instance_id}.json'
+    # benchmark_path = f'/data2/tjb/Inno-agent/benchmark/final/{research_field}/{instance_id}.json'
+    benchmark_path = f'./benchmark/final/{research_field}/{instance_id}.json'
     papers_dir = os.path.join(proj_dir, 'workplace', 'papers')
     
     try:

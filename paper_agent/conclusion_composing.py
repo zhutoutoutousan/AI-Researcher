@@ -5,8 +5,8 @@ import logging
 from tqdm import tqdm
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.openai_utils import GPTClient
-from section_composer import SectionComposer, setup_logging
+from benchmark_collection.utils.openai_utils import GPTClient
+from paper_agent.section_composer import SectionComposer, setup_logging
 
 class ConclusionComposer(SectionComposer):
     def __init__(self, research_field: str, structure_iterations: int = 2):

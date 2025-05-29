@@ -454,7 +454,7 @@ class MetaChain:
                 "tools": tools or None,
                 "tool_choice": agent.tool_choice,
                 "stream": stream,
-                "base_url": API_BASE_URL,
+                # "api_base": API_BASE_URL,
             }
             NO_SENDER_MODE = False
             for not_sender_model in NOT_SUPPORT_SENDER:
@@ -471,7 +471,7 @@ class MetaChain:
 
             if tools and create_params['model'].startswith("gpt"):
                 create_params["parallel_tool_calls"] = agent.parallel_tool_calls
-            completion_response = acompletion(**create_params)
+            completion_response = await acompletion(**create_params)
         elif create_model in NOT_USE_FN_CALL:
             assert agent.tool_choice == "required", f"Non-function calling mode MUST use tool_choice = 'required' rather than {agent.tool_choice}"
             last_content = messages[-1]["content"]
@@ -498,7 +498,7 @@ class MetaChain:
                 "model": create_model,
                 "messages": messages,
                 "stream": stream,
-                # "base_url": API_BASE_URL,
+                # "api_base": API_BASE_URL,
             }
             completion_response = await acompletion(**create_params)
             last_message = [{"role": "assistant", "content": completion_response.choices[0].message.content}]
@@ -576,7 +576,7 @@ class MetaChain:
 
             # get completion with current history, agent
             try:
-                completion = await self.try_completion_with_truncation(
+                completion_response = await self.try_completion_with_truncation(
                     agent=active_agent,
                     history=history,
                     context_variables=context_variables,
@@ -588,7 +588,7 @@ class MetaChain:
                 self.logger.info(f"Error: {e}", title="Error", color="red")
                 history.append({"role": "error", "content": f"Error: {e}"})
                 break
-            message: Message = completion.choices[0].message
+            message: Message = completion_response.choices[0].message
             message.sender = active_agent.name
             # debug_print(debug, "Received completion:", message.model_dump_json(indent=4), log_path=log_path, title="Received Completion", color="blue")
             self.logger.pretty_print_messages(message)
