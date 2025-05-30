@@ -35,7 +35,7 @@ def setup_path():
 
 # 配置日志系统
 def setup_logging():
-    logs_dir = os.path.join(os.path.dirname(__file__), "research_agent", "logs")
+    logs_dir = os.path.join(os.path.dirname(__file__), "logs")
     os.makedirs(logs_dir, exist_ok=True)
     current_date = datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S")
     log_file = os.path.join(logs_dir, f"log_{current_date}.log")
@@ -1447,7 +1447,7 @@ def create_ui():
             outputs=module_description,
         )
         download_research_logs.click(fn=return_log_file, outputs=file_output)
-        download_paper_logs.click(fn=return_paper_log, outputs=file_output)
+        download_paper_logs.click(fn=return_log_file, outputs=file_output)
         download_paper.click(fn=return_paper_file, outputs=file_output)
 
         # clear_logs_button2.click(fn=clear_log_file, outputs=[log_display2])
@@ -1465,9 +1465,9 @@ def main():
     try:
         global LOG_FILE
         global LOG_READ_FILE
-        global PAPER_LOG
+        # global PAPER_LOG
         LOG_FILE = setup_logging()
-        PAPER_LOG = return_paper_log()
+        # PAPER_LOG = return_paper_log()
         LOG_READ_FILE = setup_path()
         # logging.info("AutoAgent Web application is running")
 
