@@ -1481,7 +1481,8 @@ def main():
         app = create_ui()
 
         app.queue()
-        app.launch(share=False, server_port=7861)
+        allowed_paths = [os.path.dirname(LOG_FILE)]
+        app.launch(share=False, server_port=7861,allowed_paths=allowed_paths)
 
     except Exception as e:
         logging.error(f"Error occurred while starting the application: {str(e)}")
