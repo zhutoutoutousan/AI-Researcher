@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="./assets/ai-researcher.png" alt="Logo" width="400">
-  <h1 align="center">AI-Researcher: Fully-Automated Scientific Discovery with LLM Agents </h1>
+  <h1 align="center">AI-Researcher: Autonomous Scientific Innovation </h1>
 </div>
 
 
@@ -12,7 +12,7 @@
   <a href="https://discord.gg/ghSnKGkq"><img src="https://img.shields.io/badge/Discord-Join%20Us-purple?logo=discord&logoColor=white&style=for-the-badge" alt="Join our Discord community"></a>
   <br/>
   <a href="https://auto-researcher.github.io/docs"><img src="https://img.shields.io/badge/Documentation-000?logo=googledocs&logoColor=FFE165&style=for-the-badge" alt="Check out the documentation"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Paper%20on%20Arxiv-000?logoColor=FFE165&logo=arxiv&style=for-the-badge" alt="Paper"></a>
+  <a href="https://arxiv.org/abs/2505.18705"><img src="https://img.shields.io/badge/Paper%20on%20Arxiv-000?logoColor=FFE165&logo=arxiv&style=for-the-badge" alt="Paper"></a>
   <a href="#"><img src="https://img.shields.io/badge/DATASETS-000?logoColor=FFE165&logo=huggingface&style=for-the-badge" alt="Datasets"></a>
   <hr>
 </div>
@@ -63,7 +63,8 @@ Welcome to **AI-Researcher**🤗 AI-Researcher introduces a revolutionary breakt
 
 <div class="scrollable">
     <ul>
-      <li><strong>[2025, Mar 04]</strong>: &nbsp;🎉🎉We've launched <b>AI-Researcher!</b>, The release includes the complete framework, datasets, benchmark construction pipeline, and much more. Stay tuned—there’s plenty more to come! 🚀</li>
+      <li><strong>[2025, May 27]</strong>: &nbsp;🎉🎉The technical report by AI-Researcher is now available on arXiv. Please check it out🚀</li>
+      <li><strong>[2025, Mar 12]</strong>: &nbsp;🎉🎉We've launched <b>AI-Researcher!</b> The release includes the complete framework, datasets, benchmark construction pipeline, and much more. Stay tuned--there's plenty more to come! 🚀</li>
     </ul>
 </div>
 
@@ -924,7 +925,7 @@ python run_infer_idea.py --instance_path ../benchmark/final/${category}/${instan
 
 ### 2. Paper Writing Agent
 
-If you want to generate the paper after the research agent has conducted the research, you can use the following command in the [`paper_agent/run_infer.sh`](./paper_agent/run_paper.sh):
+If you want to generate the paper after the research agent has conducted the research, you can use the following command in the [`paper_agent/run_paper.sh`](./paper_agent/run_paper.sh):
 
 ```bash
 #!/bin/bash
