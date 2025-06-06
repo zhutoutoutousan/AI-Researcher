@@ -1,7 +1,7 @@
 import os
 import os.path as osp
 import subprocess
-from constant import BASE_IMAGES, AI_USER, GITHUB_AI_TOKEN, GPUS
+from constant import BASE_IMAGES, AI_USER, GITHUB_AI_TOKEN, GPUS, PLATFORM
 import time
 import socket
 import json
@@ -85,8 +85,9 @@ class DockerEnv:
                 return
         
         # if the container does not exist, create and start a new container
+        gpu_cmd = ["--gpus", GPUS] if GPUS else []
         docker_command = [
-            "docker", "run", "-d", "--platform", "linux/amd64", "--userns=host", "--gpus", GPUS, "--name", self.container_name, 
+            "docker", "run", "-d", "--platform", PLATFORM, "--userns=host",] + gpu_cmd + ["--name", self.container_name, 
             "--user", "root", "-v", f"{self.local_workplace}:{self.docker_workplace}",
             "-w", f"{self.docker_workplace}", "-p", f"{self.communication_port}:8000", 
             "--restart", "unless-stopped", BASE_IMAGES

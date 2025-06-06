@@ -42,7 +42,7 @@ CHEEP_MODEL = os.getenv('CHEEP_MODEL', "gpt-4o-mini-2024-07-18")
 # BASE_URL = os.getenv('BASE_URL', None)
 
 # GPUS = os.getenv('GPUS', "all")
-GPUS = os.getenv('GPUS', "device=0")
+GPUS = os.getenv('GPUS', None)
 
 FN_CALL = str_to_bool(os.getenv('FN_CALL', True))
 API_BASE_URL = os.getenv('API_BASE_URL', None)
