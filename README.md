@@ -7,13 +7,13 @@
 
 
 <div align="center">
-  <a href="https://auto-researcher.github.io"><img src="https://img.shields.io/badge/Project-Page-blue?style=for-the-badge&color=FFE165&logo=homepage&logoColor=white" alt="Project Page"></a>
+  <a href="https://autoresearcher.github.io"><img src="https://img.shields.io/badge/Project-Page-blue?style=for-the-badge&color=FFE165&logo=homepage&logoColor=white" alt="Project Page"></a>
   <a href="https://join.slack.com/t/ai-researchergroup/shared_invite/zt-30y5a070k-C0ajQt1zmVczFnfGkIicvA"><img src="https://img.shields.io/badge/Slack-Join%20Us-red?logo=slack&logoColor=white&style=for-the-badge" alt="Join our Slack community"></a>
-  <a href="https://discord.gg/ghSnKGkq"><img src="https://img.shields.io/badge/Discord-Join%20Us-purple?logo=discord&logoColor=white&style=for-the-badge" alt="Join our Discord community"></a>
+  <a href="https://discord.gg/zBNYTk5q2g"><img src="https://img.shields.io/badge/Discord-Join%20Us-purple?logo=discord&logoColor=white&style=for-the-badge" alt="Join our Discord community"></a>
   <br/>
-  <a href="https://auto-researcher.github.io/docs"><img src="https://img.shields.io/badge/Documentation-000?logo=googledocs&logoColor=FFE165&style=for-the-badge" alt="Check out the documentation"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Paper%20on%20Arxiv-000?logoColor=FFE165&logo=arxiv&style=for-the-badge" alt="Paper"></a>
-  <a href="#"><img src="https://img.shields.io/badge/DATASETS-000?logoColor=FFE165&logo=huggingface&style=for-the-badge" alt="Datasets"></a>
+  <a href="https://autoresearcher.github.io/docs"><img src="https://img.shields.io/badge/Documentation-000?logo=googledocs&logoColor=FFE165&style=for-the-badge" alt="Check out the documentation"></a>
+  <a href="https://arxiv.org/abs/2505.18705"><img src="https://img.shields.io/badge/Paper%20on%20Arxiv-000?logoColor=FFE165&logo=arxiv&style=for-the-badge" alt="Paper"></a>
+  <a href="https://autoresearcher.github.io/leaderboard"><img src="https://img.shields.io/badge/DATASETS-000?logoColor=FFE165&logo=huggingface&style=for-the-badge" alt="Benchmark"></a>
   <hr>
 </div>
 
@@ -63,7 +63,17 @@ Welcome to **AI-Researcher**🤗 AI-Researcher introduces a revolutionary breakt
 
 <div class="scrollable">
     <ul>
-      <li><strong>[2025, Mar 04]</strong>: &nbsp;🎉🎉We've launched <b>AI-Researcher!</b>, The release includes the complete framework, datasets, benchmark construction pipeline, and much more. Stay tuned—there’s plenty more to come! 🚀</li>
+      <li><strong>[2025, May 24]</strong>: &nbsp;🎉🎉 <b>Major Release! AI-Researcher Comprehensive Upgrade!</b> 🚀
+        <br>We are excited to announce a significant milestone for AI-Researcher:
+        <ul>
+          <li>📄 <b><a href="https://arxiv.org/abs/2505.18705">Academic Paper Release</a></b>: Detailed exposition of our innovative methods and experimental results</li>
+          <li>📊 <b><a href="https://autoresearcher.github.io/leaderboard">Benchmark Suite</a></b>: Comprehensive evaluation framework and datasets</li>
+          <li>🖥️ <b>Web GUI Interface</b>: User-friendly graphical interface making research more convenient</li>
+        </ul>
+        <b>🤝 Join Us!</b> We welcome researchers, developers, and AI enthusiasts to contribute together and advance AI research development. Whether it's code contributions, bug reports, feature suggestions, or documentation improvements, every contribution is valuable!
+        <br>💡 <i>Let's build a smarter AI research assistant together!</i>
+      </li>
+      <li><strong>[2025, Mar 04]</strong>: &nbsp;🎉🎉We've launched <b>AI-Researcher!</b>, The release includes the complete framework, datasets, benchmark construction pipeline, and much more. Stay tuned—there's plenty more to come! 🚀</li>
     </ul>
 </div>
 
@@ -76,7 +86,7 @@ Welcome to **AI-Researcher**🤗 AI-Researcher introduces a revolutionary breakt
 * <a href='#quick-start'>⚡ Quick Start</a>
   * <a href='#installation'>Installation</a>
   * <a href='#api-keys-setup'>API Keys Setup</a>
-* <a href='#examples'> ⬇️ Examples</a>
+* <a href='#examples'>⬇️ Examples</a>
 * <a href='#how-it-works'>✨ How AI-Researcher works</a>
 * <a href='#how-to-use'>🔍 How to use AI-Researcher</a>
 * <a href='#documentation'>📖 Documentation</a>
@@ -957,7 +967,7 @@ Select the following example to run our AI-Researcher:
   
   1. 🌐 **Multi-LLM Provider Support**: Effortlessly integrates with leading language model providers such as Claude, OpenAI, Deepseek, and more. Researchers can select the most suitable AI capabilities for their specific needs.
   
-  2. 📚 **Effortless Research Kickoff**: Kickstart your research journey with unparalleled ease! Simply provide a list of relevant papers, and **AI-Researcher** takes care of the rest—no need to upload files, contribute initial ideas, or navigate complex configurations. It’s the ultimate tool to help you jumpstart your research process efficiently and effectively.
+  2. 📚 **Effortless Research Kickoff**: Kickstart your research journey with unparalleled ease! Simply provide a list of relevant papers, and **AI-Researcher** takes care of the rest—no need to upload files, contribute initial ideas, or navigate complex configurations. It's the ultimate tool to help you jumpstart your research process efficiently and effectively.
   
   3. 🧠 **Minimal Domain Expertise Needed**: AI-Researcher simplifies the research process by autonomously identifying critical research gaps, proposing innovative approaches, and executing the entire research pipeline. While some domain understanding can enhance results, the tool is designed to empower users of all expertise levels to achieve impactful outcomes with ease.
   
@@ -1042,7 +1052,7 @@ Comprehensive documentation is on its way 🚀! Stay tuned for updates on our [D
 
 ## 🤝 Join the Community
 
-We aim to build a vibrant community around AI-Researcher and warmly invite everyone to join us. Here’s how you can become part of our community:
+We aim to build a vibrant community around AI-Researcher and warmly invite everyone to join us. Here's how you can become part of our community:
 
 - [Join our Slack workspace](https://join.slack.com/t/ai-researchergroup/shared_invite/zt-30y5a070k-C0ajQt1zmVczFnfGkIicvA) - Here we talk about research, architecture, and future development.
 - [Join our Discord server](https://discord.gg/ghSnKGkq) - This is a community-run server for general discussion, questions, and feedback. 
