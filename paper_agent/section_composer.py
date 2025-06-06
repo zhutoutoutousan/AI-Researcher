@@ -7,7 +7,8 @@ from abc import ABC, abstractmethod
 from typing import Dict, List, Optional
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.openai_utils import GPTClient
+from benchmark_collection.utils.openai_utils import GPTClient
+
 
 def setup_logging(research_field):
     os.makedirs(f"{research_field}/temp", exist_ok=True)
@@ -40,9 +41,12 @@ class SectionComposer(ABC):
             f"{self.research_field}/target_sections",
             f"{self.research_field}/{self.section_name}_checkpoints",
             f"{self.research_field}/writing_templates/{self.section_name}"
+            # f"{self.research_field}/target_sections/{self.section_name}"
         ]
         for directory in directories:
             os.makedirs(directory, exist_ok=True)
+            
+
 
     def write_temp_log(self, content: str, step: str):
         """Write intermediate results to temporary log file"""

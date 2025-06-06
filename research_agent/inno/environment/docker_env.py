@@ -17,7 +17,6 @@ class DockerConfig:
     container_name: str
     workplace_name: str 
     communication_port: int # 12345
-    conda_path: str # /root/miniconda3
     test_pull_name: str = field(default='main')
     task_name: Optional[str] = field(default=None)
     git_clone: bool = field(default=False)
@@ -38,16 +37,12 @@ class DockerEnv:
         self.git_clone = config.git_clone
         self.setup_package = config.setup_package
         self.communication_port = config.communication_port
-        self.conda_path = config.conda_path
         
     def init_container(self):
         container_check_command = ["docker", "ps", "-a", "--filter", f"name={self.container_name}", "--format", "{{.Names}}"]
         existing_container = subprocess.run(container_check_command, capture_output=True, text=True)
         os.makedirs(self.local_workplace, exist_ok=True)
         
-        if not osp.exists(osp.join(self.local_workplace, 'tcp_server.py')):
-            shutil.copy(osp.join(wd, 'tcp_server.py'), self.local_workplace)
-            assert osp.exists(osp.join(self.local_workplace, 'tcp_server.py')), "Failed to copy tcp_server.py to the local workplace"
         if self.setup_package is not None:
             unzip_command = ["tar", "-xzvf", f"packages/{self.setup_package}.tar.gz", "-C", self.local_workplace]
             subprocess.run(unzip_command)
@@ -91,11 +86,10 @@ class DockerEnv:
         
         # if the container does not exist, create and start a new container
         docker_command = [
-            "docker", "run", "-d", "--gpus", GPUS, "--name", self.container_name, "--user", "root",
-            "-v", f"{self.local_workplace}:{self.docker_workplace}",
-            "-w", f"{self.docker_workplace}", "-p", f"{self.communication_port}:{self.communication_port}", BASE_IMAGES,
-            "/bin/bash", "-c", 
-            f"python3 {self.docker_workplace}/tcp_server.py --workplace {self.workplace_name} --conda_path {self.conda_path} --port {self.communication_port}"
+            "docker", "run", "-d", "--platform", "linux/amd64", "--userns=host", "--gpus", GPUS, "--name", self.container_name, 
+            "--user", "root", "-v", f"{self.local_workplace}:{self.docker_workplace}",
+            "-w", f"{self.docker_workplace}", "-p", f"{self.communication_port}:8000", 
+            "--restart", "unless-stopped", BASE_IMAGES
         ]
         print(docker_command)
         # execute the docker command
@@ -114,6 +108,8 @@ class DockerEnv:
                 capture_output=True,
                 text=True
             )
+            print("result.returncode", result.returncode)
+            print("result.stdout", result.stdout)
             
             if result.returncode == 0 and "true" in result.stdout.lower():
                 # 额外检查 tcp_server 是否运行
@@ -123,10 +119,11 @@ class DockerEnv:
                     available_port = port_info[0]
                     self.communication_port = available_port
                     result = self.run_command('ps aux')
+                    print("result", result)
                     if "tcp_server.py" in result['result']:
                         return True
                 except Exception as e:
-                    pass
+                    print(f"Failed to check container ports: {e}")
                 
             time.sleep(1)
             

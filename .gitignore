@@ -28,3 +28,5 @@ research_agent/cache_*/*
 research_agent/.env
 
 research_agent/*_tmp/*
+
+.env

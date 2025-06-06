@@ -5,8 +5,8 @@ import logging
 from tqdm import tqdm
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.openai_utils import GPTClient
-from section_composer import SectionComposer, setup_logging
+from benchmark_collection.utils.openai_utils import GPTClient
+from paper_agent.section_composer import SectionComposer, setup_logging
 
 class ExperimentsComposer(SectionComposer):
     def __init__(self, research_field: str, structure_iterations: int = 3, gpt_model='gpt-4o-mini-2024-07-18'):
@@ -378,7 +378,8 @@ async def experiments_composing(research_field: str, instance_id: str):
     
     composer = ExperimentsComposer(research_field=research_field, structure_iterations=1)#, gpt_model='o1-mini-2024-09-12')
     
-    proj_dir = f'/data2/tjb_share/{research_field}/{instance_id}/'
+    # proj_dir = f'/data2/tjb_share/{research_field}/{instance_id}/'
+    proj_dir = f'./paper_agent/{research_field}/{instance_id}/'
     # target_paper = 'Heterogeneous Graph Contrastive Learning for Recommendation'
     cache_dirs = [d for d in os.listdir(proj_dir) if d.startswith('cache_')]
     if not cache_dirs:
@@ -386,7 +387,8 @@ async def experiments_composing(research_field: str, instance_id: str):
     agent_dir = os.path.join(proj_dir, cache_dirs[-1], 'agents')
     
     # model_dir = os.path.join(proj_dir, 'workplace/project/model/')
-    benchmark_path = f'/data2/tjb/Inno-agent/benchmark/final/{research_field}/{instance_id}.json'
+    # benchmark_path = f'/data2/tjb/Inno-agent/benchmark/final/{research_field}/{instance_id}.json'
+    benchmark_path = f'./benchmark/final/{research_field}/{instance_id}.json'
     
     try:
         experiments = await composer.compose_section(

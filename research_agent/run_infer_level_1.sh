@@ -5,8 +5,11 @@ export DOCKER_WORKPLACE_NAME=workplace_paper
 
 export BASE_IMAGES=tjbtech1/metachain:amd64_latest
 
-export COMPLETION_MODEL=claude-3-5-sonnet-20241022
-export CHEEP_MODEL=claude-3-5-haiku-20241022
+# export COMPLETION_MODEL=openai/claude-3-5-sonnet-20241022
+# export CHEEP_MODEL=openai/claude-3-5-haiku-20241022
+
+export COMPLETION_MODEL=anthropic/claude-3-5-sonnet-20241022
+export CHEEP_MODEL=anthropic/claude-3-5-haiku-20241022
 
 category=vq
 instance_id=one_layer_vq

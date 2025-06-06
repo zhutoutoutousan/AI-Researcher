@@ -1,4 +1,3 @@
-
 import os
 import socket
 import json
@@ -115,7 +114,10 @@ def process_terminal_response(func):
             try:
                 res_output = result['result']
                 if res_output == "": res_output = " "
+                tmp_dir = os.path.join(os.getcwd(), "terminal_tmp")
+                os.makedirs(tmp_dir, exist_ok=True)
                 tmp_file = os.path.join(os.getcwd(), "terminal_tmp", "terminal_output_{}___{}.txt".format(datetime.now().strftime("%Y%m%d_%H%M%S"), func.__name__))
+                
                 with open(tmp_file, "w") as f:
                     f.write(res_output)
                 return open_local_terminal_output(tmp_file)
@@ -354,18 +356,99 @@ def run_python(
 if __name__ == "__main__":
     env_config = DockerConfig(
         container_name = "paper_eval_dit", 
-    workplace_name = "workplace", 
-    communication_port = 12347, 
-    conda_path = "/home/user/micromamba", 
-    local_root = "/home/tjb/llm/agent/Inno-agent/workplace_paper/task_dit/workplace"
+        workplace_name = "workplace", 
+        communication_port = 7040, 
+        local_root = "/root/tjb/AI-Researcher/research_agent/workplace_test"
     )
     env = DockerEnv(env_config)
+    env.init_container()
+
+    print("=" * 60)
+    print("开始测试 Terminal Tools")
+    print("=" * 60)
     
-    print(read_file("/workplace/lucidrains_denoising_diffusion/denoising_diffusion_pytorch/denoising_diffusion_pytorch.py", env))
-    print(terminal_page_to(3))
-    # print(terminal_page_down())
-    # print(terminal_page_down())
-    # print(terminal_page_down())
-    # print(terminal_page_down())
-    # print(execute_command("cp project/configs.py ./", env))
+    # 1. 测试创建目录
+    print("\n1. 测试 create_directory:")
+    result = create_directory("/workplace/test_dir", env)
+    print(result)
+    
+    # 2. 测试创建文件
+    print("\n2. 测试 create_file:")
+    test_content = """# 测试文件
+print("Hello from test file!")
+import os
+print(f"当前工作目录: {os.getcwd()}")
+for i in range(5):
+    print(f"循环 {i}")
+"""
+    result = create_file("/workplace/test_dir/test_script.py", test_content, env)
+    print(result)
+    
+    # 3. 测试写入文件
+    print("\n3. 测试 write_file:")
+    result = write_file("/workplace/test_dir/config.txt", "配置文件内容\nkey=value\ndebug=true", env)
+    print(result)
+    
+    # 4. 测试读取文件
+    print("\n4. 测试 read_file:")
+    result = read_file("/workplace/test_dir/config.txt", env)
+    print("读取文件结果:")
+    print(result)
+    
+    # 5. 测试列出文件
+    print("\n5. 测试 list_files:")
+    result = list_files("/workplace/test_dir", env)
+    print("列出文件结果:")
+    print(result)
+    
+    # 6. 测试执行命令
+    print("\n6. 测试 execute_command:")
+    result = execute_command("cd /workplace/test_dir && ls -la ./", env)
+    print("执行命令结果:")
+    print(result)
+    
+    # 7. 测试生成代码树结构
+    print("\n7. 测试 gen_code_tree_structure:")
+    result = gen_code_tree_structure("/workplace/test_dir", env)
+    print("代码树结构:")
+    print(result)
+    
+    # 8. 测试运行Python脚本
+    print("\n8. 测试 run_python:")
+    result = run_python(env, "/workplace/test_dir/test_script.py")
+    print("运行Python脚本结果:")
+    print(result)
+    
+    # 9. 测试带环境变量的Python脚本
+    print("\n9. 测试带环境变量的 run_python:")
+    env_vars = {"TEST_VAR": "hello_world", "DEBUG": "1"}
+    result = run_python(env, "/workplace/test_dir/test_script.py", env_vars=env_vars)
+    print("带环境变量运行结果:")
+    print(result)
+    
+    # 10. 测试terminal分页功能
+    print("\n10. 测试 terminal 分页功能:")
+    # 创建一个长输出的命令
+    long_command = "for i in {1..50}; do echo \"Line $i: This is a long output for testing pagination\"; done"
+    result = execute_command(long_command, env)
+    print("长输出命令执行完成，测试分页:")
+    
+    # 测试向上翻页
+    print("\n测试 terminal_page_up:")
+    result = terminal_page_up()
+    print(result[:200] + "..." if len(result) > 200 else result)
+    
+    # 测试向下翻页
+    print("\n测试 terminal_page_down:")
+    result = terminal_page_down()
+    print(result[:200] + "..." if len(result) > 200 else result)
+    
+    # 测试跳转到指定页
+    print("\n测试 terminal_page_to(1):")
+    result = terminal_page_to(1)
+    print(result[:200] + "..." if len(result) > 200 else result)
+    
+    print("\n" + "=" * 60)
+    print("所有 Terminal Tools 测试完成!")
+    print("=" * 60)
     

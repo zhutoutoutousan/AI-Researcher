@@ -111,7 +111,7 @@ class InnoFlow(FlowModule):
         # self.survey_agent = AgentModule(get_survey_agent(model=CHEEP_MODEL, file_env=file_env, code_env=code_env), self.client, cache_path)
         self.code_survey_agent = AgentModule(get_code_survey_agent(model=CHEEP_MODEL, file_env=file_env, code_env=code_env), self.client, cache_path)
         self.exp_analyser = AgentModule(get_exp_analyser_agent(model=CHEEP_MODEL, file_env=file_env, code_env=code_env), self.client, cache_path)
-    async def forward(self, instance_path: str, task_level: str, local_root: str, workplace_name: str, max_iter_times: int, category: str, *args, **kwargs):
+    async def forward(self, instance_path: str, task_level: str, local_root: str, workplace_name: str, max_iter_times: int, category: str, references: str, *args, **kwargs):
         metadata = self.load_ins({"instance_path": instance_path, "task_level": task_level})
         context_variables = {
             "working_dir": workplace_name, # TODO: change to the codebase path
@@ -140,7 +140,7 @@ And the evaluation metrics are:
         query = f"""\
 You are given a list of papers, searching results of the papers on GitHub. 
 List of papers:
-{warp_source_papers(metadata["source_papers"])}
+{references}
 
 Searching results of the papers on GitHub:
 {github_result}
@@ -159,7 +159,7 @@ Your task is to choose at least 5 repositories as the reference codebases. Note 
 I have a task related to machine learning:
 {data_module.TASK}
 And a list of papers for your reference:
-{warp_source_papers(metadata["source_papers"])}
+{references}
 
 I have carefully gone through these papers' github repositories and found download some of them in my local machine, with the following information:
 {prepare_res}
@@ -216,7 +216,7 @@ Note that the code implementation should be as complete as possible.
 I have an innovative ideas related to machine learning:
 {survey_res}
 And a list of papers for your reference:
-{warp_source_papers(metadata["source_papers"])}
+{references}
 
 I have carefully gone through these papers' github repositories and found download some of them in my local machine, with the following information:
 {prepare_res}
@@ -506,7 +506,7 @@ Note that you should fully utilize the existing code in the directory `/{workpla
 
         print(refine_res)
         
-def main(args):
+def main(args, references):
     """
     MAX_ATTEMPTS
 
@@ -541,7 +541,6 @@ def main(args):
     env_config = DockerConfig(container_name = container_name, 
                               workplace_name = args.workplace_name, 
                               communication_port = args.port, 
-                              conda_path = "/home/user/micromamba", 
                               local_root = local_root,
                               )
     
@@ -552,7 +551,7 @@ def main(args):
     file_env = RequestsMarkdownBrowser(viewport_size=1024 * 4, local_root=env_config.local_root, workplace_name=env_config.workplace_name, downloads_folder=os.path.join(env_config.local_root, env_config.workplace_name, "downloads"))
     flow = InnoFlow(cache_path="cache_" + instance_id + "_" + COMPLETION_MODEL.replace("/", "__"), log_path="log_" + instance_id, code_env=code_env, web_env=web_env, file_env=file_env, model=args.model)
     # ml_result = await flow(instance_path=instance_path)
-    asyncio.run(flow(instance_path=args.instance_path, task_level=args.task_level, local_root=local_root, workplace_name=args.workplace_name, max_iter_times=args.max_iter_times, category=args.category))
+    asyncio.run(flow(instance_path=args.instance_path, task_level=args.task_level, local_root=local_root, workplace_name=args.workplace_name, max_iter_times=args.max_iter_times, category=args.category, references = references))
     # print(judge_result)
 
 
