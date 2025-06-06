@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="./assets/ai-researcher.png" alt="Logo" width="400">
-  <h1 align="center">AI-Researcher: Autonomous Scientific Innovation </h1>
+  <h1 align="center">AI-Researcher: Fully-Automated Scientific Discovery with LLM Agents </h1>
 </div>
 
 
@@ -12,7 +12,7 @@
   <a href="https://discord.gg/ghSnKGkq"><img src="https://img.shields.io/badge/Discord-Join%20Us-purple?logo=discord&logoColor=white&style=for-the-badge" alt="Join our Discord community"></a>
   <br/>
   <a href="https://auto-researcher.github.io/docs"><img src="https://img.shields.io/badge/Documentation-000?logo=googledocs&logoColor=FFE165&style=for-the-badge" alt="Check out the documentation"></a>
-  <a href="https://arxiv.org/abs/2505.18705"><img src="https://img.shields.io/badge/Paper%20on%20Arxiv-000?logoColor=FFE165&logo=arxiv&style=for-the-badge" alt="Paper"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Paper%20on%20Arxiv-000?logoColor=FFE165&logo=arxiv&style=for-the-badge" alt="Paper"></a>
   <a href="#"><img src="https://img.shields.io/badge/DATASETS-000?logoColor=FFE165&logo=huggingface&style=for-the-badge" alt="Datasets"></a>
   <hr>
 </div>
@@ -63,8 +63,7 @@ Welcome to **AI-Researcher**🤗 AI-Researcher introduces a revolutionary breakt
 
 <div class="scrollable">
     <ul>
-      <li><strong>[2025, May 27]</strong>: &nbsp;🎉🎉The technical report by AI-Researcher is now available on arXiv. Please check it out🚀</li>
-      <li><strong>[2025, Mar 12]</strong>: &nbsp;🎉🎉We've launched <b>AI-Researcher!</b> The release includes the complete framework, datasets, benchmark construction pipeline, and much more. Stay tuned--there's plenty more to come! 🚀</li>
+      <li><strong>[2025, Mar 04]</strong>: &nbsp;🎉🎉We've launched <b>AI-Researcher!</b>, The release includes the complete framework, datasets, benchmark construction pipeline, and much more. Stay tuned—there’s plenty more to come! 🚀</li>
     </ul>
 </div>
 
@@ -96,35 +95,120 @@ Welcome to **AI-Researcher**🤗 AI-Researcher introduces a revolutionary breakt
 
 #### AI Installation
 
+1. Using [uv](https://docs.astral.sh/uv/)
+
+> We recommend to use [uv](https://docs.astral.sh/uv/) to manage packages in our project (Much more faster than conda)
+
 ```bash
+# install uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+source ~/.bashrc
+
+# clone the project
 git clone https://github.com/HKUDS/AI-Researcher.git
 cd AI-Researcher
-pip install -e .
+
+# install and activate enviroment
+uv venv --python 3.11
+source ./.venv/bin/activate
+uv pip install -e .
+playwright install
 ```
 
 #### Docker Installation
 
-To set up the agent-interactive environment, we use Docker for containerization. Please ensure you have [Docker](https://www.docker.com/) installed on your system before proceeding. For running the research agent, we utilize the Docker image 'tjbtech1/paperagent:latest'. You can pull this image by executing the following command:
+To set up the agent-interactive environment, we use Docker for containerization. Please ensure you have [Docker](https://www.docker.com/) installed on your system before proceeding. For running the research agent, we utilize the Docker image 'tjbtech1/airesearcher:v1t'. You can pull this image by executing the following command:
 
 ```bash
-docker pull tjbtech1/paperagent:latest
+docker pull tjbtech1/airesearcher:v1
+```
+
+or you can build the docker image from our provided [Dockerfile](./docker/Dockerfile). 
+
+```bash
+cd ./docker && docker build -t tjbtech1/airesearcher:v1 .
 ```
 
 <span id='api-keys-setup'/>
 
 ### API Keys Setup
 
-Create an environment variable file based on the provided '.env.template' file. In this file, set the API keys for the LLMs you intend to use. Note that not all LLM API keys are mandatory—simply include the ones relevant to your needs.
+Create an environment variable file based on the provided '.env.template' file. In this file, you should set the configuration including api key, instance id of the test case. 
 
 ```bash
-OPENAI_API_KEY=
-DEEPSEEK_API_KEY=
-ANTHROPIC_API_KEY=
-GEMINI_API_KEY=
-HUGGINGFACE_API_KEY=
-GROQ_API_KEY=
-XAI_API_KEY=
+
+# ================ container configuration ================
+# workplace of the research agent
+DOCKER_WORKPLACE_NAME=workplace_paper
+# base image of the research agent
+BASE_IMAGES=tjbtech1/airesearcher:v1
+# completion model name, configuration details see: https://docs.litellm.ai/docs/
+COMPLETION_MODEL=openrouter/google/gemini-2.5-pro-preview-05-20
+# cheep model name, configuration details see: https://docs.litellm.ai/docs/
+CHEEP_MODEL=openrouter/google/gemini-2.5-pro-preview-05-20
+# specific gpu of the research agent, can be: 
+# '"device=0"' using the first gpu
+# '"device=0,1"' using the first and second gpu
+# '"all"' using all gpus
+# None for no gpu
+GPUS='"device=0"'
+# name of the container
+CONTAINER_NAME=paper_eval
+# name of the workplace
+WORKPLACE_NAME=workplace
+# path of the cache
+CACHE_PATH=cache
+# port of the research agent
+PORT=7020
+# platform of the research agent
+PLATFORM=linux/amd64
+
+# ================ llm configuration ================
+# github ai token of the research agent
+GITHUB_AI_TOKEN=your_github_ai_token
+# openrouter api key of the research agent
+OPENROUTER_API_KEY=your_openrouter_api_key
+# openrouter api base url of the research agent
+OPENROUTER_API_BASE=https://openrouter.ai/api/v1
+
+# ================ task configuration ================
+# category of the research agent, based on: ./benchmark/final. Can be: 
+# diffu_flow
+# gnn
+# reasoning
+# recommendation
+# vq
+# example: ./benchmark/final/vq
+CATEGORY=vq
+# instance id of the research agent, example: ./benchmark/final/vq/one_layer_vq.json
+INSTANCE_ID=one_layer_vq
+# task level of the research agent, can be: 
+# task1
+# task2
+TASK_LEVEL=task1
+# maximum iteration times of the research agent
+MAX_ITER_TIMES=0
 ```
+
+### 🔥 Web GUI
+
+We add a webgui based on gradio. Just run the following command: 
+
+```bash
+python web_ai_researcher.py
+```
+
+![image-20250606135137558](/Users/tangjiabin/Documents/airesearcher/image-20250606135137558.png)
+
+You can configure the environment variables in the following tab: 
+
+![image-20250606135325373](/Users/tangjiabin/Documents/airesearcher/image-20250606135325373.png)
+
+Select the following example to run our AI-Researcher: 
+
+<img src="/Users/tangjiabin/Documents/airesearcher/image-20250606135507970.png" alt="image-20250606135507970" style="zoom:67%;" />
+
+
 
 <span id='examples'/>
 
@@ -925,7 +1009,7 @@ python run_infer_idea.py --instance_path ../benchmark/final/${category}/${instan
 
 ### 2. Paper Writing Agent
 
-If you want to generate the paper after the research agent has conducted the research, you can use the following command in the [`paper_agent/run_paper.sh`](./paper_agent/run_paper.sh):
+If you want to generate the paper after the research agent has conducted the research, you can use the following command in the [`paper_agent/run_infer.sh`](./paper_agent/run_paper.sh):
 
 ```bash
 #!/bin/bash
@@ -985,5 +1069,13 @@ We aim to build a vibrant community around AI-Researcher and warmly invite every
 A more detailed technical report will be released soon. 🚀:
 
 ```tex
-
+@misc{airesearcher,
+      title={{AI-Researcher: Autonomous Scientific Innovation}},
+      author={Jiabin Tang, Lianghao Xia, Zhonghang Li, Chao Huang},
+      year={2025},
+      eprint={2505.18705},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2505.18705},
+}
 ```
