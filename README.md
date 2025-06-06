@@ -198,15 +198,15 @@ We add a webgui based on gradio. Just run the following command:
 python web_ai_researcher.py
 ```
 
-![image-20250606135137558](/Users/tangjiabin/Documents/airesearcher/image-20250606135137558.png)
+![image-20250606135137558](./assets/webgui/image-20250606135137558.png)
 
 You can configure the environment variables in the following tab: 
 
-![image-20250606135325373](/Users/tangjiabin/Documents/airesearcher/image-20250606135325373.png)
+![image-20250606135325373](./assets/webgui/image-20250606135325373.png)
 
 Select the following example to run our AI-Researcher: 
 
-<img src="/Users/tangjiabin/Documents/airesearcher/image-20250606135507970.png" alt="image-20250606135507970" style="zoom:67%;" />
+<img src="./assets/webgui/image-20250606135507970.png" alt="image-20250606135507970" style="zoom:67%;" />
 
 
 
