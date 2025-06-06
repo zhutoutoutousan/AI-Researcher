@@ -510,7 +510,6 @@ def main(args, ideas, references):
     env_config = DockerConfig(container_name = container_name, 
                               workplace_name = args.workplace_name, 
                               communication_port = args.port, 
-                              conda_path = "/home/user/micromamba", 
                               local_root = local_root,
                               )
     

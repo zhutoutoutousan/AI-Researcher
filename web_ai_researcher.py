@@ -1,5 +1,3 @@
-
-
 from main_ai_researcher import main_ai_researcher
 import os
 import gradio as gr
@@ -18,8 +16,11 @@ import global_state
 import base64
 
 os.environ["PYTHONIOENCODING"] = "utf-8"
-# os.environ['https_proxy'] = 'http://127.0.0.1:7890'
-# os.environ['http_proxy'] = 'http://127.0.0.1:7890'
+
+# If you want to use proxy, please uncomment the following lines
+# os.environ['https_proxy'] = 'http://100.68.161.73:3128'
+# os.environ['http_proxy'] = 'http://100.68.161.73:3128'
+# os.environ['no_proxy'] = 'localhost,127.0.0.1,0.0.0.0'
 
 def setup_path():
     # logs_dir = os.path.join("casestudy_results", f'agent_{container_name}', 'logs')
@@ -201,6 +202,41 @@ def parse_logs_incrementally(logs, state_list, last_index):
     new_logs = logs[last_index:]  # 只处理新日志
     new_last_index = last_index + len(new_logs)  # 更新后的索引
 
+    # 定义需要显示的工具列表
+    allowed_tools = {
+        "execute_command", "run_python", "create_file", 
+        "write_file", "list_files", "gen_code_tree_structure"
+    }
+
+    def adjust_markdown_headers(content):
+        """调整markdown标题级别，确保不与主标题冲突"""
+        lines = content.split('\n')
+        adjusted_lines = []
+        
+        for line in lines:
+            # 检查是否是markdown标题
+            if line.strip().startswith('#'):
+                # 计算当前标题级别
+                header_level = 0
+                for char in line:
+                    if char == '#':
+                        header_level += 1
+                    else:
+                        break
+                
+                # 如果是1-3级标题，调整为4-6级
+                if header_level <= 3:
+                    # 添加额外的#使其成为更低级别的标题
+                    adjusted_line = '#' * (header_level + 3) + line[header_level:]
+                    adjusted_lines.append(adjusted_line)
+                else:
+                    # 保持原样（4级及以上标题不变）
+                    adjusted_lines.append(line)
+            else:
+                adjusted_lines.append(line)
+        
+        return '\n'.join(adjusted_lines)
+
     for line in new_logs:
         line = line.strip()
 
@@ -216,7 +252,8 @@ def parse_logs_incrementally(logs, state_list, last_index):
                 "tool_calls_time": None,
                 "tool_calls_content": "",
                 "tool_execution_time": None,
-                "tool_execution_content": ""
+                "tool_execution_content": "",
+                "current_tool_name": None  # 添加当前工具名称跟踪
             }
             if "Receive Task" in line:
                 state = "await_user_time"
@@ -276,6 +313,10 @@ def parse_logs_incrementally(logs, state_list, last_index):
                     state = "idle"
                 else:
                     current_convo["tool_calls_content"] += line + "\n"
+                    # 提取工具名称
+                    if "tool execution:" in line.lower():
+                        tool_name = line.split(":")[-1].strip()
+                        current_convo["current_tool_name"] = tool_name
 
             elif state == "await_tool_execution_time" and line.startswith("["):
                 current_convo["tool_execution_time"] = line.strip("[]")
@@ -299,7 +340,7 @@ def parse_logs_incrementally(logs, state_list, last_index):
 
         # ✅ 每轮独立处理 user_content
         if convo["user_content"].strip():
-            section_input = f"### 🙋 User ({convo['user_time']})\n\n{convo['user_content'].strip()}"
+            section_input = f"### 🙋 User ({convo['user_time']})\n```markdown\n{convo['user_content'].strip()}\n```"
         else:
             section_input = ""
 
@@ -313,17 +354,38 @@ def parse_logs_incrementally(logs, state_list, last_index):
         output_parts = []
 
         if convo["assistant_content"].strip():
+            # 检查Assistant内容是否为"None"，如果是则设置为空字符串
+            assistant_content = convo["assistant_content"].strip()
+            if assistant_content.lower() == "none":
+                assistant_content = ""
+            
+            # 始终显示Assistant块，即使内容为空
             output_parts.append(
-                f"### 🤖 {convo['assistant_role']} ({convo['assistant_time']})\n\n{convo['assistant_content'].strip()}"
+                f"### 🤖 {convo['assistant_role']} ({convo['assistant_time']})\n{adjust_markdown_headers(assistant_content)}"
             )
         if convo["tool_calls_content"].strip():
             output_parts.append(
-                f"### 🛠️ Tool Calls ({convo['tool_calls_time']})\n\n{convo['tool_calls_content'].strip()}"
+                f"### 🛠️ Tool Calls\n```python\n{convo['tool_calls_content'].strip()}\n```"
             )
+        
+        # 处理 Tool Execution 内容（只显示允许的工具，并放在markdown代码块中）
         if convo["tool_execution_content"].strip():
-            output_parts.append(
-                f"### ⚙️ Tool Execution ({convo['tool_execution_time']})\n\n{convo['tool_execution_content'].strip()}"
-            )
+            # 检查是否是允许显示的工具
+            tool_name = convo.get("current_tool_name", "")
+            
+            # 如果没有从tool_calls_content中提取到工具名，尝试从tool_execution_content中提取
+            if not tool_name:
+                for line in convo["tool_execution_content"].split('\n'):
+                    if "tool execution:" in line.lower():
+                        tool_name = line.split(":")[-1].strip()
+                        break
+            
+            # 只显示允许的工具执行结果
+            if tool_name in allowed_tools:
+                tool_execution_content = convo["tool_execution_content"].strip()
+                output_parts.append(
+                    f"### ⚙️ Tool Execution\n```markdown\n{tool_execution_content}\n```"
+                )
 
         if output_parts:
             section_output = "\n\n".join(output_parts)
@@ -894,6 +956,26 @@ def create_ui():
                     (f"Error occurred: {str(e)}", "0", f"❌ Error: {str(e)}")
                 )
 
+        # 过滤空内容的对话记录
+        def filter_empty_conversations(conversations):
+            """过滤掉完全空的对话记录，并处理部分空内容"""
+            filtered = []
+            for user_msg, bot_msg in conversations:
+                # 检查是否两者都为空
+                user_empty = not user_msg.strip()
+                bot_empty = not bot_msg.strip()
+                
+                # 如果两者都为空，则跳过这个对话记录
+                if user_empty and bot_empty:
+                    continue
+                
+                # 如果只有一个为空，保留非空的那个，空的用None替代
+                processed_user = user_msg if not user_empty else None
+                processed_bot = bot_msg if not bot_empty else None
+                
+                filtered.append((processed_user, processed_bot))
+            return filtered
+
         # 启动后台处理线程
         bg_thread = threading.Thread(target=process_in_background)
         CURRENT_PROCESS = bg_thread  # 记录当前进程
@@ -909,12 +991,14 @@ def create_ui():
         while bg_thread.is_alive():
             # 更新对话记录显示
             logs2, updated_index = get_latest_logs(500, state, LOG_QUEUE, last_index)
+            # 过滤空内容的对话记录
+            filtered_logs = filter_empty_conversations(logs2)
             # scroll_script = "<script>scrollToBottom();</script>"
             # 始终更新状态
             yield (
                 state,
                 "<span class='status-indicator status-running'></span> Processing...",
-                logs2,
+                filtered_logs,
                 scroll_script, 
                 updated_index
             )
@@ -928,6 +1012,8 @@ def create_ui():
 
             # 最后一次更新对话记录
             logs2, updated_index = get_latest_logs(500, state, LOG_QUEUE, last_index)
+            # 过滤空内容的对话记录
+            filtered_logs = filter_empty_conversations(logs2)
 
             # 根据状态设置不同的指示器
             if "错误" in status:
@@ -939,14 +1025,16 @@ def create_ui():
                     f"<span class='status-indicator status-success'></span> {status}"
                 )
 
-            yield token_count, status_with_indicator, logs2, scroll_script, updated_index
+            yield token_count, status_with_indicator, filtered_logs, scroll_script, updated_index
             # yield token_count, status_with_indicator, logs2
         else:
             logs2, updated_index = get_latest_logs(500, state, LOG_QUEUE, last_index)
+            # 过滤空内容的对话记录
+            filtered_logs = filter_empty_conversations(logs2)
             yield (
                 state,
                 "<span class='status-indicator status-error'></span> Terminated",
-                logs2,
+                filtered_logs,
                 None, 
                 updated_index
             )
@@ -964,14 +1052,14 @@ def create_ui():
     #             """)
 
 
-        image_base64 = get_base64_image("assets/ai-researcher.png")
+        image_base64 = get_base64_image("assets/logo.png")
 
         gr.HTML(
             f"""
             <div style="display: flex; align-items: center; gap: 16px;">
                 <img src="{image_base64}" alt="模型图片" style="width: 100px; height: auto;">
                 <div style="display: flex; flex-direction: column;">
-                    <h2 style="margin: 0;">AI-Researcher: Fully-Automated Scientific Discovery with LLM Agents</h2>
+                    <h2 style="margin: 0;">AI-Researcher: Autonomous Scientific Innovation</h2>
                     <br>
                     <p style="margin: 0;">Welcome to AI-Researcher🤗 AI-Researcher introduces a revolutionary breakthrough in Automated</p>
                     <p style="margin: 0;">Scientific Discovery🔬, presenting a new system that fundamentally Reshapes the Traditional Research Paradigm.</p>
@@ -998,6 +1086,96 @@ def create_ui():
                 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             }
 
+            /* 减少聊天消息间距 */
+            .chatbot .message {
+                margin-bottom: 8px !important;
+                padding: 8px 12px !important;
+            }
+
+            .chatbot .message-row {
+                margin-bottom: 8px !important;
+                gap: 8px !important;
+            }
+
+            .chatbot .message-bubble-border {
+                margin-bottom: 6px !important;
+            }
+
+            .chatbot .message-bubble {
+                margin-bottom: 6px !important;
+                padding: 10px 14px !important;
+            }
+
+            /* 减少markdown标题间距 */
+            .chatbot h3 {
+                margin-top: 8px !important;
+                margin-bottom: 6px !important;
+                line-height: 1.3 !important;
+            }
+
+            .chatbot h4, .chatbot h5, .chatbot h6 {
+                margin-top: 6px !important;
+                margin-bottom: 4px !important;
+                line-height: 1.2 !important;
+            }
+
+            /* 减少段落间距 */
+            .chatbot p {
+                margin-bottom: 8px !important;
+                line-height: 1.4 !important;
+            }
+
+            /* 为用户内容代码块添加特殊样式 */
+            .chatbot .message-bubble:has(h3:contains("🙋 User")) pre {
+                max-height: 200px !important;
+                overflow-y: auto !important;
+                border: 1px solid #e0e0e0 !important;
+                border-radius: 6px !important;
+                padding: 12px !important;
+                background-color: #f8f9fa !important;
+            }
+
+            /* 通用代码块样式 - 限制高度并支持滚动 */
+            .chatbot pre {
+                max-height: 250px !important;
+                overflow-y: auto !important;
+                border: 1px solid #e0e0e0 !important;
+                border-radius: 6px !important;
+                padding: 12px !important;
+                background-color: #f8f9fa !important;
+                font-family: 'Courier New', Consolas, monospace !important;
+                font-size: 0.9em !important;
+                line-height: 1.4 !important;
+            }
+
+            /* 为markdown代码块添加滚动条样式 */
+            .chatbot pre::-webkit-scrollbar {
+                width: 8px !important;
+            }
+
+            .chatbot pre::-webkit-scrollbar-track {
+                background: #f1f1f1 !important;
+                border-radius: 4px !important;
+            }
+
+            .chatbot pre::-webkit-scrollbar-thumb {
+                background: #c1c1c1 !important;
+                border-radius: 4px !important;
+            }
+
+            .chatbot pre::-webkit-scrollbar-thumb:hover {
+                background: #a8a8a8 !important;
+            }
+
+            /* 减少列表间距 */
+            .chatbot ul, .chatbot ol {
+                margin-bottom: 8px !important;
+                padding-left: 20px !important;
+            }
+
+            .chatbot li {
+                margin-bottom: 2px !important;
+            }
 
             /* 改进标签页样式 */
             .tabs .tab-nav {
@@ -1293,12 +1471,6 @@ def create_ui():
                     ],
 
                     [
-                        "The core methodology of the presented research paper focuses on enhancing recommendation systems through a self-supervised learning approach that utilizes knowledge graphs. The proposed model is designed to identify and leverage informative relationships between users, items, and their associated knowledge triplets.\n\n1. **Task**: The proposed model addresses the task of knowledge-aware recommendation systems, aiming to improve the accuracy and interpretability of recommendations based on user-item interactions and knowledge graph information.\n\n2. **Core Techniques**: \n   - **Rationale Weighting Function**: This learns the importance of knowledge triplets using a graph attention mechanism.\n   - **Knowledge Aggregation Layer**: This aggregates information from the knowledge graph while considering the importance of triplets based on rational scores.\n   - **Masked Autoencoder**: Implements a masking and reconstruction strategy to distill essential knowledge from the graph.\n   - **Contrastive Learning**: Aligns representations from the knowledge graph and user-item interactions to enhance learning.\n\n3. **Purpose of Components**:\n   - **Rationale Weighting Function**: Produces rational scores indicating the significance of each knowledge triplet for user preferences.\n   - **Knowledge Aggregation Layer**: Combines knowledge from relevant triplets to generate user and item embeddings.\n   - **Masked Autoencoder**: Focuses on reconstructing important triplets while ignoring noisy or irrelevant information.\n   - **Contrastive Learning**: Facilitates the alignment of different views (knowledge graph vs. user-item interactions) to improve representation learning.\n\n4. **Implementation Details**:\n   - **Rationale Weighting Function**: Key parameters include trainable weights for attention (dimensions R_d \u00d7 d, where d is hidden dimensionality). Input consists of embeddings for head, relation, and tail entities; output is a rationale score for each triplet.\n   - **Knowledge Aggregation Layer**: Input is the knowledge graph and the output is the aggregated embeddings for users/items. Use normalized rationale scores for weighting neighbors.\n   - **Masked Autoencoder**: The masking mechanism randomly selects important triplets based on calculated rationale scores to create a masked graph. It requires the number of masked triplets to be defined (e.g., top k scores). The output is reconstructed embeddings for the masked connections.\n   - **Contrastive Learning**: Involves creating augmented graphs by removing low-scored connections. The inputs are the augmented user-item and knowledge graphs, producing aligned representations.\n\n5. **Step-by-Step Interaction**:\n   - Begin with user-item interaction and knowledge graphs. \n   - Apply the rationale weighting function to generate scores for each knowledge triplet.\n   - Use these scores to inform the knowledge aggregation layer, producing user and item embeddings reflective of important knowledge.\n   - Implement the masked autoencoder to train on the knowledge graph, masking triplets based on scores and reconstructing them to emphasize relevant information.\n   - Finally, apply contrastive learning between the user-item view and the knowledge graph view, aligning their representations to improve overall recommendation performance.\n\n6. **Critical Implementation Details**:\n   - The selection of the masking size during training is crucial; it should be tuned based on the dataset characteristics. \n   - The temperature used in the contrastive loss affects the proposed model's sensitivity to negative samples \u2014 it should be optimized for best performance.\n   - Ensure that the knowledge graph is clean of noise by filtering out low-scored triplets before training to facilitate better representation learning.\n   - Adequate configurations for the learning rates and the weight of different loss components in the joint loss function can significantly impact the convergence and performance of the proposed approach.",
-
-                        "Title: Masked Autoencoders As Spatiotemporal Learners; You can use this paper in the following way: The proposed model adapted the masked autoencoder framework to integrate rationale-aware knowledge masking.\nTitle: Noise-contrastive estimation: A new estimation principle for unnormalized statistical models; You can use this paper in the following way: The proposed model utilized noise-resistant contrasting principles to mask potential noisy edges in the knowledge graphs.\nTitle: Learning entity and relation embeddings for knowledge graph completion; You can use this paper in the following way: The proposed model applied contrastive learning in the context of knowledge-aware recommendation to improve model performance.\nTitle: Kgat: Knowledge graph attention network for recommendation; You can use this paper in the following way: The proposed model extended the collaborative KG concept to include rationale-aware mechanisms and cross-view contrastive learning.\nTitle: Unifying knowledge graph learning and recommendation: Towards a better understanding of user preferences; You can use this paper in the following way: The proposed model enhanced the integration of knowledge graphs with a rationale-based approach for user preference learning.\nTitle: Graph convolutional matrix completion; You can use this paper in the following way: The proposed model refined collaborative filtering paradigms to emphasize user-item interactions enhanced by knowledge graphs."
-                    ],
-
-                    [
                         "gnn",
 
                         "Title: Graph Neural Networks: A Review of Methods and Applications; You can use this paper in the following way: Core methodologies of GNNs were integrated into the proposed model framework to enhance understanding of graph data.\nTitle: Deep Graph Infomax; You can use this paper in the following way: The DGI approach was used to enhance self-supervision in the instruction tuning of the proposed model.\nTitle: Semi-Supervised Classification with Graph Convolutional Networks; You can use this paper in the following way: The concepts from GCNs were adapted for improving generalization in zero-shot learning scenarios.\nTitle: Attention is All You Need; You can use this paper in the following way: Self-attention principles were utilized in the proposed model to effectively manage graph structural information.\nTitle: Graph Attention Networks; You can use this paper in the following way: Attention mechanisms from GATs were integrated to enhance the proposed model's performance on graph tasks.\nTitle: BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding; You can use this paper in the following way: BERT's architecture was adapted for encoding text in relation to graph data.\nTitle: Learning Transferable Visual Models From Natural Language Supervision; You can use this paper in the following way: The design of self-supervised instruction tuning in the proposed model was influenced by the methodologies proposed in this paper.\nTitle: Gpt-gnn: Generative pre-training of graph neural networks; You can use this paper in the following way: The generative pre-training concepts informed the development of the proposed model's learning strategies."
@@ -1325,7 +1497,7 @@ def create_ui():
 
                 gr.HTML("""
                         <div class="footer" id="about">
-                            <h3>AI-Researcher: Fully-Automated Scientific Discovery with LLM Agents</h3>
+                            <h3>AI-Researcher: Autonomous Scientific Innovation</h3>
                             <p>© 2025 HKUDS. MIT license <a href="https://github.com/HKUDS/AI-Researcher" target="_blank">GitHub</a></p>
                         </div>
                     """)
@@ -1482,7 +1654,15 @@ def main():
 
         app.queue()
         allowed_paths = [os.path.dirname(LOG_FILE)]
-        app.launch(share=False, server_port=7861,allowed_paths=allowed_paths)
+        app.launch(
+            share=False, 
+            server_port=7039,
+            server_name="127.0.0.1",
+            allowed_paths=allowed_paths,
+            show_error=True,
+            quiet=False,
+            favicon_path="assets/logo.png"
+        )
 
     except Exception as e:
         logging.error(f"Error occurred while starting the application: {str(e)}")

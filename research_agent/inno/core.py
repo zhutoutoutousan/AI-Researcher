@@ -27,17 +27,34 @@ from tenacity import (
     retry,
     stop_after_attempt,
     wait_exponential,
-    retry_if_exception_type
+    retry_if_exception_type, 
+    RetryCallState
 )
 from openai import AsyncOpenAI
 from research_agent.constant import  FN_CALL, API_BASE_URL, NOT_SUPPORT_SENDER, ADD_USER, NON_FN_CALL, MUST_ADD_USER, NOT_SUPPORT_FN_CALL, NOT_USE_FN_CALL
 from research_agent.inno.fn_call_converter import convert_tools_to_description, convert_non_fncall_messages_to_fncall_messages, SYSTEM_PROMPT_SUFFIX_TEMPLATE, convert_fn_messages_to_non_fn_messages, interleave_user_into_messages
 from research_agent.inno.memory.utils import encode_string_by_tiktoken, decode_tokens_by_tiktoken
 import re
+
 # litellm.set_verbose=True
 # litellm.num_retries = 3
 
-def should_retry_error(exception):
+def should_retry_error(retry_state: RetryCallState):
+    """检查是否应该重试错误
+    
+    Args:
+        retry_state: RetryCallState对象，包含重试状态信息
+        
+    Returns:
+        bool: 是否应该重试
+    """
+    if retry_state.outcome is None:
+        return False
+        
+    exception = retry_state.outcome.exception()
+    if exception is None:
+        return False
+        
     print(f"Caught exception: {type(exception).__name__} - {str(exception)}")
     
     # 匹配更多错误类型
@@ -246,98 +263,6 @@ class MetaChain:
 
         return partial_response
 
-    def run_and_stream(
-        self,
-        agent: Agent,
-        messages: List,
-        context_variables: dict = {},
-        model_override: str = None,
-        debug: bool = False,
-        max_turns: int = float("inf"),
-        execute_tools: bool = True,
-    ):
-        active_agent = agent
-        context_variables = copy.deepcopy(context_variables)
-        history = copy.deepcopy(messages)
-        init_len = len(messages)
-
-        while len(history) - init_len < max_turns:
-
-            message = {
-                "content": "",
-                "sender": agent.name,
-                "role": "assistant",
-                "function_call": None,
-                "tool_calls": defaultdict(
-                    lambda: {
-                        "function": {"arguments": "", "name": ""},
-                        "id": "",
-                        "type": "",
-                    }
-                ),
-            }
-
-            # get completion with current history, agent
-            completion = self.get_chat_completion(
-                agent=active_agent,
-                history=history,
-                context_variables=context_variables,
-                model_override=model_override,
-                stream=True,
-                debug=debug,
-            )
-
-            yield {"delim": "start"}
-            for chunk in completion:
-                delta = json.loads(chunk.choices[0].delta.json())
-                if delta["role"] == "assistant":
-                    delta["sender"] = active_agent.name
-                yield delta
-                delta.pop("role", None)
-                delta.pop("sender", None)
-                merge_chunk(message, delta)
-            yield {"delim": "end"}
-
-            message["tool_calls"] = list(
-                message.get("tool_calls", {}).values())
-            if not message["tool_calls"]:
-                message["tool_calls"] = None
-            debug_print(debug, "Received completion:", message)
-            history.append(message)
-
-            if not message["tool_calls"] or not execute_tools:
-                debug_print(debug, "Ending turn.")
-                break
-
-            # convert tool_calls to objects
-            tool_calls = []
-            for tool_call in message["tool_calls"]:
-                function = Function(
-                    arguments=tool_call["function"]["arguments"],
-                    name=tool_call["function"]["name"],
-                )
-                tool_call_object = ChatCompletionMessageToolCall(
-                    id=tool_call["id"], function=function, type=tool_call["type"]
-                )
-                tool_calls.append(tool_call_object)
-
-            # handle function calls, updating context_variables, and switching agents
-            partial_response = self.handle_tool_calls(
-                tool_calls, active_agent.functions, context_variables, debug
-            )
-            history.extend(partial_response.messages)
-            context_variables.update(partial_response.context_variables)
-            if partial_response.agent:
-                active_agent = partial_response.agent
-
-        yield {
-            "response": Response(
-                messages=history[init_len:],
-                agent=active_agent,
-                context_variables=context_variables,
-            )
-        }
-
     def run(
         self,
         agent: Agent,
@@ -447,7 +372,7 @@ class MetaChain:
         create_model = model_override or agent.model
         if create_model not in NOT_USE_FN_CALL:
             
-            assert litellm.supports_function_calling(model = create_model) == True, f"Model {create_model} does not support function calling, please set `FN_CALL=False` to use non-function calling mode"
+            # assert litellm.supports_function_calling(model = create_model) == True, f"Model {create_model} does not support function calling, please set `FN_CALL=False` to use non-function calling mode"
             create_params = {
                 "model": create_model,
                 "messages": messages,
@@ -650,7 +575,7 @@ class MetaChain:
                     history.append({"role": "error", "content": f"Error: {e}"})
                     break
             else:
-                partial_response = Response(messages=[message])
+                partial_response = Response(messages=[{"role": "user", "content": "Please use the tools provided to complete the task."}])
             history.extend(partial_response.messages)
             context_variables.update(partial_response.context_variables)
             if partial_response.agent:

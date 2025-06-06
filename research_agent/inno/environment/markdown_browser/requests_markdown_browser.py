@@ -80,7 +80,6 @@ class RequestsMarkdownBrowser(AbstractMarkdownBrowser):
         start_page: Union[str, None] = None,
         viewport_size: Union[int, None] = 1024 * 8,
         downloads_folder: Union[str, None] = None,
-        search_engine: Union[AbstractMarkdownSearch, None] = None,
         markdown_converter: Union[MarkdownConverter, None] = None,
         requests_session: Union[requests.Session, None] = None,
         requests_get_kwargs: Union[Dict[str, Any], None] = None,
@@ -109,10 +108,6 @@ class RequestsMarkdownBrowser(AbstractMarkdownBrowser):
         self.set_address(self.start_page)
         self._page_content: str = ""
 
-        if search_engine is None:
-            self._search_engine: AbstractMarkdownSearch = BingMarkdownSearch()
-        else:
-            self._search_engine = search_engine
 
         if markdown_converter is None:
             self._markdown_converter = MarkdownConverter()
@@ -161,11 +156,6 @@ class RequestsMarkdownBrowser(AbstractMarkdownBrowser):
         # Handle special URIs
         if uri_or_path == "about:blank":
             self._set_page_content("")
-        elif uri_or_path.startswith("search:"):
-            query = uri_or_path[len("search:") :].strip()
-            results = self._search_engine.search(query)
-            self.page_title = f"{query} - Search"
-            self._set_page_content(results, split_pages=False)
         else:
             if (
                 not uri_or_path.startswith("http:")
