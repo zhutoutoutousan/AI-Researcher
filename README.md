@@ -2,7 +2,8 @@
 
 <div align="center">
   <img src="./assets/ai-researcher.png" alt="Logo" width="400">
-  <h1 align="center">AI-Researcher: Fully-Automated Scientific Discovery with LLM Agents </h1>
+  <h1 align="center">"AI-Researcher: Autonomous Scientific Innovation"
+ </h1>
 </div>
 
 
