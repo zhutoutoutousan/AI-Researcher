@@ -1,0 +1,82 @@
+\section{Experiments}
+
+In this section, we describe the model, data, and training details for reproducing our experiments. Our experiments support all of our theoretical claims and insights.
+
+\subsection{Overview}
+We classify our experiments into the following major categories, each of which includes several ablation studies:
+
+\begin{itemize}
+    \item [1)] Learning tasks where the target functions are [description of target functions], with [model type] with a wide range of hyperparameters. This validates [theoretical claims or insights].
+    
+    \item [2)] [Description of computation tasks or metrics] to validate [specific theorem or claim]. This shows [important findings].
+
+    \item [3)] Learning tasks where the target functions are [description of linear functions]. These validate [theorems or lemmas], i.e., [specific findings related to the task]. This section includes [number] ablation studies:
+    \begin{itemize}
+        \item [a)] [Detailed description of the first ablation study].
+        \item [b)] [Detailed description of the second ablation study].
+        \item [c)] [Detailed description of the third ablation study].
+    \end{itemize}
+
+    \item [4)] [Additional tasks or experiments with different models or architectures].
+    
+    \item [5)] [Description of a different experiment related to a specific architecture or model].
+    
+    \item [6)] [Another task with distinct objectives, providing specific details of the learning problem].
+    
+    \item [7)] [Description of experiments addressing physical or real-world problems, detailing different extrapolation regimes].
+\end{itemize}
+
+\subsection{Learning [Task Description]}
+\paragraph{Dataset details.} We consider [description of the datasets used, including the tasks and parameter settings]. For example, we sample the training set with [specific sampling method or criteria].
+
+\paragraph{Model and hyperparameter settings.} We consider the [model type and architecture] defined as follows:
+\begin{equation}
+    \text{Model}(x) = [model representation]
+\end{equation}
+We search the following hyperparameters:
+\begin{itemize}
+    \item [a)] [First hyperparameter setting].
+    \item [b)] [Second hyperparameter setting].
+    \item [c)] [Third hyperparameter setting].
+\end{itemize}
+
+\paragraph{Test error and model selection.} For each dataset and architecture, we perform model selection via [validation method] and report the test error using [error metric or method]. 
+
+\subsection{R-Squared for [Task Description]}
+\paragraph{Definition.} [Provide a definition or brief explanation of the metric used, such as R-squared].
+
+\paragraph{Datasets and models.} We perform [unspecified analysis or computations] on [specific parametrizations or combinations] as described in [previous section or appendix].
+
+\paragraph{Computation.} For each combination of [datasets or models], we [details of the computation method].
+
+\paragraph{Results.} We obtain [results or findings], confirming [theoretical claims or hypotheses] with [specific statistics or outcomes].
+
+\subsection{Learning [Linear Functions]}
+\paragraph{Dataset details.} We consider tasks where the underlying functions are [description of linear functions]. For each dataset, we sample [specific parameters or configurations].
+
+\paragraph{Model and hyperparameter settings.} We perform the same set of hyperparameter searches as in [previous section]. We report the test error using [error measurement approach].
+
+\paragraph{Exact computation with [Specific Model].} Our experiments validate [specific theoretical claims] by employing [specific methodologies or models]. 
+
+\paragraph{Summary of findings.} [Summarize key outcomes from the experiments].
+
+\subsection{Additional Experiments}
+\paragraph{Task description.} We summarize additional experiments undertaken to [specific hypotheses or research questions].
+
+\paragraph{Dataset details.} [Overview of dataset characteristics and sampling methods].
+
+\paragraph{Model and hyperparameter settings.} We utilize [model type] architecture defined as follows:
+\begin{equation}
+    \text{Model}(G) = [model representation].
+\end{equation}
+
+We configure the hyperparameters as follows:
+\begin{itemize}
+    \item [a)] [Specify hyperparameter settings].
+    \item [b)] [Describe training methodology and optimization].
+\end{itemize}
+
+\paragraph{Model selection and reporting.} Similar to prior sections, we validate performance against [error metrics or evaluation criteria]. 
+
+\subsection{Conclusion}
+In summary, our experiments provide [brief overview of findings and implications for future work].

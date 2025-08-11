@@ -1,0 +1,56 @@
+\section{METHODOLOGY}
+
+In this section, we describe our proposed [Method Name] in detail. [Method Name] is a [description of the method type] as illustrated in Fig. [figure number]. Complementary to the [backbone/previous technique] extracting [describe the local feature/pattern], the [additional component/approach] empowers the [main goal] with [describe the additional benefit].
+
+\subsection{[Local Feature/Component Modeling]}
+
+As a common practice in [related field], we assign each [entity type 1] $u_{i}$ and [entity type 2] $v_{j}$ with an embedding vector $e(u)_{i}, e(v)_{j} \in \mathbb{R}^{d}$, where $d$ is the embedding size. The collections of all [entity type 1] and [entity type 2] embeddings are defined as $E(u) \in \mathbb{R}^{I \times d}$ and $E(v) \in \mathbb{R}^{J \times d}$, where $I$ and $J$ are the number of [entity type 1] and [entity type 2], respectively. Following [reference to previous work], we adopt a [mechanism/structure] to aggregate the neighboring information for each node. In layer $l$, the aggregation process is expressed as follows:
+
+\begin{equation}
+    [Insert equation here]
+\end{equation}
+
+where $z(u)_{i,l}$ and $z(v)_{j,l}$ denote the $l$-th layer aggregated embedding for [entity type 1] $u_{i}$ and [entity type 2] $v_{j}$. The final embedding for a [entity type] is the sum of its embeddings across all layers, and the inner product between the final embedding of a [entity type 1] and [entity type 2] predicts [relevance/preference]:
+
+\begin{equation}
+    [Insert equation here]
+\end{equation}
+
+\subsection{[Global Component/Relation Learning]}
+
+To empower [goal] with [benefit], we incorporate the [technique/methodology] to efficiently [describe the process]. Specifically, we first [description of the initial step]. Here, [definitions of components]. We then [ explanation of the following steps and purpose]. The advantages of [technique] are two-fold:
+
+1. [Advantage 1]
+2. [Advantage 2]
+
+Given [previous result/structure], we perform [subsequent process] in each layer:
+
+\begin{equation}
+    [Insert equation here]
+\end{equation}
+
+However, performing [related process] on [large datasets] is [describe the challenge]. Therefore, we adopt the [efficient alternative or method], whose key idea is to [describe the method succinctly].
+
+\begin{equation}
+    [Insert equation for approximation here]
+\end{equation}
+
+where [definitions of approximate components]. Thus, we rewrite the [existing equations] with the approximated structures as follows:
+
+\begin{equation}
+    [Insert modified equations]
+\end{equation}
+
+\subsection{[Learning Framework]}
+
+The conventional [framework/method] typically [describe common practices]. The rationale behind adopting such a [complex/simple] paradigm may be that [explanation]. In our proposed method, however, we [explain how the proposed method differs]. Therefore, we [describe the simplification] by directly contrasting [generated components] with [original components] in the [loss function]:
+
+\begin{equation}
+    [Insert loss function equation]
+\end{equation}
+
+where [definitions/description of terms]. To prevent [issue], we implement [solution] to [describe the goal of the solution]. As shown in [following equation], the [final objective] is jointly optimized with [describe other components involved]:
+
+\begin{equation}
+    [Insert final objective equation]
+\end{equation}

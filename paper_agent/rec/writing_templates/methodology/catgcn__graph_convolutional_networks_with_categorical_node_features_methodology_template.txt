@@ -1,0 +1,86 @@
+\section{Methodology}
+
+We describe our method under the setting of [specific application/domain] \cite{reference1}, whereas the idea is generally applicable to [related techniques/tasks]. The [specific structure] is represented as [mathematical representation] where [N] is the number of [specific items]. The main consideration of our work is that each [specific item] is described by [features] where [specific condition]. We summarize the symbols used in the paper in Table \ref{table:terms}.
+
+\begin{table}[ht]
+    \centering
+    \caption{Terms and notations used in the paper.}
+    \begin{tabular}{|c|c|}
+        \hline
+        Symbol & Definition \\
+        \hline
+        [Symbol 1] & [Definition 1] \\
+        [Symbol 2] & [Definition 2] \\
+        \vdots & \vdots \\
+        \hline
+    \end{tabular}
+    \label{table:terms}
+\end{table}
+
+\subsection{Overall Framework}
+
+The target of [Method Name] is to [goal of the methodology] in a [description of method style]. As illustrated in Figure \ref{fig:framework}, [Method Name] separately exploits [description of components]. Specifically, [multiple sentences explaining the overall procedure].
+
+In particular, we first [description of the initial process], which is formulated as:
+
+\begin{equation}
+    [Equation for initial process]
+\end{equation}
+
+where [explanation of variables]. [Additional details about the implementation and any assumptions]. 
+
+Similar to [related methods], [Method Name] is learned in an end-to-end manner by optimizing an objective function:
+
+\begin{equation}
+    L = [Mathematical expression for the objective function]
+\end{equation}
+
+where [explanation of components within the expression]. In the following, we introduce the [specific process to be detailed next].
+
+\subsection{[Submodule Title]}
+
+Inspired by [previous work], [Method Name] focuses on [specific goal]. To thoroughly capture [specific aspect], our first belief is that [underlying principle]. Here, we consider [list of factors or components]. 
+
+To bridge this gap, [Method Name] integrates [components] into [specific process]. Specifically, as shown in Figure \ref{fig:framework}, [Method Name] consists of three main modules:
+
+\begin{itemize}
+    \item \textbf{[Module 1 Title]}: [Description of Module 1]
+    \item \textbf{[Module 2 Title]}: [Description of Module 2]
+    \item \textbf{[Module 3 Title]}: [Description of Module 3]
+\end{itemize}
+
+\subsubsection{[Title of Specific Submodule]}
+
+For [Specific Submodule], [explanation of the process]. For example, [example or application]. [Mathematical formulation relevant to this part].
+
+\begin{equation}
+    [Equation for specific submodule]
+\end{equation}
+
+which [explanation of the equation]. This method [explanation of benefits/complexity].
+
+\subsubsection{[Title of Another Specific Submodule]}
+
+Distinct from [another submodule], the purpose of [Yet Another Submodule] is to [goal of the submodule]. In real scenarios, [specific context]. Therefore, we need to [aim or task] through [methodology or technique].
+
+Supplying details about [specific characteristics or structures]. Formally, this can be described as follows:
+
+\begin{equation}
+    [Mathematical expression for this submodule]
+\end{equation}
+
+\subsection{Further Components}
+
+Aiming to [overall aim related to individual modules], [Method Name] fuses [descriptions of components] into [overall process] through an aggregation layer. As such, the aggregation layer is also responsible for [additional responsibilities].
+
+Here we perform a [description of strategy]:
+
+\begin{equation}
+    h' = [Mathematical representation of final representation]
+\end{equation}
+
+where [explanation of hyperparameters or final notes about this section].
+
+\subsection{Conclusion}
+
+In this section, we outlined the core methodology of [Method Name], detailing its significant components and underlying principles. Future work may focus on [ideas for extension or improvement related to the method].

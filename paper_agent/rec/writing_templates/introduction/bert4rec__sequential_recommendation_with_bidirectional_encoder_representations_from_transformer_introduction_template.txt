@@ -1,0 +1,21 @@
+\section{INTRODUCTION}
+
+Accurately characterizing [target phenomenon] lies at the heart of an effective [application area]. In many real-world applications, [phenomenon] is intrinsically dynamic and evolving, influenced by [contextual factors]. For example, [example illustrating the dynamic behavior].
+
+To model such [phenomenon] dynamics, various methods have been proposed to [state the general goal] based on [prior work or historical data]. Specifically, [describe previously employed techniques or methods, providing relevant citations]. The basic paradigm of previous work is to [explain the conventional approach or methodology].
+
+Despite their prevalence and effectiveness, we argue that [identify limitations or challenges of existing methods]. The major limitation lies in [explain the key limitation, possibly use illustrations or references]. Additionally, [describe another limitation, if applicable, and provide context].
+
+To address the limitations mentioned above, we propose [module name or new approach]. Specifically, inspired by [previous work or successful technique], we propose to [describe the novel aspect of the method] as illustrated in [figure or diagram reference]. For [concept or aspect related to representation power], [explain the rationale or importance].
+
+However, [identify potential challenges with the new approach]. Specifically, [explain the challenge encountered and how it contrasts with existing practices]. This challenge necessitates [state the requirement for the new method or idea].
+
+To tackle this problem, we [introduce a specific technique or approach] to [replace or enhance existing objective]. Specifically, we [explain the key steps involved in the proposed technique]. This approach allows us to [state the advantage over prior techniques and how it prevents issues].
+
+However, [acknowledge any downsides or issues related to the new approach]. To address this, we [describe the method for adapting the approach or addressing a challenge] during [execution/testing process]. [Provide additional context about this adjustment and its implications].
+
+The contributions of our paper are as follows:
+
+- · We propose [briefly state the novel approach] to [describe the application]. To the best of our knowledge, this is the first study to [highlight the originality of the work].
+- · We compare our method with [mention state-of-the-art methods] and demonstrate the effectiveness of [aspects being evaluated] through [type of analysis].
+- · We conduct [describe type of study] to analyze the contributions of [key components or aspects of the proposed method].

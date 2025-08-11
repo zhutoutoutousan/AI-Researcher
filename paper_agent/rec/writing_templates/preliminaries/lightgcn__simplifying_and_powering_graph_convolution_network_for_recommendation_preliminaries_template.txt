@@ -1,0 +1,59 @@
+```latex
+\section{Preliminaries}
+
+We first introduce [model/technique] to address [challenge]. We then perform [type of studies, e.g., ablation studies] on [model/technique] to evaluate [objective]. The novel contribution of this section is to demonstrate that [key finding].
+
+\begin{table}[ht]
+    \centering
+    \caption{Performance of [model/technique] and its variants.}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        & [Dataset 1] & [Dataset 1] & [Dataset 2] & [Dataset 2] \\
+        \hline
+        & [Metric 1] & [Metric 2] & [Metric 1] & [Metric 2] \\
+        \hline
+        [Model/Technique] & [Value] & [Value] & [Value] & [Value] \\
+        [Variant 1] & [Value] & [Value] & [Value] & [Value] \\
+        [Variant 2] & [Value] & [Value] & [Value] & [Value] \\
+        [Variant 3] & [Value] & [Value] & [Value] & [Value] \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Overview of [Model/Technique]}
+
+In the initial step, [describe the basic structure or input of the model/technique]. Let [variable notation] denote [description of key variables]. Then, [model/technique] leverages [describe method or graph structure] to perform [describe what the model does]:
+
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+
+where [explanation of each term in the equations]. By [describe the process, e.g., propagating layers], [model/technique] obtains [description of embeddings and outputs]. 
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method.]
+
+Furthermore, we argue that [key critique or alternative perspective]. [Provide reasoning for this argument]. In the next subsection, we provide empirical evidence to support this argument.
+
+\subsection{Empirical Explorations on [Model/Technique]}
+
+We conduct [type of studies, e.g., ablation studies] on [model/technique] to explore the effect of [specific components or hyperparameters]. We use [details about experimental setup, e.g., codes, datasets] to ensure [describe fairness of comparison]. Thus, we change [describe methodological change] to obtain [justification for methodological choices].
+
+We implement [number] variants of [model/technique]:
+
+- [Variant 1 description]
+- [Variant 2 description]
+- [Variant 3 description]
+
+For these variants, we keep [explanation of parameters/settings]. We report the results of [describe setting] in Table [number].
+
+As can be seen, [analysis of findings, comparing results]. From these observations, we conclude [list of findings]:
+
+1. [Finding 1]
+2. [Finding 2]
+3. [Finding 3]
+
+To gain more insights into [subject of analysis], we [description of additional analysis methods]. As can be seen, [analysis of training results or performance].
+
+From these evidences, we can draw the conclusion that [key conclusion about the findings]. Theoretically speaking, [explain theoretical perspective]. However, [contrast practical findings]. To round out this section, we claim that when designing [type of model/technique] for [application], it is important to [advice regarding rigorous studies or model design considerations]. Otherwise, [outline potential negative implications].
+
+```

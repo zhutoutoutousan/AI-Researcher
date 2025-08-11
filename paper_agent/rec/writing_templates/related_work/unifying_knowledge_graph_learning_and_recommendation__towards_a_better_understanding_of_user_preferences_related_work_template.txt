@@ -1,0 +1,29 @@
+```latex
+\section{Related Work}
+
+Our proposed methods involve two tasks: [Task 1 description] and [Task 2 description]. In this section, we first introduce related work for each task, before discussing their relations.
+
+\subsection{Task 1}
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. 
+
+In the early stage of [Task 1], researchers focused on [brief description of early methods]. The key challenge here lies in [describe the challenge associated with early methods].
+
+With the surge of [new methodologies/approaches], a host of methods [describe how they extend or improve upon early methods]. However, they still [discuss limitations of these methods]. [Alternative methods or techniques] handle these issues by [describe how they introduce new information or approaches]. 
+
+Among the side information, [specific resource] shows great potential due to [reason for its effectiveness]. This type of methods mostly [explain how these methods function]. We roughly classify them into two groups: [group 1] and [group 2]. In the first group, [describe specific methods] that address [certain challenge]. On the other hand, the methods in the second group [describe how they improve or refine existing techniques] but [discuss their limitations].
+
+Another line of work is [discuss another relevant area], inspired by [source]. We thus improve this type of method by [describe your contribution or enhancement].
+
+\subsection{Task 2}
+
+[Introduction and overview of Task 2]. External knowledge has been found to be effective in [mention tasks or application areas]. Although there are a host of methods for [describe the methods], existing [Task 2 reason for incompleteness] remain incomplete. Recent studies for [Task 2 completion] show [describe trend or enthusiasm]. We roughly categorize such methods into two groups: [group 1] and [group 2].
+
+[Group 1 methods] [describe key ideas or approaches]. However, [discuss the limitations or challenges]. 
+
+The second group measures [describe the focus of this group]. [Specific method] represents [describe how it operates], and utilizes [discuss its approach]. To simplify the [key concept], [describe various approaches and their intentions].
+
+\subsection{Relationship between the Two Tasks}
+
+[Discussion of how the two tasks relate]. Items usually correspond to [describe context], making it possible to transfer knowledge between [field areas]. The information involved in the two tasks are complementary, revealing [discuss connectivity]. In terms of models, both tasks aim to [describe common goal or processes]. For example, [give an example illustrating the relationship]. Therefore, we are able to [describe how to bridge the gap] via a [describe your proposed approach or system], to systematically investigate how the two tasks impact each other.
+```

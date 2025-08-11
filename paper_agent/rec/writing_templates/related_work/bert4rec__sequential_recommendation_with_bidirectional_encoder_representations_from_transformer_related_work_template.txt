@@ -1,0 +1,27 @@
+\section{Related Work}
+
+In this section, we will briefly review several lines of works closely related to ours, including [Topic 1], [Topic 2], and [Topic 3].
+
+\subsection{[Topic 1]}
+
+Early works on [Topic 1] typically use [Method/Approach] to [Purpose/Challenge] [Citations]. Among various methods, [Specific Method] is the most popular one, which [Description of the method] [Citations]. Another line of work is [Alternative Method] [Citations]. They [Description of the method and how it works].
+
+Recently, [Emerging Method] has been revolutionizing [Field/Topic] dramatically. The early pioneer work is [Key Work/Research] for [Specific Application] [Citations].
+
+One line of [Method/Type] seeks to improve [Performance/Outcome] by [Approach Used]. Another line of work seeks to [Different Approach]. For example, [Specific Example] uses [Description of the approach] to achieve [Purpose/Outcome].
+
+\subsection{[Topic 2]}
+
+Unfortunately, none of the above methods is suitable for [Specific Challenge] since they all ignore [Specific Aspect].
+
+Early works on [Topic 2] usually capture [Target Aspect] from [Source] using [Approach/Method]. For example, [Author(s)] [Citations] formalized [Task] as a [Type of Problem] and employed [Method/Approach] to address it. Later, [Author(s)] [Citations] combined [Approaches/Methods] to [Goal]. Besides [First Order/Nature], [Higher Order/Nature] are also adopted to [Consideration] [Citations].
+
+Recently, [Method/Technique] and its variants, [Variant 1] and [Variant 2], are becoming more popular for [Purpose] [Citations]. The basic idea of these methods is to [Key Concept] with various [Type] architectures and [Type] functions, including [Specific Example 1], [Specific Example 2], and [Specific Example 3].
+
+Other than [Notable Method], various [Type of Models/Approaches] are also introduced for [Topic 2] [Citations]. For example, [Author(s)] [Citations] propose [Novel Approach] to [Goal]. [Author(s)] [Citations] employ [Method/Approach] to [Outcome]. [Method] captures [Concept] using [Type] network with [Feature] [Citations].
+
+\subsection{[Topic 3]}
+
+[Main Concept/Technique] has shown promising potential in [Application Area] [Citations]. Recently, some works try to employ [Main Concept/Technique] to improve [Performance/Outcome] and [Attribute/Aspect] [Citations]. For example, [Author(s)] [Citations] incorporate [Concept] into [Method] to capture [Aspect] in [Context].
+
+The works mentioned above basically treat [Main Concept/Technique] as an additional component to the original models. In contrast, [Transformative Method/Framework] [Citations] are built solely on [Core Concept] and achieve [Outcome/Results]. Recently, there is a rising enthusiasm for applying [Type of Models] to [Purpose] for their [Effectiveness/Efficiency/Other Attributes] [Citations]. For [Specific Application], [Author(s)] [Citations] introduce [Model] to [Goal] and achieve [Results] on [Dataset/Benchmark]. [Model] is closely related to our work. However, it is still a [Characteristic] model using [Technique/Feature]. While we use a [Different Approach/Feature] to [Purpose].

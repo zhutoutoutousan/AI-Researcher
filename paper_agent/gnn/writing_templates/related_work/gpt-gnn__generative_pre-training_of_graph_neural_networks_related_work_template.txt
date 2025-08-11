@@ -1,0 +1,29 @@
+\section{Preliminaries and Related Work}
+
+The goal of [briefly describe the goal/motivation of the content]. Recently, [mention advancements or importance of the topic] in [specify domains or areas]. In the following, we first introduce the preliminaries regarding [specific concepts or techniques] and then review the approaches in [specific areas].
+
+\subsection{Preliminaries of [Concept/Technique]}
+
+Recent years have witnessed the success of [concept/technique] for [describe its application or role] [References]. A [concept/technique] can be regarded as [provide a general definition or description] during which [describe the process, e.g., how data or information is processed]. Formally, we define [concept] as follows:
+
+\begin{equation}
+[Include mathematical formulation or key equation here]
+\end{equation}
+
+where [explain the variables and parameters used in the equation].
+
+There are [describe the main components or operators related to the concept]. Among them, [operator 1] represents [define the operator]. [Operator 2] serves as [provide description]. Under this framework, various [concept/technique] architectures have been proposed. For example, [briefly describe a notable approach] that [explanation of its function]. Furthermore, [mention other significant approaches and their contributions].
+
+Also, there are several works that [provide alternative methods or perspectives related to the topic]. In general, [describe a common trend or approach] based on [concept/theory]. For instance, [specific reference] proposes [briefly describe the novel concept or approach] which [explanation of its advantages].
+
+\subsection{Pre-Training for [Specific Application Domain]}
+
+Previous studies have proposed to utilize [method/concept] for [task or role], which largely belong to [different categories or approaches]. The first category is usually termed as [category name], which [describe optimization goals or methods]. However, [explain limitations of this category]. In contrast, we consider [another approach or methodology], where the goal is to [describe specific objectives].
+
+With the increasing focus on [specific trend or domain], researchers have explored [another direction or method]. [Reference] proposes [specific technique] to [explanation]. Moreover, [reference] introduces [another approach] which [describe functionality]. Although these methods show [state advantages], [identify any shortcomings or potential areas of improvement]. Our work proposes [briefly introduce your novel approach] which [describe its significance or potential advantages].
+
+In addition, there are attempts to [related concepts or techniques] such as [specific reference]. [Reference] presents [specific approach] which [explanation]. Our work is different because [distinguishing features or objectives of your work].
+
+\subsection{Pre-Training for [Other Domains]}
+
+Pre-training has been widely used in [mention domains, e.g., CV and NLP]. In this domain, [describe early techniques and their methodologies]. Recently, [mention recent developments or methodologies]. In [another domain], early works have focused on [describe initial approaches or techniques]. More recently, significant progresses have been made on [mention advancements or specific techniques]. For example, [specific technique] pre-trains a [type of model] with [describe self-supervised tasks or methodologies]. These pre-training approaches have been shown to [summarize their impact or significance].

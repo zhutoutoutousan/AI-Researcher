@@ -1,0 +1,87 @@
+\section{METHOD}
+
+The former section demonstrates that [describe the main challenge]. Driven by these findings, we set the goal of developing [short description of the proposed method] to address [challenge]. The advantages of this approach are severalfold - [list advantages, e.g., being more interpretable, easier to train, etc.].
+
+In this section, we first present our designed [module name], as illustrated in [Figure/Table reference]. We then provide an in-depth analysis to show the rationale behind its design. Lastly, we describe how to implement [describe implementation process or model training].
+
+\subsection{[Module Name]}
+
+The basic idea of [related method/concept] is to [explain the core function or goal]. To achieve this, it performs [describe the main operation or process]. Such can be abstracted as:
+
+\begin{equation}
+[equation representing core relation].
+\end{equation}
+
+[Provide necessary definitions or concepts related to the equation]. Many works have [discuss existing approaches], but [discuss the limitations of existing approaches].
+
+\subsubsection{[Submodule Name]}
+
+In [specific module], we adopt [describe the approach taken] and abandon [mention techniques abandoned]. The operation in [module name] is defined as:
+
+\begin{equation}
+[equation representing the operation].
+\end{equation}
+
+[Provide explanation and motivation for the components of the equation].
+
+It is important to note that [discuss specific aspects of the design or operation].
+
+\subsubsection{[Next Component Name]}
+
+In [module name], the main parameters are [describe relevant parameters]. When set, [explain how the outputs are derived]. After [number] layers, we combine the outputs to form [describe what is formed]:
+
+\begin{equation}
+[equation for the combination of layers].
+\end{equation}
+
+Where [explain the significance of parameters, etc.]. The reasons for this combination are [list reasons, e.g., preventing over-smoothing, capturing different semantics, etc.].
+
+The final prediction model is defined as:
+
+\begin{equation}
+\hat{y} = [describe prediction equation].
+\end{equation}
+
+\subsubsection{[Matrix Formulation Name]}
+
+We provide the matrix form of [module name] to facilitate implementation. Let [describe interaction matrix and its dimensions]. Thus, we obtain [describe the derived matrix form]:
+
+\begin{equation}
+[equation representing the matrix form].
+\end{equation}
+
+Where [define important terms and matrices used].
+
+\subsection{Model Analysis}
+
+We conduct model analysis to demonstrate the rationale behind the design of [module name]. First, we discuss [relation with existing models or theories]. This analysis shows that [summarize findings]. 
+
+Next, we analyze [describe further relations with other models]. This highlights the connection between [discuss key elements].
+
+\subsubsection{[Specific Relation Name]}
+
+In [cite relevant work], [explain argument or findings from that work]. We simplify [explain the simplification process]. Following that, we can express [state findings in simpler terms].
+
+\subsubsection{[Another Relation Name]}
+
+In [cite another relevant work], the approach [describe the approach and its implications]. By comparing with [existing model or technique], we unveil how [summarize key findings].
+
+\subsubsection{[Further Analysis]}
+
+Through our analysis, we uncover [deduce insights from the analysis]. Here, we analyze [discuss another aspect].
+
+\subsection{Model Training}
+
+The trainable parameters of [module name] are [list parameters]. We utilize [describe loss function used] to [explain purpose of training].
+
+\begin{equation}
+L = [loss function representation].
+\end{equation}
+
+Where [define any regularization, strategies, etc.]. We employ [mention optimization method], and [describe any sampling strategies].
+
+We acknowledge that [discuss any limitations or deviations from common practices]. This illustrates [highlight advantages].
+
+Moreover, we can also [discuss potential future improvements or variations of the model]. However, [mention findings that lead to the conclusion or decision made].
+
+[Summarize the model training strategy and anticipated outcomes].

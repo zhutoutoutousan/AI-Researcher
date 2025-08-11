@@ -1,0 +1,39 @@
+```latex
+\section{Module Name}
+
+We introduce [module name] and its detailed implementation in this section. Our framework consists of two steps: [Step 1] and [Step 2]. During [Step 1], [brief explanation of the process in Step 1]. For [Step 2], [explanation of how the framework operates during Step 2]. The [running example or case study] will serve as an illustrative example for this section.
+
+A distinctive feature of [module name] is [describe notable features and benefits]. 
+
+\subsection{Model Architecture}
+The architecture of [module name] is based on [reference to foundational work or architecture]. [Multiple sentences explaining the choice of architecture]. 
+
+We denote the relevant parameters as follows: [Parameter 1], [Parameter 2], and [Parameter 3]. [Additional relevant comparisons or contrasts to existing models].
+
+\subsection{Input/Output Representations}
+To make [module name] applicable to various tasks, our input representation [explanation of input representation]. [Define terminology used in representations]. 
+
+We use [name of embeddings] with a [vocabulary/representation description]. [Detailed description of the input format, including any special tokens].
+
+The input representation for a given element is constructed by [explain the construction of input representation]. [Visualization or example if necessary].
+
+\subsubsection{Task #1: [First Task]}
+Unlike [previous works], we [explanation of how the method differs]. Specifically, this task involves [description of the task and its implementation]. 
+
+[Provide an intuitive reasoning behind this task and its selection.] 
+
+\subsubsection{Task #2: [Second Task]}
+[Describe the second task and its relevance to the overall framework]. [Explain how this task builds upon the first task]. 
+
+The [Task 2 description] is [connect to relevant literature or additional context]. [Explain the benefits observed from the implementation of this task].
+
+\subsection{Pre-training Data}
+The pre-training procedure [summary of data and methodology]. For the pre-training corpus, we use [list of data sources]. [Justification for the choice of pre-training data].
+
+\subsection{Fine-tuning [Module Name]}
+Fine-tuning is achieved by [general description of the fine-tuning process]. For applications involving [types of applications], [description of how fine-tuning is applied]. 
+
+We simply [explain the plug-in of task-specific inputs and outputs]. [Clarify the output layer function and its relation to the tasks]. 
+
+Compared to pre-training, fine-tuning is [conclude with observations on the efficiency and effectiveness of fine-tuning]. For further details, refer to [next sections or appendices].
+```

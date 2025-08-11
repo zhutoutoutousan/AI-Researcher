@@ -1,0 +1,72 @@
+\section{Experiments}
+
+In this section, we present [method name] results on [number] [domain] tasks.
+
+\subsection{[Task Name]}
+
+The [benchmark name] is a collection of diverse [task description, e.g., natural language understanding, vision tasks, etc.]. Detailed descriptions of [task datasets] are included in [Appendix location].
+
+To fine-tune on [task name], we represent the input sequence as described in [relevant section]. The only new parameters introduced during fine-tuning are [parameter description, e.g., new weights, layers]. We compute a standard [task-specific loss description].
+
+\begin{table}[ht]
+\centering
+\caption{[Table title and description].}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{System} & \textbf{Metric 1} & \textbf{Metric 2} & \textbf{Metric 3} & \textbf{Metric 4} \\ \hline
+[System 1] & [Value] & [Value] & [Value] & [Value] \\ \hline
+[System 2] & [Value] & [Value] & [Value] & [Value] \\ \hline
+[System 3] & [Value] & [Value] & [Value] & [Value] \\ \hline
+\end{tabular}
+\end{table}
+
+We use a batch size of [number] and fine-tune for [number] epochs over the data for all [task name] tasks. For each task, we selected the best fine-tuning learning rate [among specific values if applicable] on the Dev set. Additionally, we found that fine-tuning can sometimes be unstable on [specific conditions], so we performed several random restarts and selected the best model on the Dev set.
+
+Results are presented in Table [X]. [Summary of results, improvements, and comparisons with other methods]. We find that [key findings, e.g., model size effects across tasks].
+
+\subsection{[Task Name 2]}
+
+The [task name] dataset consists of [dataset description]. Given [task description], the objective is to [explain task].
+
+As shown in Figure [X], we represent the input as [input representation]. We introduce [parameters or vectors] during fine-tuning. The probability of [task-specific prediction] is computed as [brief explanation of computation], followed by [activation function] over [relevant elements].
+
+\begin{table}[ht]
+\centering
+\caption{[Table title and description].}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{System} & \textbf{Metric 1} & \textbf{Metric 2} & \textbf{Metric 3} & \textbf{Metric 4} \\ \hline
+[System 1] & [Value] & [Value] & [Value] & [Value] \\ \hline
+[System 2] & [Value] & [Value] & [Value] & [Value] \\ \hline
+[System 3] & [Value] & [Value] & [Value] & [Value] \\ \hline
+\end{tabular}
+\end{table}
+
+Our best performing system outperforms [comparison system(s)] by [improvement metrics]. We note that [observations on performance].
+
+\subsection{[Task Name 3]}
+
+The [task name] significantly extends [previous task description]. We implement a [brief description of method used for the extension].
+
+We compare the score of the [non-answer representation] with the best [answer representation], using [computation description].
+
+\begin{table}[ht]
+\centering
+\caption{[Table title and description].}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{System} & \textbf{Metric 1} & \textbf{Metric 2} & \textbf{Metric 3} & \textbf{Metric 4} \\ \hline
+[System 1] & [Value] & [Value] & [Value] & [Value] \\ \hline
+[System 2] & [Value] & [Value] & [Value] & [Value] \\ \hline
+\end{tabular}
+\end{table}
+
+We observe a [comparison with previous works, improvements] over the previous best system.
+
+\subsection{[Task Name 4]}
+
+The [task name] dataset is designed to [task description]. Given [input information], the aim is to [task objective].
+
+When fine-tuning on the [task name] dataset, we construct [input sequences]. We compute [prediction description] with a [performance measure].
+
+We fine-tune the model for [number] epochs with a learning rate of [value] and batch size of [value]. Results are presented in Table [X]. [Comparison and findings].

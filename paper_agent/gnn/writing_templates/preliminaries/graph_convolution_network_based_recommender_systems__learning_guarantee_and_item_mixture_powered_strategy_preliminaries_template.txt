@@ -1,0 +1,61 @@
+\section{Preliminaries}
+
+In this section, we first formulate the problem of [general problem area]. We then describe the [specific models or techniques] in detail.
+
+\subsection{Problem Formulation}
+
+We use [symbol for user] $\in U$ and [symbol for item] $\in I$ to denote the user and item, and use $R = \{ ( [symbol for user], [symbol for item] ) | [symbol for user] \in U , [symbol for item] \in I\}$ to denote the collected user-item interactions. Let $Z = \{ ( [symbol for user], [symbol for item] ) | [symbol for user] \in U , [symbol for item] \in I\}$ to be the set of user-item pairs. For any triplet $(z, z', y)$, $y = +1$ if the preference between user-item pair $z \in Z$ is higher than $z' \in Z$, otherwise $y = -1$. We define the function $f \in F: U \times I \rightarrow \mathbb{R}$ as a [specific type of function] for the recommender system. For any user-item pair $z \in Z$, the model predicts a preference score $f(z)$ by the learned user representation $e_{[symbol for user]}$ and item representation $e_{[symbol for item]}$. In this paper, we consider [specific preference function type]. To optimize the recommendation ability of $f$, we adopt a [type of loss function] as follows, for any $(z, z', y)$,
+
+\begin{equation}
+\text{loss} = l(y (f(z) - f(z'))).
+\end{equation}
+
+\subsection{[Specific Technique or Model]}
+
+Let $x_{[symbol for user]}$, $x_{[symbol for item]} \in \mathbb{R}^d$ be the user and item features, where $d$ is the input dimension. Without loss of generality, we fix the collected user-item interactions as matrix $R \in \mathbb{R}^{|U| \times |I|}$, where each entry $R_{[symbol for user][symbol for item]} = 1$ if user [symbol for user] has interacted with item [symbol for item]. Let $A$ and $\tilde{A}$ be the adjacency matrix and the corresponding Laplacian matrix, which are both [specific matrix type]. We formalize these two matrices as follows:
+
+\begin{equation}
+A = \begin{bmatrix}
+0 & R \\
+R^T & 0
+\end{bmatrix}, \quad \tilde{A} = \begin{bmatrix}
+0 & \tilde{R}_{[symbol for user]} \\
+\tilde{R}^T_{[symbol for item]} & 0
+\end{bmatrix}.
+\end{equation}
+
+Following [reference], the existing [specific model type] can be generalized into two steps. Note that we omit [specific detail] for brevity.
+
+(1) Update operation. The most straightforward layer-wise updates are inspired by [reference or method], and they can be summarized as follows,
+
+\begin{equation}
+h^{l+1}_{[symbol for user]} = \phi^{(L)} \left( W^l_{1} h^l_{[symbol for user]} + \sum_{i \in N_{[symbol for user]}} \tilde{a}_{[symbol for user][symbol for item]} W^l_{1} h^l_{i} \right),
+\end{equation}
+
+where $\tilde{a}_{[symbol for user][symbol for item]} = [\tilde{R}_{[symbol for user]}]_{[symbol for user][symbol for item]}$ represents the assigned weights of user [symbol for user] to item [symbol for item]; $N_{[symbol for user]}$ is the set of adjacent items of user [symbol for user]. Some recent works [reference] further adopt [specific additional operation]. This operation is formulated as,
+
+\begin{equation}
+h^{l+1}_{[symbol for user]} = \phi^{(L)} \left( W^l_{1} h^l_{[symbol for user]} + \sum_{i \in N_{[symbol for user]}} \tilde{a}_{[symbol for user][symbol for item]}^{(L)} \left( W^l_{1} h^l_{i} + W^l_{2}^{(L)} h^l_{i} \odot h^l_{[symbol for user]} \right) \right).
+\end{equation}
+
+In this paper, we focus on the more complex operation defined in Eq. (3) since [justification].
+
+(2) Final node representation. The [type of models] require the representation of users and items for the final prediction task. The mainstream approaches include [describe standard approaches], respectively defined as,
+
+Linear combination: 
+\[
+e_{[symbol for user]} = \sum_{l=0}^L \alpha^l h^l_{[symbol for user]}
+\]
+
+Concatenation: 
+\[
+e_{[symbol for user]} = h^0_{[symbol for user]} \oplus h^1_{[symbol for user]} \oplus \cdots \oplus h^L_{[symbol for user]}.
+\]
+
+where $\alpha^l$ is a learnable parameter or hyper-parameter, and $L$ is the network depth. In this paper, for convenience, we only consider the embeddings of the last layer as the final representation, i.e., 
+
+\[
+e_{[symbol for user]} = h^L_{[symbol for user]}.
+\]
+
+We will prove that the [type of analysis] can be easily extended to other [specific types of operations] in the appendix.

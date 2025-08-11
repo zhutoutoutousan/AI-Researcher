@@ -1,0 +1,31 @@
+\section{Introduction}
+
+\textbf{Motivation:} Knowledge Graph (KG) is a heterogeneous structure that stores [brief description of what KG represents]. Since its inception, KG has attracted significant attention in various fields, including [list fields]. Focusing on [specific application], the structural knowledge has demonstrated great potential in [explain the advantages in that application domain].
+
+\textbf{Challenges:} Despite its benefits, existing KGs (e.g., [provide example]) are [describe limitations]. For instance, [provide an illustrative example of a missing relation]. This limitation suggests that while [discuss a related observation], the incomplete nature of KG may significantly impact [specific applications].
+
+\textbf{Research Question:} Consequently, we propose to [state the primary research question]. Our hypothesis is that [explain the relationship between the two tasks].
+
+\textbf{Proposed Solution:} To tackle [state the challenge], our method consists of three main components: 
+1. [component 1: brief description]
+2. [component 2: brief description]
+3. [component 3: brief description]
+
+\textbf{Related Work:} Although [mention prior efforts], there are few works that [describe the gap in existing literature]. For example, [discuss a closely related work and its limitations].
+
+\textbf{Contribution and Overview:} In this work, we propose [module name] to integrate [describe how your work fits the current landscape]. The key idea is that [explain the main idea in a concise manner]. [Elaborate briefly on technical aspects, if necessary].
+
+\textbf{Formal Definition:} Formally, we define [concept] as follows:
+\begin{equation}
+[Insert mathematical formulation]
+\end{equation}
+where [explain each term in the equation].
+
+\textbf{Summary of Contributions:} The main contributions of this paper are summarized as follows:
+\begin{itemize}
+    \item [Contribution 1]
+    \item [Contribution 2]
+    \item [Contribution 3]
+\end{itemize}
+
+[Excellent transition to the next section where you detail the methods/approach.]

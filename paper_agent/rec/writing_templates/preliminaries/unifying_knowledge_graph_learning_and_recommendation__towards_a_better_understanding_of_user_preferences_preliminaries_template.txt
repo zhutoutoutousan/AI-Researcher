@@ -1,0 +1,43 @@
+\section{Preliminaries}
+
+Before introducing our proposed methods, let's first formally define [key concepts or tasks relevant to the study] and provide an overview of [notable existing techniques or models relevant to the study].
+
+\subsection{Tasks and Notations}
+
+\textbf{[Task 1 Name]}: [Multiple sentences explaining the motivation and the objective of the task, including relevant notation and definitions]. The goal is to [describe the goal related to the task].
+
+\textbf{[Task 2 Name]}: [Multiple sentences introducing another task relevant to the research, again including necessary notations and definitions]. This task involves [explain how it relates to the primary research goal].
+
+Let [Model Name] denote the [model type or framework being proposed]. It takes [inputs] and outputs [outputs], such as [describe main outputs or scores]. To handle [relevant issue or challenge], we introduce [describe a novel component or concept if applicable] with [specific definitions, such as vectors or parameters].
+
+[Model Name] is designed as [describe architecture or structure, e.g., single-task, multi-task], where given [inputs, datasets, or other relevant terms], it is capable of [list the outputs or capabilities]. These outputs include [specific outputs or scores], which are based on [describe the relationships or components being learned within the model].
+
+\textbf{Example [X]}: [Provide an illustrative example that demonstrates the key functionality of the proposed model or method, including components from the previous sections]. This example illustrates [describe how it achieves the intends outcomes related to the tasks].
+
+Next, we will provide a description of [existing relation, method or technique relevant to the core model].
+
+\subsection{[Relevant Method or Technique for Comparison]}
+
+Learning [describe the nature of a method or representation] provides an effective way to [explain the importance of the method in the context of your research focus]. [Reference notable existing method] is commonly used due to its [mention advantages and effectiveness].
+
+However, [discuss potential limitations or challenges with this method]. Therefore, [Name or describe the technique being discussed] [explain how it improves upon the mentioned method]. 
+
+It defines [describe metrics or scoring functions relevant to the method] as follows:
+
+\begin{equation}
+f( \text{parameters} ) = [Mathematical formulation]
+\end{equation}
+
+where a lower score indicates [explain the significance of the score in context]. 
+
+In addition, the training procedure [describe the training objective, goal or method].
+
+\begin{equation}
+L_k = [Mathematical formulation]
+\end{equation}
+
+where [provide explanations for terms, components, hyperparameters, etc.]. 
+
+The objective of [method/technique] is to [reiterate main purpose or desired outcome of the training]. 
+
+This structure creates a logical flow from problem definition to methodology description, facilitating a clear understanding of [summarize the expected goals of the study].
