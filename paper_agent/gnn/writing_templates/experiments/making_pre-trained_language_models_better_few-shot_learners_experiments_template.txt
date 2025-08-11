@@ -1,0 +1,54 @@
+\section{Experiments}
+
+We present our main results and address several research questions pertaining to our [Approach Name]. Implementation details are in [Appendix Reference].
+
+\subsection{Main Results}
+
+We use [model name] and set \( K = [value] \) in our experiments. A comparison of using [model A] vs [model B] can be found in [Appendix Reference]. For [specific task], in our main table, we report [specific method descriptors] only (which consistently performs the best, see Table [number]). To put our results in perspective, we compare to a number of baselines, namely: 
+1. [Baseline Description 1]
+2. [Baseline Description 2]
+3. [Baseline Description 3]
+4. [Baseline Description 4]
+5. [Baseline Description 5]
+
+\textbf{Single-prompt results.} Table [number] shows our main results using a single prompt, either from our [source] or the best generated ones. First, [description of initial findings regarding performance]. Also, [another observation about comparative performance]. 
+
+\begin{table}[ht]
+\centering
+\caption{[Table title]}
+\label{tab:example}
+\begin{tabular}{|c|c|c|}
+\hline
+Method  & [Metric 1] & [Metric 2] \\ \hline
+[Method 1] & [Result 1] & [Result 2] \\
+[Method 2] & [Result 1] & [Result 2] \\
+\hline
+\end{tabular}
+\end{table}
+
+Second, [further findings about performance comparisons]. Overall, our [descriptive summary of contributions] achieves [quantifiable gain] compared to [another method].
+
+\subsection{Analysis of Generated Prompts}
+
+Table [number] provides the results of using [comparison of conditions]. For [specific method], we compare [method variants] in which we start from [base comparison], apply [method], and then [further method]. In most cases, [results summary regarding performance]. 
+
+\begin{table}[ht]
+\centering
+\caption{[Table title]}
+\label{tab:example2}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Condition  & [Metric 1] & [Metric 2] & [Metric 3] \\ \hline
+[Condition 1] & [Result 1] & [Result 2] & [Result 3] \\
+[Condition 2] & [Result 1] & [Result 2] & [Result 3] \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Analysis of Demonstration Sampling}
+
+Table [number] compares the performance of demonstrations using [sampling methods]. We acknowledge that [context about specific limits] but find that in either case, [key finding about the effectiveness of a method].
+
+\subsection{Sample Efficiency}
+
+Figure [number] illustrates how [description of comparison] compares as \( K \) increases. For [specific task], despite using only [number of examples], [description of findings]. On the harder task of [another task], [performance trends].

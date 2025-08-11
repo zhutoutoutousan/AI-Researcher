@@ -1,0 +1,86 @@
+2025-01-27 06:37:17,342 [INFO] 
+==================================================
+Starting experiment set: refined_base
+==================================================
+2025-01-27 06:37:17,379 [INFO] Starting experiment: refined_base
+2025-01-27 06:37:17,380 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 3, 'n_intents': 128, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.2, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda')}
+2025-01-27 06:38:33,083 [INFO] Epoch 1: Loss=20.3267, BPR Loss=0.3793, Contrast Loss=40.1202, Reg Loss=0.0769
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.6585, LR=0.001000
+2025-01-27 06:40:10,413 [INFO] Epoch 2: Loss=3.2575, BPR Loss=0.0650, Contrast Loss=6.3042, Reg Loss=0.0729
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.7630, LR=0.001000
+2025-01-27 06:41:34,430 [INFO] Epoch 3: Loss=3.0482, BPR Loss=0.0562, Contrast Loss=5.8894, Reg Loss=0.0754
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.8080, LR=0.001000
+2025-01-27 06:45:21,260 [INFO] Epoch 4: Loss=2.9068, BPR Loss=0.0508, Contrast Loss=5.6093, Reg Loss=0.0768
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.8642, LR=0.001000
+2025-01-27 06:46:47,366 [INFO] Epoch 5: Loss=2.8083, BPR Loss=0.0474, Contrast Loss=5.4140, Reg Loss=0.0776
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.8654, LR=0.001000
+2025-01-27 06:48:04,685 [INFO] Epoch 6: Loss=2.7297, BPR Loss=0.0450, Contrast Loss=5.2579, Reg Loss=0.0783
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.8975, LR=0.001000
+2025-01-27 06:49:21,959 [INFO] Epoch 7: Loss=2.6716, BPR Loss=0.0424, Contrast Loss=5.1435, Reg Loss=0.0787
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.9031, LR=0.001000
+2025-01-27 06:50:34,688 [INFO] Epoch 8: Loss=2.5819, BPR Loss=0.0411, Contrast Loss=4.9638, Reg Loss=0.0794
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.9454, LR=0.000500
+2025-01-27 06:51:52,698 [INFO] Epoch 9: Loss=2.5367, BPR Loss=0.0406, Contrast Loss=4.8731, Reg Loss=0.0799
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.9483, LR=0.000500
+2025-01-27 06:53:09,441 [INFO] Epoch 10: Loss=2.5125, BPR Loss=0.0403, Contrast Loss=4.8246, Reg Loss=0.0801
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.9544, LR=0.000500
+2025-01-27 06:53:09,441 [INFO] Early stopping triggered at epoch 10
+2025-01-27 06:53:09,527 [INFO] Best model at epoch 1 with Recall@20=0.0000
+2025-01-27 06:53:09,668 [INFO] 
+==================================================
+Starting experiment set: hierarchical_intent
+==================================================
+2025-01-27 06:53:09,669 [INFO] Starting experiment: hierarchical_intent
+2025-01-27 06:53:09,669 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 3, 'n_intents': 256, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.2, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda')}
+2025-01-27 06:54:45,084 [INFO] Epoch 1: Loss=13.1442, BPR Loss=0.2654, Contrast Loss=25.8609, Reg Loss=0.0810
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.7338, LR=0.001000
+2025-01-27 06:56:15,811 [INFO] Epoch 2: Loss=3.1896, BPR Loss=0.0646, Contrast Loss=6.1637, Reg Loss=0.0754
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.8222, LR=0.001000
+2025-01-27 06:57:46,250 [INFO] Epoch 3: Loss=2.9950, BPR Loss=0.0559, Contrast Loss=5.7809, Reg Loss=0.0766
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.8888, LR=0.001000
+2025-01-27 06:59:16,744 [INFO] Epoch 4: Loss=2.8714, BPR Loss=0.0503, Contrast Loss=5.5366, Reg Loss=0.0779
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.9113, LR=0.001000
+2025-01-27 07:00:46,771 [INFO] Epoch 5: Loss=2.7779, BPR Loss=0.0467, Contrast Loss=5.3512, Reg Loss=0.0789
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.9177, LR=0.001000
+2025-01-27 07:02:16,696 [INFO] Epoch 6: Loss=2.7135, BPR Loss=0.0444, Contrast Loss=5.2235, Reg Loss=0.0795
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.9287, LR=0.001000
+2025-01-27 07:03:47,615 [INFO] Epoch 7: Loss=2.6534, BPR Loss=0.0419, Contrast Loss=5.1047, Reg Loss=0.0801
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.9167, LR=0.001000
+2025-01-27 07:05:17,969 [INFO] Epoch 8: Loss=2.5634, BPR Loss=0.0401, Contrast Loss=4.9250, Reg Loss=0.0809
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.9591, LR=0.000500
+2025-01-27 07:06:48,586 [INFO] Epoch 9: Loss=2.5247, BPR Loss=0.0399, Contrast Loss=4.8470, Reg Loss=0.0813
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.9843, LR=0.000500
+2025-01-27 07:08:33,302 [INFO] Epoch 10: Loss=2.4954, BPR Loss=0.0396, Contrast Loss=4.7882, Reg Loss=0.0815
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.9793, LR=0.000500
+2025-01-27 07:08:33,302 [INFO] Early stopping triggered at epoch 10
+2025-01-27 07:08:33,305 [INFO] Best model at epoch 1 with Recall@20=0.0000
+2025-01-27 07:08:33,440 [INFO] 
+==================================================
+Starting experiment set: deep_gnn
+==================================================
+2025-01-27 07:08:33,441 [INFO] Starting experiment: deep_gnn
+2025-01-27 07:08:33,441 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 4, 'n_intents': 128, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.3, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda')}
+2025-01-27 07:10:13,912 [INFO] Epoch 1: Loss=21.6658, BPR Loss=0.3096, Contrast Loss=42.8725, Reg Loss=0.0747
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.3079, LR=0.001000
+2025-01-27 07:11:48,435 [INFO] Epoch 2: Loss=3.4419, BPR Loss=0.0746, Contrast Loss=6.6750, Reg Loss=0.0671
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.4864, LR=0.001000
+2025-01-27 07:13:22,727 [INFO] Epoch 3: Loss=3.2013, BPR Loss=0.0657, Contrast Loss=6.1959, Reg Loss=0.0705
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.5884, LR=0.001000
+2025-01-27 07:14:54,234 [INFO] Epoch 4: Loss=3.0432, BPR Loss=0.0608, Contrast Loss=5.8804, Reg Loss=0.0726
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.6626, LR=0.001000
+2025-01-27 07:16:29,914 [INFO] Epoch 5: Loss=2.9374, BPR Loss=0.0569, Contrast Loss=5.6704, Reg Loss=0.0738
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.7189, LR=0.001000
+2025-01-27 07:17:58,183 [INFO] Epoch 6: Loss=2.8561, BPR Loss=0.0533, Contrast Loss=5.5096, Reg Loss=0.0747
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.7309, LR=0.001000
+2025-01-27 07:19:33,284 [INFO] Epoch 7: Loss=2.7936, BPR Loss=0.0507, Contrast Loss=5.3859, Reg Loss=0.0753
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.7607, LR=0.001000
+2025-01-27 07:21:11,160 [INFO] Epoch 8: Loss=2.7007, BPR Loss=0.0478, Contrast Loss=5.2012, Reg Loss=0.0762
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.8032, LR=0.000500
+2025-01-27 07:22:48,551 [INFO] Epoch 9: Loss=2.6572, BPR Loss=0.0472, Contrast Loss=5.1134, Reg Loss=0.0769
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.8312, LR=0.000500
+2025-01-27 07:24:21,949 [INFO] Epoch 10: Loss=2.6250, BPR Loss=0.0461, Contrast Loss=5.0492, Reg Loss=0.0774
+Recall@20=0.0000, NDCG@20=0.0000, Recall@40=0.0000, NDCG@40=0.0000, MAD=1.8276, LR=0.000500
+2025-01-27 07:24:21,949 [INFO] Early stopping triggered at epoch 10
+2025-01-27 07:24:21,954 [INFO] Best model at epoch 1 with Recall@20=0.0000
+2025-01-27 07:24:22,153 [INFO] 
+Revision experiments completed. Results saved.

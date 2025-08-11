@@ -1,0 +1,152 @@
+answer: 'To determine the maximum value of \( e \), we can use the method of Lagrange
+  multipliers or apply the Cauchy-Schwarz inequality. Here, we will use the Cauchy-Schwarz
+  inequality for simplicity.
+
+
+  We are given:
+
+  \[
+
+  a + b + c + d + e = 8,
+
+  \]
+
+  \[
+
+  a^2 + b^2 + c^2 + d^2 + e^2 = 16.
+
+  \]
+
+
+  Let \( S = a + b + c + d \) and \( Q = a^2 + b^2 + c^2 + d^2 \). Then, we have:
+
+  \[
+
+  S + e = 8 \quad \text{and} \quad Q + e^2 = 16.
+
+  \]
+
+
+  We want to maximize \( e \). To do this, we need to minimize \( Q \) because \(
+  Q = 16 - e^2 \). The minimum value of \( Q \) occurs when \( a = b = c = d \), due
+  to the Cauchy-Schwarz inequality. Let \( a = b = c = d = x \). Then:
+
+  \[
+
+  S = 4x \quad \text{and} \quad Q = 4x^2.
+
+  \]
+
+
+  Substituting into the equations:
+
+  \[
+
+  4x + e = 8 \quad \Rightarrow \quad e = 8 - 4x,
+
+  \]
+
+  \[
+
+  4x^2 + e^2 = 16.
+
+  \]
+
+
+  Substitute \( e = 8 - 4x \) into the second equation:
+
+  \[
+
+  4x^2 + (8 - 4x)^2 = 16.
+
+  \]
+
+  \[
+
+  4x^2 + 64 - 64x + 16x^2 = 16.
+
+  \]
+
+  \[
+
+  20x^2 - 64x + 64 = 16.
+
+  \]
+
+  \[
+
+  20x^2 - 64x + 48 = 0.
+
+  \]
+
+  \[
+
+  5x^2 - 16x + 12 = 0.
+
+  \]
+
+
+  Solving this quadratic equation:
+
+  \[
+
+  x = \frac{16 \pm \sqrt{(-16)^2 - 4 \cdot 5 \cdot 12}}{2 \cdot 5} = \frac{16 \pm
+  \sqrt{256 - 240}}{10} = \frac{16 \pm \sqrt{16}}{10} = \frac{16 \pm 4}{10}.
+
+  \]
+
+
+  Thus, \( x = 2 \) or \( x = \frac{6}{5} \).
+
+
+  If \( x = 2 \), then \( e = 8 - 4 \cdot 2 = 0 \).
+
+
+  If \( x = \frac{6}{5} \), then \( e = 8 - 4 \cdot \frac{6}{5} = 8 - \frac{24}{5}
+  = \frac{16}{5} \).
+
+
+  The maximum value of \( e \) is \( \frac{16}{5} \).
+
+
+  Final Answer: The final answer is \(\frac{16}{5}\). I hope it is correct.'
+gt_answer: \frac{16}{5}
+prompt: "Problem:\nFind the domain of the expression  $\\frac{\\sqrt{x-2}}{\\sqrt{5-x}}$.}\n\
+  \nSolution:\nThe expressions inside each square root must be non-negative. Therefore,\
+  \ $x-2 \\ge 0$, so $x\\ge2$, and $5 - x \\ge 0$, so $x \\le 5$. Also, the denominator\
+  \ cannot be equal to zero, so $5-x>0$, which gives $x<5$. Therefore, the domain\
+  \ of the expression is $\\boxed{[2,5)}$.\nFinal Answer: The final answer is $[2,5)$.\
+  \ I hope it is correct.\n\nProblem:\nIf $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B}\
+  \ = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$\n\nSolution:\nWe have that\
+  \ $\\det (\\mathbf{A} \\mathbf{B}) = (\\det \\mathbf{A})(\\det \\mathbf{B}) = (2)(12)\
+  \ = \\boxed{24}.$\nFinal Answer: The final answer is $24$. I hope it is correct.\n\
+  \nProblem:\nTerrell usually lifts two 20-pound weights 12 times. If he uses two\
+  \ 15-pound weights instead, how many times must Terrell lift them in order to lift\
+  \ the same total weight?\n\nSolution:\nIf Terrell lifts two 20-pound weights 12\
+  \ times, he lifts a total of $2\\cdot 12\\cdot20=480$ pounds of weight.  If he lifts\
+  \ two 15-pound weights instead for $n$ times, he will lift a total of $2\\cdot15\\\
+  cdot n=30n$ pounds of weight.  Equating this to 480 pounds, we can solve for $n$:\n\
+  \\begin{align*}\n30n&=480\\\n\\Rightarrow\\qquad n&=480/30=\\boxed{16}\n\\end{align*}\n\
+  Final Answer: The final answer is $16$. I hope it is correct.\n\nProblem:\nIf the\
+  \ system of equations\n\n\\begin{align*}\n6x-4y&=a,\\\n6y-9x &=b.\n\\end{align*}has\
+  \ a solution $(x, y)$ where $x$ and $y$ are both nonzero,\nfind $\\frac{a}{b},$\
+  \ assuming $b$ is nonzero.\n\nSolution:\nIf we multiply the first equation by $-\\\
+  frac{3}{2}$, we obtain\n\n$$6y-9x=-\\frac{3}{2}a.$$Since we also know that $6y-9x=b$,\
+  \ we have\n\n$$-\\frac{3}{2}a=b\\Rightarrow\\frac{a}{b}=\\boxed{-\\frac{2}{3}}.$$\n\
+  Final Answer: The final answer is $-\\frac{2}{3}$. I hope it is correct.\n\nPlease\
+  \ answer the following math question. You should think step by step to solve it.\n\
+  \nProblem:\nGiven that $a,$ $b,$ $c,$ $d,$ $e$ are real numbers such that\n\\begin{align*}\n\
+  a + b + c + d + e &= 8, \\\\\na^2 + b^2 + c^2 + d^2 + e^2 &= 16.\n\\end{align*}Determine\
+  \ the maximum value of $e.$\n\nPlease given your final answer (answer ONLY) within\
+  \ the format of `Final Answer: The final answer is <answer>. I hope it is correct.`\
+  \ after your reasoning \nFor example: According to ...\nFinal Answer: The final\
+  \ answer is $24$. I hope it is correct.\n"
+question: 'Given that $a,$ $b,$ $c,$ $d,$ $e$ are real numbers such that
+
+  \begin{align*}
+
+  a + b + c + d + e &= 8, \\
+
+  a^2 + b^2 + c^2 + d^2 + e^2 &= 16.
+
+  \end{align*}Determine the maximum value of $e.$'

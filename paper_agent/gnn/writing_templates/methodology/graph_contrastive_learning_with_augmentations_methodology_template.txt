@@ -1,0 +1,61 @@
+\section{Methodology}
+
+\subsection{[First Subsection Title]}
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method, referencing relevant literature.]
+
+We focus on [specific focus area or application]. Given a [specific data structure] $X \in \{X_{m} : m \in M\}$ in the dataset of $M$ units, we formulate the transformation $\hat{X}$ satisfying: $\hat{X} \sim q(\hat{X}|X)$, where $q(\cdot|X)$ is [description of distribution and its significance]. For example, [example from a related domain].
+
+When it comes to [specific challenge], one challenge is [description of the challenge]. In other words, for [different categories or domains], [explanation of varying requirements]. We mainly focus on [categories or domains of interest]. Next, we propose [number] general strategies for [focus area] and discuss the intuitive priors that they introduce.
+
+\begin{table}[ht]
+\centering
+\caption{Overview of [overview title].}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Method} & \textbf{Type} & \textbf{Underlying Prior} \\ \hline
+[Method 1] & [Type] & [Prior] \\ \hline
+[Method 2] & [Type] & [Prior] \\ \hline
+[Method 3] & [Type] & [Prior] \\ \hline
+[Method 4] & [Type] & [Prior] \\ \hline
+\end{tabular}
+\end{table}
+
+[Detailed explanation of the first method, including any assumptions or likelihoods.]
+
+[Detailed explanation of the second method, including any assumptions or likelihoods.]
+
+[Detailed explanation of the third method, including any assumptions or likelihoods.]
+
+[Detailed explanation of the fourth method, including any assumptions or likelihoods.]
+
+\begin{figure}[ht]
+[Insert figure description and caption.]
+\centering
+\includegraphics[width=\textwidth]{[path to figure]}
+\end{figure}
+
+[Additional discussion or context about the parameters or methodologies mentioned.]
+
+\subsection{[Second Subsection Title]}
+
+Motivated by [relevant motivation], we propose a [title of the proposed framework or method] for [specific application]. In [specific domain], [description of the objective].
+
+The framework consists of the following [number] major components:
+
+\begin{itemize}
+    \item [(1)] [Component 1 description, detailing its role and significance.]
+    \item [(2)] [Component 2 description, detailing its role and significance.]
+    \item [(3)] [Component 3 description, detailing its role and significance.]
+    \item [(4)] [Component 4 description, detailing its role and significance.]
+\end{itemize}
+
+[Description of the processing, workflow, or logic between the components, including any interim results.]
+
+Denote [relevant notation] as $sim(z_{n,i}, z_{n,j}) = \frac{z^{T}_{n,i} z_{n,j}}{\| z_{n,i} \| \| z_{n,j} \|}$, so that [mathematical formulation or necessary equations]. 
+
+The final [objective or result] is defined across all [context]. The proposed [method or framework] is summarized in [appendix, section, or reference].
+
+[Personal discussion about implications or theoretical contributions, including references to existing research.]
+
+Furthermore, we [draw connections, compare with other approaches, or describe limitations]. The proposed [method or framework] can also be instantiated as [description of variants or related methods].

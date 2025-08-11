@@ -1,0 +1,15 @@
+```latex
+\section{Related Work}
+
+In this section, we briefly review some related work about [general topic, e.g., specific research area], [technique/technology] employed for [application], and [another relevant area].
+
+Exploiting [general method/concept] has attracted significant attention in recent years \cite{citation1, citation2, citation3}. One common assumption about these models is that [describe assumption or theory], which can be proven by [related theory or concept] \cite{citation4, citation5}. Along this line, [Previous Work 1] \cite{citation6} proposed [describe the method/approach] that [explain the main contribution]. [Previous Work 2] \cite{citation7} modeled [describe what was modeled] and [describe key features]. [Previous Work 3] \cite{citation8} [describe another approach], and [describe the insights or contributions]. Comprehensive overviews on [relevant system/approach] can be found in surveys \cite{citation9}.
+
+In recent years, [second main topic] has had a great impact on [describe how it relates to the research area, e.g., learning feature representations], in various fields, such as [provide examples, e.g., field1, field2, field3]. Some recent efforts have applied [this technique] to [specific tasks] and shown promising results \cite{citation10}, but most of them used [describe the limitation or focus]. Besides, [Previous Work 4] \cite{citation11} presented [describe method or framework] to [describe objective].
+
+However, the application of [this technique] in [specific area] is [describe rarity or issue] until very recently. In particular, [Recent Work 1] \cite{citation12} [describe how it extends previous work and its contributions]. However, the limitation is [describe limitations of this work]. [Recent Work 2] \cite{citation13} developed [describe the focus and methodology] and [explain the contribution]. In all these works, they addressed [describe the common aspect related to your work], which is different from [describe traditional methods].
+
+Most related to our task with [specific technique] includes [Relevant Work 1] \cite{citation14} and [Relevant Work 2] \cite{citation15}. [Relevant Work 1] \cite{citation14} [describe method and main contributions]. [Relevant Work 2] \cite{citation15} [explain how it integrates [describe key concepts or methods]].
+
+More recently, [Emerging Technology/Methodology] has been proven to be capable of [describe capability or impact] \cite{citation16, citation17, citation18}. In the task of [specific application, e.g., recommender systems], [describe the data structure relevant to the application]. Therefore, [new methodology] has been proposed to [solve the problem] \cite{citation19, citation20, citation21}. [Previous Work 3] \cite{citation22} adopted [describe how the method works], and [describe results or contributions]. [Previous Work 4] \cite{citation23} proposed [describe the framework or method implemented]. Despite the compelling success achieved by previous work, little attention has been paid to [describe the gap or issue]. In this paper, we propose [briefly state what you propose to address this gap].
+```

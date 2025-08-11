@@ -1,0 +1,21 @@
+\section*{Abstract}
+
+\textbf{[Motivational Statement]} Inspired by [previous work/technique], we propose [module name] to address [challenge].
+
+\textbf{[Overview of Approach]} To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3]. 
+
+\textbf{[Intuition and Motivation]} [Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+\textbf{[Workflow Description]} [A paragraph describing the detailed workflow of the module]
+
+\textbf{[Comparison with Existing Methods]} [Several sentences comparing the proposed method with existing approaches]
+
+\textbf{[Key Definitions and Formulations]} Formally, we define [concept] as follows:
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+where [Detailed explanation of each term in the equations].
+
+\textbf{[Results and Contributions]} In particular, we present [summary of results or key findings], with [specific achievements or benchmarks]. 
+
+\textbf{[Availability]} Code and pretrained models can be found at [link].

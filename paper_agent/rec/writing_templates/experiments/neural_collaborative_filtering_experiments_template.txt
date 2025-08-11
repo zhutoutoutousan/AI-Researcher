@@ -1,0 +1,80 @@
+```latex
+\section{EXPERIMENTS}
+
+In this section, we conduct experiments aimed at addressing the following research questions:
+
+\begin{itemize}
+    \item RQ1: [State the first research question]
+    \item RQ2: [State the second research question]
+    \item RQ3: [State the third research question]
+\end{itemize}
+
+In what follows, we first present the experimental settings, followed by addressing the above research questions.
+
+\subsection{Experimental Settings}
+
+\textbf{Datasets.} We experimented with [insert number] publicly accessible datasets: [Dataset 1 Name] and [Dataset 2 Name]. The characteristics of the datasets are summarized in Table \ref{table:datasets}.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Dataset & Interaction\# & Item\# & User\# & Sparsity \\
+        \hline
+        [Dataset 1 Name] & [Data1 Interaction#] & [Data1 Item#] & [Data1 User#] & [Data1 Sparsity] \\
+        [Dataset 2 Name] & [Data2 Interaction#] & [Data2 Item#] & [Data2 User#] & [Data2 Sparsity] \\
+        \hline
+    \end{tabular}
+    \caption{Statistics of the evaluation datasets.}
+    \label{table:datasets}
+\end{table}
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method.]
+
+\textbf{Evaluation Protocols.} We adopted [describe the evaluation protocol], using [describe metrics, e.g., Hit Ratio, NDCG] to measure the performance.
+
+[Several sentences comparing the proposed method with existing approaches.]
+
+\textbf{Baselines.} We compared our proposed methods, [Method 1], [Method 2], and [Method 3], with the following baselines:
+
+\begin{itemize}
+    \item [Baseline 1 Description]
+    \item [Baseline 2 Description]
+    \item [Baseline 3 Description]
+\end{itemize}
+
+\textbf{Parameter Settings.} We implemented our proposed models based on [Framework/Library]. To determine hyper-parameters, we [describe the hyper-parameter tuning approach]. [Further details about model training and parameter settings.]
+
+\subsection{Performance Comparison (RQ1)}
+
+[Insert performance comparison results related to RQ1, including figures and interpretations.]
+
+\subsubsection{[Subsection Title Related to RQ1, if needed]}
+
+[Discuss any specific experiments or observations related to RQ1 with supporting data.]
+
+\subsection{[Next Research Question Title] (RQ2)}
+
+[Insert performance results and discussions regarding RQ2.]
+
+\subsection{Is [Method/Approach] Helpful? (RQ3)}
+
+[Insert analysis related to RQ3, discussing the utility of certain techniques, structures, or methodologies with pertinent results.]
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        Factors & [Metric 1] & [Metric 2] & [Metric 3] \\
+        \hline
+        [Condition 1] & [Result1] & [Result1 Metric 2] & [Result1 Metric 3] \\
+        [Condition 2] & [Result2] & [Result2 Metric 2] & [Result2 Metric 3] \\
+        \hline
+    \end{tabular}
+    \caption{Performance of [method] with [different configurations].}
+    \label{table:performance}
+\end{table}
+
+[Further analysis on how model architecture or configuration affects the results.]
+
+```

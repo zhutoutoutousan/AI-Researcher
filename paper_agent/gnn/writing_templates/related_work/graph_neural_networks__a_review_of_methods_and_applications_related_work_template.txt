@@ -1,0 +1,17 @@
+```latex
+\section{Related Work}
+
+There exists several comprehensive reviews on [topic/area]. [Author(s) et al. (Year)] provide a thorough review of [specific aspect], which presents its problems, difficulties, solutions, applications, and future directions. [Author(s) et al. (Year)] propose another comprehensive overview of [specific subtopic]. However, they mainly focus on [specific aspect] while we investigate [alternate aspect or issue].
+
+Papers by [Author(s) et al. (Year)], [Author(s) et al. (Year)], and [Author(s) et al. (Year)] are the most up-to-date survey papers on [topic] and they mainly focus on [specific focus]. [Author(s) et al. (Year)] categorize [topic] into [number] groups: [group 1], [group 2], [group 3], and [group 4]. [Author(s) et al. (Year)] provide a systematic overview of [different methods or models] and [Author(s) et al. (Year)] propose a [model name] to [unify/compare] [specific methodologies]. Our paper provides a different taxonomy from them and we mainly focus on [specific models or approaches]. Furthermore, we summarize [mention types or variants] and also provide a detailed summary of [application domain].
+
+There have also been several surveys focusing on [specific subfields of topic]. [Author(s) et al. (Year)] and [Author(s) et al. (Year)] give detailed overviews for [specific methods or approaches]. [Author(s) et al. (Year)] provide a review over [specific technique]. The paper proposed by [Author(s) et al. (Year)] focuses on [specific aspect], where [description]. [Author(s) et al. (Year)] review existing models for [specific scenario]. [Author(s) et al. (Year)] summarize [methods or techniques] for [specific purpose]. We conclude [specific topics] in [Section number(s)].
+
+In this paper, we provide a thorough review of different [main topic] as well as a systematic taxonomy of the [applications]. To summarize, our contributions are:
+
+\begin{itemize}
+    \item [Contribution 1]: We provide a detailed review over existing [related models or methods]. We present a general [pipeline/model description] and discuss the variants of each module. We also introduce [relevant topics or analyses].
+    \item [Contribution 2]: We systematically categorize the [applications] and divide them into [category 1] and [category 2]. We present several major applications and their corresponding methods for each scenario.
+    \item [Contribution 3]: We propose [number] open problems for future research. We provide a thorough analysis of each problem and propose future research directions.
+\end{itemize}
+```

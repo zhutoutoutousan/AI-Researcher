@@ -1,0 +1,33 @@
+```latex
+\section{Preliminaries and Related Work}
+
+The goal of [general objective] is to [briefly explain the significance and relevance]. In recent years, [broad trend or observation]. In the following, we first introduce the preliminaries about [specific topic] and then review [related approaches or categories].
+
+\subsection{Preliminaries of [Specific Topic]}
+
+Recent years have witnessed the success of [specific models/techniques] for [specific application/domain]. A [specific model] can be regarded as [brief explanation of the core concept]. Formally, we define [concept] as follows:
+
+\begin{equation}
+[Mathematical formulation of the concept]
+\end{equation}
+
+where [explanation of notation].
+
+There are [number] basic operators for [specific technique], which are [operator 1] and [operator 2]. Among them, [operator 1] represents [brief description]. [Operator 2] serves as [description of its purpose]. [Description of additional relevant techniques or components, if any]. 
+
+Furthermore, various [specific models/techniques] have been proposed. For example, [model 1] [brief description and citation]. [Model 2] proposes [description]. Additionally, [any other noteworthy models/techniques] [description].
+
+\subsection{Pre-Training for [Specific Area]}
+
+Previous studies have proposed to utilize [specific technique] to [goal], which largely belong to [categories]. The first category is [category name], characterized by [description]. Conversely, we consider [another category] that aims to [goal].
+
+[Transition phrase], researchers have explored [specific area of research]. [Cite works] that propose [description of methodology]. [Highlight differences or advancements in performance here]. 
+
+In addition, there are attempts to [goal or objective related to another area]. [Cite works and describe different strategies, highlighting their significance]. Our work differs by [explain how your approach or focus is distinct].
+
+\subsection{Pre-Training for [Another Domain]}
+
+Pre-training has been widely applied in [domain]. In [domain], early techniques [strategy or method] that primarily used [data source]. Recently, [new strategies] have also been utilized to [goal].
+
+In [another domain], early works focused on [specific techniques]. More recent advancements include [overview of recent developments and their significance]. Take [specific technique or model] as an example, it [methodology and tasks it addresses]. These pre-training approaches are demonstrated to [performance or impact statement].
+```

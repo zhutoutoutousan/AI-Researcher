@@ -1,0 +1,25 @@
+```
+\section{Related Work}
+
+Early works demonstrate [specific previous findings/limitations], e.g. [example task or scenario] (Author1 \& Author2, Year; Author3 \& Author4, Year). We instead [describe the general approach or finding] and identify [specific conditions or factors relevant to the issue]. More recent works investigate [describe recent findings/approaches] (Author5 \& Author6, Year; Author7 \& Author8, Year). Relevant to our work, certain studies reveal [summarize related observations or theories] (Author9 \& Author10, Year; Author11 et al., Year; Author12 et al., Year). Our work differs in that [explain how your work adds to or diverges from previous studies, including any limitations of those studies].
+
+Prior works examine [another domain or application] by [describe the methodology or findings of previous research] (Author13 et al., Year; Author14 et al., Year; Author15 et al., Year). We are the first to [state your unique contribution or perspective] and [elaborate on the broader implications or extensions of your findings].
+
+We organize this section as follows: 
+
+\begin{itemize}
+    \item \textbf{Section 1:} [Brief overview of the first area of related work]
+    \item \textbf{Section 2:} [Detailed exploration of the second area of related work]
+    \item \textbf{Section 3:} [Comparison of methodologies or theories]
+\end{itemize}
+
+To elaborate further, we define [concept or term] as follows:
+
+\begin{equation}
+    [Mathematical formulation or definition here]
+\end{equation}
+
+Specifically, [detailed explanation of each term in the equation].
+
+Furthermore, [summarize the implications of the findings for your research].
+```

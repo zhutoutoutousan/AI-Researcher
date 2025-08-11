@@ -1,0 +1,50 @@
+```latex
+\section{Methodology}
+
+In this section, we present the general design pipeline of [model type] for [specific task] on [specific data type]. Generally, the pipeline contains four steps: (1) [Step 1 description], (2) [Step 2 description], (3) [Step 3 description], and (4) [Step 4 description]. We provide general design principles and some background knowledge in this section. The design details of these steps are discussed in later sections.
+
+\subsection{Step 1: [Title]}
+
+At first, [provide an introductory statement about the importance of this step]. There are usually [number] scenarios: [scenario description 1] and [scenario description 2]. In [scenario type], [detailed explanation about the scenario]. In [other scenario type], [explanation about how to build or derive the necessary structure]. After we complete [this step], the later design process [brief description of the subsequent processes].
+
+\subsection{Step 2: [Title]}
+
+After completing [Step 1], we then need to [introduce the necessity of this step]. 
+
+[Describe various categories/types related to this step, e.g., "Graphs can be categorized as:"]
+
+- **[Category 1]**: [Description of category]
+- **[Category 2]**: [Description of category]
+- **[Category 3]**: [Description of category]
+
+Note that [general observation about the relationships or characteristics of the categories described]. Once we specify the [type/scale/characteristics], this information should be further considered in the design process.
+
+As for [another aspect, e.g., scale], [description of the criteria used]. In this paper, [explanation of how to classify based on specific observations].
+
+\subsection{Step 3: [Title]}
+
+In this step, we should [introduce the focus of this step]. 
+
+For [specific task type], there are usually [number] - [list types or tasks related to the step]:
+
+- **[Task Type 1]**: [Description of the task]
+- **[Task Type 2]**: [Description of the task]
+
+From the perspective of [another consideration], we can categorize [further breakdown of tasks or types]:
+
+- **[Sub-category 1]**: [Description]
+- **[Sub-category 2]**: [Description]
+
+With the task type and the [additional context], we can design a specific [output/metric] for the task. For example, [illustrative statement about choices based on specific scenarios].
+
+\subsection{Step 4: [Title]}
+
+Finally, we can start [introducing this last step]. Some commonly used [techniques/modules] are:
+
+- **[Module 1]**: [Description of the module and its function]
+- **[Module 2]**: [Description of the module and its function]
+- **[Module 3]**: [Description of the module and its function]
+
+With these [modules/techniques], a typical [model/type] is usually constructed by [brief explanation of how they integrate]. An illustration of the general design pipeline is shown in [section or figure reference]. In later sections, we first [explain what is covered in the next sections, relating back to the steps in the pipeline].
+
+```

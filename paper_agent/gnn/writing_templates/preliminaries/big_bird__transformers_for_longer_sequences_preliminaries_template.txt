@@ -1,0 +1,34 @@
+```latex
+\section{Related Work}
+
+In recent years, there have been several notable attempts aimed at addressing [specific challenge or issue]. These can be broadly categorized into two main directions. The first line of work [briefly describe the first direction, including examples of prominent methods or studies]. Notably, these approaches often [mention key features, shortcomings, or requirements].
+
+The second line of work [describe the second direction, including major contributions, methods, and their implications]. Furthermore, [discuss any critical observations or gaps identified in this direction]. 
+
+Our work is closely related to [specific prior work or technique]. This work was designed to [briefly summarize its goals and methodology]. We believe that our approach can [articulate the expected contribution or improvement].
+
+It is essential to highlight that most of the aforementioned methods are [discuss limitations or issues, aiming for objectivity and clarity].
+
+\section{[Module or Method Name] Architecture}
+
+In this section, we describe the [Module or Method Name] model using [briefly introduce the underlying principles or mechanisms]. The [describe the main components or structure] operates on an input sequence $X = (x_{1}, \ldots, x_{n}) \in \mathbb{R}^{n \times d}$. The [introduce the main mechanism or principle] is described by [define the mathematical or conceptual framework].
+
+\[
+\text{[Mathematical formulation or key equation]}
+\]
+
+where [define any significant components of the equation]. To simplify our exposition, we will [mention any simplifications or assumptions made].
+
+Specifically, we [explain the operational mechanism in detail]. This allows us to [discuss the implications or advantages of this approach]. 
+
+To capture local structures in [specific application or context], we define [explain a specific operational detail regarding locality, context, or attentional mechanism]. Our initial experiments indicate that [briefly summarize preliminary findings or insights].
+
+The final piece of the [Module or Method Name] is inspired by [discuss theoretical or empirical analysis relevant to the development of your method]. More specifically, we [explain key insights or components derived from previous work or analysis].
+
+We summarize the key properties and contributions of our method:
+- [List main functionalities or attributes]
+- [State additional features or improvements]
+
+The final architecture for [Module or Method Name] incorporates [summarize the key components or features], which is detailed further in [reference any additional sections or appendices].
+
+```

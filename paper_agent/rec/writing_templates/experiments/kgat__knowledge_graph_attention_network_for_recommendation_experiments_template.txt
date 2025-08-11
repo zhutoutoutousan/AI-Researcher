@@ -1,0 +1,88 @@
+```latex
+\section{Experiments}
+We evaluate our proposed method, particularly the [module name], on [number] real-world datasets. We aim to answer the following research questions:
+
+\begin{itemize}
+    \item RQ1: How does [proposed method] perform compared with state-of-the-art [related methods]?
+    \item RQ2: How do different components (i.e., [component 1], [component 2], [component 3]) affect [proposed method]?
+    \item RQ3: Can [proposed method] provide reasonable explanations about [research aspect]?
+\end{itemize}
+
+\subsection{Dataset Description}
+To evaluate the effectiveness of [proposed method], we utilize [number] benchmark datasets: [dataset 1], [dataset 2], and [dataset 3], which are publicly accessible and vary in terms of [characteristics such as domain, size, and sparsity].
+
+\textbf{[Dataset 1]:} [Description of the dataset including source, settings, and quality assurance methods.]
+
+\textbf{[Dataset 2]:} [Description of the dataset including source, settings, and quality assurance methods.]
+
+\textbf{[Dataset 3]:} [Description of the dataset including source, settings, and quality assurance methods.]
+
+In addition to [dataset characteristics], we construct [knowledge representation] for each dataset. We summarize the statistics in [Table/Figure Reference].
+
+For each dataset, we randomly select [percentage]% of [data type] to constitute the training set and treat the remaining as the test set. [Detailed procedure for validation and negative sampling strategy.]
+
+\subsection{Experimental Settings}
+
+\subsubsection{Evaluation Metrics}
+For each [unit of analysis, e.g., user] in the test set, we [description of evaluation process]. We adopt [number] widely-used evaluation metrics: [metric 1] and [metric 2]. By default, we set [parameter value]. [Explanation of metric reporting.]
+
+\subsubsection{Baselines}
+To demonstrate the effectiveness, we compare our proposed [method] with [number] baseline methods, including [baseline 1], [baseline 2], ..., [baseline n], as follows:
+
+\begin{itemize}
+    \item [Baseline 1]: [Brief description of what it does and its relevance].
+    \item [Baseline 2]: [Brief description of what it does and its relevance].
+    \item [Baseline n]: [Brief description of what it does and its relevance].
+\end{itemize}
+
+\subsubsection{Parameter Settings}
+We implement our [method] in [framework/language]. The [parameter] is fixed to [value] for all models, except [any exceptions]. We optimize all models with [optimization method], where [additional parameter settings and search strategies]. 
+
+\subsection{Performance Comparison (RQ1)}
+We first report the performance of all the methods and then investigate [specific focus of the analysis].
+
+\begin{table}[ht]
+    \caption{Overall Performance Comparison.}
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        Method & [Metric 1] & [Metric 2] & [Metric 3] & [Metric 4] \\ \hline
+        [Baseline 1] & [value] & [value] & [value] & [value] \\ \hline
+        [Baseline n] & [value] & [value] & [value] & [value] \\ \hline
+        [Proposed Method] & [value] & [value] & [value] & [value] \\ \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection{Overall Comparison}
+The performance comparison results are presented in [Table Reference]. We have the following observations:
+
+\begin{itemize}
+    \item [Observation 1]
+    \item [Observation 2]
+    \item [Observation 3]
+\end{itemize}
+
+\subsubsection{Performance Comparison w.r.t. Interaction Sparsity Levels}
+[Discussion on interaction sparsity levels and their significance on the analysis.]
+
+\subsection{Study of [Proposed Method] (RQ2)}
+To gain deeper insights on [specific component or behavior], we investigate its impact. [Follow with specific analyses related to component variations, settings, or impacts, using structured subsections.]
+
+\subsubsection{Effect of Model Depth}
+We vary the depth of [proposed method] to investigate [specific focus]. [Insert observations, results in tabular format or figures, and insights.]
+
+\subsubsection{Effect of [Additional Factors]}
+[Continue with variations relevant to the method's components or configurations, structuring results as necessary.]
+
+\subsubsection{Effect of Knowledge Representation and Attention Mechanism}
+We perform ablation studies by considering [variants of proposed method]. [Summarize findings and observations.]
+
+\subsection{Case Study (RQ3)}
+Leveraging the attention mechanism, we select [specific instance] and extract [behavior-based or attribute-based connectivity]. We visualize [Figure Reference] to illustrate [findings]. The key observations are:
+
+\begin{itemize}
+    \item [Observation 1]
+    \item [Observation 2]
+\end{itemize}
+
+```

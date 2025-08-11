@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{Abstract}
+[Begin with a sentence introducing the main topic, highlighting the significance of the field and its current state of research. Example: "Graph neural networks (GNNs) are [general description of the research area]."]
+
+[Follow with a statement about the existing gap or challenge in the field. Example: "Despite [current achievements], [specific challenge or gap in understanding] remains [state relevance]."]
+
+[Inspired by previous work, we propose [module name/approach] to address [specific challenge or gap].]
+
+[To tackle this challenge, our method consists of three main components: [component 1], [component 2], and [component 3].]
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method.]
+
+[Formally, we define [concept] as follows:]
+\begin{equation}
+[Insert mathematical formulation of the key components here]
+\end{equation}
+
+[Several sentences detailing the effects of different components or terms in the equations.]
+
+[Following the theoretical exposition, discuss experimental or empirical validation. Example: "Experimental results on [specific datasets] demonstrate [findings], reinforcing the theoretical insights."]
+
+[Conclude with a sentence or two summarizing the implications of the findings. Example: "Our findings provide new insights into [specific outcome or future direction of research]."]
+
+\end{document}

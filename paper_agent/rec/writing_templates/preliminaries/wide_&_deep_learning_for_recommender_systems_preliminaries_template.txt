@@ -1,0 +1,24 @@
+```latex
+\section{Overview of [Recommender System Type]}
+
+An overview of the [recommender system type] is shown in Figure \ref{figure_label}. A query, which can include various user and contextual features, is generated when a user [describes user action, e.g., visits the app store]. The [recommender system type] returns a list of [items/apps] (also referred to as impressions) on which users can perform certain actions such as [list possible actions, e.g., clicks, purchases]. These user actions, along with the queries and impressions, are recorded in the logs as the training data for the learner.
+
+Given that there are [number] [items/apps] in the database, it is intractable to exhaustively score every [item/app] for every query within the serving latency requirements (often $O([latency time])$ milliseconds). Therefore, the first step upon receiving a query is [first process step, e.g., retrieval]. The [process type] system returns a short list of items that best match the query using various signals, usually a combination of [signal types, e.g., machine-learned models and human-defined rules]. After reducing the candidate pool, the [next process step, e.g., ranking] system ranks all items by their scores. The scores are usually $P(y | x)$, the probability of a user action label $y$ given the features $x$, including user features (e.g., [list user features]), contextual features (e.g., [list contextual features]), and impression features (e.g., [list impression features]). In this paper, we focus on the [specific model or framework] used in the [process type].
+
+\subsection{Motivation and Intuition}
+[Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+\subsection{Detailed Workflow}
+[A paragraph describing the detailed workflow of the module]
+
+\subsection{Comparison with Existing Approaches}
+[Several sentences comparing the proposed method with existing approaches]
+
+\subsection{Mathematical Formulation}
+\begin{equation}
+[P(y | x)] = \text{[Mathematical formulation of the key components]}
+\end{equation}
+
+\subsection{Explanation of Terms}
+[Detailed explanation of each term in the equations]
+```

@@ -1,0 +1,37 @@
+```latex
+\section{Evaluation}
+
+In our evaluation, we compare [method/approach] to other [methods/approaches]. We have chosen the two popular model classes of [class 1] and [class 2]. [Class 1] models are known to outperform [previous work/technique] for the related task of [related task]. In our evaluation, the [class 1] models are learned by [methods/techniques used], i.e. [method 1], [method 2], and [our proposed method]. For [class 2], we compare [method 1] to a model that has been optimized using [our method]. Additionally, we report results for the baseline [baseline method], that [description of the baseline]. Furthermore, we give the theoretical upper bound on [metric] for any [type] ranking method.
+
+\subsection{Datasets}
+
+We use [number] datasets of [description of applications]. The [dataset 1 name] dataset is from [source]. It contains [description of data], totaling [number] [data points]. The task is to [task description]. The second dataset is the [dataset 2 name] dataset from [source]. This dataset contains [description of data]. As we want to solve an implicit feedback task, we removed [specific details about what was removed]. Now the task is to [task description]. For [dataset 2 name], we created a subsample of [number] users, [number] items containing [number] [data points]. We draw the subsample such that [conditions for subsample].
+
+\subsection{Evaluation Methodology}
+
+We use the [evaluation scheme description], where we [description of the evaluation process]. This results in a disjoint train set \( S_{\text{train}} \) and test set \( S_{\text{test}} \). The models are then learned on \( S_{\text{train}} \) and their predicted rankings are evaluated on the test set \( S_{\text{test}} \) by the average [metric/statistic]:
+
+\begin{equation}
+\text{metric} = [mathematical formulation]
+\end{equation}
+
+where the evaluation pairs per user \( u \) are:
+
+\begin{equation}
+E(u) := [definition of evaluation pairs]
+\end{equation}
+
+A higher value of [metric] indicates [interpretation of metric]. The trivial [metric] of a random method is [value] and the best achievable quality is [value].
+
+We repeated all experiments [number] times by drawing new train/test splits in each round. The hyperparameters for all methods are optimized via [optimization method] in the first round and are kept constant in the remaining [number] repetitions.
+
+\subsection{Results and Discussion}
+
+Figure [number] shows the [metric quality] of all models on the [number] datasets. First of all, you can see that [comparison of results]. Comparing the same models among each other one can see [observations about model comparisons]. For example, [detailed explanation of comparison]. [Further observations about optimization or performance]. 
+
+To summarize, our results show [main findings]. The empirical results indicate that [conclusion based on findings]. The results are justified by [supporting argument or analysis].
+
+\subsection{Non-personalized ranking}
+
+Finally, we compare the [metric quality] of our [type] methods to the best possible non-personalized ranking method. In contrast to our [type] methods, a non-personalized ranking method [description of the method]. We compute the theoretical upper-bound [metric description] by optimizing the ranking on the test set \( S_{\text{test}} \). Figure [number] shows that even simple [personalized methods] largely outperform the upper-bound and thus also all non-personalized methods.
+```

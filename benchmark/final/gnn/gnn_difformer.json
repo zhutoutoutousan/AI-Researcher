@@ -1,0 +1,191 @@
+{
+    "target": "DIFFormer: Scalable (Graph) Transformers Induced by Energy Constrained Diffusion",
+    "instance_id": "gnn_difformer",
+    "source_papers": [
+        {
+            "reference": "Diffusion-convolutional neural networks",
+            "rank": 1,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This study serves as a foundational reference for understanding the architecture and principles of graph neural networks and their connection to diffusion processes. It highlights the progress made in designing expressive architectures, which is critical for the development of the proposed model.",
+            "usage": "The methodologies and frameworks from this study were adapted to create a new class of neural models that efficiently handles instance interactions."
+        },
+        {
+            "reference": "Semi-supervised classification with graph convolutional networks",
+            "rank": 2,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This paper provides a pivotal framework for using graphs in semi-supervised learning, which directly influences the design of the energy-constrained diffusion model of the proposed model.",
+            "usage": "The proposed model builds upon the principles of graph-based SSL to develop a technique for learning with partially labeled data in more complex scenarios."
+        },
+        {
+            "reference": "Manifold regularization: A geometric framework for learning from labeled and unlabeled examples",
+            "rank": 3,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This work introduces strategies for learning from unlabeled data while maintaining structural integrity in representations, which has shaped the theoretical underpinning of the proposed model.",
+            "usage": "The concept of maintaining geometric structures in learning models inspired the energy function formulation in the proposed model."
+        },
+        {
+            "reference": "Geometric deep learning: going beyond euclidean data",
+            "rank": 4,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This study discusses the importance of geometric priors in deep learning and has influenced the design of models that factor inter-instance relationships into their architecture.",
+            "usage": "The ideas of leveraging geometric structures were integral in framing the energy-based learning aspect of the proposed model."
+        },
+        {
+            "reference": "Artificial neural networks for solving ordinary and partial differential equations",
+            "rank": 5,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This study provides essential techniques that characterize diffusion processes, which are crucial to the operational design of the proposed model.",
+            "usage": "The methodologies derived from this study were essential for modeling the dynamic state changes of instances within the proposed model."
+        },
+        {
+            "reference": "Scaling graph neural networks with approximate pagerank",
+            "rank": 6,
+            "type": [
+                "component"
+            ],
+            "justification": "This study presents techniques for efficiently scaling graph neural networks, which inform the scalability aspects of the proposed model architecture.",
+            "usage": "The proposed model adapted scaling techniques to handle larger datasets with efficiency, contributing to its ability to work in real-world scenarios."
+        },
+        {
+            "reference": "Learning discrete structures for graph neural networks",
+            "rank": 7,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This study delves into the methods for learning effective representations within graph neural networks, aligning closely with the foundational aspects of the proposed model.",
+            "usage": "Pointed out challenges that reinforced the need for complex interactions in the proposed model."
+        },
+        {
+            "reference": "Semi-supervised learning using gaussian fields and harmonic functions",
+            "rank": 8,
+            "type": [
+                "component"
+            ],
+            "justification": "This study offers insights into semi-supervised learning that leverages structures, similar to the approaches employed in the proposed model for fetching inter-instance information.",
+            "usage": "The strategies and frameworks from this study influenced the energy minimization process in the proposed model."
+        },
+        {
+            "reference": "Graph convolutional networks",
+            "rank": 9,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This foundational work on graph convolutional networks is imperative for understanding how node features can be passed across graph structures, crucial for the structure of the proposed model.",
+            "usage": "The insights into node relationships directly apply to the conceptual model in the proposed model."
+        },
+        {
+            "reference": "Deep learning via semi-supervised embedding",
+            "rank": 10,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This study tackles the utilization of embeddings in semi-supervised settings, aligning with the goals of the proposed model to infer effective representations from limited labeled data.",
+            "usage": "The embedding techniques discussed served as a reference point in guiding the model architecture of the proposed model."
+        },
+        {
+            "reference": "A generalization of transformer networks to graphs",
+            "rank": 11,
+            "type": [
+                "component"
+            ],
+            "justification": "This research extends transformer functionalities to graph-based data, implying a direct influence on the architecture of the proposed model, which merges transformers with graph-based learning.",
+            "usage": "Provided foundational concepts for the transformer-like structure employed in the proposed model."
+        },
+        {
+            "reference": "Graph Convolution and Quadratic Time Complexity",
+            "rank": 12,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This study discusses improvements to graph convolutional methods, key to enhancing the efficiency of node feature propagation in the proposed model.",
+            "usage": "The proposed model incorporates or adapts the techniques described for efficient learning from large graphs."
+        },
+        {
+            "reference": "Bayesian graph convolutional neural networks for semi-supervised classification",
+            "rank": 13,
+            "type": [
+                "component"
+            ],
+            "justification": "The integration of Bayesian perspectives into graph convolution offers a probabilistic framework that informs the model uncertainty in the proposed model.",
+            "usage": "Provided a contrasting viewpoint on uncertainty that strengthens the representation learning aspect of our models."
+        },
+        {
+            "reference": "Do transformers really perform bad for graph representation?",
+            "rank": 14,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This research reinforces the potential transformers have in graph contexts, validating some of the innovations made in the proposed model.",
+            "usage": "Argued and reinforced the efficacy of using transformer frameworks in graphs, aligning with the goals of the proposed model."
+        },
+        {
+            "reference": "Big bird: Transformers for longer sequences",
+            "rank": 15,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This study provides an important overview of how attention mechanisms can manage longer sequences, pivotal in managing the complexity of node interactions.",
+            "usage": "Insights related to computational efficiency in attention mechanisms were incorporated into the design of attention in the proposed model."
+        },
+        {
+            "reference": "Adaptive graph diffusion networks",
+            "rank": 16,
+            "type": [
+                "methodological/component"
+            ],
+            "justification": "This work introduces adaptive mechanisms to graph learning, which heavily influences the adaptability of instance relationships handled by the proposed model.",
+            "usage": "The concepts of dynamic learning from graph structures were applied to the proposed model for improved robustness."
+        },
+        {
+            "reference": "Transformers are RNNs",
+            "rank": 17,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This reference debates the broader applications of transformers, including implications for sequential graph data that can be aligned with the principles of the proposed model.",
+            "usage": "Influenced the conceptual background that supports the transformer architecture in the proposed model."
+        },
+        {
+            "reference": "Collective classification in network data",
+            "rank": 18,
+            "type": [
+                "component"
+            ],
+            "justification": "This research discusses how classification can be organized in a holistic manner in networks, which informs the classification methods used in the proposed model.",
+            "usage": "Incorporated principles of collective classification into the decision-making frameworks of the proposed model."
+        },
+        {
+            "reference": "NodeFormer: A scalable graph structure learning transformer for node classification",
+            "rank": 19,
+            "type": [
+                "conceptual/component"
+            ],
+            "justification": "This study presents a transferable and scalable framework that closely resembles the goals and structure found in the proposed model.",
+            "usage": "The proposed model leverages the innovations presented in NodeFormer as a benchmark for performance against other state-of-the-art models."
+        }
+    ],
+    "authors": [
+        "Qitian Wu",
+        "Chenxiao Yang",
+        "Wentao Zhao",
+        "Yixuan He",
+        "David Wipf",
+        "Junchi Yan"
+    ],
+    "year": 2023,
+    "url": "https://arxiv.org/abs/2301.09474",
+    "abstract": "Real-world data generation often involves complex inter-dependencies among instances, violating the IID-data hypothesis of standard learning paradigms and posing a challenge for uncovering the geometric structures for learning desired instance representations. To this end, we introduce an energy constrained diffusion model which encodes a batch of instances from a dataset into evolutionary states that progressively incorporate other instances' information by their interactions. The diffusion process is constrained by descent criteria w.r.t.~a principled energy function that characterizes the global consistency of instance representations over latent structures. We provide rigorous theory that implies closed-form optimal estimates for the pairwise diffusion strength among arbitrary instance pairs, which gives rise to a new class of neural encoders, dubbed as DIFFormer (diffusion-based Transformers), with two instantiations: a simple version with linear complexity for prohibitive instance numbers, and an advanced version for learning complex structures. Experiments highlight the wide applicability of our model as a general-purpose encoder backbone with superior performance in various tasks, such as node classification on large graphs, semi-supervised image/text classification, and spatial-temporal dynamics prediction.",
+    "citation": 102,
+    "task1": "The proposed approach works on the task of uncovering data dependencies and learning instance representations from datasets that may not have complete or reliable relationships, particularly in semi-supervised contexts like node classification, image/text classification, and spatial-temporal dynamics prediction.\n\nThe core techniques/algorithms used in this paper include an energy-constrained diffusion model represented as a partial differential equation (PDE), an explicit Euler scheme for numerical solutions, and a form of adaptive diffusivity function based on the energy function. The proposed architecture utilizes a diffusion-based Transformer framework that allows for all-pair feature propagation among instances.\n\nThe major technical components serve the following purposes:\n   - **Diffusion Process:** Encodes instances into evolving states by modeling information flow, where instance representations evolve according to a PDE illuminating the relationships among the instances.\n   - **Energy Function:** Provides constraints to regularize the diffusion process and guide the proposed model towards desired low-energy embeddings, enhancing the quality of representations.\n   - **Diffusivity Function:** Specifies the strength of information flow between instances, adapting based on the instance states, and allows for flexible and efficient propagation strategies.\n\nImplementation details for each component:\n   - **Diffusion Process Input:** Requires a batch of instances represented as a matrix of size \\(N \\times D\\), where \\(N\\) is the number of instances and \\(D\\) is the input feature dimension.  \n   - **Diffusion Process Output:** Produces the updated instance representations after \\(K\\) propagation steps. The step size \\(\\tau\\) should be set within the range (0, 1).\n   - **Energy Function:** Implemented as \\(E(Z, k; \\delta) = ||Z - Z^{(k)}||^2_F + \\lambda \\sum_{i,j} \\delta(||z_i - z_j||^2_2)\\), with \\(\\delta\\) being a non-decreasing, concave function.\n   - **Key Parameters:** \n     - Step size \\(\\tau\\)\n     - Layer number \\(K\\) (number of diffusion propagation steps)\n     - Regularization weight \\(\\lambda\\).\n\nStep-by-step description of interactions:\n   - Start by initializing the instance representations.\n   - For each layer of diffusion, compute the diffusivity \\(S(k)\\) based on current embeddings through a function \\(f\\) which can be defined differently depending on the proposed model implementation.\n   - Update the instance representations using the defined diffusion equations, ensuring to conserve states and introduce propagation according to the computed diffusivity.\n   - After \\(K\\) layers of diffusion, apply a final output layer to produce logits for predictions.\n\nCritical implementation details that affect performance:\n   - The choice of diffusivity function \\(f\\) greatly impacts the proposed model's capacity to learn complex dependencies, where specific formulations (like linear or logistic) yield different abilities in capturing inter-instance relationships.\n   - Ensure that the values of \\(\\tau\\) and \\(\\lambda\\) are set appropriately to balance convergence speed and representation quality; using a smaller \\(\\tau\\) may require deeper layers to learn effectively.\n   - Optimization parameters like learning rate and early stopping criteria are essential, particularly for large-scale datasets where convergence behavior can vary widely depending on architecture size and complexity. \n\nThese details establish a necessary framework for implementing the proposed methodology in practice based on the provided research insights.",
+    "task2": "The primary task the research tackles is learning effective representations for real-world data instances that often exhibit complex inter-dependencies and structures, which cannot be adequately modeled under traditional IID assumptions of standard learning paradigms.\n\nCurrent limitations in existing approaches include the difficulty of encoding potential interactions between instance pairs due to the need for sufficient degrees of freedom, which can complicate the learning process, particularly in scenarios with limited labeled data. Furthermore, typical methods struggle with scalability in large datasets due to their computational complexity.\n\nThe core challenges the researchers aim to overcome include addressing the inconsistency between observed relational structures and the underlying data geometry, which can lead to systematic biases in representation learning. Additionally, they seek to build a methodology flexible enough to efficiently learn from large and possibly noisy datasets while ensuring that the inter-dependencies among instances are effectively captured.\n\nKey objectives and intended contributions of this study involve introducing a novel general-purpose encoder framework that leverages a geometric diffusion model to uncover data dependencies through a principled energy minimization process. The contributions also include providing theoretical insights that create a unifying perspective on existing models, alongside practical instantiations that maintain scalability and flexibility for various applications in node classification and other tasks."
+}

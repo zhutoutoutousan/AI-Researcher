@@ -1,0 +1,23 @@
+\section{RELATED WORK}
+Our model draws inspiration from [relevant field/technique] and from recent work on [related topic]. In what follows, we provide a brief overview of related work in both fields.
+
+\subsection{[Subfield 1 Title]}
+A large number of approaches for [specific task] using [related method] have been proposed in recent years, most of which fall into two broad categories: [category 1 description] and [category 2 description]. Prominent examples for [specific method or technique] include [reference 1], [reference 2], and [reference 3].
+
+Recently, attention has shifted to models that [describe recent approaches]. [Method 1] [brief explanation of method's approach]. [Method 2] and [Method 3] [describe how they extend Method 1]. For all these methods, however, [describe common issue/challenge]. [Proposed solution or method] alleviates this by [explain how it addresses the issue].
+
+\subsection{[Subfield 2 Title]}
+Neural networks that operate on [specific structure or data type] have previously been introduced in [reference 1] as [describe type of model]. Their framework requires [describe required process]. This restriction was later alleviated in [reference 2] by [describe improvement]. [Reference 3] introduced [another approach/method] for [describe application]. Their approach [describe limitations].
+
+A related approach to [task] with a [specific type of model] was recently introduced in [reference 4]. They report [describe finding/limitation], limiting the range of possible applications. In a different yet related model, [reference 5] [describe their method briefly].
+
+Our method is based on [foundation of the proposed method], introduced in [reference 6] and later extended by [reference 7] with [describe improvement]. In contrast to these works, we consider [describe the specific context or task]. We show that in this setting, [describe key simplifications or innovations] can be introduced to improve [describe desired outcomes such as scalability and performance]. 
+
+% Option for mathematical formulations
+\subsection{Mathematical Definitions}
+Formally, we define [concept] as follows:
+\begin{equation}
+    [Mathematical formulation here]
+\end{equation}
+
+Here, [detailed explanation of each term in the equations].

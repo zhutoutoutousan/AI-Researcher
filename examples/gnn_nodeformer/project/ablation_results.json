@@ -1,0 +1,86 @@
+{
+    "baseline": {
+        "best_val_acc": 0.322,
+        "best_test_acc": 0.317,
+        "config": {
+            "epochs": 200,
+            "hidden_dim": 64,
+            "num_layers": 2,
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "dropout": 0.5,
+            "temperature": 0.4,
+            "edge_weight": 0.1
+        }
+    },
+    "no_edge_reg": {
+        "best_val_acc": 0.316,
+        "best_test_acc": 0.316,
+        "config": {
+            "epochs": 200,
+            "hidden_dim": 64,
+            "num_layers": 2,
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "dropout": 0.5,
+            "temperature": 0.4,
+            "edge_weight": 0.0
+        }
+    },
+    "high_temp": {
+        "best_val_acc": 0.316,
+        "best_test_acc": 0.319,
+        "config": {
+            "epochs": 200,
+            "hidden_dim": 64,
+            "num_layers": 2,
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "dropout": 0.5,
+            "temperature": 1.0,
+            "edge_weight": 0.1
+        }
+    },
+    "low_temp": {
+        "best_val_acc": 0.316,
+        "best_test_acc": 0.313,
+        "config": {
+            "epochs": 200,
+            "hidden_dim": 64,
+            "num_layers": 2,
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "dropout": 0.5,
+            "temperature": 0.1,
+            "edge_weight": 0.1
+        }
+    },
+    "deep_model": {
+        "best_val_acc": 0.316,
+        "best_test_acc": 0.319,
+        "config": {
+            "epochs": 200,
+            "hidden_dim": 64,
+            "num_layers": 4,
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "dropout": 0.5,
+            "temperature": 0.4,
+            "edge_weight": 0.1
+        }
+    },
+    "high_dropout": {
+        "best_val_acc": 0.314,
+        "best_test_acc": 0.32,
+        "config": {
+            "epochs": 200,
+            "hidden_dim": 64,
+            "num_layers": 2,
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "dropout": 0.8,
+            "temperature": 0.4,
+            "edge_weight": 0.1
+        }
+    }
+}

@@ -1,0 +1,103 @@
+answer: 'Let''s solve the problem step by step.
+
+
+  **Step 1: Define the three consecutive integers.**
+
+  Let the three consecutive integers be \( n-1 \), \( n \), and \( n+1 \), where \(
+  n \) is the middle integer.
+
+
+  **Step 2: Write the equation for the product of the three integers.**
+
+  The product of the three integers is:
+
+  \[
+
+  (n-1) \cdot n \cdot (n+1) = 120.
+
+  \]
+
+  This simplifies to:
+
+  \[
+
+  n(n^2 - 1) = 120.
+
+  \]
+
+
+  **Step 3: Solve for \( n \).**
+
+  We need to find an integer \( n \) such that \( n(n^2 - 1) = 120 \). Let''s test
+  integer values of \( n \):
+
+  - If \( n = 4 \), then \( 4(16 - 1) = 4 \cdot 15 = 60 \), which is less than 120.
+
+  - If \( n = 5 \), then \( 5(25 - 1) = 5 \cdot 24 = 120 \), which matches the condition.
+
+
+  Thus, \( n = 5 \), and the three consecutive integers are \( 4 \), \( 5 \), and
+  \( 6 \).
+
+
+  **Step 4: Verify the second condition.**
+
+  The mean of the three integers is:
+
+  \[
+
+  \frac{4 + 5 + 6}{3} = \frac{15}{3} = 5.
+
+  \]
+
+  The product divided by the mean is:
+
+  \[
+
+  \frac{120}{5} = 24,
+
+  \]
+
+  which matches the given condition.
+
+
+  **Step 5: Identify the largest integer.**
+
+  The largest of the three consecutive integers is \( 6 \).
+
+
+  Final Answer: The final answer is \(6\). I hope it is correct.'
+gt_answer: '6'
+prompt: "Problem:\nFind the domain of the expression  $\\frac{\\sqrt{x-2}}{\\sqrt{5-x}}$.}\n\
+  \nSolution:\nThe expressions inside each square root must be non-negative. Therefore,\
+  \ $x-2 \\ge 0$, so $x\\ge2$, and $5 - x \\ge 0$, so $x \\le 5$. Also, the denominator\
+  \ cannot be equal to zero, so $5-x>0$, which gives $x<5$. Therefore, the domain\
+  \ of the expression is $\\boxed{[2,5)}$.\nFinal Answer: The final answer is $[2,5)$.\
+  \ I hope it is correct.\n\nProblem:\nIf $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B}\
+  \ = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$\n\nSolution:\nWe have that\
+  \ $\\det (\\mathbf{A} \\mathbf{B}) = (\\det \\mathbf{A})(\\det \\mathbf{B}) = (2)(12)\
+  \ = \\boxed{24}.$\nFinal Answer: The final answer is $24$. I hope it is correct.\n\
+  \nProblem:\nTerrell usually lifts two 20-pound weights 12 times. If he uses two\
+  \ 15-pound weights instead, how many times must Terrell lift them in order to lift\
+  \ the same total weight?\n\nSolution:\nIf Terrell lifts two 20-pound weights 12\
+  \ times, he lifts a total of $2\\cdot 12\\cdot20=480$ pounds of weight.  If he lifts\
+  \ two 15-pound weights instead for $n$ times, he will lift a total of $2\\cdot15\\\
+  cdot n=30n$ pounds of weight.  Equating this to 480 pounds, we can solve for $n$:\n\
+  \\begin{align*}\n30n&=480\\\n\\Rightarrow\\qquad n&=480/30=\\boxed{16}\n\\end{align*}\n\
+  Final Answer: The final answer is $16$. I hope it is correct.\n\nProblem:\nIf the\
+  \ system of equations\n\n\\begin{align*}\n6x-4y&=a,\\\n6y-9x &=b.\n\\end{align*}has\
+  \ a solution $(x, y)$ where $x$ and $y$ are both nonzero,\nfind $\\frac{a}{b},$\
+  \ assuming $b$ is nonzero.\n\nSolution:\nIf we multiply the first equation by $-\\\
+  frac{3}{2}$, we obtain\n\n$$6y-9x=-\\frac{3}{2}a.$$Since we also know that $6y-9x=b$,\
+  \ we have\n\n$$-\\frac{3}{2}a=b\\Rightarrow\\frac{a}{b}=\\boxed{-\\frac{2}{3}}.$$\n\
+  Final Answer: The final answer is $-\\frac{2}{3}$. I hope it is correct.\n\nPlease\
+  \ answer the following math question. You should think step by step to solve it.\n\
+  \nProblem:\nThe product of three consecutive integers is 120. That product divided\
+  \ by the mean of the three integers is 24. What is the largest of the three consecutive\
+  \ integers?\n\nPlease given your final answer (answer ONLY) within the format of\
+  \ `Final Answer: The final answer is <answer>. I hope it is correct.` after your\
+  \ reasoning \nFor example: According to ...\nFinal Answer: The final answer is $24$.\
+  \ I hope it is correct.\n"
+question: The product of three consecutive integers is 120. That product divided by
+  the mean of the three integers is 24. What is the largest of the three consecutive
+  integers?

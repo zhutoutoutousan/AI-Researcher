@@ -1,0 +1,79 @@
+```latex
+\section{Experiments}
+
+In this section, we conduct quantitative experiments on [task 1] and [task 2]. For each task, we utilize [number] datasets in different domains and provide further evaluations on [specific challenges or aspects]. We then investigate the mutual impacts between the two tasks during joint training. Finally, we highlight real examples for qualitative analysis to provide an intuitive understanding of [specific aspect]. We publish our project at [project URL].
+
+\subsection{Datasets}
+
+Following [previous work/source], we use [number] publicly available datasets in the [domain 1] and [domain 2] domains: [Dataset 1] and [Dataset 2]. Both datasets consist of [description of dataset structure], which are refined by [method of refinement]. Following most work in [related research field], we treat existing data as [type of interactions] and generate negative ones by [method of negative sampling].
+
+To collect related facts from [data source], we consider triplets that are directly related to [specific entities]. We then preprocess the datasets by: [list of preprocessing steps].
+
+Table~\ref{table_label} shows the statistics of [Dataset 1] and [Dataset 2]. After preprocessing, there are [number] users and [number] items with [number] interactions, where the average number of interactions per user is [value] and the sparsity rate is [value]. The [specific issue] is [description of issue]. 
+
+\subsection{Baselines}
+
+For [task 1], we compare our proposed models with the following state-of-the-art baselines involving [description of the categories of baselines].
+
+- Typical methods: we choose [baselines] because they are foundational and achieve state-of-the-art performance on various datasets.
+- [State-of-the-art method 1] that [description of how it works];
+- [State-of-the-art method 2] that [description of how it works];
+  
+For [task 2], we select [methods] that are widely utilized in this field. We evaluate the above methods to investigate the impacts of different [specific factors].
+
+For fair comparison, we [details about implementation and adjustments made for baselines].
+
+\subsection{Training Details}
+
+We create [training, validation, and test datasets] by [method of splitting the datasets]. We apply a grid search on [models/techniques] to optimize hyperparameters for each task, utilizing settings that [description of settings].
+
+Other hyperparameters are empirically set as follows: [list of hyperparameters with their values]. We define the [specific parameter] to [value] based on [justification]. 
+
+The primary goal in this paper is to investigate [main research objective], hence, our proposed models and baseline methods are trained once for each dataset and evaluated on [tasks].
+
+\subsection{[Task 1]}
+
+In this section, we evaluate our models as well as baseline methods on the task of [task 1]. Given [information about user/item interaction], we [explain ranking process].
+
+\subsubsection{Metrics}
+
+We use [number] evaluation metrics that are widely used in prior work:
+
+- Metric 1: [definition and computation details];
+- Metric 2: [definition and computation details];
+  
+\subsubsection{Overall Results}
+
+Table~\ref{table_label} shows the overall performance of our proposed models alongside baseline methods. Observations include:
+
+- [Observation 1]
+- [Observation 2]
+
+\subsection{[Task 2]}
+
+In this section, we evaluate the task of [task 2]. The goal is to [explain objective of task].
+
+\subsubsection{Metrics}
+
+We use [number] evaluation metrics for this task:
+
+- Metric 1: [definition and computation details];
+- Metric 2: [definition and computation details];
+
+\subsubsection{Overall Results}
+
+Table~\ref{table_label} displays the overall performance. Observations include:
+
+- [Observation 1]
+- [Observation 2]
+
+\subsection{Mutual Benefits of Two Tasks}
+
+Although evaluations of separate tasks have been conducted, it remains unclear how different [specific aspects] affect each other. Thus, we investigate [method of investigation]. 
+
+As shown in Figure~\ref{figure_label}, we can see that [describe observations related to mutual learning].
+
+\subsection{Case Study}
+
+In this section, we present an example from [dataset] to provide an intuitive impression of our findings related to [specific aspect]. We demonstrate [details about the case study].
+```

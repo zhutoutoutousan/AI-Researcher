@@ -1,0 +1,147 @@
+{
+    "target": "Towards the Universal Learning Principle for Graph Neural Networks",
+    "instance_id": "gnn_universal",
+    "source_papers": [
+      {
+        "reference": "Semi-supervised classification with graph convolutional networks",
+        "rank": 1,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This study established a foundational framework for graph convolutional networks (GCNs), significantly influencing the design and methodology for subsequent GNNs. It introduced the core concepts of convolutional operations on graph data and was pivotal in showing the capabilities of the proposed model for representation learning.",
+        "usage": "Served as a baseline for constructing the theoretical framework of the proposed model by contextualizing the propagation mechanisms and graph filters."
+      },
+      {
+        "reference": "Predict then propagate: Graph neural networks meet personalized pagerank",
+        "rank": 2,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This work introduced the Personalized PageRank (PPNP) model, allowing for flexible information propagation across graphs. It highlighted the trade-off in neighbor information weighting, which was crucial for the design of the graph filters within the proposed model.",
+        "usage": "Informed the integration of edge weighting and propagation method into the new learning principle for the proposed model."
+      },
+      {
+        "reference": "Learning theory can (sometimes) explain generalization in graph neural networks",
+        "rank": 3,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "The exploration of generalization in GNNs provided invaluable insights into the theoretical underpinnings required to establish confidence in model performance. This work is essential to justify the scaling and stability of deep architectures like the proposed model.",
+        "usage": "The generalization results guided the theoretical framework behind the convergence properties of the proposed model."
+      },
+      {
+        "reference": "Convolutional neural networks on graphs with fast localized spectral filtering",
+        "rank": 4,
+        "type": [
+          "methodological"
+        ],
+        "justification": "Defferrard et al. presented a method for localized spectral filtering, which shaped the approach to designing filters in GNNs. The polynomial graph filter ideas presented were directly applicable in developing the proposed model.",
+        "usage": "Used to theoretically underpin the construction of graph filters in the proposed model, establishing expectations for their performance."
+      },
+      {
+        "reference": "Adaptive universal generalized pagerank graph neural network",
+        "rank": 5,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This study focused on creating learnable filters using a Generalized PageRank method, which aligns with the filtering approach used in the proposed model. The analysis and architecture developed were crucial for understanding adaptive aggregation.",
+        "usage": "Informed the adaptive components of graph filters, emphasizing learnability in the proposed model's design."
+      },
+      {
+        "reference": "How powerful are k-hop message passing graph neural networks",
+        "rank": 6,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This research provided significant insights into the k-hop message propagation mechanisms and their impacts on GNN performance, underpinning the importance of understanding deeper neighbor interactions for optimal performance.",
+        "usage": "Shaped the conceptual understanding of how neighbor information affects aggregation strategies in the proposed model."
+      },
+      {
+        "reference": "Towards deeper graph neural networks",
+        "rank": 7,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "The exploration of depth in GNNs brings critical evaluations of performance limitations, addressing concerns regarding convergence and stability, which are highly relevant for designing the proposed model's architecture.",
+        "usage": "Guided the consideration of depth and its implications in the proposed approach universal learning principle."
+      },
+      {
+        "reference": "How powerful are graph neural networks?",
+        "rank": 8,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This study delved into the comparative effectiveness of various GNN architectures, providing a framework for evaluating the capabilities and limitations of deep GNNs, directly influencing the proposed model\u2019s design.",
+        "usage": "Influenced the proposed model's design strategy by emphasizing the necessity for both depth and effective propagation."
+      },
+      {
+        "reference": "Learning arbitrary graph spectral filters via bernstein approximation",
+        "rank": 9,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This work developed a learning framework for spectral graph filters, which was essential in expanding the theoretical background for performance expectations of graph-related models like the proposed model.",
+        "usage": "Informed the various functionalities of learning spectral filters utilized in the proposed model architecture."
+      },
+      {
+        "reference": "Graph convolution network based recommender systems: Learning guarantee and item mixture powered strategy",
+        "rank": 10,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This study examined the application of GNNs in various domains, emphasizing the versatility and significance of GNN methodologies in real-world tasks, providing additional context for the proposed application of the proposed model.",
+        "usage": "Conceived the broader applicability of GNN models within many domains, justifying the necessity for developing adaptable GNN frameworks."
+      },
+      {
+        "reference": "Towards understanding the generalization of graph neural networks",
+        "rank": 11,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This work elaborates on the generalization capabilities of various GNN architectures, providing insights into critical stability and performance issues that manifest in deeper networks.",
+        "usage": "Supported the generalization analysis underpinning the proposed model and highlighted the theoretical gaps that this paper attempts to address."
+      },
+      {
+        "reference": "Attention based spatial-temporal graph convolutional networks for traffic flow forecasting",
+        "rank": 12,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This study exhibited GNN capabilities in dynamic environments, allowing for a deeper understanding of how filter design impacts performance across temporal and spatial dimensions, of which the proposed model is a potential instance.",
+        "usage": "Provided examples of dynamic contexts where GNNs can flourish, allowing the proposed model to leverage more diverse data structures."
+      },
+      {
+        "reference": "Inductive representation learning on large graphs",
+        "rank": 13,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This foundational work on inductive learning informs best practices and expectations for representations learned through GNNs, guiding assessments of new models like the proposed model.",
+        "usage": "Influenced the understanding of representation learning principles applicable within the framework of the proposed model."
+      },
+      {
+        "reference": "Graph neural networks meet personalized pagerank",
+        "rank": 14,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This work solidifies core ideas about integrating personalized approaches into GNNs, thereby setting a precedent for considering adaptability in neighbor aggregation.",
+        "usage": "Provided structural insights about focusing on personalization in propagation that were key in the proposed model framework."
+      }
+    ],
+    "authors": [
+      "Foping Chen",
+      "Junhong Zhang",
+      "Guangfei Liang",
+      "Richard Yi Da Xu",
+      "Zhihui Lai"
+    ],
+    "year": 2024,
+    "url": "https://openreview.net/pdf?id=Aarj9MrG8Y",
+    "abstract": "Graph neural networks (GNNs) are currently highly regarded in graph representation learning tasks due to their significant performance. Although various propagation mechanisms and graph filters were proposed, few works have considered the convergence and stability of graph filters under infinite-depth scenarios. To address this problem, we elucidate the criterion for the graph filter formed by power series and further establish a scalable regularized learning principle, which can guide us on how to design infinite deep GNN. Following the framework, we develop Adaptive Power GNN (APGNN), a deep GNN that employs exponentially decaying weights to aggregate graph information of different orders so as to mine the deeper neighbor information. Different from existing GNNs, APGNN can be seamlessly extended to an infinite-depth network. Moreover, we analyze the generalization of the proposed learning framework via uniform convergence and present its upper bound in theory. Experimental results show that APGNN obtains superior performance against the state-of-the-art GNNs.",
+    "citations": 0,
+    "topic": "low_rate",
+    "field": "low_rate",
+    "task1": "The proposed model described in this paper is intended for node classification tasks within graph representation learning. To implement the core methodology, researchers should follow these detailed steps:\n\n1. **Task Objective**: The main task of the proposed model is node classification on graph-structured data.\n\n2. **Core Techniques**:\n   - **Type of Model**: Utilize a graph neural network (GNN) that operates on the principle of adaptive power series graph filters.\n   - **Optimization Method**: Regularize the learning of coefficients that form the graph filter to ensure convergence and stability through Lipschitz continuity.\n   - **Data Processing**: Construct a normalized adjacency matrix and feature representation of graph nodes to feed into the proposed model.\n\n3. **Technical Components**:\n   - **Graph Filter Design**: Use a learnable graph filter specified as \\(g_{K,P}(L) = \\sum_{k=0}^{K} \\beta_k \\alpha^k \\tilde{A}^{kP}\\) where \\(|\\beta_k| \\leq 1\\) and \\(0 < \\alpha < 1\\). The decay rate \\(\\alpha\\), defined to ensure convergence, acts on the polynomial coefficients to emphasize lower-order neighbors.\n   - **Feature Extraction Mechanism**: Employ a multi-layer perceptron (MLP) as a feature extractor, which processes the input node features.\n\n4. **Implementation Details**:\n   - **Key Parameters**: \n     - **K**: The order of the polynomial graph filter (typically set to 10 based on experimental findings).\n     - **P**: The order of the P-hop filter (tune from 1 upwards to balance performance and stability).\n     - **\\(\\alpha\\)**: Tune this hyperparameter to be between 0.1 and 0.9, aiming for the optimal range typically around 0.7.\n   - **Input/Output Specifications**: \n     - **Input**: Node features represented as a matrix \\([X]\\) where each row corresponds to a node and columns refer to features.\n     - **Output**: A matrix \\(Z\\) with the node representation predicting their classes.\n   - **Constraints**: Ensure the coefficients' norm satisfies \\(\\| \\beta \\|_1 \\leq M\\), enforcing convergence conditions on the graph filter.\n\n5. **Step-by-Step Interaction**:\n   - Begin by constructing the normalized adjacency matrix \\(\\tilde{A}\\) using the degree matrix and adjacency matrix of the graph.\n   - Implement the graph filter based on the power series expansion with the defined polynomial functions.\n   - Pass the graph features through the MLP to generate node embeddings, which are then processed through the graph filter.\n   - Aggregate the results using the defined decay terms to focus more on lower-order neighbors, combining outputs into the final node representations.\n   - Train the proposed model end-to-end with respect to fitting the classification labels, tuning the parameters \\(K\\), \\(P\\), and \\(\\alpha\\) as necessary based on validation performance.\n\n6. **Critical Implementation Details**:\n   - **Convergence and Stability**: Regularly validate convergence by ensuring \\(\\sum_{k=0}^{\\infty} |\\beta_k| \\leq M\\) is controlled during training to mitigate over-smoothing issues, particularly when using high \\(P\\) values.\n   - **Performance Tuning**: Conduct a grid search or similar to ascertain optimal settings for the polynomial order \\(K\\) and decay rate \\(\\alpha\\), as small deviations can significantly impact the stability and accuracy of the proposed model.\n\nImplement these steps with attention to hyperparameter tuning and structural considerations to replicate the methodology effectively as prescribed in this study.",
+    "task2": "1. The primary task or problem domain the research tackles is the design of graph neural networks (GNNs) with a focus on achieving convergence and stability, particularly under scenarios involving infinite depth.\n\n2. Current limitations in existing approaches that motivated this work include the inability of various graph filters to guarantee convergence as the network depth approaches infinity and the lack of a general principle for constructing such filters in GNNs.\n\n3. Core challenges the researchers aim to overcome include ensuring that the proposed graph filters maintain stability and convergence when employed in infinitely deep GNN architectures, as well as devising a robust framework that can effectively guide the design of these filters.\n\n4. Key objectives and intended contributions consist of proposing a universal learning principle that provides theoretical guidance for constructing deep GNNs; presenting a new GNN framework capable of adaptive filtering that accounts for the varying importance of neighbor information; and conducting a generalization analysis that reinforces the theoretical foundations of the proposed model."
+  }

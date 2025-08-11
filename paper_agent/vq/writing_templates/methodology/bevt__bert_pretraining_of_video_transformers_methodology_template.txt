@@ -1,0 +1,54 @@
+```latex
+\section{Method}
+
+The goal of [Method Name] is to [state the primary goal or objective of the method]. Here, [provide any necessary definitions or distinctions relevant to the research area]. Besides the effectiveness, another key problem to consider in [field of research] is [state another significant challenge].
+
+To this end, [Method Name] [describe the high-level solution or approach]. Specifically, our method consists of [number] main components: [component 1], [component 2], and [component 3]. In the following, we introduce different components of our framework.
+
+\subsection{Component 1: [Component Name]}
+[Multiple sentences explaining the motivation and intuition behind this component.]
+
+\subsubsection{Workflow}
+[A paragraph describing the detailed workflow of this component.]
+
+\subsection{Component 2: [Component Name]}
+[Several sentences comparing this component with existing approaches.]
+
+\subsection{Mathematical Formulation}
+Formally, we define [concept] as follows:
+\begin{equation}
+[Mathematical formulation of the key components]
+\end{equation}
+where [Detailed explanation of each term in the equations].
+
+\subsection{Implementation Details}
+\subsubsection{[Aspect 1]}
+[Description of the first technical aspect related to implementation. Include any algorithm or strategy.]
+
+\subsubsection{[Aspect 2]}
+[Description of the second technical aspect related to implementation. Include any algorithm or strategy.]
+
+\subsection{Training Objectives}
+Denote the positions of [variables related to training] as [notation]. The objective for [training mechanism 1] can be expressed as:
+\begin{equation}
+L_{[Training Mechanism 1]} = [Mathematical representation of the objective]
+\end{equation}
+Similarly, for [training mechanism 2], it can be denoted as:
+\begin{equation}
+L_{[Training Mechanism 2]} = [Mathematical representation of the objective]
+\end{equation}
+The objective of [combined training method] is given by:
+\begin{equation}
+L = L_{[Training Mechanism 1]} + \lambda L_{[Training Mechanism 2]}
+\end{equation}
+where [explanation of any parameters used].
+
+\subsection{Training Strategies}
+[Description of the training strategy and the rationale behind it.]
+
+\subsection{Weight Sharing Strategy}
+[Explanation of how weight sharing is applied and its significance in the architecture.]
+
+\subsection{Finetuning and Inference}
+Once pretrained, [Method Name] provides [describe the resulting outcomes], which can be utilized for [describe downstream applications]. On targeted datasets, we [explain the finetuning process and any task-specific modifications].
+```

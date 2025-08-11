@@ -1,0 +1,13 @@
+```
+\section{INTRODUCTION}
+
+Generalizing [research area] to [specific input type] is one of the current major challenges in [broader field] ([Citation1]; [Citation2]; [Citation3]). While significant progress has recently been made, particularly with [previous methods/techniques] ([Citation4]; [Citation5]; [Citation6]), most successful methods rely on [specific approach], which is often not applicable because [reason]. Furthermore, it is often crucial to [identify/discover] [specific structures or features] from [context], making [specific learning approach] essential for [important tasks].
+
+Currently, the dominant algorithms for [specific task] with [input type] depend on [existing methodology] ([Citation7]; [Citation8]; [Citation9]; [Citation10]). The underlying intuition is to train [model type] such that [specific relationship].
+
+While [limitation of methodology]—related to [relevant metrics]—[drawback] is a well-known issue. Most prominently, [specific drawback] ([Citation11]), and [consequences of the issue] ([Citation12]; [Citation13]). Moreover, with the introduction of [advanced models], it is uncertain whether [existing methodologies] provide [specific benefits].
+
+In this work, we propose an alternative approach to [specific challenge] that is based on [new methodology], rather than [previous methodology]. Recently, [new concepts/techniques] have made [previously challenging task] both possible and practical through [new method] ([Citation14]), which involves [brief description of new method]. Following this line of research, [related work] introduced [related methodology or framework] for [related task]. This encourages [desired property or goal].
+
+[New methodology] heavily utilizes [specific structure or framework] in the context of [specific domain], and to our knowledge, no studies have applied [new concept] to [specific inputs]. Here, we adapt ideas from [related work] to [new domain], which can be understood as [general type of structure]. In the following sections, we introduce our method called [method name]. We demonstrate that the representations learned by [new method] are [specific characteristics or results in tasks], often outperforming both [comparison with existing strong methods] in our experiments.
+```

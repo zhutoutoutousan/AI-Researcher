@@ -1,0 +1,42 @@
+\section{Method}
+
+Our method is inspired by [previous work/technique] and aims to address [challenge]. To achieve this, we develop [module name] under a general and unified framework, minimizing the reliance on domain-specific knowledge.
+
+\subsection{Component 1: [Component Name]}
+Following [reference], we [describe initial process or technique]. This component [describe its significance and functionality].
+
+\subsubsection{Details of [Component 1]}
+[Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+\subsection{Component 2: [Component Name]}
+We [describe second component or technique]. This technique [explain the method's purpose and relation to the objective].
+
+\subsubsection{Sampling Strategy}
+Specifically, we [describe the sampling strategy]. This approach is [describe its characteristics and significance].
+
+It is hypothesized that [describe hypothesis related to the component]. Our empirical findings support this hypothesis, revealing that [summary of key results].
+
+\subsubsection{Comparison with Existing Approaches}
+Furthermore, we compare our method with existing strategies: [describe comparison]. We find that [summarize the implications of your comparison].
+
+\subsection{Mathematical Formulation}
+Formally, we define [concept] as follows:
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+
+\subsubsection{Explanation of Terms}
+In this equation, we have:
+\begin{itemize}
+    \item [Explain term 1]
+    \item [Explain term 2]
+    \item [Explain term 3]
+\end{itemize}
+
+\subsection{Component 3: [Component Name]}
+Our [third component] employs [describe technique]. This design [explain complexity and practical benefits].
+
+\subsection{Overall Architecture}
+The overall framework consists of [give an overview of the entire method]. The [method/architecture] is designed to [state primary advantages].
+
+The training objective is defined as [describe the training objective]. The loss function utilized is [describe loss function], providing [reasoning behind choice of loss function].

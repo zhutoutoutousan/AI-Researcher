@@ -1,0 +1,54 @@
+```
+\section{METHOD}
+
+In this section, we first introduce the [task name]. Then we describe the proposed [module name] in detail.
+
+\subsection{[Task Name]}
+
+[Provide a brief introduction to the task and its significance. Explain the context and motivation behind studying this task.]
+
+Formally, we define [concept] as follows:
+\begin{equation}
+    [Mathematical representation]
+\end{equation}
+
+\subsection{Overview}
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. The basic idea of [module name] is to [explain the core concept]. As shown in Figure [number], [description of the workflow with involved components].
+
+Specifically, we [explain the primary function or operation of key components]. Furthermore, the role of [specific element] is to [describe its function and its importance in the context]. It should be noted that [any additional nuanced detail about the component, if necessary]. 
+
+The basic idea of our work is to [summarize the central goal of the work]. In the following parts of this section, we first describe [sub-component 1] in [module name] which is used to [explain its purpose]. Then we introduce [sub-component 2] which is used to [explain its purpose]. Finally, we show our [module name] which combines both and computes [describe the output].
+
+\subsection{[Sub-component 1 Name]}
+
+In [sub-component 1], the inputs are [describe the inputs] while the output is [describe the output]. Both the inputs and outputs are represented by [explain the representation, e.g., high-dimensional vectors].
+
+As illustrated in Figure [number], we use [specific components or techniques] as the basis for [sub-component 1] because [reason for choice]. [Explain the core operations and any relevant mathematical formulations].
+
+Nevertheless, [discuss any drawbacks or challenges associated with this approach].
+
+\subsection{[Sub-component 2 Name]}
+
+The architecture of [sub-component 2] is similar to [sub-component 1] as shown in Figure [number]. In this scheme, we also use [explain the common components and their functions]. To capture [specific aspect], we involve [describe any specific mechanisms employed].
+
+[Describe mathematical formulations related to this component].
+
+This approach allows [describe the advantages and importance of this sub-component].
+
+\subsection{[Overall Module Name]}
+
+For the task of [task name], [sub-component 1] provides [describe functionality], while [sub-component 2] [describe its functionality]. We conjecture that [explain the relationship between components and how they enhance the process]. 
+
+As shown in Figure [number], the representations are combined to form [describe the resulting structure]. It should be noticed that [explain how components work together and their individual roles].
+
+To learn the parameters of [module name], we do not utilize [mention any previous or standard procedures that are not used]. Instead, we propose [explain any new methods or approaches adopted].
+
+Our model can be trained by [explain the training methodology]. The loss function is defined as follows:
+\begin{equation}
+    L (p, q) = - \sum_{i=1}^{m} p_i \log(q_i)
+\end{equation}
+
+where [briefly explain the variables]. Finally, [explain the training process and techniques such as Back-Propagation Through Time (BPTT)].
+
+```

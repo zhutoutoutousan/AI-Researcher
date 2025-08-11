@@ -1,0 +1,90 @@
+\section{[Main Section Title]}
+
+In this section, we present the proposed [Model Name]. The framework of [Model Name] is shown in Figure [X]. In Section [X.X], we introduce the [sub-model/approach] to address [specific challenge]. Then in Section [X.X], we propose [another sub-model/approach] to conduct [specific task]. The objective and details of the optimization are derived in Section [X.X] and Section [X.X], respectively.
+
+\subsection{[Subsection Title]}
+
+The key aspect of the [sub-model/approach] is to produce [output representation] for each input [data type]. Based on the [output representation], we can infer [related concept].
+
+Generally, [describe how existing methods operate regarding your topic]. The process is formulated as follows:
+
+\begin{equation}
+    [Mathematical Expression]
+\end{equation}
+
+where [explain each variable and their significance]. We use the term [term] to indicate the [specific process/expression].
+
+Let [Set] be the [context]. After applying [number] traditional layers, we propose a [new technique] to learn [new representation]. The goal is to [explain the purpose of the new technique]. Specifically, we adopt [number] separate channels to identify [specific factors/aspects]. For each channel, we [describe the operation of the channel]: 
+\begin{equation}
+   [Mathematical Expression]
+\end{equation}
+
+where [explain relevant terms]. Finally, each channel outputs the [output representation] with a separate [method]: 
+\begin{equation}
+   [Mathematical Expression]
+\end{equation}
+
+Compared with the existing [related models], our [sub-model] consists of [number of channels], allowing us to [specific benefit]. 
+
+\subsection{[Next Subsection Title]}
+
+Unlike the existing [related methods], [Model Name] designs a novel [task] and learns to solve this task [condition]. This design not only [describe benefit] but also encourages [another benefit].
+
+Specifically, we assume that [describe underlying assumption]. Thus, the task can be represented as [concept expression]. 
+
+Here, [describe relevant variables and terms].
+
+Firstly, given the output [representation], we present a [method] to obtain [results]. We introduce [number] [prototypes/parameters] such that:
+
+\begin{equation}
+    [Mathematical Expression]
+\end{equation}
+
+where [explain the function of the equation]. 
+
+Next, we define [additional concepts] as follows:
+
+\begin{equation}
+    [Mathematical Expression]
+\end{equation}
+
+where [explain relevant terms]. 
+
+Next, we describe the process to obtain [new variable/representation]. First, the input [data type] undergoes [process] to obtain its [output]. More details of [processes] can be found in [reference material]. Then, the [new data] is also fed into [model] to produce [new output]. 
+
+\subsection{[Objective Section Title]}
+
+We present the objective of our method. Following existing methods, we aim to maximize [specific goal] over the dataset [Dataset Name]:
+
+\begin{equation}
+    [Mathematical Expression]
+\end{equation}
+
+However, directly maximizing the [function] is difficult because of [challenge]. Therefore, we instead optimize the [concept] of the [function] as follows: 
+
+\begin{theorem}
+    [Theorem Statement]
+\end{theorem}
+
+To make the [concept] as tight as possible, we require that [concept]. [Explain what was introduced earlier].
+
+\subsection{[Optimization Section Title]}
+
+We introduce a [new variable] to infer the [posterior distribution] as follows:
+
+\begin{equation}
+    [Mathematical Expression]
+\end{equation}
+
+[Explain the significance of this equation].
+
+However, we cannot compute the [distribution] tractably because of [challenge]. To tackle this obstacle, several strategies are proposed, including [list of methods]. Here, we adopt [specific method].
+
+Finally, we seek to learn the parameters of [Model Name]. More specifically, we calculate [variable] and maximize the [objective] over a mini-batch:
+
+\begin{equation}
+    [Mathematical Expression]
+\end{equation}
+
+Encourage [concept]. Note that our objective and its optimization can inherently encourage [benefit] without adding [any additional techniques]. The reason is that [explanation of process]. Thus, the [model name] is forced to [explain benefit].
+

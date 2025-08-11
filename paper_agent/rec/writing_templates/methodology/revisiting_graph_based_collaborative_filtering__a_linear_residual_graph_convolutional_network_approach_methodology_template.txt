@@ -1,0 +1,80 @@
+\section{Proposed Method}
+
+In this section, we propose [Method Name], which is a [general description of method type] for [purpose or application].
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{[figure_placeholder]} % Insert the architecture or framework figure
+    \caption{The overall architecture of our proposed method.}
+    \label{fig:[figure_label]}
+\end{figure}
+
+The overall architecture of [Method Name] is shown in Figure~\ref{fig:[figure_label]}. [Method Name] advances current [field/technique] with two key characteristics: (1) [First characteristic], and (2) [Second characteristic].
+
+\subsection{Embedding Propagation}
+
+Given [context or formulation], let [Variables] denote [description of variables]. Then, [Method Name] takes [input description]:
+
+\begin{equation}
+    [Equation Placeholder]
+    \label{eq:[equation_label]}
+\end{equation}
+
+Notably, [describe any important differences or features from existing methods].
+
+Following the theoretical elegance of [related work], at each iteration step [iteration relation], we assume that [Mathematical relationship]. Specifically, we express this as:
+
+\begin{equation}
+    [Equation Placeholder]
+    \label{eq:[equation_label]}
+\end{equation}
+
+where [description of each term and its significance].
+
+\subsection{Preference Prediction}
+
+With a predefined structure of [depth or parameters], the [process description] would occur until [termination condition].
+
+For each [user/item], [description of how preferences are captured or predicted]. Then, the predicted preference can be expressed as:
+
+\begin{equation}
+    [Equation Placeholder]
+    \label{eq:[equation_label]}
+\end{equation}
+
+where [define notation and meaning].
+
+In practice, most [related techniques] achieve the best performance with [parameter settings]. The overall trend indicates that [describe performance trends].
+
+Based on [observations/conclusions], we argue that: [Main argument or hypothesis].
+
+We can express this preference prediction function as:
+
+\begin{equation}
+    [Equation Placeholder]
+    \label{eq:[equation_label]}
+\end{equation}
+
+This formulation captures [explanation of significance].
+
+\subsection{Model Learning}
+
+By integrating [previous equation], we derive:
+
+\begin{equation}
+    [Equation Placeholder]
+    \label{eq:[equation_label]}
+\end{equation}
+
+where [detailed description of components and their interactions].
+
+To optimize performance, we adopt [loss function description] as:
+
+\begin{equation}
+    \text{min } \Theta L(R, \hat{R}) = [Loss Function Components]
+    \label{eq:[loss_equation_label]}
+\end{equation}
+
+where [explanation of loss function components, variables and significance].
+
+Lastly, we define [training data description or any other relevant content].

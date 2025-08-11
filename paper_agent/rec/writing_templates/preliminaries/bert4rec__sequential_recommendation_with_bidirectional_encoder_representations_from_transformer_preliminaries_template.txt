@@ -1,0 +1,30 @@
+\section{Model Name}
+
+Before going into the details, we first introduce the research problem, the basic concepts, and the notations in this paper.
+
+\subsection{Problem Statement}
+
+In [research domain], let \( U = \{ u_{1}, u_{2}, \ldots, u_{|U|} \} \) denote a set of users, \( V = \{ v_{1}, v_{2}, \ldots, v_{|V|} \} \) be a set of items, and list \( S_{u} = [ v(u)_{1}, \ldots, v(u)_{t}, \ldots, v(u)_{n_{u}} ] \) denote the interaction sequence in chronological order for user \( u \in U \), where \( v(u)_{t} \in V \) is the item that \( u \) has interacted with at time step \( t \) and \( n_{u} \) is the length of interaction sequence for user \( u \). Given the interaction history \( S_{u} \), the goal is to [state the main objective, e.g., predict the next interaction]. This can be formalized as modeling the probability over all possible items for user \( u \) at time step \( n_{u} + 1 \):
+
+\begin{equation}
+p(v(u)_{n_{u}+1} | S_{u}) 
+\end{equation}
+
+\subsection{Model Architecture}
+
+Here, we introduce a new model called [Model Name], which adopts [briefly describe the main concept or innovation] for [specific task or application]. It is built upon [mention existing architecture or framework].
+
+As illustrated in [reference to figure or table], [Model Name] is composed of [number of components] components. At each component, it [describe the workflow or process implemented in the model]. Instead of [comparison with another method], the [method/approach used in the proposed model] provides the capability to [describe the advantage or improvement].
+
+Comparing [refer to different approaches/methods], the most notable difference is that [highlight the primary distinction of the proposed model]. This way, our proposed model can [state the benefit or outcome of using the proposed model]. 
+
+\begin{equation}
+[Mathematical formulation of key components]
+\end{equation}
+
+% Explanation of terms in the equations
+\begin{itemize}
+    \item [Define term 1 and its significance]
+    \item [Define term 2 and its significance]
+    \item [Additional terms as necessary]
+\end{itemize}

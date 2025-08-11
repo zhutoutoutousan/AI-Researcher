@@ -1,0 +1,33 @@
+\section{Introduction}
+
+[Introduce the main area of research and its significance. Mention key contributions and prior works in the field.]
+
+[State the fundamental challenges or limitations that are present in the current state of the research. Use at least two sentences to explain these challenges.]
+
+[Discuss recent efforts or approaches attempting to address these challenges. Describe the general strategies employed in this domain, referencing relevant works.]
+
+[Indicate specific issues or limitations with the existing approaches. Use a few sentences to explain why these approaches may fall short in addressing the challenges.]
+
+[Inspired by the advancements in [relevant domain/technique], we propose [module name] to tackle [challenge].]
+
+[To tackle [challenge], our approach consists of the following components: [list component 1], [list component 2], and [list component 3].]
+
+[Provide multiple sentences explaining the motivation and intuition behind the proposed method.]
+
+[Formally, we define [concept] as follows:]
+\begin{equation}
+    [Insert mathematical formulation here]
+\end{equation}
+
+[Include a detailed explanation of each term in the equation.]
+
+[Describe the overall workflow of the proposed module in a paragraph.]
+
+[Compare the proposed method with existing approaches in several sentences.]
+
+[Finally, outline the contributions of your work, structured as a bullet list:]
+\begin{itemize}
+    \item [Contribution 1]
+    \item [Contribution 2]
+    \item [Contribution 3]
+\end{itemize}

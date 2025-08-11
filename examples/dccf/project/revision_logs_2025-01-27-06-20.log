@@ -1,0 +1,23 @@
+2025-01-27 06:20:06,797 [INFO] 
+==================================================
+Starting experiment set: refined_base
+==================================================
+2025-01-27 06:20:06,864 [INFO] Starting experiment: refined_base
+2025-01-27 06:20:06,864 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 3, 'n_intents': 128, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.2, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda', index=1)}
+2025-01-27 06:20:09,155 [ERROR] Error in experiment refined_base: IntentGCL.__init__() got an unexpected keyword argument 'lambda_3'
+2025-01-27 06:20:09,218 [INFO] 
+==================================================
+Starting experiment set: hierarchical_intent
+==================================================
+2025-01-27 06:20:09,218 [INFO] Starting experiment: hierarchical_intent
+2025-01-27 06:20:09,218 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 3, 'n_intents': 256, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.2, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda', index=1)}
+2025-01-27 06:20:11,045 [ERROR] Error in experiment hierarchical_intent: IntentGCL.__init__() got an unexpected keyword argument 'lambda_3'
+2025-01-27 06:20:11,098 [INFO] 
+==================================================
+Starting experiment set: deep_gnn
+==================================================
+2025-01-27 06:20:11,098 [INFO] Starting experiment: deep_gnn
+2025-01-27 06:20:11,098 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 4, 'n_intents': 128, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.3, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda', index=1)}
+2025-01-27 06:20:12,823 [ERROR] Error in experiment deep_gnn: IntentGCL.__init__() got an unexpected keyword argument 'lambda_3'
+2025-01-27 06:20:12,879 [INFO] 
+Revision experiments completed. Results saved.

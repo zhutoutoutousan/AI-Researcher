@@ -1,0 +1,29 @@
+2025-03-02 19:45:22,535 - INFO - Logging LLM interactions to: innovation_graph/logs/llm_output_20250302_194522.log
+2025-03-02 19:45:22,547 - INFO - 
+Processing paper 1/1: Heterogeneous Graph Contrastive Learning for Recommendation
+2025-03-02 19:45:22,548 - INFO - Processing step1 for paper: Heterogeneous Graph Contrastive Learning for Recommendation
+2025-03-02 19:45:22,548 - INFO - Step 1/5: Analyzing paper content...
+2025-03-02 19:45:37,524 - INFO - Processing step2 for paper: Heterogeneous Graph Contrastive Learning for Recommendation
+2025-03-02 19:45:37,526 - INFO - Step 2/5: Analyzing paper content...
+2025-03-02 19:45:52,085 - INFO - Processing step3 for paper: Heterogeneous Graph Contrastive Learning for Recommendation
+2025-03-02 19:45:52,087 - INFO - Step 3/5: Analyzing paper content...
+2025-03-02 19:46:03,157 - INFO - Processing step4 for paper: Heterogeneous Graph Contrastive Learning for Recommendation
+2025-03-02 19:46:03,158 - INFO - Step 4/5: Analyzing paper content...
+2025-03-02 19:46:15,858 - INFO - Processing step5 for paper: Heterogeneous Graph Contrastive Learning for Recommendation
+2025-03-02 19:46:15,859 - INFO - Step 5/5: Analyzing paper content...
+2025-03-02 19:47:07,663 - INFO - 
+Processing complete:
+2025-03-02 19:47:07,665 - INFO - Total time: 0:01:45
+2025-03-02 19:47:07,665 - INFO - Successfully processed: 1 papers
+2025-03-02 19:47:07,665 - INFO - Failed to process: 0 papers
+2025-03-02 19:47:07,665 - INFO - Results saved to innovation_graph/innovation_graph.json
+2025-03-02 19:47:07,668 - INFO - Innovation graph results saved to innovation_graph/innovation_graph.json
+2025-03-02 19:50:11,610 - INFO - Anonymized paper: Heterogeneous Graph Contrastive Learning for Recommendation
+2025-03-02 19:50:11,617 - INFO - Anonymized results saved to innovation_graph/innovation_graph_anonymized.json
+2025-03-02 19:50:11,617 - INFO - 
+Self-reference statistics:
+2025-03-02 19:50:11,617 - INFO - Papers with self-references: 0
+2025-03-02 19:50:11,617 - INFO - Total self-references found: 0
+2025-03-02 19:50:11,618 - INFO - 
+Details of self-references by paper:
+2025-03-02 19:50:11,620 - INFO - Final filtered results saved to innovation_graph/innovation_graph_final.json

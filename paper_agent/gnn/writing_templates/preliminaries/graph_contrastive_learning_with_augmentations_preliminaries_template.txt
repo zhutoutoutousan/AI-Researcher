@@ -1,0 +1,56 @@
+```latex
+\section{Methodology}
+
+\subsection{Data Augmentation for Graphs}
+
+Data augmentation aims at creating novel and realistically rational data through applying certain transformations without affecting the semantic label. However, it remains under-explored for graphs, aside from a few methods that involve expensive computational costs (see Sec. \ref{previous_work_section}). In this research, we focus on graph-level augmentations. Given a graph $G \in \{G_m : m \in M\}$ in the dataset of $M$ graphs, we formulate the augmented graph $\hat{G}$ satisfying: 
+
+\begin{equation}
+\hat{G} \sim q(\hat{G}|G),
+\end{equation}
+
+where $q(\cdot|G)$ represents the augmentation distribution conditioned on the original graph, which is pre-defined and reflects the human prior for data distribution. 
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. Specifically, our method consists of three main components: [component 1], [component 2], and [component 3]. 
+
+\subsubsection{Challenges and Considerations}
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+To tackle [challenge], we categorize different graph datasets and identify potential augmentation strategies. We mainly focus on [category 1], [category 2], and [category 3]. Next, we propose [number] general data augmentations for graph-structured data and discuss the intuitive priors they introduce.
+
+\begin{table}[h]
+\centering
+\caption{Overview of data augmentations for graphs.}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Data augmentation} & \textbf{Type} & \textbf{Underlying Prior} \\ \hline
+[Data augmentation 1]      & [Type 1]     & [Underlying prior 1]      \\ \hline
+[Data augmentation 2]      & [Type 2]     & [Underlying prior 2]      \\ \hline
+[Data augmentation 3]      & [Type 3]     & [Underlying prior 3]      \\ \hline
+[Data augmentation 4]      & [Type 4]     & [Underlying prior 4]      \\ \hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Detailing Augmentation Methods}
+
+\paragraph{[Augmentation Method 1]}
+[Paragraph describing the detailed workflow of the module related to augmentation method 1].
+
+\paragraph{[Augmentation Method 2]}
+[Paragraph describing the detailed workflow of the module related to augmentation method 2].
+
+\paragraph{[Augmentation Method 3]}
+[Paragraph describing the detailed workflow of the module related to augmentation method 3].
+
+\paragraph{[Augmentation Method 4]}
+[Paragraph describing the detailed workflow of the module related to augmentation method 4].
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{[placeholder_for_figure_path]}
+\caption{[Description of the figure, including the role of the augmentations in the framework]}
+\end{figure}
+
+The [default augmentation methods and their ratios] are set at [value].
+```

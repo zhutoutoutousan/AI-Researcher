@@ -1,0 +1,35 @@
+```
+\section{Background and Related Works}
+
+First, we introduce our notations used throughout this paper. Generally, we let bold uppercase letters represent [type] and bold lowercase letters denote [type]. A formal definition of [concept] is defined as [definition]. 
+
+\subsection{[Subsection Title]}
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+\[
+[Equation/Formula]
+\]
+
+Let \( [variable] \) represent [description]. Specifically, the representation of [concept] at layer \( \ell \) can be expressed as 
+
+\[
+[Equation]
+\]
+
+where [explanation of variables involved]. 
+
+[Several sentences comparing the proposed method with existing approaches, including references to previous work and their limitations.]
+
+\subsection{Related Works}
+
+[Overview of existing literature concerning the topic. Describe how those works relate to the current study and identify gaps or challenges.]
+
+[Transition phrase introducing the next topic, e.g., "Furthermore," or "To this end,"]
+
+[Discuss particular papers or approaches that address specific challenges or issues in the domain.]
+
+[More detailed analysis of specific methodologies and their results, referring to existing literature.]
+
+[General conclusions about the state of the research area and how the proposed approach fits into it.]
+```

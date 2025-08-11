@@ -1,0 +1,19 @@
+\section{Theoretical Properties of [Your Method Name]}
+
+\subsection{Introduction to [Method Name] Aspects}
+As mentioned in Section [X], the [Main Component] of the network may be viewed as a [Descriptive Comparison, e.g., "filter"]. Let $\tilde{A}_{sym} = U \Lambda U^T$ be the eigenvalue decomposition of $\tilde{A}_{sym}$. Then, the corresponding [concept] equals $\sum_{k=0}^{K} \gamma_k \tilde{A}_{sym}^{k} = U g_{\gamma,K}(\Lambda) U^T$, where $g_{\gamma,K}(\Lambda)$ is applied element-wise and $g_{\gamma,K}(\lambda) = \sum_{k=0}^{K} \gamma_k \lambda^{k}$. We establish the following result.
+
+\begin{theorem}[Informal]
+Assume that the graph $G$ is connected. If $\gamma_k \geq 0 \, \forall k \in \{0, 1, ..., K\}$, $\sum_{k=0}^{K} \gamma_k = 1$, and $\exists k' > 0$ such that $\gamma_{k'} > 0$, then $g_{\gamma,K}(\cdot)$ is a [type of filter]. Also, if $\gamma_k = (-\alpha)^{k}$, $\alpha \in (0,1)$ and $K$ is large enough, then $g_{\gamma,K}(\cdot)$ is a [another filter type].
+\end{theorem}
+
+By Theorem [X] and from our discussion in Section [X], we know that both [Existing Methods] will invariably [describe the limitations]. In contrast, if one allows $\gamma_k$ to be [property], the [concept] will [outcome]. This is what allows [Method Name] to [performance feature] (see Figure [X]).
+
+\subsection{Avoiding [Challenge, e.g., Over-smoothing]}
+As already emphasized, one crucial innovation of the [Method Name] is to make the [Weights/Parameters] adaptively learnable, which allows [Method Name] to avoid [Challenge]. Intuitively, when [condition] is not beneficial, it increases [relevant metric]. Hence, the corresponding [Weights/Parameters] should [behavior]. This observation is captured by the following result, whose more formal statement and proof are delegated to the [Supplementary Material/Section] due to [reason].
+
+\begin{theorem}[Informal]
+Assume the graph $G$ is connected and the training set contains nodes from each of the classes. Also, assume that $k'$ is large enough so that [Condition] occurs for $H(k)$, $\forall k \geq k'$ which dominate the contribution to the final output $Z$. Then, the gradients of $\gamma_k$ and [related term] are identical in sign for all $k \geq k'$.
+\end{theorem}
+
+Theorem [X] shows that as long as [Challenge] happens, $|\gamma_k|$ will approach $0$ for all $k \geq k'$ when we use an optimizer such as [optimizer name] which has a suitable learning rate decay. This reduces the contribution of the corresponding steps $H(k)$ in the final output $Z$. When the weights $|\gamma_k|$ are small enough so that $H(k)$ no longer dominates the value of the final output $Z$, the [Challenge] effect is eliminated.

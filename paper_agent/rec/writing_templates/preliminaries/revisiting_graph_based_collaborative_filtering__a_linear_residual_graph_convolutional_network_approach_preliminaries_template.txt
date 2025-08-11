@@ -1,0 +1,43 @@
+\section{Preliminaries and Related Work}
+
+\subsection{Graph Notation and Definitions}
+
+Considering a graph \( G = \langle V, A \rangle \), where \( V \) is the set of nodes and \( A \) is the adjacency matrix, we define \( a_{ij} \) as the edge between node \( i \) and node \( j \). If there is a directed edge from node \( i \) to node \( j \), then \( a_{ij} = 1 \), otherwise, \( a_{ij} = 0 \). 
+
+For ease of notation, we denote the neighbor set of node \( i \) as follows:
+\[
+S_i = \{ j \mid a_{ij} = 1 \}
+\]
+
+Furthermore, we define the normalized adjacency matrix with added self-loops as:
+\[
+S = \tilde{D}^{-0.5} \tilde{A} \tilde{D}^{-0.5}
+\]
+where \( \tilde{A} = A + I \) is the adjacency matrix of the graph with added self-connections, and \( I \) is the identity matrix. \( \tilde{D} \) is the degree matrix of \( \tilde{A} \).
+
+\subsection{Motivation and Intuition}
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. 
+[Multiple sentences explaining the motivation and intuition behind the proposed method.]
+
+\subsection{Method Overview}
+
+To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3].
+[A paragraph describing the detailed workflow of the module.]
+
+\subsection{Comparison with Existing Approaches}
+
+[Several sentences comparing the proposed method with existing approaches.]
+
+\subsection{Mathematical Formulation}
+
+Formally, we define [concept] as follows:
+\[
+[Mathematical formulation of the key components]
+\]
+
+\subsection{Explanation of Terms}
+
+Let us provide a detailed explanation of each term in the equations:
+[Detailed explanation of each term in the equations.]
+

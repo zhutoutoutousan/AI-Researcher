@@ -1,0 +1,23 @@
+{
+    "Cora": {
+        "error": "All runs failed",
+        "mean_val_acc": null,
+        "std_val_acc": null,
+        "mean_test_acc": null,
+        "std_test_acc": null
+    },
+    "CiteSeer": {
+        "error": "All runs failed",
+        "mean_val_acc": null,
+        "std_val_acc": null,
+        "mean_test_acc": null,
+        "std_test_acc": null
+    },
+    "PubMed": {
+        "error": "All runs failed",
+        "mean_val_acc": null,
+        "std_val_acc": null,
+        "mean_test_acc": null,
+        "std_test_acc": null
+    }
+}

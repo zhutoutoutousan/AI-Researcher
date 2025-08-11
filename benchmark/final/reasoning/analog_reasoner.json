@@ -1,0 +1,81 @@
+{
+    "authors": [
+        "Michihiro Yasunaga",
+        "Xinyun Chen",
+        "Yujia Li",
+        "Panupong Pasupat",
+        "Jure Leskovec",
+        "Percy Liang",
+        "Ed H. Chi",
+        "Denny Zhou"
+    ],
+    "instance_id": "analog_reasoner",
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2310.01714v3",
+    "abstract": "Chain-of-thought (CoT) prompting for language models demonstrates impressive\nperformance across reasoning tasks, but typically needs labeled exemplars of\nthe reasoning process. In this work, we introduce a new prompting approach,\nanalogical prompting, designed to automatically guide the reasoning process of\nlarge language models. Inspired by analogical reasoning, a cognitive process in\nwhich humans draw from relevant past experiences to tackle new problems, our\napproach prompts language models to self-generate relevant exemplars or\nknowledge in the context, before proceeding to solve the given problem. This\nmethod presents several advantages: it obviates the need for labeling or\nretrieving exemplars, offering generality and convenience; it can also tailor\nthe generated exemplars and knowledge to each problem, offering adaptability.\nExperimental results show that our approach outperforms 0-shot CoT and manual\nfew-shot CoT in a variety of reasoning tasks, including math problem solving in\nGSM8K and MATH, code generation in Codeforces, and other reasoning tasks in\nBIG-Bench.",
+    "venue": "International Conference on Learning Representations",
+    "venue_source": "Semantic Scholar",
+    "venue_lookup_time": "2025-01-10T19:30:36.261689",
+    "citations": 50,
+    "topic": "selected",
+    "field": "selected",
+    "target": "Large Language Models as Analogical Reasoners",
+    "source_papers": [
+        {
+            "reference": "Language models are few-shot learners",
+            "rank": 1,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This paper lays the foundational work for few-shot learning in language models and introduces key methodologies that have influenced subsequent research in prompting strategies for large language models. Its emphasis on demonstrating strong performance across a variety of tasks provides a basis for understanding how prompting techniques, like the proposed model, can enhance reasoning abilities.",
+            "usage": "It was used to build upon the understanding of language models' capabilities, particularly in establishing the context of how different prompting strategies can be developed and optimized."
+        },
+        {
+            "reference": "Chain of thought prompting elicits reasoning in large language models",
+            "rank": 2,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This paper discusses the critical advances in prompting techniques that enhance reasoning in language models, identifying limitations in existing methods and proposing refinements. Its insights directly informed the development of the proposed approach, which seeks to automate exemplar generation for improved reasoning tasks.",
+            "usage": "It was cited to highlight the limitations of existing prompting strategies and the need for a novel approach, leading to the conception of the proposed model."
+        },
+        {
+            "reference": "Execution-guided neural program synthesis",
+            "rank": 3,
+            "type": [
+                "methodological"
+            ],
+            "justification": "The work explores in-context learning abilities in neural architectures, which was pivotal for formulating how the proposed model could harness these capabilities to self-generate relevant reasoning steps. Its methodologies set a precedent for the integration of automatic knowledge generation in similar tasks.",
+            "usage": "It provided methodological inspiration on focusing language model design towards self-guided reasoning processes."
+        },
+        {
+            "reference": "Teaching large language models to self-debug",
+            "rank": 4,
+            "type": [
+                "methodological"
+            ],
+            "justification": "By investigating self-generation techniques, this study informed the contextual application of the proposed model, showcasing how language models can adaptively generate responses. Its contribution to the understanding of how models learn to handle reasoning tasks autonomously underpins the critical components of the proposed model.",
+            "usage": "It influenced the integration of self-generation techniques into the proposed model framework."
+        },
+        {
+            "reference": "Program synthesis with large language models",
+            "rank": 5,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This paper highlights the significance of using reasoning processes in language models to handle program-related tasks. The proposed approach draws on the conceptual insights from this study, illustrating how an understanding of reasoning can translate into effective problem-solving mechanics in LLMs.",
+            "usage": "It served as a reference point for conceptualizing how reasoning through analogies can improve the proposed approach outputs in complex problem contexts."
+        },
+        {
+            "reference": "Palm 2 technical report",
+            "rank": 6,
+            "type": [
+                "methodological"
+            ],
+            "justification": "The empirical evaluation and performance metrics outlined provide essential insights into the effectiveness of various LLM prompting techniques, validating the need for methods like the proposed model that improve reasoning accuracy and adaptability in LMs.",
+            "usage": "It was employed to benchmark the performance of the proposed model against established techniques, providing a basis for comparative analysis."
+        }
+    ],
+    "task1": "The model presented in this paper addresses reasoning tasks through the proposed approach for large language models (LLMs). This methodology automates the generation of relevant exemplars, allowing LLMs to self-generate pertinent knowledge before solving a given problem, thus enhancing their reasoning capabilities.\n\nTo implement this approach, follow these key steps:\n\n1. **Task Specification**: Define the specific problem that the LLM needs to address, such as math problem solving, code generation, or logical reasoning.\n\n2. **Prompt Construction**: Create a structured input prompt for the LLM that includes:\n   - **Problem Statement**: Clearly state the problem you want the proposed model to solve.\n   - **Exemplar Generation Instruction**: Include instructions to prompt the proposed model to recall and generate diverse exemplars.\n     - For example: \u201c# Problem: [insert problem] # Relevant Problems: Recall three relevant and distinct problems, describe each, and explain their solutions.\u201d\n   - **Knowledge Generation Instruction** (optional but recommended for complex tasks): Ask for high-level knowledge relevant to the problem. For example, \u201c# Provide a tutorial: Identify core concepts in the problem and provide a tutorial.\u201d\n   - **Solution Instruction**: Instruct the proposed model to solve the original problem after generating exemplars. Example: \u201c# Solve the initial problem: [insert problem]\u201d.\n\n3. **Parameter Configuration**:\n   - Set the number of exemplars to be generated. Empirical observations show that **K = 3 to 5** exemplars yield the best performance.\n   - Consider the **temperature setting** for the proposed model's generation to control randomness (suggested temperature of around **0.7**).\n\n4. **Input/Output Specifications**:\n   - Input: A well-structured prompt as detailed above.\n   - Output: The generated exemplars and the solution to the original problem, formatted as the proposed model outputs the rationale, followed by the final answer (e.g., \u201cThe answer is \\boxed{x}\u201d).\n\n5. **Interaction of Components**:\n   - The proposed model first analyzes the input problem and generates relevant exemplars based on the provided instructions, ensuring they are distinct and contextually appropriate.\n   - Once the exemplars are generated, the proposed model can leverage these examples to refer back to relevant information while solving the original problem.\n   - Align the generation of knowledge with exemplars to enhance the accuracy of the final output.\n\n6. **Performance Considerations**:\n   - Monitor the **quality of generated exemplars** to ensure they are both relevant and distinct.\n   - The **prompting strategy** must encourage diversity in generated examples, as repeated patterns can mislead problem-solving.\n   - Be aware of the LLM's capacity; stronger models perform better with the proposed approach than weaker models.\n\nBy implementing these steps, researchers can replicate the reasoning capabilities of large language models as proposed in this study, enhancing their performance on complex reasoning tasks without the need for manually curated labeled exemplars.",
+    "task2": "1. The primary task or problem domain the research tackles is enhancing the reasoning capabilities of large language models (LLMs) by introducing a novel prompting method that leverages analogical reasoning to guide the self-generation of relevant exemplars for problem-solving.\n\n2. Current limitations in existing approaches include the reliance on labeled exemplars for few-shot chain-of-thought (CoT) prompting, which is costly and time-consuming to obtain, and the generic nature of zero-shot CoT methods, which often lack specificity and do not suffice for complex problem-solving tasks.\n\n3. Core challenges the researchers aim to overcome include the difficulty of automatically generating tailored and relevant reasoning exemplars without manual labeling, as well as ensuring that the generated guidance effectively aids LLMs in tackling intricate tasks such as mathematical problem solving and code generation.\n\n4. Key objectives and intended contributions include developing a new prompting mechanism\u2014the proposed model\u2014that enables LLMs to autonomously create relevant knowledge and exemplars in the context of the problem at hand, enhancing both the adaptability and performance of LLMs on various reasoning-intensive tasks while eliminating the need for manual labeling of examples."
+}

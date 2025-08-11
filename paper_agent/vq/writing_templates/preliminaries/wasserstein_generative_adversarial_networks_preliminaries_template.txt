@@ -1,0 +1,49 @@
+\section{Introduction}
+
+We now introduce our notation. Let $X$ be a [description of the set/space relevant to your work] and let $\Sigma$ denote [definition of sets relevant to your work]. Let $\text{Prob}(X)$ denote [description of the space of probability measures defined on $X$]. We can now define [elementary concept] as follows:
+
+\subsection{Distances and Divergences}
+To tackle [specific challenge], we define several key distances and divergences between two distributions $P_r, P_g \in \text{Prob}(X)$:
+
+\begin{itemize}
+    \item \textbf{Total Variation (TV) distance:}
+    \[
+    \delta (P_r, P_g) = \sup_{A \in \Sigma} |P_r(A) - P_g(A)|
+    \]
+    
+    \item \textbf{Kullback-Leibler (KL) divergence:}
+    \[
+    KL(P_r \| P_g) = \int \log\left(\frac{P_r(x)}{P_g(x)}\right) P_r(x) d\mu(x)
+    \]
+    where [description of the assumptions made on the distributions].
+    
+    \item \textbf{Jensen-Shannon (JS) divergence:}
+    \[
+    JS(P_r, P_g) = KL(P_r \| P_m) + KL(P_g \| P_m)
+    \]
+    where $P_m$ is [definition of the mixture distribution].
+    
+    \item \textbf{Earth-Mover (EM) distance or Wasserstein-1:}
+    \[
+    W(P_r, P_g) = \inf_{\gamma \in \Pi(P_r, P_g)} \mathbb{E}_{(x,y) \sim \gamma} [\|x - y\|]
+    \]
+    where [description of the joint distribution and its relevance].
+\end{itemize}
+
+\subsection{Motivation and Intuition}
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. [Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+\subsection{Methodology}
+To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3]. [A paragraph describing the detailed workflow of the module]
+
+\subsection{Comparative Analysis}
+Furthermore, we compare the proposed method with existing approaches. [Several sentences comparing the proposed method with existing approaches]
+
+\subsection{Mathematical Formulation}
+Formally, we define [concept] as follows:
+\[
+[Mathematical formulation of the key components]
+\]
+
+\subsection{Explanation of Terms}
+Specifically, [Detailed explanation of each term in the equations]

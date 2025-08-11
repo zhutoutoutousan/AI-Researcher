@@ -1,0 +1,88 @@
+{
+    "target": "Heterogeneous Graph Contrastive Learning for Recommendation",
+    "instance_id": "hgcl_final",
+    "source_papers": [
+      {
+        "reference": "Revisiting Graph Based Collaborative Filtering: A Linear Residual Graph Convolutional Network Approach",
+        "rank": 1,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This study provides foundational methodologies for collaborative filtering using graph structures, influencing how user-item interactions are modeled in the proposed approach. The insights from this study are reflected in the adaptation of GNNs to heterogeneous relationships in recommendation systems.",
+        "usage": "The authors built upon the concepts of GNN-based collaborative filtering while expanding them to incorporate heterogeneous interactions."
+      },
+      {
+        "reference": "Graph Neural Networks for Social Recommendation",
+        "rank": 2,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This work emphasizes the effectiveness of GNNs in capturing social influences within recommendation scenarios, which is directly relevant to this paper's incorporation of social relationships into user-item interaction models.",
+        "usage": "The concepts of modeling user-item interaction graphs and leveraging social influence were critical in developing the proposed model framework."
+      },
+      {
+        "reference": "Improving Graph Collaborative Filtering with Neighborhood-enriched Contrastive Learning",
+        "rank": 3,
+        "type": [
+          "component"
+        ],
+        "justification": "This study explores the integration of contrastive learning into graph collaborative filtering, a technique that is central to the proposed model. It highlights how auxiliary views can enhance recommendation performance.",
+        "usage": "The authors adapted the contrastive learning framework from this study to enhance the robustness of their heterogeneous relational learning."
+      },
+      {
+        "reference": "LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation",
+        "rank": 4,
+        "type": [
+          "methodological"
+        ],
+        "justification": "LightGCN simplifies graph convolutions while enhancing their effectiveness in recommendation tasks. The methodology influenced the authors' design for the proposed approach within heterogeneous graphs.",
+        "usage": "The proposed approach utilizes principles from LightGCN to optimize the incorporation of personalized augmentation through contrastive learning."
+      },
+      {
+        "reference": "Knowledge-aware Coupled Graph Neural Network for Social Recommendation",
+        "rank": 5,
+        "type": [
+          "component"
+        ],
+        "justification": "This work highlights the importance of leveraging knowledge-aware representations in recommendation systems, directly aligning with the proposed model's emphasis on heterogeneous relationships.",
+        "usage": "The identification of informative heterogeneous relations from this study was essential for augmenting collaborative filtering paradigms in the proposed model."
+      },
+      {
+        "reference": "Heterogeneous Graph Transformer",
+        "rank": 6,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This study presents concepts on the utilization of heterogeneous graphs across various applications, which inspired the broader application of heterogeneous relations in the recommendation context.",
+        "usage": "It inspired the authors to explore diverse node types and their importance in formulating user-item interactions."
+      },
+      {
+        "reference": "Sequential Recommendation with Graph Neural Networks",
+        "rank": 7,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This foundational work on GNNs in sequential recommendations provided insights into the significant potential of GNNs, motivating the integration of contrastive learning into heterogeneous contexts.",
+        "usage": "The insights gained from GNN capabilities informed the authors' approach to enhance representation learning through contrastive methods."
+      }
+    ],
+    "authors": [
+      "Mengru Chen",
+      "Chao Huang",
+      "Lianghao Xia",
+      "Wei Wei",
+      "Yong Xu",
+      "Ronghua Luo"
+    ],
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2303.00995v1",
+    "abstract": "Graph Neural Networks (GNNs) have become powerful tools in modeling\ngraph-structured data in recommender systems. However, real-life recommendation\nscenarios usually involve heterogeneous relationships (e.g., social-aware user\ninfluence, knowledge-aware item dependency) which contains fruitful information\nto enhance the user preference learning. In this paper, we study the problem of\nheterogeneous graph-enhanced relational learning for recommendation. Recently,\ncontrastive self-supervised learning has become successful in recommendation.\nIn light of this, we propose a Heterogeneous Graph Contrastive Learning (HGCL),\nwhich is able to incorporate heterogeneous relational semantics into the\nuser-item interaction modeling with contrastive learning-enhanced knowledge\ntransfer across different views. However, the influence of heterogeneous side\ninformation on interactions may vary by users and items. To move this idea\nforward, we enhance our heterogeneous graph contrastive learning with meta\nnetworks to allow the personalized knowledge transformer with adaptive\ncontrastive augmentation. The experimental results on three real-world datasets\ndemonstrate the superiority of HGCL over state-of-the-art recommendation\nmethods. Through ablation study, key components in HGCL method are validated to\nbenefit the recommendation performance improvement. The source code of the\nmodel implementation is available at the link https://github.com/HKUDS/HGCL.",
+    "venue": "Web Search and Data Mining",
+    "venue_source": "Semantic Scholar",
+    "venue_lookup_time": "2024-11-19T16:36:29.853116",
+    "citations": 110,
+    "topic": "Knowledge Graph Contrastive Learning for Recommendation",
+    "field": "preselected",
+    "task1": "The proposed methodology focuses on enhancing recommendation systems through heterogeneous graph contrastive learning. To implement this technique, researchers should follow these steps:\n\n1. **Task**: The proposed model aims to improve user-item interaction predictions in recommendation systems by leveraging heterogeneous relational information.\n\n2. **Core Techniques/Algorithms**:\n   - **Heterogeneous Graph Neural Networks (GNNs)**: Used for embedding initialization and message propagation across different types of user-item and user-user/item-item graphs.\n   - **Contrastive Learning**: Specifically, a cross-view contrastive learning framework is utilized to enhance representation learning by aligning embeddings from auxiliary views with user-item interaction embeddings.\n   - **Meta Networks**: Employed to extract personalized knowledge and facilitate customized knowledge transfer between auxiliary views and the user-item interaction view.\n\n3. **Purpose and Function of Each Major Component**:\n   - **Heterogeneous GNN**: Encodes user and item relationships into embeddings that capture the semantics of various interactions.\n   - **Contrastive Learning**: Provides self-supervision signals to enhance the robustness of learned representations, allowing the proposed model to distinguish between relevant and irrelevant interactions.\n   - **Meta Network**: Models personalized characteristics to facilitate adaptive knowledge transfer, ensuring that the influence of auxiliary information is tailored to individual users and items.\n\n4. **Implementation Details**:\n   - **Heterogeneous GNN**:\n     - **Key Parameters**: Use Xavier initializer for embedding initialization; set the hidden dimensionality `d`.\n     - **Input/Output**: Take adjacency matrices for user-item, user-user, and item-item graphs as input; output relation-aware embeddings.\n     - **Constraints**: Ensure that the GNN can handle varying types of nodes and relations.\n   - **Contrastive Learning**:\n     - **Key Parameters**: Use cosine similarity as the similarity function; define a temperature coefficient for handling negative samples.\n     - **Input/Output**: Input embeddings from the meta network and user/item views; output contrastive loss values.\n     - **Constraints**: Maintain diverse representations to avoid overfitting.\n   - **Meta Network**:\n     - **Key Parameters**: Set up fully connected layers with PReLU activation to generate personalized transformation matrices.\n     - **Input/Output**: Input user and item embeddings; output transformed embeddings for personalized knowledge transfer.\n     - **Constraints**: Ensure low-rank decomposition of transformation matrices to reduce parameter count.\n\n5. **Step-by-Step Interaction**:\n   - Initialize user and item embeddings using a heterogeneous GNN.\n   - Perform heterogeneous message propagation to refine embeddings iteratively across user-item, user-user, and item-item graphs.\n   - Aggregate the refined embeddings from various views using a mean pooling function to retain heterogeneous semantics.\n   - Extract meta knowledge from the learned embeddings to create personalized mapping functions using the meta network.\n   - Apply contrastive learning to align embeddings from auxiliary views with the user-item interaction embeddings, generating a contrastive loss.\n   - Combine the contrastive loss with a pairwise loss function (like Bayesian Personalized Ranking) to optimize the proposed model.\n\n6. **Critical Implementation Details**:\n   - Choose appropriate hyperparameters such as embedding size, learning rate, and the number of GNN layers through systematic experimentation.\n   - Monitor the proposed model for signs of overfitting, especially when increasing the number of GNN layers or embedding dimensions.\n   - Ensure diverse user-item interaction patterns are captured through sufficient training data and effective augmentation techniques.\n\nBy following these structured steps and focusing on the described components, researchers can implement the heterogeneous graph contrastive learning methodology effectively, enhancing their recommendation systems' performance as outlined in this paper.",
+    "task2": "1. The primary task of this research is to enhance recommendation systems through the incorporation of heterogeneous relationships in user-item interactions. The proposed approach focuses on leveraging heterogeneous graph structures and contrastive learning techniques to improve the understanding of user preferences based on diverse relational information.\n\n2. Current approaches in recommendation systems often struggle to effectively utilize heterogeneous relational information, as many existing models primarily focus on homogeneous relationships. Additionally, these models typically face limitations related to data sparsity, leading to inadequate user and item embeddings that do not capture the full range of user preferences and item dependencies.\n\n3. The researchers aim to overcome significant challenges in incorporating heterogeneous side information into recommendation frameworks. These challenges include effectively transferring knowledge across diverse relational views and enabling personalized learning that adapts to individual user characteristics and interaction patterns.\n\n4. The key objectives of this research include developing a framework that employs heterogeneous graph contrastive learning to facilitate knowledge transfer between different types of relationships. The intended contributions are to provide a robust methodology for enhancing recommendation performance through personalized contrastive learning and to demonstrate the efficacy of this proposed approach in real-world recommendation scenarios. This study aspires to advance existing recommendation systems by integrating a broader spectrum of relational data while addressing the issues of data sparsity and user-specific preferences."
+  }

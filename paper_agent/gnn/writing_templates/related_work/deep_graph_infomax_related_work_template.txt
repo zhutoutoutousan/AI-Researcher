@@ -1,0 +1,14 @@
+```latex
+\section{Related Work}
+
+\subsection{[Topic/Area of Interest]}
+An important approach for [brief description of the approach] is to [explain the core idea]. For example, [provide a specific example or illustration]. [Discuss the relevance and importance of this approach, citing relevant works]. Although there are multiple methods to [describe the methods], the most common techniques use [explain common techniques]. Furthermore, [provide a specific example of a related work relevant to the approach].
+
+\subsection{[Another Topic/Area of Interest]}
+A key implementation detail in [specific methods or techniques] is how to [explain the detail]. The prior work on [specific subdomain] often relies on [explain the technique used]. [Describe what positive samples correspond to and any relevant sampling methods]. Recent works such as [Specific Work] utilize [another method or technique], exploring alternative approaches or enhancements.
+
+\subsection{[Yet Another Topic/Area of Interest]}
+[Another relevant method or technique] is another approach for [describe the goal or outcome of this method]. Similar to previous methods, [explain how this method relates to others]. However, [highlight the unique aspect or difference of this method]. Our approach, [explain what distinguishes your method from others], emphasizes [specific component or aspect].
+
+To the best of our knowledge, [briefly summarize key prior works relevant to your method]. These works typically focus on [describe the focus of these works] but often [highlight limitations or challenges]. Specifically, [provide details about why these approaches are not sufficient for the current state of research].
+```

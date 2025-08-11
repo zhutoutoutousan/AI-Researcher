@@ -1,0 +1,54 @@
+answer: "To find the greatest possible value of the expression \\(\\left(a + \\frac{1}{b}\\\
+  right)\\left(\\frac{1}{b} - a\\right)\\), we first simplify the expression:\n\n\\\
+  [\n\\left(a + \\frac{1}{b}\\right)\\left(\\frac{1}{b} - a\\right) = \\left(\\frac{1}{b}\\\
+  right)^2 - a^2.\n\\]\n\nThis simplifies to:\n\n\\[\n\\frac{1}{b^2} - a^2.\n\\]\n\
+  \nTo maximize this expression, we need to maximize \\(\\frac{1}{b^2}\\) and minimize\
+  \ \\(a^2\\). \n\n- Since \\(b\\) is in the range \\(3 \\leq b \\leq 5\\), the smallest\
+  \ value of \\(b\\) (which is \\(b = 3\\)) will maximize \\(\\frac{1}{b^2}\\). Thus,\
+  \ \\(\\frac{1}{b^2}\\) is maximized at \\(\\frac{1}{9}\\).\n- Since \\(a\\) is in\
+  \ the range \\(-6 \\leq a \\leq -2\\), the value of \\(a\\) that minimizes \\(a^2\\\
+  ) is \\(a = -2\\), because \\(a^2\\) is minimized when \\(a\\) is closest to zero.\
+  \ Thus, \\(a^2\\) is minimized at \\(4\\).\n\nSubstituting these values into the\
+  \ expression:\n\n\\[\n\\frac{1}{b^2} - a^2 = \\frac{1}{9} - 4 = \\frac{1}{9} - \\\
+  frac{36}{9} = -\\frac{35}{9}.\n\\]\n\nHowever, this result is negative, and we are\
+  \ asked to find the greatest possible value of the expression. To achieve the greatest\
+  \ value, we need to consider the maximum possible value of \\(\\frac{1}{b^2}\\)\
+  \ and the minimum possible value of \\(a^2\\), but in this case, the expression\
+  \ is maximized when \\(\\frac{1}{b^2}\\) is as large as possible and \\(a^2\\) is\
+  \ as small as possible, which we have already considered.\n\nThus, the greatest\
+  \ possible value of the expression is \\(-\\frac{35}{9}\\).\n\nFinal Answer: The\
+  \ final answer is \\(-\\frac{35}{9}\\). I hope it is correct."
+gt_answer: -\frac{35}{9}
+prompt: "Problem:\nFind the domain of the expression  $\\frac{\\sqrt{x-2}}{\\sqrt{5-x}}$.}\n\
+  \nSolution:\nThe expressions inside each square root must be non-negative. Therefore,\
+  \ $x-2 \\ge 0$, so $x\\ge2$, and $5 - x \\ge 0$, so $x \\le 5$. Also, the denominator\
+  \ cannot be equal to zero, so $5-x>0$, which gives $x<5$. Therefore, the domain\
+  \ of the expression is $\\boxed{[2,5)}$.\nFinal Answer: The final answer is $[2,5)$.\
+  \ I hope it is correct.\n\nProblem:\nIf $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B}\
+  \ = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$\n\nSolution:\nWe have that\
+  \ $\\det (\\mathbf{A} \\mathbf{B}) = (\\det \\mathbf{A})(\\det \\mathbf{B}) = (2)(12)\
+  \ = \\boxed{24}.$\nFinal Answer: The final answer is $24$. I hope it is correct.\n\
+  \nProblem:\nTerrell usually lifts two 20-pound weights 12 times. If he uses two\
+  \ 15-pound weights instead, how many times must Terrell lift them in order to lift\
+  \ the same total weight?\n\nSolution:\nIf Terrell lifts two 20-pound weights 12\
+  \ times, he lifts a total of $2\\cdot 12\\cdot20=480$ pounds of weight.  If he lifts\
+  \ two 15-pound weights instead for $n$ times, he will lift a total of $2\\cdot15\\\
+  cdot n=30n$ pounds of weight.  Equating this to 480 pounds, we can solve for $n$:\n\
+  \\begin{align*}\n30n&=480\\\n\\Rightarrow\\qquad n&=480/30=\\boxed{16}\n\\end{align*}\n\
+  Final Answer: The final answer is $16$. I hope it is correct.\n\nProblem:\nIf the\
+  \ system of equations\n\n\\begin{align*}\n6x-4y&=a,\\\n6y-9x &=b.\n\\end{align*}has\
+  \ a solution $(x, y)$ where $x$ and $y$ are both nonzero,\nfind $\\frac{a}{b},$\
+  \ assuming $b$ is nonzero.\n\nSolution:\nIf we multiply the first equation by $-\\\
+  frac{3}{2}$, we obtain\n\n$$6y-9x=-\\frac{3}{2}a.$$Since we also know that $6y-9x=b$,\
+  \ we have\n\n$$-\\frac{3}{2}a=b\\Rightarrow\\frac{a}{b}=\\boxed{-\\frac{2}{3}}.$$\n\
+  Final Answer: The final answer is $-\\frac{2}{3}$. I hope it is correct.\n\nPlease\
+  \ answer the following math question. You should think step by step to solve it.\n\
+  \nProblem:\nIf $-6\\leq a \\leq -2$ and $3 \\leq b \\leq 5$, what is the greatest\
+  \ possible value of $\\displaystyle\\left(a+\\frac{1}{b}\\right)\\left(\\frac{1}{b}-a\\\
+  right) $?  Express your answer as a common fraction.\n\nPlease given your final\
+  \ answer (answer ONLY) within the format of `Final Answer: The final answer is <answer>.\
+  \ I hope it is correct.` after your reasoning \nFor example: According to ...\n\
+  Final Answer: The final answer is $24$. I hope it is correct.\n"
+question: If $-6\leq a \leq -2$ and $3 \leq b \leq 5$, what is the greatest possible
+  value of $\displaystyle\left(a+\frac{1}{b}\right)\left(\frac{1}{b}-a\right) $?  Express
+  your answer as a common fraction.

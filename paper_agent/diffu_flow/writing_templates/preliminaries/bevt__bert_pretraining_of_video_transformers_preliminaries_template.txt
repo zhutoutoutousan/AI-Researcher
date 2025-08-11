@@ -1,0 +1,67 @@
+\section{Method}
+
+The goal of [Module Name] is to [main objective]. Here, [define any specific terms or categories relevant to the work]. Besides the effectiveness, another key problem to consider is [mention a secondary challenge related to the main objective].
+
+To this end, [Module Name] [describe the proposed solution or approach to tackle the challenges]. Our method consists of [number] main components: [component 1], [component 2], and [component 3]. In the following, we introduce the different components of our framework. Figure \ref{fig:framework_overview} gives an overview of our framework.
+
+\subsection{[First Component]}
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method for the first component.]
+
+\subsubsection{[Description of Input Data]}
+
+[Paragraph describing the detailed workflow of the first component, mentioning any specific data processing or handling.]
+
+\subsection{[Second Component]}
+
+[Several sentences comparing the proposed method with existing approaches in this area.]
+
+\subsubsection{[Mathematical Formulation]}
+
+Formally, we define [concept] as follows:
+
+\begin{equation}
+[Mathematical formulation of the key components]
+\end{equation}
+
+[Detailed explanation of each term in the equations.]
+
+\subsection{[Third Component]}
+
+[Description of this component and its significance in the overall method.]
+
+\subsubsection{[Training Objectives]}
+
+Denote the [specific terms or positions] as [appropriate variables or symbols]. The objective is to maximize [describe the goals or outcomes of the training tasks]:
+
+\begin{equation}
+L = [specific objective function]
+\end{equation}
+
+\subsection{[Training Strategies]}
+
+Following our design, we first [explain initial training strategy or steps]. The resulting model is then [describe how components are trained and their convergence process].
+
+\subsection{[Weight Sharing Strategy]}
+
+When jointly training the components, we implement a [describe the strategy]. This involves [specific adjustments or methodologies applied].
+
+\subsection{[Finetuning and Inference]}
+
+Once pretrained, [Module Name] provides [describe what developments are available for downstream tasks]. On targeted datasets, we [explain the finetuning strategy or additional layers used]. The resulting model can then be readily used for [specific applications]. 
+
+Figure \ref{fig:framework_components} illustrates [describe what the figure represents in terms of the module components]. 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{[figure_path]}
+    \caption{[Description of figure]}
+    \label{fig:framework_overview}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{[figure_path]}
+    \caption{[Description of figure]}
+    \label{fig:framework_components}
+\end{figure}

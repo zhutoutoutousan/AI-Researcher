@@ -1,0 +1,23 @@
+\section{[Main Topic]}
+
+Having introduced a [general technique/model] for [specific purpose], we can return to the problem of [specific challenge]. As outlined in the introduction, we can relax certain assumptions typically made in [relevant research area] by conditioning our model [Model Name] both on the [data/input type] and on [additional relevant information]. We expect this setting to be especially powerful in scenarios where [specific context or application]. The overall model, a [type of model] for [specific application or task], is schematically depicted in Figure [X].
+
+\subsection{[Example/Case Study Title]}
+
+In the following, we consider a [description of the specific model], for [specific application] on a graph with [description of graph properties]. We first [brief description of the pre-processing step]. Our forward model then takes the simple form:
+
+\begin{equation}
+Z = f(X, A) = [function/formulation] 
+\end{equation}
+
+Here, [explanation of the terms involved in the equation]. For [specific purpose], we then evaluate [evaluation method] over all labeled examples:
+
+\begin{equation}
+L = [loss function]
+\end{equation}
+
+where [definition of terms in the loss function]. The [model components] are trained using [training method]. In this work, we perform [specific training technique], which is a viable option as long as [conditions related to data]. The memory requirement is [memory complexity]. [Description of any additional techniques, if necessary]. We leave [future research directions or enhancements] for future work.
+
+\subsection{[Implementation Title]}
+
+In practice, we make use of [software/framework] for an efficient [type of implementation] of [specific equation/model]. The computational complexity of evaluating [specific equation/model] is then [computational complexity].

@@ -1,0 +1,25 @@
+\section{Introduction}
+
+\subsection{Context and Motivation}
+[Begin by discussing the evolution of the field. Describe the shift from [previous approach] to [current approach]. Highlight key advancements in areas such as [specific tasks or applications]. Explain the significance of this evolution.]
+
+\subsection{Existing Research}
+[Introduce recent work ([citation]) that challenges the conventional understanding of [specific aspect]. Summarize their findings and state the limitations of this work, including the performance comparison with [baseline method].]
+
+\subsection{Research Contributions}
+[Describe how the previous work suggested a promising direction forward. State how this paper aims to build on those findings by [specific aim of study]. For instance, say something like: "In this work, we empirically [action], by [method or approach used]."]
+
+\subsection{Clarification of Concepts}
+[Define any key concepts introduced in prior work and clarify misconceptions. Explain how different settings (e.g., "zero-shot", "one-shot", "few-shot") will be treated in this study, and provide a brief comparison of these approaches.]
+
+\subsection{Key Findings}
+[Summarize the main findings of the study, possibly by referencing figures or tables. For example: "Our findings are summarized in Figure [number]. We observe that [key observation], leading to the suggestion that [key contribution]."]
+
+\subsection{Performance Results}
+[Outline performance results achieved, including comparisons across different settings. For example: "We achieve [performance metric] in the [setting] setting, and compare it to [baseline], showcasing [result or implication]."]
+
+\subsection{Further Exploration}
+[Discuss any additional models or experiments that were conducted for comparison. Highlight patterns observed in the results and hypothesize on implications for future research. For example: "We also examine the relationship between [variable] and its effect on [outcome], suggesting that [conclusion]."]
+
+\subsection{Structure of the Paper}
+[Conclude the introduction with a brief overview of the structure of the remainder of the paper. For instance: "The remainder of the paper is organized as follows: [summarize sections]."]

@@ -1,0 +1,101 @@
+answer: 'To solve the problem, we need to perform a \(90^\circ\) clockwise rotation
+  of the complex number \(3\) around the point \(-4 - 5i\). Here''s how we can do
+  it step by step:
+
+
+  ---
+
+
+  ### Step 1: Represent the complex numbers
+
+  - The point around which we are rotating is \(c = -4 - 5i\).
+
+  - The complex number being rotated is \(z = 3\).
+
+
+  ---
+
+
+  ### Step 2: Translate the system so that \(c\) is at the origin
+
+  To rotate \(z\) around \(c\), we first translate \(z\) so that \(c\) is at the origin.
+  This is done by subtracting \(c\) from \(z\):
+
+  \[
+
+  z'' = z - c = 3 - (-4 - 5i) = 3 + 4 + 5i = 7 + 5i.
+
+  \]
+
+
+  ---
+
+
+  ### Step 3: Perform the rotation
+
+  A \(90^\circ\) clockwise rotation of a complex number \(z'' = a + bi\) is given
+  by multiplying by \(-i\):
+
+  \[
+
+  z'''' = z'' \cdot (-i) = (7 + 5i) \cdot (-i) = -7i - 5i^2 = -7i + 5 = 5 - 7i.
+
+  \]
+
+
+  ---
+
+
+  ### Step 4: Translate back to the original system
+
+  Now, we translate \(z''''\) back by adding \(c\):
+
+  \[
+
+  z_{\text{final}} = z'''' + c = (5 - 7i) + (-4 - 5i) = 5 - 4 - 7i - 5i = 1 - 12i.
+
+  \]
+
+
+  ---
+
+
+  ### Final Answer:
+
+  The resulting complex number is \(1 - 12i\).
+
+
+  Final Answer: The final answer is \(1 - 12i\). I hope it is correct.'
+gt_answer: 1 - 12i
+prompt: "Problem:\nFind the domain of the expression  $\\frac{\\sqrt{x-2}}{\\sqrt{5-x}}$.}\n\
+  \nSolution:\nThe expressions inside each square root must be non-negative. Therefore,\
+  \ $x-2 \\ge 0$, so $x\\ge2$, and $5 - x \\ge 0$, so $x \\le 5$. Also, the denominator\
+  \ cannot be equal to zero, so $5-x>0$, which gives $x<5$. Therefore, the domain\
+  \ of the expression is $\\boxed{[2,5)}$.\nFinal Answer: The final answer is $[2,5)$.\
+  \ I hope it is correct.\n\nProblem:\nIf $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B}\
+  \ = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$\n\nSolution:\nWe have that\
+  \ $\\det (\\mathbf{A} \\mathbf{B}) = (\\det \\mathbf{A})(\\det \\mathbf{B}) = (2)(12)\
+  \ = \\boxed{24}.$\nFinal Answer: The final answer is $24$. I hope it is correct.\n\
+  \nProblem:\nTerrell usually lifts two 20-pound weights 12 times. If he uses two\
+  \ 15-pound weights instead, how many times must Terrell lift them in order to lift\
+  \ the same total weight?\n\nSolution:\nIf Terrell lifts two 20-pound weights 12\
+  \ times, he lifts a total of $2\\cdot 12\\cdot20=480$ pounds of weight.  If he lifts\
+  \ two 15-pound weights instead for $n$ times, he will lift a total of $2\\cdot15\\\
+  cdot n=30n$ pounds of weight.  Equating this to 480 pounds, we can solve for $n$:\n\
+  \\begin{align*}\n30n&=480\\\n\\Rightarrow\\qquad n&=480/30=\\boxed{16}\n\\end{align*}\n\
+  Final Answer: The final answer is $16$. I hope it is correct.\n\nProblem:\nIf the\
+  \ system of equations\n\n\\begin{align*}\n6x-4y&=a,\\\n6y-9x &=b.\n\\end{align*}has\
+  \ a solution $(x, y)$ where $x$ and $y$ are both nonzero,\nfind $\\frac{a}{b},$\
+  \ assuming $b$ is nonzero.\n\nSolution:\nIf we multiply the first equation by $-\\\
+  frac{3}{2}$, we obtain\n\n$$6y-9x=-\\frac{3}{2}a.$$Since we also know that $6y-9x=b$,\
+  \ we have\n\n$$-\\frac{3}{2}a=b\\Rightarrow\\frac{a}{b}=\\boxed{-\\frac{2}{3}}.$$\n\
+  Final Answer: The final answer is $-\\frac{2}{3}$. I hope it is correct.\n\nPlease\
+  \ answer the following math question. You should think step by step to solve it.\n\
+  \nProblem:\nA $90^\\circ$ rotation around $-4 - 5i$ in the clockwise direction is\
+  \ applied to $3$ (as a complex number).  What is the resulting complex number?\n\
+  \nPlease given your final answer (answer ONLY) within the format of `Final Answer:\
+  \ The final answer is <answer>. I hope it is correct.` after your reasoning \nFor\
+  \ example: According to ...\nFinal Answer: The final answer is $24$. I hope it is\
+  \ correct.\n"
+question: A $90^\circ$ rotation around $-4 - 5i$ in the clockwise direction is applied
+  to $3$ (as a complex number).  What is the resulting complex number?

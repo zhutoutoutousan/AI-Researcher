@@ -1,0 +1,55 @@
+\section{Preliminaries}
+
+\subsection{Key Concept 1}
+\label{sec:key_concept_1}
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. 
+
+\begin{equation}
+\text{Wasserstein distance} \ W_2(A, B) = \sqrt{ \inf_{(X, Y) \text{s.t.} X \sim A, Y \sim B} \mathbb{E} \left[ | X - Y |^2 \right] }
+\end{equation}
+
+\text{[Multiple sentences explaining the motivation and intuition behind the proposed method]}
+
+\subsection{Key Concept 2}
+\label{sec:key_concept_2}
+
+To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3].
+
+\text{[A paragraph describing the detailed workflow of the module]}
+
+\subsubsection{Mathematical Foundation}
+
+Formally, we define [concept] as follows:
+
+\begin{definition}
+\text{[Definition of the concept]}
+\end{definition}
+
+\begin{equation}
+\text{Mathematical Definition: } [Mathematical formulation of the key components]
+\end{equation}
+
+Where [detailed explanation of each term in the equations].
+
+\subsection{Comparison with Existing Approaches}
+
+Furthermore, we compare our proposed method with existing approaches. 
+
+\text{[Several sentences comparing the proposed method with existing approaches]}
+
+\subsection{Additional Lemmas or Theorems}
+
+\subsubsection{Lemma/Definition Placeholder}
+
+\begin{lemma}
+\text{[State your lemma or definition]}
+\end{lemma}
+
+\text{[Proof or discussion of significance related to this lemma or definition]}
+
+\subsection{Conclusion of Preliminaries}
+
+In summary, our proposed methodology leverages [core summary of the foundations discussed] to provide [main result or contribution]. 
+
+\text{ [Linking this preliminary information to the next section of the paper] }

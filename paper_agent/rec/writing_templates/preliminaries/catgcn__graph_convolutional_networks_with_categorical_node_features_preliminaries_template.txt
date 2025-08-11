@@ -1,0 +1,67 @@
+\section{Methodology}
+
+We describe our method under the setting of [specific task or application], whereas the idea is generally applicable to [list other relevant applications]. The structure is represented as [brief description of representation, e.g., a matrix] where [define variables and parameters]. The main consideration of our work is that [specific challenge or problem]. For [specific concept], we denote [definition or notation].
+
+\subsection{Overall Framework}
+
+The target of [Module Name] is to [specific goal, e.g., improve representations] by [describe the approach]. As illustrated in [reference to a figure/table], [provide detailed explanation of the framework]. In particular, [description of the first component], [description of the second component], [description of any other components].
+
+Specifically, our approach can be formally defined as:
+
+\begin{equation}
+Y = [mathematical representation],
+\end{equation}
+
+where [explain each term in the equation, e.g., variables, dimensions]. Along the development of [related operations], we implement [specific design choice/implementation detail].
+
+Similar to [related approaches], [Module Name] is learned in an [describe learning approach, e.g., end-to-end] manner by optimizing an objective function:
+
+\begin{equation}
+L = [objective function],
+\end{equation}
+
+where [define variables in the objective function]. In the following, we introduce the [subsequent components or processes].
+
+\subsection{[Component/Subsection Title]}
+
+Inspired by [previous work or theory], [Module Name] focuses on [explain the focus]. To thoroughly address [specific aspect], our first belief is that [motivation for the approach]. Here, we consider [specific elements or modules].
+
+To bridge [specific gap], [Module Name] integrates [list of interactions or modules] into [specific representation or outcome]. Specifically, as shown in [reference to a figure/table], [Module Name] consists of three main modules:
+
+- · [First Module]: [Description of the purpose and process].
+- · [Second Module]: [Description of the purpose and process].
+- · [Third Module]: [Description of the purpose and process].
+
+\subsubsection{[Submodule Title]}
+
+For [specific concept], [describe the process or methodology]. For example, [provide an illustrative example]. The interactions are typically formulated as [mathematical representation or operation], which yields [outcome/impact]. 
+
+\begin{equation}
+h_{\text{local}} = [mathematical representation],
+\end{equation}
+
+where [explain the parameters and terms involved].
+
+\subsubsection{[Another Submodule Title]}
+
+Distinct from [previous section], the purpose of [Module Name] is to [describe]. In [real-world scenarios/experiments], [explain the diversity or importance]. Therefore, we need [describe the necessity]. Inspired by [theory or methodology], we achieve [specific goal or processing] with [approach or technique].
+
+We represent [concept or representation] as [mathematical or diagrammatic representation]. Formally, we define:
+
+\begin{equation}
+[mathematical representation],
+\end{equation}
+
+where [define terms involved]. 
+
+\subsubsection{[Final Submodule Title]}
+
+To comprehensively utilize the strengths of [previous components], [Module Name] fuses [relevant components] into [final representation]. As such, we perform [specific methodology], resulting in:
+
+\begin{equation}
+h' = [mathematical representation],
+\end{equation}
+
+where [define parameters and their significance].
+
+Overall, [explain the outcome and implications].

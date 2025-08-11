@@ -1,0 +1,5 @@
+\section{Abstract}
+
+Given [context or scenario], [specific problem or challenge] is proposed to [goal or purpose]. Previous work only [describe limitations of prior research], whereas [highlight what is not emphasized]. In this paper, we propose [module name] to tackle this problem. Specifically, we explore [brief description of the approach or mechanism] to [what the approach does], which are combined as [outcome of the combination]. We then [next steps taken based on the outcome]. We train [module name] by [training method], and we [explain what is achieved or learned during training].
+
+We carried out extensive experiments on [number] benchmark datasets. Our experimental results show that [module name] [performance summary, e.g., "outperforms state-of-the-art baselines"]. Furthermore, we also find that [additional findings or implications], which demonstrates [advantage or significance of the proposed method].

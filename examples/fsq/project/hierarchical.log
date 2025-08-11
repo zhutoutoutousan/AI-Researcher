@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workplace/project/run_hierarchical_quantization.py", line 17, in <module>
+    class HierarchicalQuantization(nn.Module):
+NameError: name 'nn' is not defined. Did you mean: 'np'?

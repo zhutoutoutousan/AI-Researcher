@@ -1,0 +1,59 @@
+\section{Experiments}
+
+In this section, our goal is to showcase the benefits of [brief explanation of what is being examined] for [target domain], for which we select [number] representative tasks. We begin with [Task 1] to check if [hypothesis or purpose of Task 1]. Next, we consider [Task 2], for which [hypothesis or purpose of Task 2].
+
+\subsection{Task 1}
+
+[Description of setup, methodology, and results for Task 1, including tables and figures as necessary. Use transition phrases such as "Specifically," "Furthermore," "To this end." Include details on metrics evaluated, models compared, and results achieved.]
+
+\begin{table}[h]
+\centering
+\caption{[Table title for results of Task 1]}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+Model & [Metric 1] & [Metric 2] & [Metric 3] & [Metric 4] & [Metric 5] & [Metric 6] \\
+\hline
+[Model Name 1] & [Value] & [Value] & [Value] & [Value] & [Value] & [Value] \\
+[Model Name 2] & [Value] & [Value] & [Value] & [Value] & [Value] & [Value] \\
+% Continue for additional models
+\hline
+\end{tabular}
+\end{table}
+
+[Summary of findings from Task 1, emphasizing key results and insights derived from the data.]
+
+\subsection{Task 2}
+
+[Description of setup, methodology, and results for Task 2 similar to Task 1. Focus on specificity for this task.]
+
+\begin{table}[h]
+\centering
+\caption{[Table title for results of Task 2]}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+Model & [Metric 1] & [Metric 2] & [Metric 3] & [Metric 4] & [Metric 5] & [Metric 6] \\
+\hline
+[Model Name 1] & [Value] & [Value] & [Value] & [Value] & [Value] & [Value] \\
+[Model Name 2] & [Value] & [Value] & [Value] & [Value] & [Value] & [Value] \\
+% Continue for additional models
+\hline
+\end{tabular}
+\end{table}
+
+[Summary of findings from Task 2, emphasizing key comparisons with existing approaches.]
+
+\subsection{Long Document Classification}
+
+We tackle [specific challenge in long document classification] where [description of the relevant task characteristics]. Below, we summarize the results for [Model/Method] using [context length or experimental setting] while we defer all other setup details to [reference to appendix or section, if applicable].
+
+\subsection{Pretraining and [Methodology]}
+
+We follow [reference to existing methodology or technique] to create [description of the experimental setup or model variations]. This task involves [explanation of what is involved in the task]. We use [detailed explanation of datasets or sources utilized] for [hints on methodology], comparing performance in [metrics used]. As shown in [reference to figures or tables].
+
+[Discussion on efficiency and effectiveness of the method.]
+
+\subsection{Task 3}
+
+[Follow the pattern of previous sections to introduce another set of tasks/results, if applicable.]
+
+[Final overview of results across tasks, reinforcing the claims made in the introduction regarding the advantages of the proposed method.]

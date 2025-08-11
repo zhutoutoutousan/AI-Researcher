@@ -1,0 +1,31 @@
+```latex
+\section{Introduction}
+
+Recent advances in [general field or topic, e.g., generative modelling, machine learning] have yielded [describe impressive outcomes or applications, e.g., impressive samples, breakthrough results]. At the same time, challenging tasks such as [list relevant challenges or problems, e.g., few-shot learning, domain adaptation] heavily rely on [describe what the reliance is on, e.g., learnt representations from raw data], but [state the limitation or issue with current methods, e.g., the usefulness of existing approaches is limited].
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method. Provide context about the relevance of the problem and discuss any gaps in existing solutions.]
+
+To tackle [restate the challenge], our method consists of three main components: 
+1. [component 1: describe the first key aspect of the method]
+2. [component 2: describe the second key aspect of the method]
+3. [component 3: describe the third key aspect of the method]
+
+Formally, we define [concept] as follows:
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+
+[Several sentences comparing the proposed method with existing approaches. Discuss what makes this method distinct and how it addresses the limitations of prior work.]
+
+[Tailored statement on the advantages of the method and its implications. Address why it is an improvement over prior techniques. Discuss any potential applications or usefulness.]
+
+Lastly, we [explain the next steps after the main contributions are introduced, e.g., exploring practical applications]. 
+
+Our contributions can thus be summarized as:
+\begin{itemize}
+    \item [Summarize contribution 1, clearly stating its significance]
+    \item [Summarize contribution 2, linking it to the broader impact or field]
+    \item [Summarize contribution 3, emphasizing its novelty and applicability]
+    \item [Summarize contribution 4, discussing any future implications or research directions]
+\end{itemize}
+```

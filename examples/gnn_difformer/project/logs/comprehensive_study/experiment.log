@@ -1,0 +1,111 @@
+2025-01-23 08:21:32,343 - Using device: cuda:2
+2025-01-23 08:21:32,343 - 
+Processing dataset: Cora
+2025-01-23 08:21:32,384 - 
+Running configuration: baseline
+2025-01-23 08:21:33,087 - Error processing Cora: module 'torch.optim' has no attribute 'CosineAnnealingLR'
+2025-01-23 08:21:33,087 - 
+Processing dataset: CiteSeer
+2025-01-23 08:21:40,886 - 
+Running configuration: baseline
+2025-01-23 08:21:40,892 - Error processing CiteSeer: module 'torch.optim' has no attribute 'CosineAnnealingLR'
+2025-01-23 08:21:40,893 - Comprehensive study completed. Results saved in ./logs/comprehensive_study
+2025-01-23 08:22:33,868 - Using device: cuda:2
+2025-01-23 08:22:33,868 - 
+Processing dataset: Cora
+2025-01-23 08:22:33,909 - 
+Running configuration: baseline
+2025-01-23 08:22:35,143 - Epoch 10/100: Train Acc = 0.9143, Val Acc = 0.4600
+2025-01-23 08:22:35,312 - Epoch 20/100: Train Acc = 1.0000, Val Acc = 0.4840
+2025-01-23 08:22:35,497 - Epoch 30/100: Train Acc = 1.0000, Val Acc = 0.4660
+2025-01-23 08:22:35,556 - Early stopping at epoch 32
+2025-01-23 08:22:35,556 - Configuration baseline completed:
+Best val acc: 0.4920 at epoch 12
+Test acc: 0.4570
+2025-01-23 08:22:36,006 - 
+Running configuration: high_reg
+2025-01-23 08:22:36,202 - Epoch 10/100: Train Acc = 0.8857, Val Acc = 0.4740
+2025-01-23 08:22:36,390 - Epoch 20/100: Train Acc = 1.0000, Val Acc = 0.4960
+2025-01-23 08:22:36,592 - Epoch 30/100: Train Acc = 1.0000, Val Acc = 0.4900
+2025-01-23 08:22:36,794 - Epoch 40/100: Train Acc = 1.0000, Val Acc = 0.4640
+2025-01-23 08:22:36,942 - Early stopping at epoch 46
+2025-01-23 08:22:36,943 - Configuration high_reg completed:
+Best val acc: 0.5080 at epoch 26
+Test acc: 0.4920
+2025-01-23 08:22:36,956 - 
+Running configuration: deep_model
+2025-01-23 08:22:37,300 - Epoch 10/100: Train Acc = 0.8714, Val Acc = 0.3900
+2025-01-23 08:22:37,639 - Epoch 20/100: Train Acc = 1.0000, Val Acc = 0.4720
+2025-01-23 08:22:37,991 - Epoch 30/100: Train Acc = 1.0000, Val Acc = 0.5280
+2025-01-23 08:22:38,324 - Epoch 40/100: Train Acc = 1.0000, Val Acc = 0.4880
+2025-01-23 08:22:38,658 - Epoch 50/100: Train Acc = 1.0000, Val Acc = 0.4420
+2025-01-23 08:22:38,761 - Early stopping at epoch 52
+2025-01-23 08:22:38,761 - Configuration deep_model completed:
+Best val acc: 0.5420 at epoch 32
+Test acc: 0.4880
+2025-01-23 08:22:38,785 - 
+Running configuration: high_dropout
+2025-01-23 08:22:39,013 - Epoch 10/100: Train Acc = 0.5429, Val Acc = 0.4020
+2025-01-23 08:22:39,224 - Epoch 20/100: Train Acc = 0.9643, Val Acc = 0.5160
+2025-01-23 08:22:39,432 - Epoch 30/100: Train Acc = 1.0000, Val Acc = 0.5140
+2025-01-23 08:22:39,640 - Epoch 40/100: Train Acc = 1.0000, Val Acc = 0.5260
+2025-01-23 08:22:39,857 - Epoch 50/100: Train Acc = 1.0000, Val Acc = 0.4920
+2025-01-23 08:22:40,059 - Epoch 60/100: Train Acc = 1.0000, Val Acc = 0.4460
+2025-01-23 08:22:40,144 - Early stopping at epoch 63
+2025-01-23 08:22:40,144 - Configuration high_dropout completed:
+Best val acc: 0.5320 at epoch 43
+Test acc: 0.4810
+2025-01-23 08:22:40,158 - 
+Running configuration: small_tau
+2025-01-23 08:22:40,386 - Epoch 10/100: Train Acc = 0.9357, Val Acc = 0.4560
+2025-01-23 08:22:40,593 - Epoch 20/100: Train Acc = 1.0000, Val Acc = 0.4720
+2025-01-23 08:22:40,798 - Epoch 30/100: Train Acc = 1.0000, Val Acc = 0.4460
+2025-01-23 08:22:40,882 - Early stopping at epoch 33
+2025-01-23 08:22:40,882 - Configuration small_tau completed:
+Best val acc: 0.4860 at epoch 13
+Test acc: 0.4740
+2025-01-23 08:22:40,899 - 
+Processing dataset: CiteSeer
+2025-01-23 08:22:40,955 - 
+Running configuration: baseline
+2025-01-23 08:22:41,257 - Epoch 10/100: Train Acc = 1.0000, Val Acc = 0.3800
+2025-01-23 08:22:41,517 - Epoch 20/100: Train Acc = 1.0000, Val Acc = 0.3720
+2025-01-23 08:22:41,726 - Early stopping at epoch 27
+2025-01-23 08:22:41,726 - Configuration baseline completed:
+Best val acc: 0.4220 at epoch 7
+Test acc: 0.4280
+2025-01-23 08:22:41,744 - 
+Running configuration: high_reg
+2025-01-23 08:22:42,054 - Epoch 10/100: Train Acc = 1.0000, Val Acc = 0.3420
+2025-01-23 08:22:42,327 - Epoch 20/100: Train Acc = 1.0000, Val Acc = 0.3020
+2025-01-23 08:22:42,587 - Epoch 30/100: Train Acc = 1.0000, Val Acc = 0.2920
+2025-01-23 08:22:42,639 - Early stopping at epoch 31
+2025-01-23 08:22:42,639 - Configuration high_reg completed:
+Best val acc: 0.3600 at epoch 11
+Test acc: 0.4020
+2025-01-23 08:22:42,657 - 
+Running configuration: deep_model
+2025-01-23 08:22:43,091 - Epoch 10/100: Train Acc = 0.9917, Val Acc = 0.4380
+2025-01-23 08:22:43,475 - Epoch 20/100: Train Acc = 1.0000, Val Acc = 0.3300
+2025-01-23 08:22:43,746 - Early stopping at epoch 26
+2025-01-23 08:22:43,746 - Configuration deep_model completed:
+Best val acc: 0.4680 at epoch 6
+Test acc: 0.4420
+2025-01-23 08:22:43,779 - 
+Running configuration: high_dropout
+2025-01-23 08:22:44,062 - Epoch 10/100: Train Acc = 0.7750, Val Acc = 0.3260
+2025-01-23 08:22:44,352 - Epoch 20/100: Train Acc = 1.0000, Val Acc = 0.4200
+2025-01-23 08:22:44,612 - Epoch 30/100: Train Acc = 1.0000, Val Acc = 0.3960
+2025-01-23 08:22:44,742 - Early stopping at epoch 34
+2025-01-23 08:22:44,743 - Configuration high_dropout completed:
+Best val acc: 0.4860 at epoch 14
+Test acc: 0.4680
+2025-01-23 08:22:44,760 - 
+Running configuration: small_tau
+2025-01-23 08:22:45,058 - Epoch 10/100: Train Acc = 1.0000, Val Acc = 0.4000
+2025-01-23 08:22:45,317 - Epoch 20/100: Train Acc = 1.0000, Val Acc = 0.3320
+2025-01-23 08:22:45,550 - Early stopping at epoch 28
+2025-01-23 08:22:45,551 - Configuration small_tau completed:
+Best val acc: 0.4000 at epoch 8
+Test acc: 0.4260
+2025-01-23 08:22:45,572 - Comprehensive study completed. Results saved in ./logs/comprehensive_study

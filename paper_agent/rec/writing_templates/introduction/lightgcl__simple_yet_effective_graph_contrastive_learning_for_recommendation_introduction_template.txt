@@ -1,0 +1,20 @@
+```latex
+\section{Introduction}
+
+Graph neural networks (GNNs) have shown effectiveness in [application area] by [brief description of their effectiveness and relevance]. In general, to learn [primary objectives], GNN-based [applications] perform [methodology] by [description of the process or layers used to achieve the objectives]. Most GNN-based [specific models] adhere to [learning paradigm], requiring [data requirements] for model training. However, many practical [application scenarios] struggle with the [identified challenge] in learning [desired outcomes] from [specific conditions]. To address the [challenge], [related technique] has been leveraged for [purpose of technique].
+
+Inspired by [previous work/technique], we propose [module name] to address [identified challenge]. The main idea of [new concept or method] is to [explain the concept or method briefly].
+
+While [previous methods] have shown [positive outcome], [specific challenge related to methods] serve as the core part of [relevant application]. Most current [related approaches] employ [approach used] to [objective of the approach]. To [concept or process], [previous method] has been proposed to [specific contribution or method of this previous work]. To improve [specific aspect], [another previous method] offers [explanation of improvement]. To work on [related objective], [named methods] are introduced to [target outcome]. Despite their effectiveness, [issues or limitations of current approaches].
+
+In light of the above limitations and challenges, we revisit [concept or technique] with a proposed [new method name]. In our model, [description of how the new method works and its benefits]. Instead of [previous approach description], [explanation of preservation of information or advantages offered by the new method]. This enables our [new method] to [describe the outcomes it supports].
+
+Our contributions are highlighted as follows:
+
+\begin{itemize}
+    \item [Contribution 1: Brief explanation of the first contribution]
+    \item [Contribution 2: Brief explanation of the second contribution]
+    \item [Contribution 3: Brief explanation of the third contribution]
+    \item [Contribution 4: Brief explanation of the fourth contribution]
+\end{itemize}
+```

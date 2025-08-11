@@ -1,0 +1,56 @@
+answer: "To solve this problem, we need to determine how much money, in cents, is\
+  \ left after converting as many coins into bills as possible. Here's how we can\
+  \ approach it:\n\n1. **Calculate the total amount of money earned by all four girls:**\n\
+  \   - Linda: \\$27.47\n   - Sherry: \\$35.23\n   - June: \\$37.37\n   - Connie:\
+  \ \\$26.52\n\n   Adding these amounts together:\n   \\[\n   27.47 + 35.23 + 37.37\
+  \ + 26.52 = 126.59\n   \\]\n   So, the total amount of money is \\$126.59.\n\n2.\
+  \ **Convert the dollars into cents:**\n   - \\$126.59 is equivalent to 126 dollars\
+  \ and 59 cents.\n   - Since 1 dollar = 100 cents, the 126 dollars can be converted\
+  \ into 126 \xD7 100 = 12,600 cents.\n   - Adding the 59 cents, the total amount\
+  \ in cents is 12,600 + 59 = 12,659 cents.\n\n3. **Determine how much money is left\
+  \ after converting as many coins into bills as possible:**\n   - When converting\
+  \ coins into bills, the amount left in cents will be the remainder when the total\
+  \ cents are divided by 100 (since 100 cents make 1 dollar).\n   - So, we calculate\
+  \ 12,659 mod 100:\n   \\[\n   12,659 \\mod 100 = 59\n   \\]\n   - Therefore, 59\
+  \ cents are left after converting as many coins into bills as possible.\n\nFinal\
+  \ Answer: The final answer is 59. I hope it is correct."
+gt_answer: '59'
+prompt: "Problem:\nFind the domain of the expression  $\\frac{\\sqrt{x-2}}{\\sqrt{5-x}}$.}\n\
+  \nSolution:\nThe expressions inside each square root must be non-negative. Therefore,\
+  \ $x-2 \\ge 0$, so $x\\ge2$, and $5 - x \\ge 0$, so $x \\le 5$. Also, the denominator\
+  \ cannot be equal to zero, so $5-x>0$, which gives $x<5$. Therefore, the domain\
+  \ of the expression is $\\boxed{[2,5)}$.\nFinal Answer: The final answer is $[2,5)$.\
+  \ I hope it is correct.\n\nProblem:\nIf $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B}\
+  \ = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$\n\nSolution:\nWe have that\
+  \ $\\det (\\mathbf{A} \\mathbf{B}) = (\\det \\mathbf{A})(\\det \\mathbf{B}) = (2)(12)\
+  \ = \\boxed{24}.$\nFinal Answer: The final answer is $24$. I hope it is correct.\n\
+  \nProblem:\nTerrell usually lifts two 20-pound weights 12 times. If he uses two\
+  \ 15-pound weights instead, how many times must Terrell lift them in order to lift\
+  \ the same total weight?\n\nSolution:\nIf Terrell lifts two 20-pound weights 12\
+  \ times, he lifts a total of $2\\cdot 12\\cdot20=480$ pounds of weight.  If he lifts\
+  \ two 15-pound weights instead for $n$ times, he will lift a total of $2\\cdot15\\\
+  cdot n=30n$ pounds of weight.  Equating this to 480 pounds, we can solve for $n$:\n\
+  \\begin{align*}\n30n&=480\\\n\\Rightarrow\\qquad n&=480/30=\\boxed{16}\n\\end{align*}\n\
+  Final Answer: The final answer is $16$. I hope it is correct.\n\nProblem:\nIf the\
+  \ system of equations\n\n\\begin{align*}\n6x-4y&=a,\\\n6y-9x &=b.\n\\end{align*}has\
+  \ a solution $(x, y)$ where $x$ and $y$ are both nonzero,\nfind $\\frac{a}{b},$\
+  \ assuming $b$ is nonzero.\n\nSolution:\nIf we multiply the first equation by $-\\\
+  frac{3}{2}$, we obtain\n\n$$6y-9x=-\\frac{3}{2}a.$$Since we also know that $6y-9x=b$,\
+  \ we have\n\n$$-\\frac{3}{2}a=b\\Rightarrow\\frac{a}{b}=\\boxed{-\\frac{2}{3}}.$$\n\
+  Final Answer: The final answer is $-\\frac{2}{3}$. I hope it is correct.\n\nPlease\
+  \ answer the following math question. You should think step by step to solve it.\n\
+  \nProblem:\nLinda, Sherry, June, and Connie walked around their neighborhoods selling\
+  \ girl scout cookies. Linda earned $\\$27.47$, Sherry earned $\\$35.23$, June earned\
+  \ $\\$37.37$, and Connie earned $\\$26.52$. After the sale, they pooled their money\
+  \ together and went to the bank to convert the coins into dollars. How much money,\
+  \ in cents, was left after they converted as many of the coins into bills as they\
+  \ could?\n\nPlease given your final answer (answer ONLY) within the format of `Final\
+  \ Answer: The final answer is <answer>. I hope it is correct.` after your reasoning\
+  \ \nFor example: According to ...\nFinal Answer: The final answer is $24$. I hope\
+  \ it is correct.\n"
+question: Linda, Sherry, June, and Connie walked around their neighborhoods selling
+  girl scout cookies. Linda earned $\$27.47$, Sherry earned $\$35.23$, June earned
+  $\$37.37$, and Connie earned $\$26.52$. After the sale, they pooled their money
+  together and went to the bank to convert the coins into dollars. How much money,
+  in cents, was left after they converted as many of the coins into bills as they
+  could?

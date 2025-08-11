@@ -1,0 +1,67 @@
+2025-01-23 10:02:51,832 - INFO - Starting final experiments with optimized configuration
+2025-01-23 10:02:51,832 - INFO - 
+Starting experiments on yelp dataset
+2025-01-23 10:02:51,914 - INFO - yelp dataset loaded: 29601 users, 24734 items
+2025-01-23 10:03:30,199 - INFO - Epoch 1/35 - Loss: 5.0036
+2025-01-23 10:03:57,612 - INFO - Epoch 2/35 - Loss: 4.6666
+2025-01-23 10:04:25,174 - INFO - Epoch 3/35 - Loss: 4.5705
+2025-01-23 10:04:52,817 - INFO - Epoch 4/35 - Loss: 4.5340
+2025-01-23 10:05:20,424 - INFO - Epoch 5/35 - Loss: 4.5137
+2025-01-23 10:05:28,026 - INFO - Epoch 5 Eval - Recall@20: 0.0495, NDCG@20: 0.0408
+2025-01-23 10:05:28,026 - INFO - New best performance - Recall@20: 0.0495, NDCG@20: 0.0408
+2025-01-23 10:05:55,644 - INFO - Epoch 6/35 - Loss: 4.4978
+2025-01-23 10:06:23,335 - INFO - Epoch 7/35 - Loss: 4.4756
+2025-01-23 10:06:51,055 - INFO - Epoch 8/35 - Loss: 4.4665
+2025-01-23 10:07:18,715 - INFO - Epoch 9/35 - Loss: 4.4641
+2025-01-23 10:07:46,333 - INFO - Epoch 10/35 - Loss: 4.4547
+2025-01-23 10:07:54,151 - INFO - Epoch 10 Eval - Recall@20: 0.0530, NDCG@20: 0.0434
+2025-01-23 10:07:54,151 - INFO - New best performance - Recall@20: 0.0530, NDCG@20: 0.0434
+2025-01-23 10:08:21,714 - INFO - Epoch 11/35 - Loss: 4.4467
+2025-01-23 10:08:49,439 - INFO - Epoch 12/35 - Loss: 4.4376
+2025-01-23 10:09:17,147 - INFO - Epoch 13/35 - Loss: 4.4379
+2025-01-23 10:09:44,803 - INFO - Epoch 14/35 - Loss: 4.4285
+2025-01-23 10:10:12,444 - INFO - Epoch 15/35 - Loss: 4.4294
+2025-01-23 10:10:20,553 - INFO - Epoch 15 Eval - Recall@20: 0.0543, NDCG@20: 0.0443
+2025-01-23 10:10:20,553 - INFO - New best performance - Recall@20: 0.0543, NDCG@20: 0.0443
+2025-01-23 10:10:48,149 - INFO - Epoch 16/35 - Loss: 4.4269
+2025-01-23 10:11:15,891 - INFO - Epoch 17/35 - Loss: 4.4213
+2025-01-23 10:11:43,588 - INFO - Epoch 18/35 - Loss: 4.4174
+2025-01-23 10:12:11,372 - INFO - Epoch 19/35 - Loss: 4.4150
+2025-01-23 10:12:39,083 - INFO - Epoch 20/35 - Loss: 4.4123
+2025-01-23 10:12:47,153 - INFO - Epoch 20 Eval - Recall@20: 0.0554, NDCG@20: 0.0450
+2025-01-23 10:12:47,153 - INFO - New best performance - Recall@20: 0.0554, NDCG@20: 0.0450
+2025-01-23 10:13:14,744 - INFO - Epoch 21/35 - Loss: 4.4086
+2025-01-23 10:13:42,471 - INFO - Epoch 22/35 - Loss: 4.4026
+2025-01-23 10:14:10,155 - INFO - Epoch 23/35 - Loss: 4.3991
+2025-01-23 10:14:37,870 - INFO - Epoch 24/35 - Loss: 4.3931
+2025-01-23 10:15:05,582 - INFO - Epoch 25/35 - Loss: 4.3939
+2025-01-23 10:15:13,798 - INFO - Epoch 25 Eval - Recall@20: 0.0564, NDCG@20: 0.0459
+2025-01-23 10:15:13,799 - INFO - New best performance - Recall@20: 0.0564, NDCG@20: 0.0459
+2025-01-23 10:15:41,368 - INFO - Epoch 26/35 - Loss: 4.3825
+2025-01-23 10:16:09,085 - INFO - Epoch 27/35 - Loss: 4.3847
+2025-01-23 10:16:36,799 - INFO - Epoch 28/35 - Loss: 4.3843
+2025-01-23 10:17:04,506 - INFO - Epoch 29/35 - Loss: 4.3797
+2025-01-23 10:17:32,157 - INFO - Epoch 30/35 - Loss: 4.3797
+2025-01-23 10:17:40,634 - INFO - Epoch 30 Eval - Recall@20: 0.0576, NDCG@20: 0.0467
+2025-01-23 10:17:40,635 - INFO - New best performance - Recall@20: 0.0576, NDCG@20: 0.0467
+2025-01-23 10:18:08,215 - INFO - Epoch 31/35 - Loss: 4.3804
+2025-01-23 10:18:36,062 - INFO - Epoch 32/35 - Loss: 4.3721
+2025-01-23 10:19:03,782 - INFO - Epoch 33/35 - Loss: 4.3779
+2025-01-23 10:19:31,493 - INFO - Epoch 34/35 - Loss: 4.3631
+2025-01-23 10:19:59,184 - INFO - Epoch 35/35 - Loss: 4.3710
+2025-01-23 10:20:07,600 - INFO - Epoch 35 Eval - Recall@20: 0.0577, NDCG@20: 0.0469
+2025-01-23 10:20:07,600 - INFO - New best performance - Recall@20: 0.0577, NDCG@20: 0.0469
+2025-01-23 10:20:16,014 - INFO - 
+Final Results for yelp:
+2025-01-23 10:20:16,014 - INFO - Best - Recall@20: 0.0577, NDCG@20: 0.0469
+2025-01-23 10:20:16,014 - INFO - Final - Recall@20: 0.0577, NDCG@20: 0.0469
+2025-01-23 10:20:16,030 - INFO - 
+Starting experiments on gowalla dataset
+2025-01-23 10:20:16,227 - INFO - gowalla dataset loaded: 5000 users, 5000 items
+2025-01-23 10:20:16,227 - ERROR - Error during experiment on gowalla: 'Tensor' object has no attribute 'tocoo'
+2025-01-23 10:20:16,227 - INFO - 
+Comparative Results Across Datasets:
+2025-01-23 10:20:16,227 - INFO - 
+yelp:
+2025-01-23 10:20:16,227 - INFO - Best Performance - Recall@20: 0.0577, NDCG@20: 0.0469
+2025-01-23 10:20:16,227 - INFO - Final Performance - Recall@20: 0.0577, NDCG@20: 0.0469

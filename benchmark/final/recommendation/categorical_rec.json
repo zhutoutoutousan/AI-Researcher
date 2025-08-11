@@ -1,0 +1,154 @@
+{
+    "target": "Categorical Features of entities in Recommendation Systems Using Graph Neural Networks",
+    "instance_id": "categorical_rec",
+    "source_papers": [
+      {
+        "reference": "Matrix factorization techniques for recommender systems",
+        "rank": 1,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This seminal work lays the foundation for collaborative filtering methods, highlighting the efficacy of matrix factorization techniques. It has had a profound influence on the development of recommender systems, serving as a core methodological basis for many subsequent studies.",
+        "usage": "Used to establish baseline methods for comparison with graph neural network approaches."
+      },
+      {
+        "reference": "Catgcn: Graph convolutional networks with categorical node features",
+        "rank": 2,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This study introduces the use of categorical node features in graph convolutional networks, providing novel methodologies that align with GNN implementations in recommendations. Its conceptualization of categorical attributes as nodes has inspired the use of the proposed model in the current research.",
+        "usage": "Provided a competitive baseline against which the novel proposed model was tested."
+      },
+      {
+        "reference": "Graph Representation Learning",
+        "rank": 3,
+        "type": [
+          "methodological"
+        ],
+        "justification": "Offers detailed insights into graph representation techniques, facilitating the understanding and implementation of GNN methods. The connection to user-item interactions contributes to modeling efficacy in recommendation systems, as demonstrated by the proposed approach. This study analyzes the impacts of various strategies on performance metrics.",
+        "usage": "Influenced design choices related to graph-based approaches in this study."
+      },
+      {
+        "reference": "Incorporating price into recommendation with graph convolutional networks",
+        "rank": 4,
+        "type": [
+          "component"
+        ],
+        "justification": "Demonstrates how specific user-item attributes (like price) can be effectively integrated into GNN frameworks. The methodology used here provided a foundation for embedding price in the recommended system using the proposed approach.",
+        "usage": "Utilized as a basis to evaluate the impact of price information in the proposed model."
+      },
+      {
+        "reference": "Neighbor interaction aware graph convolution networks for recommendation",
+        "rank": 5,
+        "type": [
+          "component"
+        ],
+        "justification": "This research presented enhancements in graph-based recommendations through neighbor interaction awareness, which informed the incorporation of the proposed model aggregations in this paper.",
+        "usage": "Informed the design of the proposed approach by highlighting the importance of neighbor interactions."
+      },
+      {
+        "reference": "Context-aware recommender systems",
+        "rank": 6,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This work inspired the theoretical framework of considering contextual influences on user preferences, underscoring the necessity of categorical features based on user attributes in recommendation models.",
+        "usage": "Provided conceptual support for the integration of categorical attributes and methodological justification for the proposed approach usage."
+      },
+      {
+        "reference": "Semi-supervised classification with graph convolutional networks",
+        "rank": 7,
+        "type": [
+          "methodological"
+        ],
+        "justification": "Explores GNN methodologies that enhance classification tasks through semi-supervised frameworks. Such approaches are crucial as they underpin the proposed model's adaptive learning capabilities from sparse dataset contexts.",
+        "usage": "Informed the training methodologies applied to the proposed model system."
+      },
+      {
+        "reference": "BPR: bayesian personalized ranking from implicit feedback",
+        "rank": 8,
+        "type": [
+          "methodological"
+        ],
+        "justification": "Describes a widely adopted loss function for recommender systems, utilizing user-item interactions effectively. It establishes a scoring mechanism critical for the evaluation of GNN models in this study.",
+        "usage": "Employed as part of the training framework for evaluating the proposed model performance."
+      },
+      {
+        "reference": "Research commentary on recommendations with side information: A survey and research directions",
+        "rank": 9,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "Highlights the significance of side information in enhancing recommendation accuracy, reinforcing the importance of integrating categorical features as additional information.",
+        "usage": "Informing the rationale for including categorical features in the experimental design."
+      },
+      {
+        "reference": "A2 GCN",
+        "rank": 10,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This work presents a method for incorporating categorical attributes as additional nodes within graph frameworks, which closely parallels this study's focus on the proposed model, providing methodological insights for implementation.",
+        "usage": "Compared against existing methodologies as a baseline for model performance evaluation."
+      },
+      {
+        "reference": "Dual graph enhanced embedding neural network for CTR prediction",
+        "rank": 11,
+        "type": [
+          "methodological"
+        ],
+        "justification": "Enhances understanding of integrating dual graph frameworks within GNNs, offering insights on embedding user-item relationships relevant to the proposed model.",
+        "usage": "Provided comparative insights for the evaluation of user-item interactions throughout experimentation."
+      },
+      {
+        "reference": "Wide & deep learning for recommender systems",
+        "rank": 12,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "Offers a comprehensive view on combining feature-based and deep learning methods in recommendations, highlighting the balance between generalization and specialization.",
+        "usage": "Considered for theoretical parallels in balancing categorical feature integration."
+      },
+      {
+        "reference": "Price DOES matter!: Modeling price and interest preferences in session-based recommendation",
+        "rank": 13,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "Addresses the relationship between price modeling and user preferences, emphasizing the relevance of price as a categorical feature in the recommendation process.",
+        "usage": "Informed the design aspects related to categorical features in the proposed model."
+      },
+      {
+        "reference": "Inductive representation learning on large graphs",
+        "rank": 14,
+        "type": [
+          "methodological"
+        ],
+        "justification": "Elucidates effective techniques for inductive representation learning, critical for adapting GNN methods to dynamic datasets typical in recommendation systems.",
+        "usage": "Informed representation techniques crucial for the proposed approach methodologies."
+      },
+      {
+        "reference": "Graph convolutional matrix completion",
+        "rank": 15,
+        "type": [
+          "methodological"
+        ],
+        "justification": "Presents innovative approaches for graph data completion that can benefit from modeling improvements, complementing this study's proposed model integration in GNNs.",
+        "usage": "Provided methodological context in using the proposed approach for matrix completion within recommender systems."
+      }
+    ],
+    "authors": [
+      "Tinatini Buturishvili",
+      "Nils Morten Kriege"
+    ],
+    "year": "2024",
+    "url": "https://openreview.net/forum?id=PuCno7nwgH",
+    "abstract": "The paper tackles the challenge of capturing entity attribute-specific preferences in recommender systems, with a particular focus on the role of categorical features within GNN-based user-item recommender engines. Despite the significant influence of categorical features such as brand, category, and price bucket on the user decision-making process, there are not many studies dedicated to understanding the GNN's capability to extract and model such preferences effectively. The study extensively compares and tests various techniques for incorporating categorical features into the GNN framework to address this gap. These techniques include one-hot encoding-based node features, category-value nodes, and hyperedges. Three real-world datasets are used to answer what is the most optimal way to incorporate such information. In addition, the paper introduces a novel hyperedge-based method designed to leverage categorical features more effectively compared to existing approaches. The advantage of the hyperedge approach is demonstrated through extensive experiments in effectively modeling categorical features and extracting user attribute-specific preferences.",
+    "venue": "ICLR_lowrate",
+    "citations": 0,
+    "topic": "low_rate",
+    "field": "low_rate",
+    "task1": "To implement the methodology proposed in this paper focused on utilizing categorical entity features in recommendation systems via graph neural networks, follow these steps:\n\n1. **Task**: The proposed model addresses the task of predicting user preferences in a recommender system by leveraging user-item interactions and categorical entity features, aiming to improve recommendation quality.\n\n2. **Core Techniques/Algorithms**:\n   - **Graph Convolutional Networks (GCN)** for standard neighborhood aggregation.\n   - **Hyperedge Aggregation** methods to exploit categorical features that connect multiple nodes.\n   - **Bayesian Personalized Ranking (BPR)** for optimizing the recommendations.\n\n3. **Purpose of Technical Components**:\n   - **GCN Layer**: Captures local user-item interactions by aggregating neighboring nodes.\n   - **Hyperedge Aggregation**: Effectively models the relationships between items and users sharing categorical characteristics by combining connections in a hypergraph structure.\n   - **BPR Loss Function**: Trains the proposed model by encouraging higher scores for positive user-item interactions than for negative ones.\n\n4. **Implementation Details**:\n   - **Key Parameters**: \n       - *Learning Rate*: Choose from (0.1, 0.01, 0.001, 0.0001).\n       - *L2 Normalization*: Test values (1e-10, 1e-8, 1e-5, 1e-4).\n       - *Embedding Size*: Fixed at 64.\n   - **Input/Output Specifications**:\n       - *Input Graph*: Construct a bipartite graph \\( G = (V, E) \\) where \\( V \\) includes user and item nodes, and \\( E \\) includes edges denoting interactions.\n       - *Classification Outputs*: The final node embeddings from the proposed model represent user preferences towards items.\n   - **Constraints**: Ensure to handle sparsity in categorical features to prevent model inefficacies and adjust the proposed model based on validation performance.\n\n5. **Step-by-Step Interaction**:\n   - Initialize proposed model parameters and construct the adjacency matrix from the input user-item interactions.\n   - Create hyperedges for each categorical feature (price level and category) linking users and items sharing the same categorical values.\n   - For each training iteration (up to a specified maximum, e.g., 200):\n       - Aggregate neighborhood features using the GCN layer to obtain user and item representations.\n       - Conduct hyperedge aggregation by summing the embeddings of user and item nodes connected by hyperedges.\n       - Concatenate the results from neighborhood and hyperedge aggregations to form the final embeddings.\n       - Update the proposed model parameters using the BPR loss function to optimize the proposed model on the training data.\n   - After training, the proposed model can predict user preferences based on the final embeddings of users and items.\n\n6. **Critical Implementation Details**: \n   - Ensure effective regularization to prevent overfitting, especially when using hyperedges that can increase proposed model complexity.\n   - Perform careful hyperparameter tuning, particularly for learning rate and regularization factors, as these significantly impact convergence and performance.\n   - Validate the performance of aggregation methods by comparing them against different configurations, ensuring that hyperedge methods consistently outperform simpler categorical integration techniques, thereby enhancing the proposed model's capability to capture complex user preferences.",
+    "task2": "1. The primary task of this research is to enhance the effectiveness of recommender systems by improving the understanding and modeling of user preferences based on categorical features within user-item interactions, particularly utilizing graph neural networks.\n\n2. Current approaches to integrating categorical features into graph-based recommendation models exhibit several limitations, including insufficient clarity on the most suitable methods of incorporation, inconsistent performance across various techniques, and a lack of comprehensive guidelines for how different methods impact the extraction of user preferences.\n\n3. The core challenges the researchers aim to overcome include identifying the most effective ways to represent categorical features in graph neural network architectures, addressing the sparsity and complexity of existing feature representation methods, and improving the overall accuracy of user-item recommendations by better capturing user preferences related to various categorical attributes.\n\n4. Key objectives of this research include systematically reviewing existing methods for incorporating categorical features into recommender systems, proposing a new approach that utilizes the proposed model for representing these features, and empirically validating the superiority of this technique over traditional methods through extensive comparisons across different datasets, thereby advancing the understanding of how to effectively leverage categorical features in graph-based recommendation models."
+}

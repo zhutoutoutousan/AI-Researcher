@@ -1,0 +1,58 @@
+\section{Module Name}
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. Our approach consists of [describe the general components of the method]. 
+
+\subsection{Introduction}
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method]. Furthermore, [additional context or background on the challenge]. 
+
+\subsection{Methodology}
+
+To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3]. Specifically, we define [concept] as follows:
+
+\begin{equation}
+\text{Mathematical formulation of the key concept}
+\end{equation}
+
+[A paragraph describing the detailed workflow of the module]. The complete set of parameters for the model includes [describe the parameters]. 
+
+The [describe the input/output relations in the method; possibly use multiple equations]:
+\begin{equation}
+\text{Mathematical formulation for output based on input}
+\end{equation}
+
+\begin{equation}
+\text{Mathematical formulation for a related component}
+\end{equation}
+
+\subsection{Gradient and Learning}
+
+[Several sentences explaining the learning process, including any approximations used]. To this end, we use [describe the learning strategy briefly]. 
+
+As depicted in [refer to figure or diagram], the [describe the role of the gradient or backpropagation]. 
+
+Equation [number] specifies the overall loss function, which is composed of three primary terms:
+
+\begin{equation}
+\text{Mathematical formulation for the overall loss}
+\end{equation}
+
+where [explain each term in the equation, clarifying their roles in training].
+
+\subsection{Evaluation of the Model}
+
+The log-likelihood of the complete model can be evaluated as follows:
+
+\begin{equation}
+\text{Mathematical formulation for log-likelihood}
+\end{equation}
+
+while considering [any relevant assumptions]. 
+
+\subsection{Prior Distribution}
+
+We define the prior distribution over [concept] as [define the distribution]. [Explain how this prior is used within the training framework and its significance]. 
+
+[Optional future work or improvements that could be pursued]. 
+
+% End of Template

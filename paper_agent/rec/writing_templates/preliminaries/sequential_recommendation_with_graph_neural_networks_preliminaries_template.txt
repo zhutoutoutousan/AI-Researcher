@@ -1,0 +1,32 @@
+\section{Problem Formulation}
+
+Here we provide a formal definition of [main topic]. Assume we have a set of [entities], denoted by [set notation], where [element notation] denotes an [entity type]. The number of entities is denoted as [|set notation|]. Generally, a [subject] has a [interaction type] with entities: $\{ [element notation]_1, [element notation]_2, \ldots, [element notation]_{n} \} $, where $n$ is the number of interactions and [element notation]$_{i}$ is the $i$-th [entity type] that the [subject] has interacted with. The goal of [main topic] aims to [describe the objective]. The [subject]’s characteristics can be inferred from [type of feedback/interaction]. Based on the above definition, the task of [main topic] can be formulated as follows:
+
+\textbf{Input:} The [describe input type] for each [subject type] $\{ [element notation]_1, [element notation]_2, \ldots, [element notation]_{n} \} $.
+
+\textbf{Output:} A [type of model] that [describe output type and its estimation goal]. 
+
+% The following sections provide further details on the [specific aspects of the model].
+
+\subsection{Motivation and Intuition}
+
+This section provides [multiple sentences explaining the motivation and intuition behind the proposed method].
+
+\subsection{Method Overview}
+
+To tackle [specific challenge], our method consists of three main components: [component 1], [component 2], and [component 3]. Specifically, [a paragraph describing the detailed workflow of the module].
+
+\subsection{Comparison with Existing Approaches}
+
+Furthermore, we provide a comparison of the proposed method with existing approaches, highlighting [several sentences comparing the proposed method with existing approaches].
+
+\subsection{Mathematical Formulation}
+
+Formally, we define [concept 1], [concept 2], and [concept 3] as follows:
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+
+\subsection{Terminology Explanation}
+
+Finally, we provide a detailed explanation of each term in the equations, specifically [detailed explanation of each term in the equations].

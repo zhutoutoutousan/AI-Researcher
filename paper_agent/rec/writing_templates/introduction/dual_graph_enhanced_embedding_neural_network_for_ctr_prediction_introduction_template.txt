@@ -1,0 +1,25 @@
+```latex
+\section{Introduction}
+The prediction of [research area/topic] plays a crucial role in [applications/fields], which is [describe significance, e.g., a multi-billion dollar business] \cite{[reference]}. Most of the existing methods for [specific task] can be classified into two categories, i.e., [category 1] and [category 2]. Both [category 1] and [category 2] follow a similar [approach or paradigm]: input features are first transformed into [describe the transformation, e.g., trainable embedding vectors] which are [describe further processing], finally fed into [describe final processing, e.g., fully connected layers] to get the predicted outcome. Models in the former class such as [model 1] \cite{[reference]}, [model 2] \cite{[reference]}, and [model 3] \cite{[reference]} focus on [describe focus of models]. The models in the latter class like [model 4] \cite{[reference]}, [model 5] \cite{[reference]}, and [model 6] \cite{[reference]} aim to [describe focus of this class of models].
+
+Though these two kinds of methods have been investigated for years and obtained great progress, several challenges still exist, which limit the performance of existing methods, especially when deployed in [context, e.g., large-scale industrial applications].
+
+\begin{itemize}
+  \item \textbf{Challenge 1:} [Describe challenge 1 briefly. Include any illustrative examples or figures, if applicable.]
+  \item \textbf{Challenge 2:} [Describe challenge 2 briefly. Include any illustrative examples or figures, if applicable.]
+\end{itemize}
+
+Recently, [new technique/approach] has been used to [describe the application or benefit]. The intuition motivating the involvement of [new technique/approach] in [context] is that [explain intuition and expected benefits].
+
+We propose a novel [method/module name], which is designed with [describe considerations or objectives] to address the above challenges in existing methods. Specifically, we construct [describe components, e.g., two kinds of graphs] from different perspectives to tackle the mentioned challenges. On the one hand, [describe component 1 and its function]. With such [benefit of component 1], [explain further benefits]. On the other hand, [describe component 2 and its function]. Exploiting the properties of this component, [describe expected outcomes].
+
+Yet, how to [describe the challenge in implementation] is still challenging due to the following reasons. First, [describe reason 1]. Second, [describe reason 2]. To handle such issues, [method/module name] learns [describe process] with [describe strategies or approaches]. 
+
+To sum up, our contributions in this paper can be summarized as follows:
+
+\begin{itemize}
+  \item \textbf{Contribution 1:} We propose [method/module name], which [describe key innovation]. 
+  \item \textbf{Contribution 2:} More specifically, [describe specific elements or approaches] that aim to address [challenges].
+  \item \textbf{Contribution 3:} We perform extensive experiments on [datasets or scenarios], demonstrating [main findings or contributions].
+\end{itemize}
+```

@@ -1,0 +1,23 @@
+```latex
+\section{Introduction}
+
+[Begin with an overview of the current state of research in the field. Mention key techniques and previous works that have been influential. Use citations appropriately.]
+
+\textbf{Inspired by [previous work/technique], we propose [module name] to address [challenge].} [Provide context and relevance to the current work, specifying the significance of the challenge.]
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method. Discuss the limitations of current methods and how the proposed method aims to overcome them.]
+
+[To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3].] [Include a brief description of each component, outlining their roles and importance.]
+
+\textbf{Formally, we define [concept] as follows:} 
+
+\begin{equation}
+[Mathematical formulation of the key components]
+\end{equation}
+
+[Detailed explanation of each term in the equations. Clarify the significance and implications of these definitions.]
+
+[Several sentences comparing the proposed method with existing approaches. Highlight the advantages and potential improvements over prior methods.]
+
+[Conclude this section by summarizing how the proposed method contributes to the field and any expected outcomes from this research. Use transitions such as "Specifically," "Furthermore," or "To this end" to guide the reader.]
+```

@@ -1,0 +1,10 @@
+\documentclass{article}
+\begin{document}
+
+\section*{Abstract}
+
+State-of-the-art [domain-related systems/techniques] are heavily [characteristic], making the optimization algorithm a crucial ingredient for [goal]. A recent line of work has shown that in a certain [context/condition], the learning dynamics of [method] are governed by a certain [concept] obtained at [initialization point/condition], called the [name of the concept]. 
+
+We study the [aspect] of learning in such a regime by analyzing this [concept] and the corresponding [related space]. In particular, we study [properties of interest], including [property 1] and [property 2], and compare to other known [related concepts] for similar [structures/methods].
+
+\end{document}
