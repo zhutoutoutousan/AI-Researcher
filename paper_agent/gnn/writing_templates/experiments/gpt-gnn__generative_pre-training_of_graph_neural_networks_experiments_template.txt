@@ -1,0 +1,74 @@
+\section{Evaluation}
+
+To evaluate the performance of [Proposed Method], we conduct experiments on [Dataset A] and [Dataset B]. To evaluate the generalizability of [Proposed Method], we consider different transfer settings - [Setting 1] and [Setting 2] - which are of practical importance.
+
+\subsection{Experimental Setup}
+
+\textbf{Datasets and Tasks.} We conduct experiments on [Graph Type - Heterogeneous/Homogeneous]. For [specific graph type], we use [Dataset A Description]. For [other graph type], we use [Dataset B Description]. All datasets are publicly available, and the details can be found in [Appendix / another section].
+
+[Dataset A] contains [describe statistics about the dataset, e.g., number of nodes and edges]. Each instance is labeled with [describe labels/tasks]. The performance is evaluated by [metric used].
+
+[Dataset B] contains [describe statistics about the dataset, e.g., number of reviews, users, products]. The evaluations are based on [describe tasks and metrics].
+
+\textbf{The base model.} On [Dataset A] and [Dataset B], we use [Base Model Description] as the base model for [Proposed Method]. Furthermore, we also utilize [other relevant models] as alternative comparisons.
+
+\textbf{Implementation details.} For all base models, we set [details on model parameters, e.g., hidden dimension, layer numbers]. All implementations are conducted using [framework/package description].
+
+We optimize the model via [optimizer used with specifications]. We train the model for [number of epochs and evaluation strategy].
+
+\textbf{Pre-training baselines.} Several works propose [Objective] which can potentially be used to pre-train [Model]. We thus compare the proposed [Proposed Method] framework with these baselines:
+
+- [Baseline 1 Description]
+- [Baseline 2 Description]
+- [Baseline 3 Description]
+- [Additional comparisons if any]
+
+\subsection{Pre-Training and Fine-Tuning Setup}
+
+The goal of pre-training is to [describe the objective of pre-training]. Specifically, we first pre-train a model and use the pre-trained model weights to initialize models for downstream tasks. We then fine-tune the models with specific decoders on the training set and evaluate performance on the test set.
+
+Broadly, there are two different setups. The first one is to pre-train and fine-tune on [similar/different graphs]. The second is to [another relevant setup detailed].
+
+We consider the following [number of] graph transfer settings:
+
+- \textbf{[Transfer Type 1]:} [Description of transfer]
+- \textbf{[Transfer Type 2]:} [Description of transfer]
+- \textbf{[Transfer Type 3]:} [Description of transfer]
+
+During fine-tuning, we choose nodes [details on node selection, e.g., time spans for training, validation, and testing]. We provide [percentage] of labels for training (fine-tuning) by default, while [other relevant studies conducted].
+
+\begin{table}[htbp]
+\centering
+\caption{Performance of different downstream tasks on [Dataset A] and [Dataset B] by using different pre-training frameworks with the base model. [Details about how the data is utilized].}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{Evaluation Task} & \textbf{Metric 1} & \textbf{Metric 2} & \textbf{Metric 3} & \textbf{Metric 4} & \textbf{Metric 5} & \textbf{Metric 6} \\
+\hline
+No Pre-train & [results] & [results] & [results] & [results] & [results] & [results] \\
+\hline
+[Baseline 1] & [results] & [results] & [results] & [results] & [results] & [results] \\
+\hline
+[Baseline 2] & [results] & [results] & [results] & [results] & [results] & [results] \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Experimental Results}
+
+We summarize the performance of downstream tasks with different pre-training methods on [Dataset A] and [Dataset B] in [Table/figure reference]. As discussed, we setup [number] different transfer settings, as organized in [describe organization in table].
+
+Overall, the proposed [Proposed Method] significantly enhances performance in [describe overall findings]. On average, [describe performance metrics].
+
+Different transfer settings show [discuss performance observed]. [Discuss implications based on the observed performance].
+
+Ablation studies on pre-training tasks reveal [discuss findings and performance impact]. We analyze the [specific task effects], suggesting that [observations about task importance].
+
+We further compare with [other methods] showing that [observations about effectiveness]. In summary, the results suggest that [key findings on pre-training tasks].
+
+Ablation studies on base models show [discuss findings related to base models].
+
+Ablation studies on [specific design choices] reveal [discuss effectiveness and results].
+
+\textbf{Training data size.} In [figure reference], we examine the performance with different training data sizes during fine-tuning, [discuss how performance varies]. 
+
+\textbf{Results for [Additional Graphs].} In addition, we test whether the proposed [Proposed Method] can benefit downstream tasks on [describe additional graph scenarios]. We present results in [table/figure reference], showing that [key findings on performance gains].

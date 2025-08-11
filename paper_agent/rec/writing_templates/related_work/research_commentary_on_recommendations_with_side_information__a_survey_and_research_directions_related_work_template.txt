@@ -1,0 +1,24 @@
+```latex
+\section{RELATED WORK}
+
+Due to the effectiveness of [general area/application] in [specific field], the number of recent research studies has [describe the trend, e.g., increased significantly]. Additionally, several survey papers have been published in the domain of [topic]. For instance, earlier works [summarize previous literature reviews or key studies relevant to the area] (Author et al. Year; Author et al. Year; Author et al. Year). [Mention other significant reviews or studies relevant to your domain].
+
+Existing survey papers have [describe a significant limitation or gap in existing surveys]. In other words, they either [describe one focus] or [describe another focus], but have neglected to explore [discuss the relationship or dependency between the two aspects]. On one hand, [explain recent research efforts addressing a challenge in the area]. Throughout our investigation, we discovered that existing studies have been exploring [mention key themes or structures investigated in the research]. [Provide examples and discuss their significance for the research area].
+
+On the other hand, many research studies have proposed [discuss the advancement in methodologies related to your field]. Based on our literature review, [convey insights about how performance or outcomes depend on specific factors]. [Explain the intricacies of coupling various representations with methodologies].
+
+This survey seeks to provide the research community a [type of review] overview of current progress in [specific area] by considering both [aspect 1] and [aspect 2]. It should not only focus on [cutting-edge techniques], but also [other significant methods or foundations of the field] that have been essential for [specific aspects of the field]. In this way, this [type of paper] provides a complete picture for both [audience 1] and [audience 2].
+
+\subsection{Article Collection}
+To cover recent studies, we collected [number] of papers published in [types of conferences/journals] related to [topic], including [list key conferences/journals]. [Describe the method of searching for papers, tools, and keywords used].
+
+\subsection{Contributions}
+This survey aims to provide a thorough literature review on the approaches of [main focus or theme of the survey]. It is expected to help both [target audience] gain an in-depth understanding of [what they can learn]. In summary, we make the following key contributions:
+
+\begin{enumerate}
+    \item [Contribution 1: Describe the main focus of the first contribution clearly.]
+    \item [Contribution 2: Outline the second contribution, stressing its importance.]
+    \item [Contribution 3: Highlight the third contribution, focusing on insights provided.]
+    \item [Contribution 4: Discuss future directions or potential trends identified in the research area.]
+\end{enumerate}
+```

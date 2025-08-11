@@ -1,0 +1,110 @@
+2025-01-27 06:33:28,913 [INFO] 
+==================================================
+Starting experiment set: refined_base
+==================================================
+2025-01-27 06:33:28,944 [INFO] Starting experiment: refined_base
+2025-01-27 06:33:28,945 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 3, 'n_intents': 128, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.2, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda')}
+2025-01-27 06:33:35,872 [ERROR] Error in experiment refined_base: mat1 and mat2 shapes cannot be multiplied (50821x512 and 64x64)
+2025-01-27 06:33:35,873 [ERROR] Traceback (most recent call last):
+  File "/workplace/project/run_model_revision.py", line 246, in main
+    results[name] = train_and_evaluate(config, name)
+  File "/workplace/project/run_model_revision.py", line 119, in train_and_evaluate
+    loss, loss_bpr, loss_contrast, loss_reg = model(user_ids, item_ids, pos_items, neg_items)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workplace/project/model/intentgcl.py", line 120, in forward
+    self._message_passing(layer)
+  File "/workplace/project/model/intentgcl.py", line 87, in _message_passing
+    msg_user_emb, _ = self.intent_module(self.msg_user_embeddings[layer_idx])
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workplace/project/model/intent_module.py", line 61, in forward
+    attention = self.compute_attention(embeddings)
+  File "/workplace/project/model/intent_module.py", line 50, in compute_attention
+    attention = self.head_combine(attention)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (50821x512 and 64x64)
+
+2025-01-27 06:33:35,923 [INFO] 
+==================================================
+Starting experiment set: hierarchical_intent
+==================================================
+2025-01-27 06:33:35,923 [INFO] Starting experiment: hierarchical_intent
+2025-01-27 06:33:35,923 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 3, 'n_intents': 256, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.2, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda')}
+2025-01-27 06:33:41,324 [ERROR] Error in experiment hierarchical_intent: mat1 and mat2 shapes cannot be multiplied (50821x1024 and 64x64)
+2025-01-27 06:33:41,324 [ERROR] Traceback (most recent call last):
+  File "/workplace/project/run_model_revision.py", line 246, in main
+    results[name] = train_and_evaluate(config, name)
+  File "/workplace/project/run_model_revision.py", line 119, in train_and_evaluate
+    loss, loss_bpr, loss_contrast, loss_reg = model(user_ids, item_ids, pos_items, neg_items)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workplace/project/model/intentgcl.py", line 120, in forward
+    self._message_passing(layer)
+  File "/workplace/project/model/intentgcl.py", line 87, in _message_passing
+    msg_user_emb, _ = self.intent_module(self.msg_user_embeddings[layer_idx])
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workplace/project/model/intent_module.py", line 61, in forward
+    attention = self.compute_attention(embeddings)
+  File "/workplace/project/model/intent_module.py", line 50, in compute_attention
+    attention = self.head_combine(attention)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (50821x1024 and 64x64)
+
+2025-01-27 06:33:41,382 [INFO] 
+==================================================
+Starting experiment set: deep_gnn
+==================================================
+2025-01-27 06:33:41,382 [INFO] Starting experiment: deep_gnn
+2025-01-27 06:33:41,382 [INFO] Configuration: {'embed_dim': 64, 'n_layers': 4, 'n_intents': 128, 'use_residual': True, 'temp': 0.2, 'lambda_1': 0.5, 'lambda_2': 0.5, 'lambda_3': 0.0001, 'dropout': 0.3, 'batch_size': 2048, 'inter_batch': 4096, 'lr': 0.001, 'epochs': 50, 'device': device(type='cuda')}
+2025-01-27 06:33:46,791 [ERROR] Error in experiment deep_gnn: mat1 and mat2 shapes cannot be multiplied (50821x512 and 64x64)
+2025-01-27 06:33:46,791 [ERROR] Traceback (most recent call last):
+  File "/workplace/project/run_model_revision.py", line 246, in main
+    results[name] = train_and_evaluate(config, name)
+  File "/workplace/project/run_model_revision.py", line 119, in train_and_evaluate
+    loss, loss_bpr, loss_contrast, loss_reg = model(user_ids, item_ids, pos_items, neg_items)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workplace/project/model/intentgcl.py", line 120, in forward
+    self._message_passing(layer)
+  File "/workplace/project/model/intentgcl.py", line 87, in _message_passing
+    msg_user_emb, _ = self.intent_module(self.msg_user_embeddings[layer_idx])
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workplace/project/model/intent_module.py", line 61, in forward
+    attention = self.compute_attention(embeddings)
+  File "/workplace/project/model/intent_module.py", line 50, in compute_attention
+    attention = self.head_combine(attention)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/user/micromamba/envs/autogpt/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (50821x512 and 64x64)
+
+2025-01-27 06:33:46,872 [INFO] 
+Revision experiments completed. Results saved.

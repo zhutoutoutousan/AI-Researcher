@@ -1,0 +1,17 @@
+\section{Introduction}
+
+Convolutional neural networks (CNNs) [**citation**] offer an efficient architecture to extract highly meaningful statistical patterns in large-scale and high-dimensional datasets. The ability of CNNs to learn [**insert relevant property or characteristic**], leading to breakthroughs in [**insert application areas**] [**citation**]. Precisely, CNNs extract [**insert property**] of the input data or signals by revealing local features that are [**insert description**]. These features are identified with [**insert technique or method**], which are learned from the data. [**Further technical detail about filters**].
+
+User data in [**insert context or field, e.g., social networks, biological networks**] represents important examples of data lying on [**insert description of data type**], which can be structured with [**insert representation, e.g., graphs**]. [**Describe the significance of this representation**]. 
+
+A generalization of CNNs to [**insert context, e.g., graphs**] is not straightforward as [**insert challenge**]. This makes this extension challenging, both [**insert factors contributing to the challenge**]. The major bottleneck of generalizing CNNs to [**insert context**], and one of the primary goals of this work, is [**insert specific challenge**]. Precisely, the main contributions of this work are summarized below.
+
+\begin{itemize}
+    \item 1. [**First contribution: description and significance**].
+    \item 2. [**Second contribution: description and any improvements made**].
+    \item 3. [**Third contribution: focus on efficiency aspects**].
+    \item 4. [**Fourth contribution: describe techniques or methods involved**].
+    \item 5. [**Fifth contribution: summarize results and implications of findings**].
+\end{itemize}
+
+The rest of the paper is organized as follows: [**insert brief overview of subsequent sections**].

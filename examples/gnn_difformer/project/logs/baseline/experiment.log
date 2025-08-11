@@ -1,0 +1,30 @@
+2025-01-23 08:11:01,612 - Starting ablation experiment: baseline
+2025-01-23 08:11:01,612 - Running experiment: baseline on cuda
+2025-01-23 08:11:01,612 - Configuration: {'hidden_dim': 128, 'num_layers': 2, 'tau': 0.1, 'lambda_reg': 1.0, 'dropout': 0.1, 'learning_rate': 0.001, 'weight_decay': 1e-05, 'epochs': 200, 'patience': 20}
+2025-01-23 08:11:57,797 - Starting ablation experiment: baseline
+2025-01-23 08:11:57,797 - Running experiment: baseline on cuda
+2025-01-23 08:11:57,797 - Configuration: {'hidden_dim': 128, 'num_layers': 2, 'tau': 0.1, 'lambda_reg': 1.0, 'dropout': 0.1, 'learning_rate': 0.001, 'weight_decay': 1e-05, 'epochs': 200, 'patience': 20}
+2025-01-23 08:12:47,055 - Starting ablation experiment: baseline
+2025-01-23 08:12:47,089 - Running experiment: baseline on cuda:2
+2025-01-23 08:12:47,089 - Configuration: {'hidden_dim': 64, 'num_layers': 2, 'tau': 0.1, 'lambda_reg': 1.0, 'dropout': 0.1, 'learning_rate': 0.001, 'weight_decay': 1e-05, 'epochs': 200, 'patience': 20}
+2025-01-23 08:12:48,231 - Error during experiment: CUDA out of memory. Tried to allocate 73.98 GiB (GPU 2; 23.69 GiB total capacity; 58.56 MiB already allocated; 23.31 GiB free; 72.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+2025-01-23 08:12:48,233 - Starting ablation experiment: deeper_model
+2025-01-23 08:12:48,233 - Running experiment: deeper_model on cuda:2
+2025-01-23 08:12:48,233 - Configuration: {'hidden_dim': 64, 'num_layers': 3, 'tau': 0.1, 'lambda_reg': 1.0, 'dropout': 0.1, 'learning_rate': 0.001, 'weight_decay': 1e-05, 'epochs': 200, 'patience': 20}
+2025-01-23 08:12:48,270 - Error during experiment: CUDA out of memory. Tried to allocate 73.98 GiB (GPU 2; 23.69 GiB total capacity; 58.63 MiB already allocated; 23.31 GiB free; 72.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+2025-01-23 08:12:48,274 - Starting ablation experiment: stronger_reg
+2025-01-23 08:12:48,274 - Running experiment: stronger_reg on cuda:2
+2025-01-23 08:12:48,274 - Configuration: {'hidden_dim': 64, 'num_layers': 2, 'tau': 0.1, 'lambda_reg': 2.0, 'dropout': 0.1, 'learning_rate': 0.001, 'weight_decay': 1e-05, 'epochs': 200, 'patience': 20}
+2025-01-23 08:12:48,310 - Error during experiment: CUDA out of memory. Tried to allocate 73.98 GiB (GPU 2; 23.69 GiB total capacity; 58.56 MiB already allocated; 23.31 GiB free; 72.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+2025-01-23 08:12:48,314 - Starting ablation experiment: lower_tau
+2025-01-23 08:12:48,314 - Running experiment: lower_tau on cuda:2
+2025-01-23 08:12:48,314 - Configuration: {'hidden_dim': 64, 'num_layers': 2, 'tau': 0.05, 'lambda_reg': 1.0, 'dropout': 0.1, 'learning_rate': 0.001, 'weight_decay': 1e-05, 'epochs': 200, 'patience': 20}
+2025-01-23 08:12:48,349 - Error during experiment: CUDA out of memory. Tried to allocate 73.98 GiB (GPU 2; 23.69 GiB total capacity; 58.56 MiB already allocated; 23.31 GiB free; 72.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+2025-01-23 08:12:48,353 - Starting ablation experiment: higher_dropout
+2025-01-23 08:12:48,353 - Running experiment: higher_dropout on cuda:2
+2025-01-23 08:12:48,353 - Configuration: {'hidden_dim': 64, 'num_layers': 2, 'tau': 0.1, 'lambda_reg': 1.0, 'dropout': 0.3, 'learning_rate': 0.001, 'weight_decay': 1e-05, 'epochs': 200, 'patience': 20}
+2025-01-23 08:12:48,389 - Error during experiment: CUDA out of memory. Tried to allocate 73.98 GiB (GPU 2; 23.69 GiB total capacity; 58.56 MiB already allocated; 23.31 GiB free; 72.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+2025-01-23 08:12:48,393 - Starting ablation experiment: wider_model
+2025-01-23 08:12:48,393 - Running experiment: wider_model on cuda:2
+2025-01-23 08:12:48,393 - Configuration: {'hidden_dim': 128, 'num_layers': 2, 'tau': 0.1, 'lambda_reg': 1.0, 'dropout': 0.1, 'learning_rate': 0.001, 'weight_decay': 1e-05, 'epochs': 200, 'patience': 20}
+2025-01-23 08:12:48,429 - Error during experiment: CUDA out of memory. Tried to allocate 73.98 GiB (GPU 2; 23.69 GiB total capacity; 66.32 MiB already allocated; 23.29 GiB free; 96.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

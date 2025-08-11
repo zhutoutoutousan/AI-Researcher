@@ -1,0 +1,25 @@
+\section{[Main Section Title]}
+
+Having introduced [concept/technique/model], we can return to the problem of [specific problem]. As outlined in the introduction, we can [briefly describe the relaxation/extension of existing assumptions]. We expect this setting to be especially powerful in scenarios where [describe conditions/contexts]. The overall model, [model type], is schematically depicted in Figure [X].
+
+\subsection{[Subsection Title: Example]}
+
+In the following, we consider [specific model/algorithm] for [type of analysis/application] on a graph with [describe graph properties]. We first [describe any preprocessing steps]. Our forward model then takes the simple form:
+
+\begin{equation}
+Z = f(X, A) = [describe equation clearly].
+\end{equation}
+
+Here, [explain dimensions and significance of each term in the equation]. The [function/activation] defined as [define function] is applied [describe application]. For [specific task], we then evaluate [describe loss function or evaluation metric]:
+
+\begin{equation}
+L = [describe equation],
+\end{equation}
+
+where [define all relevant sets or variables].
+
+The model parameters [name them] are trained using [explain optimization technique]. In this work, we perform [type of gradient descent] using [describe dataset conditions]. Using [specific representation], memory requirement is [state memory requirement]. Stochasticity in the training process is introduced via [explain method, e.g., dropout]. We leave [suggest future work or improvements].
+
+\subsection{[Subsection Title: Implementation]}
+
+In practice, we make use of [software/library] for an efficient [describe implementation details]. The computational complexity of [describe relevant task/operation] is then [state computational complexity analysis].

@@ -1,0 +1,50 @@
+```latex
+\section{[Main Title of the Section]}
+
+\subsection{Notations}
+Denote a [general concept] as [symbol] = ( [elements] ), where [description of the elements and sets involved]. Denote [symbol] as the [relevant property or structure] of [concept]. Finally, we denote [symbol] as the [specific detail or metric related to the concept]. Note that [explain any specific distinctions or definitions that are necessary].
+
+\subsection{[First Framework or Concept]}
+Currently, most existing [related methods/models] are based on [specific framework or methodology]. Denote [symbol] as the [output representation or relevant component]. Briefly, given a [description of the input structure], at [specific layer or process], [detail the calculation or process that leads to the result]:
+
+\begin{equation}
+[symbol] = [function]( [input elements] ) , [result] = [subsequent function]( [input] ) , 
+\end{equation}
+
+where [explain each term or function involved]. After [number] layers of processing, [final representation] is used for [describe the application]. 
+
+\subsection{[Second Framework or Concept]}
+The [first framework] can be generalized to [new concept], as it shares the same [mechanisms, features, etc.]. The difference is that [explain the differences or unique aspects]. First, we differentiate [explain the distinctions in approaches or formulations]. 
+
+\begin{definition}
+[Provide definition for the new concept or framework, using formal notation]
+\end{definition}
+
+Next, we define the [new conceptual framework] as follows:
+
+\begin{equation}
+[symbol] = [function]( [input elements] ) , [result] = [subsequent function]( [input] ) , 
+\end{equation}
+
+where [explain how this framework differs from the previous one]. 
+
+\subsection{[Analysis/Results]}
+In this section, we [describe the theoretical aspect being analyzed]. We assume [conditions or premises]. Note that [explain implications of the assumptions made]. It has been proven that [discussion of existing limitations or comparisons]. We show that [claim or finding in relation to previously established results]. For a deeper analysis, we utilize [examples or theoretical constructs] to illustrate [theorems or propositions] since they provide [rationale for choice of examples]. 
+
+\begin{proposition}
+[State Proposition or Key Finding]
+\end{proposition}
+
+To see why this is true, we first discuss [explain the reasoning behind the proposition]. Furthermore, when [additional conditions or settings], [discuss implications and relationships to other frameworks or findings]. 
+
+\begin{theorem}
+[Present a significant finding or claim]
+\end{theorem}
+
+We further characterize the existing [related approaches] with [proposed method]. Specifically, we show that [list out comparisons or findings related to previous works].
+
+\subsection{[Limitations]}
+Although we have demonstrated that [summarize the strengths of the method], there are still limitations. In this section, we discuss the limitations of [specific aspects or methodologies]. Specifically, we address [specific concerns or questions raised]. We include [examples or figures] to illustrate these points.
+
+Finally, we highlight that [summarize the main takeaway regarding the limitations or questions remaining], and ponder [future directions or implications of research].
+```

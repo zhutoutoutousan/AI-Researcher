@@ -1,0 +1,31 @@
+\section{Related Work}
+
+\subsection{[First Topic]}
+[Multiple sentences explaining the background and significance of the topic, mentioning key references and previously established methods.]
+
+[Specific first key work, including authors and findings] demonstrate that [result or contribution]. Inspired by these findings, we propose [module name/method] to address [specific challenge or gap].
+
+To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3].
+
+Formally, we define [concept or framework] as follows:
+\begin{equation}
+    [Mathematical formulation or definition]
+\end{equation}
+Where [detailed explanation of each term in the equation].
+
+\subsection{[Second Topic]}
+[Several sentences comparing the proposed method with existing approaches, highlighting differences and advantages.]
+
+Graph data augmentation remains an under-explored area. [Reference work or method] attempts to address this with [specific technique], yet suffers from [limitation]. [Another reference] leverages [approach or technique], which incurs [specific drawbacks or challenges].
+
+\subsection{[Third Topic]}
+While [general observation or trend in the field] is common for [first type of network], it has rarely been considered for [second type of network]. Notably, [specific work] strictly explores [aspect or concept], but [discussion on limitations or challenges noticed].
+
+In our argument, [explain the underlying issue related to transfer or the specific problem]. Without sufficient domain knowledge, [risk of negative impacts or unintended consequences], as noted in [additional references].
+
+\subsection{[Fourth Topic]}
+The core idea of [specific technique or theory] revolves around [brief description of the principle]. Recent advancements have raised interest in [context related to your work]. For example, traditional methods [specific observation] can be seen as [concept or technique].
+
+Motivated by [key references], [approach] proposes [new method or improvement] to enhance [specific attribute]. However, the intersection of [another technique or idea] with [application in your work] remains unexplored.
+
+[Conclusive sentences summarizing the need for the proposed research and its potential impact on the field.]

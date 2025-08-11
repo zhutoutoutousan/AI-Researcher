@@ -1,0 +1,129 @@
+answer: 'To solve this problem, we can use the **binomial probability formula**. The
+  binomial probability formula calculates the probability of obtaining exactly \(
+  k \) successes in \( n \) independent trials, where each trial has a success probability
+  of \( p \). The formula is:
+
+
+  \[
+
+  P(k) = \binom{n}{k} p^k (1-p)^{n-k}
+
+  \]
+
+
+  Here:
+
+  - \( n = 7 \) (the number of islands),
+
+  - \( k = 4 \) (the number of islands with treasure),
+
+  - \( p = \frac{1}{5} \) (the probability of an island having treasure).
+
+
+  Substitute these values into the formula:
+
+
+  \[
+
+  P(4) = \binom{7}{4} \left(\frac{1}{5}\right)^4 \left(1 - \frac{1}{5}\right)^{7-4}
+
+  \]
+
+
+  First, calculate the binomial coefficient \( \binom{7}{4} \):
+
+
+  \[
+
+  \binom{7}{4} = \frac{7!}{4! \cdot (7-4)!} = \frac{7!}{4! \cdot 3!} = \frac{5040}{24
+  \cdot 6} = 35
+
+  \]
+
+
+  Next, calculate \( \left(\frac{1}{5}\right)^4 \):
+
+
+  \[
+
+  \left(\frac{1}{5}\right)^4 = \frac{1}{625}
+
+  \]
+
+
+  Then, calculate \( \left(1 - \frac{1}{5}\right)^{3} \):
+
+
+  \[
+
+  \left(\frac{4}{5}\right)^3 = \frac{64}{125}
+
+  \]
+
+
+  Now, multiply all the terms together:
+
+
+  \[
+
+  P(4) = 35 \cdot \frac{1}{625} \cdot \frac{64}{125} = 35 \cdot \frac{64}{78125} =
+  \frac{2240}{78125}
+
+  \]
+
+
+  Simplify the fraction:
+
+
+  \[
+
+  \frac{2240}{78125} = \frac{448}{15625} = \frac{448}{15625}
+
+  \]
+
+
+  Thus, the probability that exactly 4 of the islands have treasure is:
+
+
+  \[
+
+  \boxed{\frac{448}{15625}}
+
+  \]
+
+
+  Final Answer: The final answer is \(\frac{448}{15625}\). I hope it is correct.'
+gt_answer: \frac{448}{15625}
+prompt: "Problem:\nFind the domain of the expression  $\\frac{\\sqrt{x-2}}{\\sqrt{5-x}}$.}\n\
+  \nSolution:\nThe expressions inside each square root must be non-negative. Therefore,\
+  \ $x-2 \\ge 0$, so $x\\ge2$, and $5 - x \\ge 0$, so $x \\le 5$. Also, the denominator\
+  \ cannot be equal to zero, so $5-x>0$, which gives $x<5$. Therefore, the domain\
+  \ of the expression is $\\boxed{[2,5)}$.\nFinal Answer: The final answer is $[2,5)$.\
+  \ I hope it is correct.\n\nProblem:\nIf $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B}\
+  \ = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$\n\nSolution:\nWe have that\
+  \ $\\det (\\mathbf{A} \\mathbf{B}) = (\\det \\mathbf{A})(\\det \\mathbf{B}) = (2)(12)\
+  \ = \\boxed{24}.$\nFinal Answer: The final answer is $24$. I hope it is correct.\n\
+  \nProblem:\nTerrell usually lifts two 20-pound weights 12 times. If he uses two\
+  \ 15-pound weights instead, how many times must Terrell lift them in order to lift\
+  \ the same total weight?\n\nSolution:\nIf Terrell lifts two 20-pound weights 12\
+  \ times, he lifts a total of $2\\cdot 12\\cdot20=480$ pounds of weight.  If he lifts\
+  \ two 15-pound weights instead for $n$ times, he will lift a total of $2\\cdot15\\\
+  cdot n=30n$ pounds of weight.  Equating this to 480 pounds, we can solve for $n$:\n\
+  \\begin{align*}\n30n&=480\\\n\\Rightarrow\\qquad n&=480/30=\\boxed{16}\n\\end{align*}\n\
+  Final Answer: The final answer is $16$. I hope it is correct.\n\nProblem:\nIf the\
+  \ system of equations\n\n\\begin{align*}\n6x-4y&=a,\\\n6y-9x &=b.\n\\end{align*}has\
+  \ a solution $(x, y)$ where $x$ and $y$ are both nonzero,\nfind $\\frac{a}{b},$\
+  \ assuming $b$ is nonzero.\n\nSolution:\nIf we multiply the first equation by $-\\\
+  frac{3}{2}$, we obtain\n\n$$6y-9x=-\\frac{3}{2}a.$$Since we also know that $6y-9x=b$,\
+  \ we have\n\n$$-\\frac{3}{2}a=b\\Rightarrow\\frac{a}{b}=\\boxed{-\\frac{2}{3}}.$$\n\
+  Final Answer: The final answer is $-\\frac{2}{3}$. I hope it is correct.\n\nPlease\
+  \ answer the following math question. You should think step by step to solve it.\n\
+  \nProblem:\nA pirate searches seven islands for buried treasure. If each island\
+  \ has a $\\frac{1}{5}$ chance of having treasure, what is the probability that exactly\
+  \ 4 of the islands have treasure?\n\nPlease given your final answer (answer ONLY)\
+  \ within the format of `Final Answer: The final answer is <answer>. I hope it is\
+  \ correct.` after your reasoning \nFor example: According to ...\nFinal Answer:\
+  \ The final answer is $24$. I hope it is correct.\n"
+question: A pirate searches seven islands for buried treasure. If each island has
+  a $\frac{1}{5}$ chance of having treasure, what is the probability that exactly
+  4 of the islands have treasure?

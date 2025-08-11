@@ -1,0 +1,24 @@
+```latex
+\section{Related Work}
+
+\subsection{[Main Topic]}
+[Multiple sentences introducing the main topic and its significance in the field.]
+
+\subsubsection{[Subtopic 1]}
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. Specifically, [Multiple sentences explaining the motivation and intuition behind the proposed method]. To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3]. 
+
+To this end, we define [concept] as follows: 
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+Where [Detailed explanation of each term in the equations].
+
+Furthermore, [A paragraph describing the detailed workflow of the module]. As shown in [refer to a figure/table if applicable], [explain the importance of this workflow].
+
+\subsubsection{[Subtopic 2]}
+Many [related methods/techniques] have been studied with respect to [specific focus]. However, [several sentences comparing the proposed method with existing approaches, highlighting key differences].
+
+Notably, [specific example] demonstrated [important finding]. In contrast, [another comparison or distinction regarding your method]. This leads to the conclusion that [summarizing statement about the contributions and impact of your method relative to others].
+
+[If applicable, include discussion of future work, remaining challenges, or open questions in this area.]
+```

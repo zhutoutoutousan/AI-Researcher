@@ -1,0 +1,865 @@
+{
+    "config": {
+        "data_dir": "data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "k_dim": 1024,
+        "z_dim": 256,
+        "beta": 0.25,
+        "learning_rate": 0.0002,
+        "num_epochs": 50,
+        "device": "cuda"
+    },
+    "training_results": [
+        {
+            "epoch": 1,
+            "train_metrics": {
+                "loss": 0.0983557594592309,
+                "recon_loss": 0.04231995688584607,
+                "codebook_loss": 0.044828641859581096,
+                "commitment_loss": 0.044828641859581096,
+                "perplexity": 21.93045734200636
+            },
+            "test_metrics": {
+                "test_loss": 0.09761870567557178,
+                "test_recon_loss": 0.028291174175241327,
+                "test_codebook_loss": 0.055462024634397485,
+                "test_commitment_loss": 0.055462024634397485,
+                "test_perplexity": 26.653554650801645
+            }
+        },
+        {
+            "epoch": 2,
+            "train_metrics": {
+                "loss": 0.09986065251900413,
+                "recon_loss": 0.025813762384378696,
+                "codebook_loss": 0.059237511661808816,
+                "commitment_loss": 0.059237511661808816,
+                "perplexity": 30.02445903885395
+            },
+            "test_metrics": {
+                "test_loss": 0.10216027507676353,
+                "test_recon_loss": 0.024232633435462093,
+                "test_codebook_loss": 0.06234211314328109,
+                "test_commitment_loss": 0.06234211314328109,
+                "test_perplexity": 31.906965859328643
+            }
+        },
+        {
+            "epoch": 3,
+            "train_metrics": {
+                "loss": 0.10186617303153743,
+                "recon_loss": 0.02283445887191369,
+                "codebook_loss": 0.0632253707579487,
+                "commitment_loss": 0.0632253707579487,
+                "perplexity": 36.912163361259125
+            },
+            "test_metrics": {
+                "test_loss": 0.09886762490378151,
+                "test_recon_loss": 0.02159342033010495,
+                "test_codebook_loss": 0.06181936333828335,
+                "test_commitment_loss": 0.06181936333828335,
+                "test_perplexity": 41.993960803068134
+            }
+        },
+        {
+            "epoch": 4,
+            "train_metrics": {
+                "loss": 0.0975555587569466,
+                "recon_loss": 0.020246170751769526,
+                "codebook_loss": 0.06184751046892932,
+                "commitment_loss": 0.06184751046892932,
+                "perplexity": 46.7386820761444
+            },
+            "test_metrics": {
+                "test_loss": 0.09314600349981574,
+                "test_recon_loss": 0.019348185179354268,
+                "test_codebook_loss": 0.05903825418481344,
+                "test_commitment_loss": 0.05903825418481344,
+                "test_perplexity": 53.702050414266466
+            }
+        },
+        {
+            "epoch": 5,
+            "train_metrics": {
+                "loss": 0.0903199993245437,
+                "recon_loss": 0.018381303038133685,
+                "codebook_loss": 0.05755095703103353,
+                "commitment_loss": 0.05755095703103353,
+                "perplexity": 60.832159056992786
+            },
+            "test_metrics": {
+                "test_loss": 0.08781512119347536,
+                "test_recon_loss": 0.01772227520241013,
+                "test_codebook_loss": 0.05607427647219428,
+                "test_commitment_loss": 0.05607427647219428,
+                "test_perplexity": 68.86697339408005
+            }
+        },
+        {
+            "epoch": 6,
+            "train_metrics": {
+                "loss": 0.08354575993002528,
+                "recon_loss": 0.016912239394091127,
+                "codebook_loss": 0.05330681665550412,
+                "commitment_loss": 0.05330681665550412,
+                "perplexity": 75.66148587200038
+            },
+            "test_metrics": {
+                "test_loss": 0.08285528261073027,
+                "test_recon_loss": 0.01691468944183633,
+                "test_codebook_loss": 0.052752474393648434,
+                "test_commitment_loss": 0.052752474393648434,
+                "test_perplexity": 83.4065143247194
+            }
+        },
+        {
+            "epoch": 7,
+            "train_metrics": {
+                "loss": 0.07812783802333086,
+                "recon_loss": 0.0158274506559343,
+                "codebook_loss": 0.04984030990725588,
+                "commitment_loss": 0.04984030990725588,
+                "perplexity": 92.04293899341008
+            },
+            "test_metrics": {
+                "test_loss": 0.07751651560958428,
+                "test_recon_loss": 0.015587957764539537,
+                "test_codebook_loss": 0.049542846370346935,
+                "test_commitment_loss": 0.049542846370346935,
+                "test_perplexity": 104.22843305370476
+            }
+        },
+        {
+            "epoch": 8,
+            "train_metrics": {
+                "loss": 0.07236827216337403,
+                "recon_loss": 0.014861038805026075,
+                "codebook_loss": 0.04600578656091409,
+                "commitment_loss": 0.04600578656091409,
+                "perplexity": 115.61429935465078
+            },
+            "test_metrics": {
+                "test_loss": 0.07046126828917974,
+                "test_recon_loss": 0.01446591989620577,
+                "test_codebook_loss": 0.04479627881812144,
+                "test_commitment_loss": 0.04479627881812144,
+                "test_perplexity": 127.99609278425386
+            }
+        },
+        {
+            "epoch": 9,
+            "train_metrics": {
+                "loss": 0.06833811032840663,
+                "recon_loss": 0.014127301557175339,
+                "codebook_loss": 0.0433686467273461,
+                "commitment_loss": 0.0433686467273461,
+                "perplexity": 139.2222234233261
+            },
+            "test_metrics": {
+                "test_loss": 0.06799635743793053,
+                "test_recon_loss": 0.01398085877063531,
+                "test_codebook_loss": 0.04321239860374716,
+                "test_commitment_loss": 0.04321239860374716,
+                "test_perplexity": 150.34523280662827
+            }
+        },
+        {
+            "epoch": 10,
+            "train_metrics": {
+                "loss": 0.06569496323080624,
+                "recon_loss": 0.013510696763825386,
+                "codebook_loss": 0.04174741264194479,
+                "commitment_loss": 0.04174741264194479,
+                "perplexity": 160.23695759883012
+            },
+            "test_metrics": {
+                "test_loss": 0.06531484448645689,
+                "test_recon_loss": 0.013421872548193117,
+                "test_codebook_loss": 0.041514377192228655,
+                "test_commitment_loss": 0.041514377192228655,
+                "test_perplexity": 173.07718803309186
+            }
+        },
+        {
+            "epoch": 11,
+            "train_metrics": {
+                "loss": 0.06376817924401644,
+                "recon_loss": 0.013084673024999821,
+                "codebook_loss": 0.040546804637936376,
+                "commitment_loss": 0.040546804637936376,
+                "perplexity": 178.4225823678019
+            },
+            "test_metrics": {
+                "test_loss": 0.06298638979279542,
+                "test_recon_loss": 0.013170120200212998,
+                "test_codebook_loss": 0.03985301537227027,
+                "test_commitment_loss": 0.03985301537227027,
+                "test_perplexity": 185.43321150767653
+            }
+        },
+        {
+            "epoch": 12,
+            "train_metrics": {
+                "loss": 0.062447792085845145,
+                "recon_loss": 0.012727613222625707,
+                "codebook_loss": 0.039776142791409015,
+                "commitment_loss": 0.039776142791409015,
+                "perplexity": 192.87049811087607
+            },
+            "test_metrics": {
+                "test_loss": 0.0624573544799527,
+                "test_recon_loss": 0.012674321019668368,
+                "test_codebook_loss": 0.03982642637212065,
+                "test_commitment_loss": 0.03982642637212065,
+                "test_perplexity": 200.4313458792771
+            }
+        },
+        {
+            "epoch": 13,
+            "train_metrics": {
+                "loss": 0.06092383641073161,
+                "recon_loss": 0.012437803101490069,
+                "codebook_loss": 0.03878882626438385,
+                "commitment_loss": 0.03878882626438385,
+                "perplexity": 208.03859150684093
+            },
+            "test_metrics": {
+                "test_loss": 0.06105696169447295,
+                "test_recon_loss": 0.012390995763619489,
+                "test_codebook_loss": 0.03893277242402487,
+                "test_commitment_loss": 0.03893277242402487,
+                "test_perplexity": 216.93560539921629
+            }
+        },
+        {
+            "epoch": 14,
+            "train_metrics": {
+                "loss": 0.059408919576107694,
+                "recon_loss": 0.012152639143835858,
+                "codebook_loss": 0.03780502414383242,
+                "commitment_loss": 0.03780502414383242,
+                "perplexity": 224.605534936461
+            },
+            "test_metrics": {
+                "test_loss": 0.058766407255507726,
+                "test_recon_loss": 0.012254671170081518,
+                "test_codebook_loss": 0.03720938857597641,
+                "test_commitment_loss": 0.03720938857597641,
+                "test_perplexity": 233.31002672412728
+            }
+        },
+        {
+            "epoch": 15,
+            "train_metrics": {
+                "loss": 0.057989992296604245,
+                "recon_loss": 0.011859972227622024,
+                "codebook_loss": 0.036904015685515025,
+                "commitment_loss": 0.036904015685515025,
+                "perplexity": 242.44285630326138
+            },
+            "test_metrics": {
+                "test_loss": 0.05732108435676068,
+                "test_recon_loss": 0.012141529671093332,
+                "test_codebook_loss": 0.03614364347503155,
+                "test_commitment_loss": 0.03614364347503155,
+                "test_perplexity": 247.27305989325802
+            }
+        },
+        {
+            "epoch": 16,
+            "train_metrics": {
+                "loss": 0.05690060576895618,
+                "recon_loss": 0.011637740556503197,
+                "codebook_loss": 0.03621029189270933,
+                "commitment_loss": 0.03621029189270933,
+                "perplexity": 257.9263039123067
+            },
+            "test_metrics": {
+                "test_loss": 0.056904152695891226,
+                "test_recon_loss": 0.0117888983480538,
+                "test_codebook_loss": 0.03609220315761204,
+                "test_commitment_loss": 0.03609220315761204,
+                "test_perplexity": 265.063646340672
+            }
+        },
+        {
+            "epoch": 17,
+            "train_metrics": {
+                "loss": 0.05569666075279646,
+                "recon_loss": 0.011441130588864883,
+                "codebook_loss": 0.035404423761474506,
+                "commitment_loss": 0.035404423761474506,
+                "perplexity": 273.9907555543553
+            },
+            "test_metrics": {
+                "test_loss": 0.05464935694125634,
+                "test_recon_loss": 0.011543221264794658,
+                "test_codebook_loss": 0.03448490836197817,
+                "test_commitment_loss": 0.03448490836197817,
+                "test_perplexity": 276.46953225437596
+            }
+        },
+        {
+            "epoch": 18,
+            "train_metrics": {
+                "loss": 0.05486277675689639,
+                "recon_loss": 0.011249765039176282,
+                "codebook_loss": 0.03489040902546604,
+                "commitment_loss": 0.03489040902546604,
+                "perplexity": 287.49595021591773
+            },
+            "test_metrics": {
+                "test_loss": 0.05459157302032543,
+                "test_recon_loss": 0.011334355802664274,
+                "test_codebook_loss": 0.034605773378022106,
+                "test_commitment_loss": 0.034605773378022106,
+                "test_perplexity": 295.4698992379104
+            }
+        },
+        {
+            "epoch": 19,
+            "train_metrics": {
+                "loss": 0.05396299606279644,
+                "recon_loss": 0.011043842622290944,
+                "codebook_loss": 0.03433532244466302,
+                "commitment_loss": 0.03433532244466302,
+                "perplexity": 302.0489632296745
+            },
+            "test_metrics": {
+                "test_loss": 0.053844750257609764,
+                "test_recon_loss": 0.011382774508829359,
+                "test_codebook_loss": 0.03396958041983315,
+                "test_commitment_loss": 0.03396958041983315,
+                "test_perplexity": 306.7083570263054
+            }
+        },
+        {
+            "epoch": 20,
+            "train_metrics": {
+                "loss": 0.053215553283767626,
+                "recon_loss": 0.010942036640899414,
+                "codebook_loss": 0.033818813036088746,
+                "commitment_loss": 0.033818813036088746,
+                "perplexity": 316.07978543723027
+            },
+            "test_metrics": {
+                "test_loss": 0.05350430107003526,
+                "test_recon_loss": 0.011269297285736361,
+                "test_codebook_loss": 0.0337880028859724,
+                "test_commitment_loss": 0.0337880028859724,
+                "test_perplexity": 321.6476498374456
+            }
+        },
+        {
+            "epoch": 21,
+            "train_metrics": {
+                "loss": 0.05264290692784902,
+                "recon_loss": 0.010796367545681232,
+                "codebook_loss": 0.03347723128850503,
+                "commitment_loss": 0.03347723128850503,
+                "perplexity": 326.9284918509481
+            },
+            "test_metrics": {
+                "test_loss": 0.05314184536662283,
+                "test_recon_loss": 0.010906217607987833,
+                "test_codebook_loss": 0.033788502004139034,
+                "test_commitment_loss": 0.033788502004139034,
+                "test_perplexity": 331.0699717847607
+            }
+        },
+        {
+            "epoch": 22,
+            "train_metrics": {
+                "loss": 0.0521010638445692,
+                "recon_loss": 0.010642177001346865,
+                "codebook_loss": 0.03316710920304136,
+                "commitment_loss": 0.03316710920304136,
+                "perplexity": 336.01568392780433
+            },
+            "test_metrics": {
+                "test_loss": 0.05160208716045452,
+                "test_recon_loss": 0.01094288573470674,
+                "test_codebook_loss": 0.03252736094726037,
+                "test_commitment_loss": 0.03252736094726037,
+                "test_perplexity": 337.1184197920787
+            }
+        },
+        {
+            "epoch": 23,
+            "train_metrics": {
+                "loss": 0.0516165218046864,
+                "recon_loss": 0.010575503708742311,
+                "codebook_loss": 0.03283281419950221,
+                "commitment_loss": 0.03283281419950221,
+                "perplexity": 343.9269035319843
+            },
+            "test_metrics": {
+                "test_loss": 0.05128280092266541,
+                "test_recon_loss": 0.010983921493156046,
+                "test_codebook_loss": 0.03223910317107846,
+                "test_commitment_loss": 0.03223910317107846,
+                "test_perplexity": 346.40110798123516
+            }
+        },
+        {
+            "epoch": 24,
+            "train_metrics": {
+                "loss": 0.051222968808449135,
+                "recon_loss": 0.010490890759069596,
+                "codebook_loss": 0.03258566221560511,
+                "commitment_loss": 0.03258566221560511,
+                "perplexity": 351.0491559353021
+            },
+            "test_metrics": {
+                "test_loss": 0.05195915246311622,
+                "test_recon_loss": 0.010736577248177196,
+                "test_codebook_loss": 0.03297805988901778,
+                "test_commitment_loss": 0.03297805988901778,
+                "test_perplexity": 353.47701021991196
+            }
+        },
+        {
+            "epoch": 25,
+            "train_metrics": {
+                "loss": 0.05098246175157445,
+                "recon_loss": 0.010383577219417791,
+                "codebook_loss": 0.0324791074704255,
+                "commitment_loss": 0.0324791074704255,
+                "perplexity": 355.49002808865987
+            },
+            "test_metrics": {
+                "test_loss": 0.0520858373728734,
+                "test_recon_loss": 0.010692769956268087,
+                "test_codebook_loss": 0.033114453612626354,
+                "test_commitment_loss": 0.033114453612626354,
+                "test_perplexity": 360.6795005315467
+            }
+        },
+        {
+            "epoch": 26,
+            "train_metrics": {
+                "loss": 0.05054190050801048,
+                "recon_loss": 0.010298141635611387,
+                "codebook_loss": 0.03219500702836782,
+                "commitment_loss": 0.03219500702836782,
+                "perplexity": 361.7286444076187
+            },
+            "test_metrics": {
+                "test_loss": 0.049678859501322614,
+                "test_recon_loss": 0.01056175025863738,
+                "test_codebook_loss": 0.0312936873045526,
+                "test_commitment_loss": 0.0312936873045526,
+                "test_perplexity": 360.63950705226466
+            }
+        },
+        {
+            "epoch": 27,
+            "train_metrics": {
+                "loss": 0.05019077304226663,
+                "recon_loss": 0.010225858163002812,
+                "codebook_loss": 0.03197193178145782,
+                "commitment_loss": 0.03197193178145782,
+                "perplexity": 369.13165985653774
+            },
+            "test_metrics": {
+                "test_loss": 0.04970874731676488,
+                "test_recon_loss": 0.010540709677564947,
+                "test_codebook_loss": 0.03133443002647991,
+                "test_commitment_loss": 0.03133443002647991,
+                "test_perplexity": 369.5020446777344
+            }
+        },
+        {
+            "epoch": 28,
+            "train_metrics": {
+                "loss": 0.04990911700041093,
+                "recon_loss": 0.010116200327225353,
+                "codebook_loss": 0.031834333258516645,
+                "commitment_loss": 0.031834333258516645,
+                "perplexity": 375.9764982647908
+            },
+            "test_metrics": {
+                "test_loss": 0.04934684804911855,
+                "test_recon_loss": 0.010461258006435407,
+                "test_codebook_loss": 0.03110847216618212,
+                "test_commitment_loss": 0.03110847216618212,
+                "test_perplexity": 376.2188469609128
+            }
+        },
+        {
+            "epoch": 29,
+            "train_metrics": {
+                "loss": 0.04961219540489909,
+                "recon_loss": 0.010051708844730922,
+                "codebook_loss": 0.031648389180488595,
+                "commitment_loss": 0.031648389180488595,
+                "perplexity": 381.5559437939578
+            },
+            "test_metrics": {
+                "test_loss": 0.05024004963379872,
+                "test_recon_loss": 0.01056966072396387,
+                "test_codebook_loss": 0.031736310854365554,
+                "test_commitment_loss": 0.031736310854365554,
+                "test_perplexity": 383.8858167431023
+            }
+        },
+        {
+            "epoch": 30,
+            "train_metrics": {
+                "loss": 0.04937895755176349,
+                "recon_loss": 0.009980894217882163,
+                "codebook_loss": 0.03151845057849841,
+                "commitment_loss": 0.03151845057849841,
+                "perplexity": 387.44776553571074
+            },
+            "test_metrics": {
+                "test_loss": 0.05032513304790364,
+                "test_recon_loss": 0.010449201245851155,
+                "test_codebook_loss": 0.03190074523887302,
+                "test_commitment_loss": 0.03190074523887302,
+                "test_perplexity": 388.5286332142504
+            }
+        },
+        {
+            "epoch": 31,
+            "train_metrics": {
+                "loss": 0.0492731961409759,
+                "recon_loss": 0.00993690259344971,
+                "codebook_loss": 0.031469034874225824,
+                "commitment_loss": 0.031469034874225824,
+                "perplexity": 391.6242333141434
+            },
+            "test_metrics": {
+                "test_loss": 0.04926243730926815,
+                "test_recon_loss": 0.010377598584547072,
+                "test_codebook_loss": 0.031107870909043506,
+                "test_commitment_loss": 0.031107870909043506,
+                "test_perplexity": 392.66447390785703
+            }
+        },
+        {
+            "epoch": 32,
+            "train_metrics": {
+                "loss": 0.04898272842511801,
+                "recon_loss": 0.009874808349553734,
+                "codebook_loss": 0.031286336024246554,
+                "commitment_loss": 0.031286336024246554,
+                "perplexity": 395.45269190015085
+            },
+            "test_metrics": {
+                "test_loss": 0.04933425925577743,
+                "test_recon_loss": 0.010202739658895173,
+                "test_codebook_loss": 0.03130521568693692,
+                "test_commitment_loss": 0.03130521568693692,
+                "test_perplexity": 396.41359276107596
+            }
+        },
+        {
+            "epoch": 33,
+            "train_metrics": {
+                "loss": 0.04891160142886669,
+                "recon_loss": 0.009829798687125564,
+                "codebook_loss": 0.03126544208573106,
+                "commitment_loss": 0.03126544208573106,
+                "perplexity": 399.42518767920296
+            },
+            "test_metrics": {
+                "test_loss": 0.04905916976777813,
+                "test_recon_loss": 0.010222072418354735,
+                "test_codebook_loss": 0.031069677936125407,
+                "test_commitment_loss": 0.031069677936125407,
+                "test_perplexity": 401.015019284019
+            }
+        },
+        {
+            "epoch": 34,
+            "train_metrics": {
+                "loss": 0.04877073786523946,
+                "recon_loss": 0.009758244123300322,
+                "codebook_loss": 0.031209994936385727,
+                "commitment_loss": 0.031209994936385727,
+                "perplexity": 403.72885225496026
+            },
+            "test_metrics": {
+                "test_loss": 0.05014562955762766,
+                "test_recon_loss": 0.010374314470004432,
+                "test_codebook_loss": 0.031817051758871805,
+                "test_commitment_loss": 0.031817051758871805,
+                "test_perplexity": 406.0055916701691
+            }
+        },
+        {
+            "epoch": 35,
+            "train_metrics": {
+                "loss": 0.048643775389093875,
+                "recon_loss": 0.009735227281423023,
+                "codebook_loss": 0.03112683846327045,
+                "commitment_loss": 0.03112683846327045,
+                "perplexity": 406.5880773207721
+            },
+            "test_metrics": {
+                "test_loss": 0.05040739745467524,
+                "test_recon_loss": 0.01015363025325763,
+                "test_codebook_loss": 0.03220301352535622,
+                "test_commitment_loss": 0.03220301352535622,
+                "test_perplexity": 408.9041485363924
+            }
+        },
+        {
+            "epoch": 36,
+            "train_metrics": {
+                "loss": 0.04853434976943009,
+                "recon_loss": 0.009674569927727627,
+                "codebook_loss": 0.03108782378856636,
+                "commitment_loss": 0.03108782378856636,
+                "perplexity": 409.8577530414552
+            },
+            "test_metrics": {
+                "test_loss": 0.04955811591088018,
+                "test_recon_loss": 0.010191851413419729,
+                "test_codebook_loss": 0.031493011437639405,
+                "test_commitment_loss": 0.031493011437639405,
+                "test_perplexity": 408.90877330152296
+            }
+        },
+        {
+            "epoch": 37,
+            "train_metrics": {
+                "loss": 0.04841800918207144,
+                "recon_loss": 0.009635738244809,
+                "codebook_loss": 0.031025816707888527,
+                "commitment_loss": 0.031025816707888527,
+                "perplexity": 412.3233425598925
+            },
+            "test_metrics": {
+                "test_loss": 0.04888413601283786,
+                "test_recon_loss": 0.0101639958735131,
+                "test_codebook_loss": 0.030976112036010885,
+                "test_commitment_loss": 0.030976112036010885,
+                "test_perplexity": 410.1503257268592
+            }
+        },
+        {
+            "epoch": 38,
+            "train_metrics": {
+                "loss": 0.04835527634148098,
+                "recon_loss": 0.009578527006156305,
+                "codebook_loss": 0.031021399423480034,
+                "commitment_loss": 0.031021399423480034,
+                "perplexity": 414.73956852983633
+            },
+            "test_metrics": {
+                "test_loss": 0.04845139822816547,
+                "test_recon_loss": 0.010234917997370791,
+                "test_codebook_loss": 0.030573184236506873,
+                "test_commitment_loss": 0.030573184236506873,
+                "test_perplexity": 413.92240963706485
+            }
+        },
+        {
+            "epoch": 39,
+            "train_metrics": {
+                "loss": 0.04828194926118912,
+                "recon_loss": 0.009568446837460904,
+                "codebook_loss": 0.03097080197328192,
+                "commitment_loss": 0.03097080197328192,
+                "perplexity": 417.87898344152114
+            },
+            "test_metrics": {
+                "test_loss": 0.048831477053935014,
+                "test_recon_loss": 0.010196229171809516,
+                "test_codebook_loss": 0.030908198225535925,
+                "test_commitment_loss": 0.030908198225535925,
+                "test_perplexity": 419.29070735883107
+            }
+        },
+        {
+            "epoch": 40,
+            "train_metrics": {
+                "loss": 0.048089496629393616,
+                "recon_loss": 0.009522586982325672,
+                "codebook_loss": 0.030853527609992513,
+                "commitment_loss": 0.030853527609992513,
+                "perplexity": 420.5540997049083
+            },
+            "test_metrics": {
+                "test_loss": 0.04848996182031269,
+                "test_recon_loss": 0.01006243752810774,
+                "test_codebook_loss": 0.030742019179123867,
+                "test_commitment_loss": 0.030742019179123867,
+                "test_perplexity": 419.97480522831785
+            }
+        },
+        {
+            "epoch": 41,
+            "train_metrics": {
+                "loss": 0.04807171511375691,
+                "recon_loss": 0.009471154054793556,
+                "codebook_loss": 0.030880448729981243,
+                "commitment_loss": 0.030880448729981243,
+                "perplexity": 422.6232565955433
+            },
+            "test_metrics": {
+                "test_loss": 0.04814437922986248,
+                "test_recon_loss": 0.010030858371925504,
+                "test_codebook_loss": 0.03049081648829617,
+                "test_commitment_loss": 0.03049081648829617,
+                "test_perplexity": 421.69223292869856
+            }
+        },
+        {
+            "epoch": 42,
+            "train_metrics": {
+                "loss": 0.047972611549412805,
+                "recon_loss": 0.009430951007720454,
+                "codebook_loss": 0.03083332836189691,
+                "commitment_loss": 0.03083332836189691,
+                "perplexity": 423.524988120779
+            },
+            "test_metrics": {
+                "test_loss": 0.04876314867523652,
+                "test_recon_loss": 0.010227884165942669,
+                "test_codebook_loss": 0.03082821150369282,
+                "test_commitment_loss": 0.03082821150369282,
+                "test_perplexity": 420.2266304885285
+            }
+        },
+        {
+            "epoch": 43,
+            "train_metrics": {
+                "loss": 0.04796069033462983,
+                "recon_loss": 0.0094118844765379,
+                "codebook_loss": 0.03083904467218215,
+                "commitment_loss": 0.03083904467218215,
+                "perplexity": 424.57220131174074
+            },
+            "test_metrics": {
+                "test_loss": 0.04831848614200761,
+                "test_recon_loss": 0.010067405803954299,
+                "test_codebook_loss": 0.030600864251580418,
+                "test_commitment_loss": 0.030600864251580418,
+                "test_perplexity": 422.7473604226414
+            }
+        },
+        {
+            "epoch": 44,
+            "train_metrics": {
+                "loss": 0.0479660121357197,
+                "recon_loss": 0.00937126428508164,
+                "codebook_loss": 0.030875798186187246,
+                "commitment_loss": 0.030875798186187246,
+                "perplexity": 425.81244083804546
+            },
+            "test_metrics": {
+                "test_loss": 0.0492877910691726,
+                "test_recon_loss": 0.01008578649238695,
+                "test_codebook_loss": 0.031361603661428525,
+                "test_commitment_loss": 0.031361603661428525,
+                "test_perplexity": 425.1931268233287
+            }
+        },
+        {
+            "epoch": 45,
+            "train_metrics": {
+                "loss": 0.04784080632926558,
+                "recon_loss": 0.00935493837422727,
+                "codebook_loss": 0.03078869430114851,
+                "commitment_loss": 0.03078869430114851,
+                "perplexity": 426.38585270640186
+            },
+            "test_metrics": {
+                "test_loss": 0.047898667475468,
+                "test_recon_loss": 0.010057797714407686,
+                "test_codebook_loss": 0.03027269607291946,
+                "test_commitment_loss": 0.03027269607291946,
+                "test_perplexity": 422.50684443606605
+            }
+        },
+        {
+            "epoch": 46,
+            "train_metrics": {
+                "loss": 0.047728987939446174,
+                "recon_loss": 0.009315062874018232,
+                "codebook_loss": 0.030731140052342353,
+                "commitment_loss": 0.030731140052342353,
+                "perplexity": 427.7427102793818
+            },
+            "test_metrics": {
+                "test_loss": 0.047578746570816524,
+                "test_recon_loss": 0.009978567839517623,
+                "test_codebook_loss": 0.03008014298503912,
+                "test_commitment_loss": 0.03008014298503912,
+                "test_perplexity": 425.27410888671875
+            }
+        },
+        {
+            "epoch": 47,
+            "train_metrics": {
+                "loss": 0.0476843976151303,
+                "recon_loss": 0.009279556353302562,
+                "codebook_loss": 0.03072387299707631,
+                "commitment_loss": 0.03072387299707631,
+                "perplexity": 428.60292970311
+            },
+            "test_metrics": {
+                "test_loss": 0.047467264146367205,
+                "test_recon_loss": 0.009962075460655025,
+                "test_codebook_loss": 0.030004151094752022,
+                "test_commitment_loss": 0.030004151094752022,
+                "test_perplexity": 421.96240002595925
+            }
+        },
+        {
+            "epoch": 48,
+            "train_metrics": {
+                "loss": 0.0476797473476366,
+                "recon_loss": 0.009245097208434663,
+                "codebook_loss": 0.03074772008563704,
+                "commitment_loss": 0.03074772008563704,
+                "perplexity": 428.78945321866007
+            },
+            "test_metrics": {
+                "test_loss": 0.04737282657547842,
+                "test_recon_loss": 0.009953984365904634,
+                "test_codebook_loss": 0.02993507369692567,
+                "test_commitment_loss": 0.02993507369692567,
+                "test_perplexity": 422.97538815268985
+            }
+        },
+        {
+            "epoch": 49,
+            "train_metrics": {
+                "loss": 0.04761335246093438,
+                "recon_loss": 0.009227987890943999,
+                "codebook_loss": 0.030708291460676572,
+                "commitment_loss": 0.030708291460676572,
+                "perplexity": 430.03806946893485
+            },
+            "test_metrics": {
+                "test_loss": 0.04825110049753249,
+                "test_recon_loss": 0.009954804271648202,
+                "test_codebook_loss": 0.030637037032578564,
+                "test_commitment_loss": 0.030637037032578564,
+                "test_perplexity": 429.2967942636224
+            }
+        },
+        {
+            "epoch": 50,
+            "train_metrics": {
+                "loss": 0.047492883575465675,
+                "recon_loss": 0.009193846932076432,
+                "codebook_loss": 0.030639229332813826,
+                "commitment_loss": 0.030639229332813826,
+                "perplexity": 431.24895022653254
+            },
+            "test_metrics": {
+                "test_loss": 0.047783187861684,
+                "test_recon_loss": 0.010045097893269002,
+                "test_codebook_loss": 0.03019047207847426,
+                "test_commitment_loss": 0.03019047207847426,
+                "test_perplexity": 427.2349868967563
+            }
+        }
+    ]
+}

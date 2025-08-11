@@ -1,0 +1,96 @@
+{
+    "target": "All in One: Multi-task Prompting for Graph Neural Networks",
+    "instance_id": "allinone",
+    "source_papers": [
+      {
+        "reference": "Prompt Tuning for Graph Neural Networks",
+        "rank": 1,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This paper provides foundational methods for prompt tuning specifically tailored to graph neural networks, directly influencing the methodological framework of the current study.",
+        "usage": "It was used as a key reference for establishing the principles of prompt tuning in the context of GNNs."
+      },
+      {
+        "reference": "Language models are few-shot learners",
+        "rank": 2,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This work inspired the adaptation of few-shot learning techniques from NLP to graph tasks, shaping the conceptual direction of the research.",
+        "usage": "The techniques from this paper were adapted to enhance the few-shot learning capabilities in graph domains."
+      },
+      {
+        "reference": "Strategies For Pre-training Graph Neural Networks",
+        "rank": 3,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This paper explores various pre-training strategies that are crucial to understanding how to improve GNN performance, forming a methodological basis for the current study.",
+        "usage": "It was referenced to integrate pre-training strategies with prompting techniques."
+      },
+      {
+        "reference": "Graph Attention Networks",
+        "rank": 4,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This foundational work on GAT provides essential insights into effective graph-based learning mechanisms that underpin the proposed methods in the paper.",
+        "usage": "The effectiveness of the GAT model informed the design choices made in the current study."
+      },
+      {
+        "reference": "Semi-supervised classification with graph convolutional networks",
+        "rank": 5,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This paper serves as a cornerstone for many GNN architectures, providing a methodological foundation that supports the techniques used in the research.",
+        "usage": "Referenced for its foundational concepts in semi-supervised learning applied to GNNs."
+      },
+      {
+        "reference": "Graph contrastive learning with augmentations",
+        "rank": 6,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This work provides a strong methodological foundation for contrastive learning approaches applied to graphs, which informs the multi-task prompting framework.",
+        "usage": "It supported the integration of contrastive learning methods into the proposed framework."
+      },
+      {
+        "reference": "Making Pre-trained Language Models Better Few-shot Learners",
+        "rank": 7,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This paper introduces concepts of few-shot learning that were pivotal in developing the current research's prompting approach for graph tasks.",
+        "usage": "Concepts from this work were adapted to enhance few-shot prompting strategies in graph neural networks."
+      },
+      {
+        "reference": "Graph pre-training and prompt tuning to generalize graph neural networks",
+        "rank": 8,
+        "type": [
+          "component"
+        ],
+        "justification": "This paper aligns closely with the current study's framework, providing strategies that integrate pre-training with prompt tuning.",
+        "usage": "It was used to establish a clear link between pre-training strategies and the proposed prompt tuning techniques."
+      }
+    ],
+    "authors": [
+      "Xiangguo Sun",
+      "Hong Cheng",
+      "Jia Li",
+      "Bo Liu",
+      "Jihong Guan"
+    ],
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2307.01504v2",
+    "abstract": "Recently, ''pre-training and fine-tuning'' has been adopted as a standard\nworkflow for many graph tasks since it can take general graph knowledge to\nrelieve the lack of graph annotations from each application. However, graph\ntasks with node level, edge level, and graph level are far diversified, making\nthe pre-training pretext often incompatible with these multiple tasks. This gap\nmay even cause a ''negative transfer'' to the specific application, leading to\npoor results. Inspired by the prompt learning in natural language processing\n(NLP), which has presented significant effectiveness in leveraging prior\nknowledge for various NLP tasks, we study the prompting topic for graphs with\nthe motivation of filling the gap between pre-trained models and various graph\ntasks. In this paper, we propose a novel multi-task prompting method for graph\nmodels. Specifically, we first unify the format of graph prompts and language\nprompts with the prompt token, token structure, and inserting pattern. In this\nway, the prompting idea from NLP can be seamlessly introduced to the graph\narea. Then, to further narrow the gap between various graph tasks and\nstate-of-the-art pre-training strategies, we further study the task space of\nvarious graph applications and reformulate downstream problems to the\ngraph-level task. Afterward, we introduce meta-learning to efficiently learn a\nbetter initialization for the multi-task prompt of graphs so that our prompting\nframework can be more reliable and general for different tasks. We conduct\nextensive experiments, results from which demonstrate the superiority of our\nmethod.",
+    "venue": "Knowledge Discovery and Data Mining",
+    "venue_source": "Semantic Scholar",
+    "venue_lookup_time": "2024-11-18T08:14:48.483546",
+    "citations": 86,
+    "topic": "Graph Neural Networks for NLP",
+    "field": "graph_neural_networks",
+    "task1": "The model proposed in the paper focuses on enhancing the performance of Graph Neural Networks (GNNs) across multiple graph-related tasks, including node-level, edge-level, and graph-level tasks, by leveraging a multi-task prompting approach. To implement the core methodology, follow these steps:\n\n1. **Task Definition**: The model facilitates the reformulation of various graph tasks into a unified graph-level format, which helps in bridging the gap between pre-training and downstream tasks.\n\n2. **Core Techniques**:\n   - **Prompt Graph Design**: Create a prompt graph that includes learnable prompt tokens, token structures, and inserting patterns for seamless integration into the original graph.\n   - **Meta-Learning**: Utilize a meta-learning strategy to adaptively learn better prompt initializations across multiple tasks.\n   - **Task Reformulation**: Transform node-level and edge-level tasks into graph-level tasks by creating induced graphs based on a defined neighborhood (e.g., \u03c4-hop neighbors).\n\n3. **Implementation Components**:\n   - **Prompt Tokens**: Initialize a set of learnable prompt tokens, each represented as a vector of the same size as node features. The number of prompt tokens should be significantly less than the number of nodes (|P| \u226a N).\n   - **Token Structure**: Define connections among prompt tokens. You can use tunable parameters or a binary connection based on the dot product between tokens, applying a threshold to prune connections.\n   - **Inserting Patterns**: Implement an inserting function that determines how prompt tokens will be incorporated into the graph. This can be done by adding the prompt tokens to existing node features.\n\n4. **Key Parameters & Configurations**:\n   - **Token Count**: Set the number of prompt tokens (|P|) to a small value (e.g., 10).\n   - **Distance Metric**: For induced graphs, use \u03c4 to define the neighborhood size, where \u03c4 can be set based on task requirements (e.g., \u03c4 = 1 for immediate neighbors).\n   - **Learning Rate**: Use a learning rate (e.g., 0.001) with an Adam optimizer for training.\n\n5. **Input/Output Specifications**:\n   - **Input**: The input will be the original graph G with node features. The prompt graph G_p will be merged with G based on the defined inserting patterns.\n   - **Output**: The output will be the model's predictions for the downstream tasks, which could be node classifications, edge predictions, or graph classifications.\n\n6. **Step-by-Step Interaction**:\n   - **Step 1**: Define the original graph G and extract node features.\n   - **Step 2**: Construct the prompt graph G_p by initializing prompt tokens and defining token structures.\n   - **Step 3**: Apply the inserting pattern to merge G_p into G, modifying the node features as per the defined prompt.\n   - **Step 4**: Feed the modified graph into the pre-trained GNN model for processing.\n   - **Step 5**: Utilize meta-learning to adaptively improve prompt tokens based on task-specific data and loss.\n\n7. **Critical Implementation Details**:\n   - Ensure that the initializations of prompt tokens are effective, as poor initialization can hinder performance.\n   - The design of token structures and inserting patterns is crucial; they should be tested and refined to ensure they provide meaningful enhancements to the original graph representation.\n   - Monitor the computational efficiency, as the model should maintain a balance between performance and resource utilization, especially when scaling to larger graphs.\n\nBy following these instructions, researchers can effectively implement the methodology outlined in the paper, improving the adaptability and performance of GNNs across varying graph-related tasks.",
+    "task2": "1. The primary task or problem domain the research tackles:\n   This research addresses the challenge of effectively applying graph neural networks (GNNs) across diverse graph-based tasks, particularly in a multi-task learning context. It focuses on the integration of prompting techniques inspired by natural language processing (NLP) to enhance the adaptability of GNNs for various tasks, including node-level, edge-level, and graph-level tasks.\n\n2. Current limitations in existing approaches that motivated this work:\n   Existing approaches in graph learning often rely on a \"pre-training and fine-tuning\" paradigm, which can lead to a significant gap between pre-training tasks and the diverse downstream tasks. Traditional pre-training methods frequently focus on specific task types, such as binary edge prediction, which are not always compatible with the wide range of tasks encountered in practice. This disconnection can result in negative transfer, where the model performs poorly on the target tasks due to misalignment with the pre-training objectives.\n\n3. Core challenges the researchers aim to overcome:\n   The researchers aim to overcome several challenges: \n   - Bridging the gap between various graph tasks and pre-training strategies to ensure better compatibility and transferability across tasks.\n   - Designing an effective and versatile prompting mechanism that can adapt to the unique structures and demands of graph data, unlike the simpler prompting methods used in NLP.\n   - Developing a robust approach for initializing and learning prompts that can handle the complexities and variabilities inherent in multi-task graph settings.\n\n4. Key objectives and intended contributions:\n   The key objectives of the research are to:\n   - Propose a unified prompting framework for graph tasks that can effectively integrate insights from NLP prompting techniques.\n   - Reformulate node-level and edge-level tasks as graph-level tasks to enhance the generalization and transferability of pre-training knowledge.\n   - Introduce a meta-learning mechanism to learn optimal prompts that can improve performance across multiple tasks.\n   The intended contributions include advancing the understanding of prompt learning in graph contexts, providing a novel framework that enhances the adaptability of GNNs, and demonstrating the efficacy of this approach through extensive evaluations on various graph tasks."
+  }

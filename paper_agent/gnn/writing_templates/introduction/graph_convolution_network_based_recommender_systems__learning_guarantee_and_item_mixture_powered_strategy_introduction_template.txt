@@ -1,0 +1,23 @@
+```latex
+\section{Introduction}
+
+With the explosive growth of [relevant context or phenomenon], [target audience or users] rely on [topic or method] to alleviate such [problem]. In order to take full advantage of [explain the strengths or structures of the area], recent studies have begun to apply [specific method or technique] to [context or field]. As expected, [method-based models or approaches] have emerged as one of the most attractive approaches to [specific application] due to their powerful [specific capability or feature]. However, these works only demonstrate the effectiveness of [method] empirically and do not provide [describe missing theoretical aspects].
+
+\subsection{Prior Work}
+
+[Earlier work or studies]. Specifically, [discuss specific applications of earlier methods or models]. [Another relevant work] [describe this work's contributions and methods]. However, [discuss limitations of previous approaches]. 
+
+\subsection{Generalization Analysis for [Relevant Topic]}
+
+Due to the numerical success of [mention prominent works], several theoretical studies have been devoted to establishing [key theoretical concepts] for [relevant context]. In [specific learning type], [author] studied [specific theoretical aspect or bound]. [Other works or authors] provided [describe their findings and contributions]. However, these works mentioned above only focused on [specific tasks or limitations], which differs from [your focus].
+
+\subsection{Contributions and Paper Structure}
+
+The main contributions are outlined as follows:
+
+- 1) [Briefly state first contribution]. In Section [number], we [describe what will be covered].
+- 2) Motivated by [what theories or needs], we propose [name of your proposed method] in Section [number]. It aims to [describe purpose of contribution]. Notably, we [mention theoretical backing].
+- 3) In Section [number], [describe the experimental evaluations]. First, we [introduce what will be validated]. Second, we [explain any validation or comparison].
+
+We conclude in Section [number]. All proofs and additional results are provided in the appendix.
+```

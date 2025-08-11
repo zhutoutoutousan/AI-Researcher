@@ -1,0 +1,24 @@
+{
+  "keyword": "Heterogeneous Graph Contrastive Learning for Recommendation",
+  "timestamp": "2025-03-02T18:57:21.767309",
+  "papers": [
+    {
+      "title": "Heterogeneous Graph Contrastive Learning for Recommendation",
+      "authors": [
+        "Mengru Chen",
+        "Chao Huang",
+        "Lianghao Xia",
+        "Wei Wei",
+        "Yong Xu",
+        "Ronghua Luo"
+      ],
+      "year": 2023,
+      "url": "http://arxiv.org/abs/2303.00995v1",
+      "abstract": "Graph Neural Networks (GNNs) have become powerful tools in modeling\ngraph-structured data in recommender systems. However, real-life recommendation\nscenarios usually involve heterogeneous relationships (e.g., social-aware user\ninfluence, knowledge-aware item dependency) which contains fruitful information\nto enhance the user preference learning. In this paper, we study the problem of\nheterogeneous graph-enhanced relational learning for recommendation. Recently,\ncontrastive self-supervised learning has become successful in recommendation.\nIn light of this, we propose a Heterogeneous Graph Contrastive Learning (HGCL),\nwhich is able to incorporate heterogeneous relational semantics into the\nuser-item interaction modeling with contrastive learning-enhanced knowledge\ntransfer across different views. However, the influence of heterogeneous side\ninformation on interactions may vary by users and items. To move this idea\nforward, we enhance our heterogeneous graph contrastive learning with meta\nnetworks to allow the personalized knowledge transformer with adaptive\ncontrastive augmentation. The experimental results on three real-world datasets\ndemonstrate the superiority of HGCL over state-of-the-art recommendation\nmethods. Through ablation study, key components in HGCL method are validated to\nbenefit the recommendation performance improvement. The source code of the\nmodel implementation is available at the link https://github.com/HKUDS/HGCL.",
+      "venue": "Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining",
+      "venue_source": "Crossref",
+      "venue_lookup_time": "2025-03-02T18:57:14.902005",
+      "citations": 0
+    }
+  ]
+}

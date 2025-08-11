@@ -1,0 +1,46 @@
+\section{Experiments}
+
+In this section, we conduct extensive experiments to validate our theoretical findings and the effectiveness of the proposed [Module Name].
+
+\subsection{Dataset}
+We follow existing work [citation], using [number] datasets: (1) [Dataset 1 Description]; (2) [Dataset 2 Description]. The training set, validation set, and test set are randomly sampled in a ratio of [ratio].
+
+\subsection{Model Structure}
+We employ [Model 1] and [Model 2] as the competitive algorithms in our experiments. Specifically, [Model 1 Description]. In contrast, [Model 2 Description]. Correspondingly, these models are configured with the proposed [Module Name] denoted as [Model 1-Module Name] and [Model 2-Module Name], respectively.
+
+We use the public implementation version of [Model 2] and follow the default parameters of their algorithms unless otherwise specified. More details are provided in Appendix [Appendix Reference].
+
+\subsection{Metrics}
+The performance of the recommendations is assessed by the rankings of positive items in the test set. We utilize [Number] ranking metrics widely used in [Research Area]: [Metric 1] and [Metric 2]. For these metrics, we truncate the ranked list to [value].
+
+\subsection{Numerical Discussion}
+In this subsection, we discuss the implications of [Theoretical Concept or Proposition]. The results are primarily based on [Model Name] because [Reason].
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{[Figure File]}
+    \caption{[Figure Caption]}
+    \label{fig:[Figure Label]}
+\end{figure}
+
+\textbf{Quantitative Analysis.} We investigate the effects of [Variable 1] and [Variable 2] on [Performance Metric]. We observe that as [Variable 1 or 2] increases, [Observation]. This result is consistent with [Theoretical Analysis]. Furthermore, [Additional Observations with Respect to Variables].
+
+\textbf{The Role of [Concept].} We compare the performances related to [Concept or Variable]. It is evident that [Observation and Theoretical Consistency].
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{[Figure File]}
+    \caption{[Figure Caption]}
+    \label{fig:[Figure Label]}
+\end{figure}
+
+\textbf{Sensitivity w.r.t. [Model Component].} We explore the impact of [Model Component], where [Methodology]. Here, [Observations from Analysis].
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{[Figure File]}
+    \caption{[Figure Caption]}
+    \label{fig:[Figure Label]}
+\end{figure}
+
+In conclusion, our experiments validate the effectiveness of [Module Name] and provide insights into [General Summary/Impact in the Domain].

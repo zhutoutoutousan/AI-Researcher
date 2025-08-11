@@ -1,0 +1,18 @@
+```latex
+\section{Related Work}
+
+\subsection{Overview of [Research Domain]}
+There is a plethora of work on [general topic], most of which focus on [key area]. These approaches can be divided into two categories: (1) [Category 1] and (2) [Category 2]. In particular, [specific methods/details about Category 1]. On the other hand, [specific methods/details about Category 2]. [Discuss any limitations or challenges of existing methods that motivate your approach].
+
+\subsection{[Subtopic 1]}
+Motivated by [describe motivation or performance of a previous approach], there is a growing interest in [subtopic] for [applications or domains]. More specifically, [name of key work] is the first work that [describe contribution]. While demonstrating great potential, [identify limitations, challenges, or computational requirements]. To mitigate these issues, [briefly mention any improvements or alternatives].
+
+\subsection{[Subtopic 2]}
+At the core of many [domain] tasks is [describe fundamental concept]. Since [explain limitations of conventional methods], there is an ever-increasing trend in [approach] [citations]. The main idea is [describe core idea behind the approach]. [Introduce additional methods or paradigms relevant to the subtopic, along with their contributions and limitations].
+
+\subsection{[Subtopic 3]}
+In contrast to [previous approaches], [name specific method or framework] is extremely popular and extensively studied in [relevant domain]. As an effort that [describe how it relates or unifies different areas], [contributions or key findings of the specific work]. [Mention concurrent works and their contributions]. 
+
+\subsection{Summary}
+In this paper, we [state the focus or contribution of your work]. Different from [previous works], we [describe your unique approach or perspective], which allows [explain the potential advantages or outcomes of your approach].
+```

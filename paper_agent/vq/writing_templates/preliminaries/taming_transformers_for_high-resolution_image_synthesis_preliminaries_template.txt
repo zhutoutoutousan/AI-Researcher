@@ -1,0 +1,30 @@
+\section{Preliminaries}
+
+\subsection{Motivation}
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. 
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method.]
+
+\subsection{Overview of the Proposed Method}
+To tackle [challenge], our method consists of three main components: 
+\begin{itemize}
+    \item [component 1]
+    \item [component 2]
+    \item [component 3]
+\end{itemize}
+
+[A paragraph describing the detailed workflow of the module.]
+
+\subsection{Conceptual Framework}
+Formally, we define [concept] as follows:
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+
+[Detailed explanation of each term in the equations.]
+
+\subsection{Comparison with Existing Approaches}
+[Few sentences comparing the proposed method with existing approaches.]
+
+\subsection{Summary}
+To summarize, our proposed method [brief summary of the method and its significance].

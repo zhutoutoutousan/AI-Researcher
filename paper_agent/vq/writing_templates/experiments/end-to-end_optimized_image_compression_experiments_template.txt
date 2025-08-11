@@ -1,0 +1,44 @@
+\section{Experimental Results}
+
+We jointly optimized the full set of parameters $\phi$, $\theta$, and all $\psi$ over a subset of the [Dataset Name] consisting of [Number of Images] images using [Optimization Technique]. This optimization was performed separately for each [Parameter], yielding separate transforms and marginal probability models for each value.
+
+% Insert figure (if applicable)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{placeholder} % Image filename
+    \caption{[Description of figure]}
+    \label{fig:placeholder}
+\end{figure}
+
+For the [Transformation Type] analysis transform, we used [Number of Filters] filters (size [Filter Size]) in the first stage, each subsampled by a factor of [Subsampling Factor]. The remaining stages retain the number of channels, but use filters operating across all input channels ([Filter Size With Channels]), with outputs subsampled by a factor of [Subsampling Factor]. The net output thus has [Dimension Relation to Input]. The synthesis transform is structured analogously. For [Other Input Types], we trained a separate set of models, with the first stage augmented to operate across [Color Channels]. For the two largest values of [Parameter], we increased the network capacity by [Number of Channels and Their Sizes]. Further details about the parameterization of the transforms and their training can be found in the [Appendix/Section Reference].
+
+We first verified that the [Loss Function or Metric] provides a good approximation to the actual [Performance Metric] obtained with [Method of Evaluation]. The [Evaluation Metric 1] appears to be mostly unbiased, and exhibits a relatively small variance. The [Evaluation Metric 2] provides a somewhat positively biased estimate of [Concept] for the coarser [Condition], but the bias disappears for [Condition], as expected. Note that since the values of [Parameter] do not have any intrinsic meaning, but serve only to map out the convex hull of optimal points in the [Performance Plane], a constant bias in either of the terms would simply alter the effective value of [Parameter], with no effect on the [Performance Evaluation].
+
+We compare the [Main Performance Aspect] of our method to [Existing Methods]. For our method, all images were compressed using [Compression Method]. To make the comparisons more fair, we implemented a [Method of Entropy Coding] framework. All sideband information needed by the decoder ([Information Type]) was included in the bit stream (see [Appendix/Section Reference]). Note that although the computational costs for training our models are quite high, encoding or decoding an image with the trained models is efficient, requiring only execution of the optimized [Transformation Type].
+
+Evaluations were performed on the [Evaluation Dataset Name], an [Description of Dataset]. We also examined a set of relatively standard images known as [Image Names], as well as a set of [Your Own Data Description]. None of these test images was included in the training set. All test images, compressed at a variety of bit rates using all three methods, along with their associated [Performance Curves], are available online at [Link/Repository].
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textbf{Method} & \textbf{File Size} & \textbf{PSNR} & \textbf{MS-SSIM} \\ \hline
+        [Method 1] & [Size] & [PSNR Values] & [MS-SSIM Values] \\ \hline
+        [Method 2] & [Size] & [PSNR Values] & [MS-SSIM Values] \\ \hline
+        [Proposed Method] & [Size] & [PSNR Values] & [MS-SSIM Values] \\ \hline
+    \end{tabular}
+    \caption{Comparison of [Performance Aspect] across methods.}
+    \label{tab:results}
+\end{table}
+
+% Insert figures (if applicable)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{placeholder} % Image filename
+    \caption{[Description of follow-up figure]}
+    \label{fig:placeholder2}
+\end{figure}
+
+Although we used [Metric] as a distortion metric for training, the appearance of compressed images is both qualitatively different and substantially improved, compared to [Existing Methods]. As an example, figure [Number] shows an image compressed using our method optimized for [Parameter Condition], compared to [Existing Methods] images compressed at equal or greater rates. The image compressed with our method has [Description of Outcome], but this is accomplished in a way that [Description of Qualitative Outcome]. By comparison, [Existing Methods] exhibit [Description of Artifacts].
+
+Remarkably, we find that the perceptual advantages of our method hold for all images tested, and at all bit rates. The progression from high to low bit rates is shown for an example image in figure [Number] (additional examples provided in [Appendix/Online]). As bit rate is reduced, [Existing Methods] degrade their approximation of the original image by [Description of Degradation Mechanism], thus exposing the visual appearance of those basis functions. On the other hand, our method appears to progressively [Description of Preservation Mechanism]. Consistent with the appearance of these example images, we find that distortion measured with [Perceptual Metric], indicates substantial improvements across all tested images and bit rates (figure [Number]; additional examples provided in [Appendix/Online]). Finally, when quantified with [Quantification Method], we find that our method exhibits better [Performance Aspect] than both [Existing Method 1] and [Existing Method 2] for most (but not all) test images, especially at the lower [Parameter].

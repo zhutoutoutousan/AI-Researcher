@@ -1,0 +1,15 @@
+\section{Problem Definition}
+
+We first introduce key definitions related to [research topic] and [relevant components]. We consider a typical scenario, in which we have [number] entities [Set Name] = \{ [entity 1], ..., [entity i], ..., [entity I] \} and [number] elements [Set Name] = \{ [element 1], ..., [element j], ..., [element J] \}. To capture the [type of signals involved], we define a [type of structure] as follows:
+
+\textbf{Definition 1: [Definition Title]}. We define a [structure type] [Symbol] $\in \mathbb{R}^{I \times J \times K}$ to represent the different types of [relationships/interactions], where $K$ (indexed by $k$) denotes the number of [interaction types]. In [Symbol], the element [Element Symbol] = 1 if [condition], and [Element Symbol] = 0 otherwise. To address the [specific aspect of the data], we also define a [another structure type] [Symbol] $\in \mathbb{R}^{I \times J \times K}$ to record the [relevant information].
+
+\textbf{Definition 2: [Definition Title]}. [Symbol] = \{ [Entities], [Edges] \} represents the [description of relationships], where there exists an edge [Edge Symbol] between [entities] given [condition].
+
+\textbf{Definition 3: [Definition Title]}. We further define [Symbol] = \{ [Elements], [Edges] \} to represent the [description of relationships]. In particular, we characterize the [component relations] with a triple \{ [element], [edge], [related element] | [conditions] \}, where edge [Edge Symbol] describes the relationship between [elements], [explanation].
+
+\textbf{Task Formulation}. We formulate the studied task in this paper as follows: 
+\begin{itemize}
+    \item \textbf{Input:} [description of input structures and their roles].
+    \item \textbf{Output:} A predictive function that effectively [description of the function's purpose].
+\end{itemize}

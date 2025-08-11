@@ -1,0 +1,55 @@
+\section{Experiments}
+
+\subsection{Experiment Setup}
+
+\subsubsection{Datasets.} We evaluate the effectiveness of our proposed model on [number] large-scale datasets: [Dataset 1], [Dataset 2], and [Dataset 3].
+
+\begin{itemize}
+    \item [Dataset 1]: [Brief description of the dataset, including relevant features and size]
+    \item [Dataset 2]: [Brief description of the dataset, including relevant features and size]
+    \item [Dataset 3]: [Brief description of the dataset, including relevant features and size]
+\end{itemize}
+
+\subsubsection{Dataset Preprocessing.} The preprocessing steps involve [multiple sentences explaining the preprocessing techniques applied to the datasets]. Specifically, [further explanations about how datasets are split for training, validation, and testing, including any negative sampling strategy].
+
+\subsubsection{Baseline Models.} To verify the effectiveness of our proposed [model name], we compare it with [number] groups of baseline models: (A) [Group A model list]; (B) [Group B model list]; (C) [Group C model list].
+
+\subsubsection{Evaluation Metrics.} We adopt the following evaluation metrics: [Metric 1], [Metric 2], [Metric 3]. [Brief description of each metric and its significance in the evaluation].
+
+\subsubsection{Parameter Settings.} For a fair comparison, we set the [number] dimensions of all models as [value], and [any other relevant hyperparameters]. We tune [list of hyperparameters and their ranges]. [Additional information on the optimization algorithm].
+
+\subsection{Performance Comparison}
+
+In this section, we compare the performance of [model name] with the state-of-the-art [task name] models. Table [number] presents the experimental results of all compared models on [number] datasets. We conduct [statistical test] to evaluate the statistical significance of [model name] with the best baseline algorithm. We have the following observations:
+
+\begin{itemize}
+    \item [Observation 1: Detailed explanation, including numeric improvements and insights]
+    \item [Observation 2: Detailed explanation, including comparisons with baselines]
+    \item [Observation 3: Further insights into model performance and feature interactions]
+\end{itemize}
+
+\subsection{Ablation Study of [model name]}
+
+In this section, we conduct various experiments to explore the design rationality of our proposed [model name].
+
+\subsubsection{On [Aspect 1].} To investigate [specific aspect], we conduct experiments with [List of alternative configurations] and present our findings as follows: [summary of results and explanations].
+
+\subsubsection{On [Aspect 2].} We assess the [second aspect] by comparing [List of models or configurations]. The results are summarized in Table [number] and the findings are as follows: [summary of results and explanations].
+
+\subsubsection{On [Aspect 3].} For a detailed understanding of [third aspect], we conduct experiments and analyze [findings and their importance].
+
+\subsection{In-depth Analysis on [specific topic]}
+
+\subsubsection{Impact of [variable].} To explore the impact of [variable], we [describe methodology and comparison]. The results are illustrated in Figure [number], indicating that [key insights from results].
+
+\subsubsection{Impacts of [another variable].} To verify the effectiveness of [another variable], we [describe methodology and comparison]. The results shown in Figure [number] support that [key insights from results].
+
+\subsubsection{Effects of [another design choice].} We analyze the effects of [design choice] by [ methodology]. Our findings suggest that [insights gained from this analysis].
+
+\subsection{Case Study}
+
+In this section, we present results that demonstrate our model's capability in addressing [specific challenges].
+
+\subsubsection{[Challenge 1] Analysis.} We analyze [specific challenge] by [methodology]. The results are summarized in Table [number], indicating that [findings related to this challenge].
+
+\subsubsection{[Challenge 2] Analysis.} To investigate [second challenge], we select [dataset/criteria] and report the outcomes in Figure [number]. The results show that [conclusions drawn from this analysis].

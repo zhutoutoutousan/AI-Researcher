@@ -1,0 +1,73 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. 
+
+To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3]. 
+
+The motivation behind our approach is [multiple sentences explaining the motivation and intuition behind the proposed method]. 
+
+\subsection{Notations}
+\label{subsec:notations}
+
+We denote [concept] as follows: 
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+where [detailed explanation of each term in the equations].
+
+In this section, we introduce our notations. Let [define notation 1]. We also define [define notation 2]. 
+
+\subsection{Framework}
+\label{subsec:framework}
+
+Currently, most existing [related methods] are designed based on [current method's framework]. Denote [concept] as [definition]. 
+
+Given [context], the output representation at layer [layer number] is computed by [explanation]. We have:
+\begin{equation}
+    [Mathematical formulation of the framework]
+\end{equation}
+where [description of each function and its role]. 
+
+After [number of layers] layers of processing, [final representation] is used as [purpose of this representation]. 
+
+To obtain the overall representation, we use a readout function:
+\begin{equation}
+    [Mathematical formulation of the readout]
+\end{equation}
+where [explanation of the readout function's purpose].
+
+\subsection{Generalization to [K-hop/Other Framework]}
+\label{subsec:generalization}
+
+Our framework can be directly generalized to [new framework], utilizing [key mechanism]. The main difference is [explanation of differences].
+
+We define [concept] as follows:
+\begin{equation}
+    [Mathematical formulation of the definition]
+\end{equation}
+
+[Detailed explanation of the new concept, including comparisons to previous frameworks, if applicable].
+
+We now present the [new framework details, including key equations and concepts]:
+\begin{equation}
+    [Mathematical formulation of the new framework]
+\end{equation}
+where [explanation of components in this equation]. 
+
+Compared to [previous framework], [new framework] introduces [new elements and improvements]. 
+
+We further discuss the implications of [new framework] and its potential applications in [specific contexts]. 
+
+\subsection{Conclusion}
+\label{subsec:conclusion}
+
+In this section, we summarize our findings and the impact of our method on [research domain]. 
+
+Future work will investigate [suggestions for future research]. 
+
+\appendix
+\section*{Appendix}
+\label{sec:appendix}
+
+[Optional additional details that support the main content, including mathematical proofs, additional diagrams, or extended discussions].

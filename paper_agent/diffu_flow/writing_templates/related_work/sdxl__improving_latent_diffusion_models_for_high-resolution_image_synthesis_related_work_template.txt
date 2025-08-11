@@ -1,0 +1,29 @@
+\section{Related Work}
+\label{sec:related_work}
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. 
+
+To tackle [challenge], our method consists of three main components: 
+\begin{itemize}
+    \item [component 1]
+    \item [component 2]
+    \item [component 3]
+\end{itemize}
+
+Formally, we define [concept] as follows:
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method.]
+
+Furthermore, [A paragraph describing the detailed workflow of the module].
+
+Specifically, [Several sentences comparing the proposed method with existing approaches].
+
+To this end, we have constructed our method in the following manner: 
+\begin{enumerate}
+    \item [Detailed explanation of each term in the equations]
+\end{enumerate} 
+
+Overall, our work builds upon the insights from [related work references] and aims to advance the field by [main contribution of the paper].

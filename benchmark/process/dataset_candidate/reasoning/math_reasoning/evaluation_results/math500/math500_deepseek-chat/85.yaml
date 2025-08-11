@@ -1,0 +1,51 @@
+answer: "To solve this problem, we need to relate the rate at which the tank is being\
+  \ filled to the rate at which the water level is rising.\n\n1. **Volume of a cylinder**:\
+  \ The volume \\( V \\) of a right cylindrical tank is given by:\n   \\[\n   V =\
+  \ \\pi r^2 h\n   \\]\n   where \\( r \\) is the radius of the base and \\( h \\\
+  ) is the height (or water level) of the cylinder.\n\n2. **Rate of change of volume**:\
+  \ The tank is being filled at a rate of \\( 20\\pi \\) cubic meters per hour. This\
+  \ means:\n   \\[\n   \\frac{dV}{dt} = 20\\pi\n   \\]\n\n3. **Rate of change of height**:\
+  \ The water level is rising at a rate of 4 meters per hour. This means:\n   \\[\n\
+  \   \\frac{dh}{dt} = 4\n   \\]\n\n4. **Relate the rates**: Differentiate the volume\
+  \ formula with respect to time \\( t \\):\n   \\[\n   \\frac{dV}{dt} = \\pi r^2\
+  \ \\frac{dh}{dt}\n   \\]\n   Substitute the known values:\n   \\[\n   20\\pi = \\\
+  pi r^2 \\cdot 4\n   \\]\n\n5. **Solve for \\( r^2 \\)**:\n   \\[\n   20\\pi = 4\\\
+  pi r^2\n   \\]\n   Divide both sides by \\( 4\\pi \\):\n   \\[\n   r^2 = \\frac{20\\\
+  pi}{4\\pi} = 5\n   \\]\n\n6. **Solve for \\( r \\)**:\n   \\[\n   r = \\sqrt{5}\n\
+  \   \\]\n\nFinal Answer: The final answer is \\(\\sqrt{5}\\). I hope it is correct."
+gt_answer: \sqrt{5}
+prompt: "Problem:\nFind the domain of the expression  $\\frac{\\sqrt{x-2}}{\\sqrt{5-x}}$.}\n\
+  \nSolution:\nThe expressions inside each square root must be non-negative. Therefore,\
+  \ $x-2 \\ge 0$, so $x\\ge2$, and $5 - x \\ge 0$, so $x \\le 5$. Also, the denominator\
+  \ cannot be equal to zero, so $5-x>0$, which gives $x<5$. Therefore, the domain\
+  \ of the expression is $\\boxed{[2,5)}$.\nFinal Answer: The final answer is $[2,5)$.\
+  \ I hope it is correct.\n\nProblem:\nIf $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B}\
+  \ = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$\n\nSolution:\nWe have that\
+  \ $\\det (\\mathbf{A} \\mathbf{B}) = (\\det \\mathbf{A})(\\det \\mathbf{B}) = (2)(12)\
+  \ = \\boxed{24}.$\nFinal Answer: The final answer is $24$. I hope it is correct.\n\
+  \nProblem:\nTerrell usually lifts two 20-pound weights 12 times. If he uses two\
+  \ 15-pound weights instead, how many times must Terrell lift them in order to lift\
+  \ the same total weight?\n\nSolution:\nIf Terrell lifts two 20-pound weights 12\
+  \ times, he lifts a total of $2\\cdot 12\\cdot20=480$ pounds of weight.  If he lifts\
+  \ two 15-pound weights instead for $n$ times, he will lift a total of $2\\cdot15\\\
+  cdot n=30n$ pounds of weight.  Equating this to 480 pounds, we can solve for $n$:\n\
+  \\begin{align*}\n30n&=480\\\n\\Rightarrow\\qquad n&=480/30=\\boxed{16}\n\\end{align*}\n\
+  Final Answer: The final answer is $16$. I hope it is correct.\n\nProblem:\nIf the\
+  \ system of equations\n\n\\begin{align*}\n6x-4y&=a,\\\n6y-9x &=b.\n\\end{align*}has\
+  \ a solution $(x, y)$ where $x$ and $y$ are both nonzero,\nfind $\\frac{a}{b},$\
+  \ assuming $b$ is nonzero.\n\nSolution:\nIf we multiply the first equation by $-\\\
+  frac{3}{2}$, we obtain\n\n$$6y-9x=-\\frac{3}{2}a.$$Since we also know that $6y-9x=b$,\
+  \ we have\n\n$$-\\frac{3}{2}a=b\\Rightarrow\\frac{a}{b}=\\boxed{-\\frac{2}{3}}.$$\n\
+  Final Answer: The final answer is $-\\frac{2}{3}$. I hope it is correct.\n\nPlease\
+  \ answer the following math question. You should think step by step to solve it.\n\
+  \nProblem:\nA right cylindrical tank with circular bases is being filled with water\
+  \ at a rate of $20\\pi$ cubic meters per hour. As the tank is filled, the water\
+  \ level rises four meters per hour. What is the radius of the tank, in meters? Express\
+  \ your answer in simplest radical form.\n\nPlease given your final answer (answer\
+  \ ONLY) within the format of `Final Answer: The final answer is <answer>. I hope\
+  \ it is correct.` after your reasoning \nFor example: According to ...\nFinal Answer:\
+  \ The final answer is $24$. I hope it is correct.\n"
+question: A right cylindrical tank with circular bases is being filled with water
+  at a rate of $20\pi$ cubic meters per hour. As the tank is filled, the water level
+  rises four meters per hour. What is the radius of the tank, in meters? Express your
+  answer in simplest radical form.

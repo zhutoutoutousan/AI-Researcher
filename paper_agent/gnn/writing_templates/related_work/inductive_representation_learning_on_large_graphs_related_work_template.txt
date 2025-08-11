@@ -1,0 +1,22 @@
+\section{Related Work}
+
+Our algorithm is conceptually related to [general category of previous work, e.g., node embedding approaches, supervised learning methods, etc.].  
+
+\subsection{[Specific Previous Approach 1]}
+There are a number of recent [specific techniques] that [describe what these techniques achieve or how they function] [CITATIONS]. These methods also bear close relationships to [related classic approaches or algorithms, citations]. Since these [techniques] [discuss major limitations or challenges], they are inherently [transductive/inductive, etc.] and [describe additional challenges or requirements]. One notable exception to this trend is [exceptional approach, citation], which [describe what this approach does differently]. Unlike these previous approaches, we [briefly describe your method and its key innovation].
+
+\subsection{[Specific Previous Approach 2]}
+Beyond [specific previous approach], there is a rich literature on [another category of methods]. This includes [describe key aspects or varieties within this category, citations]. Our approach is conceptually inspired by a number of these algorithms. However, whereas these previous approaches [describe what they focus on], the focus of this work is [describe the focus of your method].
+
+\subsection{[Specific Previous Approach 3]}
+In recent years, several [another category or type of method] have been proposed [CITATIONS]. The majority of these methods [describe limitations of these methods]. However, our approach is closely related to [specific approach or framework], introduced by [author(s), citation]. The original [specific method discussed] is designed for [describe setting or purpose]. A simpler variant of our algorithm can be viewed as [describe how your approach extends or relates to this previous approach], a point which we revisit in [corresponding section or context].
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+[A paragraph describing the detailed workflow of the module]
+
+[Several sentences comparing the proposed method with existing approaches]
+
+[Mathematical formulation of the key components]
+
+[Detailed explanation of each term in the equations]

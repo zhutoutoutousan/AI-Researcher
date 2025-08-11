@@ -1,0 +1,41 @@
+\section{Related Work}
+
+Existing work in the field of [research domain] can be broadly categorized into [group 1], [group 2], [group 3], and [group 4].
+
+\subsection{[Group 1]}
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. Existing [group 1 methods] primarily focus on [describe focus of the group, e.g., first-order connectivity], utilizing [specific techniques or methods used in this group]. For instance, [example method] [briefly explain its approach and how it relates to [group 1]]. Despite the effectiveness of these methods, they [mention limitations, e.g., fail to capture higher-order connections]. 
+
+Moreover, [multiple sentences explaining the motivation and intuition behind the proposed method]. 
+
+\subsection{[Group 2]}
+
+To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3]. [A paragraph describing the detailed workflow of the module]. 
+
+In contrast, [group 2 methods] [describe group 2 methods and their approach]. For example, [example method from group 2] [describe how it works]. However, [highlight limitations and challenges faced by group 2 methods, e.g., issues with scalability or transferability].
+
+\subsection{[Group 3]}
+
+[Group 3 methods] draw inspiration from [specific technique or approach] and have shown promising results in [describe results]. For instance, [example method from group 3] employs [describe key approaches used]. 
+
+Nevertheless, these approaches [discuss limitations, such as difficulties in training or performance issues].
+
+\subsection{[Group 4]}
+
+[Group 4 methods] are based on [describe foundational concepts, e.g., GNNs or neural network architectures]. Typically, they [general approach of group]. For example, [example method from group 4] utilizes [describe its unique features]. 
+
+Notably, these methods ["highlight any unique contributions or differences compared to other groups, e.g. relational modeling, preserving dependencies, etc."].
+
+Thus, to the best of our knowledge, [state a general conclusion about the gaps or unexplored areas in existing work]. Our work differs from these current methods in [explain the main difference or contribution of your work]. Specifically, we focus on [describe your main focus, such as enhancing interpretability or addressing specific challenges related to previous methods]. 
+
+\subsection{Comparison with Existing Approaches}
+
+Furthermore, we provide a comparison of our proposed method with existing [mention specific methods/approaches] to highlight [describe what aspects you are comparing, such as performance or interpretability].
+
+Overall, our approach aims to [state the primary goal of your work, e.g., improve effectiveness, capture underlying relationships, etc.]. 
+
+\begin{equation}
+[Mathematical formulation of the key components]
+\end{equation}
+
+\text{Where} [Detailed explanation of each term in the equations].

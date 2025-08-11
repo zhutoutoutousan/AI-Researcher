@@ -1,0 +1,70 @@
+```latex
+\section{Experiments}
+In this section, we conduct experiments to evaluate our proposed method on [describe datasets] with the purpose of answering the following research questions: 
+
+\begin{itemize}
+    \item RQ1: [Describe the question related to performance comparison with existing methods]
+    \item RQ2: [Describe the question regarding handling of varying input sizes]
+    \item RQ3: [Describe the question about component effectiveness]
+\end{itemize}
+
+\subsection{Experimental Settings}
+
+\subsubsection{Dataset}
+We evaluate the performance on [describe dataset types, e.g., public/e-commerce] datasets. Table \ref{dataset_table} summarizes the basic statistics, including [mention key statistics and comparisons].
+
+- \textbf{Dataset 1}: [Describe the first dataset, its source, data collection period, and preprocessing steps]
+- \textbf{Dataset 2}: [Describe the second dataset, its source, data collection period, and preprocessing steps]
+
+\subsubsection{Evaluation Metrics}
+To evaluate the performance of our method, we use [list metrics, e.g., classification and ranking metrics]. They are defined as follows:
+
+- \textbf{Metric 1}: [Define metric 1 and explain its significance]
+- \textbf{Metric 2}: [Define metric 2 and explain its significance]
+- \textbf{Metric 3}: [Define metric 3 and explain its significance]
+- \textbf{Metric 4}: [Define metric 4 and explain its significance]
+
+\subsubsection{Baselines}
+To demonstrate the effectiveness of our method, we compare it with [list types of baseline models, e.g., non-sequential and sequential models]. The baseline models include:
+
+\textbf{Non-sequential Models}:
+\begin{itemize}
+    \item [Model 1]: [Briefly describe the model and its approach]
+    \item [Model 2]: [Briefly describe the model and its approach]
+\end{itemize}
+
+\textbf{Sequential Models}:
+\begin{itemize}
+    \item [Model 1]: [Briefly describe the model and its approach]
+    \item [Model 2]: [Briefly describe the model and its approach]
+\end{itemize}
+
+\subsubsection{Hyper-parameter Settings}
+We implement all models using [mention the framework] and the optimizer used is [state the optimizer]. The following hyper-parameters were set: [list the hyper-parameters and their values].
+
+\subsection{Overall Performance (RQ1)}
+Table \ref{performance_table} shows the results for the [datasets]. The key observations are as follows:
+
+- \textbf{Observation 1}: [Summarize the findings related to your method’s performance]
+- \textbf{Observation 2}: [Discuss findings about baseline comparisons]
+- \textbf{Observation 3}: [Comment on the effectiveness of specific models or methods]
+
+\subsection{Study on Input Size and Efficiency Comparison (RQ2)}
+\subsubsection{Study on Input Size}
+[Discuss the impact of varying input sizes on performance, including visuals or graphs if applicable].
+
+\subsubsection{Efficiency Comparison}
+[Describe the efficiency of different models and any relevant comparison of training times and convergence behaviors].
+
+\subsection{Ablation and Hyper-parameter Study (RQ3)}
+\subsubsection{Effectiveness of [Component/Feature]}
+We investigate the impact of [specific component/feature] by comparing [list variations or methods tested].
+
+\subsubsection{Effectiveness of [Another Component/Feature]}
+To evaluate the influence of [another aspect of the model], we compare [list variations].
+
+\subsubsection{Design Choices for [Another Concept]}
+[Discuss different model design choices and their effects on performance].
+
+In conclusion, we conduct extensive experiments that confirm the effectiveness of our proposed method in [summarize the broader impact or relevance of the findings].
+```

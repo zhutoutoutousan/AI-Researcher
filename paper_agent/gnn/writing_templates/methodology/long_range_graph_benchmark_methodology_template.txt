@@ -1,0 +1,59 @@
+```latex
+\section{Proposed Datasets}
+
+\subsection{[Dataset Name]}
+
+[Dataset Name] is a [description of dataset type], based on the [source dataset] where each node corresponds to [describe node representation]. The original dataset is available under [license information]. 
+
+Similar to [recent similar datasets], we [describe data extraction method or process] and construct a [describe graph type] that [describe graph properties]. Unlike [comparison datasets], we [explain differences or improvements] to satisfy the required characteristics for [benchmarking or evaluation purpose]. 
+
+We argue that [summarize why this dataset is suitable or significant in the context of the research]. Additionally, we prepare other variants of [Dataset Name] with [describe variations], which are included in [appendix reference].
+
+\subsubsection{Statistics}
+
+There are [number of graphs] with a total of [total nodes] in [Dataset Name] where each graph corresponds to [explain link to original data source]. The graphs prepared after [describe any pre-processing] have on average [average nodes] with complete statistics reported in [table reference].
+
+\subsubsection{Task}
+
+The task in [Dataset Name] is [describe learning task] which predicts a [specific labels or outcomes]. We label each node according to [explain labeling method or criteria].
+
+\subsubsection{Splitting}
+
+For [original dataset], we [describe splitting strategy]. In [Dataset Name], we [explain selection of training, validation, and test sets] while ensuring [reason for the choice of split]. Finally, we have [describe final counts of each split].
+
+\subsubsection{Construction}
+
+After [data preparation method], we prepare the [type of graph] as illustrated step-wise in [figure reference]. [Explain connection logic or graph properties]. Additionally, we [explain features of nodes and edges] and how they contribute to the dataset format.
+
+\subsubsection{Performance Metric}
+
+The performance metric is [describe the evaluation metric and rationale].
+
+\subsection{[Next Dataset Name]}
+
+[Follow the same structure as above, replacing placeholders with relevant content]. 
+
+\subsection{[Next Dataset Name]}
+
+[Continue following the same structure for subsequent datasets].
+
+\subsubsection{Statistics}
+
+[Continue statistics section for each dataset as per the structure outlined above.]
+
+\subsubsection{Task}
+
+[Continue task section for each dataset as per the structure outlined above.]
+
+\subsubsection{Splitting}
+
+[Continue splitting section for each dataset as per the structure outlined above.]
+
+\subsubsection{Construction}
+
+[Continue construction section for each dataset as per the structure outlined above.]
+
+\subsubsection{Performance Metric}
+
+[Continue performance metric section for each dataset as per the structure outlined above.]
+```

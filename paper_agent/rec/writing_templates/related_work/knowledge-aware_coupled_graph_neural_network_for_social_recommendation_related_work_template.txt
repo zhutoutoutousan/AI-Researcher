@@ -1,0 +1,23 @@
+\section{Related Work}
+
+\subsection{[Specific Topic 1]}
+[Several sentences summarizing relevant previous works related to Specific Topic 1. Include key contributions and methodologies.]
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. Specifically, [Multiple sentences explaining the motivation and intuition behind the proposed method].
+
+\subsection{[Specific Topic 2]}
+[Several sentences outlining further relevant research efforts in Specific Topic 2. Highlight significant approaches and findings.]
+
+To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3]. Furthermore, [A paragraph describing the detailed workflow of the module].
+
+\subsection{Comparison with Existing Approaches}
+[Several sentences comparing the proposed method with existing approaches. Discuss the strengths and weaknesses of the existing methods.]
+
+In this context, we define [concept] as follows:
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+Additionally, [Detailed explanation of each term in the equations].
+
+\subsection{Conclusion of Related Work}
+[Summarize the insights gained from the reviewed literature and how they relate to the current research's objectives. Emphasize gaps that your research addresses.]

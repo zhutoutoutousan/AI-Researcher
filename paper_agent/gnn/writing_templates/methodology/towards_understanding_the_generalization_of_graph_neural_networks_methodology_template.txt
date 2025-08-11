@@ -1,0 +1,110 @@
+\section{Theoretical Results}
+
+In this section, we first present [a brief overview of the theoretical contributions] in Section \ref{sec:results_overview}. After that, we turn to [specific examples, case studies, or applications] in Section \ref{sec:case_studies}. Please refer to the Appendix for [relevant proofs, additional details, or supplementary information].
+
+\subsection{General Results of [Key Method or Concept]}\label{sec:results_overview}
+
+We first analyze [key properties or characteristics of the proposed method/concept] and provide the following proposition.
+
+\begin{proposition}[Informal] 
+Suppose [necessary assumptions or conditions] hold. Denote by [concept or model name], for any [variable definitions], the objective [objective function] satisfies
+
+\begin{equation}
+| [function] | \leq L \cdot [condition],
+\end{equation}
+
+and
+
+\begin{equation}
+\| [gradient or term] \| \leq P \cdot \max\{\| [term] \|^{\tilde{\alpha}}, \| [term] \| \},
+\end{equation}
+
+with constants \(L\) and \(P\).
+
+\begin{remark}
+We provide more detailed analysis of \(L\) and \(P\) in Section \ref{sec:case_studies}. Both \(L\) and \(P\) depend on [describe dependencies]. Thus, the [key theoretical bounds or results] vary by [context or conditions].
+\end{remark}
+
+Our first main result is [description of the primary theoretical result], as presented in Theorem \ref{thm:main_result}.
+
+\begin{theorem}\label{thm:main_result}
+Suppose [necessary assumptions] hold. Suppose that [conditions regarding learning rates or other relevant variables]. For any [conditions on variables], with probability [specified probability],
+
+(a). If [condition on variable] , we have
+
+\[
+[Mathematical formulation or statement].
+\]
+
+(b). If [condition], we have
+
+\[
+[Mathematical formulation or statement].
+\]
+
+(c). If [condition], we have
+
+\[
+[Mathematical formulation or statement].
+\]
+
+\end{theorem}
+
+\begin{remark}
+Theorem \ref{thm:main_result} shows that [explanation of results]. Generally, our upper bounds are of order [describe the order], which is [comparison with prior work]. Note that with the increase of [variable], the [comparison with previous findings]. Our results address these drawbacks and provide [insights or guarantees].
+\end{remark}
+
+Our second main result is [description of the secondary theoretical result].
+
+\begin{theorem}\label{thm:secondary_result}
+Suppose [necessary assumptions] hold. For any [conditions on variables], with probability [specified probability],
+
+(a). If [condition], we have
+
+\[
+\|[term]\| = O(L \cdot [expression]).
+\]
+
+(b). If [condition], we have
+
+\[
+\|[term]\| = O(L \cdot [expression]).
+\]
+
+(c). If [condition], we have
+
+\[
+\|[term]\| = O(L \cdot [expression]).
+\]
+
+\end{theorem}
+
+\begin{remark}
+Theorem \ref{thm:secondary_result} provides [description of the result]. Overall, the [key takeaway or insight].
+\end{remark}
+
+\subsection{Case Study of [Key Methods or Models]}\label{sec:case_studies}
+
+We have established [general results] in Theorem \ref{thm:main_result}. In this part, we analyze [context or constants affecting the results], with the aim of [what the analysis achieves]. [Describe the methods or models selected for analysis]. 
+
+[For each selected model/method, follow the below structure:]
+
+\subsubsection{[Model/Method Name]}
+
+The work [citation] proposes [brief description of the method]. The key process is
+
+\[
+[Y = f(A, X, W) \text{ where } A = [\text{description}], X = [\text{description}], W = [\text{description}]]
+\]
+
+\begin{proposition}
+Suppose [necessary assumptions] hold, then the objective [function details]. Specifically, [details on dependency or characteristics].
+\end{proposition}
+
+\begin{remark}
+[Describe findings or implications based on the proposition].
+\end{remark}
+
+[Continue similarly for each method/model]
+
+To summarize, [describe overarching findings or implications]. Again, we emphasize that [closing thoughts or future work].

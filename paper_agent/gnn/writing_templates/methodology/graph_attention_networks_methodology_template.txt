@@ -1,0 +1,27 @@
+\section{Evaluation}
+
+We have performed comparative evaluation of [Method/Model] against a wide variety of strong baselines and previous approaches, on [number] established [type of tasks] tasks, achieving or matching state-of-the-art performance across all of them. This section summarizes our experimental setup, results, and a brief qualitative analysis of [Model]'s extracted feature representations.
+
+\subsection{Datasets}
+
+\textbf{[Learning Type]} We utilize [number] standard benchmark datasets—[Dataset Names]—and closely follow the experimental setup of [Reference]. In all of these datasets, [describe datasets characteristics e.g., nodes, edges, class labels]. We [describe training setup, restrictions, and methodology for validation and testing]. The [Dataset Name] dataset contains [X nodes], [Y edges], [Z classes], and [N features per node]. 
+
+\textbf{[Subsequent Learning Type]} We utilize [describe dataset used for subsequently learning type]. The dataset contains [describe training, validation, and testing sets]. [Describe how datasets were constructed and relevant features].
+
+An overview of the interesting characteristics of the datasets is given in Table \ref{table:dataset_overview}.
+
+\subsection{State-of-the-Art Methods}
+
+\textbf{[Learning Type]} For [learning type] tasks, we compare against the same strong baselines and state-of-the-art approaches as specified in [Reference]. This includes [list methods]. We also directly compare our model against [additional methods or approaches].
+
+\textbf{[Subsequent Learning Type]} For the [subsequent learning type] task, we compare against [list methods]. [Provide rationale for method selection and limitations of other approaches].
+
+Additionally, for both tasks we provide the performance of [additional classifiers or methods] that do not incorporate [specific aspects] at all.
+
+\subsection{Experimental Setup}
+
+\textbf{[Learning Type]} For the [learning type] tasks, we apply a [Model Type] model. Its architectural hyperparameters have been optimized on [Dataset Name] and are then reused for [Other Dataset]. The first layer consists of [number] [type of components] computing [number] features each (for a total of [total features]), followed by a [activation function]. The second layer is used for classification: [describe classification layer]. To cope with [describe challenges], regularization is applied within the model. During training, we apply [type of regularization] with [regularization parameter]. Furthermore, [describe any specific techniques used during training].
+
+\textbf{[Subsequent Learning Type]} For the [subsequent learning type] task, we apply a [Model Type] model. Both of the first two layers consist of [number] [type of components] computing [number] features each (for a total of [total features]), followed by a [activation function]. The final layer is used for classification: [describe classification layer and activation]. [Describe any specific traits of the training set]. 
+
+Both models are initialized using [initialization method] and trained to minimize [loss function] on the training data using the [optimizer] with an initial learning rate of [learning rate]. In both cases we use [evaluation strategy] with [criteria for stopping].

@@ -1,0 +1,10 @@
+2025-03-02 18:57:12,558 - INFO - Processing file: papers_to_search
+2025-03-02 18:57:12,558 - INFO - Searching for paper: Heterogeneous Graph Contrastive Learning for Recommendation
+2025-03-02 18:57:12,559 - INFO - Requesting 100 results at offset 0
+2025-03-02 18:57:12,559 - INFO - Requesting page of results
+2025-03-02 18:57:14,901 - INFO - Got first page; 100 of 100 results available
+2025-03-02 18:57:21,768 - INFO - Found exact match for paper: Heterogeneous Graph Contrastive Learning for Recommendation
+2025-03-02 18:57:24,773 - INFO - Results saved to paper_titles/paper_titles.json
+2025-03-02 18:57:24,774 - INFO - Starting download of 1 papers
+2025-03-02 18:57:24,774 - INFO - [1/1] Downloading: Heterogeneous Graph Contrastive Learning for Recommendation
+2025-03-02 18:57:26,442 - INFO - Successfully downloaded: Heterogeneous Graph Contrastive Learning for Recommendation

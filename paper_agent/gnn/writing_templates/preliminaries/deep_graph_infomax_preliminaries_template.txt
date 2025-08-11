@@ -1,0 +1,71 @@
+```latex
+\section{[Main Section Title]}
+
+In this section, we present [method/approach] in a top-down fashion: starting with an overview of our [specific technique/setup], followed by a description of the objective/function optimized by our method, and concluding by detailing the steps of our procedure in a [specific setting].
+
+\subsection{[Subsection Title 1]}
+
+We assume a generic [description of setup, e.g., unsupervised machine learning setup]: we are provided with [input data description, e.g., a set of features], where [definition of variables]. Our objective is to [describe the goal, e.g., learn an encoder]. Formally, we define [concept] as follows: 
+
+\[
+[Mathematical formulation of the concept]
+\]
+
+Specifically, we will focus on [specific architecture/approach], which [describe the key characteristics or benefits]. 
+
+\subsection{[Subsection Title 2]}
+
+To tackle [specific challenge], our method consists of [number] main components: [component 1], [component 2], and [component 3]. 
+
+Our approach aims to [describe the main objective]. In order to achieve this, we leverage [function/method] to [describe purpose of the function]. 
+
+Negative samples for our approach are generated using [describe sampling approach]. 
+
+To define our objective, we follow the intuition from [previous work] and use [describe the objective function or loss function]. We can express this objective mathematically as follows:
+
+\[
+L = [Mathematical formulation of the objective]
+\]
+
+This formulation allows us to [describe the effect or outcome].
+
+\subsection{[Subsection Title 3]}
+
+We now provide some intuition that connects [concept 1] to [concept 2]. 
+
+\begin{lemma}
+Let [describe the lemma or theorem statement].
+\end{lemma}
+
+\begin{proof}
+[Provide the proof or explanation].
+\end{proof}
+
+\begin{corollary}
+Assuming that [condition], we conclude that [describe the corollary].
+\end{corollary}
+
+\begin{theorem}
+[Describe the theorem statement].
+\end{theorem}
+
+\begin{proof}
+[Provide the proof or explanation].
+\end{proof}
+
+This motivates our use of [specific approach or method] to [goal related to the topic].
+
+\subsection{[Overview Section Title]}
+
+Assuming the [specific setup], we summarize the steps of the [name of method/procedure] procedure: 
+
+\begin{enumerate}
+    \item [Step 1 description]
+    \item [Step 2 description]
+    \item [Step 3 description]
+    \item [Step 4 description]
+    \item [Step 5 description]
+\end{enumerate}
+
+This algorithm is fully summarized by [description of any relevant figure or diagram].
+```

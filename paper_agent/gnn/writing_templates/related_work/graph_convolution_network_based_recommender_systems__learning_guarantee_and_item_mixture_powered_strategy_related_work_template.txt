@@ -1,0 +1,23 @@
+```latex
+\section{Related Work}
+
+\subsection{[Main topic of previous works]}
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. Specifically, [brief overview of how the previous work applies]. 
+
+Several studies have contributed to [specific aspect of the problem]. For instance, [citation] was the first to [describe the key contribution]. [Explanation of the methods used in the referenced study]. However, [brief critique highlighting any shortcomings].
+
+[Further studies or methods] have been proposed, such as [citation], which [describe contribution and its significance]. [Discuss how this approach differs from or builds upon previous works]. 
+
+Moreover, [cite additional works] have observed that [summarize key findings]. While [specific study] simplified [aspect of the study], it [note any limitations or lack of theoretical guarantees].
+
+In our analysis, we primarily focus on [specific aspect or component relevant to your work, e.g., user-item interaction, bipartite graph].
+
+\subsection{[Another relevant research area]}
+Due to the numerical success of [previous works], several theoretical studies have been devoted to [topic]. Specifically, [cite studies] investigated [concept or metric relevant to the generalization of the methods]. For instance, [citation] focused on [describe key findings]. 
+
+In [specific learning scenario, e.g., inductive learning], [cite studies] explored [further developments]. They [summarize findings and their implications]. Subsequently, [another citation] proposed [a tighter bound or new metric].
+
+In the [another scenario, e.g., transductive learning], researchers like [citations] assessed [describe their contributions]. They provided insights on [mention any specific theoretical contributions with regards to your work]. 
+
+However, the previous works mainly concentrated on [highlight scope limitations] which differs from our focus on [state your area of focus]. Recent studies such as [citations] have explored [brief overview of the contributions that relate to your research], but they did not address [identify what was overlooked in relation to your work].
+```

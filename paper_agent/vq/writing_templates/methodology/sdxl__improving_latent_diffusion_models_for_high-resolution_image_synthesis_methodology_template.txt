@@ -1,0 +1,63 @@
+```latex
+\section{Improving [System/Architecture Name]}
+
+In this section, we present our improvements for the [system/architecture name]. These improvements are modular and can be utilized individually or in combination to enhance any existing model. Although the following strategies are implemented as extensions to [specific model type], many of them are also applicable to their counterparts in other domains.
+
+\subsection{Architecture \& Scale}
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. Starting with the seminal works [citation], which demonstrated [key finding], the [previous architecture] has been the dominant architecture for [specific task]. However, with the development of [related advancements], the underlying architecture has consistently evolved: from [description of early changes] to [description of current state].
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+Specifically, we propose to [desired approach]. In particular, we [explain key changes and their rationale]. These changes result in a model size of [model size], as shown in Table~\ref{table:comparison}.
+
+\subsection{[Next Improvement Topic]}
+
+To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3]. A notorious shortcoming of [prior models] is [describe challenge]. We visualize such effects in Figure~\ref{figure:example}. 
+
+We propose to condition the model on [describe resolution/parameters], which is readily accessible during training. In particular, we provide [explain conditioning parameter] as an additional input to the model. Each component is independently embedded using [explain technique], and these encodings are concatenated into a single vector that is fed into the model.
+
+[Several sentences comparing the proposed method with existing approaches]
+
+\subsection{[Next Improvement Topic]}
+
+We argue that [statement about current practices]. Motivated by this, we [describe your approach]. In practice, [detail the practical implementation]. 
+
+We quantitatively assess the effects of [describe conditioning technique] by [briefly outline evaluation strategy]. Table~\ref{table:results} summarizes the results and verifies that [summarize findings].
+
+\subsection{[Next Improvement Topic]}
+
+[Describe another improvement or feature]. We [explain the methods used and their benefits]. To this end, we utilize [describe process or algorithm]. 
+
+[Detailed explanation of key findings and metrics]. The performance metrics are summarized in Table~\ref{table:performance}.
+
+\subsection{Putting Everything Together}
+
+We integrate all improvements in a [describe overall model or system]. We train [model name] through a [describe training strategy]. We find that [mention any observation or conclusion from training].
+
+Empirically, [describe findings related to outputs]. To assess the performance of our [model/system name], we conduct [description of the evaluation method].
+
+The results demonstrate that [summarize key results]. However, when evaluating using [mention classical performance metrics], we observe that [explain disparity in results].
+
+\begin{table}[ht]
+\centering
+\caption{[Table description]}
+\label{table:comparison}
+\begin{tabular}{|c|c|c|c|}
+\hline
+[Column 1] & [Column 2] & [Column 3] & [Column 4] \\
+\hline
+[Row 1] & [Data 1] & [Data 2] & [Data 3] \\
+\hline
+[Row 2] & [Data 1] & [Data 2] & [Data 3] \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{[figure_path]}
+\caption{[Figure description]}
+\label{figure:example}
+\end{figure}
+```

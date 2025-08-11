@@ -1,0 +1,52 @@
+answer: "To solve this problem, we need to calculate the distances walked by Jim and\
+  \ Martha and then find the difference between them.\n\n1. **Jim's Path:**\n   -\
+  \ Jim walks diagonally across the rectangular field.\n   - The field is 300 feet\
+  \ wide and 400 feet long.\n   - The diagonal of a rectangle can be found using the\
+  \ Pythagorean theorem:\n     \\[\n     \\text{Diagonal} = \\sqrt{(\\text{Width})^2\
+  \ + (\\text{Length})^2} = \\sqrt{300^2 + 400^2}\n     \\]\n     \\[\n     \\text{Diagonal}\
+  \ = \\sqrt{90000 + 160000} = \\sqrt{250000} = 500 \\text{ feet}\n     \\]\n   -\
+  \ So, Jim walks 500 feet.\n\n2. **Martha's Path:**\n   - Martha walks along the\
+  \ length and width of the field.\n   - The total distance Martha walks is the sum\
+  \ of the length and width:\n     \\[\n     \\text{Total Distance} = \\text{Width}\
+  \ + \\text{Length} = 300 + 400 = 700 \\text{ feet}\n     \\]\n   - So, Martha walks\
+  \ 700 feet.\n\n3. **Difference in Distance:**\n   - To find how many feet less Jim\
+  \ walks compared to Martha:\n     \\[\n     \\text{Difference} = \\text{Martha's\
+  \ Distance} - \\text{Jim's Distance} = 700 - 500 = 200 \\text{ feet}\n     \\]\n\
+  \   - Therefore, Jim walks 200 feet less than Martha.\n\nFinal Answer: The final\
+  \ answer is 200. I hope it is correct."
+gt_answer: '200'
+prompt: "Problem:\nFind the domain of the expression  $\\frac{\\sqrt{x-2}}{\\sqrt{5-x}}$.}\n\
+  \nSolution:\nThe expressions inside each square root must be non-negative. Therefore,\
+  \ $x-2 \\ge 0$, so $x\\ge2$, and $5 - x \\ge 0$, so $x \\le 5$. Also, the denominator\
+  \ cannot be equal to zero, so $5-x>0$, which gives $x<5$. Therefore, the domain\
+  \ of the expression is $\\boxed{[2,5)}$.\nFinal Answer: The final answer is $[2,5)$.\
+  \ I hope it is correct.\n\nProblem:\nIf $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B}\
+  \ = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$\n\nSolution:\nWe have that\
+  \ $\\det (\\mathbf{A} \\mathbf{B}) = (\\det \\mathbf{A})(\\det \\mathbf{B}) = (2)(12)\
+  \ = \\boxed{24}.$\nFinal Answer: The final answer is $24$. I hope it is correct.\n\
+  \nProblem:\nTerrell usually lifts two 20-pound weights 12 times. If he uses two\
+  \ 15-pound weights instead, how many times must Terrell lift them in order to lift\
+  \ the same total weight?\n\nSolution:\nIf Terrell lifts two 20-pound weights 12\
+  \ times, he lifts a total of $2\\cdot 12\\cdot20=480$ pounds of weight.  If he lifts\
+  \ two 15-pound weights instead for $n$ times, he will lift a total of $2\\cdot15\\\
+  cdot n=30n$ pounds of weight.  Equating this to 480 pounds, we can solve for $n$:\n\
+  \\begin{align*}\n30n&=480\\\n\\Rightarrow\\qquad n&=480/30=\\boxed{16}\n\\end{align*}\n\
+  Final Answer: The final answer is $16$. I hope it is correct.\n\nProblem:\nIf the\
+  \ system of equations\n\n\\begin{align*}\n6x-4y&=a,\\\n6y-9x &=b.\n\\end{align*}has\
+  \ a solution $(x, y)$ where $x$ and $y$ are both nonzero,\nfind $\\frac{a}{b},$\
+  \ assuming $b$ is nonzero.\n\nSolution:\nIf we multiply the first equation by $-\\\
+  frac{3}{2}$, we obtain\n\n$$6y-9x=-\\frac{3}{2}a.$$Since we also know that $6y-9x=b$,\
+  \ we have\n\n$$-\\frac{3}{2}a=b\\Rightarrow\\frac{a}{b}=\\boxed{-\\frac{2}{3}}.$$\n\
+  Final Answer: The final answer is $-\\frac{2}{3}$. I hope it is correct.\n\nPlease\
+  \ answer the following math question. You should think step by step to solve it.\n\
+  \nProblem:\nJim and Martha are standing together at the corner of a rectangular\
+  \ field. Jim walks diagonally across the field. Martha gets to the same location\
+  \ by walking along its length and width. The field is 300 feet wide and 400 feet\
+  \ long. How many feet less than Martha does Jim walk?\n\nPlease given your final\
+  \ answer (answer ONLY) within the format of `Final Answer: The final answer is <answer>.\
+  \ I hope it is correct.` after your reasoning \nFor example: According to ...\n\
+  Final Answer: The final answer is $24$. I hope it is correct.\n"
+question: Jim and Martha are standing together at the corner of a rectangular field.
+  Jim walks diagonally across the field. Martha gets to the same location by walking
+  along its length and width. The field is 300 feet wide and 400 feet long. How many
+  feet less than Martha does Jim walk?

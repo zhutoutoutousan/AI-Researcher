@@ -1,0 +1,4 @@
+2025-01-23 09:11:32,893 - 
+Running enhanced experiments on Cora
+2025-01-23 09:11:32,893 - Run 1/5 on device 0
+2025-01-23 09:11:33,472 - Adjusted number of attention heads to 89 for 1433 features

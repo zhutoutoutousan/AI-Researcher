@@ -1,0 +1,43 @@
+```latex
+\section{[Main Topic of the Section]}
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. [Multiple sentences explaining the motivation and intuition behind the proposed method].
+
+\subsection{[Subtopic/Module Name]}
+
+Figure [number] presents the overall framework of [module name]. On the left side is the inputs: [list of inputs]. At the top-right corner is [component for task 1], while [component for task 2] is at the bottom-right corner. [Module name] jointly learns the two tasks by [explanation of how tasks are integrated]. We define [concept] as follows:
+
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+
+where [explanation of variables in the equation]. 
+
+[Additional equations if necessary]
+
+Thus, for [first element] and [second element], the enhanced [element] contain [description of benefits or features]. Meanwhile, the [another element] shall be [explanation of the tuning process or improvements made].
+
+For [additional elements or methods], the usage of [terms] not only offers [benefits], but also [further explanation]. On one hand, through the [mapping/method], the meaning of each [preference/term] is revealed by [explanation]. On the other hand, [further discussion on limitations or challenges related to the approach].
+
+\subsection{[Training or Learning Method]}
+
+We train [module name] using the overall objective function as follows:
+
+\begin{equation}
+    L = [derivation of the objective functions]
+\end{equation}
+
+where [description of parameters].
+
+\subsection{[Comparison with Existing Models]}
+
+In this section, we discuss the relationship between [module name] and the other state-of-the-art [domain/type] methods to facilitate a deep understanding of [context]. We select [number] typical models that [criteria for selection]. We summarize the main differences and similarities from the following aspects:
+
+\begin{itemize}
+    \item \textbf{[Aspect 1]:} [Comparative analysis]
+    \item \textbf{[Aspect 2]:} [Comparative analysis]
+    \item \textbf{[Aspect 3]:} [Comparative analysis]
+\end{itemize}
+
+[Conclusion remarks about the comparison and analysis made].
+```

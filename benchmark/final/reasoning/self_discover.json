@@ -1,0 +1,110 @@
+{
+    "authors": [
+        "Pei Zhou",
+        "Jay Pujara",
+        "Xiang Ren",
+        "Xinyun Chen",
+        "Heng-Tze Cheng",
+        "Quoc V. Le",
+        "Ed H. Chi",
+        "Denny Zhou",
+        "Swaroop Mishra",
+        "Huaixiu Steven Zheng"
+    ],
+    "instance_id": "self_discover",
+    "year": 2024,
+    "url": "http://arxiv.org/abs/2402.03620v1",
+    "abstract": "We introduce SELF-DISCOVER, a general framework for LLMs to self-discover the\ntask-intrinsic reasoning structures to tackle complex reasoning problems that\nare challenging for typical prompting methods. Core to the framework is a\nself-discovery process where LLMs select multiple atomic reasoning modules such\nas critical thinking and step-by-step thinking, and compose them into an\nexplicit reasoning structure for LLMs to follow during decoding. SELF-DISCOVER\nsubstantially improves GPT-4 and PaLM 2's performance on challenging reasoning\nbenchmarks such as BigBench-Hard, grounded agent reasoning, and MATH, by as\nmuch as 32% compared to Chain of Thought (CoT). Furthermore, SELF-DISCOVER\noutperforms inference-intensive methods such as CoT-Self-Consistency by more\nthan 20%, while requiring 10-40x fewer inference compute. Finally, we show that\nthe self-discovered reasoning structures are universally applicable across\nmodel families: from PaLM 2-L to GPT-4, and from GPT-4 to Llama2, and share\ncommonalities with human reasoning patterns.",
+    "venue": "arXiv.org",
+    "venue_source": "Semantic Scholar",
+    "venue_lookup_time": "2025-01-10T19:30:28.104210",
+    "citations": 35,
+    "topic": "selected",
+    "field": "selected",
+    "target": "Self-Discover: Large Language Models Self-Compose Reasoning Structures",
+    "source_papers": [
+        {
+            "reference": "Chain-of-thought prompting elicits reasoning in large language models",
+            "rank": 2,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This paper on Chain-of-Thought (CoT) prompting laid the groundwork for advanced reasoning techniques in LLMs, influencing the architecture of various prompt designs including the proposed model. The principles established here provide a robust foundation for integrating reasoning steps.",
+            "usage": "The concept of CoT prompting inspired the design and function of various components integrated into the proposed model framework."
+        },
+        {
+            "reference": "Least-to-most prompting enables complex reasoning in large language models",
+            "rank": 3,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This work on Least-to-Most prompting contributed key insights into the effectiveness of structured reasoning tasks, establishing methods that promote systematic task breakdowns which the proposed model employs.",
+            "usage": "The methodology of Least-to-Most prompting informed the recursive task structuring methods utilized in the design of the proposed model processes."
+        },
+        {
+            "reference": "Skills, rules, and knowledge; signals, signs, and symbols, and other distinctions in human performance models",
+            "rank": 4,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This foundational work on human problem-solving and meta-reasoning concepts heavily influenced the theoretical backbone of the proposed model, especially its reliance on human-like reflective practices and skills adaptation.",
+            "usage": "Concepts from Rasmussen's work served as a guiding framework for developing the meta-reasoning stages in the proposed model methodology."
+        },
+        {
+            "reference": "Reasoning with language model is planning with world model",
+            "rank": 5,
+            "type": [
+                "methodological"
+            ],
+            "justification": "The paper discusses Decomposed prompting, which focuses on breaking tasks into manageable parts, directly paralleling the operations of the proposed model that similarly organizes reasoning tasks.",
+            "usage": "The principles outlined in this paper helped shape the compositional aspect of reasoning modules within the proposed model, enhancing task-specific performance."
+        },
+        {
+            "reference": "Show your work: Scratchpads for intermediate computation with language models",
+            "rank": 6,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This paper introduced chaining intermediate reasoning steps, which was critical to the design of the proposed model, enhancing the reasoning capabilities of LLMs.",
+            "usage": "The highlighting of intermediate reasoning significantly influenced the construction of the atomic reasoning modules within the proposed model framework."
+        },
+        {
+            "reference": "Language models are few-shot learners",
+            "rank": 7,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "As a major work on the capabilities of Large Language Models (LLMs), this paper provided awareness and context surrounding the emergence and implications of modern LLMs, shaping the understanding and expectations for the proposed model.",
+            "usage": "This work established the relevance of LLMs for various applications, situating the proposed model within the broader discourse on LLM capabilities."
+        },
+        {
+            "reference": "Challenging big-bench tasks and whether chain-of-thought can solve them",
+            "rank": 8,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This study detailed the BigBench benchmark suite, which was crucial for validating the performance improvements brought by the proposed model across diverse reasoning tasks.",
+            "usage": "The benchmarks provided by this study were used to evaluate the effectiveness of the proposed model on tasks designed to challenge existing reasoning methods."
+        },
+        {
+            "reference": "Decomposed prompting: A modular approach for solving complex tasks",
+            "rank": 9,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This study's focus on Decomposed prompting further refined the approach to task-solving employed in the proposed model, demonstrating practical strategies for breaking down problems.",
+            "usage": "Insights from this study were leveraged in the design of modular reasoning components within the proposed model framework to enhance problem-solving efficiency."
+        },
+        {
+            "reference": "Lila: A unified benchmark for mathematical reasoning",
+            "rank": 10,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This research explored the structuring of reasoning processes in LLMs, contributing insights that echoed the importance of organized logical processes within the proposed model framework.",
+            "usage": "The conceptual approaches outlined were considered when defining the organization of reasoning steps in the proposed model, seeking to mimic human-like reasoning."
+        }
+    ],
+    "task1": "To implement the methodology outlined in this paper, follow these steps:\n\n1. **Task Definition:**  \n   The proposed model is designed to enable Large Language Models (LLMs) to autonomously discover reasoning structures tailored to specific complex tasks, thereby improving their problem-solving capabilities.\n\n2. **Core Techniques/Algorithms:**  \n   - **Meta-Prompting:** Utilize meta-prompts to guide the LLM through self-discovery processes.  \n   - **Key Actions:** Implement three key actions\u2014SELECT, ADAPT, and IMPLEMENT\u2014to derive reasoning structures from atomic reasoning modules.  \n   - **JSON Format Structuring:** Represent the reasoning structure in a key-value format similar to JSON for clarity and interpretative ease.\n\n3. **Purpose of Technical Components:**  \n   - **SELECT:** To identify relevant reasoning modules from a set of atomic reasoning descriptions based on task examples.  \n   - **ADAPT:** To tailor selected reasoning modules to make them task-specific.  \n   - **IMPLEMENT:** To format the adapted modules into a structured actionable plan to guide task completion.\n\n4. **Implementation Details:**  \n   - **Key Parameters:**  \n     - **Meta-Prompt Configurations:** Define your meta-prompts for each action. For instance:  \n       - SELECT: A prompt guiding the proposed model to review the reasoning module descriptions and task examples.  \n       - ADAPT: A prompt instructing the proposed model to customize the selected modules.  \n       - IMPLEMENT: Include a sample task structure to inform the format for the output.  \n   - **Input/Output Specifications:**  \n     - Input: Unlabeled task examples and a description set of atomic reasoning modules.  \n     - Output: A structured reasoning plan formatted as key-value pairs (akin to JSON).  \n   - **Constraints/Requirements:**  \n     - Ensure the reasoning modules are clear, and the examples provided are varied to enhance selection quality.\n\n5. **Step-by-Step Interaction of Components:**  \n   - **Stage 1 (Self-Discovery of Structures):**  \n     - Use the **SELECT** action by executing `D_S = M(p_S \u2225 D \u2225 t_i)` to filter useful modules based on tasks.  \n     - Apply the **ADAPT** action through `D_A = M(p_A \u2225 D_S \u2225 t_i)` to refine the descriptions.  \n     - Finalize with **IMPLEMENT** action via `D_I = M(p_I \u2225 S_human \u2225 D_A \u2225 t_i)` to operationalize the modules.  \n   - **Stage 2 (Task Execution):**  \n     - Append the reasoning structure `D_I` to every instance `t` of the task and prompt the proposed model: `A = M(D_I \u2225 t)` to generate answers.\n\n6. **Critical Implementation Details:**  \n   - Monitor the performance impact of the selected reasoning modules to adjust their specificity and applicability. Regularly review to ensure each step adds clarity and value to the reasoning process.  \n   - Implement error-checking mechanisms for the generated reasoning structures to identify and correct any discrepancies during the process, particularly in final outputs reflective of the reasoning framework.  \n   - Assess computational efficiency, as the methodology is designed to optimize reasoning without increasing inference calls extensively; this is achieved when contrasting this approach against more inference-heavy strategies.\n\nBy adhering to these instructions, researchers can effectively reproduce the self-discovery methodology in the context of enhancing reasoning abilities in LLMs.",
+    "task2": "1. The primary task addressed by this research is the enhancement of reasoning capabilities in Large Language Models (LLMs) to effectively tackle complex problem-solving tasks by enabling them to self-discover task-specific reasoning structures.\n\n2. The current limitations in existing approaches that motivated this work include the reliance on predefined prompting techniques, which typically treat methods as isolated atomic modules without considering the unique intrinsic reasoning structures required for different tasks. This often leads to suboptimal performance and inefficiencies in reasoning across diverse problem types.\n\n3. The core challenges the researchers aim to overcome are the inadequacies of existing prompting techniques, which assume a one-size-fits-all approach to problem-solving, and the computational inefficiencies associated with inference-heavy models that require multiple processing steps to arrive at correct answers. Additionally, they seek to enable LLMs to generate reasoning structures that are interpretable and closely aligned with human reasoning patterns.\n\n4. Key objectives and intended contributions of this study include the development of a framework that allows LLMs to autonomously compose reasoning structures from a set of atomic reasoning modules. This proposed approach aims to improve the interpretability and performance of LLMs on challenging reasoning tasks while also increasing computational efficiency in terms of inference steps required for problem-solving. Ultimately, the researchers aspire to make significant advancements in structured reasoning for LLMs and promote further exploration in the area of human-AI collaboration in complex problem-solving."
+}

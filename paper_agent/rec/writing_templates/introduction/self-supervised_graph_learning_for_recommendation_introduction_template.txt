@@ -1,0 +1,27 @@
+```latex
+\section{Introduction}
+
+Learning high-quality representations from \underline{[data type]} is the theme of \underline{[research area]}. Earlier work like \underline{[previous work/technique]} \cite{[reference]} projects \underline{[description of input]} into an embedding vector. Some follow-on studies \cite{[reference]} enrich \underline{[input description]} for learning better representations. More recently, representation learning has evolved to \underline{[description of latest technique]}.
+
+Despite effectiveness, current \underline{[existing model type]} models suffer from several limitations:
+
+\begin{itemize}
+    \item \underline{[Limitation 1 title]}: \underline{[Description of limitation 1]}
+    \item \underline{[Limitation 2 title]}: \underline{[Description of limitation 2]}
+    \item \underline{[Limitation 3 title]}: \underline{[Description of limitation 3]}
+\end{itemize}
+
+In this work, we focus on exploring \underline{[new technique/approach]} in \underline{[specific application]}, to solve the foregoing limitations. Though being prevalent in \underline{[related fields]} \cite{[reference]}, \underline{[new technique/approach]} is relatively less explored in \underline{[current research area]}. The idea is to set an auxiliary task that distills additional signal from \underline{[input data type]}, especially through exploiting \underline{[data characteristic]}.
+
+Here we wish to bring the \underline{[new technique's name]} superiority into \underline{[applicative context]}, which differs from \underline{[related task]} as \underline{[describe key difference]}. To address the aforementioned limitations of \underline{[existing models]}, we construct the auxiliary task as \underline{[description of auxiliary task]}. Specifically, it consists of two key components: (1) \underline{[Component 1 description]}, and (2) \underline{[Component 2 description]}. For \underline{[model type]}, the \underline{[data structure]} serves as the input data that plays an essential role for representation learning. From this view, it is natural to construct the \underline{[data construction technique]} by changing the \underline{[relevant data element]}, and we develop \underline{[number]} operators to this end: \underline{[Operator 1]}, \underline{[Operator 2]}, and \underline{[Operator 3]}, where each operator works with a different rationale. Thereafter, we perform \underline{[learning technique]} based on the \underline{[changed structure]}. As a result, \underline{[new method name]} augments the representation learning by exploring the \underline{[relationship or connection]}.
+
+Conceptually, our \underline{[new method name]} supplements existing \underline{[model type]} models in: (1) \underline{[Benefit 1 description]}, (2) \underline{[Benefit 2 description]}, and (3) \underline{[Benefit 3 description]}. Last but not least, we offer theoretical analyses for \underline{[learning paradigm]}, finding that it has the side effect of \underline{[additional finding]}, which not only boosts \underline{[performance metric]} but also accelerates the \underline{[process]}.
+
+It is worthwhile mentioning that our \underline{[new method name]} is \underline{[generalization type]} and can be applied to any \underline{[model category]}. Here we implement it on the \underline{[specific model]}, which demonstrates \underline{[key finding or contribution]}. We summarize the contributions of this work as follows:
+
+\begin{itemize}
+    \item \underline{[Contribution 1 description]}
+    \item \underline{[Contribution 2 description]}
+    \item \underline{[Contribution 3 description]}
+\end{itemize}
+```

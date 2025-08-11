@@ -1,0 +1,22 @@
+```latex
+\section{Abstract}
+
+[Multiple sentences explaining the context and importance of the research area.]
+
+[Multiple sentences explaining the challenges associated with the research area and the necessity for the proposed method.]
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. Our method aims to [describe the primary goal or contribution of the proposed method].
+
+To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3]. Specifically, [A paragraph providing an overview of those components and their interactions].
+
+Formally, we define [concept] as follows:
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+
+Furthermore, we provide a detailed explanation of each term in the equations, including [detailed explanation of each term].
+
+[A paragraph comparing the proposed method with existing approaches, highlighting advantages and potential limitations.]
+
+In summary, this work [briefly recapitulate the aim of the survey, any proposed systems, and the future research directions discussed].
+```

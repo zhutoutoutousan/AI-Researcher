@@ -1,0 +1,15 @@
+\section{Abstract}
+
+State-of-the-art [field/technique] systems are trained to [describe existing method or limitation]. This restricted form of [supervision/method] limits [aspect of technology/application] since [explanation of the problem]. Learning directly from [data type] about [subject] is a promising alternative which leverages [advantage or characteristic]. We demonstrate that [briefly describe the proposed method] is an efficient and scalable way to learn [result or performance] from [scope or dataset] collected from [source]. After [key operation or method], [explanation of how the output can be utilized or applied] enabling [specific capability or transfer]. 
+
+We study the performance of this approach by benchmarking on [number] different existing [field or application] datasets, spanning tasks such as [task 1], [task 2], and [task 3]. The model [description of performance] and is often competitive with [comparison base] without the need for [additional requirement or type of data]. For instance, [provide a specific example of performance comparison]. 
+
+We release our [resources such as code and models] at [URL or repository link]. 
+
+\begin{enumerate}
+    \item [Multiple sentences explaining the motivation and intuition behind the proposed method]
+    \item [A paragraph describing the detailed workflow of the module]
+    \item [Several sentences comparing the proposed method with existing approaches]
+    \item [Mathematical formulation of the key components]
+    \item [Detailed explanation of each term in the equations]
+\end{enumerate}

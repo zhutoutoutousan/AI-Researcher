@@ -1,0 +1,64 @@
+\section{METHOD}
+
+The overview of the proposed \textbf{[Module/Method Name]} is presented in \textbf{[Figure/Table]} (e.g., Figure 2). It performs \textbf{[First Step]} and \textbf{[Second Step]} alternately to address \textbf{[Challenge/Goal]} in \textbf{[Context]}. In \textbf{[First Step]}, it \textbf{[Describe Action/Process]} while in \textbf{[Second Step]}, it \textbf{[Describe Action/Process]}. In each iteration, \textbf{[Component 1]} and \textbf{[Component 2]} are updated.
+
+In the following sections, we first derive \textbf{[Objective/Goal]} in order to \textbf{[Describe Purpose]} in Section \textbf{[Section Number]}. Then we describe the overall \textbf{[Approach/Methodology]} in Section \textbf{[Section Number]}. We provide detailed analyses in Section \textbf{[Section Number]} followed by \textbf{[Type of Study]} in Section \textbf{[Section Number]}.
+
+\subsection{[Subsection Title]}
+
+\subsubsection{[Title of Subsubsection 1]} 
+Assuming that there are \textbf{[Concepts/Variables]} that affect \textbf{[Outcome/Decision]}, then based on \textbf{[Equation/Reference]}, we can rewrite the objective as follows:
+
+\begin{equation}
+\textbf{[Mathematical formulation of the key components]} 
+\end{equation}
+
+which is however hard to optimize. Instead, we construct a lower-bound function of \textbf{[Previous Equation]} and maximize the lower-bound. Formally, assume \textbf{[Concept 1]} follows \textbf{[Distribution]}. Then we have
+
+\begin{equation}
+\textbf{[Equation of lower-bound]} 
+\end{equation}
+
+where \textbf{[Description of Terms/Variables]}.
+
+So far, we have found a lower-bound of \textbf{[Equation]}. However, we cannot directly optimize \textbf{[Equation]} because \textbf{[Unknown Component]}. Instead, we alternately optimize the model between \textbf{[Component A]} (E-step) and \textbf{[Component B]} (M-step), which follows a generalized \textbf{[Methodology Framework]}. We term the whole process \textbf{[Process Name]}. In each iteration, \textbf{[Component 1]} and the model parameter \textbf{[Parameter]} are updated.
+
+\subsubsection{[Title of Subsubsection 2]}
+To learn the \textbf{[Distribution Function]} , we \textbf{[Action/Process]}, and then we perform \textbf{[Clustering/Another Action]} over all \textbf{[Data/Representations]} to obtain \textbf{[Outcome]}.
+
+We denote \textbf{[Variable]} as the \textbf{[Description of Variable]}. In this paper, we use \textbf{[Method]}. We leave \textbf{[Future Work Description]} for future studies. \textbf{[Illustration/Flowchart Description]}.
+
+\subsubsection{[Title of Subsubsection 3]}
+We have estimated the \textbf{[Function/Distribution]}. To maximize \textbf{[Previous Equation]}, we also need to define \textbf{[Additional Function]}. Assuming that the prior over \textbf{[Concept]} follows the \textbf{[Type of Distribution]} and the conditional distribution of \textbf{[Variable]} given \textbf{[Condition]} is \textbf{[Distribution Type]} then we can rewrite \textbf{[Function]} as follows:
+
+\begin{equation}
+\textbf{[Mathematical representation]} 
+\end{equation}
+
+Based on \textbf{[Equations]}, maximizing \textbf{[Equation]} is equivalent to minimizing the following \textbf{[Loss Function]}:
+
+\begin{equation}
+\textbf{[Mathematical representation of loss function]} 
+\end{equation}
+
+where \textbf{[Description of Terms/Variables]}. \textbf{[Additional Explanation]}.
+
+\subsection{[Title of Next Subsection]}
+
+We train the \textbf{[Model/Approach]} with a multi-task training strategy to jointly optimize \textbf{[Tasks/Objectives]} as follows:
+
+\begin{equation}
+L = L_{\text{[Task 1]}} + \lambda \cdot L_{\text{[Task 2]}} + \beta \cdot L_{\text{[Task 3]}} 
+\end{equation}
+
+where \textbf{[Parameters]} control the strengths of the \textbf{[Task 2]} and \textbf{[Task 3]}. \textbf{[Reference to Additional Materials]}.
+
+\subsection{[Discussion Title]}
+
+\subsubsection{[Connection/Comparison Title]} 
+Recent methods \textbf{[References]} follow \textbf{[Method/Approach]} to maximize \textbf{[Purpose]}. For example, \textbf{[Method/Example]} aims to \textbf{[Goal/Objective]}. However, if the relationships within \textbf{[Data Type]} are vulnerable to \textbf{[Perturbation/Noise]}, then \textbf{[Implication]}. 
+
+\subsubsection{[Time Complexity Title]} 
+In every iteration of the training phase, the computation costs of our proposed method are mainly from \textbf{[Component 1]} and \textbf{[Component 2]}. For \textbf{[First Component]}, the time complexity is \textbf{[Complexity Analysis]} and for \textbf{[Second Component]}, the time complexity is \textbf{[Complexity Analysis]}.
+
+The overall complexity is dominated by \textbf{[Term]}. \textbf{[Further Explanation]} on optimization. The convergence of \textbf{[Method]} is guaranteed under the generalized \textbf{[Framework]}. \textbf{[Reference or Appendix Information]}.

@@ -1,0 +1,57 @@
+answer: "To find the area of triangle \\( ACD \\), we can follow these steps:\n\n\
+  1. **Verify the type of triangle \\( ABC \\):**\n   Given the sides \\( AB = 17\
+  \ \\), \\( AC = 8 \\), and \\( BC = 15 \\), we can check if triangle \\( ABC \\\
+  ) is a right triangle using the Pythagorean theorem:\n   \\[\n   AB^2 = AC^2 + BC^2\
+  \ \\implies 17^2 = 8^2 + 15^2 \\implies 289 = 64 + 225 \\implies 289 = 289.\n  \
+  \ \\]\n   Since the equation holds, triangle \\( ABC \\) is a right triangle with\
+  \ the right angle at \\( C \\).\n\n2. **Find the area of triangle \\( ABC \\):**\n\
+  \   Since \\( ABC \\) is a right triangle with legs \\( AC = 8 \\) and \\( BC =\
+  \ 15 \\), its area is:\n   \\[\n   \\text{Area}_{ABC} = \\frac{1}{2} \\times AC\
+  \ \\times BC = \\frac{1}{2} \\times 8 \\times 15 = 60.\n   \\]\n\n3. **Find the\
+  \ length of the altitude \\( CD \\):**\n   The area of triangle \\( ABC \\) can\
+  \ also be expressed using the base \\( AB = 17 \\) and the altitude \\( CD \\):\n\
+  \   \\[\n   \\text{Area}_{ABC} = \\frac{1}{2} \\times AB \\times CD \\implies 60\
+  \ = \\frac{1}{2} \\times 17 \\times CD \\implies CD = \\frac{120}{17}.\n   \\]\n\
+  \n4. **Find the length of \\( AD \\):**\n   Since \\( ABC \\) is a right triangle\
+  \ with the right angle at \\( C \\), the foot of the altitude \\( D \\) lies on\
+  \ \\( AB \\). Using the Pythagorean theorem in triangle \\( ACD \\):\n   \\[\n \
+  \  AD^2 + CD^2 = AC^2 \\implies AD^2 + \\left(\\frac{120}{17}\\right)^2 = 8^2 \\\
+  implies AD^2 + \\frac{14400}{289} = 64.\n   \\]\n   Solving for \\( AD^2 \\):\n\
+  \   \\[\n   AD^2 = 64 - \\frac{14400}{289} = \\frac{18496 - 14400}{289} = \\frac{4096}{289}\
+  \ \\implies AD = \\frac{64}{17}.\n   \\]\n\n5. **Find the area of triangle \\( ACD\
+  \ \\):**\n   The area of triangle \\( ACD \\) is:\n   \\[\n   \\text{Area}_{ACD}\
+  \ = \\frac{1}{2} \\times AD \\times CD = \\frac{1}{2} \\times \\frac{64}{17} \\\
+  times \\frac{120}{17} = \\frac{3840}{578} = \\frac{1920}{289}.\n   \\]\n\nFinal\
+  \ Answer: The final answer is \\(\\frac{1920}{289}\\). I hope it is correct."
+gt_answer: \frac{3840}{289}
+prompt: "Problem:\nFind the domain of the expression  $\\frac{\\sqrt{x-2}}{\\sqrt{5-x}}$.}\n\
+  \nSolution:\nThe expressions inside each square root must be non-negative. Therefore,\
+  \ $x-2 \\ge 0$, so $x\\ge2$, and $5 - x \\ge 0$, so $x \\le 5$. Also, the denominator\
+  \ cannot be equal to zero, so $5-x>0$, which gives $x<5$. Therefore, the domain\
+  \ of the expression is $\\boxed{[2,5)}$.\nFinal Answer: The final answer is $[2,5)$.\
+  \ I hope it is correct.\n\nProblem:\nIf $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B}\
+  \ = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$\n\nSolution:\nWe have that\
+  \ $\\det (\\mathbf{A} \\mathbf{B}) = (\\det \\mathbf{A})(\\det \\mathbf{B}) = (2)(12)\
+  \ = \\boxed{24}.$\nFinal Answer: The final answer is $24$. I hope it is correct.\n\
+  \nProblem:\nTerrell usually lifts two 20-pound weights 12 times. If he uses two\
+  \ 15-pound weights instead, how many times must Terrell lift them in order to lift\
+  \ the same total weight?\n\nSolution:\nIf Terrell lifts two 20-pound weights 12\
+  \ times, he lifts a total of $2\\cdot 12\\cdot20=480$ pounds of weight.  If he lifts\
+  \ two 15-pound weights instead for $n$ times, he will lift a total of $2\\cdot15\\\
+  cdot n=30n$ pounds of weight.  Equating this to 480 pounds, we can solve for $n$:\n\
+  \\begin{align*}\n30n&=480\\\n\\Rightarrow\\qquad n&=480/30=\\boxed{16}\n\\end{align*}\n\
+  Final Answer: The final answer is $16$. I hope it is correct.\n\nProblem:\nIf the\
+  \ system of equations\n\n\\begin{align*}\n6x-4y&=a,\\\n6y-9x &=b.\n\\end{align*}has\
+  \ a solution $(x, y)$ where $x$ and $y$ are both nonzero,\nfind $\\frac{a}{b},$\
+  \ assuming $b$ is nonzero.\n\nSolution:\nIf we multiply the first equation by $-\\\
+  frac{3}{2}$, we obtain\n\n$$6y-9x=-\\frac{3}{2}a.$$Since we also know that $6y-9x=b$,\
+  \ we have\n\n$$-\\frac{3}{2}a=b\\Rightarrow\\frac{a}{b}=\\boxed{-\\frac{2}{3}}.$$\n\
+  Final Answer: The final answer is $-\\frac{2}{3}$. I hope it is correct.\n\nPlease\
+  \ answer the following math question. You should think step by step to solve it.\n\
+  \nProblem:\nIn triangle $ABC$, $AB = 17$, $AC = 8$, and $BC = 15$.  Let $D$ be the\
+  \ foot of the altitude from $C$ to $AB$.  Find the area of triangle $ACD$.\n\nPlease\
+  \ given your final answer (answer ONLY) within the format of `Final Answer: The\
+  \ final answer is <answer>. I hope it is correct.` after your reasoning \nFor example:\
+  \ According to ...\nFinal Answer: The final answer is $24$. I hope it is correct.\n"
+question: In triangle $ABC$, $AB = 17$, $AC = 8$, and $BC = 15$.  Let $D$ be the foot
+  of the altitude from $C$ to $AB$.  Find the area of triangle $ACD$.

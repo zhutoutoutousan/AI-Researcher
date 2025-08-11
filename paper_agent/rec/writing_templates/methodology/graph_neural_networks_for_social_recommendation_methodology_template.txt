@@ -1,0 +1,80 @@
+\section{The Proposed Framework}
+
+In this section, we will first introduce the definitions and notations used in this paper, next give an overview about the proposed framework, then detail each model component and finally discuss how to learn the model parameters.
+
+% Table for Notation
+\begin{table}[h]
+\centering
+\caption{Notation}
+\begin{tabular}{|c|l|}
+\hline
+\textbf{Symbols} & \textbf{Definitions and Descriptions} \\ \hline
+... & ... \\ % Replace with notation details
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Definitions and Notations}
+
+Let $U = \{ u_{1}, u_{2}, \ldots, u_{n} \}$ and $V = \{ v_{1}, v_{2}, \ldots, v_{m} \}$ be the sets of users and items respectively, where $n$ is the number of users, and $m$ is the number of items. We assume that $R \in \mathbb{R}^{n \times m}$ is the user-item rating matrix. If $u_{i}$ gives a rating to $v_{j}$, then $r_{ij}$ is the rating score, otherwise we employ $0$ to represent the unknown rating. The mathematical notations used in this paper are summarized in Table~\ref{tab:notation}.
+
+% Definitions and Details
+
+\subsection{An Overview of the Proposed Framework}
+
+The architecture of the proposed model is shown in Figure~\ref{fig:model}. The model consists of three components: [Component 1], [Component 2], and [Component 3]. [A paragraph explaining the purpose and interactions between these components].
+
+\subsection{[Component 1 Name]}
+
+[Component 1 introductory statement highlighting goals and challenges]. To address this challenge, we utilize [Describe the methodology or approach used]. The mathematical formulation is defined as follows:
+
+\begin{equation}
+[Insert equation here]
+\end{equation}
+
+where [Explain the variables and functions involved].
+
+\subsection{[Component 2 Name]}
+
+[Component 2 introductory statement with goals and challenges]. Again, we adopt a similar approach by [Describe methodology or approach]. The corresponding formulation can be expressed as:
+
+\begin{equation}
+[Insert equation here]
+\end{equation}
+
+where [Explain the variables and functions involved].
+
+\subsection{[Component 3 Name]}
+
+In this component, we focus on [Explain the focus area]. The approach for this section can be summarized as follows: 
+
+\begin{equation}
+[Insert equation here]
+\end{equation}
+
+where [Explain the variables and functions involved].
+
+\subsection{Learning [Specific Type] Factors}
+
+To learn [Type of factors/questions addressed], we integrate the information from [Explain the sources of information]. This leads to the formulation:
+
+\begin{equation}
+[Insert final equation here]
+\end{equation}
+
+where we assume [Assumptions/conditions].
+
+\subsection{Training and Optimization}
+
+To estimate the model parameters, we need to specify an objective function. Commonly, this is formulated as:
+
+\begin{equation}
+\text{Loss} = [Insert objective function here]
+\end{equation}
+
+To optimize this function, we utilize [Name of optimization method]. [Briefly describe how the model is trained, including details on any techniques used to avoid overfitting].
+
+% Optional: Add any additional relevant subsections
+\subsection{Conclusion}
+
+[Concisely summarize the key findings and contributions of the work].

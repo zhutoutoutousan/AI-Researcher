@@ -1,0 +1,87 @@
+answer: "To find \\( w \\), the result when \\( z \\) is rotated around \\( c \\)\
+  \ by \\( \\frac{\\pi}{4} \\) counter-clockwise, we follow these steps:\n\n1. **Express\
+  \ \\( z \\) and \\( c \\) in terms of their real and imaginary parts:**\n   \\[\n\
+  \   z = 2 + \\sqrt{2} - (3 + 3\\sqrt{2})i\n   \\]\n   \\[\n   c = 2 - 3i\n   \\\
+  ]\n\n2. **Translate \\( z \\) so that \\( c \\) is at the origin:**\n   \\[\n  \
+  \ z' = z - c = (2 + \\sqrt{2} - 2) + (-3 - 3\\sqrt{2} - (-3))i = \\sqrt{2} - 3\\\
+  sqrt{2}i\n   \\]\n\n3. **Rotate \\( z' \\) by \\( \\frac{\\pi}{4} \\) counter-clockwise:**\n\
+  \   The rotation of a complex number \\( z' = a + bi \\) by an angle \\( \\theta\
+  \ \\) is given by:\n   \\[\n   z'' = z' \\cdot (\\cos \\theta + i \\sin \\theta)\n\
+  \   \\]\n   For \\( \\theta = \\frac{\\pi}{4} \\), we have:\n   \\[\n   \\cos \\\
+  frac{\\pi}{4} = \\sin \\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}\n   \\]\n   Thus:\n\
+  \   \\[\n   z'' = (\\sqrt{2} - 3\\sqrt{2}i) \\cdot \\left(\\frac{\\sqrt{2}}{2} +\
+  \ \\frac{\\sqrt{2}}{2}i\\right)\n   \\]\n   \\[\n   z'' = \\sqrt{2} \\cdot \\frac{\\\
+  sqrt{2}}{2} + \\sqrt{2} \\cdot \\frac{\\sqrt{2}}{2}i - 3\\sqrt{2}i \\cdot \\frac{\\\
+  sqrt{2}}{2} - 3\\sqrt{2}i \\cdot \\frac{\\sqrt{2}}{2}i\n   \\]\n   \\[\n   z'' =\
+  \ 1 + i - 3i - 3i^2\n   \\]\n   Since \\( i^2 = -1 \\):\n   \\[\n   z'' = 1 + i\
+  \ - 3i + 3 = 4 - 2i\n   \\]\n\n4. **Translate \\( z'' \\) back by adding \\( c \\\
+  ):**\n   \\[\n   w = z'' + c = (4 - 2i) + (2 - 3i) = 6 - 5i\n   \\]\n\nFinal Answer:\
+  \ The final answer is \\(6 - 5i\\). I hope it is correct."
+gt_answer: 6 - 5i
+prompt: "Problem:\nFind the domain of the expression  $\\frac{\\sqrt{x-2}}{\\sqrt{5-x}}$.}\n\
+  \nSolution:\nThe expressions inside each square root must be non-negative. Therefore,\
+  \ $x-2 \\ge 0$, so $x\\ge2$, and $5 - x \\ge 0$, so $x \\le 5$. Also, the denominator\
+  \ cannot be equal to zero, so $5-x>0$, which gives $x<5$. Therefore, the domain\
+  \ of the expression is $\\boxed{[2,5)}$.\nFinal Answer: The final answer is $[2,5)$.\
+  \ I hope it is correct.\n\nProblem:\nIf $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B}\
+  \ = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$\n\nSolution:\nWe have that\
+  \ $\\det (\\mathbf{A} \\mathbf{B}) = (\\det \\mathbf{A})(\\det \\mathbf{B}) = (2)(12)\
+  \ = \\boxed{24}.$\nFinal Answer: The final answer is $24$. I hope it is correct.\n\
+  \nProblem:\nTerrell usually lifts two 20-pound weights 12 times. If he uses two\
+  \ 15-pound weights instead, how many times must Terrell lift them in order to lift\
+  \ the same total weight?\n\nSolution:\nIf Terrell lifts two 20-pound weights 12\
+  \ times, he lifts a total of $2\\cdot 12\\cdot20=480$ pounds of weight.  If he lifts\
+  \ two 15-pound weights instead for $n$ times, he will lift a total of $2\\cdot15\\\
+  cdot n=30n$ pounds of weight.  Equating this to 480 pounds, we can solve for $n$:\n\
+  \\begin{align*}\n30n&=480\\\n\\Rightarrow\\qquad n&=480/30=\\boxed{16}\n\\end{align*}\n\
+  Final Answer: The final answer is $16$. I hope it is correct.\n\nProblem:\nIf the\
+  \ system of equations\n\n\\begin{align*}\n6x-4y&=a,\\\n6y-9x &=b.\n\\end{align*}has\
+  \ a solution $(x, y)$ where $x$ and $y$ are both nonzero,\nfind $\\frac{a}{b},$\
+  \ assuming $b$ is nonzero.\n\nSolution:\nIf we multiply the first equation by $-\\\
+  frac{3}{2}$, we obtain\n\n$$6y-9x=-\\frac{3}{2}a.$$Since we also know that $6y-9x=b$,\
+  \ we have\n\n$$-\\frac{3}{2}a=b\\Rightarrow\\frac{a}{b}=\\boxed{-\\frac{2}{3}}.$$\n\
+  Final Answer: The final answer is $-\\frac{2}{3}$. I hope it is correct.\n\nPlease\
+  \ answer the following math question. You should think step by step to solve it.\n\
+  \nProblem:\nLet $z = 2 + \\sqrt{2} - (3 + 3 \\sqrt{2})i$, and let $c = 2 - 3i$.\
+  \  Let $w$ be the result when $z$ is rotated around $c$ by $\\frac{\\pi}{4}$ counter-clockwise.\n\
+  \n[asy]\nunitsize(0.6 cm);\n\npair C, W, Z;\n\nZ = (2 + sqrt(2), -3 - 3*sqrt(2));\n\
+  C = (2,-3);\nW = rotate(45,C)*(Z);\n\ndraw(Z--C--W);\n\ndot(\"$c$\", C, N);\ndot(\"\
+  $w$\", W, SE);\ndot(\"$z$\", Z, S);\nlabel(\"$\\frac{\\pi}{4}$\", C + (0.6,-1));\n\
+  [/asy]\n\nFind $w.$\n\nPlease given your final answer (answer ONLY) within the format\
+  \ of `Final Answer: The final answer is <answer>. I hope it is correct.` after your\
+  \ reasoning \nFor example: According to ...\nFinal Answer: The final answer is $24$.\
+  \ I hope it is correct.\n"
+question: 'Let $z = 2 + \sqrt{2} - (3 + 3 \sqrt{2})i$, and let $c = 2 - 3i$.  Let
+  $w$ be the result when $z$ is rotated around $c$ by $\frac{\pi}{4}$ counter-clockwise.
+
+
+  [asy]
+
+  unitsize(0.6 cm);
+
+
+  pair C, W, Z;
+
+
+  Z = (2 + sqrt(2), -3 - 3*sqrt(2));
+
+  C = (2,-3);
+
+  W = rotate(45,C)*(Z);
+
+
+  draw(Z--C--W);
+
+
+  dot("$c$", C, N);
+
+  dot("$w$", W, SE);
+
+  dot("$z$", Z, S);
+
+  label("$\frac{\pi}{4}$", C + (0.6,-1));
+
+  [/asy]
+
+
+  Find $w.$'

@@ -1,0 +1,13 @@
+\section{Abstract}
+
+[Start with a general statement about the ongoing challenge in the field. Outline the significance of the problem.]
+
+Inspired by [previous work/technique], we propose [module name] to address [challenge]. [Multiple sentences explaining the motivation and intuition behind the proposed method.]
+
+To tackle [challenge], our method consists of three main components: [component 1], [component 2], and [component 3]. Specifically, we [briefly outline the workflow or mechanism employed in the proposed method]. 
+
+We first [describe initial steps, experiments, or augmentations associated with the method]. Then, we [explain subsequent analytical steps or evaluations executed]. We conduct experiments in [list experimental settings or scenarios such as semi-supervised, unsupervised, etc.]. 
+
+The results show that [summarize findings, highlighting performance compared to existing approaches]. Furthermore, [discuss any additional experiments, insights, or performance observations]. 
+
+In summary, our [module name] provides [concisely state the contribution and enhancements over previous methods]. Our codes are available at: [link to the repository].

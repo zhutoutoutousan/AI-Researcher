@@ -1,0 +1,52 @@
+```latex
+\section{Preliminaries and Related Work}
+
+In this section, we introduce the basic definition of [key concept] and review the recent developments on [domain/technique] and their [specific variants]. We also highlight the differences between [new method] and existing approaches in [related domain].
+
+\subsection{[Subsection Title: Key Concept/Domain]}
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+Formally, we define [key concept] as follows:
+
+\begin{definition}
+    [Definition Number]. [Key Concept]: [Formal definition of the concept].
+\end{definition}
+
+[Additional terms and definitions related to the key concept, if necessary.]
+
+[Short paragraph explaining the significance of the key concept in real-world applications.]
+
+Furthermore, [a brief overview of existing research related to the key concept, highlighting gaps or limitations].
+
+\subsection{[Subsection Title: Framework/Architecture]}
+
+Recent years have witnessed the success of [framework/architecture] for [application domain]. Generally, [framework/architecture] can be regarded as [description of how it utilizes input data].
+
+Formally, it has the following form:
+
+\begin{definition}
+    [Definition Number]. General [Framework/Architecture] Framework: Suppose [notation] represents [meaning], the update procedure is as follows:
+    
+    \[
+        [Mathematical formulation of the key components]
+    \]
+\end{definition}
+
+[A brief explanation of the main components and their functions in the framework/architecture.]
+
+Various [related architectures or methods] have been proposed following this framework. [List and briefly explain several existing architectures and their contributions.]
+
+\subsection{[Subsection Title: Proposed Method/Extension]}
+
+Recently, studies have attempted to extend [existing framework/architecture] for [specific applications]. [Summary of related attempts and their implications.]
+
+Though these methods have shown [brief summary of achievements], they [highlight limitations or shortcomings]. To address this, we propose [new method] that [describe the novel approach].
+
+To summarize, the key differences between [new method] and existing attempts include:
+
+- (1) [Specific difference #1 and its significance].
+- (2) [Specific difference #2 and its significance].
+- (3) [Specific difference #3 and its significance].
+- (4) [Specific difference #4 and its significance].
+```

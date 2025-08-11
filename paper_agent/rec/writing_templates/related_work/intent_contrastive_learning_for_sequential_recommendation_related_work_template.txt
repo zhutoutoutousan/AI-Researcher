@@ -1,0 +1,45 @@
+```latex
+\section{Related Work}
+
+\subsection{[First Topic]}
+
+[Several sentences providing a general overview of the field related to the first topic. Include key references and their contributions.]
+
+[Multiple sentences explaining the motivation and significance of early works in the area, discussing any foundational methods or approaches used.]
+
+[Further discussion on recent advancements in the field, highlighting the evolution of methodologies or technologies introduced.]
+
+\textbf{Specifically}, [A paragraph describing a relevant technique or model related to the first topic. Include details about its architecture, components, and how it addresses certain challenges.]
+
+[Several sentences comparing the discussed method with existing approaches. Highlight strengths and weaknesses.]
+
+\textbf{Formally}, we define [concept related to the first topic] as follows:
+\begin{equation}
+[Mathematical formulation of the defined concept]
+\end{equation}
+\textbf{where} [Detailed explanation of each term in the equation].
+
+\subsection{[Second Topic]}
+
+[Introduction to the second topic with a brief overview of its relevance in the context of the research domain.]
+
+[Description of the approaches developed in the second topic, including specifics about their methodologies and how they differ from the first topic.]
+
+\textbf{To tackle} [challenge related to the second topic], our method consists of three main components: [component 1], [component 2], and [component 3].
+
+\textbf{Furthermore}, [A detailed explanation of the workflow of the module addressing the second topic. Discuss how it integrates with previous works.]
+
+[Several sentences summarizing the relationship between the discussed methods and previous research in the domain. Focus on identifying gaps and future directions.]
+
+\subsection{[Third Topic]}
+
+[Start with a broad overview of the third topic, mentioning its significance and key contributions in the relevant literature.]
+
+[Discuss current trends or methodologies under the third topic, emphasizing the latest findings or breakthroughs.]
+
+\textbf{In contrast to} [previous findings or methods], our work targets [specific gap or problem] using [brief description of the new approach or idea].
+
+[In this section, focus on outlining any novel aspects of the approach and how it relates to the discussed topics.]
+
+\textbf{To this end}, [summarize the aims and expected contributions of the proposed method over the existing literature. Mention any theoretical implications or practical applications.]
+```

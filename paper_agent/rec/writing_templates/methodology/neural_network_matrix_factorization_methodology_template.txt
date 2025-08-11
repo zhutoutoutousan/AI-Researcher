@@ -1,0 +1,36 @@
+```
+\section{Learning}
+
+To learn the network weights $\theta$ and latent features $(U, V)$, we minimize the objective
+
+\begin{equation}
+\sum (n,m) \in J (X_{n,m} - \hat{X}_{n,m})^2 + \lambda \left[ \sum_n || U'_{n} ||_F^2 + \sum_n || U_{n} ||_2^2 + \sum_m || V'_{m} ||_F^2 + \sum_m || V_{m} ||_2^2 \right],
+\end{equation}
+
+where $\lambda$ is a regularization parameter, $|| \cdot ||_2$ denotes the $\ell_2$ norm, and $|| \cdot ||_F$ denotes the Frobenius norm. This objective can be understood as a [explanation of the mathematical relationship or theoretical underpinning].
+
+During training, we [describe the training process, including what parameters are fixed and optimized]. [Provide details regarding the optimization technique used, including any specific algorithms or adjustments that were made]. [Mention if other algorithms were evaluated and why.]
+
+Specifically, [multiple sentences explaining the motivation and intuition behind the proposed method].
+
+Furthermore, [a paragraph describing the detailed workflow of the module, including how different components interact].
+
+To this end, [several sentences comparing the proposed method with existing approaches, highlighting improvements or differences].
+
+Formally, we define [concept] as follows:
+\begin{definition}
+[Provide a detailed definition of key concepts used in the methodology.]
+\end{definition}
+
+Mathematically, the key components can be formulated as:
+\begin{equation}
+[Mathematical formulation of the key components]
+\end{equation}
+
+Where each term can be understood as follows:
+\begin{itemize}
+    \item [Detailed explanation of the first term]
+    \item [Detailed explanation of the second term]
+    \item [Detailed explanation of the third term]
+\end{itemize}
+```

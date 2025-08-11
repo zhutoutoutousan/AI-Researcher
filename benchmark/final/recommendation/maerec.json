@@ -1,0 +1,94 @@
+{
+    "target": "Graph Masked Autoencoder for Sequential Recommendation",
+    "instance_id": "maerec",
+    "source_papers": [
+      {
+        "reference": "GraphMAE: Self-Supervised Masked Graph Autoencoders",
+        "rank": 1,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This study lays the foundational work on masked graph autoencoders, which is directly adapted and enhanced in the proposed approach. The incorporation of adaptive mechanisms to enhance self-supervised learning is critical for the development of the proposed model.",
+        "usage": "The concepts of masked autoencoding and adaptive graph masking were integrated to improve the self-supervised learning process in the proposed model."
+      },
+      {
+        "reference": "Contrastive learning for sequential recommendation",
+        "rank": 2,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This work introduces contrastive learning techniques specifically tailored for sequential recommendations, which inform the augmentation strategies in the proposed model. The exploration of self-supervision signals from unlabeled data is particularly relevant.",
+        "usage": "The methodology for applying contrastive learning in a self-supervised manner was utilized to avoid reliance on handcrafted augmentations."
+      },
+      {
+        "reference": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer",
+        "rank": 3,
+        "type": [
+          "component"
+        ],
+        "justification": "BERT4Rec's use of the Cloze objective influences the design of the proposed model, particularly in the context of item embedding strategies. The incorporation of a bidirectional approach is crucial for capturing user preferences over sequences.",
+        "usage": "The Cloze objective was adapted for use in the sequential recommendation context to refine item embedding processes."
+      },
+      {
+        "reference": "Self-attentive sequential recommendation",
+        "rank": 4,
+        "type": [
+          "component"
+        ],
+        "justification": "This work's implementation of a self-attention mechanism serves as a core component in the proposed model, enhancing the proposed approach's ability to capture item correlations within sequences.",
+        "usage": "The self-attention mechanism was adopted to improve the modeling of item transitions in user behavior sequences."
+      },
+      {
+        "reference": "Sequential recommendation with graph neural networks",
+        "rank": 5,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This study demonstrated the potential of graph neural networks in recommendation systems, inspiring the use of such networks in the proposed model to model item transitions dynamically.",
+        "usage": "The foundational concepts of graph neural networks were leveraged to enhance the modeling of item transitions."
+      },
+      {
+        "reference": "Lightgcn: Simplifying and powering graph convolution network for recommendation",
+        "rank": 6,
+        "type": [
+          "methodological"
+        ],
+        "justification": "The simplification and efficiency improvements in graph convolutional networks described in this study directly influenced the choice of architecture in the proposed model, allowing for better performance in sequential recommendation tasks.",
+        "usage": "The lightweight graph convolutional network architecture was adopted to improve efficiency in recommendations."
+      },
+      {
+        "reference": "Intent Contrastive Learning for Sequential Recommendation",
+        "rank": 7,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This work's exploration of latent variables for user intent representation contributes to the overall understanding of user behavior in recommendations, influencing the design of the proposed model.",
+        "usage": "Latent variables created to represent user intents were integrated into the framework to strengthen the modeling of user preferences."
+      },
+      {
+        "reference": "Neural attentive session-based recommendation",
+        "rank": 8,
+        "type": [
+          "component"
+        ],
+        "justification": "The integration of the attention mechanism with feed-forward networks showcased effective item transition modeling, providing insights for the proposed model's design.",
+        "usage": "The attention mechanism was adapted to improve how item transitions are modeled within the sequential recommendation process."
+      }
+    ],
+    "authors": [
+      "Yaowen Ye",
+      "Lianghao Xia",
+      "Chao Huang"
+    ],
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2305.04619v3",
+    "abstract": "While some powerful neural network architectures (e.g., Transformer, Graph\nNeural Networks) have achieved improved performance in sequential\nrecommendation with high-order item dependency modeling, they may suffer from\npoor representation capability in label scarcity scenarios. To address the\nissue of insufficient labels, Contrastive Learning (CL) has attracted much\nattention in recent methods to perform data augmentation through embedding\ncontrasting for self-supervision. However, due to the hand-crafted property of\ntheir contrastive view generation strategies, existing CL-enhanced models i)\ncan hardly yield consistent performance on diverse sequential recommendation\ntasks; ii) may not be immune to user behavior data noise. In light of this, we\npropose a simple yet effective Graph Masked AutoEncoder-enhanced sequential\nRecommender system (MAERec) that adaptively and dynamically distills global\nitem transitional information for self-supervised augmentation. It naturally\navoids the above issue of heavy reliance on constructing high-quality embedding\ncontrastive views. Instead, an adaptive data reconstruction paradigm is\ndesigned to be integrated with the long-range item dependency modeling, for\ninformative augmentation in sequential recommendation. Extensive experiments\ndemonstrate that our method significantly outperforms state-of-the-art baseline\nmodels and can learn more accurate representations against data noise and\nsparsity. Our implemented model code is available at\nhttps://github.com/HKUDS/MAERec.",
+    "venue": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "venue_source": "Semantic Scholar",
+    "venue_lookup_time": "2024-11-19T16:40:30.660361",
+    "citations": 22,
+    "topic": "LightGCL Simple yet effective graph contrastive learning for recommendation",
+    "field": "preselected",
+    "task1": "1. The proposed model addresses the task of sequential recommendation, which involves predicting the next item a user is likely to interact with based on their previous interactions.\n\n2. The core techniques employed include:\n   - **Graph Masked Autoencoder**: A generative model that reconstructs masked item transitions from a graph-based representation of user interactions.\n   - **Graph Neural Networks (GNNs)**: Used to capture item dependency relationships through message passing among item nodes.\n   - **Adaptive Path Masking**: A mechanism to selectively mask item transitions based on their semantic relatedness, which is learned through self-supervised learning signals.\n\n3. Functions of major technical components:\n   - **Graph Construction**: Builds a global item-item transition graph to represent relationships among items based on user interaction sequences.\n   - **Learning to Mask**: Identifies semantically related items to form anchor nodes for effective masking.\n   - **Transition Path Masking**: Masks paths in the graph to preserve important item transition patterns, allowing for effective reconstruction during training.\n   - **Graph Encoder**: Encodes the graph structure to learn item embeddings.\n   - **Decoder**: Reconstructs masked item transitions using the learned embeddings.\n   - **Transformer Encoder**: Processes user interaction sequences to produce final embeddings for recommendation.\n\n4. Implementation details:\n   - **Graph Construction**: Use user interaction sequences to define edges in the graph, where each edge connects an item to its neighbors based on a defined hop distance (h).\n   - **Learning to Mask**: Select anchor nodes based on semantic relatedness scores calculated from the embeddings of k-hop neighbors.\n   - **Transition Path Masking**: Implement a random walk process to generate masked paths, controlling the drop ratio (p) to vary the length of masked transitions.\n   - **Graph Encoder**: Use a lightweight Graph Convolutional Network (GCN) with a specified number of layers (L) and embedding dimension (d).\n   - **Decoder**: Use a multi-layer perceptron (MLP) that takes concatenated embeddings of items to predict edges in the masked transition graph.\n   - **Input/Output Specifications**: Input is a sequence of user-item interactions; output is the predicted next item or reconstructed masked transitions.\n   - **Optimization**: Use the Adam optimizer with a learning rate of 1e-3, and consider weight decay for model parameters.\n\n5. Step-by-step interaction:\n   - Construct the global item transition graph from user interaction sequences.\n   - Use the Learning to Mask module to identify anchor nodes and their semantic relatedness.\n   - Perform Transition Path Masking to create masked paths based on the identified anchor nodes.\n   - Feed the masked graph into the GCN to produce item embeddings.\n   - Utilize the MLP decoder to reconstruct the masked transitions from the learned embeddings.\n   - Train the Transformer encoder on user sequences while incorporating self-supervised learning signals from the graph autoencoder.\n\n6. Critical implementation details for performance:\n   - The choice of hyperparameters such as the number of GNN layers, embedding dimensions, and the parameters for path masking (k and p) significantly influences the proposed model performance.\n   - The adaptive nature of the masking process is crucial; static or random masking approaches can harm important transition relations and lead to suboptimal performance.\n   - Ensuring that the graph encoder effectively captures both short- and long-term dependencies is vital for robust representation learning in the context of sparse user interactions.\n\n",
+    "task2": "The primary task or problem domain the research tackles is sequential recommendation, which focuses on learning effective representations of user preferences over time and suggesting future items that may interest users based on their past interactions.\n\nCurrent limitations in existing approaches that motivated this work include the reliance on handcrafted contrastive augmentation strategies in contrastive learning methods, which often lead to inconsistent performance across different sequential recommendation tasks and make the models vulnerable to noise in user behavior data.\n\nCore challenges the researchers aim to overcome include addressing label scarcity issues that degrade the proposed model representation performance, the ineffectiveness of existing data augmentation methods that can corrupt critical transition structures, and the need for models that can adaptively and robustly handle data noise.\n\nKey objectives and intended contributions include developing a new approach for self-supervised learning through an adaptive data augmentation method, specifically a graph masked autoencoder, which enhances the robustness and adaptability of sequential recommendation systems by distilling informative signals for reconstruction while avoiding the pitfalls of traditional augmentation techniques. The researchers aim to demonstrate that their proposed approach can achieve superior performance in learning accurate representations in the presence of noise and sparsity in data."
+  }

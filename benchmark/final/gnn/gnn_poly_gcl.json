@@ -1,0 +1,143 @@
+{
+    "target": "PolyGCL GRAPH CONTRASTIVE LEARNING via Learnable Spectral Polynomial Filters",
+    "instance_id": "gnn_poly_gcl",
+    "source_papers": [
+        {
+            "reference": "Adaptive universal generalized pagerank graph neural network",
+            "rank": 1,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This study provides foundational insights into spectral graph neural networks, which are integral to the development of the proposed polynomial filters in the proposed model.",
+            "usage": "Utilized the concept of learnable polynomial filters from this study to enhance graph representation learning under varying homophily."
+        },
+        {
+            "reference": "Evennet: Ignoring odd-hop neighbors improves robustness of graph neural networks",
+            "rank": 2,
+            "type": [
+                "methodological"
+            ],
+            "justification": "The incorporation of high-frequency information from this study significantly informs the adaptation of graph neural networks to heterophilic settings, which is critical for the implementation of the proposed model.",
+            "usage": "Inspired the examination of high-frequency elements in polynomial filters to effectively capture heterophilic characteristics in graphs."
+        },
+        {
+            "reference": "Learning deep representations by mutual information estimation and maximization",
+            "rank": 3,
+            "type": [
+                "methodological"
+            ],
+            "justification": "As a fundamental work on mutual information maximization, it critically influences the optimization strategies in the proposed model.",
+            "usage": "The optimization framework in the proposed model is designed to maximize mutual information, leveraging insights from this prior work."
+        },
+        {
+            "reference": "Generative adversarial nets",
+            "rank": 4,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This seminal work on GANs lays the groundwork for understanding adversarial frameworks, enhancing the theoretical approaches applicable to graph learning tasks.",
+            "usage": "The adversarial learning principles extend to the context of optimizing spectral filters within the contrastive learning objectives of the proposed model."
+        },
+        {
+            "reference": "A simple framework for contrastive learning of visual representations",
+            "rank": 5,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This work offers profound insights into contrastive learning, which is crucial for developing effective graph contrastive techniques.",
+            "usage": "Applied the principles of contrastive learning to the context of graph representations, specifically in the formulation of the optimization loss in the proposed model."
+        },
+        {
+            "reference": "Contrastive multi-view representation learning on graphs",
+            "rank": 6,
+            "type": [
+                "methodological"
+            ],
+            "justification": "Utilizes multi-view strategies to enhance graph representations, paralleling the low-pass and high-pass views in the proposed model.",
+            "usage": "This study's methodologies underscore the value of viewing data from multiple perspectives, guiding the dual view architecture in the proposed model."
+        },
+        {
+            "reference": "Contextual stochastic block models",
+            "rank": 7,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "Positioned within the framework of graph representation learning, it informs the theoretical underpinnings of homophily and heterophily examined in the proposed model.",
+            "usage": "Informed the exploration of graph structures and their influence on representation methodologies within the experimental context of the proposed model."
+        },
+        {
+            "reference": "Beyond low-frequency information in graph convolutional networks",
+            "rank": 8,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This work emphasizes the importance of high-frequency features in graph convolutional networks, which is directly adopted in addressing heterophily in the proposed model.",
+            "usage": "Detailed discussions on frequency characteristics of graphs helped shape the inclusion of high-pass information in the proposed model."
+        },
+        {
+            "reference": "Learning arbitrary graph spectral filters via bernstein approximation",
+            "rank": 9,
+            "type": [
+                "methodological"
+            ],
+            "justification": "Provides approaches for approximating spectral filters, vital for extending polynomial filter applications in the proposed model.",
+            "usage": "Incorporated techniques for learning spectral filters, influencing the design of the polynomial-based filter framework in the proposed model."
+        },
+        {
+            "reference": "When do graph neural networks help with node classification? investigating the homophily principle on node distinguishability",
+            "rank": 10,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "Explores the implications of homophily and heterophily in node classification, reinforcing the theoretical foundations of the proposed model.",
+            "usage": "Insights into homophily principles greatly contributed to the exploration of spectral representations suited for varying degrees of homophily."
+        },
+        {
+            "reference": "Is homophily a necessity for graph neural networks?",
+            "rank": 11,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "Challenges the traditional paradigms of homophily in graph learning, directly relevant to the innovations presented by the proposed model.",
+            "usage": "Serves as a critique of homophily assumptions, informing the need for high-pass filters in graph contrastive learning."
+        },
+        {
+            "reference": "Simple unsupervised graph representation learning",
+            "rank": 12,
+            "type": [
+                "methodological"
+            ],
+            "justification": "Contributes to the body of knowledge on unsupervised learning in graph settings, which is essential for the self-supervised framework of the proposed model.",
+            "usage": "Informed the development of unsupervised approaches that capture diverse representations in the proposed model architecture."
+        },
+        {
+            "reference": "Can single-pass contrastive learning work for both homophilic and heterophilic graph?",
+            "rank": 13,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "Targets the versatile application of contrastive learning across graph types, aligning with the goals of the proposed model.",
+            "usage": "The findings support the assertion that adaptable learning techniques can be effective in heterogeneous graph settings."
+        },
+        {
+            "reference": "Provable guarantees for self-supervised deep learning with spectral contrastive loss",
+            "rank": 14,
+            "type": [
+                "methodological"
+            ],
+            "justification": "Provides provable theoretical guarantees that can underpin the self-supervised approach implemented in the proposed model.",
+            "usage": "Guided the development of robust contrastive learning guarantees in the proposed framework of the proposed model."
+        }
+    ],
+    "authors": [
+        "Jingyu Chen",
+        "Runlin Lei",
+        "Zhewei Wei"
+    ],
+    "year": 2024,
+    "url": "https://openreview.net/forum?id=y21ZO6M86t",
+    "abstract": "Recently, Graph Contrastive Learning (GCL) has achieved significantly superior performance in self-supervised graph representation learning. However, the existing GCL technique has inherent smooth characteristics because of its low-pass GNN encoder and objective based on homophily assumption, which poses a challenge when applying it to heterophilic graphs. In supervised learning tasks, spectral GNNs with polynomial approximation excel in both homophilic and heterophilic settings by adaptively fitting graph filters of arbitrary shapes. Yet, their applications in unsupervised learning are rarely explored. Based on the above analysis, a natural question arises: Can we incorporate the excellent properties of spectral polynomial filters into graph contrastive learning? In this paper, we address the question by studying the necessity of introducing high-pass information for heterophily from a spectral perspective. We propose PolyGCL, a GCL pipeline that utilizes polynomial filters to achieve contrastive learning between the low-pass and high-pass views. Specifically, PolyGCL utilizes polynomials with learnable filter functions to generate different spectral views and an objective that incorporates high-pass information through a linear combination. We theoretically prove that PolyGCL outperforms previous GCL paradigms when applied to graphs with varying levels of homophily. We conduct extensive experiments on both synthetic and real-world datasets, which demonstrate the promising performance of PolyGCL on homophilic and heterophilic graphs.",
+    "citation": 11,
+    "task1": "1. The proposed model works on the task of self-supervised graph representation learning, specifically through Graph Contrastive Learning (GCL) aimed at improving performance on both homophilic and heterophilic graphs.\n\n2. The core methodologies include:\n   - **Polynomial Filters**: Utilizes Chebyshev polynomial filters to create low-pass and high-pass spectral views of graph data.\n   - **Linear Combination**: Combines outputs from the low-pass and high-pass filters to derive final node embeddings.\n   - **Contrastive Loss**: Implements a Binary Cross-Entropy (BCE) loss function for learning by maximizing mutual information between graph embeddings and summaries.\n\n3. The major technical components serve specific functions:\n   - **Polynomial Encoder**: Generates low-pass and high-pass embeddings from node features and adjacency matrices using spectral filtering, which captures both local and global graph structures.\n   - **Linear Combination**: A method to mix low-pass and high-pass representations, providing flexibility to adapt to various types of graph structures.\n   - **Discriminator**: Evaluates the similarity between node embeddings and a global summary, enabling effective contrastive learning.\n\n4. Implementation details for each component:\n   - **Polynomial Encoder**:\n     - Use Chebyshev polynomials for filtering.\n     - Key parameters: Polynomial order \\( K \\) (set to 10) and output dimensionality \\( D \\) (set to 512).\n     - Input: Node feature matrix \\( X \\) and adjacency matrix \\( A \\).\n     - Output: Low-pass embedding \\( Z_L \\) and high-pass embedding \\( Z_H \\).\n     - Constraints: Ensure non-negative learning for the high-pass filter and monotonically decreasing for the low-pass filter.\n   \n   - **Linear Combination**:\n     - Key parameters: Coefficients \\( \\alpha \\) and \\( \\beta \\) which can be set as learnable.\n     - Produces final node representation \\( Z = \\alpha Z_L + \\beta Z_H \\).\n     - Important to ensure \\( \\alpha + \\beta = 1 \\) during training.\n     \n   - **Discriminator**:\n     - Computes similarity using a weight matrix \\( W \\) for the sigmoid output.\n     - Input: Node embeddings from low-pass \\( Z_L \\) and high-pass \\( Z_H \\), along with the mean pooled summary \\( g = \\text{Mean}(Z) \\).\n     - Output: A probability score indicating similarity.\n  \n5. Step-by-step interaction of components:\n   - Start by feeding node features \\( X \\) and adjacency \\( A \\) into the polynomial encoder to obtain both low-pass \\( Z_L \\) and high-pass \\( Z_H \\) embeddings.\n   - Create the final representation \\( Z \\) as a linear combination of \\( Z_L \\) and \\( Z_H \\).\n   - Shuffle the node features to generate negative embeddings \\( \\tilde{Z}_L \\) and \\( \\tilde{Z}_H \\).\n   - Compute the global summary embedding \\( g \\) through mean pooling.\n   - Use the discriminator to compute similarities for both positive and negative examples.\n   - Finally, optimize using the BCE loss function based on the results of the discriminator's output.\n\n6. Critical implementation details that affect performance:\n   - Setting the polynomial order \\( K \\) appropriately influences the expressiveness of filters.\n   - Proper initialization of the coefficients \\( \\alpha \\) and \\( \\beta \\) can significantly impact convergence and overall performance.\n   - Running the optimization for sufficient epochs while also implementing early stopping based on validation loss can ensure effective training without overfitting. \n   - It is crucial to handle graph perturbations carefully to maintain meaningful spectral information while learning. Avoid excessive perturbations during negative sampling, as they can lead to loss of significant structural information.",
+    "task2": "1. The primary task or problem domain the research tackles:\nThe research addresses the challenge of self-supervised graph representation learning, specifically focusing on Graph Contrastive Learning (GCL) within the context of heterophilic graphs\u2014graphs where connected nodes may represent different classes or labels.\n\n2. Current limitations in existing approaches that motivated this work:\nExisting GCL techniques largely rely on the homophily assumption, which posits that connected nodes in a graph typically share similar representations. Consequently, current methods, which often utilize low-pass filters, tend to underperform on heterophilic graphs due to their inability to effectively capture high-frequency information that distinguishes between differing node classes. This limitation results in a lack of effective self-supervised learning approaches for graphs with varying levels of homophily and heterophily.\n\n3. Core challenges the researchers aim to overcome:\nThe researchers aim to overcome the challenges posed by the inherent smoothness of traditional GCL methods when applied to heterophilic graphs. They specifically target the need for a framework that can leverage the advantages of spectral polynomial filters to introduce high-pass information, thereby enhancing representation learning for both homophilic and heterophilic graphs. The challenge lies in effectively integrating high-frequency information without the need for complex data augmentations or preprocessing.\n\n4. Key objectives and intended contributions:\nThe key objectives of the research include developing a new GCL framework that incorporates the properties of spectral polynomial filters, which can adaptively capture both low-pass and high-pass spectral views of graph data. The intended contributions are to theoretically demonstrate the necessity of high-pass information for heterophilic settings, to establish a learning objective that optimally combines low-pass and high-pass views, and to show through extensive experiments that the proposed approach achieves superior performance on both homophilic and heterophilic graphs compared to existing paradigms."
+}

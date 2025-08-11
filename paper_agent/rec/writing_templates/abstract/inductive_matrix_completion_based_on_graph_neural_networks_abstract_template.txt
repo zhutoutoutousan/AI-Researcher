@@ -1,0 +1,19 @@
+\section{Abstract}
+
+We propose an [method type] model without using [any additional information]. By factorizing the [data type] matrix into the product of low-dimensional latent embeddings of [dimension 1] (e.g., [users/items]) and [dimension 2] (e.g., [items/users]), a majority of existing [related methods] are [type], since the learned embeddings cannot generalize to [condition]. 
+
+To tackle [challenge], our method consists of three main components: 
+1. [component 1 with brief explanation]
+2. [component 2 with brief explanation]
+3. [component 3 with brief explanation]
+
+Under the extreme setting where not any [additional information] is available other than the matrix to complete, [core question or hypothesis]. In this paper, we propose an [module name] model to address this problem. [Multiple sentences explaining the motivation and intuition behind the proposed method]. 
+
+Specifically, [A paragraph describing the detailed workflow of the module]. It achieves [describe the performance and benefits] compared to [existing approaches]. 
+
+Furthermore, our [module name] is [describe inductive characteristics] - it can generalize to [unseen data conditions] and can even transfer to [other related tasks]. Our [experiments conducted] show that [summary of findings]. 
+
+Our work demonstrates that:
+1. [Key finding 1]
+2. [Key finding 2]
+3. [Key finding 3]

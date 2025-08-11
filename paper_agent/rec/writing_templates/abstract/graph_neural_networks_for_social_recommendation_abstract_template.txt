@@ -1,0 +1,5 @@
+\section*{Abstract}
+
+In recent years, [Field/Technology], which can naturally [describe key functionality or feature], have been demonstrated to be powerful in [application/domain]. These advantages of [Field/Technology] provide great potential to advance [specific application/area] since [explain the representation of data in that context]; and [key task or factor] is the key. However, building [specific systems/models] based on [Field/Technology] faces challenges. For example, [Challenge 1]; [Challenge 2]; [Challenge 3]. 
+
+To address the three aforementioned challenges simultaneously, in this paper, we present a novel [system/model name] for [specific application]. In particular, we [principled approach or methodology] to jointly [describe the main contribution or approach]. Our framework [Framework Name] [brief description of what it does and how it works]. Extensive experiments on [number] real-world datasets demonstrate the effectiveness of the proposed framework [Framework Name]. Our code is available at [link to code repository].

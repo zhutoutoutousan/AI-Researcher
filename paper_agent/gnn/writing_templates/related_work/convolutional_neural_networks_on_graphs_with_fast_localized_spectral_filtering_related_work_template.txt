@@ -1,0 +1,23 @@
+```latex
+\section{Related Works}
+
+\subsection{[First Relevant Domain]}
+
+The emerging field of [Field Name] aims at bridging the gap between [Concept 1] and [Concept 2], a blend between [Subfield 1] and [Subfield 2]. A goal is to generalize fundamental analysis operations for [Application] from [Structure 1] to [Structure 2]. We refer the reader to [Reference] for an introduction to the field. Standard operations on [Type of Data] such as [Operation 1], [Operation 2], [Operation 3], etc., do not extend directly to [Target Structure] and thus require new mathematical definitions while keeping the original intuitive concepts. In this context, the authors of [Reference 1, Reference 2, Reference 3] revisited the construction of [Concept] and techniques to perform [Process] were proposed in [Reference 4, Reference 5]. The works of [Reference 6, Reference 7] redefined [Principle] in [Context] and showed that while intuitive concepts may be lost, enhanced [Property] can be derived.
+
+\subsection{[Second Relevant Domain]}
+
+The [Framework Name] [Reference] was designed to [Objective]. By setting their [Function Name] as [Simplified Expression], their [Output Variable] becomes [New Expression]. Their point-wise output function [Function] can further be set as [Output Function Expression] instead of [Alternative Method]. The [Mathematical Concept] can then be obtained with a [Layer Description], to be followed by [Additional Process]. Our model can thus be interpreted as [Interpretation of Model].
+
+The works of [Reference 8, Reference 9] introduced the concept of [New Concept] to reduce the number of [Parameter Type]. The idea is to [Description of the Idea] based upon [Measure/Method]. While this model reduces the number of [Parameter Type] by exploiting the [Assumption], it did not attempt to exploit any [Property]. The authors of [Reference 10] used this idea for their [Methodology]. They use a [Type of Structure] to define the local [Neighborhood/Area] and compute a [Process] for the [Function]. Inducing [Method] in a [Construction Type] is however challenging, as it requires to [Selection Condition].
+
+A spatial generalization of [Technique] to [Structure Type] was proposed in [Reference 11]. The authors used [Method/Technique] to define the [Process] on [Area], and formulated a [Architecture Type] which allows comparison across different [Domains/Spaces]. They obtained state-of-the-art results for [Application].
+
+The first [Type] formulation of a [Method/Process], proposed in [Reference 12], defines a [Component] as
+
+\begin{equation}
+g_{\theta}(\Lambda) = [Expression],
+\end{equation}
+
+where [Variable Description]. They later proposed a strategy to [Strategy Description] and applied the model to [Application 1], [Application 2], and [Application 3] [Reference 13]. This approach does however not scale up due to [Limitation Description], which has already been identified by the authors. Besides, as they rely on [Property] in the [Domain], to bring [Characteristic], their model does not provide a precise control over [Property of Interest], which is essential to [Objective]. Our technique leverages this work, and we showed how to overcome these limitations and beyond.
+```

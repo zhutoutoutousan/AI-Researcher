@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+\begin{document}
+
+\section*{Abstract}
+
+The [research task] aims to [describe the main objective], with the incorporation of [mention relevant aspects, e.g., social connections, contextual information], to [explain the goal, e.g., alleviate specific issues in a prior approach]. While many recent efforts [describe the current state of the field, e.g., show effectiveness of methodology], several important challenges have not been well addressed yet: (i) [List the first challenge]; (ii) [List the second challenge]; (iii) [List the third challenge]. 
+
+To tackle the above challenges, this work proposes [proposed method name] that [briefly describe what the method does, e.g., jointly incorporates relevant knowledge, enhances modeling capabilities]. [Multiple sentences explaining the motivation and intuition behind the proposed method]. 
+
+[KCGN/method name] enables [explain the capabilities of the method] by [describe the approach taken, e.g., exploiting mutual information, global structure awareness]. Additionally, we further augment [method name] with [describe any additional features or capabilities, e.g., capturing dynamic interactions].
+
+Experimental studies on [mention type of datasets, e.g., real-world datasets] show the effectiveness of our method against [mention types of comparisons, e.g., strong baselines] in a variety of [mention relevant settings]. Source codes are available at: [link to repository].
+
+\end{document}

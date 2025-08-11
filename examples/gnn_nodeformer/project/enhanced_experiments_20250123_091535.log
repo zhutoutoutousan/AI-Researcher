@@ -1,0 +1,77 @@
+2025-01-23 09:15:35,210 - 
+Running enhanced experiments on Cora
+2025-01-23 09:15:35,210 - Run 1/5 on device 0
+2025-01-23 09:15:35,795 - Adjusted number of attention heads to 89 for 1433 features
+2025-01-23 09:15:36,358 - Error during training: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2
+2025-01-23 09:15:36,358 - Error on device 0: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2
+2025-01-23 09:15:36,359 - Run 2/5 on device 1
+2025-01-23 09:15:37,251 - Adjusted number of attention heads to 89 for 1433 features
+2025-01-23 09:15:39,000 - Error during training: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2
+2025-01-23 09:15:39,000 - Error on device 1: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2
+2025-01-23 09:15:39,000 - Run 3/5 on device 2
+2025-01-23 09:15:39,407 - Adjusted number of attention heads to 89 for 1433 features
+2025-01-23 09:15:39,816 - Error during training: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2
+2025-01-23 09:15:39,816 - Error on device 2: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2
+2025-01-23 09:15:39,817 - Run 4/5 on device 3
+2025-01-23 09:15:40,226 - Adjusted number of attention heads to 89 for 1433 features
+2025-01-23 09:15:40,639 - Error during training: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2
+2025-01-23 09:15:40,639 - Error on device 3: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2
+2025-01-23 09:15:40,639 - Run 5/5 on device 0
+2025-01-23 09:15:40,655 - Adjusted number of attention heads to 89 for 1433 features
+2025-01-23 09:15:40,747 - Error during training: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2
+2025-01-23 09:15:40,748 - Error on device 0: The size of tensor a (1433) must match the size of tensor b (1424) at non-singleton dimension 2
+2025-01-23 09:15:40,748 - All runs failed for dataset Cora
+2025-01-23 09:15:40,748 - 
+Running enhanced experiments on CiteSeer
+2025-01-23 09:15:40,748 - Run 1/5 on device 0
+2025-01-23 09:15:40,812 - Adjusted number of attention heads to 231 for 3703 features
+2025-01-23 09:15:41,386 - Error during training: The size of tensor a (3703) must match the size of tensor b (3696) at non-singleton dimension 2
+2025-01-23 09:15:41,386 - Error on device 0: The size of tensor a (3703) must match the size of tensor b (3696) at non-singleton dimension 2
+2025-01-23 09:15:41,386 - Run 2/5 on device 1
+2025-01-23 09:15:41,458 - Adjusted number of attention heads to 231 for 3703 features
+2025-01-23 09:15:42,106 - Error during training: The size of tensor a (3703) must match the size of tensor b (3696) at non-singleton dimension 2
+2025-01-23 09:15:42,106 - Error on device 1: The size of tensor a (3703) must match the size of tensor b (3696) at non-singleton dimension 2
+2025-01-23 09:15:42,106 - Run 3/5 on device 2
+2025-01-23 09:15:42,170 - Adjusted number of attention heads to 231 for 3703 features
+2025-01-23 09:15:42,736 - Error during training: The size of tensor a (3703) must match the size of tensor b (3696) at non-singleton dimension 2
+2025-01-23 09:15:42,736 - Error on device 2: The size of tensor a (3703) must match the size of tensor b (3696) at non-singleton dimension 2
+2025-01-23 09:15:42,737 - Run 4/5 on device 3
+2025-01-23 09:15:42,801 - Adjusted number of attention heads to 231 for 3703 features
+2025-01-23 09:15:43,368 - Error during training: The size of tensor a (3703) must match the size of tensor b (3696) at non-singleton dimension 2
+2025-01-23 09:15:43,368 - Error on device 3: The size of tensor a (3703) must match the size of tensor b (3696) at non-singleton dimension 2
+2025-01-23 09:15:43,368 - Run 5/5 on device 0
+2025-01-23 09:15:43,432 - Adjusted number of attention heads to 231 for 3703 features
+2025-01-23 09:15:43,996 - Error during training: The size of tensor a (3703) must match the size of tensor b (3696) at non-singleton dimension 2
+2025-01-23 09:15:43,996 - Error on device 0: The size of tensor a (3703) must match the size of tensor b (3696) at non-singleton dimension 2
+2025-01-23 09:15:43,996 - All runs failed for dataset CiteSeer
+2025-01-23 09:15:43,996 - 
+Running enhanced experiments on PubMed
+2025-01-23 09:15:43,996 - Run 1/5 on device 0
+2025-01-23 09:15:44,048 - Adjusted number of attention heads to 31 for 500 features
+2025-01-23 09:15:44,106 - Error during training: The size of tensor a (500) must match the size of tensor b (496) at non-singleton dimension 2
+2025-01-23 09:15:44,106 - Error on device 0: The size of tensor a (500) must match the size of tensor b (496) at non-singleton dimension 2
+2025-01-23 09:15:44,106 - Run 2/5 on device 1
+2025-01-23 09:15:44,167 - Adjusted number of attention heads to 31 for 500 features
+2025-01-23 09:15:44,354 - Error during training: CUDA out of memory. Tried to allocate 1.45 GiB (GPU 1; 23.69 GiB total capacity; 3.00 GiB already allocated; 103.88 MiB free; 3.02 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+2025-01-23 09:15:44,514 - Error on device 1: CUDA out of memory. Tried to allocate 1.45 GiB (GPU 1; 23.69 GiB total capacity; 3.00 GiB already allocated; 103.88 MiB free; 3.02 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+2025-01-23 09:15:44,515 - Falling back to CPU
+2025-01-23 09:15:44,560 - Adjusted number of attention heads to 31 for 500 features
+2025-01-23 09:15:50,782 - Error during training: The size of tensor a (500) must match the size of tensor b (496) at non-singleton dimension 2
+2025-01-23 09:15:50,782 - CPU fallback also failed: The size of tensor a (500) must match the size of tensor b (496) at non-singleton dimension 2
+2025-01-23 09:15:50,997 - Run 3/5 on device 2
+2025-01-23 09:15:51,031 - Adjusted number of attention heads to 31 for 500 features
+2025-01-23 09:15:51,088 - Error during training: The size of tensor a (500) must match the size of tensor b (496) at non-singleton dimension 2
+2025-01-23 09:15:51,089 - Error on device 2: The size of tensor a (500) must match the size of tensor b (496) at non-singleton dimension 2
+2025-01-23 09:15:51,089 - Run 4/5 on device 3
+2025-01-23 09:15:51,122 - Adjusted number of attention heads to 31 for 500 features
+2025-01-23 09:15:51,217 - Error during training: CUDA out of memory. Tried to allocate 1.45 GiB (GPU 3; 23.69 GiB total capacity; 17.49 GiB already allocated; 539.88 MiB free; 17.51 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+2025-01-23 09:15:51,269 - Error on device 3: CUDA out of memory. Tried to allocate 1.45 GiB (GPU 3; 23.69 GiB total capacity; 17.49 GiB already allocated; 539.88 MiB free; 17.51 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+2025-01-23 09:15:51,269 - Falling back to CPU
+2025-01-23 09:15:51,294 - Adjusted number of attention heads to 31 for 500 features
+2025-01-23 09:15:57,366 - Error during training: The size of tensor a (500) must match the size of tensor b (496) at non-singleton dimension 2
+2025-01-23 09:15:57,367 - CPU fallback also failed: The size of tensor a (500) must match the size of tensor b (496) at non-singleton dimension 2
+2025-01-23 09:15:57,578 - Run 5/5 on device 0
+2025-01-23 09:15:57,627 - Adjusted number of attention heads to 31 for 500 features
+2025-01-23 09:15:57,685 - Error during training: The size of tensor a (500) must match the size of tensor b (496) at non-singleton dimension 2
+2025-01-23 09:15:57,685 - Error on device 0: The size of tensor a (500) must match the size of tensor b (496) at non-singleton dimension 2
+2025-01-23 09:15:57,686 - All runs failed for dataset PubMed

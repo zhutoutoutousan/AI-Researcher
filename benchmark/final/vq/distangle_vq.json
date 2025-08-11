@@ -1,0 +1,96 @@
+{
+    "authors": [
+        "Kyle Hsu",
+        "Will Dorrell",
+        "James C. R. Whittington",
+        "Jiajun Wu",
+        "Chelsea Finn"
+    ],
+    "instance_id": "distangle_vq",
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2305.18378v4",
+    "abstract": "In disentangled representation learning, a model is asked to tease apart a\ndataset's underlying sources of variation and represent them independently of\none another. Since the model is provided with no ground truth information about\nthese sources, inductive biases take a paramount role in enabling\ndisentanglement. In this work, we construct an inductive bias towards encoding\nto and decoding from an organized latent space. Concretely, we do this by (i)\nquantizing the latent space into discrete code vectors with a separate\nlearnable scalar codebook per dimension and (ii) applying strong model\nregularization via an unusually high weight decay. Intuitively, the latent\nspace design forces the encoder to combinatorially construct codes from a small\nnumber of distinct scalar values, which in turn enables the decoder to assign a\nconsistent meaning to each value. Regularization then serves to drive the model\ntowards this parsimonious strategy. We demonstrate the broad applicability of\nthis approach by adding it to both basic data-reconstructing (vanilla\nautoencoder) and latent-reconstructing (InfoGAN) generative models. For\nreliable evaluation, we also propose InfoMEC, a new set of metrics for\ndisentanglement that is cohesively grounded in information theory and fixes\nwell-established shortcomings in previous metrics. Together with\nregularization, latent quantization dramatically improves the modularity and\nexplicitness of learned representations on a representative suite of benchmark\ndatasets. In particular, our quantized-latent autoencoder (QLAE) consistently\noutperforms strong methods from prior work in these key disentanglement\nproperties without compromising data reconstruction.",
+    "venue": "Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence",
+    "venue_source": "Crossref",
+    "venue_lookup_time": "2025-01-10T19:25:49.489302",
+    "citations": 18,
+    "topic": "selected",
+    "field": "selected",
+    "target": "Disentanglement via Latent Quantization",
+    "source_papers": [
+        {
+            "reference": "Infogan: interpretable representation learning by information maximizing generative adversarial nets",
+            "rank": 1,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This foundational paper introduced the InfoGAN framework which is fundamentally integrated into the proposed model for improving disentangled representations. The proposed model builds on its mechanism to enhance interpretability through quantization, significantly elevating its performance in disentanglement tasks.",
+            "usage": "Used the InfoGAN framework as a baseline for comparison and to justify the integration of latent quantization into generative adversarial modeling."
+        },
+        {
+            "reference": "Wasserstein generative adversarial networks",
+            "rank": 2,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This study established the groundwork for applying GANs in a more stable manner. The methodologies presented here allowed the authors to integrate these stable generative principles into both autoencoding and latent-reconstructing models, enhancing the robustness of their architecture.",
+            "usage": "Applied to enhance the generative modeling aspect of the proposed model and its latent space architecture."
+        },
+        {
+            "reference": "Learning basic visual concepts with a constrained variational framework",
+            "rank": 3,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This work contextualizes how varying design choices in VAE frameworks can lead to more effective disentangled representations. It served as an important comparative basis to distinguish the proposed model\u2019s unique advantages arising from its latent quantization approach.",
+            "usage": "Cited to compare and contrast the proposed model's performance against other strong baseline models like \u03b2-VAE and \u03b2-TCVAE."
+        },
+        {
+            "reference": "End-to-end optimized image compression",
+            "rank": 4,
+            "type": [
+                "component"
+            ],
+            "justification": "The concepts from this paper about vector quantization were leveraged and modified to promote consistent representation encoding and decoding in the proposed model. This integration of vector quantization techniques laid the groundwork for the innovative latent quantization methodology.",
+            "usage": "Utilized to inform the modifications made in vector quantization to ensure consistent interpretations within the discrete latent code."
+        },
+        {
+            "reference": "A framework for the quantitative evaluation of disentangled representations",
+            "rank": 5,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This study presented the InfoMEC metrics, which were developed to quantitatively evaluate disentangled representations. The results obtained using its metrics were crucial in demonstrating the effectiveness of the proposed approach versus existing alternatives.",
+            "usage": "Metrics developed in this paper were employed to evaluate the modularity, explicitness, and compactness of representations in their experiments."
+        },
+        {
+            "reference": "Estimating mutual information",
+            "rank": 6,
+            "type": [
+                "component"
+            ],
+            "justification": "Provided foundational insights into the computation of mutual information, which is pivotal in assessing the relationships between sources and latents. This work laid the groundwork for measuring the effectiveness of the proposed metrics within this paper.",
+            "usage": "Methods from this citation were used to derive relevant measures for understanding the dependencies between latent variables in the proposed model."
+        },
+        {
+            "reference": "Variational autoencoders and nonlinear ICA: a unifying framework",
+            "rank": 7,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "Provided important theoretical underpinnings about the commonalities between VAEs and disentangled representation learning paradigms, which helped frame the contribution of the proposed model to both fields.",
+            "usage": "Reference was made to strengthen the theoretical context in which the contributions of latent quantization are situated."
+        },
+        {
+            "reference": "Challenges in the unsupervised learning of disentangled representations",
+            "rank": 8,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "Discussed the complexities involved in obtaining organized source spaces, contributing to the rationale for applying the inductive bias exhibited by the proposed model towards more effective disentangled representations.",
+            "usage": "Provided context for why the proposed model's structural approach towards latents was vital in addressing common challenges faced in the field."
+        }
+    ],
+    "task1": "1. The proposed model operates on the task of disentangled representation learning, where the goal is to learn representations that distinctly and independently encode the various underlying sources of variation in a dataset without any ground truth labels.\n\n2. The core techniques used in this paper involve:\n   - **Latent Quantization**: This technique involves quantizing the latent representation into discrete scalar values using separate, learnable codebooks for each dimension.\n   - **Strong Regularization**: Achieved through applying a high weight decay to encourage the proposed approach to utilize a sparse and organized latent space.\n   - **Neural Network Architectures**: A feedforward convolutional encoder and a decoder based on a style-based generator architecture.\n\n3. The purpose and function of each major technical component are:\n   - **Encoder**: Maps input data to a continuous latent space, producing a representation that can later be quantized.\n   - **Latent Quantization**: Converts the continuous latent representations into discrete values based on nearest neighbor assignments to the codebooks, facilitating a structured latent space.\n   - **Decoder**: Reconstructs the data from the quantized latents, learning a mapping from the quantized space back to the original data space.\n   - **Regularization (Weight Decay)**: Encourages the proposed approach to minimize its complexity by penalizing large weights, thus promoting a more parsimonious use of the latent space.\n\n4. Implementation details:\n   - **Key Parameters and Configurations**:\n     - Latent dimensionality (`n_z`): Typically set to twice the number of source variables.\n     - Number of discrete values per codebook (`n_v`): Fixed at 10 in the implementation.\n     - Regularization parameter (weight decay): Should be tuned through a grid search over multiples of 0.001.\n   - **Input/Output Specifications**:\n     - Input to the proposed model is a data point `x` from the dataset, which should be normalized images of size 64x64.\n     - The output is a reconstruction of the input image from the quantized latents, compared using a reconstruction loss.\n   - **Critical Constraints/Requirements**: Ensure that the proposed model can handle continuous inputs and appropriately quantize them into discrete values without losing significant information.\n\n5. Step-by-Step Description of Component Interactions:\n   - Initialize the encoder to map input `x` to a continuous latent `z_c`.\n   - Use the `LatentQuantization` function to quantize `z_c` into discrete values based on the closest entries in the learnable codebooks.\n   - Calculate the quantization loss (`L_quantize`) and the commitment loss (`L_commit`) as part of the training process.\n   - The decoder then takes the quantized latent representation and reconstructs the original data using its internal mapping.\n   - Throughout training, the overall loss combines reconstruction losses and the two quantization losses to optimize the encoder, decoder, and codebooks concurrently.\n\n6. Critical implementation details that affect performance:\n   - The choice of architecture (encoder and decoder design) is essential for enabling effective learning. An expressive architecture, especially for the decoder based on StyleGAN, can significantly influence the interpretability and fidelity of the representations learned.\n   - The use of strong regularization is crucial; too little weight decay may lead to overly complex representations, whereas too much could hinder the learning capacity.\n   - The straight-through gradient estimator is important for ensuring gradients are effectively propagated through the quantization process, thus maintaining the integrity of the network training.\n   - Lastly, the shared codebook design (using separate codebooks for each dimension) ensures more stable optimization and allows for meaningful interpolation between latent states.",
+    "task2": "The primary task or problem domain the research tackles:\n   The research focuses on disentangled representation learning, which aims to learn representations of data that separate the underlying sources of variation in a dataset. This effort is crucial for enabling models to understand and interpret complex data in a meaningful way.\n\nCurrent limitations in existing approaches that motivated this work:\n   Existing approaches to disentangled representation learning face several challenges, including a lack of a formal problem statement that clarifies the goals of disentanglement, difficulties in evaluating the performance of methods due to hyperparameter sensitivity, and an absence of effective inductive biases to enable strong performance in unsupervised settings. The inability to consistently identify and recover the underlying sources of variation in data has hindered progress in the field.\n\nCore challenges the researchers aim to overcome:\n   The researchers seek to address the challenge of designing effective inductive biases that direct algorithms toward uncovering the true underlying sources of variation. They also aim to improve the robustness of evaluation metrics for disentanglement, ensuring that these metrics accurately reflect the quality of the learned representations. By tackling these challenges, the researchers hope to enhance the reliability and interpretability of representations learned from complex datasets.\n\nKey objectives and intended contributions:\n   The key objectives of the research include the development of a novel inductive bias that utilizes latent quantization to structure the latent space in a way that reflects the compositional nature of many real-world datasets. Additionally, the researchers aim to introduce new evaluation metrics grounded in information theory to provide a more accurate assessment of representation quality. The intended contributions of this study are to establish a clearer understanding of disentangled representation learning, provide effective mechanisms for improving such methods, and to enhance the robustness of evaluation techniques within the field. Ultimately, these efforts are aimed at advancing the state-of-the-art in learning representations that are not only effective for computational tasks but also interpretable by humans."
+}

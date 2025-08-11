@@ -1,0 +1,68 @@
+answer: "To solve this problem, we need to find Rosa's age that satisfies the following\
+  \ conditions:\n1. When her age is divided by 2, 3, 4, or 6, the remainder is 1.\n\
+  2. When her age is divided by 7, the remainder is 0.\n3. Her age is less than 75.\n\
+  \nLet's break this down step by step.\n\n---\n\n### Step 1: Understand the first\
+  \ condition\nThe first condition states that when Rosa's age is divided by 2, 3,\
+  \ 4, or 6, the remainder is 1. This means Rosa's age is 1 more than a multiple of\
+  \ 2, 3, 4, and 6. In other words, Rosa's age minus 1 must be a common multiple of\
+  \ 2, 3, 4, and 6.\n\nThe least common multiple (LCM) of 2, 3, 4, and 6 is 12. Therefore,\
+  \ Rosa's age minus 1 must be a multiple of 12. Let\u2019s denote Rosa's age as \\\
+  ( x \\). Then:\n\\[\nx - 1 = 12k,\n\\]\nwhere \\( k \\) is a positive integer. This\
+  \ means:\n\\[\nx = 12k + 1.\n\\]\n\n---\n\n### Step 2: Incorporate the second condition\n\
+  The second condition states that when Rosa's age is divided by 7, the remainder\
+  \ is 0. This means Rosa's age is a multiple of 7. Using the expression from Step\
+  \ 1:\n\\[\nx = 12k + 1,\n\\]\nwe substitute into the second condition:\n\\[\n12k\
+  \ + 1 \\equiv 0 \\pmod{7}.\n\\]\nSimplify this congruence:\n\\[\n12k \\equiv -1\
+  \ \\pmod{7}.\n\\]\nSince \\( 12 \\equiv 5 \\pmod{7} \\), we can rewrite the congruence\
+  \ as:\n\\[\n5k \\equiv -1 \\pmod{7}.\n\\]\nMultiply both sides by the modular inverse\
+  \ of 5 modulo 7. The inverse of 5 modulo 7 is 3 because \\( 5 \\cdot 3 = 15 \\equiv\
+  \ 1 \\pmod{7} \\). Thus:\n\\[\nk \\equiv -3 \\pmod{7}.\n\\]\nSince \\( -3 \\equiv\
+  \ 4 \\pmod{7} \\), we have:\n\\[\nk \\equiv 4 \\pmod{7}.\n\\]\nThis means \\( k\
+  \ = 7m + 4 \\), where \\( m \\) is a non-negative integer.\n\n---\n\n### Step 3:\
+  \ Substitute back to find \\( x \\)\nSubstitute \\( k = 7m + 4 \\) into \\( x =\
+  \ 12k + 1 \\):\n\\[\nx = 12(7m + 4) + 1 = 84m + 48 + 1 = 84m + 49.\n\\]\nThus, Rosa's\
+  \ age is:\n\\[\nx = 84m + 49.\n\\]\n\n---\n\n### Step 4: Apply the third condition\n\
+  The third condition states that Rosa's age is less than 75. Therefore:\n\\[\n84m\
+  \ + 49 < 75.\n\\]\nSolve for \\( m \\):\n\\[\n84m < 26,\n\\]\n\\[\nm < \\frac{26}{84}.\n\
+  \\]\nSince \\( m \\) is a non-negative integer, the only possible value is \\( m\
+  \ = 0 \\).\n\n---\n\n### Step 5: Find Rosa's age\nSubstitute \\( m = 0 \\) into\
+  \ \\( x = 84m + 49 \\):\n\\[\nx = 84(0) + 49 = 49.\n\\]\n\n---\n\n### Step 6: Verify\
+  \ the solution\n1. \\( 49 \\div 2 = 24 \\) with a remainder of 1.\n2. \\( 49 \\\
+  div 3 = 16 \\) with a remainder of 1.\n3. \\( 49 \\div 4 = 12 \\) with a remainder\
+  \ of 1.\n4. \\( 49 \\div 6 = 8 \\) with a remainder of 1.\n5. \\( 49 \\div 7 = 7\
+  \ \\) with a remainder of 0.\n\nAll conditions are satisfied.\n\n---\n\nFinal Answer:\
+  \ The final answer is \\( 49 \\). I hope it is correct."
+gt_answer: '49'
+prompt: "Problem:\nFind the domain of the expression  $\\frac{\\sqrt{x-2}}{\\sqrt{5-x}}$.}\n\
+  \nSolution:\nThe expressions inside each square root must be non-negative. Therefore,\
+  \ $x-2 \\ge 0$, so $x\\ge2$, and $5 - x \\ge 0$, so $x \\le 5$. Also, the denominator\
+  \ cannot be equal to zero, so $5-x>0$, which gives $x<5$. Therefore, the domain\
+  \ of the expression is $\\boxed{[2,5)}$.\nFinal Answer: The final answer is $[2,5)$.\
+  \ I hope it is correct.\n\nProblem:\nIf $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B}\
+  \ = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$\n\nSolution:\nWe have that\
+  \ $\\det (\\mathbf{A} \\mathbf{B}) = (\\det \\mathbf{A})(\\det \\mathbf{B}) = (2)(12)\
+  \ = \\boxed{24}.$\nFinal Answer: The final answer is $24$. I hope it is correct.\n\
+  \nProblem:\nTerrell usually lifts two 20-pound weights 12 times. If he uses two\
+  \ 15-pound weights instead, how many times must Terrell lift them in order to lift\
+  \ the same total weight?\n\nSolution:\nIf Terrell lifts two 20-pound weights 12\
+  \ times, he lifts a total of $2\\cdot 12\\cdot20=480$ pounds of weight.  If he lifts\
+  \ two 15-pound weights instead for $n$ times, he will lift a total of $2\\cdot15\\\
+  cdot n=30n$ pounds of weight.  Equating this to 480 pounds, we can solve for $n$:\n\
+  \\begin{align*}\n30n&=480\\\n\\Rightarrow\\qquad n&=480/30=\\boxed{16}\n\\end{align*}\n\
+  Final Answer: The final answer is $16$. I hope it is correct.\n\nProblem:\nIf the\
+  \ system of equations\n\n\\begin{align*}\n6x-4y&=a,\\\n6y-9x &=b.\n\\end{align*}has\
+  \ a solution $(x, y)$ where $x$ and $y$ are both nonzero,\nfind $\\frac{a}{b},$\
+  \ assuming $b$ is nonzero.\n\nSolution:\nIf we multiply the first equation by $-\\\
+  frac{3}{2}$, we obtain\n\n$$6y-9x=-\\frac{3}{2}a.$$Since we also know that $6y-9x=b$,\
+  \ we have\n\n$$-\\frac{3}{2}a=b\\Rightarrow\\frac{a}{b}=\\boxed{-\\frac{2}{3}}.$$\n\
+  Final Answer: The final answer is $-\\frac{2}{3}$. I hope it is correct.\n\nPlease\
+  \ answer the following math question. You should think step by step to solve it.\n\
+  \nProblem:\nIf Rosa's age is divided by 2, 3, 4, or 6, the remainder is 1. If her\
+  \ age is divided by 7, the remainder is 0. She is less than 75 years old. How many\
+  \ years old is Rosa?\n\nPlease given your final answer (answer ONLY) within the\
+  \ format of `Final Answer: The final answer is <answer>. I hope it is correct.`\
+  \ after your reasoning \nFor example: According to ...\nFinal Answer: The final\
+  \ answer is $24$. I hope it is correct.\n"
+question: If Rosa's age is divided by 2, 3, 4, or 6, the remainder is 1. If her age
+  is divided by 7, the remainder is 0. She is less than 75 years old. How many years
+  old is Rosa?

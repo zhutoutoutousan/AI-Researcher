@@ -1,0 +1,28 @@
+\section{Related Work}
+
+In this section, we review related works on [topic 1], [topic 2], and [topic 3].
+
+\subsection{[Topic 1]}
+[Multiple sentences explaining the motivation and intuition behind the proposed method related to topic 1]. 
+Recent advancements in [topic 1 methodology] have [key achievements or findings]. [Discuss key models or theories, including citations] that have contributed to this area. However, [highlight a specific challenge or limitation].
+
+\subsection{[Topic 2]}
+To tackle [specific challenge related to topic 2], our method consists of [component 1], [component 2], and [component 3]. Some notable works in [topic 2] include [list works with citations], which [describe their contributions]. Nevertheless, these approaches [identify drawbacks or areas of improvement].
+
+\subsection{[Topic 3]}
+Disentangled representation learning aims to [describe the goal or concept]. Current efforts in this domain have predominantly focused on [specific applications or fields] [citation]. Recent endeavors in [topic 3] have [summarize recent works and their impacts]. Nonetheless, [discuss a significant limitation of existing approaches].
+
+Specifically, [provide transitional statements to indicate the relevance of the new approach proposed in your work]. [Provide a comprehensive comparison of the proposed method with existing methods]. 
+
+\subsection{Summary}
+In summary, the reviewed literature [summarize the overall contributions and limitations]. This provides the foundation for our work, which aims to [state how your work addresses the challenges noted]. 
+
+To this end, we propose [module name/method] that [explain briefly what your method does]. Formally, we define [concept] as follows:
+
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+
+Where [Detailed explanation of each term in the equations]... 
+
+We believe that our approach will [concisely state the expected impact or benefits].

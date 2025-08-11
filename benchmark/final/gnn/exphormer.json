@@ -1,0 +1,87 @@
+{
+    "target": "Exphormer: Sparse Transformers for Graphs",
+    "instance_id": "exphormer",
+    "source_papers": [
+      {
+        "reference": "Attention is all you need",
+        "rank": 1,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This seminal paper introduced the Transformer architecture, which serves as a foundational framework for the proposed model. The adaptation of this architecture for graph data is critical for the proposed model's design and functionality.",
+        "usage": "The proposed model is fundamentally built upon the concepts from this study, showcasing how the Transformer model can be effectively utilized in graph learning tasks."
+      },
+      {
+        "reference": "GraphGPS: A General Framework for Scalable Graph Transformers",
+        "rank": 2,
+        "type": [
+          "methodological"
+        ],
+        "justification": "GraphGPS provides a modular framework that integrates local message passing and global attention mechanisms, which are essential for the design of the proposed model. Its innovative approach to combining these methods influences the architecture of the proposed model.",
+        "usage": "The proposed model incorporates the GraphGPS framework to enhance its performance in graph learning tasks, demonstrating the influence of this reference in shaping the methodology."
+      },
+      {
+        "reference": "Graph Attention Networks",
+        "rank": 3,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This study presents the GAT architecture, which utilizes attention mechanisms to aggregate neighbor information for graph nodes. The principles behind GAT are directly relevant to the attention mechanisms in the proposed model.",
+        "usage": "The proposed model leverages the attention strategies introduced in this paper to improve node representation and interaction within the graph."
+      },
+      {
+        "reference": "Performer: Replacing Attention with Linear Complexity",
+        "rank": 4,
+        "type": [
+          "methodological"
+        ],
+        "justification": "The Performer model introduces linear complexity attention mechanisms, which are crucial for improving the efficiency of the proposed model. It directly informs the design choices made to handle large graphs effectively.",
+        "usage": "The proposed model adopts ideas from Performer to implement sparse attention, enabling it to process larger graphs without excessive computational costs."
+      },
+      {
+        "reference": "Big Bird: Transformers for longer sequences",
+        "rank": 5,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "Big Bird explores sparse attention patterns for sequence modeling, which conceptually inspires the attention mechanisms in the proposed model. This reference provides a broader understanding of how to adapt transformers for different data structures.",
+        "usage": "The design of the proposed model's sparse attention mechanisms is influenced by the ideas presented in Big Bird, particularly in tailoring attention to graph structures."
+      },
+      {
+        "reference": "How powerful are graph neural networks?",
+        "rank": 6,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This work outlines the expressivity limits of graph neural networks, highlighting the necessity for enhancements like those provided by the proposed model. It provides a theoretical foundation for why transformer models are advantageous in graph learning.",
+        "usage": "The proposed model addresses the limitations discussed in this paper by incorporating transformer-based approaches to improve graph representation and learning."
+      },
+      {
+        "reference": "Long Range Graph Benchmark",
+        "rank": 7,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This benchmark introduces a set of challenging datasets for evaluating graph models, establishing a rigorous testing ground for the proposed model\u2019s capabilities. It influences the experimental design and validation of the proposed approach.",
+        "usage": "The proposed model is evaluated against the benchmarks established in this study, showcasing its effectiveness in learning long-range dependencies in graph data."
+      }
+    ],
+    "authors": [
+      "Hamed Shirzad",
+      "Ameya Velingker",
+      "Balaji Venkatachalam",
+      "Danica J. Sutherland",
+      "Ali Kemal Sinop"
+    ],
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2303.06147v2",
+    "abstract": "Graph transformers have emerged as a promising architecture for a variety of\ngraph learning and representation tasks. Despite their successes, though, it\nremains challenging to scale graph transformers to large graphs while\nmaintaining accuracy competitive with message-passing networks. In this paper,\nwe introduce Exphormer, a framework for building powerful and scalable graph\ntransformers. Exphormer consists of a sparse attention mechanism based on two\nmechanisms: virtual global nodes and expander graphs, whose mathematical\ncharacteristics, such as spectral expansion, pseduorandomness, and sparsity,\nyield graph transformers with complexity only linear in the size of the graph,\nwhile allowing us to prove desirable theoretical properties of the resulting\ntransformer models. We show that incorporating Exphormer into the\nrecently-proposed GraphGPS framework produces models with competitive empirical\nresults on a wide variety of graph datasets, including state-of-the-art results\non three datasets. We also show that Exphormer can scale to datasets on larger\ngraphs than shown in previous graph transformer architectures. Code can be\nfound at \\url{https://github.com/hamed1375/Exphormer}.",
+    "venue": "International Conference on Machine Learning",
+    "venue_source": "Semantic Scholar",
+    "venue_lookup_time": "2024-11-18T06:29:49.335530",
+    "citations": 70,
+    "topic": "Graph Transformers",
+    "field": "graph_neural_networks",
+    "task1": "To implement the methodology from this paper on the sparse graph transformer architecture, follow these detailed instructions:\n\n1. **Task**: The proposed model is designed for graph learning tasks, particularly focusing on node classification, graph classification, and representation learning on large graphs.\n\n2. **Core Techniques/Algorithms**:\n   - **Sparse Attention Mechanism**: Utilizes expander graphs and global nodes to achieve linear complexity in attention calculations.\n   - **Graph Construction**: Generates interaction graphs based on the input graph using three types of edges: expander graph edges, global nodes edges, and local neighborhood edges.\n\n3. **Purpose and Function of Major Components**:\n   - **Expander Graph Attention**: Provides a sparse connection pattern that allows information propagation between distant nodes while maintaining a linear number of edges.\n   - **Global Attention**: Introduces virtual nodes that connect to all other nodes, facilitating global information flow and serving as a universal approximator.\n   - **Local Neighborhood Attention**: Ensures that each node can attend to its immediate neighbors, preserving local graph structure.\n\n4. **Implementation Details**:\n   - **Key Parameters**:\n     - **Number of Layers**: Typically between 3 to 7 layers depending on the dataset.\n     - **Hidden Dimension**: Common choices range from 32 to 128.\n     - **Number of Heads**: Set to 4 or 8, depending on the complexity of the task.\n     - **Dropout Rate**: Generally between 0.1 to 0.3 to prevent overfitting.\n     - **Expander Degree**: Between 6 to 22, determined through linear search based on performance.\n     - **Number of Virtual Nodes**: Ranges from 1 to 6 based on the dataset.\n   - **Input/Output Specifications**:\n     - **Input**: The proposed model accepts a graph represented as an adjacency matrix and node feature matrix.\n     - **Output**: The output is typically a node classification or graph embedding.\n   - **Constraints**: Ensure that the expander graph is generated correctly; it should be a d-regular graph for optimal performance.\n\n5. **Step-by-Step Interaction of Components**:\n   - Step 1: Construct the input graph and generate the local neighborhood edges based on the adjacency matrix.\n   - Step 2: Generate expander graphs using a random regular expander graph construction method (e.g., using permutations as described).\n   - Step 3: Add a set of global nodes connected to every other node in the graph.\n   - Step 4: Combine these three types of edges to form the interaction graph H, which will be used for attention calculations.\n   - Step 5: Implement the attention mechanism using the interaction graph H, ensuring to compute attention scores using the defined edge types.\n   - Step 6: Process the output through a feedforward layer after the attention step, and use a suitable activation function (e.g., ReLU).\n\n6. **Critical Implementation Details**:\n   - The choice of parameters such as the number of heads and the hidden dimension can significantly affect performance; tuning these parameters is crucial.\n   - Ensure that the proposed model manages memory efficiently, especially when scaling to larger graphs; utilize batch sizes that fit within the GPU memory constraints.\n   - Implement mechanisms to handle edge features effectively, particularly for local neighborhood edges, to enhance the model's expressivity.\n   - Use positional encodings to maintain the order and structure of nodes, which is vital for the proposed model to learn effectively from the graph data.\n\nBy following these steps and guidelines, researchers can effectively reproduce the core methodology of the proposed sparse graph transformer architecture.",
+    "task2": "The primary task or problem domain the research tackles:\nThe research addresses the scalability and effectiveness of graph transformers for various graph learning and representation tasks, particularly in scenarios with large graphs.\n\nCurrent limitations in existing approaches that motivated this work:\nExisting graph transformer models struggle with scalability due to their quadratic complexity in the number of nodes, which limits their applicability to larger datasets. Additionally, these models often do not achieve accuracy levels comparable to message-passing networks in practical settings.\n\nCore challenges the researchers aim to overcome:\nThe researchers aim to overcome the challenges of high computational costs associated with dense attention mechanisms in graph transformers, as well as the expressivity limitations that prevent these models from outperforming traditional message-passing approaches.\n\nKey objectives and intended contributions:\nThe key objectives include developing a new framework that introduces sparse attention mechanisms to enable linear computational complexity concerning the number of nodes and edges. The intended contributions involve providing a scalable architecture that maintains competitive accuracy with message-passing networks while enabling the application of graph transformers to larger graphs than previously feasible."
+  }

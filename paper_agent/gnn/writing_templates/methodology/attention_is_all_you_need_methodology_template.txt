@@ -1,0 +1,55 @@
+\section{Model Architecture}
+
+Most competitive [field/domain] models have a [general structure, e.g., "encoder-decoder structure"]. Here, the encoder maps an input [type of input] to a [type of output representation]. Given this representation, the decoder then generates an [output description] one element at a time. At each step, the model is [specific property, e.g., "auto-regressive"], consuming the previously generated elements as additional input when generating the next.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics{[figure_path]} % Include figure
+    \caption{[Description of the model architecture]}
+\end{figure}
+
+The [Model Name] follows this overall architecture using [brief description of core components].
+
+\subsection{Encoder and Decoder Stacks}
+
+\textbf{Encoder:} The encoder is composed of a stack of $N$ identical layers. Each layer has [number] sub-layers. The first is a [type of mechanism], and the second is a [type of network]. We employ a [specific technique, e.g., "residual connection"] around each of the two sub-layers, followed by [specific technique, e.g., "layer normalization"]. That is, the output of each sub-layer is [formal representation of output]. To facilitate these [specific property], all sub-layers in the model produce outputs of dimension $d_{model}$.
+
+\textbf{Decoder:} The decoder is also composed of a stack of $N$ identical layers. In addition to the sub-layers in each encoder layer, the decoder inserts a [number] additional sub-layer, which performs [specific type of attention]. Similar to the encoder, we employ [specific technique] around each of the sub-layers, followed by [specific technique]. We also modify the [specific sub-layer] to ensure that [specific property, e.g., "positions do not attend to subsequent positions"].
+
+\subsection{Attention}
+
+An attention function can be described as mapping a [type of input, e.g., "query"] and a set of [type of pairs, e.g., "key-value pairs"] to an output, where the query, keys, values, and output are all [type of vectors]. The output is computed as a weighted sum of the values, where the weight assigned to each value is computed by a [description of compatibility function].
+
+\subsubsection{[Specific Attention Type]}
+
+We call our particular attention "[Name of Attention]". The input consists of [description of input dimensions]. We compute the [specific calculation or operation] to obtain the weights on the values.
+
+In practice, we compute the attention function on a set of queries simultaneously, packed together into a matrix $Q$. The keys and values are also packed into matrices $K$ and $V$. We compute the matrix of outputs as follows:
+
+\begin{equation}
+    Attention(Q,K,V) = [specific formula]
+\end{equation}
+
+\subsubsection{Multi-Head Attention}
+
+Instead of performing a single attention function, we found it beneficial to linearly project the queries, keys, and values [number] times with different, learned projections. On each of these projected versions, we perform the attention function in parallel, yielding [output dimension] output values. These are concatenated and [subsequent operations].
+
+\begin{equation}
+    MultiHead(Q,K,V) = [specific formula]
+\end{equation}
+
+\subsection{[Component Name]}
+
+In addition to [previous component], each of the layers contains a [type of network], which is applied to each position separately and identically. This consists of [describe the structure of the network].
+
+\subsection{Embeddings and Softmax}
+
+Similarly to other [type of models], we use [type of embeddings] to convert the input and output tokens to vectors of dimension $d_{model}$. We also use the usual learned transformation and softmax function to convert the output to [description of probabilities].
+
+\subsection{[Positional Encoding/Other Component]}
+
+Since our model contains no [specific component], we must inject some information about [what type of information]. To this end, we [specific actions taken, e.g., "add positional encodings"]. The positional encodings have [description of dimensions and properties].
+
+\section{Why [Specific Component/Method]}
+
+In this section, we compare various aspects of [component type] to [other methods], motivating our use of [specific method] by considering [list of criteria].

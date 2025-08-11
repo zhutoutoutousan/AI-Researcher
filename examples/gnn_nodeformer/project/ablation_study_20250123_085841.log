@@ -1,0 +1,150 @@
+2025-01-23 08:58:41,481 - 
+Running ablation study: baseline
+2025-01-23 08:58:42,670 - Epoch 10: Loss=2.8883, Val Acc=0.0720, Test Acc=0.0910
+2025-01-23 08:58:42,750 - Epoch 20: Loss=2.8949, Val Acc=0.1560, Test Acc=0.1440
+2025-01-23 08:58:42,833 - Epoch 30: Loss=2.8903, Val Acc=0.1620, Test Acc=0.1490
+2025-01-23 08:58:42,915 - Epoch 40: Loss=2.8911, Val Acc=0.1540, Test Acc=0.1430
+2025-01-23 08:58:42,996 - Epoch 50: Loss=2.8902, Val Acc=0.3160, Test Acc=0.3190
+2025-01-23 08:58:43,076 - Epoch 60: Loss=2.8990, Val Acc=0.3220, Test Acc=0.3170
+2025-01-23 08:58:43,157 - Epoch 70: Loss=2.8949, Val Acc=0.1620, Test Acc=0.1490
+2025-01-23 08:58:43,237 - Epoch 80: Loss=2.8858, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:43,318 - Epoch 90: Loss=2.8873, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:43,398 - Epoch 100: Loss=2.8908, Val Acc=0.0720, Test Acc=0.0910
+2025-01-23 08:58:43,478 - Epoch 110: Loss=2.8892, Val Acc=0.3160, Test Acc=0.3170
+2025-01-23 08:58:43,558 - Epoch 120: Loss=2.8893, Val Acc=0.1180, Test Acc=0.1040
+2025-01-23 08:58:43,639 - Epoch 130: Loss=2.8921, Val Acc=0.0720, Test Acc=0.0910
+2025-01-23 08:58:43,719 - Epoch 140: Loss=2.8908, Val Acc=0.1140, Test Acc=0.1030
+2025-01-23 08:58:43,799 - Epoch 150: Loss=2.8887, Val Acc=0.1140, Test Acc=0.1030
+2025-01-23 08:58:43,879 - Epoch 160: Loss=2.8954, Val Acc=0.2880, Test Acc=0.2860
+2025-01-23 08:58:43,959 - Epoch 170: Loss=2.8896, Val Acc=0.1620, Test Acc=0.1490
+2025-01-23 08:58:44,039 - Epoch 180: Loss=2.8910, Val Acc=0.1620, Test Acc=0.1490
+2025-01-23 08:58:44,120 - Epoch 190: Loss=2.8890, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:44,200 - Epoch 200: Loss=2.8869, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:44,200 - Configuration: baseline
+2025-01-23 08:58:44,200 - Best validation accuracy: 0.3220
+2025-01-23 08:58:44,200 - Best test accuracy: 0.3170
+2025-01-23 08:58:44,200 - 
+Running ablation study: no_edge_reg
+2025-01-23 08:58:44,296 - Epoch 10: Loss=1.9534, Val Acc=0.1480, Test Acc=0.1390
+2025-01-23 08:58:44,377 - Epoch 20: Loss=1.9495, Val Acc=0.0740, Test Acc=0.0960
+2025-01-23 08:58:44,457 - Epoch 30: Loss=1.9459, Val Acc=0.0720, Test Acc=0.0910
+2025-01-23 08:58:44,537 - Epoch 40: Loss=1.9426, Val Acc=0.1240, Test Acc=0.1290
+2025-01-23 08:58:44,618 - Epoch 50: Loss=1.9476, Val Acc=0.0880, Test Acc=0.0990
+2025-01-23 08:58:44,698 - Epoch 60: Loss=1.9462, Val Acc=0.1860, Test Acc=0.1630
+2025-01-23 08:58:44,778 - Epoch 70: Loss=1.9437, Val Acc=0.1320, Test Acc=0.1320
+2025-01-23 08:58:44,859 - Epoch 80: Loss=1.9456, Val Acc=0.3160, Test Acc=0.3160
+2025-01-23 08:58:44,939 - Epoch 90: Loss=1.9459, Val Acc=0.1740, Test Acc=0.2120
+2025-01-23 08:58:45,020 - Epoch 100: Loss=1.9492, Val Acc=0.0720, Test Acc=0.0910
+2025-01-23 08:58:45,100 - Epoch 110: Loss=1.9418, Val Acc=0.1560, Test Acc=0.1440
+2025-01-23 08:58:45,180 - Epoch 120: Loss=1.9481, Val Acc=0.1560, Test Acc=0.1440
+2025-01-23 08:58:45,260 - Epoch 130: Loss=1.9493, Val Acc=0.0740, Test Acc=0.0920
+2025-01-23 08:58:45,341 - Epoch 140: Loss=1.9476, Val Acc=0.1140, Test Acc=0.1030
+2025-01-23 08:58:45,421 - Epoch 150: Loss=1.9422, Val Acc=0.1620, Test Acc=0.1490
+2025-01-23 08:58:45,502 - Epoch 160: Loss=1.9474, Val Acc=0.3160, Test Acc=0.3190
+2025-01-23 08:58:45,582 - Epoch 170: Loss=1.9439, Val Acc=0.3160, Test Acc=0.3190
+2025-01-23 08:58:45,662 - Epoch 180: Loss=1.9450, Val Acc=0.3160, Test Acc=0.3190
+2025-01-23 08:58:45,742 - Epoch 190: Loss=1.9453, Val Acc=0.3160, Test Acc=0.3190
+2025-01-23 08:58:45,822 - Epoch 200: Loss=1.9480, Val Acc=0.3160, Test Acc=0.3200
+2025-01-23 08:58:45,825 - Configuration: no_edge_reg
+2025-01-23 08:58:45,826 - Best validation accuracy: 0.3160
+2025-01-23 08:58:45,826 - Best test accuracy: 0.3160
+2025-01-23 08:58:45,826 - 
+Running ablation study: high_temp
+2025-01-23 08:58:45,922 - Epoch 10: Loss=2.1266, Val Acc=0.1140, Test Acc=0.1030
+2025-01-23 08:58:46,005 - Epoch 20: Loss=2.1244, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:46,086 - Epoch 30: Loss=2.1231, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:46,166 - Epoch 40: Loss=2.1254, Val Acc=0.1560, Test Acc=0.1440
+2025-01-23 08:58:46,247 - Epoch 50: Loss=2.1212, Val Acc=0.1560, Test Acc=0.1440
+2025-01-23 08:58:46,327 - Epoch 60: Loss=2.1235, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:46,408 - Epoch 70: Loss=2.1180, Val Acc=0.1140, Test Acc=0.1030
+2025-01-23 08:58:46,488 - Epoch 80: Loss=2.1234, Val Acc=0.1140, Test Acc=0.1030
+2025-01-23 08:58:46,568 - Epoch 90: Loss=2.1259, Val Acc=0.0720, Test Acc=0.0910
+2025-01-23 08:58:46,649 - Epoch 100: Loss=2.1258, Val Acc=0.0720, Test Acc=0.0910
+2025-01-23 08:58:46,729 - Epoch 110: Loss=2.1253, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:46,810 - Epoch 120: Loss=2.1267, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:46,890 - Epoch 130: Loss=2.1214, Val Acc=0.1620, Test Acc=0.1490
+2025-01-23 08:58:46,971 - Epoch 140: Loss=2.1286, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:47,051 - Epoch 150: Loss=2.1256, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:47,131 - Epoch 160: Loss=2.1233, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:47,211 - Epoch 170: Loss=2.1228, Val Acc=0.1560, Test Acc=0.1440
+2025-01-23 08:58:47,291 - Epoch 180: Loss=2.1192, Val Acc=0.1540, Test Acc=0.1440
+2025-01-23 08:58:47,371 - Epoch 190: Loss=2.1278, Val Acc=0.3160, Test Acc=0.3190
+2025-01-23 08:58:47,452 - Epoch 200: Loss=2.1274, Val Acc=0.0720, Test Acc=0.0910
+2025-01-23 08:58:47,452 - Configuration: high_temp
+2025-01-23 08:58:47,452 - Best validation accuracy: 0.3160
+2025-01-23 08:58:47,452 - Best test accuracy: 0.3190
+2025-01-23 08:58:47,452 - 
+Running ablation study: low_temp
+2025-01-23 08:58:47,553 - Epoch 10: Loss=2.9961, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:47,633 - Epoch 20: Loss=3.0007, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:47,714 - Epoch 30: Loss=2.9960, Val Acc=0.1220, Test Acc=0.1180
+2025-01-23 08:58:47,795 - Epoch 40: Loss=2.9932, Val Acc=0.0720, Test Acc=0.0910
+2025-01-23 08:58:47,876 - Epoch 50: Loss=2.9934, Val Acc=0.3140, Test Acc=0.3190
+2025-01-23 08:58:47,957 - Epoch 60: Loss=2.9950, Val Acc=0.3140, Test Acc=0.3180
+2025-01-23 08:58:48,038 - Epoch 70: Loss=2.9954, Val Acc=0.0740, Test Acc=0.0650
+2025-01-23 08:58:48,118 - Epoch 80: Loss=2.9921, Val Acc=0.1140, Test Acc=0.1170
+2025-01-23 08:58:48,199 - Epoch 90: Loss=2.9939, Val Acc=0.0580, Test Acc=0.0890
+2025-01-23 08:58:48,280 - Epoch 100: Loss=2.9950, Val Acc=0.1240, Test Acc=0.1300
+2025-01-23 08:58:48,360 - Epoch 110: Loss=2.9993, Val Acc=0.3060, Test Acc=0.3140
+2025-01-23 08:58:48,442 - Epoch 120: Loss=2.9991, Val Acc=0.3160, Test Acc=0.3130
+2025-01-23 08:58:48,522 - Epoch 130: Loss=2.9928, Val Acc=0.1140, Test Acc=0.1100
+2025-01-23 08:58:48,603 - Epoch 140: Loss=2.9972, Val Acc=0.1660, Test Acc=0.1480
+2025-01-23 08:58:48,683 - Epoch 150: Loss=2.9979, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:48,764 - Epoch 160: Loss=2.9967, Val Acc=0.0860, Test Acc=0.0960
+2025-01-23 08:58:48,845 - Epoch 170: Loss=2.9918, Val Acc=0.1600, Test Acc=0.1430
+2025-01-23 08:58:48,925 - Epoch 180: Loss=2.9956, Val Acc=0.1640, Test Acc=0.1480
+2025-01-23 08:58:49,006 - Epoch 190: Loss=2.9930, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:49,087 - Epoch 200: Loss=2.9955, Val Acc=0.3160, Test Acc=0.3190
+2025-01-23 08:58:49,087 - Configuration: low_temp
+2025-01-23 08:58:49,087 - Best validation accuracy: 0.3160
+2025-01-23 08:58:49,087 - Best test accuracy: 0.3130
+2025-01-23 08:58:49,087 - 
+Running ablation study: deep_model
+2025-01-23 08:58:49,196 - Epoch 10: Loss=2.8903, Val Acc=0.0720, Test Acc=0.0910
+2025-01-23 08:58:49,288 - Epoch 20: Loss=2.8906, Val Acc=0.0720, Test Acc=0.0910
+2025-01-23 08:58:49,382 - Epoch 30: Loss=2.8951, Val Acc=0.1620, Test Acc=0.1490
+2025-01-23 08:58:49,474 - Epoch 40: Loss=2.8972, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:49,565 - Epoch 50: Loss=2.8898, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:49,657 - Epoch 60: Loss=2.8875, Val Acc=0.1560, Test Acc=0.1440
+2025-01-23 08:58:49,749 - Epoch 70: Loss=2.8897, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:49,841 - Epoch 80: Loss=2.8860, Val Acc=0.1620, Test Acc=0.1490
+2025-01-23 08:58:49,933 - Epoch 90: Loss=2.8888, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:50,025 - Epoch 100: Loss=2.8929, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:50,116 - Epoch 110: Loss=2.8969, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:50,209 - Epoch 120: Loss=2.8876, Val Acc=0.3160, Test Acc=0.3190
+2025-01-23 08:58:50,301 - Epoch 130: Loss=2.8918, Val Acc=0.1620, Test Acc=0.1490
+2025-01-23 08:58:50,393 - Epoch 140: Loss=2.8931, Val Acc=0.3160, Test Acc=0.3190
+2025-01-23 08:58:50,485 - Epoch 150: Loss=2.8883, Val Acc=0.1140, Test Acc=0.1030
+2025-01-23 08:58:50,577 - Epoch 160: Loss=2.8925, Val Acc=0.1140, Test Acc=0.1030
+2025-01-23 08:58:50,668 - Epoch 170: Loss=2.8937, Val Acc=0.0580, Test Acc=0.0640
+2025-01-23 08:58:50,760 - Epoch 180: Loss=2.8896, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:50,852 - Epoch 190: Loss=2.8912, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:50,944 - Epoch 200: Loss=2.8910, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:50,945 - Configuration: deep_model
+2025-01-23 08:58:50,945 - Best validation accuracy: 0.3160
+2025-01-23 08:58:50,945 - Best test accuracy: 0.3190
+2025-01-23 08:58:50,945 - 
+Running ablation study: high_dropout
+2025-01-23 08:58:51,045 - Epoch 10: Loss=2.8968, Val Acc=0.3140, Test Acc=0.3200
+2025-01-23 08:58:51,126 - Epoch 20: Loss=2.9103, Val Acc=0.0780, Test Acc=0.1000
+2025-01-23 08:58:51,209 - Epoch 30: Loss=2.8904, Val Acc=0.1620, Test Acc=0.1490
+2025-01-23 08:58:51,290 - Epoch 40: Loss=2.8811, Val Acc=0.0600, Test Acc=0.0670
+2025-01-23 08:58:51,370 - Epoch 50: Loss=2.8828, Val Acc=0.0900, Test Acc=0.0860
+2025-01-23 08:58:51,451 - Epoch 60: Loss=2.8855, Val Acc=0.1140, Test Acc=0.1030
+2025-01-23 08:58:51,531 - Epoch 70: Loss=2.8835, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:51,611 - Epoch 80: Loss=2.8884, Val Acc=0.1240, Test Acc=0.1120
+2025-01-23 08:58:51,691 - Epoch 90: Loss=2.8931, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:51,771 - Epoch 100: Loss=2.8875, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:51,851 - Epoch 110: Loss=2.8948, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:51,931 - Epoch 120: Loss=2.8896, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:52,011 - Epoch 130: Loss=2.8944, Val Acc=0.3120, Test Acc=0.3120
+2025-01-23 08:58:52,091 - Epoch 140: Loss=2.8896, Val Acc=0.3140, Test Acc=0.3120
+2025-01-23 08:58:52,171 - Epoch 150: Loss=2.8969, Val Acc=0.1560, Test Acc=0.1440
+2025-01-23 08:58:52,251 - Epoch 160: Loss=2.8947, Val Acc=0.1560, Test Acc=0.1440
+2025-01-23 08:58:52,331 - Epoch 170: Loss=2.8962, Val Acc=0.1560, Test Acc=0.1440
+2025-01-23 08:58:52,410 - Epoch 180: Loss=2.8936, Val Acc=0.0720, Test Acc=0.0910
+2025-01-23 08:58:52,490 - Epoch 190: Loss=2.8865, Val Acc=0.1220, Test Acc=0.1300
+2025-01-23 08:58:52,571 - Epoch 200: Loss=2.8910, Val Acc=0.1560, Test Acc=0.1440
+2025-01-23 08:58:52,571 - Configuration: high_dropout
+2025-01-23 08:58:52,571 - Best validation accuracy: 0.3140
+2025-01-23 08:58:52,571 - Best test accuracy: 0.3200

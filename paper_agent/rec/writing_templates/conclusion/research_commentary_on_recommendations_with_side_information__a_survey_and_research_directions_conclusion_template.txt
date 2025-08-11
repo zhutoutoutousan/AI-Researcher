@@ -1,0 +1,5 @@
+\section{Conclusion}
+
+This Research Commentary surveyed a considerable amount of [topic or area of research] with the incorporation of [specific elements or methods] from two orthogonal angles: (1) different fundamental [methodologies/approaches] of [subject area], including [method 1], [method 2], [method 3], and [method 4]; and (2) different representations of [relevant data/information types] including [data type 1], [data type 2], [data type 3], and [data type 4]. 
+
+Furthermore, we [further analysis/action taken] and provided new potential directions in [research area or topic]. By doing so, [what the survey or analysis achieves or impacts]. This work aims to benefit both [target audience 1] and [target audience 2] in the area of [broad research area].

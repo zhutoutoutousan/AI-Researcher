@@ -1,0 +1,30 @@
+```latex
+\section{Problem Formulation}
+
+We first introduce the structural data: [description of data types] and then formulate our task.
+
+\subsection{Data Type 1: [Data Type Name]}
+Here we focus on [specific characteristics of the data type]. Let [symbol 1] be a set of [data type entities]. Let [symbol 2] = \{([symbol 3], [symbol 4]) | [symbol 3] \in [symbol 1], [symbol 4] \in [symbol 5] \} be a set of [description of data type interactions], where each ([symbol 3], [symbol 4]) pair indicates that [description of the interaction]. Previous works such as [cite relevant works] have [description of previous approaches and their contributions related to the data type]. As such, [additional context about the data type or its relevance].
+
+\subsection{Data Type 2: [Data Type Name]}
+[Description of another data type and its significance]. Let [symbol 6] be a set of [data type entities] and [symbol 7] be the relation set, which consists of [explanation of the relations involved]. Let [symbol 8] = \{([symbol 9], [symbol 10], [symbol 11]) | [symbol 9], [symbol 10] \in [symbol 6], [symbol 11] \in [symbol 7]\} be a collection of [description of data type triplets], where each ([symbol 9], [symbol 10], [symbol 11]) triplet signifies that [interpretation of the relationship]. For example, [give an example that illustrates the relationship]. With the mappings between [relevant entities], [description of how this data type enhances the previously defined data].
+
+\subsection{Task Description}
+Given the [overview of the first data type] and the [overview of the second data type], our task of [specific task] is to learn a function that can predict [what is being predicted, e.g., likelihood, rating, etc.].
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+To tackle [specific challenge], our method consists of three main components: [Component 1], [Component 2], and [Component 3].
+
+\subsection{Method Overview}
+[Paragraph describing the detailed workflow of the module]
+
+[Several sentences comparing the proposed method with existing approaches]
+
+\subsection{Mathematical Formulation}
+Formally, we define [concept] as follows:
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+where [Detailed explanation of each term in the equations].
+```

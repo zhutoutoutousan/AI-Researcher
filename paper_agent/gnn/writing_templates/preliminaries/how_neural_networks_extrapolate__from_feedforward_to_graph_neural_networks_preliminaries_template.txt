@@ -1,0 +1,23 @@
+\section{Preliminaries}
+
+We begin by introducing our setting. Let $X$ be the domain of interest, e.g., [insert domain description]. The task is to learn an underlying function $g : X \rightarrow \mathbb{R}$ with a training set $\{ (x_i, y_i) \}_{i=1}^{n} \subset D$, where $y_i = g(x_i)$ and $D$ is the support of the training distribution. Previous works have extensively studied [insert previous work focus]; i.e., $D = X$. In contrast, [insert contrast here] addresses predictions on a domain $X$ that is larger than the support of the training distribution $D$. We will say a model extrapolates well if it has a small extrapolation error.
+
+\textbf{Definition 1.} (Extrapolation error). Let $f : X \rightarrow \mathbb{R}$ be a model trained on $\{ (x_i, y_i) \}_{i=1}^{n} \subset D$ with underlying function $g : X \rightarrow \mathbb{R}$. Let $P$ be a distribution over $X \setminus D$ and let $\ell : \mathbb{R} \times \mathbb{R} \rightarrow \mathbb{R}$ be a loss function. We define the extrapolation error of $f$ as $E_{x \sim P} [ \ell (f(x), g(x)) ]$.
+
+We focus on [insert method focus, e.g., types of models] trained by [insert training method, e.g., optimization method] with [insert loss type, e.g., specific loss function]. We study [insert number and types of architectures or models].
+
+\subsection{Module/Architecture Name}
+
+[Provide a brief introduction to the module/architecture. Multiple sentences explaining the motivation and intuition behind the proposed method.]
+
+Let $G$ be [insert description relevant to the architecture, e.g., "a graph" or "a structured network"]. Each [insert component, e.g., "node" or "feature"] [insert component details, e.g., "has a feature vector"]. [Briefly discuss the initial state or properties of the model or architecture. Use several sentences explaining the detailed workflow of the module.]
+
+For [insert iterations or processes, e.g., "iteration $k$"], the component is updated by [insert updating process]. Specifically:
+
+\begin{equation}
+[Insert mathematical formulation of the key components.]
+\end{equation}
+
+where [insert explanation of components in the equation].
+
+The final output is [insert description of the output]. We refer to [insert definitions for steps within the module]. Previous works typically use [insert known methods]. Our results indicate why [insert insight or contribution from your method compared to existing approaches].

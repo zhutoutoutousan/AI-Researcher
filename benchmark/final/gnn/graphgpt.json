@@ -1,0 +1,99 @@
+{
+    "target": "GraphGPT: Graph Instruction Tuning for Large Language Models",
+    "instance_id": "graphgpt",
+    "source_papers": [
+      {
+        "reference": "Graph Neural Networks: A Review of Methods and Applications",
+        "rank": 1,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This paper provides foundational concepts and methodologies related to Graph Neural Networks (GNNs), which are crucial for understanding graph structures and generalization capabilities in the context of the proposed model framework.",
+        "usage": "Core methodologies of GNNs were integrated into the proposed model framework to enhance understanding of graph data."
+      },
+      {
+        "reference": "Deep Graph Infomax",
+        "rank": 2,
+        "type": [
+          "component"
+        ],
+        "justification": "This study presents advancements in self-supervised learning, particularly through the Deep Graph Infomax (DGI) technique, which was essential for incorporating self-supervised signals into the proposed model's instruction tuning process.",
+        "usage": "The DGI approach was used to enhance self-supervision in the instruction tuning of the proposed model."
+      },
+      {
+        "reference": "Semi-Supervised Classification with Graph Convolutional Networks",
+        "rank": 3,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This work discusses the adaptation of convolutional networks to graph data, providing critical insights into feature representation that bolstered the proposed model's generalization capabilities.",
+        "usage": "The concepts from GCNs were adapted for improving generalization in zero-shot learning scenarios."
+      },
+      {
+        "reference": "Attention is All You Need",
+        "rank": 4,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This seminal paper introduces self-attention mechanisms, which are pivotal in the architecture of the proposed model for capturing complex dependencies in graph data.",
+        "usage": "Self-attention principles were utilized in the proposed model to effectively manage graph structural information."
+      },
+      {
+        "reference": "Graph Attention Networks",
+        "rank": 5,
+        "type": [
+          "component"
+        ],
+        "justification": "This paper elaborates on attention mechanisms tailored for graph data, which were instrumental in improving information aggregation within the proposed model.",
+        "usage": "Attention mechanisms from GATs were integrated to enhance the proposed model's performance on graph tasks."
+      },
+      {
+        "reference": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "rank": 6,
+        "type": [
+          "methodological"
+        ],
+        "justification": "BERT's text encoding techniques provided a robust method for integrating textual information into the proposed model framework, allowing for effective text-graph alignment.",
+        "usage": "BERT's architecture was adapted for encoding text in relation to graph data."
+      },
+      {
+        "reference": "Learning Transferable Visual Models From Natural Language Supervision",
+        "rank": 7,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This study's exploration of self-supervised signals inspired the design of instruction tuning within the proposed model, emphasizing the need for robust pre-training methods.",
+        "usage": "The design of self-supervised instruction tuning in the proposed model was influenced by the methodologies proposed in this paper."
+      },
+      {
+        "reference": "Gpt-gnn: Generative pre-training of graph neural networks",
+        "rank": 8,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This study addresses generative pre-training for GNNs, providing a conceptual basis for integrating generative aspects into the proposed model framework.",
+        "usage": "The generative pre-training concepts informed the development of the proposed model's learning strategies."
+      }
+    ],
+    "authors": [
+      "Jiabin Tang",
+      "Yuhao Yang",
+      "Wei Wei",
+      "Lei Shi",
+      "Lixin Su",
+      "Suqi Cheng",
+      "Dawei Yin",
+      "Chao Huang"
+    ],
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2310.13023v3",
+    "abstract": "Graph Neural Networks (GNNs) have evolved to understand graph structures\nthrough recursive exchanges and aggregations among nodes. To enhance\nrobustness, self-supervised learning (SSL) has become a vital tool for data\naugmentation. Traditional methods often depend on fine-tuning with\ntask-specific labels, limiting their effectiveness when labeled data is scarce.\nOur research tackles this by advancing graph model generalization in zero-shot\nlearning environments. Inspired by the success of large language models (LLMs),\nwe aim to create a graph-oriented LLM capable of exceptional generalization\nacross various datasets and tasks without relying on downstream graph data. We\nintroduce the GraphGPT framework, which integrates LLMs with graph structural\nknowledge through graph instruction tuning. This framework includes a\ntext-graph grounding component to link textual and graph structures and a\ndual-stage instruction tuning approach with a lightweight graph-text alignment\nprojector. These innovations allow LLMs to comprehend complex graph structures\nand enhance adaptability across diverse datasets and tasks. Our framework\ndemonstrates superior generalization in both supervised and zero-shot graph\nlearning tasks, surpassing existing benchmarks. The open-sourced model\nimplementation of our GraphGPT is available at\nhttps://github.com/HKUDS/GraphGPT.",
+    "venue": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "venue_source": "Semantic Scholar",
+    "venue_lookup_time": "2024-11-19T16:38:51.075279",
+    "citations": 0,
+    "topic": "GraphGPT Graph Instruction Tuning for Large Language Models",
+    "field": "preselected",
+    "task1": "To implement the core methodology of the research presented in this paper, follow these detailed instructions:\n\n1. **Task**: The proposed model is designed for graph instruction tuning, enhancing the adaptability and generalization of large language models (LLMs) in graph learning tasks, specifically in supervised and zero-shot learning scenarios.\n\n2. **Core Techniques/Algorithms**: \n   - **Graph Neural Network (GNN) Encoder**: Use a message-passing architecture such as Graph Convolutional Network (GCN) or Graph Transformer Networks (GTNs) to encode graph structural information.\n   - **Text Encoder**: Utilize a pre-trained transformer model (e.g., BERT) to encode textual representations associated with graph nodes.\n   - **Dual-Stage Instruction Tuning**: This includes self-supervised instruction tuning and task-specific instruction tuning.\n   - **Lightweight Graph-Text Alignment Projector**: A simple linear layer to align graph tokens with text tokens.\n   - **Chain-of-Thought (CoT) Distillation**: A technique to enhance the reasoning capabilities of the LLM by integrating step-by-step reasoning.\n\n3. **Purpose and Function**:\n   - **GNN Encoder**: Extracts structural features from the graph to inform the LLM about the relationships between nodes.\n   - **Text Encoder**: Encodes node-related textual information to facilitate alignment with graph structure.\n   - **Instruction Tuning**: Adjusts the LLM's parameters to better understand and perform graph-related tasks.\n   - **Alignment Projector**: Bridges the gap between graph and text modalities, ensuring coherent integration.\n   - **CoT Distillation**: Improves logical reasoning in graph-related predictions.\n\n4. **Implementation Details**:\n   - **GNN Encoder**: Choose a backbone (GCN or GTN). Key parameters include the number of layers (l), learning rate (e.g., 2e-3), and activation function (e.g., ReLU). Input is the adjacency matrix (A) and feature matrix (X); output is the encoded graph representation.\n   - **Text Encoder**: Use a transformer model, ensuring the input consists of the text associated with each graph node. Normalize the output representations.\n   - **Alignment Projector**: Implement a linear layer to project graph representations to align with text representations. Output should match the number of graph tokens.\n   - **Instruction Tuning**: \n     - Self-supervised stage: Use unlabeled graph structures to create instructions for the LLM. Generate prompts that include graph tokens and human questions.\n     - Task-specific stage: Fine-tune the LLM with labeled data, modifying the parameters of the alignment projector while keeping other components fixed.\n   - **CoT Distillation**: Generate reasoning prompts using a powerful LLM and refine the reasoning capabilities of your model.\n\n5. **Step-by-Step Interaction**:\n   - Start by encoding the graph using the GNN encoder. Pass the graph's adjacency and feature matrices.\n   - Simultaneously encode the node-associated text using the text encoder.\n   - Normalize and align the outputs of both encoders using the lightweight alignment projector.\n   - In the self-supervised instruction tuning stage, generate graph matching tasks to inform the LLM using unlabeled data.\n   - Proceed to the task-specific instruction tuning, where you provide labeled examples to adapt the LLM's reasoning for specific graph tasks.\n   - Incorporate CoT techniques to enhance the proposed model's reasoning abilities by distilling knowledge from a larger pre-trained model.\n\n6. **Critical Implementation Details**:\n   - Ensure that the parameters of the GNN and text encoder are properly initialized and that their representations are appropriately normalized.\n   - The batch sizes during training should be managed to avoid memory overflow, especially when tuning the LLM parameters.\n   - Monitor the learning rates and warmup ratios to stabilize the training process, particularly for the alignment projector.\n   - During evaluation, assess both the accuracy and generalization ability of the proposed model across different graph datasets and tasks to ensure robustness.\n\nBy following these instructions, researchers can effectively reproduce the core methodology of the proposed framework in this study without requiring further reading.",
+    "task2": "1. The primary task of this research is to improve the generalization capabilities of graph models in zero-shot learning scenarios by integrating large language models (LLMs) with graph structural knowledge.\n\n2. Existing approaches often rely heavily on supervised learning and task-specific labels, which limits their robustness and generalization capabilities, especially in situations where labeled data is scarce or unavailable.\n\n3. The core challenges the researchers aim to overcome include achieving an effective alignment between graph structural information and language representations, guiding LLMs to understand complex graph structures, and enhancing step-by-step reasoning abilities for complex graph learning tasks.\n\n4. The key objectives and intended contributions of this study are to develop a graph-oriented LLM framework that enhances generalization across diverse datasets and tasks, to introduce a dual-stage instruction tuning paradigm that leverages self-supervised learning signals, and to establish a method for aligning graph knowledge with language understanding, thereby improving the adaptability of LLMs for various graph learning tasks."
+  }

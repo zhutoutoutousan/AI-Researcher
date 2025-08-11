@@ -1,0 +1,47 @@
+\section{[SECTION TITLE]}
+
+In this section, we provide theoretical motivation for a specific [domain/technique] that we will use in the rest of this paper. We consider a [describe the model/system] with the following [component/structure]:
+
+\begin{equation}
+[Mathematical representation of the model/system]
+\end{equation}
+
+Here, [explain terms and variables in the equation]. In the following, we show that the form of this [model/system] can be motivated via [briefly state concept or method being referenced].
+
+\subsection{[SUBSECTION TITLE]}
+
+We consider [discuss specific aspect of the method] defined as [conceptual definition or established method]:
+
+\begin{equation}
+[Mathematical representation of the process]
+\end{equation}
+
+where [define terms, matrices, or other notation]. Specifically, we can understand [key concept or component]. Evaluating [equation or concept] is [describe computational complexity or relevant challenges]. To circumvent this problem, it was suggested in [reference] that [briefly state proposed solution or alternative method].
+
+Revisiting our definition of [conceptual process], we now have:
+
+\begin{equation}
+[Updated mathematical expression]
+\end{equation}
+
+with [describe implications/findings from this expression]. Note that this expression is now [describe characteristics or properties]. The complexity of evaluating [equation] is [describe complexity in terms of variables].
+
+\subsection{[ANOTHER SUBSECTION TITLE]}
+
+A [describe main goal of this subsection] can therefore be built by [briefly describe the process or components]. Now, consider [describe specific condition or assumption being made, e.g., a limit]. In this way, [describe expected outcomes or benefits of this approach].
+
+Furthermore, we intuitively expect that [state hypothesis or expected findings]. In this context, we can simplify [reference a previous equation or concept]:
+
+\begin{equation}
+[Further simplified expression]
+\end{equation}
+
+with [define new parameters or variables]. [Discuss potential issues or considerations]. To alleviate this problem, we introduce [describe solution or adjustment].
+
+We can generalize this definition to a [describe the broader framework or model] as follows:
+
+\begin{equation}
+[General mathematical expression]
+\end{equation}
+
+where [explain what each term or variable represents]. This [operation/component] has complexity [state complexity in terms of variables], as [describe implementation or computational details].

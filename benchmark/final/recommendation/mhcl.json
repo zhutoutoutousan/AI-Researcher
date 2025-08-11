@@ -1,0 +1,88 @@
+{
+    "target": "Multi-Channel Hypergraph Contrastive Learning for Matrix Completion",
+    "instance_id": "mhcl",
+    "source_papers": [
+      {
+        "reference": "Graph convolutional matrix completion",
+        "rank": 1,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This paper provides a foundational methodology for utilizing graph neural networks for matrix completion tasks. It presents a GNN-based approach that interprets the rating matrix as a bipartite graph, which is crucial for the proposed model framework.",
+        "usage": "The authors built upon this foundational approach by refining the node representation process using a GNN encoder and decoder, which directly influenced the design of the proposed model."
+      },
+      {
+        "reference": "Music recommendation by unified hypergraph: combining social media information and music content",
+        "rank": 2,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This paper introduces the concept of hypergraphs in the context of recommendation systems, emphasizing their flexibility and potential to capture complex relationships, which inspired the hypergraph structures in the proposed model.",
+        "usage": "The authors adapted the concept of hypergraphs to dynamically learn structures that enhance the representation of user-item interactions in the proposed model."
+      },
+      {
+        "reference": "Inductive matrix completion based on graph neural networks",
+        "rank": 3,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This work extends GNNs for matrix completion by introducing inductive learning, which is critical for the adaptive capabilities of the proposed model.",
+        "usage": "The authors leveraged inductive learning principles from this study to enhance the proposed model's performance in predicting user-item interactions."
+      },
+      {
+        "reference": "Dynamic Hypergraph Neural Networks",
+        "rank": 4,
+        "type": [
+          "component"
+        ],
+        "justification": "This paper discusses dynamic hypergraph structures that improve collaborative filtering, providing a mechanism that was critical for addressing over-smoothing issues in the proposed model.",
+        "usage": "The authors incorporated dynamic learning mechanisms for hypergraph structures to capture high-order dependencies among nodes effectively."
+      },
+      {
+        "reference": "Neural network matrix factorization",
+        "rank": 5,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This foundational work on matrix factorization presents traditional approaches that are integral to understanding modern matrix completion techniques.",
+        "usage": "The authors enhanced the traditional matrix factorization approach by integrating it with GNNs, which helped improve prediction accuracy."
+      },
+      {
+        "reference": "Lightgcn: Simplifying and powering graph convolution network for recommendation",
+        "rank": 6,
+        "type": [
+          "component"
+        ],
+        "justification": "This paper simplifies GNN methods for recommendations, emphasizing neighborhood aggregation, which was adapted in the proposed model to improve the efficiency of node representation.",
+        "usage": "The authors utilized lessons from this paper to simplify the proposed model while enhancing its performance through attention mechanisms."
+      },
+      {
+        "reference": "A review on matrix completion for recommender systems",
+        "rank": 7,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This review outlines the key challenges in matrix completion, such as data sparsity and long-tail distributions, shaping the research direction for the proposed model.",
+        "usage": "The authors addressed these outlined challenges by proposing specific strategies within the proposed model framework to enhance recommendation performance."
+      }
+    ],
+    "authors": [
+      "Xiang Li",
+      "Changsheng Shui",
+      "Yanwei Yu",
+      "Chao Huang",
+      "Zhongying Zhao",
+      "Junyu Dong"
+    ],
+    "year": 2024,
+    "url": "http://arxiv.org/abs/2411.01376v1",
+    "abstract": "Rating is a typical user explicit feedback that visually reflects how much a\nuser likes a related item. The (rating) matrix completion is essentially a\nrating prediction process, which is also a significant problem in recommender\nsystems. Recently, graph neural networks (GNNs) have been widely used in matrix\ncompletion, which captures users' preferences over items by formulating a\nrating matrix as a bipartite graph. However, existing methods are susceptible\ndue to data sparsity and long-tail distribution in real-world scenarios.\nMoreover, the messaging mechanism of GNNs makes it difficult to capture\nhigh-order correlations and constraints between nodes, which are essentially\nuseful in recommendation tasks. To tackle these challenges, we propose a\nMulti-Channel Hypergraph Contrastive Learning framework for matrix completion,\nnamed MHCL. Specifically, MHCL adaptively learns hypergraph structures to\ncapture high-order correlations between nodes and jointly captures local and\nglobal collaborative relationships through attention-based cross-view\naggregation. Additionally, to consider the magnitude and order information of\nratings, we treat different rating subgraphs as different channels, encourage\nalignment between adjacent ratings, and further achieve the mutual enhancement\nbetween different ratings through multi-channel cross-rating contrastive\nlearning. Extensive experiments on five public datasets demonstrate that the\nproposed method significantly outperforms the current state-of-the-art\napproaches.",
+    "venue": "Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "venue_source": "Crossref",
+    "venue_lookup_time": "2024-11-19T16:33:22.729703",
+    "citations": 0,
+    "topic": "Hypergraph contrastive collaborative filtering",
+    "field": "preselected",
+    "task1": "To implement the proposed approach methodology for matrix completion, follow these steps:\n\n1. **Task Definition**: The proposed model is designed to perform matrix completion by predicting missing entries in a user-item rating matrix, which is represented as a bipartite graph.\n\n2. **Core Techniques**:\n   - **Subgraph Partition and Graph Convolution**: Partition the bipartite graph into multiple subgraphs based on different rating types and apply graph convolution to capture local collaborative signals.\n   - **Multi-Channel Cross-Rating Contrastive Learning**: Treat each rating subgraph as a channel and use contrastive learning to improve the relationship between adjacent ratings.\n   - **Adaptive Hypergraph Structure Learning**: Dynamically create hypergraphs for users and items to capture high-order relationships.\n   - **Attention-Based Cross-View Aggregation**: Aggregate local and global node representations to produce a robust final representation.\n\n3. **Component Functions**:\n   - **Graph Convolution**: Extracts local features from each rating subgraph. Key parameters include the number of layers (typically set between 1 to 5) and the embedding dimension (suggested range: 30 to 1200).\n   - **Contrastive Learning**: Enhances representation by aligning embeddings from adjacent rating subgraphs, using the InfoNCE loss with a temperature parameter (typically set to around 0.1).\n   - **Hypergraph Learning**: Utilizes an MLP to compute hyperedge assignments, capturing the relationships among nodes of the same type.\n   - **Attention Mechanism**: Computes relevance scores for neighboring ratings to aggregate information effectively.\n\n4. **Implementation Details**:\n   - **Input Specifications**: The input consists of a user-item rating matrix, partitioned into multiple subgraphs based on rating types. Each node should have embeddings initialized from a learnable matrix.\n   - **Output Specifications**: The proposed model outputs a reconstructed rating matrix that predicts the missing ratings.\n   - **Key Parameters**:\n     - Number of hyperedges can be tuned between 8 to 128.\n     - Use a bilinear decoder for reconstructions, applying Cross-Entropy loss.\n   - **Constraints**: Ensure that the proposed model accommodates different rating scales (e.g., 5-point, 10-point), and consider mapping tasks to a standard scale for contrastive learning.\n\n5. **Step-by-Step Interaction**:\n   - **Step 1**: Initialize node embeddings for users and items based on indices and create subgraphs for each rating type.\n   - **Step 2**: Apply graph convolutions to each subgraph to capture local topological features, resulting in local embeddings.\n   - **Step 3**: Implement the multi-channel contrastive learning mechanism to promote alignment between adjacent rating embeddings.\n   - **Step 4**: Construct hypergraphs using the learned embeddings to incorporate high-order relationships.\n   - **Step 5**: Aggregate local and global embeddings using attention mechanisms to produce final user and item representations.\n   - **Step 6**: Output the predicted ratings using a bilinear decoder, trained under the specified loss functions.\n\n6. **Critical Performance Details**:\n   - Monitor the balance of hyperparameters (e.g., contrastive learning weights) to avoid diminishing returns in proposed model performance.\n   - Utilize early stopping to prevent overfitting during training.\n   - The proposed model's total time complexity should be kept in mind, with specific attention to the propagation layers and the number of hyperedges, as these impact efficiency and scalability.\n\nBy following these instructions, researchers can implement the core methodology of this study framework for matrix completion tasks effectively.",
+    "task2": "1. The primary task or problem domain the research tackles:\nThis research addresses the problem of matrix completion, particularly in the context of recommender systems, where the goal is to predict missing entries in a user-item rating matrix. It emphasizes the challenge of accurately predicting user preferences based on incomplete data.\n\n2. Current limitations in existing approaches that motivated this work:\nExisting approaches, particularly those utilizing graph neural networks (GNNs), face significant limitations such as susceptibility to data sparsity and long-tail distributions. These methods often struggle to capture high-order correlations and complex relationships due to their reliance on simple bipartite graph structures, which can lead to noise and over-smoothing issues. Furthermore, many approaches overlook the ordinal nature and magnitude of ratings, which can affect the accuracy of predictions.\n\n3. Core challenges the researchers aim to overcome:\nThe researchers aim to overcome several challenges, including:\n   - Enhancing the ability to capture high-order correlations between users and items.\n   - Addressing data sparsity and long-tail distribution issues that hinder the effectiveness of current models.\n   - Accurately representing the magnitude and order of ratings to improve prediction quality.\n\n4. Key objectives and intended contributions:\nThe key objectives of this research include:\n   - Developing a framework that can dynamically learn hypergraph structures to better represent user-item relationships and high-order interactions.\n   - Implementing a multi-channel learning approach that enhances the representation of different rating types and their interrelationships.\n   - Introducing a mechanism for attention-based aggregation of information from diverse perspectives to improve the final representations of users and items.\n   - Ultimately, the intended contributions are to provide a more robust and effective solution for matrix completion that improves recommendation performance, especially in scenarios characterized by data sparsity and unequal user-item interaction distributions."
+  }

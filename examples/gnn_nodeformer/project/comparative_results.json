@@ -1,0 +1,20 @@
+{
+    "Cora": {
+        "mean_val_acc": 0.31520000000000004,
+        "std_val_acc": 0.0030331495217978954,
+        "mean_test_acc": 0.3172,
+        "std_test_acc": 0.004024923779070377
+    },
+    "CiteSeer": {
+        "mean_val_acc": 0.2332,
+        "std_val_acc": 0.0026832870207726955,
+        "mean_test_acc": 0.181,
+        "std_test_acc": 0.0
+    },
+    "PubMed": {
+        "mean_val_acc": 0.4168,
+        "std_val_acc": 0.0017888447036966681,
+        "mean_test_acc": 0.4072,
+        "std_test_acc": 0.0004472078289836645
+    }
+}

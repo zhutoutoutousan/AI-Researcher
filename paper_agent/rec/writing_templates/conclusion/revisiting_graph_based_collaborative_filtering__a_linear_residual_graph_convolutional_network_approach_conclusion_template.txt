@@ -1,0 +1,23 @@
+\section{Conclusion}
+
+In this paper, we revisited [briefly describe the foundational topic or current state of the field], and proposed [module name] to address [specific challenge]. 
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method.]
+
+The [module name] was mainly composed of [number] parts: First, [describe the first part and its significance]. Second, [describe the second part and its significance]. 
+
+Specifically, [A paragraph describing the detailed workflow of the module].
+
+Extensive experimental results [briefly outline results or findings] clearly showed the effectiveness and efficiency of our proposed model. 
+
+Furthermore, we compared our method with existing approaches, highlighting [Several sentences comparing the proposed method with existing approaches].
+
+To this end, we formally define [concept or mathematical formulation] as follows:
+
+\begin{equation}
+    [Insert key mathematical formulation here]
+\end{equation}
+
+where [Detailed explanation of each term in the equations].
+
+In the future, we aim to [describe future research directions or expansions on the current work].

@@ -1,0 +1,105 @@
+answer: "To determine which student has the greatest average speed, we need to analyze\
+  \ the graph. The graph plots distance (y-axis) against time (x-axis). The average\
+  \ speed of a student is given by the formula:\n\n\\[\n\\text{Average Speed} = \\\
+  frac{\\text{Distance}}{\\text{Time}}\n\\]\n\nFrom the graph, we can estimate the\
+  \ coordinates of each student's position:\n\n- **Evelyn**: (1.25, 4.5)\n- **Briana**:\
+  \ (2.5, 2.2)\n- **Carla**: (4.25, 5.2)\n- **Debra**: (5.6, 2.8)\n- **Angela**: (6.8,\
+  \ 1.4)\n\nNow, let's calculate the average speed for each student:\n\n1. **Evelyn**:\n\
+  \   \\[\n   \\text{Average Speed} = \\frac{4.5}{1.25} = 3.6\n   \\]\n\n2. **Briana**:\n\
+  \   \\[\n   \\text{Average Speed} = \\frac{2.2}{2.5} = 0.88\n   \\]\n\n3. **Carla**:\n\
+  \   \\[\n   \\text{Average Speed} = \\frac{5.2}{4.25} \\approx 1.22\n   \\]\n\n\
+  4. **Debra**:\n   \\[\n   \\text{Average Speed} = \\frac{2.8}{5.6} = 0.5\n   \\\
+  ]\n\n5. **Angela**:\n   \\[\n   \\text{Average Speed} = \\frac{1.4}{6.8} \\approx\
+  \ 0.206\n   \\]\n\nFrom these calculations, **Evelyn** has the greatest average\
+  \ speed of **3.6**.\n\nFinal Answer: The final answer is Evelyn. I hope it is correct."
+gt_answer: \text{Evelyn}
+prompt: "Problem:\nFind the domain of the expression  $\\frac{\\sqrt{x-2}}{\\sqrt{5-x}}$.}\n\
+  \nSolution:\nThe expressions inside each square root must be non-negative. Therefore,\
+  \ $x-2 \\ge 0$, so $x\\ge2$, and $5 - x \\ge 0$, so $x \\le 5$. Also, the denominator\
+  \ cannot be equal to zero, so $5-x>0$, which gives $x<5$. Therefore, the domain\
+  \ of the expression is $\\boxed{[2,5)}$.\nFinal Answer: The final answer is $[2,5)$.\
+  \ I hope it is correct.\n\nProblem:\nIf $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B}\
+  \ = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$\n\nSolution:\nWe have that\
+  \ $\\det (\\mathbf{A} \\mathbf{B}) = (\\det \\mathbf{A})(\\det \\mathbf{B}) = (2)(12)\
+  \ = \\boxed{24}.$\nFinal Answer: The final answer is $24$. I hope it is correct.\n\
+  \nProblem:\nTerrell usually lifts two 20-pound weights 12 times. If he uses two\
+  \ 15-pound weights instead, how many times must Terrell lift them in order to lift\
+  \ the same total weight?\n\nSolution:\nIf Terrell lifts two 20-pound weights 12\
+  \ times, he lifts a total of $2\\cdot 12\\cdot20=480$ pounds of weight.  If he lifts\
+  \ two 15-pound weights instead for $n$ times, he will lift a total of $2\\cdot15\\\
+  cdot n=30n$ pounds of weight.  Equating this to 480 pounds, we can solve for $n$:\n\
+  \\begin{align*}\n30n&=480\\\n\\Rightarrow\\qquad n&=480/30=\\boxed{16}\n\\end{align*}\n\
+  Final Answer: The final answer is $16$. I hope it is correct.\n\nProblem:\nIf the\
+  \ system of equations\n\n\\begin{align*}\n6x-4y&=a,\\\n6y-9x &=b.\n\\end{align*}has\
+  \ a solution $(x, y)$ where $x$ and $y$ are both nonzero,\nfind $\\frac{a}{b},$\
+  \ assuming $b$ is nonzero.\n\nSolution:\nIf we multiply the first equation by $-\\\
+  frac{3}{2}$, we obtain\n\n$$6y-9x=-\\frac{3}{2}a.$$Since we also know that $6y-9x=b$,\
+  \ we have\n\n$$-\\frac{3}{2}a=b\\Rightarrow\\frac{a}{b}=\\boxed{-\\frac{2}{3}}.$$\n\
+  Final Answer: The final answer is $-\\frac{2}{3}$. I hope it is correct.\n\nPlease\
+  \ answer the following math question. You should think step by step to solve it.\n\
+  \nProblem:\nThe results of a cross-country team's training run are graphed below.\
+  \ Which student has the greatest average speed? [asy]\nfor ( int i = 1; i <= 7;\
+  \ ++i )\n{\n\ndraw((i,0)--(i,6));\n}\n\nfor ( int i = 1; i <= 5; ++i )\n{\n\ndraw((0,i)--(8,i));\n\
+  }\ndraw((-0.5,0)--(8,0), linewidth(1));\ndraw((0,-0.5)--(0,6), linewidth(1));\n\
+  label(\"$O$\", (0,0), SW);\nlabel(scale(.85)*rotate(90)*\"distance\", (0, 3), W);\n\
+  label(scale(.85)*\"time\", (4, 0), S);\ndot((1.25, 4.5));\nlabel(scale(.85)*\"Evelyn\"\
+  , (1.25, 4.8), N);\ndot((2.5, 2.2));\nlabel(scale(.85)*\"Briana\", (2.5, 2.2), S);\n\
+  dot((4.25,5.2));\nlabel(scale(.85)*\"Carla\", (4.25, 5.2), SE);\ndot((5.6, 2.8));\n\
+  label(scale(.85)*\"Debra\", (5.6, 2.8), N);\ndot((6.8, 1.4));\nlabel(scale(.85)*\"\
+  Angela\", (6.8, 1.4), E);\n[/asy]\n\nPlease given your final answer (answer ONLY)\
+  \ within the format of `Final Answer: The final answer is <answer>. I hope it is\
+  \ correct.` after your reasoning \nFor example: According to ...\nFinal Answer:\
+  \ The final answer is $24$. I hope it is correct.\n"
+question: 'The results of a cross-country team''s training run are graphed below.
+  Which student has the greatest average speed? [asy]
+
+  for ( int i = 1; i <= 7; ++i )
+
+  {
+
+
+  draw((i,0)--(i,6));
+
+  }
+
+
+  for ( int i = 1; i <= 5; ++i )
+
+  {
+
+
+  draw((0,i)--(8,i));
+
+  }
+
+  draw((-0.5,0)--(8,0), linewidth(1));
+
+  draw((0,-0.5)--(0,6), linewidth(1));
+
+  label("$O$", (0,0), SW);
+
+  label(scale(.85)*rotate(90)*"distance", (0, 3), W);
+
+  label(scale(.85)*"time", (4, 0), S);
+
+  dot((1.25, 4.5));
+
+  label(scale(.85)*"Evelyn", (1.25, 4.8), N);
+
+  dot((2.5, 2.2));
+
+  label(scale(.85)*"Briana", (2.5, 2.2), S);
+
+  dot((4.25,5.2));
+
+  label(scale(.85)*"Carla", (4.25, 5.2), SE);
+
+  dot((5.6, 2.8));
+
+  label(scale(.85)*"Debra", (5.6, 2.8), N);
+
+  dot((6.8, 1.4));
+
+  label(scale(.85)*"Angela", (6.8, 1.4), E);
+
+  [/asy]'

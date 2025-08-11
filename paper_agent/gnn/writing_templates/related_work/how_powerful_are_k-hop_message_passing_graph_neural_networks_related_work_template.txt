@@ -1,0 +1,15 @@
+```latex
+\section{Related Work}
+
+\subsection{[Topic/Framework]}
+Analyzing the [description of the topic] is a crucial problem as it serves as a guide on how to improve [related systems/approaches]. [Author et al. [reference]] first proved that [key finding]. In recent years, many efforts have been put into [further exploration of the topic]. The first line of research tries to [primary focus of the first line]. However, [limitations/challenges of the first line]. 
+
+The second line of research focuses on [primary focus of the second line]. Some works [citation references] [brief description of contributions]. Although [achievements], [limitations of this approach]. Additionally, some studies [citations] [introduce new methodologies/ideas]. However, [describe any challenges with these methodologies].
+
+The third line of research resorts to [primary focus of the third line]. Specifically, [specific methods or systems examined] [briefly describe]. [Another system or method] [compare/contrast with previous methods]. However, [mention any computational or theoretical limitations].
+
+\subsection{[Another Relevant Topic]}
+There are some existing works that instantiate the [related framework/topic]. For example, [First relevant work] [brief description of methodology or findings]. [Second relevant work] [describe limitations or challenges]. However, [discuss the lack of formal definitions/theoretical analysis related to the topic]. 
+
+In summary, while [overall conclusion about the current state of research], [indicate the gap or opportunity that your work addresses].
+```

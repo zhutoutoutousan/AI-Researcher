@@ -1,0 +1,91 @@
+{
+    "authors": [
+      "Ling Yang",
+      "Zixiang Zhang",
+      "Zhilong Zhang",
+      "Xingchao Liu",
+      "Minkai Xu",
+      "Wentao Zhang",
+      "Chenlin Meng",
+      "Stefano Ermon",
+      "Bin Cui"
+    ],
+    "year": 2024,
+    "instance_id": "con_flowmatching",
+    "url": "http://arxiv.org/abs/2407.02398v1",
+    "abstract": "Flow matching (FM) is a general framework for defining probability paths via\nOrdinary Differential Equations (ODEs) to transform between noise and data\nsamples. Recent approaches attempt to straighten these flow trajectories to\ngenerate high-quality samples with fewer function evaluations, typically\nthrough iterative rectification methods or optimal transport solutions. In this\npaper, we introduce Consistency Flow Matching (Consistency-FM), a novel FM\nmethod that explicitly enforces self-consistency in the velocity field.\nConsistency-FM directly defines straight flows starting from different times to\nthe same endpoint, imposing constraints on their velocity values. Additionally,\nwe propose a multi-segment training approach for Consistency-FM to enhance\nexpressiveness, achieving a better trade-off between sampling quality and\nspeed. Preliminary experiments demonstrate that our Consistency-FM\nsignificantly improves training efficiency by converging 4.4x faster than\nconsistency models and 1.7x faster than rectified flow models while achieving\nbetter generation quality. Our code is available at:\nhttps://github.com/YangLing0818/consistency_flow_matching",
+    "venue": "arXiv.org",
+    "venue_source": "Semantic Scholar",
+    "venue_lookup_time": "2025-01-10T19:29:08.983822",
+    "citations": 5,
+    "topic": "selected",
+    "field": "selected",
+    "target": "Consistency Flow Matching: Defining Straight Flows with Velocity Consistency",
+    "source_papers": [
+      {
+        "reference": "Flow matching for generative modeling",
+        "rank": 1,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This study provides the foundational methodology for flow matching, which is crucial to the development of the proposed approach. It introduces the key concept of training generative models based on implicit learning of vector fields via explicit conditional probability paths, which is the core of the proposed model.",
+        "usage": "The concept of flow matching was employed as the primary framework guiding the methodology in the development of the proposed model."
+      },
+      {
+        "reference": "Consistency models",
+        "rank": 2,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This work offers insights into consistency functions within generative models and introduces a one-step generation approach. It shapes the research direction by highlighting the need for balancing sampling quality and training efficiency, which is integrated into the proposed model framework.",
+        "usage": "Derived techniques from consistency models were adapted, focusing on velocity consistency rather than just noise-to-data mapping."
+      },
+      {
+        "reference": "Rectified Flow",
+        "rank": 3,
+        "type": [
+          "critical components"
+        ],
+        "justification": "Rectified Flow introduces a specific trajectory definition and method for straightening flows, which directly informs the components of the proposed model. Its ideas around rewiring trajectories were crucial for enhancing the expressiveness of the new method.",
+        "usage": "The paper\u2019s techniques were instrumental in shaping the multi-segment training approach used in the proposed model."
+      },
+      {
+        "reference": "Denoising diffusion probabilistic models",
+        "rank": 4,
+        "type": [
+          "conceptual"
+        ],
+        "justification": "This paper discusses the applications of diffusion models in generating high-quality samples, providing necessary context and background for understanding the role of generative models in image generation tasks addressed by the proposed model.",
+        "usage": "Contextual principles from diffusion processes inspired the enhancing algorithms for stability and fidelity in the proposed approach."
+      },
+      {
+        "reference": "Optimal flow matching: Learning straight trajectories in just one step",
+        "rank": 5,
+        "type": [
+          "methodological"
+        ],
+        "justification": "It presents an intuitive approach to learning optimal transport maps, which resonates well with the objectives of the proposed model in defining straight flows efficiently. Its contribution towards simplifying the training process is adapted in this paper.",
+        "usage": "The insights into one-step learning were pivotal in refining the time complexity associated with generating samples in the proposed approach."
+      },
+      {
+        "reference": "Maximum likelihood training of score-based diffusion models",
+        "rank": 6,
+        "type": [
+          "methodological"
+        ],
+        "justification": "This work focuses on training methods for score-based models which align with the mathematical underpinnings necessary for the velocity consistency approach taken in the proposed model. It serves as a methodological basis that parallels the improvements in model efficiency.",
+        "usage": "The training principles were integrated to establish the theoretical performance enhancements seen with the proposed model."
+      }, 
+      {
+        "reference": "Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow",
+        "rank": 7,
+        "type": [
+          "component"
+        ],
+        "justification": "Rectified Flow introduces a specific trajectory definition and method for straightening flows, which directly informs the components of the proposed model. Its ideas around rewiring trajectories were crucial for enhancing the expressiveness of the new method.",
+        "usage": "The proposed model is introduced as a generative modeling framework that connects data distribution and noise using straight paths."
+      }
+    ],
+    "task1": "The proposed model presented in this paper focuses on the task of generative modeling through the framework of Continuous Normalizing Flows (CNFs) to define straight flows between noise and data samples. To implement the core methodology, follow these steps:\n\n1. **Architecture**: Implement a neural network to parameterize the velocity field \\( v_{\\theta}(t, x) \\) that maps from noise to data distributions. Use architectures suitable for continuous functions, such as feedforward or convolutional networks. Each layer should have non-linear activation functions (e.g., ReLU, Tanh).\n\n2. **Loss Functions**: Utilize two main loss components:\n   - **Velocity Consistency Loss**: This should be structured as:\n     \\[\n     L_{\\theta} = E_{t \\sim U} E_{x_t, x_{t+\\Delta t}} \\| f_{\\theta}(t, x_t) - f_{\\theta}(t+\\Delta t, x_{t+\\Delta t}) \\|^2_2 + \\alpha \\| v_{\\theta}(t, x_t) - v_{\\theta}(t+\\Delta t, x_{t+\\Delta t}) \\|^2_2\n     \\]\n     where \\( f_{\\theta}(t, x_t) = x_t + (1 - t) v_{\\theta}(t, x_t) \\). Choose \\( \\alpha \\) based on cross-validation performance.\n  \n3. **Training Procedure**:\n   - Sample \\( x_0 \\) from the noise distribution \\( p_0 \\).\n   - For multiple time segments, define intervals and compute velocity fields iteratively.\n   - Use the weights of the proposed approach in an exponential moving average to stabilize training.\n\n4. **Sampling Process**:\n   - For single-step or multi-step generation, heuristically sample from the noise distribution and use the learned velocity field as follows: \n   \\[\n   x_{i/k} = x_{(i-1)/k} + \\frac{1}{k} v_{i\\theta}((i-1)/k, x_{(i-1)/k})\n   \\]\n   - Apply the Euler method for iterative updates:\n   \\[\n   x_{t + \\Delta t} = x_t + \\Delta t v_i(t, x_t)\n   \\]\n   where \\( t \\in [i/k, (i + 1)/k - \\Delta t] \\).\n\n5. **Key Implementation Details**:\n   - Ensure the network is equipped with a suitable optimizer such as Adam with a learning rate around \\( 2 \\times 10^{-4} \\).\n   - The batch size should be appropriately set (e.g., 512 for CIFAR-10).\n   - Employ an ODE solver, suggested as Euler's method, during the training and sampling processes.\n   - Maintain a uniform distribution for sampling time intervals \\( U \\).\n\n6. **Performance Considerations**: \n   - Monitor convergence rates and empirically validate parameter configurations through experiments. Start with fewer segments and gradually increase to capture complex distributions better.\n   - Adjust the decay rate for the EMA based on the stability of convergence (commonly around 0.999).\n   - Analyze the trade-offs between sampling efficiency and sample quality, ensuring a balance during proposed model development.\n\nBy following these implementation instructions and maintaining attentiveness to hyperparameter tuning, researchers could replicate the core methodologies of this study effectively.",
+    "task2": "1. The primary task or problem domain the research tackles:\nThe research focuses on improving the process of generating high-quality samples from noise distributions through a framework known as Flow Matching (FM). Specifically, it addresses the challenge of defining straight flows in the context of continuous normalizing flows, which are used to model generative processes effectively.\n\n2. Current limitations in existing approaches that motivated this work:\nPrevious methods, while achieving impressive sample quality, often struggle with an effective trade-off between the quality of generated samples and computational efficiency. This is due to issues such as accumulated errors in iterative rectification methods and high computational costs associated with optimizing complex transport plans in each training batch.\n\n3. Core challenges the researchers aim to overcome:\nThe researchers aim to eliminate the reliance on iterative processes that can introduce errors, and reduce the complexity and computation associated with optimizing transport plans. They also seek to ensure that the generated flows in the sampling process remain straight and consistent over time, thus avoiding common pitfalls found in existing approaches.\n\n4. Key objectives and intended contributions:\nThe main objectives are to propose a new method, the proposed model, which enforces self-consistency in the velocity field of the flows, thereby allowing for the definition of straight flows more effectively. Additionally, the work aims to enhance model expressiveness through a multi-segment training approach. The intended contributions include theoretical foundations for the proposed method, along with practical improvements that result in faster training convergence and better sample quality compared to existing flow matching and consistency models. This study aims to provide significant advancements in the effectiveness of generative processes."
+  }

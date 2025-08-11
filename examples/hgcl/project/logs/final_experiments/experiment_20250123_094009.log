@@ -1,0 +1,66 @@
+2025-01-23 09:40:09,043 - INFO - Starting final experiments with optimized configuration
+2025-01-23 09:40:09,043 - INFO - 
+Starting experiments on yelp dataset
+2025-01-23 09:40:09,125 - INFO - yelp dataset loaded: 29601 users, 24734 items
+2025-01-23 09:40:47,437 - INFO - Epoch 1/35 - Loss: 5.0209
+2025-01-23 09:41:14,878 - INFO - Epoch 2/35 - Loss: 4.6600
+2025-01-23 09:41:42,607 - INFO - Epoch 3/35 - Loss: 4.5730
+2025-01-23 09:42:10,348 - INFO - Epoch 4/35 - Loss: 4.5353
+2025-01-23 09:42:38,033 - INFO - Epoch 5/35 - Loss: 4.5088
+2025-01-23 09:42:45,684 - INFO - Epoch 5 Eval - Recall@20: 0.0495, NDCG@20: 0.0406
+2025-01-23 09:42:45,685 - INFO - New best performance - Recall@20: 0.0495, NDCG@20: 0.0406
+2025-01-23 09:43:13,212 - INFO - Epoch 6/35 - Loss: 4.4886
+2025-01-23 09:43:40,919 - INFO - Epoch 7/35 - Loss: 4.4769
+2025-01-23 09:44:08,564 - INFO - Epoch 8/35 - Loss: 4.4604
+2025-01-23 09:44:36,200 - INFO - Epoch 9/35 - Loss: 4.4651
+2025-01-23 09:45:03,780 - INFO - Epoch 10/35 - Loss: 4.4519
+2025-01-23 09:45:11,569 - INFO - Epoch 10 Eval - Recall@20: 0.0526, NDCG@20: 0.0432
+2025-01-23 09:45:11,569 - INFO - New best performance - Recall@20: 0.0526, NDCG@20: 0.0432
+2025-01-23 09:45:39,156 - INFO - Epoch 11/35 - Loss: 4.4370
+2025-01-23 09:46:06,869 - INFO - Epoch 12/35 - Loss: 4.4400
+2025-01-23 09:46:34,568 - INFO - Epoch 13/35 - Loss: 4.4282
+2025-01-23 09:47:02,180 - INFO - Epoch 14/35 - Loss: 4.4319
+2025-01-23 09:47:29,811 - INFO - Epoch 15/35 - Loss: 4.4178
+2025-01-23 09:47:37,840 - INFO - Epoch 15 Eval - Recall@20: 0.0539, NDCG@20: 0.0442
+2025-01-23 09:47:37,841 - INFO - New best performance - Recall@20: 0.0539, NDCG@20: 0.0442
+2025-01-23 09:48:05,379 - INFO - Epoch 16/35 - Loss: 4.4193
+2025-01-23 09:48:33,104 - INFO - Epoch 17/35 - Loss: 4.4125
+2025-01-23 09:49:00,792 - INFO - Epoch 18/35 - Loss: 4.4065
+2025-01-23 09:49:28,368 - INFO - Epoch 19/35 - Loss: 4.4060
+2025-01-23 09:49:55,952 - INFO - Epoch 20/35 - Loss: 4.4017
+2025-01-23 09:50:04,004 - INFO - Epoch 20 Eval - Recall@20: 0.0553, NDCG@20: 0.0452
+2025-01-23 09:50:04,004 - INFO - New best performance - Recall@20: 0.0553, NDCG@20: 0.0452
+2025-01-23 09:50:31,572 - INFO - Epoch 21/35 - Loss: 4.4003
+2025-01-23 09:50:59,266 - INFO - Epoch 22/35 - Loss: 4.3996
+2025-01-23 09:51:26,977 - INFO - Epoch 23/35 - Loss: 4.3925
+2025-01-23 09:51:54,630 - INFO - Epoch 24/35 - Loss: 4.3951
+2025-01-23 09:52:22,263 - INFO - Epoch 25/35 - Loss: 4.3886
+2025-01-23 09:52:30,445 - INFO - Epoch 25 Eval - Recall@20: 0.0563, NDCG@20: 0.0459
+2025-01-23 09:52:30,445 - INFO - New best performance - Recall@20: 0.0563, NDCG@20: 0.0459
+2025-01-23 09:52:57,995 - INFO - Epoch 26/35 - Loss: 4.3844
+2025-01-23 09:53:25,703 - INFO - Epoch 27/35 - Loss: 4.3900
+2025-01-23 09:53:53,362 - INFO - Epoch 28/35 - Loss: 4.3823
+2025-01-23 09:54:20,998 - INFO - Epoch 29/35 - Loss: 4.3806
+2025-01-23 09:54:48,629 - INFO - Epoch 30/35 - Loss: 4.3786
+2025-01-23 09:54:57,050 - INFO - Epoch 30 Eval - Recall@20: 0.0575, NDCG@20: 0.0464
+2025-01-23 09:54:57,051 - INFO - New best performance - Recall@20: 0.0575, NDCG@20: 0.0464
+2025-01-23 09:55:24,627 - INFO - Epoch 31/35 - Loss: 4.3774
+2025-01-23 09:55:52,361 - INFO - Epoch 32/35 - Loss: 4.3695
+2025-01-23 09:56:20,056 - INFO - Epoch 33/35 - Loss: 4.3655
+2025-01-23 09:56:47,769 - INFO - Epoch 34/35 - Loss: 4.3633
+2025-01-23 09:57:15,420 - INFO - Epoch 35/35 - Loss: 4.3649
+2025-01-23 09:57:23,763 - INFO - Epoch 35 Eval - Recall@20: 0.0579, NDCG@20: 0.0469
+2025-01-23 09:57:23,763 - INFO - New best performance - Recall@20: 0.0579, NDCG@20: 0.0469
+2025-01-23 09:57:32,117 - INFO - 
+Final Results for yelp:
+2025-01-23 09:57:32,117 - INFO - Best - Recall@20: 0.0579, NDCG@20: 0.0469
+2025-01-23 09:57:32,117 - INFO - Final - Recall@20: 0.0579, NDCG@20: 0.0469
+2025-01-23 09:57:32,133 - INFO - 
+Starting experiments on gowalla dataset
+2025-01-23 09:57:32,133 - ERROR - Error during experiment on gowalla: [Errno 2] No such file or directory: 'data/gowalla/trnMat.pkl'
+2025-01-23 09:57:32,133 - INFO - 
+Comparative Results Across Datasets:
+2025-01-23 09:57:32,133 - INFO - 
+yelp:
+2025-01-23 09:57:32,133 - INFO - Best Performance - Recall@20: 0.0579, NDCG@20: 0.0469
+2025-01-23 09:57:32,133 - INFO - Final Performance - Recall@20: 0.0579, NDCG@20: 0.0469

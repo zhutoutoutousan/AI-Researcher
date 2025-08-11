@@ -1,0 +1,21 @@
+```latex
+\section{Related Work}
+
+In this work, we propose [module name] to address [challenge]. Inspired by [previous work/technique], our approach aims to [briefly state the goal or innovation].
+
+[Multiple sentences explaining the motivation and intuition behind the proposed method]
+
+There exist several alternatives for [briefly define the problem/area]. For instance, [reference] employs [brief description of alternative method], utilizing [specific technique] to enhance [aspect of training/efficiency]. In contrast, [reference] adopts [different approach], which [describe how it improves upon prior methods].
+
+Recently, new methodologies have emerged, such as [mention recent techniques], which [explain the innovation]. Specifically, [describe the initial performance characteristics and behavior of the methods during training].
+
+However, [briefly critique the existing methods and highlight their limitations]. Furthermore, [state additional limitations or gaps in the current research].
+
+Our work also extends [mention an area of previous research], where [explain connection to prior work]. This has been accomplished through [describe how the current approach builds on past methodologies].
+
+Additionally, our approach relates to [another relevant area or application], as evidenced by [reference work] which [provide relevant details]. 
+
+Moreover, [mention another comparison to existing approaches or techniques]. In their experiments, [briefly describe the findings related to the past work]. However, [discuss any challenges or issues encountered when applying these methods].
+
+In summary, while [recap the existing state of the field], our work aims to [state objectives and expected contributions of the current research].
+```

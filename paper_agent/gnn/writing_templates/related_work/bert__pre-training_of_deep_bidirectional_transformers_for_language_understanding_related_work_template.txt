@@ -1,0 +1,39 @@
+```latex
+\section{Related Work}
+
+There is a long history of [general topic], and we briefly review the most widely-used approaches in this section.
+
+\subsection{[Subtopic 1]}
+
+[Multiple sentences explaining the motivation and intuition behind this subtopic and its historical context.]
+
+To [describe key feature/approach], [previous work/technique] is often highlighted, including [reference 1; reference 2; ...]. [Further explanation of key concepts]. 
+
+These approaches have been generalized to [different applications or domains] such as [application 1; application 2; ...]. [A paragraph describing the detailed workflow of the subtopic]. 
+
+[Several sentences comparing the proposed method with existing approaches, highlighting similarities and differences.]
+ 
+Formally, we define [concept] as follows:
+
+\begin{equation}
+    [Mathematical formulation of the key components]
+\end{equation}
+
+Where, [Detailed explanation of each term in the equations and their significance]. 
+
+\subsection{[Subtopic 2]}
+
+[Multiple sentences explaining the motivation and intuition behind the second subtopic.]
+
+As with [Subtopic 1], [key approaches] have evolved to focus on [specific aspect]. [Further explanation and historical context of this evolution].
+
+More recently, [explanation of recent methods] have been developed, which emphasize [advantage or unique feature]. [Specific example of a notable paper or work].
+
+\subsection{[Subtopic 3]}
+
+There has also been significant progress in [what was investigated in this subtopic], showing [key findings or advancements]. 
+
+For instance, work on [specific tasks/areas] has highlighted [insight or discovery]. [Discuss relevant methodologies or frameworks through which these advancements were achieved].
+
+Overall, [summary sentence about the state of the research in the field, possibly discussing future directions or unresolved challenges]. 
+```

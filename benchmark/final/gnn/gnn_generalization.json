@@ -1,0 +1,198 @@
+{
+    "target": "Graph Neural Networks are Inherently Good Generalizers: Insights by Bridging GNNs and Multi-Layer Perceptrons",
+    "instance_id": "gnn_generalization",
+    "source_papers": [
+        {
+            "reference": "Learning and generalization in overparameterized neural networks, going beyond two layers",
+            "rank": 1,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This foundational work provides insights into how overparameterization affects learning in neural networks, establishing a basis for understanding generalization capabilities in various architectures.",
+            "usage": "Used as a primary reference for exploring theoretical analysis of generalization in overparameterized settings."
+        },
+        {
+            "reference": "Graph convolution for semi-supervised classification: Improved linear separability and out-of-distribution generalization",
+            "rank": 2,
+            "type": [
+                "component"
+            ],
+            "justification": "This study demonstrates the improvements brought by graph convolutions over traditional methods, enhancing the linear separability and generalization of semi-supervised learning models.",
+            "usage": "Key techniques were integrated to highlight the benefits of graph convolutions in node classification tasks."
+        },
+        {
+            "reference": "On the inductive bias of neural tangent kernels",
+            "rank": 3,
+            "type": [
+                "methodological"
+            ],
+            "justification": "It provides critical insights into how different neural architectures generalize, particularly through the lens of NTK, which underpins many theoretical arguments in this paper.",
+            "usage": "Serves as a basis for analyzing inductive biases and generalization through tangent kernel perspectives."
+        },
+        {
+            "reference": "How neural networks extrapolate: From feedforward to graph neural networks",
+            "rank": 4,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This paper extends prior analyses on the extrapolation capabilities of neural architectures, directly informing the research on generalization phenomena in GNN and MLP structures.",
+            "usage": "Referenced to explain behavior under out-of-distribution conditions and extrapolation analysis, as discussed in this paper."
+        },
+        {
+            "reference": "Toward deeper graph neural networks",
+            "rank": 5,
+            "type": [
+                "component"
+            ],
+            "justification": "The exploration of the implications of using deeper GNNs on representation learning sheds light on the specific issues like over-smoothing while still being effective in certain regimes.",
+            "usage": "Illustrates the varying impacts of architectural depth on generalization and performance in GNNs."
+        },
+        {
+            "reference": "How powerful are graph neural networks?",
+            "rank": 6,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This study critically assesses the expressive power of GNNs compared to MLPs, essential for the discourse on intrinsic capabilities between these architectures.",
+            "usage": "Provides comparative insights that shaped our understanding of GNN capabilities against conventional models."
+        },
+        {
+            "reference": "Representation learning on graphs with jumping knowledge networks",
+            "rank": 7,
+            "type": [
+                "component"
+            ],
+            "justification": "Jumping knowledge networks present an innovative way to leverage node-level representations, influencing the approach to improve the proposed model comparisons.",
+            "usage": "Integrates advanced node representation strategies within the proposed model framework, enhancing model context."
+        },
+        {
+            "reference": "Relational inductive biases, deep learning, and graph networks",
+            "rank": 8,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This foundational work explores the inductive biases within GNN architectures which undergird the theoretical framework of this study.",
+            "usage": "Cited to elaborate on the implicit advantages of relational representation in the proposed model."
+        },
+        {
+            "reference": "Effects of graph convolutions in multi-layer networks",
+            "rank": 9,
+            "type": [
+                "critical components"
+            ],
+            "justification": "This study highlights the effectiveness of graph convolutions and their contribution to enhanced performance in deeper networks.",
+            "usage": "Forms part of the analytical foundation discussing the comparative effectiveness of GNN architectures."
+        },
+        {
+            "reference": "Scalable graph neural networks via bidirectional propagation",
+            "rank": 10,
+            "type": [
+                "component"
+            ],
+            "justification": "The proposed methods for bidirectional propagation offer a unique perspective on efficiency, contributing to the overarching theme of scalability within the proposed model.",
+            "usage": "Informs the development of practical architectures aiming for efficiency in training GNNs."
+        },
+        {
+            "reference": "Fine-grained analysis of optimization and generalization for overparameterized two-layer neural networks",
+            "rank": 11,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This study provides detailed examinations of optimization in deeper architectures, reinforcing claims about generalization in the context of the proposed model and MLPs.",
+            "usage": "Supports theoretical arguments about generalization in node-level prediction tasks."
+        },
+        {
+            "reference": "Graph convolutional networks",
+            "rank": 12,
+            "type": [
+                "methodological"
+            ],
+            "justification": "Introduces a robust methodology for graph-based learning that fundamentally informs the discussion on architectural design in this study.",
+            "usage": "Serves as a cornerstone reference for GNN methodologies, establishing baseline expectations for performance."
+        },
+        {
+            "reference": "How neural tangent kernels generalize for wide neural networks",
+            "rank": 13,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "Offers insights into generalization contexts that are fundamental for understanding various neural architecture behaviors.",
+            "usage": "Forms the conceptual basis for discussing generalization in GNN contexts."
+        },
+        {
+            "reference": "Deep learning on graphs: A survey",
+            "rank": 14,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This survey encapsulates broad trends in graph neural networks, informing research directions and methodologies relevant to this study.",
+            "usage": "Provides background on the evolution and techniques within graph neural networks."
+        },
+        {
+            "reference": "Adaptive universal generalized pagerank graph neural networks",
+            "rank": 15,
+            "type": [
+                "component"
+            ],
+            "justification": "Examines generalized formulations of GNNs, emphasizing the extensibility and adaptability of graph-based techniques.",
+            "usage": "Demonstrates capabilities and techniques that can inform the proposed model design and comparisons in adaptability."
+        },
+        {
+            "reference": "Scalable induction of graph neural networks with message passing",
+            "rank": 16,
+            "type": [
+                "component"
+            ],
+            "justification": "This work contributes methods for scalable graph network induction, relevant to the challenges posed in this paper-based learning.",
+            "usage": "Informs practical implementation considerations for GNN architectures discussed in this paper."
+        },
+        {
+            "reference": "Neural message passing for quantum chemistry",
+            "rank": 17,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "While primarily focused on chemistry, the underlying message-passing formulations draw parallels with GNN architecture discussions.",
+            "usage": "Provides a unique viewpoint on applications that leverage similar message passing techniques."
+        },
+        {
+            "reference": "Representation learning on graphs: Methods and applications",
+            "rank": 18,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "A comprehensive overview of representation learning techniques within graphs, playing a pivotal role in informing the proposed model framework.",
+            "usage": "Sets the context for understanding graph-centric learning methodologies."
+        },
+        {
+            "reference": "Adaptive methods for optimization in deep learning",
+            "rank": 19,
+            "type": [
+                "methodological"
+            ],
+            "justification": "Explores adaptive optimization strategies essential for training deep networks efficiently.",
+            "usage": "Guides discussions surrounding the optimization methods used in conjunction with GNNs."
+        },
+        {
+            "reference": "Message passing neural networks: A survey",
+            "rank": 20,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "Defines key concepts and frameworks for message passing, essential to both GNN and MLP comparisons.",
+            "usage": "Informs a comprehensive understanding of message-passing approaches critical to GNN performance."
+        }
+    ],
+    "authors": [
+        "Chenxiao Yang",
+        "Qitian Wu",
+        "Jiahua Wang",
+        "Junchi Yan"
+    ],
+    "year": 2023,
+    "url": "https://arxiv.org/abs/2212.09034",
+    "abstract": "Graph neural networks (GNNs), as the de-facto model class for representation learning on graphs, are built upon the multi-layer perceptrons (MLP) architecture with additional message passing layers to allow features to flow across nodes. While conventional wisdom commonly attributes the success of GNNs to their advanced expressivity, we conjecture that this is not the main cause of GNNs' superiority in node-level prediction tasks. This paper pinpoints the major source of GNNs' performance gain to their intrinsic generalization capability, by introducing an intermediate model class dubbed as P(ropagational)MLP, which is identical to standard MLP in training, but then adopts GNN's architecture in testing. Intriguingly, we observe that PMLPs consistently perform on par with (or even exceed) their GNN counterparts, while being much more efficient in training. This finding sheds new insights into understanding the learning behavior of GNNs, and can be used as an analytic tool for dissecting various GNN-related research problems. As an initial step to analyze the inherent generalizability of GNNs, we show the essential difference between MLP and PMLP at infinite-width limit lies in the NTK feature map in the post-training stage. Moreover, by examining their extrapolation behavior, we find that though many GNNs and their PMLP counterparts cannot extrapolate non-linear functions for extremely out-of-distribution samples, they have greater potential to generalize to testing samples near the training data range as natural advantages of GNN architectures.",
+    "citation": 70,
+    "task1": "To implement the core methodology of the research presented, follow these steps:\n\n1. **Task Specification**: The proposed model is designed for node-level prediction tasks, utilizing graph structure and node features.\n\n2. **Core Techniques/Algorithms**:\n   - Use a Multi-Layer Perceptron (MLP) for initial training.\n   - Implement Graph Neural Network (GNN) architecture for testing, incorporating Message Passing (MP) operations between feed-forward layers.\n   - Utilize the Adam optimizer for training.\n\n3. **Purpose and Function of Components**:\n   - **MLP Architecture**: Serves as the backbone for training, allowing the proposed model to learn a representation of node features.\n   - **MP Layers**: Enable the proposed model to incorporate the relationships between nodes during inference, enhancing generalization capabilities.\n\n4. **Implementation Details**:\n   - **MLP Training**:\n     - **Key Parameters**: Fix the number of feed-forward (FF) layers and hidden sizes (recommended: 2 FF layers, hidden size of 64).\n     - **Input/Output Specifications**: Input consists of node features and adjacency information while the output is the predicted labels or values for each node.\n     - **Constraints**: Ensure that the dataset is split into training and test sets, where the test nodes are unseen during training.\n   - **Testing with GNN**:\n     - Insert MP layers between FF layers during inference. \n     - Use an adjacency matrix for the MP operations, aggregating features from neighboring nodes.\n     - **Important Configurations**: Configure Message Passing to aggregate features effectively, such as by using normalized adjacency matrices.\n\n5. **Step-by-Step Integration**:\n   - **Step 1**: Structure your data as a graph with nodes and edges.\n   - **Step 2**: Train an MLP model using standard training methods (set batch size, learning rate, and use early stopping based on validation accuracy).\n   - **Step 3**: After training, transition to GNN where you define the message passing schema. Implement MP operations before passing the result to FF layers during testing. \n   - **Step 4**: Combine the outputs of the final layer with a linear classifier (or softmax) for predictions.\n\n6. **Critical Implementation Details**:\n   - Ensure efficient batching during training for scalability, especially for larger datasets.\n   - Validate your implementation on multiple benchmark datasets to ensure robustness.\n   - Monitor for overfitting, especially noting the performance drop in deeper models (beyond 2 layers may require residual connections to mitigate over-smoothing).\n\nBy following these guidelines, you should be able to replicate the core methodology discussed in this paper effectively.",
+    "task2": "The primary task the research tackles is understanding the generalization capabilities of Graph Neural Networks (GNNs) in comparison to Multi-Layer Perceptrons (MLPs), specifically in node-level prediction tasks within graph structures.\n\nExisting approaches have primarily focused on analyzing the representational power of GNNs, while their generalization capabilities\u2014particularly in relation to traditional neural networks like MLPs\u2014remain underexplored. This gap highlights the need for deeper insights into why GNNs exhibit superior performance and how their architectural features contribute to generalization.\n\nThe core challenges the researchers aim to overcome include elucidating the underlying reasons for GNNs' superior generalization, identifying the key architectural differences that facilitate better performance, and addressing the limitations of MLPs when applied to graph data.\n\nThe key objectives and intended contributions of this study are to bridge the understanding between GNNs and MLPs by introducing an intermediate model class that combines aspects of both architectures, thereby revealing the intrinsic generalization capabilities of the proposed model. The work aims to not only derive theoretical insights but also provide practical implications for model design, ultimately contributing to more efficient and robust graph representation learning."
+}

@@ -1,0 +1,47 @@
+\section{Methodology}
+
+In this section, we present the [Proposed Method Name] framework to [primary objective or goal] based on [underlying principles or techniques]. We introduce the critical components that differentiate [Proposed Method Name] from [previous approaches or techniques].
+
+\subsection{Problem Statement}
+
+Briefly, [provide a brief description of the general problem]. [A description of key components or processes in the existing methods]. Formally, we define [concept or problem] as follows:
+
+Let [Define variables and parameters]. The goal of [Problem Type] is to [restate the objective formally].
+
+Despite [mention any existing challenges], there has been [describe the gap or deficiency]. To address this gap, we propose [Proposed Method Name] to [intended impact or improvement].
+
+[Proposed Method Name]. The overall architecture of [Proposed Method Name] is illustrated in Figure [X]. Its core idea lies in [describe the foundational concept]. We introduce a [specific strategy or component] with [contextual reference].
+
+\subsection{Design of [Proposed Method Name]}
+
+In this part, we explore how to design [Proposed Method Name] to match and [funtionality or performance goal]. Specifically, we discuss different strategies via addressing the following questions:
+
+\begin{itemize}
+    \item Q1: [Question 1 about the method/design]
+    \item Q2: [Question 2 about training or robustness]
+    \item Q3: [Question 3 about architecture]
+    \item Q4: [Question 4 about performance criteria]
+\end{itemize}
+
+These questions concern the designs of [list relevant aspects] in [Proposed Method Name], enabling us to develop [Proposed Method Name].
+
+Q1: [First research question or design consideration]. [Discuss different options or existing approaches]. Thus, we adopt [solution or strategy] as our primary objective.
+
+Q2: [Second research question or design consideration]. [Explain challenges and significance]. To tackle this, we propose [specific strategy or approach] for [objective].
+
+Q3: [Third research question or design consideration]. The [component or process] maps [describe input to output]. [Justify the choice and discuss its benefits compared to alternatives].
+
+Q4: [Fourth research question or design consideration]. The criterion for [describe the output or evaluation metric] varies [contextual considerations]. [Discuss the proposed method for evaluation and justification for choice].
+
+\begin{equation}
+    L_{\text{criterion}} = [Insert appropriate equations here],
+\end{equation}
+which is defined [provide definition in context].
+
+In summary, [Proposed Method Name] is a [describe characteristics, e.g., scalable, efficient, etc.]. Figure [X] illustrates how each design choice impacts the overall performance.
+
+\subsection{Training and Inference}
+
+The overall training flow of [Proposed Method Name] is summarized in Figure [X]. First, [describe the initial training setup]. We feed [context of input] into the [component] to generate [describe generated outputs]. During [specific stage of training], we [describe mechanism or technique used]. 
+
+For downstream applications, the [component] is applied to [describe inference setup]. The [output from process] can be used for [list potential applications]. [Discuss any additional techniques or frameworks utilized for performance]. In the experiments, we show that [summarize key performance outcomes].

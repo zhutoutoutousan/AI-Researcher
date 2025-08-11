@@ -1,0 +1,37 @@
+```latex
+\section{Preliminaries}
+
+\subsection{Notations}
+
+Let $G = \{V, E\}$ be a given undirected graph with $n = |V|$ nodes. Each node is an instance $z_{i} = (x_{i}, y_{i})$ containing feature $x_{i}$ and label $y_{i}$ from some space $Z = X \times Y$. Let $X$ be the feature matrix where the $i$-th row $X_{i\ast}$ is the node feature $x_{i}$. Let $A$ and $D$ be the adjacency matrix and the diagonal degree matrix respectively, where $D_{ii} = \sum_{j=1}^{n} A_{ij}$.
+
+Denote by $\tilde{A} = (D + I_{n})^{-1/2}(A + I_{n})(D + I_{n})^{-1/2}$ the normalized adjacency matrix with self-loops, and $\sqrt{|Y|}$ the number of categories. We focus on the [context] setting in this work, i.e., all features together with the randomly sampled labels are constructed as [data type]. Let $S = \{x_{i}, y_{i}\}_{i=1}^{m+u}$ be the set of instances where $m + u = n$. Without loss of generality (w.l.o.g.), let $\{y_{i}\}_{i=1}^{m}$ be the selected labels; our task is to [task description]. This setting is widely adopted in [relevant task] literature.
+
+From now on, we limit the scope of the learner to a given [model type] and let $\{W_{h}\}_{h=1}^{H}$ be its learnable parameters. [Explain any assumptions about the space or representation of these parameters]. To this end, we use a unified vector $w = [\text{vec}[W_{1}]; \ldots; \text{vec}[W_{H}]]$ to represent the collection of $\{W_{h}\}_{h=1}^{H}$, where $\text{vec}[\cdot]$ is the vectorization operator. For $w \in W$, the training and test error is defined as $R_{m}(w) \doteq \frac{1}{m} \sum_{i=1}^{m} \ell(w; z_{i})$ and $R_{u}(w) \doteq \frac{1}{u} \sum_{i=m+1}^{m+u} \ell(w; z_{i})$ respectively, where $\ell: W \times Z \rightarrow \mathbb{R}^{+}$ is the loss function. We define the [task-specific metric] by $|R_{m}(w) - R_{u}(w)|$. The optimization process aims to minimize [specific goal].
+
+Now we introduce the notations used in the rest of this paper. Denote by $\|\cdot\|_{2}$ and $\|\cdot\|$ the [norm definitions]. Let $w^{(1)}$ be the initialization weight of the model; we focus on the space $W = B(w^{(1)}; r)$, $r \ge 1$ in this work, where $B(w^{(1)}; r) \doteq \{w : \|w - w^{(1)}\|_{2} \leq r\}$ is the ball with radius $r$. Denote by $\nabla \ell(\cdot; z)$ the gradient of $\ell$ with respect to the first argument. Denote by $b_{g} = \sup_{z \in Z} \|\nabla \ell(w^{(1)}; z)\|_{2}$ the supremum of gradient with initialized parameters, and $b_{\ell} = \sup_{z \in Z} |\ell(w^{(1)}; z)|_{2}$ the supremum of loss value with initialized parameters. Let $\hat{w} \in \arg\min_{w \in W} R_{m}(w)$ be the parameters of the training error minimizer. We denote by $\sigma(\cdot)$ the activation function.
+
+\subsection{Assumptions}
+
+In this part, we present the assumptions used in this paper.
+
+\textbf{Assumption 1.} Assume that there exists a constant $c_{X} > 0$ such that $\|x\|_{2} \leq c_{X}$ holds for all $x \in X$.
+
+[Insert Algorithm or procedure description here.]
+
+\textbf{Assumption 2.} Assume that there exists a constant $c_{W} > 0$ such that $\|W_{h}\| \leq c_{W}, h \in [H]$ for $w \in B(w^{(1)}; r)$.
+
+\textbf{Remark 1.} [Explanation of Assumption 1].
+
+\textbf{Assumption 3.} Assume that the activation function $\sigma(\cdot)$ is [smoothness condition]. 
+
+\textbf{Remark 2.} [Implications of Assumption 3].
+
+\textbf{Assumption 4.} Assume that there exists a constant $G > 0$ such that for all $z \in S$, [specific condition].
+
+\textbf{Remark 3.} [Explanation of Assumption 4].
+
+\textbf{Assumption 5.} Assume that [another assumption].
+
+\textbf{Remark 4.} [Explanation or context for Assumption 5].
+```

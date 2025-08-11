@@ -1,0 +1,25 @@
+```
+\section{Related Work}
+
+We refer the reader to [Appendix/Section] for a discussion on [specific topic or methodology].
+
+The recent work of [Author(s), Year] has explored the use of [specific technique or methodology] in the context of [application or problem]. Although the initial motivations may seem [different/similar], at the core of it, both our works aim to [briefly describe common goal], which [mechanism or technique] enables.
+
+Furthermore, the work of [Author(s), Year] presents [description of a relevant finding or method]. We believe this direction is quite [important/relevant], and may potentially lead to [briefly mention implications or future research opportunities].
+
+Specifically, we propose [module name] to address [specific challenge]. Our method consists of three main components: [component 1], [component 2], and [component 3].
+
+Formally, we define [concept] as follows:
+
+\begin{equation}
+[Mathematical formulation of the key components]
+\end{equation}
+
+To tackle [challenge], [multiple sentences explaining the motivation and intuition behind the proposed method].
+
+Furthermore, [a paragraph describing the detailed workflow of the module]. 
+
+To compare our method with existing approaches, we [several sentences comparing the proposed method with existing approaches].
+
+Finally, we provide a detailed explanation of each term in the equations: [detailed explanation of each term with relevant context].
+```

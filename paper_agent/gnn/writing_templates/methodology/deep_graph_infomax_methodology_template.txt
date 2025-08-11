@@ -1,0 +1,53 @@
+\section{Methodology}
+
+In this section, we will present the [Method Name] method in a top-down fashion: starting with an abstract overview of our specific [learning setup/approach], followed by an exposition of the objective function optimized by our method, and concluding by enumerating all the steps of our procedure in a [specific setting/experimental framework].
+
+\subsection{Overview of [Learning Approach]}
+
+We assume a generic [specific setup/field]: we are provided with [data type/structure], [data notation], where [N] is the number of [elements/instances] and [element notation] ∈ [Feature Space] represents the features of [element type]. We are also provided with [additional information/context] in the form of [data structure/format].
+
+Our objective is to learn an [encoder type], [Encoder Function]: [Input Type] → [Output Type], such that [Output Equation] represents [description of output]. These representations may then be utilized for [specific downstream tasks].
+
+Here we will focus on [specific encoding/architecture type], which generates [representations/outputs] by [description of process]. A key consequence is that the produced [output type] summarize [context/area of focus].
+
+\subsection{[Key Concept/Technique]}
+
+Our approach to learning the [component] relies on [descriptive strategy/goal] - that is, we seek to [explain purpose of method]. 
+
+In order to obtain [specific representations], we leverage a [function/type] and use it to summarize [previous outputs] into a [desired output]; i.e., [Summarization Equation].
+
+As a means of [objective purpose], we employ a [function/strategy] such that [Description of Functionality].
+
+Negative samples for [function] are provided by [description of sampling method]. In a [context setting], such samples may be obtained as [explanation of dataset]. 
+
+For the objective, we follow the intuitions from [Previous Work] and use a [type of objective] with a [loss type] loss between the samples from [positive set] and [negative set]. Following their work, we use the following objective:
+
+\begin{equation}
+L = [Equation of Objective]
+\end{equation}
+
+This approach effectively [describe what is achieved through the objective]. 
+
+\subsection{Theoretical Motivation}
+
+We now provide some intuition that connects [specific outcome] of our [component] to [related principle/concept].
+
+\textbf{Lemma 1.} Let [Notation] be a set of [data type] drawn from [probability distribution] such that [condition]. Let [Function] be [function description] and [Output Notation] be the output of [function]. The optimal classifier between [joint distribution] and [product of marginals] has an error rate upper bounded by [Bound Expression].
+
+\textbf{Proof.} [Proof details and logical steps].
+
+This motivates our use of [specific process] and using [loss type] loss to optimize this classifier is well-understood in the context of [related field/application].
+
+\subsection{Overview of [Method/Procedure]}
+
+Assuming the [context setting], we will now summarize the steps of the [Method Name] procedure:
+
+\begin{enumerate}
+    \item [Step 1: description of action taken]
+    \item [Step 2: description of action taken]
+    \item [Step 3: description of action taken]
+    \item [Step 4: description of action taken]
+    \item [Step 5: description of action taken]
+\end{enumerate}
+
+This algorithm is fully summarized by [reference to visual aids, if any].

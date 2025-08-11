@@ -1,0 +1,87 @@
+{
+    "authors": [
+        "Tianhong Li",
+        "Yonglong Tian",
+        "He Li",
+        "Mingyang Deng",
+        "Kaiming He"
+    ],
+    "instance_id": "auto_wovq",
+    "year": 2024,
+    "url": "http://arxiv.org/abs/2406.11838v3",
+    "abstract": "Conventional wisdom holds that autoregressive models for image generation are\ntypically accompanied by vector-quantized tokens. We observe that while a\ndiscrete-valued space can facilitate representing a categorical distribution,\nit is not a necessity for autoregressive modeling. In this work, we propose to\nmodel the per-token probability distribution using a diffusion procedure, which\nallows us to apply autoregressive models in a continuous-valued space. Rather\nthan using categorical cross-entropy loss, we define a Diffusion Loss function\nto model the per-token probability. This approach eliminates the need for\ndiscrete-valued tokenizers. We evaluate its effectiveness across a wide range\nof cases, including standard autoregressive models and generalized masked\nautoregressive (MAR) variants. By removing vector quantization, our image\ngenerator achieves strong results while enjoying the speed advantage of\nsequence modeling. We hope this work will motivate the use of autoregressive\ngeneration in other continuous-valued domains and applications. Code is\navailable at: https://github.com/LTH14/mar.",
+    "venue": "arXiv.org",
+    "venue_source": "Semantic Scholar",
+    "venue_lookup_time": "2025-01-10T19:29:39.401553",
+    "citations": 57,
+    "topic": "selected",
+    "field": "selected",
+    "target": "Autoregressive Image Generation without Vector Quantization",
+    "source_papers": [
+        {
+            "reference": "Denoising diffusion probabilistic models",
+            "rank": 1,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This study introduced the foundational diffusion models that underpin the proposed model. It forms the basis of the methodology used in the current research, enabling autoregressive models to leverage continuous-valued representations effectively.",
+            "usage": "The authors define the proposed model function informed by the diffusion process described in this study."
+        },
+        {
+            "reference": "Generative adversarial nets",
+            "rank": 2,
+            "type": [
+                "methodological"
+            ],
+            "justification": "The concept of adversarial loss as a method for training generative models laid important groundwork for the introduction of the proposed model, paralleling the principles behind the proposed loss.",
+            "usage": "The proposed model is introduced as a parameterized loss function 'in the same vein as the adversarial loss'."
+        },
+        {
+            "reference": "Language models are few-shot learners",
+            "rank": 3,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This work emphasizes the role of autoregressive models in generative tasks and establishes the necessity of autoregressive techniques, which directly influenced the research direction of this paper.",
+            "usage": "The authors refer to autoregressive models as the de facto solution in generative model architectures."
+        },
+        {
+            "reference": "Zero-shot text-to-image generation",
+            "rank": 4,
+            "type": [
+                "component"
+            ],
+            "justification": "This study highlights the advantages of non-quantized continuous tokenizations which inspired the current research to eliminate vector quantization from the image generation process.",
+            "usage": "The effectiveness of higher-quality, non-quantized tokenizers is underscored, informing the authors' methodology."
+        },
+        {
+            "reference": "Masked generative image Transformer",
+            "rank": 5,
+            "type": [
+                "component"
+            ],
+            "justification": "Providing insights into masked generative modeling techniques, this study informed the authors on integrating masked generative principles with autoregressive methods.",
+            "usage": "The unification of masked generative models with autoregressive approaches is exemplified in this paper."
+        },
+        {
+            "reference": "Conditional image generation with PixelCNN decoders",
+            "rank": 6,
+            "type": [
+                "conceptual"
+            ],
+            "justification": "This study demonstrated pioneering efforts in pixel-based autoregressive models, which served as a conceptual foundation for the authors to adapt continuous representations for images.",
+            "usage": "The authors cite the importance of pixel sequences in autoregressive models, emphasizing its relevance to their work."
+        },
+        {
+            "reference": "Understanding diffusion objectives as the ELBO with simple data augmentation",
+            "rank": 7,
+            "type": [
+                "methodological"
+            ],
+            "justification": "This work deepens the understanding of diffusion dynamics, which is critical as the authors refine their methodology for generating images through the proposed model.",
+            "usage": "The authors leverage insights into diffusion dynamics to enhance their empirical results."
+        }
+    ],
+    "task1": "The proposed model in this research paper focuses on autoregressive image generation using continuous-valued tokens rather than discrete representations typically associated with such tasks. The core methodology is structured around two key components: (1) a small denoising neural network (MLP) and (2) a diffusion procedure to model the per-token probability distribution.\n\n### Implementation Instructions:\n\n1. **Task Definition**: Implement an autoregressive model for image generation that uses continuous-valued tokens, eliminating the need for vector quantization.\n\n2. **Core Components**:\n   - **Denoising Network**: A small Multi-Layer Perceptron (MLP) serves as the noise estimator, predicting noise vectors contingent on a conditioning vector.\n   - **Diffusion Process**: This models the probability distribution of image tokens using a diffusion approach, defining a loss function based on diffusion principles.\n\n3. **Purpose and Functionality**:\n   - **Denoising MLP**: This network is trained to predict noise given the corrupted token and helps generate a sample from the token distribution.\n   - **Diffusion Process**: This encapsulates both the training (forward process to add noise) and sampling (reverse process to generate tokens) stages.\n\n4. **Implementation Details**:\n   - **Denoising MLP Configuration**: \n     - Utilize 3 residual blocks, each consisting of a LayerNorm, linear transformation, SiLU activation, and another linear transformation, with a default width of 1024 channels.\n     - Inputs are the noise vector, the time step, and the conditioning vector from autoregressive outputs.\n   \n   - **Noise Schedule**:\n     - Follow a cosine noise schedule with typically 1000 steps for training. Resample with fewer steps (approximately 100) during inference.\n\n   - **Loss Function (Diffusion Loss)**:\n     - Implement the diffusion loss as formulated in this paper: compute noise predictions, and apply L2 loss to the difference between predicted and actual noise.\n\n5. **Interaction of Components**:\n   - First, collect a sequence of continuous-valued image tokens. Input these to the autoregressive model (such as a Transformer) to produce the conditioning vectors (z).\n   - Pass the tokens through the diffusion model to generate noise-corrupted examples, and utilize the MLP to predict the noise.\n   - Use the computed loss to optimize both the autoregressive network and the denoising MLP by backpropagating the gradients through the diffusion loss function.\n\n6. **Critical Implementation Details**:\n   - Ensure that sampling is done using a reverse diffusion approach, starting from a Gaussian distribution for generating tokens.\n   - Implement temperature scaling when sampling tokens to control sample diversity and incorporate it during the noise prediction.\n   - Pay careful attention to input/output specifications: ensure all inputs maintain their continuous representation and that the conditioning for the denoising network aligns correctly with the diffusion process.\n\nBy adhering to these steps and configurations, you can successfully reproduce the core methodology outlined in this study while leveraging continuous-valued representations for autoregressive image generation.",
+    "task2": "1. The primary task the research tackles is the problem of autoregressive image generation, specifically focusing on generating images in a continuous-valued space without relying on discrete, vector-quantized token representations.\n\n2. Current limitations in existing approaches include the necessity of using discrete-valued tokens, which are challenging to train and often yield lower reconstruction quality compared to continuous-valued counterparts. This reliance on vector quantization constrains the general applicability and efficiency of autoregressive models in image generation.\n\n3. The core challenges the researchers aim to overcome involve rethinking the dependence of autoregressive models on discrete tokenization. Specifically, they seek to develop methods that allow for the modeling of token probability distributions directly in a continuous space, thus eliminating the complications associated with discrete tokenizers and enhancing the quality of generated images.\n\n4. Key objectives and intended contributions of this study include introducing a novel loss function, termed the proposed model, that effectively models per-token probability distributions in a continuous space, thereby enabling the use of continuous-valued tokens in autoregressive models. The work aims to demonstrate the potential of this approach in improving image generation quality and to inspire further exploration of continuous-valued representations across various generative modeling applications beyond image generation."
+}

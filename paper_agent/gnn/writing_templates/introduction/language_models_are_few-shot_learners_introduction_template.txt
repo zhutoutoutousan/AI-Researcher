@@ -1,0 +1,14 @@
+\section{Introduction}
+
+\paragraph{}
+NLP has shifted from [describe previous approaches or techniques] to [describe current methodologies]. This shift has led to [explain the impact and progress on specific tasks]. However, despite [discuss the current state of approaches], a final [task-specific step/consideration] remains: [explain the necessity of the task-specific step].
+
+Recent work [CITATION] suggested that [summarize the findings of the recent work]. [CITATION] demonstrated that [describe the implications or observations from the findings].
+
+However, [CITATION] also provided [mention a potential way forward]. The work observed [describe the consistent trends or phenomena]. Subsequently, [CITATION] conducted [describe a more rigorous study and its confirmation of the trends]. In this work, we [state the objective or hypothesis of this work], and [briefly describe the main contribution or approach taken].
+
+As part of this investigation, we also [explain any additional clarifications or systematizations]. While [CITATION] describe their work as [reiterate the terminology used], we [explain the difference based on your analysis]. We study [briefly describe the settings or conditions analyzed], comparing them with [mention other relevant settings]. Our findings are summarized in [refer to a figure or table]. We observe that [discuss key observations and potential implications].
+
+Broadly, [summarize the general effectiveness of the proposed method across settings]. For example, [provide specific performance metrics or comparisons in various settings]. Similarly, [provide additional performance metrics related to another task or dataset].
+
+We also [mention any additional experiments or comparisons conducted with other models]. In general, we find [describe overall patterns and insights]. One notable pattern is that [discuss a specific phenomenon observed in the results, supported by data or observations].

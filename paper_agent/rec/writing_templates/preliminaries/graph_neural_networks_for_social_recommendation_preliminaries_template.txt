@@ -1,0 +1,62 @@
+\section{The Proposed Framework}
+
+In this section, we will first introduce the definitions and notations used in this paper, next give an overview about the proposed framework, then detail each model component, and finally discuss how to learn the model parameters.
+
+\begin{table}[h]
+\centering
+\caption{Notation}
+\begin{tabular}{|c|l|}
+\hline
+Symbols   & Definitions and Descriptions                              \\ \hline
+[Symbol 1] & [Description 1]                                           \\ \hline
+[Symbol 2] & [Description 2]                                           \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Definitions and Notations}
+
+Let $[Set of Users]$ and $[Set of Items]$ be the sets of users and items respectively, where $[n]$ is the number of users, and $[m]$ is the number of items. We assume that $[Rating Matrix]$ is the user-item rating matrix, which is also called the user-item graph. If $[User]$ gives a rating to $[Item]$, $[Rating Value]$ is the rating score, otherwise we employ $[Placeholder]$ to represent the unknown rating. The observed rating can be seen as user $[User]$'s opinion on item $[Item]$. Let $[Known Ratings]$ be the set of known ratings and $[Unknown Ratings]$ be the set of unknown ratings. In addition, $[Social Relations]$ can influence preferences. We aim to predict the missing rating value by utilizing the rating matrix and the social graph.
+
+\subsection{An Overview of the Proposed Framework}
+
+The architecture of the proposed model is shown in Figure 1. The model consists of three components: [Component 1], [Component 2], and [Component 3]. The first component is [Description of Component 1]. Next, we will detail each model component.
+
+\subsection{[Component 1]}
+
+[Component 1] aims to [Objective of Component 1]. The challenge is how to [Description of Challenge]. To address this challenge, we [Description of Approach]. [Explanation of the Aggregation Methods used]. 
+
+\subsubsection{[Subcomponent 1.1]}
+
+[Description and purpose of the subcomponent]. To mathematically represent this, we use [Mathematical Function or Description].
+
+\begin{equation}
+[Mathematical Formulation]
+\end{equation}
+
+[Further explanation of the terms and concepts used].
+
+\subsubsection{[Subcomponent 1.2]}
+
+[Continuing with an explanation of the next aspects of the component]. We further define the mathematical representation as follows:
+
+\begin{equation}
+[Another Mathematical Formulation]
+\end{equation}
+
+\subsection{[Component 2]}
+
+[Description of Component 2 and its relevance]. 
+
+\subsection{[Component 3]}
+
+The goal of this component is to [Objective of Component 3]. This will be implemented by [Description of how it integrates with the previous components].
+  
+\subsection{Learning Model Parameters}
+
+To learn better [Description of Parameters], we consider [Explanation of the approach taken]. We propose to combine [Details about Combination Methods Used].
+
+\begin{equation}
+[Final Mathematical Formulation]
+\end{equation}
+
+[Closing statements about what will be detailed in the following sections].

@@ -1,0 +1,47 @@
+```latex
+\section{Numerical Experiments}
+
+In this section, we refer to the following techniques as [Technique 1], [Technique 2], and [Proposed Technique]. We aim to [describe the specific objectives of the experiments].
+
+We use the following notation when describing network architectures: [define architecture components and their notations]. The final layer is always [specify the final layer characteristics] and the loss function is defined as [describe loss function characteristics]. The mini-batch size is set to [specify mini-batch size].
+
+\subsection{Experiment 1: [Title]}
+
+To validate our model, we applied it to [describe the dataset and problem being addressed]. For our model, we constructed [describe the graph structure and its relevant characteristics]. Following standard practices, the weights of [describe weight calculation method].
+
+This serves as an important verification for our model, which must be able to extract features effectively. [Present any relevant results, such as performance measures or tables. Discuss results briefly, providing potential explanations for observed outcomes.]
+
+The [architecture used] and the following hyper-parameters are chosen from [provide reference/source for hyperparameters]: [list hyperparameters].
+
+\begin{table}[htbp]
+    \centering
+    \caption{[Title of the table]}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        [Column Header 1] & [Column Header 2] & [Column Header 3] \\ 
+        \hline
+        [Row 1 Entry 1]   & [Row 1 Entry 2]   & [Row 1 Entry 3]   \\ 
+        \hline
+        [Row 2 Entry 1]   & [Row 2 Entry 2]   & [Row 2 Entry 3]   \\ 
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\linewidth]{[figure_name]}
+    \caption{[Description of the figure]}
+\end{figure}
+
+\subsection{Experiment 2: [Title]}
+
+To demonstrate the versatility of our model, we applied our technique to [describe the second application and dataset]. We [explain the construction method for the graphical representation]. [Present relevant metrics, indicating how the model performs with respect to other methods.]
+
+\subsection{Comparison of [Specific Aspects]}
+
+[State the key focal points of comparison regarding the proposed method and others, using relevant definitions and equations for clarity.]
+
+\subsection{Influence of [Specific Factor]}
+
+For the proposed method to be successful, [discuss the underlying conditions or assumptions]. [Provide statements on the impact of different constructions or methods of analysis employed and summarize experimental results with specific tables or figures demonstrating this influence.]
+```

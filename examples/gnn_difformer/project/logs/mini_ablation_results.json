@@ -1,0 +1,17 @@
+{
+  "mini_baseline": {
+    "test_acc": 0.389,
+    "best_val_acc": 0.426,
+    "best_epoch": 18
+  },
+  "mini_high_reg": {
+    "test_acc": 0.471,
+    "best_val_acc": 0.496,
+    "best_epoch": 29
+  },
+  "mini_low_tau": {
+    "test_acc": 0.459,
+    "best_val_acc": 0.492,
+    "best_epoch": 36
+  }
+}
